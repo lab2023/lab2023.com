@@ -1,5 +1,5 @@
 ---
-title: The Semantic Grid System: Yarının Sayfa Düzeni
+title: The Semantic Grid System, Yarının Sayfa Düzeni
 date: 2013-07-14 23:02 UTC
 tags:
 ---
