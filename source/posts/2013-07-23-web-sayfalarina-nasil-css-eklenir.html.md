@@ -83,4 +83,4 @@ Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönünde
     </head>
 
 
-[Safiye SEPETÇİ](http://twitter.com/hamitturkukaya)
+[Safiye SEPETÇİ](http://twitter.com/safiyesepetci)
