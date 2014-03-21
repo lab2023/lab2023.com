@@ -17,7 +17,9 @@
 # page "/path/to/file.html", layout: false
 #
 # With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+page '/posts/*', layout: :post
+page 'blog.html', layout: :posts
+
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -34,6 +36,9 @@
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
+
+# Pretty URLs
+activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 activate :livereload
@@ -80,13 +85,10 @@ end
 
 # Blog
 activate :blog do |blog|
-  blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
+  blog.sources = 'posts/{year}-{month}-{day}-{title}'
   blog.default_extension = '.md'
-  blog.permalink = '{title}.html'
-  blog.layout = 'blog'
+  blog.permalink = '{title}'
 end
-
-page 'posts/*', layout: :article
 
 activate :syntax
 set :markdown_engine, :redcarpet
