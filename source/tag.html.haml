@@ -1,0 +1,8 @@
+%section#posts
+%h1
+  Articles tagged '#{tagname}'
+%ul
+  - page_articles.each_with_index do |article, i|
+    %li
+      %span= article.date.strftime('%B %e, %Y')
+      = link_to article.title, article

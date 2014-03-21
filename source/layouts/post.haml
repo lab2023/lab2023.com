@@ -17,7 +17,13 @@
     .container
       .row
         .col-lg-2
-          %h5= current_page.data.date
+          - data.authors.authors.each do |t, n|
+            - if t == current_page.data.twitter
+              %h5= link_to n, 'http://twitter.com/' + t, target: '_blank'
+          %h5= current_page.data.date.strftime('%B %e, %Y')
+          %ul
+          - current_page.data.tags.each do |tag|
+            %li= link_to tag, '/tags/' + tag, target: '_blank'
         .col-lg-10
           %article
             %h1= current_page.data.title

@@ -88,6 +88,8 @@ activate :blog do |blog|
   blog.sources = 'posts/{year}-{month}-{day}-{title}'
   blog.default_extension = '.md'
   blog.permalink = '{title}'
+  blog.taglink = 'tags/{tag}'
+  blog.tag_template = 'tag.html'
 end
 
 activate :syntax

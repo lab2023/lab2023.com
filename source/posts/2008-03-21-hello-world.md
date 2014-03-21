@@ -1,6 +1,11 @@
 ---
 title: "Hello World!"
 date: 2008-03-21
+twitter: onurozgurozkan
+tags:
+  - one
+  - two
+  - three
 ---
 
 This is a sample post for design, test our new blog.

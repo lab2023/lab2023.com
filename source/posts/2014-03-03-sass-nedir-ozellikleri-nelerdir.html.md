@@ -6,17 +6,12 @@ tags:
 
 Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i teknik olarak geçmeyi başarmıştır. Nasıl geçmiş kısaca özetliyorum;
 
--Css’in değişken tanımlanılabilinen hali (Variables)
-
--Css’in tarayıcılar için yazdığımız ekstra kodları kendisi oluşturabilen hali(Mixins)
-
--Css’in girintileri fark ederek iç içe class’ları yazabilen hali (Nesting)
-
--Css dosyasında istediğimiz kodları istediğimiz yerde extend edebiliyoruz (Extend/Inheritance)
-
--Css dosyamızı parçalara ayırıp, ayırdığımız kısımları istediğimiz yerde çağırabiliyoruz (İmport)
-
--Css dosyamızda çarpma,bölme toplama vs. yapabiliyorz. (Operators)
+* Css’in değişken tanımlanılabilinen hali (Variables)
+* Css’in tarayıcılar için yazdığımız ekstra kodları kendisi oluşturabilen hali(Mixins)
+* Css’in girintileri fark ederek iç içe class’ları yazabilen hali (Nesting)
+* Css dosyasında istediğimiz kodları istediğimiz yerde extend edebiliyoruz (Extend/Inheritance)
+* Css dosyamızı parçalara ayırıp, ayırdığımız kısımları istediğimiz yerde çağırabiliyoruz (İmport)
+* Css dosyamızda çarpma,bölme toplama vs. yapabiliyorz. (Operators)
 
 Şimdi artılarını açıklamaya çalışacağım.
 
@@ -26,40 +21,44 @@ Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i tek
 
 Değişkenleri tanımlıyoruz.
 
-    $header-font-style:  Helvetica, sans-serif
-    $header-color: #000
-
+```sass
+$header-font-style:  Helvetica, sans-serif
+$header-color: #000
+```
 
 Değişkenleri kullanıyoruz.
 
-    .header
-      font: $header-font-style
-      color: $header-color
-
+```sass
+.header
+  font: $header-font-style
+  color: $header-color
+```
 
 **Nesting:** Nesne girintilerine göre kod yazmak.
 
-    #nav
-      ul
-       color: red
-      li
-       color: blue
-      a
-       color: green
-
+```sass
+#nav
+  ul
+   color: red
+  li
+   color: blue
+  a
+   color: green
+```
 
 Css çıktısı:
 
-    #nav ul {
-    color: red;
-    }
-    #nav li {
-    color: blue;
-    }
-    #nav a {
-    color: green;
-    }
-
+```css
+#nav ul {
+  color: red;
+}
+#nav li {
+  color: blue;
+}
+#nav a {
+  color: green;
+}
+```
 
 **Partials ve @import:** Kodlarımızı bölümleyip istediğimiz yerde import edebiliyoruz.
 
