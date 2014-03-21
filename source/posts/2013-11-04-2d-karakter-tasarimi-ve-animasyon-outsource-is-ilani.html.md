@@ -21,3 +21,5 @@ Merhaba,
 İlgilenen arkadaşlar bize **0 258 215 5010** nolu telefondan veya **Tayfun Öziş ERİKAN - tayfun.ozis.erikan[at]lab2023.com** adresinden konu hakkında iletişime geçebilirler.
 
  [1]: http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani
+
+[Tayfun Öziş ERİKAN](http://twitter.com/toziserikan)

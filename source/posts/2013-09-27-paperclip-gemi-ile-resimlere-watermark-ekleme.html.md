@@ -87,3 +87,5 @@ Eğer daha önce upload ettiğiniz resimlere de watermark'ınızın eklenmesini 
 rake'ini çalıştırmanız yeterlidir.
 
  [1]: https://github.com/thoughtbot/paperclip
+
+ [Hamit Türkü KAYA](http://twitter.com/hamitturkukaya)

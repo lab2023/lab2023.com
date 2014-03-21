@@ -39,3 +39,6 @@ When you create a MediumEditor object with '.editable' class, all elements (exce
 Real magic we'll use is "bind" method of HTML elements. (Also I must warn you that you must include standard jQuery libraries). When a editable class element is changed, inner code of bind method will run. This way we'll get the editable element's ***data-field-id*** and concatenate it with "#post_" string.
 
 Then we set the value of "#post_element" with editable class element's inner HTML. If you keep the names of hidden element and editable section same, you get a polymorphic synchronization. So you can use multiple Medium Editor input fields.
+
+
+[Ahmet Sezgin DURAN](http://twitter.com/@marjinal1st)

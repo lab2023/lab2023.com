@@ -95,3 +95,5 @@ Teklifinizin 2. aşamaya geçmesi halinde proje detaylarını sizinle paylaşaca
  [11]: http://www.imdb.com/media/rm285643776/tt0479952
  [12]: http://www.imdb.com/media/rm235312128/tt0479952
  [13]: http://www.lab2023.com/wp-content/uploads/2013/10/3d_modelleme_ve_animasyon_isleri_outsource.pdf
+
+[Tayfun Öziş ERİKAN](http://twitter.com/toziserikan)
