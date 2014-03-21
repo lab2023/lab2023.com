@@ -1,0 +1,207 @@
+%section#our-works
+  .container.contents
+    .row
+      .col-lg-8.col-lg-offset-2
+        %h1.title Our Works
+        %p.extra
+          We are a team of marketers, designers and developers.
+          Clients hire us to develop their web and mobile apps.
+          We sketch, prototype, make and ship working software.
+          After shipping software, we maintenance and measure
+          use of software. See some examples below.
+        %p
+          = link_to 'https://www.github.com/lab2023/playbook', target: :blank do
+            Read more in our playbook
+            %i.fa.fa-arrow-circle-right
+
+  .contents-alternate
+    .container.contents
+      .row
+        .col-lg-8.col-lg-offset-2
+          %div.work-item
+            %h3 Bulutfon Telecommunications Inc.
+            %p
+              Bulutfon is internet based phone provider which authorized by public authority.
+              Our services are: voip calls, ip pbx, ivr, voice mail, fax, voice recording and development tools
+              for developers (API, SDK). All software infrastructure of Bulutfon are developed by Lab2023.
+            %p
+              = link_to 'https://www.bulutfon.com/', target: :blank do
+                Visit project
+                %i.fa.fa-arrow-circle-right
+            = link_to 'https://www.bulutfon.com/', target: :blank do
+              = image_tag 'works/bulutfon.png', class: 'img-responsive'
+
+          %hr.divider/
+
+          %div.work-item
+            %h3 Diagnoscope Symptom Checker Apps
+            %p
+              Diagnoscope is a symptom checker application. It analyzes the symptoms that you selected,
+              compares them with those of any known disease, informs you about your health status and
+              directs you to the appropriate specialist. We develop web, iPhone, iPad apps for end
+              users and admin panel for admins.
+            %p
+              = link_to 'https://www.diagnoscope.com/', target: :blank do
+                Visit project
+                %i.fa.fa-arrow-circle-right
+            = link_to 'https://www.diagnoscope.com/', target: :blank do
+              = image_tag 'works/diagnoscope.png', class: 'img-responsive'
+
+          %p.extra
+            = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+              %strong Want us to work for you?
+              Click here to hire us
+
+%section#our-team
+  .container.contents
+    .row
+      .col-lg-8.col-lg-offset-2
+        %h1.title Our Team
+        %p.extra
+          lab2023 was founded in 2003.
+          We care about quality, craft, and disciplined experimentation.
+          %br/
+          We are active contributors to open source software.
+        %p
+          = link_to 'https://github.com/lab2023', target: :blank do
+            Use our open source software
+            %i.fa.fa-arrow-circle-right
+          |
+          = link_to 'https://github.com/kebab-project', target: :blank do
+            Visit our open software toolbox
+            %i.fa.fa-arrow-circle-right
+
+    .row
+      .col-lg-10.col-lg-offset-1
+        %ul.team-members
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/onurozgurozkan', target: :blank do
+              .image-filter
+              = image_tag 'team/onur-ozgur-ozkan.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Onur Ozgur OZKAN | Co-founder
+              %p.content
+                Co-founder of Lab2023 information technologies inc. In spare time, he write code and remaining which all time,
+                he make all works, except to coding.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/toziserikan', target: :blank do
+              .image-filter
+              = image_tag 'team/tayfun-ozis-erikan.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Tayfun Ozis ERIKAN | Co-founder &amp; CTO
+              %p.content
+                Co-founder of Lab2023 information technologies inc. He is like Ruby, Ruby on Rails, JavaScript, CoffeeScript,
+                Node.js, Sencha Touch, ExtJS,HTML5, CSS3, Sass, Compass for develop mobile and web applications.
+                Also he is interested in swimming, playing guitar, taking photography and extreme sports.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/baygunm', target: :blank do
+              .image-filter
+              = image_tag 'team/murat-kemal-baygun.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Murat Kemal BAYGUN | COO
+              %p.content
+                He liked to software development applications and leadership.
+                He always being in favor of development lean software. He has a daughter and son.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/dilekmuhammet', target: :blank do
+              .image-filter
+              = image_tag 'team/muhammet-dilek.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Muhammet DILEK | Web &amp; Mobile Developer
+              %p.content
+                He liked to development application with Ruby on Rails. He extremely like Apple products.
+                In spare time, he write blogging.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/hamitturkukaya', target: :blank do
+              .image-filter
+              = image_tag 'team/hamit-turku-kaya.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Hamit Turku KAYA | Web &amp; Mobile Developer
+              %p.content
+                He know Ruby on Rails, PHP, Objective - C and Javascript Frameworks.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/Sevliya', target: :blank do
+              .image-filter
+              = image_tag 'team/serdar-yagci.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Serdar YAGCI | Web Developer
+              %p.content
+                She know PHP, Objective - C and Javascript Frameworks. He is photographer and traveler.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/safiyesepetci', target: :blank do
+              .image-filter
+              = image_tag 'team/safiye-sepetci.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Safiye SEPETCI | Web Developer
+              %p.content
+                She liked to use front-end technologies like  HTML5, CSS3, Haml, Sass, Javascript.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/leylakapi', target: :blank do
+              .image-filter
+              = image_tag 'team/leyla-kapi.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Leyla KAPI | Web Developer
+              %p.content
+                She liked to use front-end technologies like  HTML5, CSS3, Haml, Sass, Javascript.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/marjinal1st', target: :blank do
+              .image-filter
+              = image_tag 'team/ahmet-sezgin-duran.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Ahmet Sezgin DURAN | Web Developer
+              %p.content
+                He interested in high level programming languages like Ruby, Phyton and Java. He supported Free Software
+                and users of GNU/Linux. He liked to coding infrastructure, development games and play game.
+                He is a complete Otaku.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/klapancg', target: :blank do
+              .image-filter
+              = image_tag 'team/clara-isabel-pantoja.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Clara Isabel PANTOJA | Graphic Designer
+              %p.content
+                She liked to use graphic design trends and popular design programs. She interest ui, ux etc. topics
+        %p.extra
+          = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+            %strong Want to join our team?
+            Click here to apply
+
+
+%section#contact-us.contents-alternate
+  .container.contents
+    %h1 Contact Us
+    %h4 Lab2023 Information Technologies Inc.
+    %address
+      Pamukkale Teknokent D-Block 116 Denizli / TURKEY
+      %br/
+      hello@lab2023.com | +90 850 885 0 522
+      %br/
+      %i.fa.fa-map-marker
+      37.738864, 29.094248
+
+    %ul.social
+      %li{'data-toggle' => 'tooltip', title: 'GitHub'}
+        = link_to 'https://github.com/lab2023', target: :blank do
+          %i.fa.fa-github-square.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Twitter'}
+        = link_to 'https://twitter.com/lab2023', target: :blank do
+          %i.fa.fa-twitter-square.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Facebook'}
+        = link_to 'https://www.facebook.com/lab2023', target: :blank do
+          %i.fa.fa-facebook-square.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'YouTube'}
+        = link_to 'http://www.youtube.com/user/thelab2023', target: :blank do
+          %i.fa.fa-youtube-square.fa-3x
+    %p.extra
+      = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+        %strong Want us to work for you?
+        Click here to hire us
