@@ -10,4 +10,4 @@ tags: git, git-flow, github, huboard, proje yönetimi, semver
 
 <iframe width="960" height="720" src="http://www.youtube.com/embed/Vm3jWvnZX4o" frameborder="0" allowfullscreen></iframe>
 
- [Murat Kemal BAYGUN](http://twitter.com/muratkemalbaygun)
+[Tayfun Öziş ERİKAN](http://twitter.com/toziserikan)
