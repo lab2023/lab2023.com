@@ -14,3 +14,10 @@ gem 'middleman-deploy', '~> 0.2.3'
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 
 gem 'bootstrap-sass', '~> 3.1.1.0'
+
+gem 'middleman-blog', '~> 3.5.1'
+gem 'middleman-syntax'
+gem 'redcarpet'
+
+# For feed.xml.builder
+gem 'builder', '~> 3.0'
