@@ -77,3 +77,18 @@ activate :deploy do |deploy|
   # deploy.remote = "custom-remote" # remote name or git url, default: origin
   # deploy.branch = "custom-branch" # default: gh-pages
 end
+
+# Blog
+activate :blog do |blog|
+  blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
+  blog.default_extension = '.md'
+  blog.permalink = '{title}.html'
+  blog.layout = 'blog'
+end
+
+page 'posts/*', layout: :article
+
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+set :haml, { ugly: true }

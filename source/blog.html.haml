@@ -1,0 +1,6 @@
+%h1 lab2023
+
+- page_articles.each_with_index do |article, i|
+  %h2
+    %span= article.date.strftime('%d/%m/%y')
+    = link_to article.title, article, target: '_blank'
