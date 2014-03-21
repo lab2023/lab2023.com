@@ -61,7 +61,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  #activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
@@ -74,6 +74,6 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
-  # deploy.remote = "custom-remote" # remote name or git url, default: origin
-  # deploy.branch = "custom-branch" # default: gh-pages
+  deploy.remote = 'git@github.com:lab2023/lab2023.com.git'
+  deploy.branch = 'gh-pages'
 end
