@@ -8,7 +8,7 @@ tags:
 
 Ekmek kırıntısı anlamına gelen breadcrumbs web sayfalarında kullanıcının bulunduğu yeri rahat takip edebilsin ve gezinebilsin diye koyulan navigasyon sistemidir.
 
-Ruby on Rails'de bunun için geliştirilen [breadcrumbs_on_rails][1] geminin kullanımını anlatacağım.
+Ruby on Rails'de bunun için geliştirilen [breadcrumbs\_on\_rails](https://github.com/weppos/breadcrumbs_on_rails) geminin kullanımını anlatacağım.
 
 Öncelikle
 

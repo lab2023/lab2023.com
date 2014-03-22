@@ -12,11 +12,9 @@ tags:
 
 İlk olarak github hesabımızda repository/new yada create a new repo'ya tıklayarak repomuzu oluşturuyoruz.
 
-![enter image description here][1]
+![Newrepo](articles/2013-08-26-newrepo.png)
 
 Dizinimizi oluşturduktan sonra sıra var olan dosyalarımızı uzak depoya yollamaya geliyor.
-
-![enter image description here][2]
 
 Yukarıdaki adımları console yada terminalimizden sırasıyla uyguladığımızda ilk olarak
 
@@ -45,5 +43,3 @@ bu satırda uzak depomuzun yolunu yazıyoruz.
 
 bu son satırımızda dizimizi uzak depoya taşıyor.
 
- [1]: http://www.lab2023.com/wp-content/uploads/2013/08/newrepo.png
- [2]: http://www.lab2023.com/wp-content/uploads/2013/08/create.png

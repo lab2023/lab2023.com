@@ -97,10 +97,8 @@ Controller içinde sadece create methodunun bulunması yeterli tabi dropzone iç
     end
 
 
-Toplamda 10 satırda projelerinize sürükle bırak dosya yükleme formu yapabilirsiniz. ![dropzonejs][1]
+Toplamda 10 satırda projelerinize sürükle bırak dosya yükleme formu yapabilirsiniz. ![dropzonejs](articles/2013-07-06-dropzone.png)
 
 5 ay sonra gelen güncelleme:
 
 Silme işlemi eklendi. Kodumuz silme işleminide ekleyince 10 satırı geçti kusura bakmayın artık. :D ileride demo uygulama yapabilirim validasyon mesajlarını gösteren serverda thumnail oluşunca güncellemeli falan..
-
- [1]: http://www.lab2023.com/wp-content/uploads/2013/07/dropzone.png

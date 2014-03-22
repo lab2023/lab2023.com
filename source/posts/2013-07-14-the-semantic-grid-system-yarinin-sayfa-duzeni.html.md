@@ -53,7 +53,7 @@ En basit olarak şöyle bir **sass** kodundan
 
 Hem **fixed** hem **fluid** olarak bu düzene ulaşabilirsiniz.
 
-![semantic html5][2]
+![semantic html5](articles/2013-07-14-html5-semantic.jpg)
 
 Gelelim asıl konuya yeni [bourbon][3] adlı bie mixin kütüphanesi çıktı aynı şekilde bu kütüphanenin [neat][4] adında şirinmi şirin mixinler içeren **Semantik** grid sistemi var üstteki konuyla ilgilendiyseniz bakmanızı (kullanmanızı) tavsiye ederiz.
 
