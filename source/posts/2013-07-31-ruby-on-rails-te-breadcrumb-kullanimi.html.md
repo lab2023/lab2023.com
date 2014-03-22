@@ -1,7 +1,9 @@
 ---
 title: Ruby on Rails'te Breadcrumb kullanımı
-date: 2013-07-31 14:26 UTC
+date: 2013-07-31
+twitter: hamitturkukaya
 tags:
+  - breadcrumbs
 ---
 
 Ekmek kırıntısı anlamına gelen breadcrumbs web sayfalarında kullanıcının bulunduğu yeri rahat takip edebilsin ve gezinebilsin diye koyulan navigasyon sistemidir.
@@ -73,5 +75,3 @@ Ayrıca farklı stillerde görüntülemek için kendiniz manuel builderlar yazab
 şeklinde kullanabilirsiniz.
 
  [1]: https://github.com/weppos/breadcrumbs_on_rails
-
-[Hamit Türkü KAYA](http://twitter.com/hamitturkukaya)

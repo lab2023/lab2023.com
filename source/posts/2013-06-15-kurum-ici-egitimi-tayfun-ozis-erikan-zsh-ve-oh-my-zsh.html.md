@@ -1,7 +1,13 @@
 ---
 title: Kurum İçi Eğitimi - Tayfun Öziş ERİKAN - ZSH ve Oh-my-zsh
-date: 2013-06-15 19:08 UTC
-tags: bash, console, oh-my-zsh, shell, zsh
+date: 2013-06-15
+twitter: toziserikan
+tags:
+  - bash
+  - console
+  - oh-my-zsh
+  - shell
+  - zsh
 ---
 
 *   Tarih : 06.06.2013
@@ -9,5 +15,3 @@ tags: bash, console, oh-my-zsh, shell, zsh
 *   Konu : ZSH ve Oh-my-zsh
 
 <iframe width="960" height="720" src="http://www.youtube.com/embed/QVhvCKGZwhE" frameborder="0" allowfullscreen></iframe>
-
-[Tayfun Öziş ERİKAN](http://twitter.com/toziserikan)

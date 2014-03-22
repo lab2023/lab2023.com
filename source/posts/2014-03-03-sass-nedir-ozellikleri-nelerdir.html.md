@@ -1,8 +1,11 @@
 ---
 title: Sass Nedir? Özellikleri nelerdir?
 date: 2014-03-03
+twitter: safitci
 tags:
+  - one
   - two
+  - three
 ---
 
 Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i teknik olarak geçmeyi başarmıştır. Nasıl geçmiş kısaca özetliyorum;
@@ -127,5 +130,3 @@ Css çıktısı:
      float: right;
      width: 31.25%;
       }
-
-[Safiye Sepetçi](http://twitter.com/safiyesepetci)

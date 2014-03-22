@@ -1,7 +1,13 @@
 ---
 title: Forkladığınız GitHub reposunu ana repo ile güncel tutmak
-date: 2013-06-17 15:47 UTC
-tags: branch, fork, git, github, remote
+date: 2013-06-17
+twitter: toziserikan
+tags:
+  - branch
+  - fork
+  - git
+  - github
+  - remote
 ---
 
 Bildiginiz gibi playbook, rails-template v.b. open source projelerimizi github üzerinden güncellemeye devam ediyoruz.
@@ -22,5 +28,3 @@ Playbook' u ele alırsak. Ben kendi bilgisayarıma **lab2023/playbook**'u clonla
 remote branch'ını ekledim. Artık orjinal playbook' da yapılan diğer değişiklikleri bu branch'a fetch yapıp kendi master branch'ına merge ederek playbook-fork repomun güncel kalmasını sağlayabiliyorum.
 
 İyi çalışmalar.
-
-[Tayfun Öziş ERİKAN](http://twitter.com/toziserikan)

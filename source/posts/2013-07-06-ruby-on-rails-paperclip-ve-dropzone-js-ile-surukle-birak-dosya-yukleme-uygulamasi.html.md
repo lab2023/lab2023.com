@@ -1,7 +1,10 @@
 ---
 title: Ruby on Rails, Paperclip ve Dropzone.js ile sürükle bırak dosya yükleme uygulaması
-date: 2013-07-06 12:31 UTC
+date: 2013-07-06
+twitter: yunusozcan
 tags:
+  - paperclip
+  - dropzone
 ---
 
 **Dropzone.js**
@@ -101,5 +104,3 @@ Toplamda 10 satırda projelerinize sürükle bırak dosya yükleme formu yapabil
 Silme işlemi eklendi. Kodumuz silme işleminide ekleyince 10 satırı geçti kusura bakmayın artık. :D ileride demo uygulama yapabilirim validasyon mesajlarını gösteren serverda thumnail oluşunca güncellemeli falan..
 
  [1]: http://www.lab2023.com/wp-content/uploads/2013/07/dropzone.png
-
-[Yunus ÖZCAN](http://twitter.com/yunusozcan)

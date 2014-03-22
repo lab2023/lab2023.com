@@ -1,7 +1,10 @@
 ---
-title: PHP 'nin Mavi Fili, PHP - IST
-date: 2013-06-25 19:35 UTC
-tags: php istanbul topluluğu, php-ist
+title: PHP'nin Mavi Fili, PHP - IST
+date: 2013-06-25
+twitter: coskuntekin
+tags:
+  - php istanbul topluluğu
+  - php-ist
 ---
 
 Php 'nin yeni mavi fili 6 temmuz da İstanbul'da uçmaya hazırlanıyor. Bu yıl ilk defa yapılacak olan etkinlik, bizleri; php dunyasında ki son gelişmeleri, en yeni teknolojileri, frameworkleri enine boyuna anlatmaya ve tartışmaya çağırıyor.
@@ -34,5 +37,4 @@ Etkinliğe ücretsiz kayıt olmak icin [buraya][8] tıklayabilirsiniz. Bizden et
  [7]: http://shiftdelete.net/
  [8]: http://phpist.eventbrite.com/
 
-[Coşkun TEKİN](http://twitter.com/coskuntekin)
 

@@ -1,7 +1,11 @@
 ---
 title: Taps ile MySQL' den PostgreSQL' e Veri Aktarma
-date: 2013-09-10 17:10 UTC
-tags: mysql, postresgl, taps
+date: 2013-09-10
+twitter: dilekmuhammet
+tags:
+  - mysql
+  - postresgl
+  - taps
 ---
 
 Merhabalar,
@@ -37,5 +41,4 @@ Başka bir terminal açıp aşağıdaki kodu çalıştırdığımızda MySQL ver
  [1]: https://github.com/ricardochimal/taps/
  [2]: https://github.com/ddollar/valkyrie
 
-[Muhammet DİLEK](http://twitter.com/muhammetdilek)
 

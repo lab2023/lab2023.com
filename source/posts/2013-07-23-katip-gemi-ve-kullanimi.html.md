@@ -1,7 +1,9 @@
 ---
 title: Katip gemi ve kullanımı
-date: 2013-07-23 17:32 UTC
+date: 2013-07-23
+twitter: baygunm
 tags:
+  - katip
 ---
 
 ## Katip nedir?
@@ -67,5 +69,3 @@ ve işte bu kadar. Proje dizininizde, commit' lere dayanarak etiketlere göre gr
 #### Bağlantılar
 
 <a href="https://github.com/kebab-project/katip" target="_blank">Kaynak kodu</a> <a href="http://github.com/kebab-project/katip/issues" target="_blank">Hata ve geri bildirimler</a>
-
-  [Murat Kemal BAYGUN](http://twitter.com/muratkemalbaygun)

@@ -1,7 +1,9 @@
 ---
 title: Rails Urlden Namespace Gizleme
-date: 2013-06-17 01:33 UTC
+date: 2013-06-17
+twitter: dilekmuhammet
 tags:
+  - namespace
 ---
 
 Urlden namespace gizlemek için `namespace :admin` yerine `scope :module => 'admin'` kulanıyoruz. Örneğin;
@@ -27,5 +29,3 @@ Oluşacak url helper `posts_path` şeklinde olacaktır.
 Kaynak: http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing
 
 Kolaylıklar...
-
-[Muhammet DİLEK](http://twitter.com/muhammetdilek)

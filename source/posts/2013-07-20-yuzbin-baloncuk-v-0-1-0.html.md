@@ -1,7 +1,11 @@
 ---
 title: Yuzbin Baloncuk  (v.0.1.0)
-date: 2013-07-20 20:53 UTC
+date: 2013-07-20
+twitter: coskuntekin
 tags:
+  - haml
+  - sass
+  - compass
 ---
 
 lab2023 ‘ un logosundan baloncuk cıkartabilir miyiz dedik ve basladik kodlamaya. Eger sizde bunu evde denemek istiyorsaniz [buradan][1] kodlara ulasabilirsiniz.
@@ -66,5 +70,3 @@ Animasyonun kaç kez oynayacagini gosterir. infinite ile sonsuz bir tekrar olust
 Tesekkur Ederim.
 
  [1]: https://github.com/coskuntekin/beaker-bubbles
-
- [Coşkun TEKİN](http://twitter.com/coskuntekin)

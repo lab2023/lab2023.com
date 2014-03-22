@@ -1,6 +1,7 @@
 ---
 title: Kurumiçi Eğitim - Ahmet UREL - XAF ile kütüphane yazılımı
 date: 2013-05-14
+twitter: yazemo
 tags:
   - xaf
 ---
@@ -22,5 +23,3 @@ XAF hakkında daha ayrıntılı bilgi için: [www.devexpress.com/xaf][1] ve <htt
 <iframe width="960" height="720" src="http://www.youtube.com/embed/S4cRAPjgQjg" frameborder="0" allowfullscreen></iframe>
 
  [1]: http://www.devexpress.com/xaf
-
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)

@@ -1,7 +1,14 @@
 ---
 title: 2D Karakter Tasarımı ve Animasyon Outsource İş İlanı
-date: 2013-11-04 18:53 UTC
-tags: 2d, animation, design, iş teklifi, motion graphic, outsource
+date: 2013-11-04
+twitter: toziserikan
+tags:
+  - 2d
+  - animation
+  - design
+  - iş teklifi
+  - motion graphic
+  - outsource
 ---
 
 Merhaba,
@@ -21,5 +28,3 @@ Merhaba,
 İlgilenen arkadaşlar bize **0 258 215 5010** nolu telefondan veya **Tayfun Öziş ERİKAN - tayfun.ozis.erikan[at]lab2023.com** adresinden konu hakkında iletişime geçebilirler.
 
  [1]: http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani
-
-[Tayfun Öziş ERİKAN](http://twitter.com/toziserikan)

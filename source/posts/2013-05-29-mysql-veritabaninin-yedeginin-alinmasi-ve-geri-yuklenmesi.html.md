@@ -1,7 +1,12 @@
 ---
 title: MySQL Veritabanının Yedeğinin Alınması ve Geri Yüklenmesi
-date: 2013-05-29 12:02 UTC
-tags: backup, mysql, mysqldump, restore
+date: 2013-05-29
+twitter: onurozgurozkan
+tags:
+  - backup
+  - mysql
+  - mysqldump
+  - restore
 ---
 
 Bu yazımızda kısa kısa MySQL veritabanını yedek almak ve geri yüklemek için aşağıdaki komutları kullanıyoruz.
@@ -32,6 +37,4 @@ Bu yazımızda kısa kısa MySQL veritabanını yedek almak ve geri yüklemek i�
     mysql -u root -ptmppassword sugarcrm < /tmp/sugarcrm.sql
 
     mysql -u root -p[root_password] [database_name] < dumpfilename.sql
-
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)
 

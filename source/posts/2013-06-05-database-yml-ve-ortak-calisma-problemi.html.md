@@ -1,7 +1,9 @@
 ---
 title: database.yml ve ortak çalışma problemi
-date: 2013-06-05 23:44 UTC
-tags: database.yml
+date: 2013-06-05
+twitter: baygunm
+tags:
+  - database.yml
 ---
 
 Merhabalar,
@@ -29,5 +31,3 @@ Herkesin lokaldeki şifleri farklı olduğundan database.yml gibi veritabanı ş
 
 Saygılarımla,
 İyi çalışmalar.
-
-[Murat Kemal BAYGUN](http://twitter.com/muratkemalbaygun)

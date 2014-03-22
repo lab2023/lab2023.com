@@ -1,7 +1,14 @@
 ---
 title: Rails'da before_filter, after_filter, around_filter, prepend_before_filter, prepend_after_filter, prepend_filter
-date: 2013-06-12 08:53 UTC
-tags: after_filter, around_filter, before_filter, prepend_after_filter, prepend_before_filter, prepend_filter
+date: 2013-06-12
+twitter: onurozgurozkan
+tags:
+  - after_filter
+  - around_filter
+  - before_filter
+  - prepend_after_filter
+  - prepend_before_filter
+  - prepend_filter
 ---
 
 Merhabalar,
@@ -285,6 +292,4 @@ Bu yazımızda aşağıdaki filterların kullanımına dair örnekler vereceğiz
 
 
 Umarım sıralamayı anlamanıza yardımcı olmuştur.
-
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)
 

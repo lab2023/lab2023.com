@@ -1,7 +1,9 @@
 ---
 title: Rails Uygulamalarını Heroku'da Çalıştırmak
-date: 2013-07-31 12:41 UTC
+date: 2013-07-31
+twitter: hamitturkukaya
 tags:
+  - heroku
 ---
 
 [Heroku][1] 0 ayar ile web uygulamalarınızı üstünde kolaylıkla çalıştırabileceğiniz bir servistir.

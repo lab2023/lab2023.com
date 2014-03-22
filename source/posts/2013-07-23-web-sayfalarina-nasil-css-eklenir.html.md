@@ -1,7 +1,9 @@
 ---
 title: Web sayfalarına nasıl css eklenir?
-date: 2013-07-23 12:58 UTC
+date: 2013-07-23
+twitter: safitci
 tags:
+  - css
 ---
 
 **Web Sayfalarına Css eklemek**
@@ -81,6 +83,3 @@ Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönünde
     @import “footer.css”;
     </style>
     </head>
-
-
-[Safiye SEPETÇİ](http://twitter.com/safiyesepetci)

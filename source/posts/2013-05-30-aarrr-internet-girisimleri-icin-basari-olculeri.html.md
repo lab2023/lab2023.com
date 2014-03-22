@@ -1,7 +1,9 @@
 ---
 title: AARRR İnternet girişimleri için başarı ölçüleri
-date: 2013-05-30 00:39 UTC
+date: 2013-05-30
+twitter: onurozgurozkan
 tags:
+  - aarrr
 ---
 
 Bu yazımda internet girişimleri için başarılı olup olmadığının ölçümü için kullanılan AARRR yönetimini anlatacağım. Eğer hedef yoksa başarı veya başarısızlıkta yoktur. İnternette yapılan bir girişimin ölçülmemesi veya ölçülememesi diye bir durum yoktur. Maalesef sektörde özellikle SEO, Sosyal medya yönetimi yapan firmalardan aşağıdaki gibi cümleleri çok sık duydum.
@@ -60,5 +62,3 @@ AARRR, Dave McClure tarafından geliştirilen 5 aşamadan oluşan ve her aşaman
  [3]: http://www.ustream.tv/recorded/5336115
  [4]: http://www.knowledgevision.com/aarrr_metrics
 
-
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)

@@ -1,7 +1,10 @@
 ---
 title: Rails Path İle Url Helper Arasındaki Fark
-date: 2013-06-28 16:52 UTC
+date: 2013-06-28
+twitter: dilekmuhammet
 tags:
+  - rails url
+  - rails path
 ---
 
 Merhabalar;
@@ -29,5 +32,3 @@ Bu helperında html çıktısı şu şekilde;
 Aslında bu iki çıktı herşeyi anlatıyor bize. `_url` helper yönlendirmek istediğimiz yolun başına şu anki domani ekleyerek çıktı üretirken `_path` sadece yolu çıktı olarak vermiştir. Bu yüzden view' larda sayfa boyutunu arttırmamak için `_path` kullanıyoruz. Sonuçta `<a href="http://routing.dev/users">lab2023</a>` ile `<a href="/users">lab2023</a>` byte farkı var. Peki `_url` helperını nerede kullanacağız ? Bu heleperıda contollerda `redirect_to` larda kullanıyoruz. Çünkü HTTP standartları 300 kodlarında yani yönlendirmelerde Header içerisndeki Location a verilen url' in tam olmasını zorunlu kılmaktadır.
 
 İyi çalışmalar dilerim.
-
-[Muhammet DİLEK](http://twitter.com/muhammetdilek)

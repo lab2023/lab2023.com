@@ -1,7 +1,9 @@
 ---
 title: The Semantic Grid System, Yarının Sayfa Düzeni
-date: 2013-07-14 23:02 UTC
+date: 2013-07-14
+twitter: yunusozcan
 tags:
+  - samantic grid system
 ---
 
 **HTML5** bildiğiniz gibi semantik etiketlerle birlikte geldi ama hala tam anlamıyla kullanmıyoruz. başlayacağımız nokta tam olarak grid sistemleri olacak 960.gs vs.. tam olarak bu akıma uymadıklarını düşünüyordum ki başkası daha önce düşünmüş less ve **sass** **mixin** kütüphanesi olarak [semantic grid sistemi][1] oluşturmuş. son zamanlarda pek güncellenmemiş olsada halen kullanılabilir durumda.
@@ -59,5 +61,3 @@ Gelelim asıl konuya yeni [bourbon][3] adlı bie mixin kütüphanesi çıktı ay
  [2]: http://www.lab2023.com/wp-content/uploads/2013/07/html5-semantic.jpg
  [3]: http://bourbon.io/
  [4]: http://neat.bourbon.io/
-
- [Yunus ÖZCAN](http://twitter.com/yunusozcan)

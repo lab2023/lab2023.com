@@ -1,7 +1,9 @@
 ---
 title: Using Medium Editor as Input Field in Rails
-date: 2013-12-10 21:06 UTC
+date: 2013-12-10
+twitter: marjinal1st
 tags:
+  - medium editor
 ---
 
 Medium Editor is seriously a stunning WYSIWYG editor. Simple, stylish, easy to use… But you can also use it as an input field, with some Javascript magic :)
@@ -40,5 +42,3 @@ Real magic we'll use is "bind" method of HTML elements. (Also I must warn you th
 
 Then we set the value of "#post_element" with editable class element's inner HTML. If you keep the names of hidden element and editable section same, you get a polymorphic synchronization. So you can use multiple Medium Editor input fields.
 
-
-[Ahmet Sezgin DURAN](http://twitter.com/@marjinal1st)

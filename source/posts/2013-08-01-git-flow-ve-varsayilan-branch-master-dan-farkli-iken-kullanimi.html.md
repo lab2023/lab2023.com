@@ -1,7 +1,9 @@
 ---
 title: git-flow ve varsayılan branch master'dan farklı iken kullanımı
-date: 2013-08-01 21:06 UTC
+date: 2013-08-01
+twitter: baygunm
 tags:
+  - git-flow
 ---
 
 Projelerde birden fazla branch kullanımı çok doğal. Zaman zaman varsayılan branch master'dan farklı da olabiliyor. Bu gibi durumlarda, projeyi kendi üzerine yeni çeken kişi, git-flow initialize etmek istediğinde hata alıyor. Ancak bu problemi aşmak ve git-flow'u kullanabilmek mümkün.
@@ -57,5 +59,3 @@ En son olarak develop branch'ını, tekrardan checkout edelim.
 
 
 Hepsi bu kadar. Artık git-flow ve nimetlerinden faydalanabilirsiniz.
-
-[Murat Kemal BAYGÜN](http://twitter.com/muratkemalbaygun)

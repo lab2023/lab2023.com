@@ -1,7 +1,9 @@
 ---
 title: Ruby On Rails Helper İçerisinde Haml Kullanmak
-date: 2013-06-22 17:49 UTC
+date: 2013-06-22
+twitter: dilekmuhammet
 tags:
+  - haml
 ---
 
 Ruby On Rails `Helper` dosyaları içerisinde `Haml` kullanmak için
@@ -43,5 +45,3 @@ Text olarak çıktı verir.
 `haml_tag` ile `span` tag' ı oluşturup `class:` parametresi ile class veriyoruz. `haml_concat` ile de span tag' ı içerisine yazacağımız text' i oluşturuyoruz.
 
 Kolay gelsin...
-
-[Muhammet DİLEK](http://twitter.com/muhammetdilek)

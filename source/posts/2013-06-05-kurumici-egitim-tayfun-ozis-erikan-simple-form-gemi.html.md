@@ -1,7 +1,9 @@
 ---
 title: Kurumiçi Eğitim - Tayfun ÖZİŞ ERİKAN - Simple form gemi
-date: 2013-06-05 22:09 UTC
-tags: rails, simple form
+date: 2013-06-05
+twitter: toziserikan
+tags:
+  - simple form
 ---
 
 
@@ -11,4 +13,3 @@ tags: rails, simple form
 
 <iframe width="1280" height="720" src="http://www.youtube.com/embed/UPROc3DXKtQ" frameborder="0" allowfullscreen></iframe>
 
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)

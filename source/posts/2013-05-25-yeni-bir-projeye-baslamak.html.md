@@ -1,7 +1,10 @@
 ---
 title: Yeni bir projeye başlamak
-date: 2013-05-25 12:31 UTC
+date: 2013-05-25
+twitter: onurozgurozkan
 tags:
+  - github
+  - huboard
 ---
 
 Firma olarak yeni bir projeye başlarken olmazsa olmaz birkaç listemiz var. Aklıma geldikçe bu dökümanı güncelleyeceğim.
@@ -30,6 +33,3 @@ Firma olarak yeni bir projeye başlarken olmazsa olmaz birkaç listemiz var. Akl
 *   Stagging ve production için sunucu kurulur. Bu işlem daha ilk kod yazılması ile yapılır.
 
 Aklıma gelenler şimdilik bu kadar önerilerinize açığım.
-
-
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)

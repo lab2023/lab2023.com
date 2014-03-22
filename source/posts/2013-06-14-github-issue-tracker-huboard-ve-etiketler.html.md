@@ -1,7 +1,10 @@
 ---
 title: Github Issue Tracker & Huboard ve Etiketler
-date: 2013-06-14 00:10 UTC
+date: 2013-06-14
+twitter: onurozgurozkan
 tags:
+  - github
+  - huboard
 ---
 
 Merhabalar,
@@ -59,5 +62,3 @@ Ekibin birbirine sorduğu sorulardır.
  [1]: https://github.com/
  [2]: http://huboard.com/
  [3]: http://www.lab2023.com/wp-content/uploads/2013/06/github-etiketleri-226x300.png
-
-[Onur Özgür ÖZKAN](http://twitter.com/onurozgurozkan)
