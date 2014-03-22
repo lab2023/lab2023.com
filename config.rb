@@ -20,6 +20,7 @@
 page '/posts/*', layout: :post
 page 'blog.html', layout: :posts
 page 'tag/*', layout: :posts
+page '/feed.xml', layout: false
 
 #
 # A path which all have the same layout
