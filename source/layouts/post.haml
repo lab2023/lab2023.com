@@ -23,7 +23,7 @@
           %h5= current_page.data.date.strftime('%B %e, %Y')
           %ul
           - current_page.data.tags.each do |tag|
-            %li= link_to tag, '/tag/' + tag
+            %li= link_to tag, tag_path(tag)
         .col-lg-10
           %article
             %h1= current_page.data.title

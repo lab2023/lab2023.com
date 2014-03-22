@@ -2,4 +2,4 @@
 - page_articles.each_with_index do |article, i|
   %article
     %span= article.date.strftime('%B %e, %Y')
-    = link_to article.title, article
+    = link_to article.title, article.url
