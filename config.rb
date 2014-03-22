@@ -17,7 +17,10 @@
 # page "/path/to/file.html", layout: false
 #
 # With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+page '/posts/*', layout: :post
+page 'blog.html', layout: :posts
+page 'tag/*', layout: :posts
+
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -34,6 +37,9 @@
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
+
+# Pretty URLs
+activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 activate :livereload
@@ -77,3 +83,17 @@ activate :deploy do |deploy|
   deploy.remote = 'git@github.com:lab2023/lab2023.com.git'
   deploy.branch = 'gh-pages'
 end
+
+# Blog
+activate :blog do |blog|
+  blog.sources = 'posts/{year}-{month}-{day}-{title}'
+  blog.default_extension = '.md'
+  blog.permalink = '{title}'
+  blog.taglink = 'tag/{tag}'
+  blog.tag_template = 'tag.html'
+end
+
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+set :haml, { ugly: true }
