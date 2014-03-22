@@ -1,7 +1,7 @@
 ---
 title: PHP'nin Mavi Fili, PHP - IST
 date: 2013-06-25
-twitter: coskuntekin
+twitter: onurozgurozkan
 tags:
   - php istanbul topluluğu
   - php-ist
