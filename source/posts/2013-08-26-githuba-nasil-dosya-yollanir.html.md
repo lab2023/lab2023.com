@@ -1,7 +1,7 @@
 ---
 title: Github'a nasıl dosya yollanir?
 date: 2013-08-26
-twitter: safitci
+twitter: safiyesepetci
 tags:
   - github
 ---

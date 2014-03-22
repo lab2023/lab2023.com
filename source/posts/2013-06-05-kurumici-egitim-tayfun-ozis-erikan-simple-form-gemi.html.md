@@ -6,7 +6,6 @@ tags:
   - simple form
 ---
 
-
 *   Tarih : 24.05.2013
 *   Konuşmacı : Tayfun ÖZİŞ ERİKAN
 *   Konu : SimpleForm Gemi

@@ -12,9 +12,9 @@ XAF (eXpress Application Framework), .NET platformunda DevExpress firması taraf
 
 Örnek projede anıtılan modül ve kavramlar:
 
-*   Model ve view'ları sıfır kodla ve aynı ekranda oluşturmamızı ve özelleştirmemizi sağlayan Domain Object (Model UI & Code)
-*   Schedular (takvim) tipinde view'lar
-*   State Machine kullanımı.
+* Model ve view'ları sıfır kodla ve aynı ekranda oluşturmamızı ve özelleştirmemizi sağlayan Domain Object (Model UI & Code)
+* Schedular (takvim) tipinde view'lar
+* State Machine kullanımı.
 
 Örnek uygulamanın kaynak kodlarını <https://github.com/ahmetUrel/DXLibrary> adresinde bulabilirsiniz. Derlemek için MS VisualStudio 2012 ve DXperince Universal (deneme sürümü: <http://www.devexpress.com/Home/Try.xml>) gereklidir.
 
