@@ -10,7 +10,7 @@
     = favicon_tag 'favicon.png'
     = yield_content :head
 
-  %body#blog{class: @page || 'page', 'data-spy' => 'scroll', 'data-target' => '#navigation'}
+  %body#blog
 
     BLOG LAYOUT
 
@@ -31,8 +31,7 @@
             = yield
 
             - # Disquss
-            #disqus_thread
-            #disqus_thread
+            #disquss_thread
             :javascript
               /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
               var disqus_shortname = 'lab2023'; // required: replace example with your forum shortname
@@ -45,8 +44,8 @@
               })();
             %noscript
               Please enable JavaScript to view the
-              %a{href: "http://disqus.com/?ref_noscript"} comments powered by Disqus.
-            %a.dsq-brlink{href: "http://disqus.com"}
+              %a{href: 'http://disqus.com/?ref_noscript'} comments powered by Disqus.
+            %a.dsq-brlink{href: 'http://disqus.com'}
               comments powered by
               %span.logo-disqus Disqus
             - # End of disquss
@@ -54,6 +53,8 @@
     %footer.footer
       %h4 © 2014 LAB2023, CORP.
       %p The all designs, materials and contents trademarks of lab2023, corp.
+
+    = partial 'layouts/partials/trackers'
 
   / Javascripts
   = yield_content :foot

@@ -10,7 +10,7 @@
     = favicon_tag 'favicon.png'
     = yield_content :head
 
-  %body#home{class: @page || 'page', 'data-spy' => 'scroll', 'data-target' => '#navigation'}
+  %body#home{'data-spy' => 'scroll', 'data-target' => '#navigation'}
 
     %header#header.header
       .wrapper
@@ -53,6 +53,8 @@
     %footer.footer
       %h4 © 2014 LAB2023, CORP.
       %p The all designs, materials and contents trademarks of lab2023, corp.
+
+    = partial 'layouts/partials/trackers'
 
   / Javascripts
   = yield_content :foot
