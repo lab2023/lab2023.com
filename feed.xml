@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lab2023.com</title>
+  <subtitle>lab2023 official blog</subtitle>
+  <id>http://lab2023.com/</id>
+  <link href="http://lab2023.com/"/>
+  <link href="http://lab2023.com/feed.xml" rel="self"/>
+  <updated>2014-03-03T00:00:00Z</updated>
+  <entry>
+    <title>Sass Nedir? Özellikleri nelerdir?</title>
+    <link rel="alternate" href="http://lab2023.com/sass-nedir-ozellikleri-nelerdir.html"/>
+    <id>http://lab2023.com/sass-nedir-ozellikleri-nelerdir.html</id>
+    <published>2014-03-03T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i teknik olarak geçmeyi başarmıştır. Nasıl geçmiş kısaca özetliyorum;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Css’in değişken tanımlanılabilinen hali (Variables)&lt;/li&gt;
+&lt;li&gt;Css’in tarayıcılar için yazdığımız ekstra kodları kendisi oluşturabilen hali(Mixins)&lt;/li&gt;
+&lt;li&gt;Css’in girintileri fark ederek iç içe class’ları yazabilen hali (Nesting)&lt;/li&gt;
+&lt;li&gt;Css dosyasında istediğimiz kodları istediğimiz yerde extend edebiliyoruz (Extend/Inheritance)&lt;/li&gt;
+&lt;li&gt;Css dosyamızı parçalara ayırıp, ayırdığımız kısımları istediğimiz yerde çağırabiliyoruz (İmport)&lt;/li&gt;
+&lt;li&gt;Css dosyamızda çarpma,bölme toplama vs. yapabiliyorz. (Operators)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Şimdi artılarını açıklamaya çalışacağım.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Özellikleri&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Variables:&lt;/strong&gt; Sass’ta değişken tanımlayabildiğimizi söylemiştik. Örneğe bakalım.&lt;/p&gt;
+
+&lt;p&gt;Değişkenleri tanımlıyoruz.&lt;/p&gt;
+&lt;pre class="highlight sass"&gt;&lt;span class="nv"&gt;$header-font-style&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;sans-serif&lt;/span&gt;
+&lt;span class="nv"&gt;$header-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#000&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Değişkenleri kullanıyoruz.&lt;/p&gt;
+&lt;pre class="highlight sass"&gt;&lt;span class="nc"&gt;.header&lt;/span&gt;
+  &lt;span class="nl"&gt;font&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nv"&gt;$header-font-style&lt;/span&gt;
+  &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nv"&gt;$header-color&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Nesting:&lt;/strong&gt; Nesne girintilerine göre kod yazmak.&lt;/p&gt;
+&lt;pre class="highlight sass"&gt;&lt;span class="nn"&gt;#nav&lt;/span&gt;
+  &lt;span class="nt"&gt;ul&lt;/span&gt;
+   &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;red&lt;/span&gt;
+  &lt;span class="nt"&gt;li&lt;/span&gt;
+   &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;blue&lt;/span&gt;
+  &lt;span class="nt"&gt;a&lt;/span&gt;
+   &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;green&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Css çıktısı:&lt;/p&gt;
+&lt;pre class="highlight css"&gt;&lt;span class="nf"&gt;#nav&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#nav&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#nav&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;green&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Partials ve @import:&lt;/strong&gt; Kodlarımızı bölümleyip istediğimiz yerde import edebiliyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;/* _reset.sass */
+body
+ margin: 0
+ padding: 0
+&lt;/pre&gt;
+
+&lt;p&gt;Bu dosyayı asıl stil dosyamıza dahil edelim.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;/* base.sass */
+@import 'reset'
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Mixins:&lt;/strong&gt; bu özellik sayesinde css3 ün hayatımızı zor bir yoldan kolaylaştıran özelliklerini sıkılmadan uygulayabileceğiz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  -o-border-radius: $radius
+  border-radius: $radius
+&lt;/pre&gt;
+
+&lt;p&gt;Mixin&amp;#39;i sass&amp;#39;da çağırıyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt; .box
+   @include border-radius(10px)
+&lt;/pre&gt;
+
+&lt;p&gt;Bu mixin&amp;#39;inden sonra border-radius kullandığımızda ekstra kodları yazmamıza gerek yok.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Extend/Inheritance:&lt;/strong&gt; class yada id&amp;#39;lerde kullandığımız özellikleri @extend özelliği ile bir sonraki class yada id mizin içinde kullanabiliyoruz.&lt;/p&gt;
+
+&lt;p&gt;message class&amp;#39;ı için kodlarımız bunlar.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;.message
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+&lt;/pre&gt;
+
+&lt;p&gt;Şimdide diğer class yada id&amp;#39;mizde bu kodları extend edelim.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;.success
+  @extend .message
+  border-color: green
+
+.error
+  @extend .message
+  border-color: red
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Operators:&lt;/strong&gt; css özelliklerini yazarken operatorleri kullanabileceğimizi biliyor muydunuz? :)&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;aside
+ float: right
+ width: 300px / 960px * 100%
+&lt;/pre&gt;
+
+&lt;p&gt;Css çıktısı:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;aside {
+ float: right;
+ width: 31.25%;
+  }
+&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Using Medium Editor as Input Field in Rails</title>
+    <link rel="alternate" href="http://lab2023.com/using-medium-editor-as-input-field-in-rails.html"/>
+    <id>http://lab2023.com/using-medium-editor-as-input-field-in-rails.html</id>
+    <published>2013-12-10T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Medium Editor is seriously a stunning WYSIWYG editor. Simple, stylish, easy to use… But you can also use it as an input field, with some Javascript magic :)&lt;/p&gt;
+
+&lt;p&gt;First off, you must include JS and CSS files of Medium Editor. It doesn’t matter if you use from CDN or local folders.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/daviferreira/medium-editor"&gt;https://github.com/daviferreira/medium-editor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m using it in a form partial (one of my current projects).&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;=stylesheet_link_tag 'medium-editor.css'
+=javascript_include_tag 'medium-editor'
+
+= form_for @post do |f|
+  = f.hidden_field :body, html: { id: "body" }
+  .editable { data: { field: { id: "body" } } }
+  = f.submit
+
+=javascript_include_tag 'input-field'
+&lt;/pre&gt;
+
+&lt;p&gt;Normally you can just add &amp;ldquo;.editable&amp;rdquo; class on any element you like but you can&amp;rsquo;t do it for an input field. What I&amp;rsquo;ve done is, I just created my input field as hidden and a editable div with &lt;strong&gt;&lt;em&gt;data-field-id&lt;/em&gt;&lt;/strong&gt; is &amp;ldquo;body&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;IDs of input field and editable field must be same, so we can create a polymorphic system for synchronization. Let&amp;rsquo;s get to the &lt;strong&gt;&lt;em&gt;input-field.js&lt;/em&gt;&lt;/strong&gt; file.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;var editor = new MediumEditor('.editable');
+
+$('.editable').bind('input propertychange', function() {
+  $("#post_" + $(this).attr("data-field-id")).val($(this).html());
+});
+&lt;/pre&gt;
+
+&lt;p&gt;When you create a MediumEditor object with &amp;lsquo;.editable&amp;rsquo; class, all elements (except input fields) with &amp;lsquo;.editable&amp;rsquo; class will turn into Medium Editor.&lt;/p&gt;
+
+&lt;p&gt;Real magic we&amp;rsquo;ll use is &amp;ldquo;bind&amp;rdquo; method of HTML elements. (Also I must warn you that you must include standard jQuery libraries). When a editable class element is changed, inner code of bind method will run. This way we&amp;rsquo;ll get the editable element&amp;rsquo;s &lt;strong&gt;&lt;em&gt;data-field-id&lt;/em&gt;&lt;/strong&gt; and concatenate it with &amp;ldquo;#post_&amp;rdquo; string.&lt;/p&gt;
+
+&lt;p&gt;Then we set the value of &amp;ldquo;#post_element&amp;rdquo; with editable class element&amp;rsquo;s inner HTML. If you keep the names of hidden element and editable section same, you get a polymorphic synchronization. So you can use multiple Medium Editor input fields.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>2D Karakter Tasarımı ve Animasyon Outsource İş İlanı</title>
+    <link rel="alternate" href="http://lab2023.com/2d-karakter-tasarimi-ve-animasyon-outsource-is-ilani.html"/>
+    <id>http://lab2023.com/2d-karakter-tasarimi-ve-animasyon-outsource-is-ilani.html</id>
+    <published>2013-11-04T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;&lt;strong&gt;&lt;a href="http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani"&gt;3D Karakter Modelleme ve Animasyon Outsource İş İlanı&lt;/a&gt;&lt;/strong&gt;&amp;rdquo; başlığı ile &lt;a href="http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani"&gt;http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani&lt;/a&gt; adresinden daha önce duyurduğumuz outsource iş ilanımızla ilgili bize gelen &lt;strong&gt;2D çalışma tekliflerini&lt;/strong&gt; de değerlendirmeye almaya karar verdik. Bu bakımdan önceki ilanımızı revize ediyoruz.&lt;/p&gt;
+
+&lt;p&gt;İlgilenen tasarımcı arkadaşlar ana detayları &lt;a href="http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani"&gt;http://www.lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani&lt;/a&gt; adresinde belirtilen şekilde bize aynı iş için &lt;strong&gt;2D tekliflerini&lt;/strong&gt; de gönderebilirler.&lt;/p&gt;
+
+&lt;h4&gt;2D Çalışma ile ilgili ilave notlar&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Çalışmayı Adobe After Effects programını kullanarak yapıyor olmanız bizim için tercih sebebi olacaktır.&lt;/li&gt;
+&lt;li&gt;  Çalışma After Effects kaynak dosyaları ile birlikte teslim edilmelidir.&lt;/li&gt;
+&lt;li&gt;  Ayrıca çalışmada kullanılan görsellerin Adobe Photoshop veya Adobe Illustrator programındaki kaynak dosyalarını da bizimle paylaşmanızı isteyeceğiz.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;İlgililere duyurulur.&lt;/p&gt;
+
+&lt;p&gt;İlgilenen arkadaşlar bize &lt;strong&gt;0 258 215 5010&lt;/strong&gt; nolu telefondan veya &lt;strong&gt;Tayfun Öziş ERİKAN - tayfun.ozis.erikan[at]lab2023.com&lt;/strong&gt; adresinden konu hakkında iletişime geçebilirler.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>3D Karakter Modelleme ve Animasyon Outsource İş İlanı</title>
+    <link rel="alternate" href="http://lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani.html"/>
+    <id>http://lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani.html</id>
+    <published>2013-10-26T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;h2&gt;Tanım&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.lab2023.com"&gt;lab2023&lt;/a&gt; firması olarak bir projede kullanılmak üzere 3D Grafik karakter(ler) modellenmesi ve bu karakter(ler)e ait animasyonlara ihtiyacımız vardır. Bu işleri uzmanlık alanındaki kişilere outsource vermeye karar verdik. Bu bağlamda aşağıda ön detayları bulunan işi almak isteyen arkadaşlara veya firmalara bu ilanı yayınlamanızı ve eğer ilgi duyuyor iseniz bizimle iletişime geçmenizi rica ederiz.&lt;/p&gt;
+
+&lt;h2&gt;İhtiyaçlar ve Deadline&lt;/h2&gt;
+
+&lt;p&gt;Teklif birim fiyatını belirlemek adına sizden 1 adet Aslan karakteri modellemeniz istenecektir. Bu çalışmanızın ardından talep edilen toplam 4 adet diğer hayvanlar da sizinle paylaşılacaktır. Bu modelleme gerçeğe yakın olacak ve ilgili hayvana bir karakter yüklenecektir.&lt;/p&gt;
+
+&lt;p&gt;Nihai sonuç için &lt;a href="http://www.imdb.com/title/tt0351283/"&gt;Madagascar&lt;/a&gt; veya &lt;a href="http://www.imdb.com/title/tt0479952/"&gt;Madagascar: Escape 2 Africa&lt;/a&gt; filmindeki Alex karakterini veya diğer Aslanları referans alabilirsiniz. Karakterleri &lt;a href="http://www.madagascar-themovie.com/"&gt;şu adresten&lt;/a&gt; veya &lt;a href="https://www.google.com/search?q=madagascar+movie&amp;amp;amp;tbm=isch"&gt;şuradaki Google görsellerinden&lt;/a&gt; inceleyebilirsiniz. Karakterler yaklaşık olarak bu filmdeki gerçeklilik ve sempatiye sahip olmalıdır.&lt;/p&gt;
+
+&lt;p&gt;Karakter modellemesi haricinde karaktere kendine özgü hareketler de yaptırılacaktır. Bu bakımdan karakterin bu davranışlarının max. 5&amp;#39;er saniyeyi geçmemeyecek animasyonlar haline getirilmesi istenmektedir. Doğal olarak karakterin bir iskelet sistemine sahip olması beklenmektedir.&lt;/p&gt;
+
+&lt;h3&gt;Karakter için istenilen referans hareketler ve olaylar&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Beslenme: Kendisine verilen bir büyük bir biftek parçasını yakalama ve onu yeme.&lt;/li&gt;
+&lt;li&gt;  Acıkma: Ekrana vurarak ve ses çıkararak açıktığını belirtme.&lt;/li&gt;
+&lt;li&gt;  Uyuma: Bulunduğu alanda sakin bir şekilde uyuklama-dinlenme halinde bekleme.&lt;/li&gt;
+&lt;li&gt;  Sevilme ve mutlu olma: Sahibi tarafından sevildiğini gösteren bir ibare.&lt;/li&gt;
+&lt;li&gt;  Saklanma: Ekranın herhangi bir bölgesine saklanma.&lt;/li&gt;
+&lt;li&gt;  Kendine özgü bir hareket yapma: Aslan karakteri için ses çıkararak Kükremek.&lt;/li&gt;
+&lt;li&gt;  Gıdıklanma ve gülme&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ortam&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Karakter kendine uygun bir ortamda bulunacaktır. Kaplan için Ormanlık bir alanda arkaplanda bitki ve ağaçların olduğu ön planda da bir topraklık alanda hayvanın bulunması sağlanabilir. Bunun için yine &lt;a href="http://www.imdb.com/title/tt0351283/"&gt;Madagascar&lt;/a&gt; veya &lt;a href="http://www.imdb.com/title/tt0479952/"&gt;Madagascar: Escape 2 Africa&lt;/a&gt; filmindeki atmosferi referans alabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Yukarıda bahsi geçen 1 adet karakterin ve karakterin kendine ait doğal ortamının realistik ve sempatik şekilde modellenmesi, istenilen davranış biçimlerinde animasyonunun hazırlnaması için sizden bir deadline belirleneminizi rica ediyoruz.&lt;/p&gt;
+
+&lt;h2&gt;Çalışma şekli&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Çalışmalar dropbox üzerinden source kodları ile alınır. İlgili source kodların lisansları müşterimize ait olacaktır.&lt;/li&gt;
+&lt;li&gt;  Pre-production aşamasında çalışmalar bir onay mekanizmasından geçmelidir. Yani çalışmayı yapmadan önce mutlaka ama mutlaka bize bir eskiz şeklinde çizim göndermeniz ve animasyonlar için story board hazırlamanız gerekmektedir. Biz yaptık budur gibi oldu bitti olmamalıdır.&lt;/li&gt;
+&lt;li&gt;  Çalışmaların tercihen popüler bir 3D modelleme programların yapılması beklenmektedir.&lt;/li&gt;
+&lt;li&gt;  3D Studio Max tercihimizdir ancak Maya ile çalışacağız derseniz karşı çıkmayız. Organik modelleme için ayrıca ZBrush kullanıyorsanız bunu yadırgamayız. Ancak pek popüler olmayan bir program ile çalışırsanız bizim için kaynak kodları düzenlemek veya düzenletmek adına problem çıkabileceğinden tercih sebebi olmayacaktır. Eğer 3Ds Max kullanacaksanız sizinle aynı dili konuşur ve daha iyi anlaşabiliriz.&lt;/li&gt;
+&lt;li&gt;  Post-production kapmsamındaki görsel efekler, renk, kesme kırpma v.b. ayarlamalar için ise Adobe Premiere ve Adobe After Effect kullanıyorsanız sizinle aynı dili konuşur ve daha iyi anlaşabiliriz.&lt;/li&gt;
+&lt;li&gt;  Modellere ve animasyonlara 3. parti modeller, dokular, render kütüphaneleri, scriptler v.b. dahil edecekseniz bunların kaynaklarını belirtmenizi ve lisanslarını mutlaka ama mutlaka bizimle paylaşmanızı rica edeceğiz.&lt;/li&gt;
+&lt;li&gt;  Yine aynı şekilde animasyonlarda kullanılacak sesler veya ses efektleri lisansa tabi olmalıdır.&lt;/li&gt;
+&lt;li&gt;  Biz firma olarak 3. parti kaynak kullanımındaki lisans konularında hassasız, sizlerin de aynı özeni göstereceğinizden emin olmamız gerekmektedir.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Ödeme Süreçleri Penaltı ve Deadline&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Bizler müşterilerimiz ile nasıl sözleşme ve ödeme planı uyguluyorsak aynı süreç burada da gerçekleşecektir.&lt;/li&gt;
+&lt;li&gt;  %25 Peşinat, işin bitiş oranına göre iki haftalık veya aylık olarak ödeme yapılacaktır. İşin %70&amp;#39;i bittiyse %70 oranında ödemenizi alacaksınız.&lt;/li&gt;
+&lt;li&gt;  İki taraflarda yükümlülüklerine uymazsa bir cezai yaptırım olacaktır. Bizler ödemeleri gününde, sizlerde iş teslim tarihine uymazsanız günlük olarak bir cezai yaptırım olacaktır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Gizlilik Sözleşmesi&lt;/h2&gt;
+
+&lt;p&gt;Teklifinizin 2. aşamaya geçmesi halinde proje detaylarını sizinle paylaşacağımızdan fikri hakların korunması açısından aramızda bir gizlilik sözleşmesi imzalamamız gerekmektedir. Gizlilik sözleşmesi ile ilgili detaylar aşağıdaki gibidir.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Müşterimizin isteği doğrultusunda &lt;a href="https://dl.dropboxusercontent.com/u/54382764/matbuatlar/matbuat-gizlilik-sozlesmesi.pdf"&gt;gizlilik sözleşmesini&lt;/a&gt; indirip imzalayıp taranmasını, info[at]lab2023.com adresine email, aslınıda Pamukkale Üniversitesi Teknokent Z13 Kınıklı Denizli adresine göndermenizi rica ediyoruz.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;İlgili belgeler bize ulaştıktan sonra projenin ve yapılacak grafik işlerinin detaylarını içeren 4 sayfalık bir grafik ihtiyaç dosyasını istediğiniz email adresine ulaştıracağız.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Teklif vermeniz için bu döküman yeterli ise gizlilik sözleşmesini anlaşırsak verebilirsiniz ancak bu döküman dışında ki sorularınıza cevap alamayacaksınız.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Teklifleriniz&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Lütfen tekliflerinizi info[at]lab2023.com adresine gönderiniz.&lt;/li&gt;
+&lt;li&gt;  Teklifinizde freelancer olup olmadığınız, şuan bir firmada çalışıp çalışmadığınız, daha önceki çalışmalarınız, fatura kesip kesemeyeceğiz, daha önce hangi projelerde bulunduğunuz, ekip çalışmasına yatkınlığınız, CV&amp;#39;niz, blog adresiniz, varsa Dribbble, Behance, iStockphoto v.b. portfolyo adresleriniz gibi sizi tanıyabileceğimiz bilgiler ayrıca &lt;strong&gt;deadline&lt;/strong&gt;, &lt;strong&gt;fiyat&lt;/strong&gt; olmalıdır.&lt;/li&gt;
+&lt;li&gt;  Anlaşmadan önce mutlaka ama mutlaka çalışmalarınızı ve tarzınızı görmemiz gerekmektedir. Örnek çalışmalarınızı mutlaka paylaşmanızı rica ediyoruz.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Örnekler ile ilgili linkler&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/title/tt0351283/"&gt;Madagascar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/media/rm3844768768/tt0351283"&gt;Örnek görüntü - 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/media/rm3207234560/tt0351283"&gt;Örnek görüntü - 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/media/rm2267710464/tt0351283"&gt;Örnek görüntü - 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/media/rm3106571264/tt0351283"&gt;Örnek görüntü - 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/title/tt0479952/"&gt;Madagascar: Escape 2 Africa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/media/rm285643776/tt0479952"&gt;Örnek görüntü - 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;a href="http://www.imdb.com/media/rm235312128/tt0479952"&gt;Örnek görüntü - 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;İlgilenen arkadaşlar bize &lt;strong&gt;0 258 215 5010&lt;/strong&gt; nolu telefondan veya &lt;strong&gt;Tayfun Öziş ERİKAN - tayfun.ozis.erikan[at]lab2023.com&lt;/strong&gt; adresinden konu hakkında iletişime geçebilirler.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eğer ayrıca paylaşmak isterseniz dokümanın &lt;a href="http://www.lab2023.com/wp-content/uploads/2013/10/3d_modelleme_ve_animasyon_isleri_outsource.pdf"&gt;PDF halini buradan indirebilirsiniz.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;İlgilenenlere şimdiden teşekkürler. İyi çalışmalar.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Paperclip gemi ile resimlere watermark ekleme</title>
+    <link rel="alternate" href="http://lab2023.com/paperclip-gemi-ile-resimlere-watermark-ekleme.html"/>
+    <id>http://lab2023.com/paperclip-gemi-ile-resimlere-watermark-ekleme.html</id>
+    <published>2013-09-27T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://github.com/thoughtbot/paperclip"&gt;Paperclip&lt;/a&gt; gemi varsayılan olarak resimlere watermark eklemeyi desteklemiyor. Bu yüzden watermark ekleyebilmek için projeye, imagemagick&amp;#39;in resimleri birleştirme komutu olan &amp;lsquo;composite&amp;rsquo; i içeren bir processor eklememiz gerekiyor.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Öncelikle paperclip geminin processorları aradığı&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;lib/paperclip_processors
+&lt;/pre&gt;
+
+&lt;p&gt;klasörünün içine watermark.rb dosyamızı oluşturup&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;module Paperclip
+  class Watermark &amp;lt; Thumbnail
+    # Handles watermarking of images that are uploaded.
+    attr_accessor :format, :whiny, :watermark_path, :position
+
+    def initialize file, options = {}, attachment = nil
+      super
+      @file             = file
+      @whiny            = options[:whiny].nil? ? true : options[:whiny]
+      @format           = options[:format]
+      @watermark_path   = options[:watermark_path]
+      @position         = options[:watermark_position].nil? ? "SouthEast" : options[:watermark_position]
+
+      @current_format   = File.extname(@file.path)
+      @basename         = File.basename(@file.path, @current_format)
+    end
+
+    # Performs the conversion of the +file+ into a watermark. Returns the Tempfile
+    # that contains the new image.
+    def make
+      return @file unless watermark_path
+
+      dst = Tempfile.new([@basename, @format].compact.join("."))
+      dst.binmode
+
+      command = "composite"
+      params = "-gravity #{@position} #{watermark_path} #{fromfile} #{tofile(dst)}"
+
+      begin
+        success = Paperclip.run(command, params)
+      rescue PaperclipCommandLineError
+        raise PaperclipError, "There was an error processing the watermark for #{@basename}" if @whiny
+      end
+
+      dst
+    end
+
+    def fromfile
+      "\"#{ File.expand_path(@file.path) }[0]\""
+    end
+
+    def tofile(destination)
+      "\"#{ File.expand_path(destination.path) }[0]\""
+    end
+  end
+end
+&lt;/pre&gt;
+
+&lt;p&gt;şeklinde watermark classımızı ekliyoruz.&lt;/p&gt;
+
+&lt;p&gt;Ardından ilgili model dosyamızda&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;has_attached_file :photo,
+processors: [:thumbnail, :watermark],
+styles: {
+  zoom: { geometry: '1024x576#', watermark_path: "#{Rails.root}/app/assets/images/watermarks/watermark_zoom.png"},
+  main: { geometry: '770x520#', watermark_path: "#{Rails.root}/app/assets/images/watermarks/watermark_main.png"}
+}
+&lt;/pre&gt;
+
+&lt;p&gt;şeklinde eklediğimiz resimler için kullanılacak processorlerı tanımlıyoruz, thumbnail resimlerin boyutunu düzenlemek için paperclipte tanımlanmış processor classıdır eklenmediği sürece resim boyutlandırması yapılmaz. Ardından farklı boyutlar için yeniden boyutlandırma için geometry ve watermark olarak eklenecek resmimizin path&amp;#39;ini veriyoruz.&lt;/p&gt;
+
+&lt;p&gt;Bu işlemlerden sonra eklenecek her resime watermark&amp;#39;ınız eklenecektir.&lt;/p&gt;
+
+&lt;p&gt;Eğer daha önce upload ettiğiniz resimlere de watermark&amp;#39;ınızın eklenmesini istiyorsanız.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;rake paperclip:refresh class=Product
+&lt;/pre&gt;
+
+&lt;p&gt;rake&amp;#39;ini çalıştırmanız yeterlidir.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Taps ile MySQL' den PostgreSQL' e Veri Aktarma</title>
+    <link rel="alternate" href="http://lab2023.com/ruby-on-rails-taps-ile-mysql-den-postgresql-e-veri-aktarma.html"/>
+    <id>http://lab2023.com/ruby-on-rails-taps-ile-mysql-den-postgresql-e-veri-aktarma.html</id>
+    <published>2013-09-10T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Merhabalar,&lt;/p&gt;
+
+&lt;p&gt;Şirket olarak 8 ay önce PostgreSQL&amp;#39; e geçmiştik ama o zamanlar devam edegelen projeleri iş yoğunluğundan dolayı PostgreSQL&amp;#39; e geçiremedik. Aslında bu bizim için ek bir maliyetti. Şimdi tüm projelerimizi PostgreSQL&amp;#39; e geçirmeye başladık.&lt;/p&gt;
+
+&lt;p&gt;Bu işlemler için &lt;a href="https://github.com/ricardochimal/taps/"&gt;Taps&lt;/a&gt; gemini kullanıyoruz. Alternatif olarak &lt;a href="https://github.com/ddollar/valkyrie"&gt;Valkyrie&lt;/a&gt; geminide kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Taps&amp;#39; ta server ve client olarak iki kavram var. Veritabanınızın birisini server yapıyorsunuz diğerini client. Client olan veritabanında pull ve push işlemlerini yapıyoruz.&lt;/p&gt;
+
+&lt;h3&gt;Taps Server Oluşturma&lt;/h3&gt;
+
+&lt;p&gt;Terminali açıp aşağıdaki kodu çalıştırdığımızda server başlamış oluyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;taps server postgres://dbuser:dbpassword@localhost/dbname httpuser httppassword&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt;Taps Client Oluşturma&lt;/h3&gt;
+
+&lt;p&gt;Başka bir terminal açıp aşağıdaki kodu çalıştırdığımızda MySQL veritabanındaki verileri PostgreSQL&amp;#39; e aktarmaya başlıyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;taps push mysql2://dbuser:dbpassword@localhost/dbname http://httpuser:httppassword@example.com:5000&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;push&lt;/code&gt; yerine &lt;code&gt;pull&lt;/code&gt; kullanırsak Server olan veritabanındaki verileri Client veritabanına almış oluruz.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hangi veritabanı ile işlem yapacaksak o veritabanı adaptör geminin kurulu olması gerekmektedir. PostgreSQL için &lt;code&gt;pg&lt;/code&gt; MySQL için &lt;code&gt;mysql2&lt;/code&gt; gibi.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Client&amp;#39; taki httpuser httppassword server ile aynı olmalıdır.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;İyi çalışmalar dilerim.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Capistrano ile Multistage Deploy</title>
+    <link rel="alternate" href="http://lab2023.com/capistrano-ile-multistage-deploy.html"/>
+    <id>http://lab2023.com/capistrano-ile-multistage-deploy.html</id>
+    <published>2013-09-10T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Ürünlerimizi geliştirme aşamasında production ve staging olarak iki sunucuya deploy ediyoruz. Hafta bitiminde yaptığımız işleri staging sunucusuna deploy edip test edilmesini bekliyoruz. Onay geldiğinde ise production sunucusuna gönderiyoruz.&lt;/p&gt;
+
+&lt;p&gt;Deploy işlermlerinde bildiğiniz gibi capistrano kullanıyoruz. İşlemleri halihazırda capistrano kullandığınızı düşünerek anlatacağım.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;config/deploy.rb&lt;/code&gt; ye capistrano multistage extension ekliyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;# config/deploy.rb
+require 'capistrano/ext/multistage'
+&lt;/pre&gt;
+
+&lt;p&gt;ve hangi stage ler olacağını belirtiyoruz&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;# config/deploy.rb
+set :stages, %w(staging production)
+&lt;/pre&gt;
+
+&lt;p&gt;config altına deploy adında bir klasör oluşturup içerisine &lt;code&gt;production.rb&lt;/code&gt; ve &lt;code&gt;staging.rb&lt;/code&gt; dosyalarını oluşturuyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;# config/deploy/staging.rb
+server "156.0.0.0", :web, :app, :db, primary: true
+set :port, 1234
+set :rails_env, 'staging'
+
+namespace :deploy do
+  task :setup_config, roles: :app do
+    # Staging
+    sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
+
+    sudo "ln -nfs #{current_path}/config/unicorn_init_#{rails_env}.sh /etc/init.d/unicorn_#{application}"
+  end
+end
+
+# config/deploy/production.rb
+server "156.0.0.0", :web, :app, :db, primary: true
+set :port, 1234
+set :rails_env, 'production'
+
+namespace :deploy do
+  task :setup_config, roles: :app do
+    # Production
+    sudo "ln -nfs #{current_path}/config/nginx-ssl.conf /etc/nginx/sites-enabled/#{application}"
+
+    sudo "ln -nfs #{current_path}/config/unicorn_init_#{rails_env}.sh /etc/init.d/unicorn_#{application}"
+  end
+end
+&lt;/pre&gt;
+
+&lt;p&gt;Kodlardan da anlaşılacağı gibi birbirinden farklı olacak şeyleri ayrı dosyalara taşıdık. Ortak olanlar ise &lt;code&gt;deploy.rb&lt;/code&gt; de kalıyor.&lt;/p&gt;
+
+&lt;p&gt;Deploy kodunuda şu şekilde çalıştırıyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;cap production deploy
+cap staging deploy
+&lt;/pre&gt;
+
+&lt;p&gt;veya&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;# config/deploy.rb
+set :default_stage, "staging"
+&lt;/pre&gt;
+
+&lt;p&gt;default stage belirtip&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;cap deploy
+&lt;/pre&gt;
+
+&lt;p&gt;yapıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Kolaylıklar dilerim.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Github'a nasıl dosya yollanir?</title>
+    <link rel="alternate" href="http://lab2023.com/githuba-nasil-dosya-yollanir.html"/>
+    <id>http://lab2023.com/githuba-nasil-dosya-yollanir.html</id>
+    <published>2013-08-26T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;   Github versiyon kontrol sistemleri için bir uzak depodur. Hızlı ve güvenli oluşu, kapsamlı raporlama yapısı ve çoklu çalışma kolaylığı ile birçok yazılımcının vazgeçilmezi olmuştur. Peki github nasıl kullanılır?&lt;/p&gt;
+
+&lt;p&gt;Şimdi github&amp;#39;da hesabınızı aldıktan sonra yeni bir repository (depo) oluşturmayı ve oluşturduğumuz repository&amp;#39;ye dosya yollamayı anlatacağım.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak github hesabımızda repository/new yada create a new repo&amp;#39;ya tıklayarak repomuzu oluşturuyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Newrepo" width="820" height="551" src="assets/images/articles/2013-08-26-newrepo.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dizinimizi oluşturduktan sonra sıra var olan dosyalarımızı uzak depoya yollamaya geliyor.&lt;/p&gt;
+
+&lt;p&gt;Yukarıdaki adımları console yada terminalimizden sırasıyla uyguladığımızda ilk olarak&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;touch README.md
+&lt;/pre&gt;
+
+&lt;p&gt;README.md adında bir dosya oluşturuyor ve&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;git init
+&lt;/pre&gt;
+
+&lt;p&gt;komutuyla oluşturduğumuz dosyayı github&amp;#39;ın anlayacağı dile çeviriyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;git commit -m "first commit"
+&lt;/pre&gt;
+
+&lt;p&gt;bu satır dosyamızı staging&amp;#39; e taşıyor ve değişiklik kayıtları için commit mesajını bu satırda yazıyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;git remote add origin git@github.com:safiyesepetci/deneme.git
+&lt;/pre&gt;
+
+&lt;p&gt;bu satırda uzak depomuzun yolunu yazıyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;git push -u origin master
+&lt;/pre&gt;
+
+&lt;p&gt;bu son satırımızda dizimizi uzak depoya taşıyor.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>git-flow ve varsayılan branch master'dan farklı iken kullanımı</title>
+    <link rel="alternate" href="http://lab2023.com/git-flow-ve-varsayilan-branch-master-dan-farkli-iken-kullanimi.html"/>
+    <id>http://lab2023.com/git-flow-ve-varsayilan-branch-master-dan-farkli-iken-kullanimi.html</id>
+    <published>2013-08-01T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Projelerde birden fazla branch kullanımı çok doğal. Zaman zaman varsayılan branch master&amp;#39;dan farklı da olabiliyor. Bu gibi durumlarda, projeyi kendi üzerine yeni çeken kişi, git-flow initialize etmek istediğinde hata alıyor. Ancak bu problemi aşmak ve git-flow&amp;#39;u kullanabilmek mümkün.&lt;/p&gt;
+
+&lt;p&gt;Nasıl mı? İşte cevabı:&lt;/p&gt;
+
+&lt;p&gt;Örneğin varsayılan branch develop olduğunda projeyi checkout edelim. Hemen ardından, git-flow initialize etmek istersek aşağıdaki hatayı alıyoruz.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;#git flow init
+
+Which branch should be used for bringing forth production releases?
+   - develop
+Branch name for production releases: []
+Local branch '' does not exist.
+&lt;/pre&gt;
+
+&lt;p&gt;Panik yapıp işleri karıştırmaya, hataya kızıp git-flow kullanımını bırakmaya gerek yok.&lt;/p&gt;
+
+&lt;p&gt;Peki ne yapacağız? Çok basit.&lt;/p&gt;
+
+&lt;p&gt;Master branch checkout edelim:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;#git checkout master
+Branch master set up to track remote branch master from origin.
+Switched to a new branch 'master'
+&lt;/pre&gt;
+
+&lt;p&gt;Sonrasında git-flow initialize edelim. (Varsayılan değerleri kabul edebilirsiniz)&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;#git flow init
+
+Which branch should be used for bringing forth production releases?
+   - develop
+   - master
+Branch name for production releases: [master]
+
+Which branch should be used for integration of the "next release"?
+   - develop
+Branch name for "next release" development: [develop]
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/]
+Release branches? [release/]
+Hotfix branches? [hotfix/]
+Support branches? [support/]
+Version tag prefix? []
+&lt;/pre&gt;
+
+&lt;p&gt;En son olarak develop branch&amp;#39;ını, tekrardan checkout edelim.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;#git checkout develop
+Switched to branch 'develop'
+&lt;/pre&gt;
+
+&lt;p&gt;Hepsi bu kadar. Artık git-flow ve nimetlerinden faydalanabilirsiniz.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ruby on Rails'te Breadcrumb kullanımı</title>
+    <link rel="alternate" href="http://lab2023.com/ruby-on-rails-te-breadcrumb-kullanimi.html"/>
+    <id>http://lab2023.com/ruby-on-rails-te-breadcrumb-kullanimi.html</id>
+    <published>2013-07-31T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Ekmek kırıntısı anlamına gelen breadcrumbs web sayfalarında kullanıcının bulunduğu yeri rahat takip edebilsin ve gezinebilsin diye koyulan navigasyon sistemidir.&lt;/p&gt;
+
+&lt;p&gt;Ruby on Rails&amp;#39;de bunun için geliştirilen &lt;a href="https://github.com/weppos/breadcrumbs_on_rails"&gt;breadcrumbs_on_rails&lt;/a&gt; geminin kullanımını anlatacağım.&lt;/p&gt;
+
+&lt;p&gt;Öncelikle&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem install breadcrumbs_on_rails
+&lt;/pre&gt;
+
+&lt;p&gt;diyerek gemi kuruyoruz ve projemizin Gemfile&amp;#39;ına&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem 'breadcrumbs_on_rails'
+&lt;/pre&gt;
+
+&lt;p&gt;satırıyla ekliyoruz.&lt;/p&gt;
+
+&lt;p&gt;Artık yapmamız gereken her controller methodu içerisinde kullanıcı oradayken ne görmesi gerekiyorsa&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;def show
+    @product = Product.find(params[:id])
+    add_breadcrumb @product.name, product_path(@product)
+end
+&lt;/pre&gt;
+
+&lt;p&gt;şeklinde yazmak. Bir method içerisinde birden fazla breadcrumb ekleyebilirsiniz. Hepsi sırasıyla görüntülenir.&lt;/p&gt;
+
+&lt;p&gt;Son olarak breadcrumb&amp;#39;ın görünmesini istediğiniz layout&amp;#39;ta&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;= render_breadcrumbs :separator =&amp;gt; ' / '
+&lt;/pre&gt;
+
+&lt;p&gt;koduyla breadcrumbları listeleyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca farklı stillerde görüntülemek için kendiniz manuel builderlar yazabilirsiniz. Örneğin twitter bootstrap tarzı breadcrumb için örnek builder&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;class BootstrapBreadcrumbsBuilder &amp;lt; BreadcrumbsOnRails::Breadcrumbs::Builder
+    def render
+        @context.content_tag(:ul, :class =&amp;gt; 'breadcrumb') do
+        elements_count = @elements.size
+        i = 0
+        @elements.collect do |element|
+            i += 1
+            render_element(element, last = (i == elements_count))
+            end.join.html_safe
+        end
+    end
+    def render_element(element, last = false)
+        current = @context.current_page?(compute_path(element))
+        @context.content_tag(:li, :class =&amp;gt; ('active' if last)) do
+            if last
+                link_or_text = compute_name(element)
+            else
+                link_or_text = @context.link_to(compute_name(element), compute_path(element), element.options)
+            end
+            divider = @context.content_tag(:span, (@options[:separator] || ' &amp;amp;gt; ').html_safe, :class =&amp;gt; 'divider') unless current
+            link_or_text + (last ? '' : (divider || ''))
+        end
+    end
+end
+&lt;/pre&gt;
+
+&lt;p&gt;şeklindedir. Bunu &amp;ldquo;lib/bootstrap&lt;em&gt;breadcrumbs&lt;/em&gt;builder.rb&amp;rdquo; içine yazarak.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;= render_breadcrumbs :builder =&amp;gt; ::BootstrapBreadcrumbsBuilder, :separator =&amp;gt; "&amp;amp;raquo;"
+&lt;/pre&gt;
+
+&lt;p&gt;şeklinde kullanabilirsiniz.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Rails Uygulamalarını Heroku'da Çalıştırmak</title>
+    <link rel="alternate" href="http://lab2023.com/rails-uygulamalarini-heroku-da-calistirmak.html"/>
+    <id>http://lab2023.com/rails-uygulamalarini-heroku-da-calistirmak.html</id>
+    <published>2013-07-31T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt; 0 ayar ile web uygulamalarınızı üstünde kolaylıkla çalıştırabileceğiniz bir servistir.&lt;/p&gt;
+
+&lt;p&gt;Uygulamamızı çalıştırmadan önce ilk iş olarak &lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt;&amp;lsquo;ya üye olmamız ve &lt;a href="https://github.com/heroku/heroku"&gt;heroku gem&lt;/a&gt;ini kurmamız gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Bunun için;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem install heroku
+&lt;/pre&gt;
+
+&lt;p&gt;diyerek gemi kuruyoruz.&lt;/p&gt;
+
+&lt;p&gt;Ardından&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;heroku login
+&lt;/pre&gt;
+
+&lt;p&gt;komutunu çalıştırarak bilgilerimizle giriş yapıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Ardından projemize git&amp;#39;i initialize etmediysek,&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;git init
+git add .
+git commit -m 'first commit for heroku'
+&lt;/pre&gt;
+
+&lt;p&gt;Eğer initialize edildiyse sadece commitinizi yapıp 2. aşamaya geçebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Sıradaki işlem herokuda bir uygulama oluşturmak. Bunun için terminalde&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;heroku create &amp;lt;uygulama adı&amp;gt; --region eu
+&lt;/pre&gt;
+
+&lt;p&gt;komutunu çalıştırarak uygulamamızı oluşturabiliriz.&lt;/p&gt;
+
+&lt;p&gt;Artık tek yapmamız gereken uygulamamızda GemFile&amp;#39;ımıza&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem 'pg'
+&lt;/pre&gt;
+
+&lt;p&gt;yi ekledikten sonra uygulamayı herokuya göndermek.&lt;/p&gt;
+
+&lt;p&gt;Bunun için&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;git push heroku master
+&lt;/pre&gt;
+
+&lt;p&gt;komutunu kullanıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Artık uygulamanız heroku&amp;#39;da çalışır halde ziyaret etmek için&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;heroku open
+&lt;/pre&gt;
+
+&lt;p&gt;yazıp sayfayı görüntüleyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Bunun yanında herokuda terminal işlemleri yapmak için &amp;ldquo;heroku run&amp;rdquo; komutunu kullanıyoruz&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;heroku run rake db:migrate
+heroku run bundle instal
+&lt;/pre&gt;
+
+&lt;p&gt;gibi. Ayrıntılı listeye&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;heroku --help
+&lt;/pre&gt;
+
+&lt;p&gt;ile ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://twitter.com/hamitturkukaya"&gt;Hamit Türkü KAYA&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Çoklu Para Birimi Dönüşümünde TcmbCurrency Geminin Kullanımı</title>
+    <link rel="alternate" href="http://lab2023.com/coklu-para-birimi-donusumunde-tcmbcurrency-geminin-kullanimi.html"/>
+    <id>http://lab2023.com/coklu-para-birimi-donusumunde-tcmbcurrency-geminin-kullanimi.html</id>
+    <published>2013-07-30T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Rails&amp;#39;da Çoklu para birimi dönüşümü (Multi Currency) için geliştirilmiş olan &lt;a href="https://github.com/RubyMoney/money"&gt;money gem&lt;/a&gt; ve &lt;a href="https://github.com/RubyMoney/money-rails"&gt;money-rails gem&lt;/a&gt;&amp;lsquo;i ni kullanırken geçmişe yönelik dönüşüm yapma sıkıntısı ve oranları &lt;strong&gt;Türkiye Cumhuriyeti Merkez Bankası&lt;/strong&gt;&amp;#39;ndan kur almak amacıyla &lt;a href="https://github.com/RubyMoney/google_currency"&gt;google-currency gem&lt;/a&gt;&amp;#39;ini uyarlanmıştır. Bu gem ile Merkez Bankası&amp;#39;ndaki 20&amp;#39;ye yakın para birimi ile dönüşümü &lt;a href="https://github.com/RubyMoney/money"&gt;Money&lt;/a&gt; gemi altyapısıyla kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Öncelikle gemfile&amp;#39;ımıza &lt;strong&gt;money-rails&lt;/strong&gt; ve &lt;strong&gt;tcmb_currency&lt;/strong&gt; gemlerini ekliyoruz&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem 'money-rails'
+gem 'tcmb_currency', :git =&amp;gt; 'git://github.com/lab2023/tcmb_currency.git
+&lt;/pre&gt;
+
+&lt;p&gt;ve ardından &lt;em&gt;bundle install&lt;/em&gt; komutunu çalıştırarak gemleri projeye dahil ediyoruz. Gemler yüklenip, projeye dahil edildikten sonra terminalden&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ rails g tcmb_currency:initializer
+$ rails g tcmb_currency:migration
+$ rake db:migrate
+&lt;/pre&gt;
+
+&lt;p&gt;komutlarını çalıştırıp initializer dosyasını ve database tablolarını oluşturuyoruz. &amp;lt;!&amp;ndash; more &amp;ndash;&amp;gt; Son olarak ise&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ rake tcmb_currency:insert_from_tcmb
+&lt;/pre&gt;
+
+&lt;p&gt;rake task&amp;#39;ını günlük olarak çalışacak bir cron job a atayarak (bu iş için &lt;a href="https://github.com/javan/whenever"&gt;whenever gem&lt;/a&gt; kullanılabilir), günlük olarak oranların database&amp;#39;e eklenmesi sağlanır&lt;/p&gt;
+
+&lt;p&gt;Ardından tek yapılması gereken money gemi işlemleri cent,kuruş vb. bazlı yaptığı için modelinize &lt;em&gt;monetize :price_cents&lt;/em&gt; eklemek.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;class Product &amp;lt; ActiveRecord::Base
+    attr_accessible :price, :product ,:price_cents, :price_currency
+    monetize :price_cents
+end
+&lt;/pre&gt;
+
+&lt;p&gt;Artık view katmanında&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&amp;lt;% @products.each do |product| %&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= product.product %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;% price =Money.new(product.price_cents,product.price_currency) %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= humanized_money_with_symbol price %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= humanized_money_with_symbol price.exchange_to(:JPY) %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= humanized_money_with_symbol price.exchange_to(:EUR, "2013-03-06") %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= link_to 'Show', product %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= link_to 'Edit', edit_product_path(product) %&amp;gt;&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;&amp;lt;%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %&amp;gt;&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;% end %&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;şeklinde kullanabilirsiniz&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;Money.new(1000,"USD").exchange_to(:EUR) # O güne ait oranlara göre dönüşüm yapar
+Money.new(1000,"USD").exchange_to(:EUR, "2013-03-02") # Verilen tarihe ait oranlara göre dönüşüm yapar
+&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Web sayfalarına nasıl css eklenir?</title>
+    <link rel="alternate" href="http://lab2023.com/web-sayfalarina-nasil-css-eklenir.html"/>
+    <id>http://lab2023.com/web-sayfalarina-nasil-css-eklenir.html</id>
+    <published>2013-07-23T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Web Sayfalarına Css eklemek&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1- Kod İçinde(İn-line):&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu yöntemle html elementinin içine style özelliği kullanılarak eklenilebilir.&lt;/p&gt;
+
+&lt;p&gt;Örnek:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&amp;lt;div style=”color:blue; width:150px;” &amp;gt; Deneme Yazısı &amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Her tag’e özellik atamak kullanışlı değildir, özel durumlarda kullanılması uygundur.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2- Head tag’leri arasına style elementi kullanılarak:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&lt;/code&gt; tag’leri arasına &lt;code&gt;&amp;lt;style&amp;gt;...&amp;lt;/style&amp;gt;&lt;/code&gt; elementinin içinde kullanılır.&lt;/p&gt;
+
+&lt;p&gt;Örnek:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Site Başlığı&amp;lt;/title&amp;gt;
+    &amp;lt;style type=”text/css”&amp;gt;
+        .content{
+            color: pink;
+            width: 200px;
+            height: 500px;
+            }
+        a.title{
+            width: 100px;
+            height: 50px;
+            }
+
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3-Harici stil dosyası ekleme:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu yöntemde stil özelliklerimizi .css uzantılı ayrı bir sayfaya yazarız. &lt;code&gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&lt;/code&gt; tag’leri arasındada css dosyamızın yolunu belirterek etkinleştirmiş oluruz.&lt;/p&gt;
+
+&lt;p&gt;Örnek: style.css adlı stil dosyası&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;p{
+  color: black;
+  font-family: Tahoma, arial;
+ }
+
+#content{
+  width: 500px;
+  height: auto;
+ }
+&lt;/pre&gt;
+
+&lt;p&gt;Bu sayfanın web sayfasına eklenmesi aşağıda gösterilmiştir.&lt;/p&gt;
+
+&lt;p&gt;Örnek:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Sayfamızın Başlığı&amp;lt;/title&amp;gt;
+    &amp;lt;link rel=”stylesheet”  href=”style.css”   type=”text/css” /&amp;gt;
+&amp;lt;/head&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4- @import yöntemi ile:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönündende 3. yönteme benzer. İçerik bakımından yüklü sitelerde bölümlere ayrılmış stil yapısı için kullanımı uygundur.&lt;/p&gt;
+
+&lt;p&gt;Örnek:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Site Başlığı&amp;lt;/title&amp;gt;
+    &amp;lt;style type=”text/css”&amp;gt;
+@import “style.css”;
+@import “sidebar.css”;
+@import “footer.css”;
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Katip gemi ve kullanımı</title>
+    <link rel="alternate" href="http://lab2023.com/katip-gemi-ve-kullanimi.html"/>
+    <id>http://lab2023.com/katip-gemi-ve-kullanimi.html</id>
+    <published>2013-07-23T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;h2&gt;Katip nedir?&lt;/h2&gt;
+
+&lt;p&gt;Katip, git üzerinden takip edilen bir projede değişiklik günlüğü oluşturmanızı sağlar.&lt;/p&gt;
+
+&lt;p&gt;Katip, git üzerinden versiyon etiketlerine göre gruplanmış bir şekilde değişiklik günlüğünü döker. Gem size herhangi bir git projesinde kullanabileceğiniz &lt;strong&gt;katip&lt;/strong&gt; isminde bir çalıştırılabilir dosya da sağlar. Günlük satırları, commitlere olan bağlantıları; commit notunu ve kulanıcı adını içerir.&lt;/p&gt;
+
+&lt;h2&gt;Kurulum&lt;/h2&gt;
+
+&lt;p&gt;Katip&amp;#39;i kurmak için&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem install katip
+&lt;/pre&gt;
+
+&lt;p&gt;bundler kullanıyorsanız Gemfile&amp;#39;a aşağıdaki satırları ekleyin:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;source 'https://rubygems.org'
+gem 'katip'
+&lt;/pre&gt;
+
+&lt;h2&gt;Kullanımı&lt;/h2&gt;
+
+&lt;h3&gt;Çalıştırılabilir dosya ile kullanımı&lt;/h3&gt;
+
+&lt;p&gt;git ile takip ettiğiniz proje dizininde &lt;strong&gt;katip&lt;/strong&gt; yazıp çalıştırın:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;% katip
+Create CHANGELOG.md
+&lt;/pre&gt;
+
+&lt;p&gt;Dosya isminizin CHANGELOG.md yerine farklı bir isimde olmasını istiyorsanız&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;% katip BenimDosyam.md
+Create BenimDosyam.md
+&lt;/pre&gt;
+
+&lt;h3&gt;rake olarak kullanımı&lt;/h3&gt;
+
+&lt;p&gt;Gemfile&amp;#39; a gem&amp;#39; i ekleyin:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;source 'https://rubygems.org'
+
+gem 'katip'
+&lt;/pre&gt;
+
+&lt;p&gt;ve sonrasında rake olarak çalıştırabilirsiniz&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;% rake katip:create
+Create CHANGELOG.md
+&lt;/pre&gt;
+
+&lt;p&gt;Dosya isminizin CHANGELOG.md yerine farklı bir isimde olmasını istiyorsanız&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;% rake katip:create file=BenimDosyam.md
+Create BenimDosyam.md
+&lt;/pre&gt;
+
+&lt;p&gt;ve işte bu kadar. Proje dizininizde, commit&amp;#39; lere dayanarak etiketlere göre gruplanmış şekilde günlük dosyanız hazır.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/kebab-project/katip/blob/develop/CHANGELOG.md" target="_blank"&gt;Örnek çıktı - CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;Bağlantılar&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/kebab-project/katip" target="_blank"&gt;Kaynak kodu&lt;/a&gt; &lt;a href="http://github.com/kebab-project/katip/issues" target="_blank"&gt;Hata ve geri bildirimler&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Yuzbin Baloncuk  (v.0.1.0)</title>
+    <link rel="alternate" href="http://lab2023.com/yuzbin-baloncuk-v-0-1-0.html"/>
+    <id>http://lab2023.com/yuzbin-baloncuk-v-0-1-0.html</id>
+    <published>2013-07-20T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;lab2023 ‘ un logosundan baloncuk cıkartabilir miyiz dedik ve basladik kodlamaya. Eger sizde bunu evde denemek istiyorsaniz &lt;a href="https://github.com/coskuntekin/beaker-bubbles"&gt;buradan&lt;/a&gt; kodlara ulasabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Bizler HAML, SASS ve COMPAS teknolojilerinden yararlandik. Generator olarak da MIDDLEMAN kullandik.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kulladigimiz CSS3 Property lerini kısaca açıklamak gerekirse;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+keyframes(fly-bubble)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;keyframes ile tıpkı bir gif animasyon ya da flash animasyon hazırlar gibi animasyonu layer lara parçalayıp hareketlilik kazandırabilirsiniz. Keyframe bir animasyon adına ihtyac duyar ve from ile baslayıp to ile biter. Dilerseniz from ve to yerine 0% ve 100% degerlerinide kullanabilirsiniz. Her bir layer yuzdelik dilemlerle ifade edilir. Bu layer lara da olusturmak istenilen animasyona gore css style yazmak mumkundur. Keyframe methodlari;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  animatename&lt;/li&gt;
+&lt;li&gt;  keyframe-selector&lt;/li&gt;
+&lt;li&gt;  css style&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;+transform(scale(.3))&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bunu basta acıklamakta yarar goruyorum. CSS3 Property leri icinde iki tip transform mevcut; 2D transform ve 3D transform bizler bu animasyonda 2D transform kullandik.&lt;/p&gt;
+
+&lt;p&gt;2D Transform un 4 adet methodu vardır. Bunlar;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Scale&lt;/li&gt;
+&lt;li&gt;  Translate&lt;/li&gt;
+&lt;li&gt;  Skew&lt;/li&gt;
+&lt;li&gt;  Matrix&lt;/li&gt;
+&lt;li&gt;  Rotate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;scale&lt;/strong&gt; methodu x-axis (x-ekseni) ve y-axis (y-ekseni) seklinde iki deger alır. Bu deger width ve height degerlerine tekabul eder. Bu degerler farklı farklı verebilecegi gibi (+transform(scale(6,8))) beaker bubble da kullanildigi gibi tek bir deger de verilebilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+animation-timing-function(ease-in-out)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Animasyonun hızına fraklı ozel degerler atayarak animasyonun gercege yakın bir hareketlilik kazanmasini saglar. Ornegin bir topun yavaslarak durmasi icin animation-timing-function dan yararlanilabilir.&lt;/p&gt;
+
+&lt;p&gt;Dort adet methodu vardır. Bunlar;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  linear&lt;/li&gt;
+&lt;li&gt;  ease&lt;/li&gt;
+&lt;li&gt;  ease-in&lt;/li&gt;
+&lt;li&gt;  ease-out&lt;/li&gt;
+&lt;li&gt;  ease-in-out&lt;/li&gt;
+&lt;li&gt;  cubic-bezier&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;ease-in-out&lt;/strong&gt; ile animasyon hareketine yavas baslar ivme kazanarak hızlanır ve harekete basladigi gibi yavaslarak durur.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+animation-name(fly-bubble)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;keyframe-name de kullanılmıs olan alias animate-name ile çağrılmıs olur.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+animation-duration(8s)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Animasyonun hareket suresini ihtiva eder.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+animation-iteration-count(infinite)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Animasyonun kaç kez oynayacagini gosterir. infinite ile sonsuz bir tekrar olusturulurken, bir tam sayı ile bu dongu sınırlandırabilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; İlerleyen zamanlarda animasyonu biraz daha gelistirmeyi dusunuyoruz. Ornegin icindeki sıvının dalgalanmasi baloncuklarin harekitinin iyilestirilmesi gibi dusucelerimiz var.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github Safyasi:&lt;/strong&gt; &lt;a href="https://github.com/coskuntekin/beaker-bubbles"&gt;https://github.com/coskuntekin/beaker-bubbles&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tesekkur Ederim.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Semantic Grid System, Yarının Sayfa Düzeni</title>
+    <link rel="alternate" href="http://lab2023.com/the-semantic-grid-system-yarinin-sayfa-duzeni.html"/>
+    <id>http://lab2023.com/the-semantic-grid-system-yarinin-sayfa-duzeni.html</id>
+    <published>2013-07-14T00:00:00Z</published>
+    <updated>2014-03-23T00:53:21+02:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;HTML5&lt;/strong&gt; bildiğiniz gibi semantik etiketlerle birlikte geldi ama hala tam anlamıyla kullanmıyoruz. başlayacağımız nokta tam olarak grid sistemleri olacak 960.gs vs.. tam olarak bu akıma uymadıklarını düşünüyordum ki başkası daha önce düşünmüş less ve &lt;strong&gt;sass&lt;/strong&gt; &lt;strong&gt;mixin&lt;/strong&gt; kütüphanesi olarak &lt;a href="http://semantic.gs/"&gt;semantic grid sistemi&lt;/a&gt; oluşturmuş. son zamanlarda pek güncellenmemiş olsada halen kullanılabilir durumda.&lt;/p&gt;
+
+&lt;p&gt;Kullanabileceğiniz 4 adet değişken $column-width, $gutter-width, $columns, $total-width&lt;/p&gt;
+
+&lt;p&gt;4 adetde mixin var row, column, pull, push&lt;/p&gt;
+
+&lt;p&gt;En basit olarak şöyle bir &lt;strong&gt;sass&lt;/strong&gt; kodundan&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$column-width: 60px
+$gutter-width: 20px
+$columns: 12
+$total-width: 100%
+
+header
+  +column(12)
+nav
+  +column(12)
+section
+  +column(9)
+aside
+  +column(3)
+article
+  +column(12)
+footer
+  +column(12)
+&lt;/pre&gt;
+
+&lt;p&gt;Şöyle Bir &lt;strong&gt;haml&lt;/strong&gt; kodundan&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;%header
+  %h2 Header
+%nav
+  %h2 Menu
+%section
+  %h2 Main
+%aside
+  %article
+    %h2 aside
+  %article
+    %h2 aisde
+%footer
+  %h2
+    Copyright © 2013
+&lt;/pre&gt;
+
+&lt;p&gt;Hem &lt;strong&gt;fixed&lt;/strong&gt; hem &lt;strong&gt;fluid&lt;/strong&gt; olarak bu düzene ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="semantic html5" width="300" height="289" src="assets/images/articles/2013-07-14-html5-semantic.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gelelim asıl konuya yeni &lt;a href="http://bourbon.io/"&gt;bourbon&lt;/a&gt; adlı bie mixin kütüphanesi çıktı aynı şekilde bu kütüphanenin &lt;a href="http://neat.bourbon.io/"&gt;neat&lt;/a&gt; adında şirinmi şirin mixinler içeren &lt;strong&gt;Semantik&lt;/strong&gt; grid sistemi var üstteki konuyla ilgilendiyseniz bakmanızı (kullanmanızı) tavsiye ederiz.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
