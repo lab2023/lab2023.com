@@ -11,7 +11,7 @@
     <link rel="alternate" href="http://lab2023.com/sass-nedir-ozellikleri-nelerdir.html"/>
     <id>http://lab2023.com/sass-nedir-ozellikleri-nelerdir.html</id>
     <published>2014-03-03T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:04:28+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -131,7 +131,7 @@ body
     <link rel="alternate" href="http://lab2023.com/using-medium-editor-as-input-field-in-rails.html"/>
     <id>http://lab2023.com/using-medium-editor-as-input-field-in-rails.html</id>
     <published>2013-12-10T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:09:02+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -175,7 +175,7 @@ $('.editable').bind('input propertychange', function() {
     <link rel="alternate" href="http://lab2023.com/2d-karakter-tasarimi-ve-animasyon-outsource-is-ilani.html"/>
     <id>http://lab2023.com/2d-karakter-tasarimi-ve-animasyon-outsource-is-ilani.html</id>
     <published>2013-11-04T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:08:57+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -203,7 +203,7 @@ $('.editable').bind('input propertychange', function() {
     <link rel="alternate" href="http://lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani.html"/>
     <id>http://lab2023.com/3d-karakter-modelleme-ve-animasyon-outsource-is-ilani.html</id>
     <published>2013-10-26T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:08:27+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -301,7 +301,7 @@ $('.editable').bind('input propertychange', function() {
     <link rel="alternate" href="http://lab2023.com/paperclip-gemi-ile-resimlere-watermark-ekleme.html"/>
     <id>http://lab2023.com/paperclip-gemi-ile-resimlere-watermark-ekleme.html</id>
     <published>2013-09-27T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:08:27+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -389,7 +389,7 @@ styles: {
     <link rel="alternate" href="http://lab2023.com/ruby-on-rails-taps-ile-mysql-den-postgresql-e-veri-aktarma.html"/>
     <id>http://lab2023.com/ruby-on-rails-taps-ile-mysql-den-postgresql-e-veri-aktarma.html</id>
     <published>2013-09-10T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:57+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -429,7 +429,7 @@ styles: {
     <link rel="alternate" href="http://lab2023.com/capistrano-ile-multistage-deploy.html"/>
     <id>http://lab2023.com/capistrano-ile-multistage-deploy.html</id>
     <published>2013-09-10T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:37+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -503,7 +503,7 @@ set :default_stage, "staging"
     <link rel="alternate" href="http://lab2023.com/githuba-nasil-dosya-yollanir.html"/>
     <id>http://lab2023.com/githuba-nasil-dosya-yollanir.html</id>
     <published>2013-08-26T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:25+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -545,7 +545,7 @@ set :default_stage, "staging"
     <link rel="alternate" href="http://lab2023.com/git-flow-ve-varsayilan-branch-master-dan-farkli-iken-kullanimi.html"/>
     <id>http://lab2023.com/git-flow-ve-varsayilan-branch-master-dan-farkli-iken-kullanimi.html</id>
     <published>2013-08-01T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:21+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -605,7 +605,7 @@ Switched to branch 'develop'
     <link rel="alternate" href="http://lab2023.com/ruby-on-rails-te-breadcrumb-kullanimi.html"/>
     <id>http://lab2023.com/ruby-on-rails-te-breadcrumb-kullanimi.html</id>
     <published>2013-07-31T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:17+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -677,7 +677,7 @@ end
     <link rel="alternate" href="http://lab2023.com/rails-uygulamalarini-heroku-da-calistirmak.html"/>
     <id>http://lab2023.com/rails-uygulamalarini-heroku-da-calistirmak.html</id>
     <published>2013-07-31T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:11+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -748,7 +748,7 @@ heroku run bundle instal
     <link rel="alternate" href="http://lab2023.com/coklu-para-birimi-donusumunde-tcmbcurrency-geminin-kullanimi.html"/>
     <id>http://lab2023.com/coklu-para-birimi-donusumunde-tcmbcurrency-geminin-kullanimi.html</id>
     <published>2013-07-30T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:11+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -804,7 +804,7 @@ Money.new(1000,"USD").exchange_to(:EUR, "2013-03-02") # Verilen tarihe ait oranl
     <link rel="alternate" href="http://lab2023.com/web-sayfalarina-nasil-css-eklenir.html"/>
     <id>http://lab2023.com/web-sayfalarina-nasil-css-eklenir.html</id>
     <published>2013-07-23T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:11+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -888,7 +888,7 @@ Money.new(1000,"USD").exchange_to(:EUR, "2013-03-02") # Verilen tarihe ait oranl
     <link rel="alternate" href="http://lab2023.com/katip-gemi-ve-kullanimi.html"/>
     <id>http://lab2023.com/katip-gemi-ve-kullanimi.html</id>
     <published>2013-07-23T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:07:00+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -955,7 +955,7 @@ Create BenimDosyam.md
     <link rel="alternate" href="http://lab2023.com/yuzbin-baloncuk-v-0-1-0.html"/>
     <id>http://lab2023.com/yuzbin-baloncuk-v-0-1-0.html</id>
     <published>2013-07-20T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:06:56+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1032,7 +1032,7 @@ Create BenimDosyam.md
     <link rel="alternate" href="http://lab2023.com/the-semantic-grid-system-yarinin-sayfa-duzeni.html"/>
     <id>http://lab2023.com/the-semantic-grid-system-yarinin-sayfa-duzeni.html</id>
     <published>2013-07-14T00:00:00Z</published>
-    <updated>2014-03-23T00:53:21+02:00</updated>
+    <updated>2014-03-26T02:06:45+02:00</updated>
     <author>
       <name>lab2023</name>
     </author>
