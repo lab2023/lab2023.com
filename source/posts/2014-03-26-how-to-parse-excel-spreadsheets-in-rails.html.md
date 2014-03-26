@@ -2,7 +2,7 @@
 title: How To Parse Excel Spreadsheets in Rails
 date: 2014-03-26
 author: marjinal1st
-tags: excel
+tags: excel, roo, rails
 ---
 
 Parsing Excel spreadsheets in Rails is a quite simple task with the gem called Roo. Let’s do it step by step.
@@ -10,7 +10,7 @@ Parsing Excel spreadsheets in Rails is a quite simple task with the gem called R
 First off, you must include Roo gem in your Gemfile and install it:
 
 ```ruby
-gem ‘roo’, ‘~> 1.13.2’
+gem 'roo', '~> 1.13.2'
 ```
 
 ```bash
@@ -81,8 +81,8 @@ You can also use Paperclip attachment to get file, like **self.attachment**. And
 ```ruby
 def open_file(file)
   case File.extname(file.original_filename)
-    when ‘.xls’ then Roo::Excel.new(file.path)
-    when ‘.xlsx’ then Roo::Excelx.new(file.path)
+    when '.xls' then Roo::Excel.new(file.path)
+    when '.xlsx' then Roo::Excelx.new(file.path)
 
     else raise "Unknown file type: #{file.original_filename}"
   end
@@ -94,8 +94,8 @@ Now use it in the parser method:
 ```ruby
 def parse(file_path)
   file = open_file(file_path)
-  …
-  …
+  ...
+  ...
 end
 ```
 
