@@ -1,13 +1,8 @@
 ---
 title: Kurum İçi Eğitim - Muhammet Dilek - Rails ve I18N
 date: 2013-06-15
-twitter: dilekmuhammet
-tags:
-  - i18n
-  - language
-  - locale
-  - multi language
-  - rails
+author: dilekmuhammet
+tags: i18n, language, locale, multi language, rails
 ---
 
 *   Tarih : 06.06.2013

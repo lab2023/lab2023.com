@@ -1,0 +1,8 @@
+%meta{charset: 'utf-8'}/
+%meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}/
+%title= "lab2023#{yield_content :title}"
+
+= stylesheet_link_tag 'application', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
+= favicon_tag 'favicon.png'
+
+= yield_content :head

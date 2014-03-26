@@ -1,11 +1,8 @@
 ---
 title: Yuzbin Baloncuk  (v.0.1.0)
 date: 2013-07-20
-twitter: coskuntekin
-tags:
-  - haml
-  - sass
-  - compass
+author: coskuntekin
+tags: haml, sass, compass
 ---
 
 lab2023 ‘ un logosundan baloncuk cıkartabilir miyiz dedik ve basladik kodlamaya. Eger sizde bunu evde denemek istiyorsaniz [buradan][1] kodlara ulasabilirsiniz.

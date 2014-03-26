@@ -1,9 +1,8 @@
 ---
 title: Using Medium Editor as Input Field in Rails
 date: 2013-12-10
-twitter: marjinal1st
-tags:
-  - medium editor
+author: marjinal1st
+tags: medium editor
 ---
 
 Medium Editor is seriously a stunning WYSIWYG editor. Simple, stylish, easy to use… But you can also use it as an input field, with some Javascript magic :)

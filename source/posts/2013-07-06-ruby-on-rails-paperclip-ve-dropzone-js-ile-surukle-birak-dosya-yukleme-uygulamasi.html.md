@@ -1,10 +1,8 @@
 ---
 title: Ruby on Rails, Paperclip ve Dropzone.js ile sürükle bırak dosya yükleme uygulaması
 date: 2013-07-06
-twitter: yunusozcan
-tags:
-  - paperclip
-  - dropzone
+author: yunusozcan
+tags: paperclip, dropzone
 ---
 
 **Dropzone.js**

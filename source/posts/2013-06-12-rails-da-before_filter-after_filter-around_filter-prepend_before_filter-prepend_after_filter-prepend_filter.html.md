@@ -1,14 +1,8 @@
 ---
 title: Rails'da before_filter, after_filter, around_filter, prepend_before_filter, prepend_after_filter, prepend_filter
 date: 2013-06-12
-twitter: onurozgurozkan
-tags:
-  - after_filter
-  - around_filter
-  - before_filter
-  - prepend_after_filter
-  - prepend_before_filter
-  - prepend_filter
+author: onurozgurozkan
+tags: after_filter, around_filter, before_filter, prepend_after_filter, prepend_before_filter, prepend_filter
 ---
 
 Merhabalar,

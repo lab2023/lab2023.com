@@ -92,6 +92,7 @@ activate :blog do |blog|
   blog.permalink = '{title}'
   blog.taglink = 'tag/{tag}.html'
   blog.tag_template = 'tag.html'
+  blog.summary_separator = /READMORE/
 end
 
 activate :syntax

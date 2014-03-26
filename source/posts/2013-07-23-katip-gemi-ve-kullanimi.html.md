@@ -1,9 +1,8 @@
 ---
 title: Katip gemi ve kullanımı
 date: 2013-07-23
-twitter: baygunm
-tags:
-  - katip
+author: baygunm
+tags: katip
 ---
 
 ## Katip nedir?

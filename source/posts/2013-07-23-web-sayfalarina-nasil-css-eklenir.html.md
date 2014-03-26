@@ -1,9 +1,8 @@
 ---
 title: Web sayfalarına nasıl css eklenir?
 date: 2013-07-23
-twitter: safiyesepetci
-tags:
-  - css
+author: safiyesepetci
+tags: css
 ---
 
 **Web Sayfalarına Css eklemek**

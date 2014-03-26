@@ -1,14 +1,8 @@
 ---
 title: 3D Karakter Modelleme ve Animasyon Outsource İş İlanı
 date: 2013-10-26
-twitter: toziserikan
-tags:
-  - 3d
-  - animasyon
-  - cg
-  - iş teklifi
-  - modelleme
-  - outsource
+author: toziserikan
+tags: 3d, animasyon, cg, iş teklifi, modelleme, outsource
 ---
 
 ## Tanım

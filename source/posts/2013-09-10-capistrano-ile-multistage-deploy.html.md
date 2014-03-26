@@ -1,11 +1,8 @@
 ---
 title: Capistrano ile Multistage Deploy
 date: 2013-09-10
-twitter: dilekmuhammet
-tags:
-  - capistrano
-  - deploy
-  - ruby on rails
+author: dilekmuhammet
+tags: capistrano, deploy, ruby on rails
 ---
 
 Ürünlerimizi geliştirme aşamasında production ve staging olarak iki sunucuya deploy ediyoruz. Hafta bitiminde yaptığımız işleri staging sunucusuna deploy edip test edilmesini bekliyoruz. Onay geldiğinde ise production sunucusuna gönderiyoruz.

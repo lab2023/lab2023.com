@@ -1,9 +1,8 @@
 ---
 title: Rails Urlden Namespace Gizleme
 date: 2013-06-17
-twitter: dilekmuhammet
-tags:
-  - namespace
+author: dilekmuhammet
+tags: namespace
 ---
 
 Urlden namespace gizlemek için `namespace :admin` yerine `scope :module => 'admin'` kulanıyoruz. Örneğin;

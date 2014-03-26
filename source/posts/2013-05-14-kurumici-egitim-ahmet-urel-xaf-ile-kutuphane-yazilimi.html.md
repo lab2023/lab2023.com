@@ -1,9 +1,8 @@
 ---
 title: Kurumiçi Eğitim - Ahmet UREL - XAF ile kütüphane yazılımı
 date: 2013-05-14
-twitter: yazemo
-tags:
-  - xaf
+author: yazemo
+tags: xaf
 ---
 
 Firma olarak kurum içi eğitimlerimizi artık İnternet ortamında video olarak paylaşmaya karar verdik. İlk videosunu yüklediğimiz eğitim, Ahmet UREL tarafından anlatılan, XAF ile kütüphane yazılımı konulu eğitimdir. Amacımız farklı disiplinler hakkında bilgi sahibi olmaktır.

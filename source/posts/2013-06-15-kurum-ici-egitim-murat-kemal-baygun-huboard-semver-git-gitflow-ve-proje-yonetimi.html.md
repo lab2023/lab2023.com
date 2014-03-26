@@ -1,14 +1,8 @@
 ---
 title: Kurum İçi Eğitim - Murat Kemal BAYGÜN - Huboard, Semver, Git, Gitflow ve Proje Yönetimi
 date: 2013-06-15
-twitter: baygunm
-tags:
-  - git
-  - git-flow
-  - github
-  - huboard
-  - proje yönetimi
-  - semver
+author: baygunm
+tags: git, git-flow, github, huboard, proje yönetimi, semver
 ---
 
 *   Tarih : 06.06.2013

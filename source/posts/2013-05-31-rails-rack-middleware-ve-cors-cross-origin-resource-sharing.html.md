@@ -1,13 +1,8 @@
 ---
 title: Rails, Rack Middleware ve CORS (Cross-origin resource sharing)
 date: 2013-05-31
-twitter: toziserikan
-tags:
-  - cors
-  - cross-origin resources sharing
-  - middleware
-  - rack
-  - rails
+author: toziserikan
+tags: cors, cross-origin resources sharing, middleware, rack, rails
 ---
 
 Merhaba,

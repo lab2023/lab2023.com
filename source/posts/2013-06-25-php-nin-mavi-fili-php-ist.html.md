@@ -1,10 +1,8 @@
 ---
 title: PHP'nin Mavi Fili, PHP - IST
 date: 2013-06-25
-twitter: onurozgurozkan
-tags:
-  - php istanbul topluluğu
-  - php-ist
+author: onurozgurozkan
+tags: php istanbul topluluğu, php-ist
 ---
 
 Php 'nin yeni mavi fili 6 temmuz da İstanbul'da uçmaya hazırlanıyor. Bu yıl ilk defa yapılacak olan etkinlik, bizleri; php dunyasında ki son gelişmeleri, en yeni teknolojileri, frameworkleri enine boyuna anlatmaya ve tartışmaya çağırıyor.

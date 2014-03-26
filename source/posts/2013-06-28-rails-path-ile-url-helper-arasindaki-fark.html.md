@@ -1,10 +1,8 @@
 ---
 title: Rails Path İle Url Helper Arasındaki Fark
 date: 2013-06-28
-twitter: dilekmuhammet
-tags:
-  - rails url
-  - rails path
+author: dilekmuhammet
+tags: rails url, rails path, routing
 ---
 
 Merhabalar;

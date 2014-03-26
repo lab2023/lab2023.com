@@ -1,14 +1,8 @@
 ---
 title: 2D Karakter Tasarımı ve Animasyon Outsource İş İlanı
 date: 2013-11-04
-twitter: toziserikan
-tags:
-  - 2d
-  - animation
-  - design
-  - iş teklifi
-  - motion graphic
-  - outsource
+author: toziserikan
+tags: 2d, animation, design, iş teklifi, motion graphic, outsource
 ---
 
 Merhaba,

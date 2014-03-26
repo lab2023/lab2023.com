@@ -1,13 +1,8 @@
 ---
 title: Forkladığınız GitHub reposunu ana repo ile güncel tutmak
 date: 2013-06-17
-twitter: toziserikan
-tags:
-  - branch
-  - fork
-  - git
-  - github
-  - remote
+author: toziserikan
+tags: branch, fork, git, github, remote
 ---
 
 Bildiginiz gibi playbook, rails-template v.b. open source projelerimizi github üzerinden güncellemeye devam ediyoruz.

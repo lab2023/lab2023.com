@@ -1,9 +1,8 @@
 ---
 title: Paperclip gemi ile resimlere watermark ekleme
 date: 2013-09-27
-twitter: hamitturkukaya
-tags:
-  - paperclip
+author: hamitturkukaya
+tags: paperclip
 ---
 
 [Paperclip][1] gemi varsayılan olarak resimlere watermark eklemeyi desteklemiyor. Bu yüzden watermark ekleyebilmek için projeye, imagemagick'in resimleri birleştirme komutu olan 'composite' i içeren bir processor eklememiz gerekiyor.

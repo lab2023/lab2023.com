@@ -1,5 +1,8 @@
-%section#posts
-- page_articles.each_with_index do |article, i|
-  %article
-    %span= article.date.strftime('%B %e, %Y')
-    = link_to article.title, article.url
+%section
+  - page_articles.each_with_index do |article, i|
+    %article.posts.row
+      .col-lg-2.col-lg-offset-1
+        %span.pull-right= article.date.strftime('%B %e, %Y')
+      .col-lg-8
+        %h1= link_to article.title, article.url
+        /= article.summary

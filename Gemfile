@@ -18,6 +18,7 @@ gem 'bootstrap-sass', '~> 3.1.1.0'
 gem 'middleman-blog', '~> 3.5.1'
 gem 'middleman-syntax'
 gem 'redcarpet'
+gem 'nokogiri', '~> 1.6.1'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.0'

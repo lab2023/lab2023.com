@@ -1,9 +1,8 @@
 ---
 title: Ruby On Rails Helper İçerisinde Haml Kullanmak
 date: 2013-06-22
-twitter: dilekmuhammet
-tags:
-  - haml
+author: dilekmuhammet
+tags: haml
 ---
 
 Ruby On Rails `Helper` dosyaları içerisinde `Haml` kullanmak için

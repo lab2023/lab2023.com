@@ -200,3 +200,55 @@ footer
 .popover.top
   margin-top: -15px
 
+
+// Blog page overrides
+body#blog
+  color: $base-font-color
+  font-size: 1.4em
+  line-height: 1.5em
+  text-rendering: optimizeLegibility
+  font-weight: 200
+
+  header.header
+    border-top: 5px solid $base-color
+    padding-top: 100px
+    margin-bottom: 100px
+    img.logo
+      width: 110px
+      height: 110px
+    h1
+      margin-bottom: 0
+    p
+      padding: 0
+      margin: 0
+      a
+        font-size: .8em
+        color: lighten($base-font-color, .2)
+
+  article.posts, article.post
+    margin-bottom: 10px
+    h1
+      color: darken($base-font-color, 30)
+      font-size: 1.5em
+      margin-top: 0
+      font-weight: 300
+
+  article.post
+    h1
+      margin-bottom: 20px
+      font-weight: 600
+
+  .article-meta
+    text-align: right
+
+    span.tag
+      display: block
+      a
+        color: $base-font-color
+        &:hover
+          text-decoration: underline
+          color: $base-color
+
+    h4, h5
+      font-weight: 400
+      margin-top: 4px

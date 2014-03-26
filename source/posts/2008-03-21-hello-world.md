@@ -1,10 +1,8 @@
 ---
 title: "Hello World!"
 date: 2008-03-21
-twitter: onurozgurozkan
-tags:
-  - lab2023
-  - blog
+author: onurozgurozkan
+tags: lab2023, blog
 ---
 
 This is a sample post for design, test our new blog.
@@ -64,7 +62,7 @@ The following snippet of text is *rendered as italicized text*.
 
 ## Images
 
-![Onur Özgür ÖZKAN](articles/2013-09-03-onur-ozgur-ozkan.jpg)
+![Placehold.it](http://placehold.it/600x800)
 
 ***
 

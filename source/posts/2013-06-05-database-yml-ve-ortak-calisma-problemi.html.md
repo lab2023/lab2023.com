@@ -1,9 +1,8 @@
 ---
 title: database.yml ve ortak çalışma problemi
 date: 2013-06-05
-twitter: baygunm
-tags:
-  - database.yml
+author: baygunm
+tags: database.yml
 ---
 
 Merhabalar,

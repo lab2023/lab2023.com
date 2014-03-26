@@ -1,9 +1,8 @@
 ---
 title: Github'a nasıl dosya yollanir?
 date: 2013-08-26
-twitter: safiyesepetci
-tags:
-  - github
+author: safiyesepetci
+tags: github
 ---
 
    Github versiyon kontrol sistemleri için bir uzak depodur. Hızlı ve güvenli oluşu, kapsamlı raporlama yapısı ve çoklu çalışma kolaylığı ile birçok yazılımcının vazgeçilmezi olmuştur. Peki github nasıl kullanılır?

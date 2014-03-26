@@ -1,17 +1,8 @@
 ---
 title: Minimalizm ve sadelik zamanı, Flat UI
 date: 2013-06-16
-twitter: toziserikan
-tags:
-  - admin theme
-  - design
-  - flat
-  - flat ui
-  - hierapolis
-  - ios 7
-  - kebab
-  - minimalism
-  - simplecity
+author: toziserikan
+tags: admin theme, design, flat, flat ui, hierapolis, ios 7, kebab, minimalism, simplicity
 ---
 
 Merhabalar,

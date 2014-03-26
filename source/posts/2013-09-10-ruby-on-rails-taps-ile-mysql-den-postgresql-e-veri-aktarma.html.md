@@ -1,11 +1,8 @@
 ---
 title: Taps ile MySQL' den PostgreSQL' e Veri Aktarma
 date: 2013-09-10
-twitter: dilekmuhammet
-tags:
-  - mysql
-  - postresgl
-  - taps
+author: dilekmuhammet
+tags: mysql, postresql, taps
 ---
 
 Merhabalar,
