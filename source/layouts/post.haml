@@ -15,8 +15,19 @@
     = partial 'layouts/partials/head'
 
   %body#blog
-
     = partial 'layouts/partials/blog_header'
+    /share-buttons js code
+    %div#fb-root
+      :javascript
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+
 
     .container
       .row
@@ -26,14 +37,27 @@
             - if t == current_page.data.author
               %h4= link_to n, 'http://twitter.com/' + t, target: '_blank'
           %h5= current_page.data.date.strftime('%B %e, %Y')
+
           - current_page.data.tags.split(',').each do |tag, i|
             %span.tag= link_to tag, tag_path(tag)
+          /Share buttons
+          %ul.share_button
+            %li
+              .fb-share-button{"data-href" => "http://lab2023.com#{current_page.url}", "data-type" => "button_count"}
+            %li
+              %a.twitter-share-button{"data-text" => "http://lab2023.com#{current_page.url}", "data-via" => "lab2023", href: "https://twitter.com/share"}
+            %li
+              %script{src: "//platform.linkedin.com/in.js", type: "text/javascript"}
+                :cdata
+                  lang: en_US
+              %script{"data-url" => "http://lab2023.com#{current_page.url}", type: "IN/Share"}
+
+
 
         .col-lg-8
 
           %article.post
             %h1= current_page.data.title
-
             = yield
 
             - # Disqus
