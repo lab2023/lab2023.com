@@ -1,5 +1,5 @@
 ---
-title: Github'a nasıl dosya yollanir?
+title: Github'a nasıl dosya gönderilir?
 date: 2013-08-26
 author: safiyesepetci
 tags: github
@@ -7,13 +7,13 @@ tags: github
 
    Github versiyon kontrol sistemleri için bir uzak depodur. Hızlı ve güvenli oluşu, kapsamlı raporlama yapısı ve çoklu çalışma kolaylığı ile birçok yazılımcının vazgeçilmezi olmuştur. Peki github nasıl kullanılır?
 
-Şimdi github'da hesabınızı aldıktan sonra yeni bir repository (depo) oluşturmayı ve oluşturduğumuz repository'ye dosya yollamayı anlatacağım.
+Şimdi github'da hesabınızı aldıktan sonra yeni bir repository (depo) oluşturmayı ve oluşturduğumuz repository'ye dosya göndermeyi§ anlatacağım.
 
 İlk olarak github hesabımızda repository/new yada create a new repo'ya tıklayarak repomuzu oluşturuyoruz.
 
 ![Newrepo](articles/2013-08-26-newrepo.png)
 
-Dizinimizi oluşturduktan sonra sıra var olan dosyalarımızı uzak depoya yollamaya geliyor.
+Dizinimizi oluşturduktan sonra sıra var olan dosyalarımızı uzak depoya göndermeye geliyor.
 
 Yukarıdaki adımları console yada terminalimizden sırasıyla uyguladığımızda ilk olarak
 
