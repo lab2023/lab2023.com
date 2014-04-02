@@ -25,9 +25,11 @@
           - data.authors.authors.each do |t, n|
             - if t == current_page.data.author
               %h4= link_to n, 'http://twitter.com/' + t, target: '_blank'
-          %h5= current_page.data.date.strftime('%B %e, %Y')
-          - current_page.data.tags.split(',').each do |tag, i|
-            %span.tag= link_to tag, tag_path(tag)
+          - date = Time.parse(current_page.data.date)
+          %h5= date.strftime('%B %e, %Y')
+          - if current_page.data.tags
+            - current_page.data.tags.split(',').each do |tag, i|
+              %span.tag= link_to tag, tag_path(tag)
 
         .col-lg-8
 
