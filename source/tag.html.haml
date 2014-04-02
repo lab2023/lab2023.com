@@ -1,8 +1,15 @@
-%section#posts
-%h1
-  Articles tagged '#{tagname}'
-%ul
+%section
+  .row
+    .col-lg-9.col-lg-offset-3
+      %h1.tags-title
+        Articles tagged
+        %strong '#{tagname}'
   - page_articles.each do |article|
-    %li
-      %span= article.date.strftime('%B %e, %Y')
-      = link_to article.title, article
+    %article.posts.row
+      .col-lg-2.col-lg-offset-1
+        %span.pull-right= article.date.strftime('%B %e, %Y')
+
+      .col-lg-8
+
+        %h1= link_to article.title, article
+

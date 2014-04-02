@@ -66,10 +66,6 @@
           = link_to 'https://github.com/lab2023', target: '_blank' do
             Use our open source software
             %i.fa.fa-arrow-circle-right
-          |
-          = link_to 'https://github.com/kebab-project', target: '_blank' do
-            Visit our open software toolbox
-            %i.fa.fa-arrow-circle-right
 
     .row
       .col-lg-10.col-lg-offset-1
@@ -200,6 +196,9 @@
       %li{'data-toggle' => 'tooltip', title: 'YouTube'}
         = link_to 'http://www.youtube.com/user/thelab2023', target: '_blank' do
           %i.fa.fa-youtube-square.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'RSS'}
+        = link_to 'http://lab2023.com/feed.xml', target: '_blank' do
+          %i.fa.fa-rss-square.fa-3x
     %p.extra
       = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
         %strong Want us to work for you?
