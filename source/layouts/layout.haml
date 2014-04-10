@@ -1,0 +1,17 @@
+!!!5
+%html{lang: 'en', class: 'no-js'}
+  %head
+
+    = partial 'layouts/partials/head'
+
+
+  %body#home{'data-spy' => 'scroll', 'data-target' => '#navigation'}
+
+    = partial 'layouts/partials/header'
+
+    = yield
+
+
+    = partial 'layouts/partials/footer'
+
+  = partial 'layouts/partials/foot'

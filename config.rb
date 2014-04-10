@@ -17,7 +17,11 @@
 # page "/path/to/file.html", layout: false
 #
 # With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+page '/posts/*', layout: :post
+page 'blog.html', layout: :posts
+page 'tag/*', layout: :posts
+page '/feed.xml', layout: false
+
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -34,6 +38,9 @@
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
+
+# Pretty URLs
+activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 activate :livereload
@@ -55,17 +62,40 @@ set :haml, format: :html5
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Deployment
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  deploy.remote = 'git@github.com:lab2023/lab2023.com.git'
+  deploy.branch = 'gh-pages'
+end
+
+# Blog
+activate :blog do |blog|
+  blog.sources = 'posts/{year}-{month}-{day}-{title}'
+  blog.default_extension = '.md'
+  blog.permalink = '{title}'
+  blog.taglink = 'tag/{tag}.html'
+  blog.tag_template = 'tag.html'
+  blog.summary_separator = /READMORE/
+end
+
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+set :haml, { ugly: true }

@@ -1,0 +1,19 @@
+!!!5
+%html{lang: 'en', class: 'no-js'}
+  %head
+
+    - content_for :title do
+      = '\'s blog posts'
+
+    = partial 'layouts/partials/head'
+
+  %body#blog
+
+    = partial 'layouts/partials/blog_header'
+
+    .container
+      = yield
+
+    = partial 'layouts/partials/footer'
+
+  = partial 'layouts/partials/foot'

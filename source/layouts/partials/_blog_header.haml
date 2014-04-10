@@ -1,0 +1,16 @@
+%header.header
+  .container
+    .row
+      .col-lg-2.col-lg-offset-1
+        = link_to '/blog' do
+          = image_tag 'logo.png', class: 'logo pull-right'
+      .col-lg-8
+        %h1
+          =link_to 'lab2023\'s blog posts', '/blog'
+          =link_to 'http://lab2023.com/feed.xml', target: '_blank' do
+            %i.fa.fa-rss
+
+        %p
+          = link_to  '/' do
+            %i.fa.fa-arrow-circle-left
+            lab2023.com

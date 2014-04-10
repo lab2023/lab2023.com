@@ -1,0 +1,79 @@
+!!!5
+%html{lang: 'en', class: 'no-js'}
+  %head
+
+    - content_for :title do
+      = " | #{current_page.data.title}"
+
+    - content_for :head do
+      %meta{content: current_page.data.title, name: 'description'}/
+      %meta{content: current_page.data.tags, name: 'keywords'}/
+      - data.authors.authors.each do |t, n|
+        - if t == current_page.data.author
+          %meta{content: n, name: 'author'}/
+
+    = partial 'layouts/partials/head'
+
+  %body#blog
+    = partial 'layouts/partials/blog_header'
+    /share-buttons js code
+    %div#fb-root
+      :javascript
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+
+
+    .container
+      .row
+        .col-lg-2.col-lg-offset-1.article-meta
+
+          - data.authors.authors.each do |t, n|
+            - if t == current_page.data.author
+              %h4= link_to n, 'http://twitter.com/' + t, target: '_blank'
+          %h5= current_page.data.date.strftime('%B %e, %Y')
+
+          - current_page.data.tags.split(',').each do |tag, i|
+            %span.tag= link_to tag, tag_path(tag)
+          /Share buttons
+          %ul.share_button
+            %li
+              .fb-share-button{"data-href" => "http://lab2023.com#{current_page.url}", "data-type" => "button_count"}
+            %li
+              %a.twitter-share-button{"data-text" => "http://lab2023.com#{current_page.url}", "data-via" => "lab2023", href: "https://twitter.com/share"}
+            %li
+              %script{src: "//platform.linkedin.com/in.js", type: "text/javascript"}
+                :cdata
+                  lang: en_US
+              %script{"data-url" => "http://lab2023.com#{current_page.url}", type: "IN/Share"}
+
+        .col-lg-8
+
+          %article.post
+            %h1= current_page.data.title
+            = yield
+
+            - # Disqus
+            #disqus_thread
+            :javascript
+              var disqus_shortname = 'lab2023';
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            %noscript
+              Please enable JavaScript to view the
+              %a{href: 'http://disqus.com/?ref_noscript'} comments powered by Disqus.
+            %a.dsq-brlink{href: 'http://disqus.com'}
+              comments powered by
+              %span.logo-disqus Disqus
+
+    = partial 'layouts/partials/footer'
+
+  = partial 'layouts/partials/foot'
