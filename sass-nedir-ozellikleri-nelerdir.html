@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | Sass Nedir? Özellikleri nelerdir?
+</title>
+<link href="assets/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Sass Nedir? Özellikleri nelerdir?' name='description'>
+<meta content='sass' name='keywords'>
+<meta content='Safiye SEPETCİ' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" alt="" width="252" height="253" src="assets/images/logo.png" />
+</a>
+</div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+</h1>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a>
+</p>
+</div>
+</div>
+</div>
+</header>
+
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a target="_blank" href="http://twitter.com/safiyesepetci">Safiye SEPETCİ</a></h4>
+<h5>March  3, 2014</h5>
+<span class='tag'><a href="/tag/sass.html">sass</a></span>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Sass Nedir? Özellikleri nelerdir?</h1>
+<p>Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i teknik olarak geçmeyi başarmıştır. Nasıl geçmiş kısaca özetliyorum;</p>
+
+<ul>
+<li>Css’in değişken tanımlanılabilinen hali (Variables)</li>
+<li>Css’in tarayıcılar için yazdığımız ekstra kodları kendisi oluşturabilen hali(Mixins)</li>
+<li>Css’in girintileri fark ederek iç içe class’ları yazabilen hali (Nesting)</li>
+<li>Css dosyasında istediğimiz kodları istediğimiz yerde extend edebiliyoruz (Extend/Inheritance)</li>
+<li>Css dosyamızı parçalara ayırıp, ayırdığımız kısımları istediğimiz yerde çağırabiliyoruz (İmport)</li>
+<li>Css dosyamızda çarpma,bölme toplama vs. yapabiliyorz. (Operators)</li>
+</ul>
+
+<p>Şimdi artılarını açıklamaya çalışacağım.</p>
+
+<p><strong>Özellikleri</strong></p>
+
+<p><strong>Variables:</strong> Sass’ta değişken tanımlayabildiğimizi söylemiştik. Örneğe bakalım.</p>
+
+<p>Değişkenleri tanımlıyoruz.</p>
+<pre class="highlight sass"><span class="nv">$header-font-style</span><span class="p">:</span>  <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span>
+<span class="nv">$header-color</span><span class="p">:</span> <span class="mh">#000</span>
+</pre>
+
+<p>Değişkenleri kullanıyoruz.</p>
+<pre class="highlight sass"><span class="nc">.header</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="nv">$header-font-style</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$header-color</span>
+</pre>
+
+<p><strong>Nesting:</strong> Nesne girintilerine göre kod yazmak.</p>
+<pre class="highlight sass"><span class="nn">#nav</span>
+  <span class="nt">ul</span>
+   <span class="nl">color</span><span class="p">:</span> <span class="no">red</span>
+  <span class="nt">li</span>
+   <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span>
+  <span class="nt">a</span>
+   <span class="nl">color</span><span class="p">:</span> <span class="no">green</span>
+</pre>
+
+<p>Css çıktısı:</p>
+<pre class="highlight css"><span class="nf">#nav</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#nav</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#nav</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+
+<p><strong>Partials ve @import:</strong> Kodlarımızı bölümleyip istediğimiz yerde import edebiliyoruz.</p>
+<pre class="highlight plaintext">/* _reset.sass */
+body
+ margin: 0
+ padding: 0
+</pre>
+
+<p>Bu dosyayı asıl stil dosyamıza dahil edelim.</p>
+<pre class="highlight plaintext">/* base.sass */
+@import 'reset'
+</pre>
+
+<p><strong>Mixins:</strong> bu özellik sayesinde css3 ün hayatımızı zor bir yoldan kolaylaştıran özelliklerini sıkılmadan uygulayabileceğiz.</p>
+<pre class="highlight plaintext">@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  -o-border-radius: $radius
+  border-radius: $radius
+</pre>
+
+<p>Mixin&#39;i sass&#39;da çağırıyoruz.</p>
+<pre class="highlight plaintext"> .box
+   @include border-radius(10px)
+</pre>
+
+<p>Bu mixin&#39;inden sonra border-radius kullandığımızda ekstra kodları yazmamıza gerek yok.</p>
+
+<p><strong>Extend/Inheritance:</strong> class yada id&#39;lerde kullandığımız özellikleri @extend özelliği ile bir sonraki class yada id mizin içinde kullanabiliyoruz.</p>
+
+<p>message class&#39;ı için kodlarımız bunlar.</p>
+<pre class="highlight plaintext">.message
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+</pre>
+
+<p>Şimdide diğer class yada id&#39;mizde bu kodları extend edelim.</p>
+<pre class="highlight plaintext">.success
+  @extend .message
+  border-color: green
+
+.error
+  @extend .message
+  border-color: red
+</pre>
+
+<p><strong>Operators:</strong> css özelliklerini yazarken operatorleri kullanabileceğimizi biliyor muydunuz? :)</p>
+<pre class="highlight plaintext">aside
+ float: right
+ width: 300px / 960px * 100%
+</pre>
+
+<p>Css çıktısı:</p>
+<pre class="highlight plaintext">aside {
+ float: right;
+ width: 31.25%;
+  }
+</pre>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2014 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/application.js" type="text/javascript"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>
