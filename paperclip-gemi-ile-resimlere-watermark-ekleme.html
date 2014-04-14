@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | Paperclip gemi ile resimlere watermark ekleme
+</title>
+<link href="assets/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Paperclip gemi ile resimlere watermark ekleme' name='description'>
+<meta content='paperclip' name='keywords'>
+<meta content='Hamit Türkü KAYA' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" alt="" width="252" height="253" src="assets/images/logo.png" />
+</a>
+</div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+</h1>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a>
+</p>
+</div>
+</div>
+</div>
+</header>
+
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a target="_blank" href="http://twitter.com/hamitturkukaya">Hamit Türkü KAYA</a></h4>
+<h5>September 27, 2013</h5>
+<span class='tag'><a href="/tag/paperclip.html">paperclip</a></span>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Paperclip gemi ile resimlere watermark ekleme</h1>
+<p><a href="https://github.com/thoughtbot/paperclip">Paperclip</a> gemi varsayılan olarak resimlere watermark eklemeyi desteklemiyor. Bu yüzden watermark ekleyebilmek için projeye, imagemagick&#39;in resimleri birleştirme komutu olan &lsquo;composite&rsquo; i içeren bir processor eklememiz gerekiyor.</p>
+
+<!--more-->
+
+<p>Öncelikle paperclip geminin processorları aradığı</p>
+<pre class="highlight plaintext">lib/paperclip_processors
+</pre>
+
+<p>klasörünün içine watermark.rb dosyamızı oluşturup</p>
+<pre class="highlight plaintext">module Paperclip
+  class Watermark &lt; Thumbnail
+    # Handles watermarking of images that are uploaded.
+    attr_accessor :format, :whiny, :watermark_path, :position
+
+    def initialize file, options = {}, attachment = nil
+      super
+      @file             = file
+      @whiny            = options[:whiny].nil? ? true : options[:whiny]
+      @format           = options[:format]
+      @watermark_path   = options[:watermark_path]
+      @position         = options[:watermark_position].nil? ? "SouthEast" : options[:watermark_position]
+
+      @current_format   = File.extname(@file.path)
+      @basename         = File.basename(@file.path, @current_format)
+    end
+
+    # Performs the conversion of the +file+ into a watermark. Returns the Tempfile
+    # that contains the new image.
+    def make
+      return @file unless watermark_path
+
+      dst = Tempfile.new([@basename, @format].compact.join("."))
+      dst.binmode
+
+      command = "composite"
+      params = "-gravity #{@position} #{watermark_path} #{fromfile} #{tofile(dst)}"
+
+      begin
+        success = Paperclip.run(command, params)
+      rescue PaperclipCommandLineError
+        raise PaperclipError, "There was an error processing the watermark for #{@basename}" if @whiny
+      end
+
+      dst
+    end
+
+    def fromfile
+      "\"#{ File.expand_path(@file.path) }[0]\""
+    end
+
+    def tofile(destination)
+      "\"#{ File.expand_path(destination.path) }[0]\""
+    end
+  end
+end
+</pre>
+
+<p>şeklinde watermark classımızı ekliyoruz.</p>
+
+<p>Ardından ilgili model dosyamızda</p>
+<pre class="highlight plaintext">has_attached_file :photo,
+processors: [:thumbnail, :watermark],
+styles: {
+  zoom: { geometry: '1024x576#', watermark_path: "#{Rails.root}/app/assets/images/watermarks/watermark_zoom.png"},
+  main: { geometry: '770x520#', watermark_path: "#{Rails.root}/app/assets/images/watermarks/watermark_main.png"}
+}
+</pre>
+
+<p>şeklinde eklediğimiz resimler için kullanılacak processorlerı tanımlıyoruz, thumbnail resimlerin boyutunu düzenlemek için paperclipte tanımlanmış processor classıdır eklenmediği sürece resim boyutlandırması yapılmaz. Ardından farklı boyutlar için yeniden boyutlandırma için geometry ve watermark olarak eklenecek resmimizin path&#39;ini veriyoruz.</p>
+
+<p>Bu işlemlerden sonra eklenecek her resime watermark&#39;ınız eklenecektir.</p>
+
+<p>Eğer daha önce upload ettiğiniz resimlere de watermark&#39;ınızın eklenmesini istiyorsanız.</p>
+<pre class="highlight plaintext">rake paperclip:refresh class=Product
+</pre>
+
+<p>rake&#39;ini çalıştırmanız yeterlidir.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2014 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/application.js" type="text/javascript"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>
