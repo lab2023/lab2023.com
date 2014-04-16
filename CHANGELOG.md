@@ -1,7 +1,34 @@
 
 #### [Current]
+ * [9ae3ba8](../../commit/9ae3ba8) - __(Tayfun Öziş ERİKAN)__ Remove build files
+ * [5a058dd](../../commit/5a058dd) - __(Tayfun Öziş ERİKAN)__ Remove build files
+ * [9715e14](../../commit/9715e14) - __(Tayfun Öziş ERİKAN)__ Article was updated.
+ * [ad2dea1](../../commit/ad2dea1) - __(hamitturkukaya)__ Typo fix
+ * [187435f](../../commit/187435f) - __(safiyesepetci)__ new article added (ekonomist)
+ * [e9d65ab](../../commit/e9d65ab) - __(leyla KAPİ)__ Merge pull request [#6](../../issues/6) from leylaKapi/develop
 
-#### 
+Flickr icon
+ * [39ee4f0](../../commit/39ee4f0) - __(Leyla Kapi)__ Add Flickr icon
+ * [9c1fe82](../../commit/9c1fe82) - __(Leyla Kapi)__ Merge branches 'develop' and 'gh-pages' of https://github.com/leylaKapi/lab2023.com into develop
+ * [800357b](../../commit/800357b) - __(Onur Özgür ÖZKAN)__ Merge pull request [#5](../../issues/5) from sbagdat/patch-1
+
+Fix typo
+ * [5893282](../../commit/5893282) - __(Sıtkı Bağdat)__ Fix typo
+ * [09f1792](../../commit/09f1792) - __(safiyesepetci)__ LAB-11 #time 5m article renamed
+ * [bf0bf59](../../commit/bf0bf59) - __(safiyesepetci)__ LAB-11 #time 15m strftime bug fixed
+ * [0a2769a](../../commit/0a2769a) - __(safiyesepetci)__ LAB-11 #time 4m new article init
+ * [56859de](../../commit/56859de) - __(safiyesepetci)__ LAB-11 #time 1m altin-orumcek.png added
+ * [815ed50](../../commit/815ed50) - __(safiyesepetci)__ LAB-11 #time 10m strftime fixed
+ * [968ce88](../../commit/968ce88) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-26 00:30:46 UTC by middleman-deploy 0.2.3
+ * [bc28fb9](../../commit/bc28fb9) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-25 10:14:35 UTC by middleman-deploy 0.2.3
+ * [7515a47](../../commit/7515a47) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-22 08:48:59 UTC by middleman-deploy 0.2.3
+ * [252b12b](../../commit/252b12b) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-22 08:47:11 UTC by middleman-deploy 0.2.3
+ * [3927cba](../../commit/3927cba) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-21 11:16:47 UTC by middleman-deploy 0.2.3
+ * [130dde0](../../commit/130dde0) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-21 11:15:12 UTC by middleman-deploy 0.2.3
+ * [9056be8](../../commit/9056be8) - __(Tayfun Öziş ERİKAN)__ Automated commit at 2014-03-21 11:00:17 UTC by middleman-deploy 0.2.3
+
+#### 1.0.0
+ * [8a924ab](../../commit/8a924ab) - __(Tayfun Öziş ERİKAN)__ Bump version 1.0.0
  * [63da688](../../commit/63da688) - __(Tayfun Öziş ERİKAN)__ Clara's profile photo was changed.
  * [836668c](../../commit/836668c) - __(Onur Ozgur OZKAN)__ typo fixed
  * [61b4c55](../../commit/61b4c55) - __(Tayfun Öziş ERİKAN)__ Article name was changed, new author was added.
