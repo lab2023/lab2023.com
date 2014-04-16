@@ -5,4 +5,4 @@ author: lab2023
 tags: press
 ---
 
-![items](articles/2012-06-21-altin-orumcek.png)
+![items](articles/2012-06-21-onuncu-altin-orumcek.jpg)
