@@ -37,7 +37,6 @@
             - if t == current_page.data.author
               %h4= link_to n, 'http://twitter.com/' + t, target: '_blank'
           %h5= current_page.data.date.strftime('%B %e, %Y')
-
           - current_page.data.tags.split(',').each do |tag, i|
             %span.tag= link_to tag, tag_path(tag)
           /Share buttons
