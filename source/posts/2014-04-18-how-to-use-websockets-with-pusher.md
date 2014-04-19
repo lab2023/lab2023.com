@@ -24,7 +24,7 @@ I want to introduce this service to you and show how to implement Pusher with Ru
   Ruby, PHP, Python, Node.js, Java, iOS, Android, Flash etc.
 * If you are work in browser that doesn't support WebSocket, Pusher automatically gets activated Flash-based version.
   In this way, Pusher will work good for old generation web browsers.
-* If you don't use only WebSocket communication, Pusher give good RESTFul API for you.
+* If you don't use only WebSocket communication, Pusher give good RESTful API for you.
 
 ### How to use Pusher?
 
