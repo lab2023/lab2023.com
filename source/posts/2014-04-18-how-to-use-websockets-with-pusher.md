@@ -2,7 +2,7 @@
 title: How To Use WebSockets With Pusher
 date: 2014-04-18
 author: toziserikan
-tags: WebSockets, service, pusher, ruby, javascript, en
+tags: websockets, service, pusher, ruby, javascript, en
 ---
 
 WebSocket technologies has started to become very popular recently. You can create real-time games, chat services etc.
