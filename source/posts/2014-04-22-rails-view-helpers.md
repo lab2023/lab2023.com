@@ -5,9 +5,9 @@ author: onurozgurozkan
 tags: rails, view helpers, haml, en
 ---
 
-Our marketting department recorded a lot of [tutorial](http://www.youtube.com/user/Bulutfon) [videos](https://vimeo.com/bulutfon) last week. They want to link to related videos at related pages. Let's do this with a clever way.
+Our marketting department recorded a lot of [tutorial](http://www.youtube.com/user/Bulutfon) [videos](https://vimeo.com/bulutfon) at last week. They want to link to related videos at related pages. Let's do this with a clever way.
 
-This is our sample code haml block show icons and link to videos. As you see there are dublicate code blocks.
+This is our sample haml code block which shows icons and link to videos. As you see there are dublicate codes.
 
 ```haml
 - content_for :toolbar do
