@@ -9,11 +9,11 @@ Bir önceki makalemizde 'RabbitMQ ile Merhaba Dünya Örneğini' yapmıştık. B
 
 ![Örnek 2](articles/2013-04-25-rabbitmq.png)
 
-Bir önceki örnekte `Producer`, `Consumer`'ye 'Merhaba Dünya' yazısı gönderiyordu. Gerçek hayatta bu işlem arka plan işlemlere iyi bir örnek değildir. Arkaplan işleri daha çok süre gerektiren ve işlerin bir tek instance tarafından değilde bir den çok instance tarafından yapıldığı işlemlerdir. Yedek alma, rapor çıkarmak, resim düzenleme gibi işlemler bunlara örnektir. Bu işlemlerin ortak özelliği yapılmalarının vakit almasıdır. 
+Bir önceki örnekte `Producer`, `Consumer`'ye 'Merhaba Dünya' yazısı gönderiyordu. Gerçek hayatta bu işlem arka plan işlemlere iyi bir örnek değildir. Arkaplan işleri daha çok süre gerektiren ve işlerin bir tek instance tarafından değil de birden çok instance tarafından yapıldığı işlemlerdir. Yedek alma, rapor çıkarmak, resim düzenleme gibi işlemler bunlara örnektir. Bu işlemlerin ortak özelliği yapılmalarının vakit almasıdır. 
 
 ## Hazırlık
 
-O zaman bu örneğimizde `Producer` mesajı gönderirken onun ne kadar süreceğinide textin içinde göndersin ki gerçek bir arkaplan işini simüle edelim. Örneğin `Hello ...` işleminin bitmesi 3 saniye sürerken `Hello .....` 5 saniye sürsün.
+O zaman bu örneğimizde `Producer` mesajı gönderirken onun ne kadar süreceğini de textin içinde göndersin ki gerçek bir arkaplan işini simüle edelim. Örneğin `Hello ...` işleminin bitmesi 3 saniye sürerken `Hello .....` 5 saniye sürsün.
 
 Buna göre kodlarımızı düzenleyelim. `send.rb` artık yapılacak iş olduğundan `new_task.rb` demek daha doğru olur.
 
