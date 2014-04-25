@@ -5,7 +5,7 @@ author: onurozgurozkan
 tags: rabbitmq, amqp, bunny, ruby, arkaplan işleri, tr
 ---
 
-Bir önceki makalemizde 'RabbitMQ ile Merhaba Dünya Örneğini' yapmıştık. Bu örneğimizde ise özellikle Resque, DelayJob gibi arka plan işler için RabbitMQ kullanacağız. 
+Bir önceki makalemizde 'RabbitMQ ile Merhaba Dünya Örneğini' yapmıştık. Bu örneğimizde ise özellikle [Resque](https://github.com/resque/resque), [Delayed Job](https://github.com/collectiveidea/delayed_job/tree/master) gibi arka plan işler için RabbitMQ kullanacağız. 
 
 ![Örnek 2](articles/2013-04-25-rabbitmq.png)
 
