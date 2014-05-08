@@ -2,7 +2,7 @@
 title: Vagrant'a Giriş
 date: 2014-05-02
 author: marjinal1st
-tags: vagrant, virtualbox, sanallaştırma, vagrant cloud
+tags: vagrant, virtualbox, sanallaştırma, vagrant cloud, tr
 ---
 
 Vagrant nedir?
@@ -22,7 +22,7 @@ Vagrant’ın kurulumu oldukça basit. Sitesinden, işletim sisteminize ve mimar
 
 [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
 
-Vagrant, Ruby dilinde geliştirilmiştir. Sisteminizde [RubyGems](http://en.wikipedia.org/wiki/RubyGems) ve Vagrant gemi yüklü olmalıdır. Ruby dilini ve RubyGem'in sisteme yüklenmesini anlatmak bu makalenin konusu değildir. [Rbenv](https://github.com/sstephenson/rbenv) bu konuda işinizi görecektir. Vagrant gemini yüklemek için `gem install` komutunu kullanmanız gerekmektedir.
+Mac OSX işletim sistemine has bir durum olarak: Sisteminizde [RubyGems](http://en.wikipedia.org/wiki/RubyGems) ve Vagrant gemi yüklü olmalıdır. Ruby dilini ve RubyGem'in sisteme yüklenmesini anlatmak bu makalenin konusu değildir. [Rbenv](https://github.com/sstephenson/rbenv) bu konuda işinizi görecektir. Vagrant gemini yüklemek için `gem install` komutunu kullanmanız gerekmektedir.
 
 ```bash
 gem install vagrant
