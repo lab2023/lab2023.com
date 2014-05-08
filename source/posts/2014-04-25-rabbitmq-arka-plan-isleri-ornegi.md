@@ -1,19 +1,26 @@
 ---
-title: RabbitMQ 1 - Arka Plan İşleri Örneği
+title: RabbitMQ 2 - Arka Plan İşleri Örneği
 date: 2014-04-25
 author: onurozgurozkan
 tags: rabbitmq, amqp, bunny, ruby, arkaplan işleri, tr
 ---
 
-Bir önceki makalemizde 'RabbitMQ ile Merhaba Dünya Örneğini' yapmıştık. Bu örneğimizde ise özellikle [Resque](https://github.com/resque/resque), [Delayed Job](https://github.com/collectiveidea/delayed_job/tree/master) gibi arka plan işler için RabbitMQ kullanacağız. 
+Bir önceki makalemizde ['RabbitMQ ile Merhaba Dünya Örneğini'](http://lab2023.com/rabbitmq-hello-world-ornegi.html)
+yapmıştık. Bu örneğimizde ise özellikle [Resque](https://github.com/resque/resque), [Delayed Job](https://github.com/collectiveidea/delayed_job/tree/master)
+gibi arka plan işler için RabbitMQ kullanacağız.
 
-![Örnek 2](articles/2013-04-25-rabbitmq.png)
+![Örnek 2](articles/2014-04-25-rabbitmq.png)
 
-Bir önceki örnekte `Producer`, `Consumer`'ye 'Merhaba Dünya' yazısı gönderiyordu. Gerçek hayatta bu işlem arka plan işlemlere iyi bir örnek değildir. Arkaplan işleri daha çok süre gerektiren ve işlerin bir tek instance tarafından değil de birden çok instance tarafından yapıldığı işlemlerdir. Yedek alma, rapor çıkarmak, resim düzenleme gibi işlemler bunlara örnektir. Bu işlemlerin ortak özelliği yapılmalarının vakit almasıdır. 
+Bir önceki örnekte `Producer`, `Consumer`'ye 'Merhaba Dünya' yazısı gönderiyordu. Gerçek hayatta bu işlem arka plan
+işlemlere iyi bir örnek değildir. Arkaplan işleri daha çok süre gerektiren ve işlerin bir tek instance tarafından
+değil de birden çok instance tarafından yapıldığı işlemlerdir. Yedek alma, rapor çıkarmak, resim düzenleme gibi işlemler
+bunlara örnektir. Bu işlemlerin ortak özelliği yapılmalarının vakit almasıdır.
 
 ## Hazırlık
 
-O zaman bu örneğimizde `Producer` mesajı gönderirken onun ne kadar süreceğini de textin içinde göndersin ki gerçek bir arkaplan işini simüle edelim. Örneğin `Hello ...` işleminin bitmesi 3 saniye sürerken `Hello .....` 5 saniye sürsün.
+O zaman bu örneğimizde `Producer` mesajı gönderirken onun ne kadar süreceğini de textin içinde göndersin ki gerçek bir
+arkaplan işini simüle edelim. Örneğin `Hello ...` işleminin bitmesi 3 saniye sürerken `Hello .....` 5 saniye sürsün.
+Her bir nokta bir saniye gibi düşünebiliriz.
 
 Buna göre kodlarımızı düzenleyelim. `send.rb` artık yapılacak iş olduğundan `new_task.rb` demek daha doğru olur.
 
@@ -37,7 +44,7 @@ q.subscribe(:ack => true, :block => true) do |delivery_info, properties, body|
 end
 ```
 
-Scriptlerimizi çalıştırabiliriz. Unutmayın scriptleri ayrı ayrı tablarda çalıştırmalısınız.
+Scriptlerimizi çalıştırabiliriz. Unutmayın scriptleri ayrı ayrı terminal tablarda çalıştırmalısınız.
 
 ```bash
 shell1$ ruby -rubygems worker.rb
@@ -89,13 +96,68 @@ shell2$ ruby -rubygems worker.rb
 
 Gördüğünüz gibi yapılacak işler shell1 ve shell2 arasında paylaşılmaktadir.
 
-## Mesajların kabul edilmesi
+## Mesajların bildirilmesi
+
+
 
 ## Mesajların devamlılığı
 
 ## Mesajların adil dağıtılması
 
 ## Hepsi bir arada
+
+new_task.rb
+
+```ruby
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+require "bunny"
+
+conn = Bunny.new
+conn.start
+
+ch   = conn.create_channel
+q    = ch.queue("task_queue", :durable => true)
+
+msg  = ARGV.empty? ? "Hello World!" : ARGV.join(" ")
+
+q.publish(msg, :persistent => true)
+puts " [x] Sent #{msg}"
+
+sleep 1.0
+conn.close
+```
+
+worker.rb
+
+```ruby
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+require "bunny"
+
+conn = Bunny.new
+conn.start
+
+ch   = conn.create_channel
+q    = ch.queue("task_queue", :durable => true)
+
+ch.prefetch(1)
+puts " [*] Waiting for messages. To exit press CTRL+C"
+
+begin
+  q.subscribe(:ack => true, :block => true) do |delivery_info, properties, body|
+    puts " [x] Received '#{body}'"
+    # imitate some work
+    sleep 1.0
+    puts " [x] Done"
+    ch.ack(delivery_info.delivery_tag)
+  end
+rescue Interrupt => _
+  conn.close
+end
+```
 
 Saygılar.
 
