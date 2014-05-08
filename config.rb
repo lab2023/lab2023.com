@@ -97,5 +97,5 @@ end
 
 activate :syntax
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
+set :markdown, no_intra_emphasis: true, tables: true, autolink: true, fenced_code_blocks: true, disable_indented_code_blocks: true, smartypants: true, strikethrough: true, space_after_headers: true, superscript: true, highlight: true, quote: true, footnotes: true, with_toc_data: true
 set :haml, { ugly: true }
