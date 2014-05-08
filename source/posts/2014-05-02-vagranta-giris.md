@@ -14,16 +14,19 @@ Burada özellikle “hızlıca” sözcüğüne ciddi anlamda değinmek lazım. 
 Peki bu kimin işine yarar? Kolay bir cevap gibi gözükecek olsa da, teknik olarak IT ile uğraşan çoğu kişinin işini kolaylaştırabilir.
 
 * Web ürünleri için hızlıca **staging** veya **production** sunucuları kurulabilir.
-
 * Sistem yönetimi ve ağ kurulumları için hızlıca test ortamları oluşturulabilir.
-
 * Sistem programcılığı, özellikle de çekirdek modülleri geliştirilmesi ve test ortamı için hızlıca sanal sistemler hazırlanabilir.
-
 * Hepsinden önemlisi, fantastik bir şeyler denemek isteyen tüm geekler ve nerdler için hızlıca GNU/Linux ve BSD sistemleri kurulabilir :)
 
 Vagrant’ın kurulumu oldukça basit. Sitesinden, işletim sisteminize ve mimarinize uygun sürümü indirip kurmanız yeterli. Bunun için ayrıca, sisteminizde bir sanallaştırma yazılımı olması gerekiyor. Standart sürümünde VirtualBox desteklendiği için sisteminize VirtualBox da kurmanız lazım. Ben şahsen bunu Crunchbang 11 AMD64 (Debian 7 Wheezy tabanlı) ve VirtualBox 4.1.18 üstünde kurdum ve kullanıyorum.
 
 [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
+
+Vagrant, Ruby dilinde geliştirilmiştir. Sisteminizde [RubyGems](http://en.wikipedia.org/wiki/RubyGems) ve Vagrant gemi yüklü olmalıdır. Ruby dilini ve RubyGem'in sisteme yüklenmesini anlatmak bu makalenin konusu değildir. [Rbenv](https://github.com/sstephenson/rbenv) bu konuda işinizi görecektir. Vagrant gemini yüklemek için `gem install` komutunu kullanmanız gerekmektedir.
+
+```bash
+gem install vagrant
+```
 
 Ardından [Vagrant Cloud](https://vagrantcloud.com/) hizmetinden bahsetmek istiyorum. Burada, sanallaştırma yazılımlarıyla oluşturulan sistem kalıp, bulut temelli bir altyapıyla internet üzerinden paylaşılabilir hale getiriliyor. Sistemin Github’a oldukça benzediğini söylemek mümkün.
 
@@ -67,6 +70,7 @@ vagrant halt
 ```
 
 Uyku moduna almak için (suspending):
+
 ```bash
 vagrant suspend
 ```
