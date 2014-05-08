@@ -98,13 +98,86 @@ Gördüğünüz gibi yapılacak işler shell1 ve shell2 arasında paylaşılmakt
 
 ## Mesajların bildirilmesi
 
+Peki `Consumers` bu uzun işlemleri yaparken bir hata ile karşılaşıp ölür ise ne olur? Şuanki kodumuza göre o işlem yapılmamış olur çünkü RabbitMQ mesajın gönderilmesi ile ilgili mesajı hafızadan siler. Bu durumda hem iş yapılmamış olur, hemde mesaj gönderildiği anda hafızadan silindiği için tekrar kuyruğa atma şansımız olmaz.
 
+Mesajların kaybolmasını engellemek için RAbbitMQ `acknowledgments` özelliğini sunar. Basitçe anlatmak gerekir ise `ack(nowledgement)` mesajın başırı ile alındaığını ve işlem gerçekleşince `consumer`'a bir mesaj ile bildirir. Bundan sonra RabbitMQ hafızadan mesajı siler.
+
+Eğer `consumer` ack göndermeden ölür ise, RabbitMQ bu mesajın yerine ulaşmadığını veya işlemin başarı ile tamamlanmadığını anlar. Hafızasından silmediği mesajı başka bir `consumer`'a gönderir.
+
+Mesajlar için bir timeout yoktur. RabbitMQ mesajları ancak worker connectionları ölür ise tekrar dağıtır.
+
+Varsayılan olarak `ack` özelliği kapalı gelir. Aktifleştirmek için `:manuel_ack => true` parametresi `subscribe` methoduna eklenmelidir.
+
+```ruby
+q.subscribe(:manual_ack => true, :block => true) do |delivery_info, properties, body|
+  puts " [x] Received '#{body}'"
+  # imitate some work
+  sleep 1.0
+  puts " [x] Done"
+  ch.ack(delivery_info.delivery_tag)
+end
+```
+
+Ack özelliğini worker çalışırken workerı `CTRL+C` komutu ile öldürerek deneyebilirsiniz.
+
+**Unutulan acknowledgementlar**
+
+`ack`'ların unutulması çok sık yapılan bir hatadır ama etkileri ciddi olur. Istemciler çıktığında RabbitMQ mesajları otomatik olarak tekrar dağıtır. Geliştiriciler bu dağıtımların nedenlerini anlayamaz. Tabii bu dağıtımlar katlanarak RAM ve CPU kullanımının artmasına neden olur. Bu durumu debug etmek için `rabbitmqctl` komutunu kullanabilirsiniz.
+
+```bash
+$ sudo rabbitmqctl list_queues name messages_ready messages_unacknowledged
+  Listing queues ...
+  hello    0       0
+  ...done.
+```
 
 ## Mesajların devamlılığı
 
+Peki workerlar değilde RabbitMQ'nun kendisi kapanırsa veya restart olursa mesajlarımız ne olur? Böyle bir senaryoda mevcut kodlar ile sadece mesajlar değil kuyraklarda kaybolur. Hiçbir kayıp yaşamak istemiyorsak hem kuyrukları hem mesajları korumamız gerekiyor.
+
+Ilk önce RabbitMQ'nun kuyrukları kaybetmemesini sağlayalım. Bunun içın kuyruklara `:durable => true` parametresini geçiyoruz.
+
+```ruby
+ch.queue('hello', :durable => true)
+```
+
+Mevcut bir kanala `:durable => true` ifadesini geçtiğimiz zaman RabbitMQ size hata verecektir çünkü kanallara sonradan `durable` eklenemez. Bu problemi çözmenin en basit yolu kanalın ismini değiştirmektir.
+
+```ruby
+ch.queue('task_queue', :durable => true)
+```
+
+Diğer unutulmaması gereken konu `durable` parametresinin hem `consumer` hem de `producer`'a uyarlanması gerektiğidir. Bu eklemeden sonra RabbitMQ yeniden başlatılsa bile kuyruklar kaybolmayacaktır.
+
+Mesajların sürekliliği içinde `:persistent => true` parametresini eklemeliyiz.
+
+```ruby
+x.publish(msg, :persistent => true)
+```
+
+**Mesajların sürekliliği**
+
+Mesajlarınızı `persistent` yapmak mesajlarınızın kaybolmamasını yüzde yüz garanti altına almıyor. `persistent` işlemi mesajlarınızın diske yazılmasını sağlıyor. Bu kısa sürede çok küçükte olsa mesajlarınızın kaybolma riski vardır. Daha kesin bir çözüm için publish kodunuzu transaction bloku içine almanızdır.
+
+
 ## Mesajların adil dağıtılması
 
+Bazen kuyruktaki mesajlar istediğiniz gibi dağılmaz. Bunu söyle bir durum ile özetleyelim. Örneğin tekil mesajlar basit iken, çoğul mesajlar zor olsun. Böyle bir durumda workerlardan biri sürekli çalışırken diğeri sürekli beklemede olacaktır.
+
+Bunun nedeni basittir. RabbitMQ, kuyruktaki mesajları dağıtırken `consumer`ların unacknowledge mesaj sayısına bakmaz. RabbitMQ bu konuda kör gibi davranır. Gelen N mesajı N tane workera eşit sayıda dağıtır.
+
+Bunu engellemenin yolu bir workerın elindeki iş bitmeden yeni bir iş atanmasını engellemek daha doğru bir ifade ile aynı anda kaç iş yapabileceğini `prefetch` methodu ile belirlemektir.
+
+```ruby
+n = 1
+ch.prefetch(n)
+```
+
+Eğer workerlar çok yoğun ise yeni bir worker sisteme eklenebilir. Bunun ile ilgili bir strateji geliştirebilirsiniz.
+
 ## Hepsi bir arada
+
+Son olarak bütün kodların son hallerini toplayalım.
 
 new_task.rb
 
@@ -159,8 +232,10 @@ rescue Interrupt => _
 end
 ```
 
+Konu ile ilgili daha detaylı bilgi almak için [Bunny API Referanslarına](http://reference.rubybunny.info/) bakabilirsiniz.
+
 Saygılar.
 
 ### Kaynaklar
 
-* [https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
+* [https://www.rabbitmq.com/tutorials/tutorial-two-ruby.html](https://www.rabbitmq.com/tutorials/tutorial-two-ruby.html)
