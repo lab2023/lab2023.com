@@ -5,7 +5,8 @@ author: hamitturkukaya
 tags: android, mobile development, java, tr
 ---
 
-Merhabalar Java ile Android uygulamaları temelleri hakkında bir giriş yapmak istiyorum. Bunun için işletim sisteminize uygun jdk ve android sdk yı indirmeniz gerekmektedir. Windows ve Mac OSX için JDK ve JRE'yi [buradan](http://developer.android.com/sdk/index.html) indirebilirsiniz.
+Merhabalar Java ile Android uygulamaları temelleri hakkında bir giriş yapmak istiyorum. Bunun için işletim sisteminize uygun jdk ve android sdk yı indirmeniz gerekmektedir.
+Windows ve Mac OSX için JDK ve JRE'yi [buradan](http://www.oracle.com/technetwork/java/javase/downloads/index.html?ssSourceSiteId=otnjp) indirebilirsiniz.
 
 Ubuntu veya Linux Mint için ise;
 
@@ -21,18 +22,19 @@ Ubuntu veya Linux Mint için ise;
 
 komutlarını kullanabilirsiniz.
 
-Kurulumun ardından Android SDK'yı ve ide'mizi indirmemiz gerekmekte. [Buradan](http://developer.android.com/sdk/index.html) eclipse ile Android SDK'mızı indirebiliriz.
-İsterseniz Eclipse yerine [IntelliJIdea](http://www.jetbrains.com/idea/) tabanlı [Android Studio](http://developer.android.com/sdk/installing/studio.html) yu da deneyebilirsiniz
+Kurulumun ardından Android SDK'yı ve IDE'mizi indirmemiz gerekmekte. [Buradan](http://developer.android.com/sdk/index.html) eclipse ile Android SDK'mızı indirebiliriz.
+İsterseniz Eclipse yerine [IntelliJIdea](http://www.jetbrains.com/idea/) tabanlı [Android Studio](http://developer.android.com/sdk/installing/studio.html)'yu da deneyebilirsiniz
 fakat hala alpha aşamasında olduğu için ben tercih etmiyorum.
 
 ## Eclipse
 
 ![eclipse](/assets/images/articles/2014-05-09-android-temelleri/eclipse.png)
 
-Eclipse i açtığımızda sol üstte işaretli 2 ikonumuzu göreceğiz. Bunlardan soldaki Android SDK Manager, yani farklı versiyonlar için android sdk yüklemeleri yapabileceğimiz kısım,
+Eclipse'i açtığımızda sol üstte işaretli 2 ikonumuzu göreceğiz. Bunlardan soldaki Android SDK Manager, yani farklı versiyonlar için android sdk yüklemeleri yapabileceğimiz kısım,
 sağ taraftaki penceremiz ise Android Virtual Device Manager'dır. Burada da emulatör ile android bir cihaz oluşturup testlerimizi onun içinde yapabiliriz.
 Fakat maalesef bu araç çok yavaş olduğu için GenyMotion adlı 3. parti emulatörü kullanmanızı öneririm. Standart özellikleri ücretsiz gelmektedir ve standart emülatöre
-göre çok daha hızlıdır. (Tabii ki en iyi sonucu gerçek bir cihaz üzerinden alırsınız). GenyMotion'ı [buradan](https://cloud.genymotion.com/page/customer/login/?next=/) indirebilirsiniz.
+göre çok daha hızlıdır. (Tabii ki en iyi sonucu gerçek bir cihaz üzerinden alırsınız). GenyMotion'ı [buradan](https://cloud.genymotion.com/page/customer/login/?next=/) üye olduktan sonra
+indirebilirsiniz.
 
 ## İlk uygulamayı oluşturma
 
@@ -55,24 +57,24 @@ _**Minimum Required SDK**_ ve _**Target SDK**_ uygulamamızın Androidin hangi s
 ![Folders](/assets/images/articles/2014-05-09-android-temelleri/folders.png)
 
 İlk uygulamamızı oluşturduk ve resimdeki gibi klasörler karşımıza geldi. Burada haşır neşir olacağımız kısımlar.
-_**SRC**_ ve _**RES**_ klasörleridir. Genel olarak klasörlerin görevleri
+_**SRC**_ ve _**RES**_ klasörleridir. Genel olarak klasörlerin görevleri şunlardır:
 
-_**Gen**_ klasörü hiç bir zaman müdahale etmemeniz gereken, android in kendi değişkenlerini adresleyip, değişkenler halinde tuttuğu classları içeren klasördür.
+_**Gen**_, hiç bir zaman müdahale etmemeniz gereken, android in kendi değişkenlerini adresleyip, değişkenler halinde tuttuğu classları içeren klasördür.
 
-_**Bin**_ klasörü derlenmiş classlarımızı ve çalıştırılabilir apk dosyamızı içeren klasördür.
+_**Bin**_, derlenmiş classlarımızı ve çalıştırılabilir apk dosyamızı içeren klasördür.
 
-_**Libs**_ uygulamaya dahil edilen kütüphaneler bu klasördedir. (Android SDK gibi)
+_**Libs**_, uygulamaya dahil edilen kütüphaneler bu klasördedir. (Android SDK gibi)
 
-_**RES**_ klasörü assetlerimizi tutmak içindir (resimler, arayüz dosyalarımız, rakamsal veya string değerlerimiz vs.)
+_**RES**_, assetlerimizi tutmak içindir (resimler, arayüz dosyalarımız, rakamsal veya string değerlerimiz vs.)
 
-_**Drawable**_ resimlerimizi, stid dosyalarımızı tutar yanlarındaki hdpi, ldpi, mpdi, xhdpi ise ekran boyutlarını belirtir. Bu şekilde uygulamaya özel arayüz tasarlayabilirsiniz.
+_**Drawable**_, resimlerimizin, stil dosyalarımızın bulunacağı klasördür. yanlarındaki hdpi, ldpi, mpdi, xhdpi ise ekran boyutlarını belirtir. Bu şekilde uygulamaya özel arayüz tasarlayabilirsiniz.
 Örneğin 10" bir tabletteki resmin boyutu ve çözünürlüğü 3" bir telefondakinden büyük olmalıdır. Bunları burada ayarlayabilirsiniz.
 
-_**Layout**_ klasörü arayüz xmllerini saklayan klasördür bu klasörün yanına istediğiniz gibi _layout_hdpi_, _layout_ldpi_ gibi klasörler ekleyerek arayüzleri özelleştirebilirsiniz.
+_**Layout**_, arayüz xmllerini saklayan klasördür. Bu klasörün yanına istediğiniz gibi _layout_hdpi_, _layout_ldpi_ gibi klasörler ekleyerek arayüzleri özelleştirebilirsiniz.
 
-_**Menu**_ klasörü uygulamanızda görünecek menüleri tutan klasördür
+_**Menu**_, uygulamanızda görünecek menüleri tutan klasördür
 
-_**Values**_ klasörü uygulama içerisinde kullanacağımız değerleri tutacağımız klasördür. Arayüzdeki margin değerlerinden buton textlerine kadar herşeyi burada tutabilirsiniz.
+_**Values**_, uygulama içerisinde kullanacağımız değerleri tutacağımız klasördür. Arayüzdeki margin değerlerinden buton textlerine kadar herşeyi burada tutabilirsiniz.
 values-en, values-tr şeklinde klasörlerle sadece içerisindeki değerleri değiştirerek telefonun diline göre uygulamanın dilini değiştirebilirsiniz.
 
 Bunların dışında içli dışlı olacağımız bir başka dosya _**AndroidManifest.xml**_ dosyasıdır. Bu dosya içerisinde uygulama ayarlarımız, izinlerimiz, activitylerimiz gibi bilgiler
@@ -82,7 +84,11 @@ bulunmaktadır.
 Bu bilgilerin ardından gelelim layout klasörümüze.
 
 Layout klasörünün içine girdiğimiz zaman 2 adet dosya oluştuğunuz görüyoruz. _**activity_main.xml**_ ve _**fragment_main.xml**_ bunlar arayüz dosyalarımızdır.
-(Eski sdkya sahip olan kullanıcılarda sadece activity_main.xml olacaktır.) Ne işe yaradıklarını açıklayalım. Androidde bir çok ekran sistemi vardır bunlara _**Activity**_ denir. Uygulamada işlem yaptığınız her ekranı bir activity olarak düşünebilirsiniz. Bunun yanısıra API 11(Android 3.0)den sonra Fragment yapısı daha getirildi. Bunu da Activity içerisinde çalışan bir arayüz ya da bir işlemi temsil eden küçük activity parçaları olarak düşünebiliriz. Bir container activity içerisinde birden fragmentleri tetikleterek çağırmak hem performans hem tekrar kullanılabilirlik açısından daha verimlidir. Tabi fragmentler de activityden bağımsız değildir. Onların yaşam döngülerini de onu içeren aktiviteye bağlıdır. Activity kapandığı zaman içerdiği fragment te kapanır.
+(Eski sdkya sahip olan kullanıcılarda sadece activity_main.xml olacaktır.) Ne işe yaradıklarını açıklayalım. Androidde bir çok ekran sistemi vardır bunlara _**Activity**_ denir. Uygulamada işlem
+yaptığınız her ekranı bir activity olarak düşünebilirsiniz. Bunun yanısıra API 11(Android 3.0)den sonra Fragment yapısı daha getirildi. Bunu da Activity içerisinde çalışan bir
+arayüz ya da bir işlemi temsil eden küçük activity parçaları olarak düşünebiliriz. Bir container activity içerisinde birden fragmentleri tetikleterek çağırmak hem performans hem
+tekrar kullanılabilirlik açısından daha verimlidir. Tabi fragmentler de activityden bağımsız değildir. Onların yaşam döngüleri de onu içeren aktiviteye bağlıdır. Activity kapandığı
+zaman içerdiği fragment de kapanır.
 
 Bu kısa ön bilgiden sonra tahmin edebileceğiniz gibi activity_main.xml fragmenti tutacak container activity arayüzü iken, fragment_main.xml ise içerisinde çalıştırılacak
 fragment arayüzüdür.
@@ -92,10 +98,11 @@ fragment arayüzüdür.
 
 ![Activity](/assets/images/articles/2014-05-09-android-temelleri/ewfragment.png)
 
-Layout görünümü içerisinde arayüzü 2 farklı şekilde görüntüleyebiliriz. İlki resimdeki gibi arayüzün olduğu gibi gösterildiği componentlerin sürükle bırak ile eklenebileceği
-Graphical Layout, diğeri ise xml dosyasını manuel olarak oluşturabileceğiniz xml editör.
+Layout görünümü içerisinde arayüzü 2 farklı şekilde görüntüleyebiliriz.
+_**Graphical Layout**_: Arayüzün olduğu gibi gösterildiği, componentlerin sürükle bırak ile eklenebileceği grafik arayüzüdür.
+_**XML Editör**_: Xml dosyasını manuel olarak oluşturabileceğiniz editördür
 
-Not: Mutlaka düzenlemeler için xml'e elle müdahale etmeniz gerekmekte. Arayüz aracı çok gelişmiş durumda değil.
+Not: Düzenlemeler için xml'e eninde sonunda elle müdahale etmeniz gerekecektir. Arayüz aracı çok gelişmiş durumda değil.
 
 xml dosyalarını arayüz altındaki activity_main.xml ve activity_fragment.xml e tıklayarak açalım
 
@@ -112,7 +119,8 @@ _**activity_main.xml**_
 ```
 
 
-burada sadece pencere olacağını belirten FrameLayout olarak container id li bir arayüz elementi oluşturulduğunu görüyoruz. Fragment'imizdeki içerik bu FrameLayoutun içerisine eklenecektir.
+Burada sadece pencere olacağını belirten FrameLayout olarak id'si container olan bir arayüz elementi oluşturulduğunu görüyoruz.
+Fragment'imizdeki içerik bu FrameLayoutun içerisine eklenecektir.
 
 _**fragment_main.xml**_
 
@@ -135,7 +143,7 @@ _**fragment_main.xml**_
 	</RelativeLayout>
 ```
 
-Burada da içeririnde bir adet TextView içeren RelativeLayout tanımlanmıştır. Genel kullanımı olan 2 layout bulunmaktadır. Relative ve Linear Layout isimlerinden de anlaşılabileceği
+Burada da içerisinde bir adet TextView bulunan RelativeLayout tanımlanmıştır. Layoutlar içerisinde en çok kullanılan 2 tip layout vardır. Relative ve Linear Layout; isimlerinden de anlaşılabileceği
 gibi RelativeLayout içerisindeki elemanları birbirlerine göre uzaklığı, konumu gibi bilgiler ile yerleşim yaparken, LinearLayout ile yatay veya dikey olarak elemanları yerleştirir.
 Layoutlar iç içe kullanıllabilir.
 
@@ -147,13 +155,13 @@ TextView'ımız ise uygulamamızın içerisinde düz metin göstermek için kull
 	<resources>
 
     	<string name="app_name">FirstApp</string>
-	    <string name="hello_world">Hello world!</string>
+    	<string name="hello_world">Hello world!</string>
     	<string name="action_settings">Settings</string>
 
 	</resources>
 ```
 
-Not: String'ler, id ler otomatik olarak adreslenip Gen > R.class içerisine atandığı için aynı string adı ve idler farklı xml dosyalarında kullanılsa bile unique olmalıdır.
+Not: String'ler, id ler otomatik olarak adreslenip "Gen/R.class" içerisine yazılmaktadır, bu nedenle aynı string adı ve idler farklı xml dosyalarında kullanılsa bile eşsiz olmalıdır.
 Mesela yukarıdaki xml lere bakarak id si container olan başka bir component veya adı hello_world olan başka bir string oluşturmamız hatalara neden olacaktır.
 
 Arayüz dosyalarımızı inceledikten sonra gelelim asıl kodlarımızın bulunduğu Java Class'ımıza.
@@ -224,17 +232,17 @@ Classımızı _"src/paket_adi/MainActivity.class"_ dosyasına tıklayarak açıy
     }
 ```
 
-Kısaca buradaki eklenmiş methodların ne iş yaptığını anlatmaya çalışacağım. Göründüğü gibi MainActivity class' ımız ActionBarActivity'den extende edilmiştir. Bu Activity'nin biraz
+Kısaca buradaki eklenmiş fonksiyonların ne iş yaptığını anlatmaya çalışacağım. Göründüğü gibi MainActivity class' ımız ActionBarActivity'den extende edilmiştir. Bu Activity'nin biraz
 daha özelleştirilmiş halidir. Detaylı bilgi ve diğer classları [buradan](http://developer.android.com/reference/android/app/Activity.html) inceleyebirsiniz.
 
-_**onCreateOptionsMenu()**_ menü itemlerin hangi xml dosyasından alınacağını belirten methoddur. (xml dosya ve componentlerin gen/R.class içerisine derlendiğini söylemiştik.
+_**onCreateOptionsMenu()**_ menü itemlerin hangi xml dosyasından alınacağını belirten fonksiyondur. (xml dosya ve componentlerin gen/R.class içerisine derlendiğini söylemiştik.
 O yüzden R._tip_._ad_ şeklinde çağrılmaktadır).
 
-_**onOptionsItemSelected()**_ menü içerisinden bir seçeneğe tıklandığı zaman tetiklenecek methoddur. Hangi seçeneğe tıklandığı belirlenip gereken işlemler yaptırılabilir.
+_**onOptionsItemSelected()**_ menü içerisinden bir seçeneğe tıklandığı zaman tetiklenecek fonksiyondur. Hangi seçeneğe tıklandığı belirlenip gereken işlemler yaptırılabilir.
 
-Gelelim en önemli methoda
+Gelelim en önemli fonksiyona
 
-_**onCreate**_ methodu ise activity çalışırken çalıştırılacak methoddur. Bu method activity yaşam döngüsü (Life Cycle) ile ilgilidir bunun yanısıra aşağıdaki methodları da
+_**onCreate**_ fonksiyonu ise activity çalışırken çalıştırılacak fonksiyondur. Bu fonksiyon activity yaşam döngüsü (Life Cycle) ile ilgilidir. Bunun yanısıra aşağıdaki fonksiyonları da
 ekleyip spesifik işlemler için kullanabilirsiniz.
 
 _**onStart ()**_ : Activity, kullanıcıya görünür hale geldiğinde çağrılır.
@@ -249,12 +257,12 @@ _**onDestroy ()**_ : Acitiviy, sistem tarafından yok edilmeden önce çağrıl�
 
 _**onRestart ()**_ : Activity durdurulduğunda ve yeniden başlatıldığında çağrılır.
 
-Bunu da kısaca belirttikten sonra onCreate() methodunun içeriğini inceleyelim. setContent() methodu ile kullanacağı layout dosyasını seçtikten sonra supportFragmentManager()
-ise fragment yaşam döngüsünü kontrol edebileceğimiz objedir. Transaction başlatıp içerisine add methodu ile fragment classımız olan PlaceHolder classında tanımlanmış fragmenti çağırmaktadır.
-Bu transaction'ı commit() methodu ile çalıştırabiliriz.
+Bunu da kısaca belirttikten sonra onCreate() fonksiyonunun içeriğini inceleyelim. setContent() fonksiyonu ile kullanacağı layout dosyasını seçtikten sonra supportFragmentManager()
+ise fragment yaşam döngüsünü kontrol edebileceğimiz objedir. Transaction başlatıp içerisine add fonksiyonu ile fragment classımız olan PlaceHolder classında tanımlanmış fragmenti çağırmaktadır.
+Bu transaction'ı commit() fonksiyonu ile çalıştırabiliriz.
 
-Fragment Class ımız olan _**PlaceholderFragment**_ 'in methodları da Activity methodları gibidir. Fragment içerisinde constructordan sonra ilk olarak onCreateView() methodu
-çalıştırılır. Bu method içerisinde de fragment layout _**LayoutInflater**_ objesi ile xml dosyamız view nesnesine dönüştürülir ardından ise oluşturulan view Activity'e döndürülür ve
+Fragment Class ımız olan _**PlaceholderFragment**_ 'in fonksiyonları da Activity fonksiyonları gibidir. Fragment içerisinde constructordan sonra ilk olarak onCreateView() fonksiyonu
+çalıştırılır. Bu fonksiyon içerisinde de fragment layout _**LayoutInflater**_ objesi ile xml dosyamız view nesnesine dönüştürülir ardından ise oluşturulan view Activity'e döndürülür ve
 activity bu fragmenti ekrana basar.
 
 Artık temel yapıyı öğrendiğimize göre uygulamamızı çalıştırabiliriz. :)
