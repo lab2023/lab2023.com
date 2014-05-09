@@ -23,7 +23,7 @@ Let's test some commands:
 
 This command will add a background job that waits for 3600 seconds. Why do we need that? We're just putting commands running on background.
 
-You can watch th command running by following command:
+You can see the command running by following command:
 
 ```bash
 % ps -e -o pid,command | grep '[s]leep'
