@@ -141,4 +141,10 @@ If you check the active jobs, you don't see any. Because the previous job is not
 jobs -l -p
 ```
 
+Do not forget to quit the sleep job running in background, because we don't need that now:
+
+```bash
+kill -s QUIT $(ps aux | grep '[s]leep' | awk '{print $2}')
+```
+
 So I wish this commands will be helpful for you, too.
