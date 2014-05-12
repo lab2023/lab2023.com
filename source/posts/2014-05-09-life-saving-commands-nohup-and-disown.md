@@ -82,7 +82,7 @@ After looking at <code>nohup</code>, let's look at <code>disown</code>. It is us
 * you have to close the terminal,
 * but you forgot to use <code>nohup</code>
 
-It's bad for you, but wait! There's <code>disown</code> suitable for you. Ypu can use it.
+It's bad for you, but wait! There's <code>disown</code> suitable for you. You can use it.
 
 Let's run our command:
 
@@ -141,7 +141,7 @@ If you check the active jobs, you don't see any. Because the previous job is not
 jobs -l -p
 ```
 
-Do not forget to quit the sleep job running in background, because we don't need that now:
+Do not forget to quit the sleep job running in background, because we don't need that now, either:
 
 ```bash
 kill -s QUIT $(ps aux | grep '[s]leep' | awk '{print $2}')
