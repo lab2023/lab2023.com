@@ -6,6 +6,12 @@ tags: sencha touch, tr
 
 Bu yazıda giriş seviyesinde Sencha Touch ile nasıl liste detay bir uygulama yapacağımızı göreceğiz.
 
+Mac için sencha touch kurulumu:
+
+* [http://www.sencha.com/products/sencha-cmd/download](Sencha CMD)' yi indirip kuruyoruz.
+* [Sencha Touch](http://www.sencha.com/products/touch/download/) dosyasını indirip unzip yapıyoruz.
+* Yeni uygulama oluşturmak için unzip yaptığınız klasörde olmalısınız.
+
 Komut satırından uygulamayı oluşturuyoruz.
 
 ```
