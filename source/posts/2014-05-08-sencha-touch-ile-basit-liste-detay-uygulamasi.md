@@ -1,6 +1,7 @@
 ---
 title: Sencha Touch ile Basit Liste Detay Uygulaması
 date: 2014-05-08
+author: dilekmuhammet
 tags: sencha touch, tr
 ---
 
