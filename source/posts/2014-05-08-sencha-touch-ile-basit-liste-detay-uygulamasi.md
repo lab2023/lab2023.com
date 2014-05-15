@@ -46,7 +46,7 @@ Ext.define('Gourmet.model.Food', {
 
 Buradaki `fields` alanına apiden dönen değerlerden hangilerini okuyacağımızı belirtiyoruz.
 
-`app/store` içerisine `Foods` isminde yeni bir store oluşturuyoruz. İsminin `Foods` olması zorunlu değil.
+`app/store` içerisine ` Foods.js` dosyası ile `Foods` isminde yeni bir store oluşturuyoruz. İsminin `Foods` olması zorunlu değil.
 
 ```js
 Ext.define('Gourmet.store.Foods', {
