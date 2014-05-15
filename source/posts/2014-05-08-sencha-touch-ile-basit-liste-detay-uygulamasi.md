@@ -28,7 +28,7 @@ Localhost 1841 portunda uygulamanın çalıştığını göreceksiniz. Uygulaman
 
 ![Sencha](articles/2014-05-08-sencha-touch-starter.png)
 
-`app/model` içerisine `Food` isminde yeni bir model oluşturuyoruz.
+`app/model` dizinin içerisine `Food` isminde `Food.js` dosyası ile yeni bir model oluşturuyoruz.
 
 ```js
 Ext.define('Gourmet.model.Food', {
