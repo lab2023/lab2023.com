@@ -22,10 +22,10 @@ Vagrant’ın kurulumu oldukça basit. Sitesinden, işletim sisteminize ve mimar
 
 [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
 
-Mac OSX işletim sistemine has bir durum olarak: Sisteminizde [RubyGems](http://en.wikipedia.org/wiki/RubyGems) ve Vagrant gemi yüklü olmalıdır. Ruby dilini ve RubyGem'in sisteme yüklenmesini anlatmak bu makalenin konusu değildir. [Rbenv](https://github.com/sstephenson/rbenv) bu konuda işinizi görecektir. Vagrant gemini yüklemek için `gem install` komutunu kullanmanız gerekmektedir.
+Vagrant eskiden RubyGems kullanıyordu. Bu yüzden internette bir çok kaynakta bu yönde kurulum ile ilgili kaynaklar vardır. Eğer sisteminizde Vagrant gem olarak bulunuyor ise aşağıdaki komut ile kaldırabilirsiniz. Konu ile ilgili daha detaylı bilgiyi [http://mitchellh.com/abandoning-rubygems](http://mitchellh.com/abandoning-rubygems) makalesinde bulabilirsiniz.
 
 ```bash
-gem install vagrant
+gem uninstall vagrant
 ```
 
 Ardından [Vagrant Cloud](https://vagrantcloud.com/) hizmetinden bahsetmek istiyorum. Burada, sanallaştırma yazılımlarıyla oluşturulan sistem kalıp, bulut temelli bir altyapıyla internet üzerinden paylaşılabilir hale getiriliyor. Sistemin Github’a oldukça benzediğini söylemek mümkün.
