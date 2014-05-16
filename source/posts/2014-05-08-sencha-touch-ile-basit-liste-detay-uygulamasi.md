@@ -155,8 +155,8 @@ Ext.define('Gourmet.view.FoodDetail', {
 ```
 
 * `styleHtmlContent` : Html içeriği otomatik stillendirir. Default false gelir.
-* `scrollable` : Ekranın scrool özelliğini ne şekilde olacağını belirtir.
-* `tpl` : [Template](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Template) içeriği buraya yazıyoruz. Template' ler içerisinde bulunan componente setlenen data' yı `{key}` şeklinde kullanmaya olanak sağlar.
+* `scrollable` : Ekranın scroll özelliğini ne şekilde olacağını belirtir.
+* `tpl` : [Template](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Template) içeriği buraya yazıyoruz. Template' ler içerisinde bulunan component'e setlenen data' yı `{key}` şeklinde kullanmaya olanak sağlar.
 * `controller` içerisindeki `Main.js` dosyasını aşağıdaki gibi düzenleyelim.
 
 ```js
@@ -186,7 +186,7 @@ Ext.define('Gourmet.controller.Main', {
 ```
 
 * `refs` : Bu alanda xtype ve id ye göre compenentleri alabiliyoruz.
-* `controle` : Compenetlerin event' larının takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan componentin `disclose` event(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` componentin içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
+* `controle` : Componentlerin event'lerinin takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan component'in `disclose` event(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` component'in içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
 
 ![Sencha](articles/2014-05-08-sencha-touch-starter3.png)
 
