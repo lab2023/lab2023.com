@@ -50,7 +50,7 @@ _**Application name:**_ Play Store'da gözükecek uygulama adıdır
 
 _**Package name:**_ Classlarımızı tutacak genel paket adıdır. Genellikle 'com.sirket_adi.uygulama_adi' olarak belirlenir.
 
-_**Minimum Required SDK**_ ve _**Target SDK**_ uygulamamızın Androidin hangi sürümlerinde çalışacağını belirtir. Target SDK en son çıkan sdk seçilmelidir
+_**Minimum Required SDK**_ ve _**Target SDK**_ uygulamamızın Android'in hangi sürümlerinde çalışacağını belirtir. Target SDK en son çıkan sdk seçilmelidir
 
 ## Klasörler
 
@@ -84,7 +84,7 @@ bulunmaktadır.
 Bu bilgilerin ardından gelelim layout klasörümüze.
 
 Layout klasörünün içine girdiğimiz zaman 2 adet dosya oluştuğunuz görüyoruz. _**activity_main.xml**_ ve _**fragment_main.xml**_ bunlar arayüz dosyalarımızdır.
-(Eski sdkya sahip olan kullanıcılarda sadece activity_main.xml olacaktır.) Ne işe yaradıklarını açıklayalım. Androidde bir çok ekran sistemi vardır bunlara _**Activity**_ denir. Uygulamada işlem
+(Eski sdk'ya sahip olan kullanıcılarda sadece activity_main.xml olacaktır.) Ne işe yaradıklarını açıklayalım. Android'de bir çok ekran sistemi vardır bunlara _**Activity**_ denir. Uygulamada işlem
 yaptığınız her ekranı bir activity olarak düşünebilirsiniz. Bunun yanısıra API 11(Android 3.0)den sonra Fragment yapısı daha getirildi. Bunu da Activity içerisinde çalışan bir
 arayüz ya da bir işlemi temsil eden küçük activity parçaları olarak düşünebiliriz. Bir container activity içerisinde birden fragmentleri tetikleterek çağırmak hem performans hem
 tekrar kullanılabilirlik açısından daha verimlidir. Tabi fragmentler de activityden bağımsız değildir. Onların yaşam döngüleri de onu içeren aktiviteye bağlıdır. Activity kapandığı
