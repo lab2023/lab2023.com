@@ -2,7 +2,7 @@
 title: Kurumiçi eğitim - Onur Özgür ÖZKAN - CanCan Gemi
 date: 2013-06-05
 author: onurozgurozkan
-tags: cancan
+tags: cancan, tr
 ---
 
 *   Tarih : 24.05.2013

@@ -22,13 +22,13 @@ Rails'de bu konuyu response header'ları setleyerek çözüyoruz. Bunun için bi
 
 Bundle install işleminden sonra, `config\application.rb` dosyamıza gidip en alt satırlarda uygun bir yere aşağıdaki satırları ekliyoruz:
 
-  ```
-    config.middleware.use Rack::Cors do |requests|
-      requests.allow do |allow|
-        allow.origins '*'
-        allow.resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
-      end
-    end
+```ruby
+config.middleware.use Rack::Cors do |requests|
+  requests.allow do |allow|
+    allow.origins '*'
+    allow.resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+  end
+end
   ```
 
 
@@ -36,18 +36,18 @@ Yukarıdaki middleware katmanını ayrı bir initializer dosyası hazırlayarak 
 
 Bu ayarları yaptıktan ve uygulamanızı yeniden başlattıktan sonra artık response header'larında aşağıdaki gibi bir çıktı görüp farklı kaynaklardan uygulamanıza istekler yapılması sağlanmış olacaktır.
 
- ```
-    Request URL: http://vidipanda-api.dev/videos
-    Request Method: POST
-    Status Code: 200 OK
-    ...
-    Access-Control-Allow-Credentials: true
-    Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
-    Access-Control-Allow-Origin: http://vidipanda-mobile.dev
-    Access-Control-Expose-Headers:
-    Access-Control-Max-Age:1728000
-    ...
- ```
+```
+Request URL: http://vidipanda-api.dev/videos
+Request Method: POST
+Status Code: 200 OK
+...
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://vidipanda-mobile.dev
+Access-Control-Expose-Headers:
+Access-Control-Max-Age:1728000
+...
+```
 
 Bu konunun daha detaylı ele alınması gereken bir konu oldugunu düşünüyorum, bu yüzden ilerleyen zamanlarda imkan olursa bir makale daha çıkarmayı planlıyorum, ama siz beni beklemeyin iyisi mi aşağıdaki kaynakçaya bir göz atın...
 

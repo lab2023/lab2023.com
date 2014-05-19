@@ -2,7 +2,7 @@
 title: Sass Nedir? Özellikleri nelerdir?
 date: 2014-03-03
 author: safiyesepetci
-tags: sass
+tags: sass, tr
 ---
 
 Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i teknik olarak geçmeyi başarmıştır. Nasıl geçmiş kısaca özetliyorum;
@@ -64,8 +64,8 @@ Css çıktısı:
 **Partials ve @import:** Kodlarımızı bölümleyip istediğimiz yerde import edebiliyoruz.
 
 ```sass
-   /* _reset.sass */
-    body
+/* _reset.sass */
+body
      margin: 0
      padding: 0
 ```
@@ -74,28 +74,28 @@ Css çıktısı:
 Bu dosyayı asıl stil dosyamıza dahil edelim.
 
 ```sass
- /* base.sass */
-    @import 'reset'
+/* base.sass */
+@import 'reset'
 ```
 
 
 **Mixins:** bu özellik sayesinde css3 ün hayatımızı zor bir yoldan kolaylaştıran özelliklerini sıkılmadan uygulayabileceğiz.
 
 ```sass
-    @mixin border-radius($radius)
-      -webkit-border-radius: $radius
-      -moz-border-radius: $radius
-      -ms-border-radius: $radius
-      -o-border-radius: $radius
-      border-radius: $radius
+@mixin border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    -o-border-radius: $radius
+    border-radius: $radius
 ```
 
 
 Mixin'i sass'da çağırıyoruz.
 
 ```sass
-     .box
-       @include border-radius(10px)
+.box
+    @include border-radius(10px)
 ```
 Bu mixin'inden sonra border-radius kullandığımızda ekstra kodları yazmamıza gerek yok.
 
@@ -104,7 +104,7 @@ Bu mixin'inden sonra border-radius kullandığımızda ekstra kodları yazmamız
 message class'ı için kodlarımız bunlar.
 
 ```sass
-    .message
+.message
       border: 1px solid #ccc
       padding: 10px
       color: #333
@@ -113,10 +113,10 @@ message class'ı için kodlarımız bunlar.
 Şimdide diğer class yada id'mizde bu kodları extend edelim.
 
 ```sass
-    .success
+.success
       @extend .message
       border-color: green
-    .error
+.error
       @extend .message
       border-color: red
 ```
@@ -124,7 +124,7 @@ message class'ı için kodlarımız bunlar.
 **Operators:** css özelliklerini yazarken operatorleri kullanabileceğimizi biliyor muydunuz? :)
 
 ```sass
-    aside
+aside
      float: right
      width: 300px / 960px * 100%
 ```
@@ -132,8 +132,8 @@ message class'ı için kodlarımız bunlar.
 Css çıktısı:
 
 ```css
-    aside {
-     float: right;
-     width: 31.25%;
-      }
+aside {
+    float: right;
+    width: 31.25%;
+}
 ```

@@ -2,7 +2,7 @@
 title: Ruby on Rails, Paperclip ve Dropzone.js ile sürükle bırak dosya yükleme uygulaması
 date: 2013-07-06
 author: yunusozcan
-tags: paperclip, dropzone
+tags: paperclip, dropzone, tr
 ---
 
 **Dropzone.js**
@@ -69,40 +69,41 @@ has_many :photos
 
 application.js.coffee
 
-```
-    Dropzone.options.photoDropzone =
-      paramName: "photo"
-      maxFilesize: 2 #mb
-      addRemoveLinks: true
-      init: ->
-        @on 'removedfile', (file) ->
-          if file.xhr
-            $.ajax
-              url: "#{$("#photo-dropzone").attr "action"}/#{JSON.parse(file.xhr.response).id}"
-              type: 'DELETE'
+```coffee
+Dropzone.options.photoDropzone =
+  paramName: "photo"
+  maxFilesize: 2 #mb
+  addRemoveLinks: true
+  init: ->
+    @on 'removedfile', (file) ->
+      if file.xhr
+        $.ajax
+          url: "#{$("#photo-dropzone").attr "action"}/#{JSON.parse(file.xhr.response).id}"
+          type: 'DELETE'
 ```
 
 Sürükle bırak formu için aşağıdaki kodu formun çıkmasını istediğimiz haml dosyasına yazıyoruz.`
 
 
-```
-    = form_for [@product, Photo.new], multipart: true, html: {class: :dropzone, id: 'photo-dropzone'} do |f|
-      = f.hidden_field :photo
-      = f.hidden_field :product_id, value: @product.id
+```haml
+= form_for [@product, Photo.new], multipart: true, html: {class: :dropzone, id: 'photo-dropzone'} do |f|
+  = f.hidden_field :photo
+  = f.hidden_field :product_id, value: @product.id
 ```
 
 Controller içinde sadece create methodunun bulunması yeterli tabi dropzone içersinde silmek için buton çıkarabileceğiniz bir ayar mevcut bununla birlikte silme gibi işlemleri halledebileceğinizi düşünüyorum.
 
-```
-    def create
-      @photo = Photo.create(photo: params[:photo], product_id: params[:photo][:product_id])
-      render json: @photo
-    end
-    def destroy
-      @photo = Photo.find(params[:id])
-      @photo.destroy
-      render nothing: true
-    end
+```ruby
+def create
+  @photo = Photo.create(photo: params[:photo], product_id: params[:photo][:product_id])
+  render json: @photo
+end
+
+def destroy
+  @photo = Photo.find(params[:id])
+  @photo.destroy
+  render nothing: true
+end
 ```
 
 Toplamda 10 satırda projelerinize sürükle bırak dosya yükleme formu yapabilirsiniz. ![dropzonejs](articles/2013-07-06-dropzone.png)

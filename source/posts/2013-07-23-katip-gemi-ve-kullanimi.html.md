@@ -2,7 +2,7 @@
 title: Katip gemi ve kullanımı
 date: 2013-07-23
 author: baygunm
-tags: katip
+tags: katip, tr
 ---
 
 ## Katip nedir?
@@ -15,16 +15,16 @@ Katip, git üzerinden versiyon etiketlerine göre gruplanmış bir şekilde değ
 
 Katip'i kurmak için
 
-  ```
-    gem install katip
+```
+gem install katip
   ```
 
 bundler kullanıyorsanız Gemfile'a aşağıdaki satırları ekleyin:`
 
-  ```
-    source 'https://rubygems.org'
-    gem 'katip'
-  ```
+```
+source 'https://rubygems.org'
+gem 'katip'
+```
 
 
 ## Kullanımı
@@ -33,45 +33,40 @@ bundler kullanıyorsanız Gemfile'a aşağıdaki satırları ekleyin:`
 
 git ile takip ettiğiniz proje dizininde **katip** yazıp çalıştırın:
 
-  ```
-    % katip
-    Create CHANGELOG.md
-  ```
-
+```
+% katip
+Create CHANGELOG.md
+```
 
 Dosya isminizin CHANGELOG.md yerine farklı bir isimde olmasını istiyorsanız
 
-  ```
-    % katip BenimDosyam.md
-    Create BenimDosyam.md
-  ```
-
+```
+% katip BenimDosyam.md
+Create BenimDosyam.md
+```
 
 ### rake olarak kullanımı
 
 Gemfile' a gem' i ekleyin:
 
-
-  ```
-    source 'https://rubygems.org'
-    gem 'katip'
-  ```
+```
+source 'https://rubygems.org'
+gem 'katip'
+```
 
 ve sonrasında rake olarak çalıştırabilirsiniz
 
-  ```
-    % rake katip:create
-    Create CHANGELOG.md
-  ```
-
+```
+% rake katip:create
+Create CHANGELOG.md
+```
 
 Dosya isminizin CHANGELOG.md yerine farklı bir isimde olmasını istiyorsanız
 
 ```
-    % rake katip:create file=BenimDosyam.md
-    Create BenimDosyam.md
+% rake katip:create file=BenimDosyam.md
+Create BenimDosyam.md
 ```
-
 
 ve işte bu kadar. Proje dizininizde, commit' lere dayanarak etiketlere göre gruplanmış şekilde günlük dosyanız hazır.
 
