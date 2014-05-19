@@ -13,27 +13,29 @@ Kullanabileceğiniz 4 adet değişken $column-width, $gutter-width, $columns, $t
 
 En basit olarak şöyle bir **sass** kodundan
 
-    $column-width: 60px
-    $gutter-width: 20px
-    $columns: 12
-    $total-width: 100%
+```
+  $column-width: 60px
+  $gutter-width: 20px
+  $columns: 12
+  $total-width: 100%
+  header
+    +column(12)
+  nav
+    +column(12)
+  section
+    +column(9)
+  aside
+    +column(3)
+  article
+    +column(12)
+  footer
+    +column(12)
 
-    header
-      +column(12)
-    nav
-      +column(12)
-    section
-      +column(9)
-    aside
-      +column(3)
-    article
-      +column(12)
-    footer
-      +column(12)
-
+```
 
 Şöyle Bir **haml** kodundan
 
+```
     %header
       %h2 Header
     %nav
@@ -48,7 +50,7 @@ En basit olarak şöyle bir **sass** kodundan
     %footer
       %h2
         Copyright © 2013
-
+```
 
 Hem **fixed** hem **fluid** olarak bu düzene ulaşabilirsiniz.
 

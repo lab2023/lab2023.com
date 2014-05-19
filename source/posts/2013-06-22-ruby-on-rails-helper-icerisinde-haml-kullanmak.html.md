@@ -27,6 +27,7 @@ Text olarak çıktı verir.
 
 Şimdi aşağıdaki örneği inceleyelim
 
+  ```
     module ApplicationHelper
       def format_state(state, large = false)
         capture_haml do
@@ -39,7 +40,7 @@ Text olarak çıktı verir.
         end
       end
     end
-
+  ```
 
 `haml_tag` ile `span` tag' ı oluşturup `class:` parametresi ile class veriyoruz. `haml_concat` ile de span tag' ı içerisine yazacağımız text' i oluşturuyoruz.
 

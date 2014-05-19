@@ -11,6 +11,8 @@ Herkesin lokaldeki şifleri farklı olduğundan database.yml gibi veritabanı ş
 
 Örnek postgresql içindir.
 
+```
+
     APP_NAME: Uygulamanın ismi
 
     development: &default
@@ -26,7 +28,7 @@ Herkesin lokaldeki şifleri farklı olduğundan database.yml gibi veritabanı ş
     test:
       <<: *default
       database: APP_NAME_test
-
+```
 
 Saygılarımla,
 İyi çalışmalar.
