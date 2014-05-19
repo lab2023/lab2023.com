@@ -17,7 +17,7 @@ Katip'i kurmak için
 
   ```
     gem install katip
-  ``
+  ```
 
 bundler kullanıyorsanız Gemfile'a aşağıdaki satırları ekleyin:`
 

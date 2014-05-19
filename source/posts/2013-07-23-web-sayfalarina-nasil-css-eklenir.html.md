@@ -13,8 +13,9 @@ Bu yöntemle html elementinin içine style özelliği kullanılarak eklenilebili
 
 Örnek:
 
+  ```
     <div style=”color:blue; width:150px;” > Deneme Yazısı </div>
-
+  ```
 
 Her tag’e özellik atamak kullanışlı değildir, özel durumlarda kullanılması uygundur.
 
@@ -24,6 +25,7 @@ Her tag’e özellik atamak kullanışlı değildir, özel durumlarda kullanılm
 
 Örnek:
 
+  ```
     <head>
         <title>Site Başlığı</title>
         <style type=”text/css”>
@@ -36,10 +38,9 @@ Her tag’e özellik atamak kullanışlı değildir, özel durumlarda kullanılm
                 width: 100px;
                 height: 50px;
                 }
-
     </style>
     </head>
-
+  ```
 
 ***3-Harici stil dosyası ekleme:***
 
@@ -47,26 +48,28 @@ Bu yöntemde stil özelliklerimizi .css uzantılı ayrı bir sayfaya yazarız. `
 
 Örnek: style.css adlı stil dosyası
 
+  ```
     p{
       color: black;
       font-family: Tahoma, arial;
      }
-
     #content{
       width: 500px;
       height: auto;
      }
+  ```
 
 
 Bu sayfanın web sayfasına eklenmesi aşağıda gösterilmiştir.
 
 Örnek:
 
+  ```
     <head>
         <title>Sayfamızın Başlığı</title>
         <link rel=”stylesheet”  href=”style.css”   type=”text/css” />
     </head>
-
+  ```
 
 ***4- @import yöntemi ile:***
 
@@ -74,6 +77,7 @@ Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönünde
 
 Örnek:
 
+  ```
     <head>
         <title>Site Başlığı</title>
         <style type=”text/css”>
@@ -82,3 +86,4 @@ Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönünde
     @import “footer.css”;
     </style>
     </head>
+   ```

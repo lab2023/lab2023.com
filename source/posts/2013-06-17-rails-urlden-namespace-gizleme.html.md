@@ -7,7 +7,7 @@ tags: namespace
 
 Urlden namespace gizlemek için `namespace :admin` yerine `scope :module => 'admin'` kulanıyoruz. Örneğin;
 
-  ``
+  ```
     namespace :admin do
       resources :posts, :comments
     end

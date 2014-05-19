@@ -11,35 +11,45 @@ Ruby on Rails'de bunun için geliştirilen [breadcrumbs\_on\_rails](https://gith
 
 Öncelikle
 
-    gem install breadcrumbs_on_rails
+```
+gem install breadcrumbs_on_rails
+```
 
 
 diyerek gemi kuruyoruz ve projemizin Gemfile'ına
 
-    gem 'breadcrumbs_on_rails'
+```
+gem 'breadcrumbs_on_rails'
+```
+
 
 
 satırıyla ekliyoruz.
 
 Artık yapmamız gereken her controller methodu içerisinde kullanıcı oradayken ne görmesi gerekiyorsa
 
+```
     def show
         @product = Product.find(params[:id])
         add_breadcrumb @product.name, product_path(@product)
     end
+```
 
 
 şeklinde yazmak. Bir method içerisinde birden fazla breadcrumb ekleyebilirsiniz. Hepsi sırasıyla görüntülenir.
 
 Son olarak breadcrumb'ın görünmesini istediğiniz layout'ta
 
-    = render_breadcrumbs :separator => ' / '
+```
+= render_breadcrumbs :separator => ' / '
+```
 
 
 koduyla breadcrumbları listeleyebilirsiniz.
 
 Ayrıca farklı stillerde görüntülemek için kendiniz manuel builderlar yazabilirsiniz. Örneğin twitter bootstrap tarzı breadcrumb için örnek builder
 
+```
     class BootstrapBreadcrumbsBuilder < BreadcrumbsOnRails::Breadcrumbs::Builder
         def render
             @context.content_tag(:ul, :class => 'breadcrumb') do
@@ -64,11 +74,15 @@ Ayrıca farklı stillerde görüntülemek için kendiniz manuel builderlar yazab
             end
         end
     end
+```
 
 
-şeklindedir. Bunu "lib/bootstrap_breadcrumbs_builder.rb" içine yazarak.
+şeklindedir. Bunu  `lib/bootstrap_breadcrumbs_builder.rb`  içine yazarak.
 
-    = render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder, :separator => "&raquo;"
+```
+ = render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder, :separator => "&raquo;"
+```
+
 
 
 şeklinde kullanabilirsiniz.

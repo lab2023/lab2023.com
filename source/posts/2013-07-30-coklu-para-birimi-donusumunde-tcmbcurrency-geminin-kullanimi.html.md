@@ -9,34 +9,40 @@ Rails'da Çoklu para birimi dönüşümü (Multi Currency) için geliştirilmiş
 
 Öncelikle gemfile'ımıza **money-rails** ve **tcmb_currency** gemlerini ekliyoruz
 
+```
     gem 'money-rails'
     gem 'tcmb_currency', :git => 'git://github.com/lab2023/tcmb_currency.git
-
+```
 
 ve ardından *bundle install* komutunu çalıştırarak gemleri projeye dahil ediyoruz. Gemler yüklenip, projeye dahil edildikten sonra terminalden
 
+```
     $ rails g tcmb_currency:initializer
     $ rails g tcmb_currency:migration
     $ rake db:migrate
-
+```
 
 komutlarını çalıştırıp initializer dosyasını ve database tablolarını oluşturuyoruz. <!-- more --> Son olarak ise
 
+```
     $ rake tcmb_currency:insert_from_tcmb
 
+```
 
 rake task'ını günlük olarak çalışacak bir cron job a atayarak (bu iş için [whenever gem][4] kullanılabilir), günlük olarak oranların database'e eklenmesi sağlanır
 
 Ardından tek yapılması gereken money gemi işlemleri cent,kuruş vb. bazlı yaptığı için modelinize *monetize :price_cents* eklemek.
 
+```
     class Product < ActiveRecord::Base
         attr_accessible :price, :product ,:price_cents, :price_currency
         monetize :price_cents
     end
-
+```
 
 Artık view katmanında
 
+```
     <% @products.each do |product| %>
         <tr>
             <td><%= product.product %></td>
@@ -49,12 +55,16 @@ Artık view katmanında
             <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
     <% end %>
-
+```
 
 şeklinde kullanabilirsiniz
 
+```
+
     Money.new(1000,"USD").exchange_to(:EUR) # O güne ait oranlara göre dönüşüm yapar
     Money.new(1000,"USD").exchange_to(:EUR, "2013-03-02") # Verilen tarihe ait oranlara göre dönüşüm yapar
+```
+
 
  [1]: https://github.com/RubyMoney/money
  [2]: https://github.com/RubyMoney/money-rails
