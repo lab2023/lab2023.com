@@ -18,4 +18,4 @@ Yaklaşık 5 aylık süreden sonra 18.05.2014 tarihinde görev ve sorumluluklar�
 **Genel Koordinatör Tayfun ERİKAN** oldu. Kardeşim, ortağım Tayfun ERİKAN'a yeni görevinde başarılar diliyorum.
 
 İlgililere duyurulur.
-Saygılarımızla.
+Saygılarımla.
