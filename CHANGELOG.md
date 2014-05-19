@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.2.0.3
+ * [196bf6f](../../commit/196bf6f) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.0.3
  * [d6062d0](../../commit/d6062d0) - __(Tayfun Ozis ERIKAN)__ SH-24 Typo fixed.
  * [6345bcc](../../commit/6345bcc) - __(Tayfun Ozis ERIKAN)__ SH-24 Review and improvements were done.
  * [ad3b5ef](../../commit/ad3b5ef) - __(Onur zgr ZKAN)__  Yeni genel koordinator tayfun erikan
