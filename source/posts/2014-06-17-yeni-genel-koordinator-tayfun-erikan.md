@@ -1,6 +1,6 @@
 ---
 title: Yeni Genel Koordinatör Tayfun Erikan
-date: 2014-06-17
+date: 2014-05-17
 author: onurozgurozkan
 tags: yönetim, tayfun erikan, onur özgür özkan, tr
 ---
