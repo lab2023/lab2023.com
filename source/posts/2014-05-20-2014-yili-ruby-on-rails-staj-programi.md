@@ -33,7 +33,7 @@ tags: ruby on rails, staj, tr
 * Teknik mülakat
 * Teknik olmayan mülakat
 
-[Başvuru formunu doldurarak hemen başvurun.](https://docs.google.com/forms/d/1rPSUMywvmfAh2h41fyBN0nFpvLb2uh42QEsTcF23MBA/viewform)
+**[Başvuru formunu doldurarak hemen başvurun.](https://docs.google.com/forms/d/1rPSUMywvmfAh2h41fyBN0nFpvLb2uh42QEsTcF23MBA/viewform)**
 
 NOTLAR:
 
