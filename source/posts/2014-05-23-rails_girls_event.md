@@ -7,8 +7,8 @@ tags: rails girls ruby events git
 
 ### Rails Girls Denizli
 
-Rails Girls **Finlandiya** kökenli bir  topluluktur. Amacı, Dünyada ki rails bilen ve kodlayan kadın sayısını arttırmaktır.
-Dünya da birçok şehirde düzenlenmiş veya düzenlenecek olan rails girls etkinliğini Denizli'de ki ev sahipliğini üstlenmeye karar verdik. Peki, Nasıl?
+Rails Girls, **Finlandiya** kökenli bir  topluluktur. Amacı, Dünyadaki Rails bilen ve kodlayan kadın sayısını arttırmaktır.
+Dünyanın birçok şehrinde düzenlenmiş veya düzenlenecek olan, Rails Girls etkinliğini Denizli'de ki ev sahipliğini üstlenmeye karar verdik. Peki, Nasıl?
 
 14 - 15 Mart tarihlerinde düzenlenen [Rails Girls Ankara](http://railsgirls.com/ankara) etkinliğinden sonra, Denizli' de ben ve iş arkadaşlarım [Safiye Sepetçi](https://twitter.com/safiyesepetci)
 ve [Clara Isabel Pantoja](https://twitter.com/klapancg) böyle bir etkinlik tüm dünyada düzenleniyorsa, daha önce de İstanbul ve Ankara'da düzenlenmiş ise Denizli'de neden olmasın diye düşündük ve [Rails Girls](http://railsgirls.com/)
@@ -36,18 +36,18 @@ Organize olduktan sonra, sıra mentörleri kararlaştırmak gerekiyordu. Aslınd
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls2.png)
 
-[Rails Girls Denizli](http://railsgirls.com/denizli) sayfasını tasarlarken logomuzu belirlemek gerekiyordu, Sonuçta uluslarası bir etkinlikte Denizli'yi Dünya'ya
+[Rails Girls Denizli](http://railsgirls.com/denizli) sayfasını tasarlarken logomuzu belirlemek gerekiyordu, Sonuçta uluslararası bir etkinlikte Denizli'yi Dünya'ya
 ufakta olsa tanıtmayı amaçlıyordu, bu nedenle "Denizli'yi en iyi ne temsil eder?" konusu üzerinde düşünmeye başladık. "Denizli" deyince insanların aklına direk horozu, Hierapolis antik kenti ve Pamukkale Travertenleri gelmekteydi.
 Bu çıkarımlardan yola çıkarak logomuzu oluşturduk.
 
-Etkinlikte sadece kodlama değil aynı zamanda kadınlara yönelik ilgi çekici konularında olması gerektiği düşüncesindeydik.Bu nedenle "Kadınların iş hayatında ki yeri"
+Etkinlikte sadece kodlama değil aynı zamanda kadınlara yönelik ilgi çekici konularında olması gerektiği düşüncesindeydik.Bu nedenle "Kadınların iş hayatındaki yeri"
 başlıklı bir sunum için, Bu sunumu Denizli de en iyi aktarabilecek bayanlardan biri olan Sayın [Vildan Çaputçu](http://www.anjeads.com/tasarimcilar/vildan-caputcu) ile
 iletişime geçtik. Vildan Hanım bizi kırmayıp "Kadınların iş hayatındaki yeri" konulu sunumunu hazırladı. Ayrıca etkinlikte "Fotograf" konulu bir sunum için [Serdar Yağcı](https://twitter.com/Sevliya)
-ile iletişime geçtik. Serdar Bey'in hazırladığı sunum gerçekten büyüleyiciydi. Destekleri için Vildan hanım ve Serdar bey'e teşekkürlerimizi sunarız.
+ile iletişime geçtik. Serdar Bey'in hazırladığı sunum gerçekten büyüleyiciydi. Destekleri için Vildan hanım ve Serdar beye teşekkürlerimizi sunarız.
 
 
 Afişlerin Hazırlanması, sticker gibi diğer materyalleri rails girls sunduğu için bu konuda zorlanmadık.Site tamamlandıktan sonra [Rails Girls Ankara](http://railsgirls.com/ankara) organizasyon ekibinden [Sezen Balibeyoğlu](https://twitter.com/SezenBalibeyolu)
-ile iletişime geçip duyuru ve süreçlerin nasıl olması konusuna dair bilgi aldık. Sezen Hanım'a desteğinden dolayı teşekkür ediyoruz.
+ile iletişime geçip duyuru ve süreçlerin nasıl olması konusuna dair bilgi aldık. Sezen hanıma desteğinden dolayı teşekkür ediyoruz.
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls3.png)
 
