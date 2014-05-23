@@ -47,14 +47,14 @@ ile iletişime geçtik. Serdar Bey'in hazırladığı sunum gerçekten büyüley
 
 
 Afişlerin Hazırlanması, sticker gibi diğer materyalleri rails girls sunduğu için bu konuda zorlanmadık.Site tamamlandıktan sonra [Rails Girls Ankara](http://railsgirls.com/ankara) organizasyon ekibinden [Sezen Balibeyoğlu](https://twitter.com/SezenBalibeyolu)
-ile iletişime geçip duyuru ve süreç lerin nasıl olması konusuna dair bilgi aldık. Sezen Hanım'a desteğinden dolayı teşekkür ediyoruz.
+ile iletişime geçip duyuru ve süreçlerin nasıl olması konusuna dair bilgi aldık. Sezen Hanım'a desteğinden dolayı teşekkür ediyoruz.
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls3.png)
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls4.png)
 
 Etkinlikte farklı sektördeki kadınların rails kodladıklarını gördükten sonra sanırım etkinlik belirtilen amacına ulaştığını düşünüyorum. Başta bu organizasyonda bizlere desteği ve yardımlarından ötürü sponsorlarımıza [Bulutfon](https://bulutfon.com/), [Netinternet](http://www.netinternet.com.tr/)
-ve [Lab2023](http://lab2023.com/), katılımcılara, değerli mentörlerimize ve emeği geçen herekese teşekkürlerimizi sunarız .
+ve [Lab2023](http://lab2023.com/), katılımcılara, değerli mentörlerimize ve emeği geçen herkese teşekkürlerimizi sunarız .
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls5.png)
 
