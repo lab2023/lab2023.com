@@ -4,7 +4,7 @@ date: 2014-05-23
 tags: ubuntu, log, logrotate, log rotation, linux
 ---
 
-Serverlarımızda tutulan log dosyaları bir yerden sonra devasa boyutlara ulaşarak depolanması ve gerektiği zaman incelenmesi eziyer haline gelebiliyor. Bu yüzden log dosyalarımızı parçalara ayırıp bu parcaları sıkıştırarak saklamak, hem lazım olduğu zaman inceleme yapılmasını, hem de log dosyasının diskte tutulduğu alanı oldukça küçültüp sabit diskimizin rahat bir nefes almasını sağlayacaktır.
+Serverlarımızda tutulan log dosyaları bir yerden sonra devasa boyutlara ulaşarak depolanması ve gerektiği zaman incelenmesi eziyet haline gelebiliyor. Bu yüzden log dosyalarımızı parçalara ayırıp bu parcaları sıkıştırarak saklamak, hem lazım olduğu zaman inceleme yapılmasını, hem de log dosyasının diskte tutulduğu alanı oldukça küçültüp sabit diskimizin rahat bir nefes almasını sağlayacaktır.
 
 Bunu yapabilmek için Ubuntu'da logrotate adlı uygulamayı kullanıyoruz. Öncelikle sunucumuza yüklü değilse yüklememiz gerekiyor.
 
