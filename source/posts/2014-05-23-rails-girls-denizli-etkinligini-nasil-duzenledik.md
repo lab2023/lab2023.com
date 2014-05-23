@@ -2,7 +2,7 @@
 title: Rails Girls Denizli Etkinliğini nasıl düzenledik?
 date: 2014-05-23
 author: leylakapi
-tags: rails girls ruby events git, tr
+tags: rails girls ruby events git tr
 ---
 
 ### Rails Girls Denizli
