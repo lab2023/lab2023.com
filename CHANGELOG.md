@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [0b56122](../../commit/0b56122) - __(hamitturkukaya)__ Hotfixes for railsgirls article
+
+#### 1.2.1.1
+ * [12eba87](../../commit/12eba87) - __(hamitturkukaya)__ 1.2.1.1
  * [d0f14fa](../../commit/d0f14fa) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
  * [97809e5](../../commit/97809e5) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
  * [1c92406](../../commit/1c92406) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
