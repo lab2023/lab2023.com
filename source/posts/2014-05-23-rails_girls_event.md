@@ -17,7 +17,7 @@ Biz bu süreci beklerken daha önce [Rails Girls İstanbul](http://railsgirls.co
 her türlü yardım ve destekte bulundular, buradan Kader hanım ve Ender bey'e teşekkürlerimizi sunuyoruz.
 
 Ardından Rails Girls organizatörlerinden [Linda Liukas](https://twitter.com/lindaliukas) bizimle iletişime geçip, rails girls Github reposunu bizimle paylaştı.
-Bizde [Rails Girls Denizli](http://railsgirls.com/denizli) sayfasını uygun metodlara göre düzenlemeye başladık. Düzenlediğimiz siteyi direk github rails gils reposuna gönderiyorduk.
+Bizde [Rails Girls Denizli](http://railsgirls.com/denizli) sayfasını uygun metodlara göre düzenlemeye başladık. Düzenlediğimiz siteyi direk github rails girls reposuna gönderiyorduk.
 Uluslararası bir etkinliği şehrinizde yapmanın verdiği heyecan paha biçilemezdi.
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls7.png)
