@@ -2,7 +2,7 @@
 title: Taps ile MySQL' den PostgreSQL' e Veri Aktarma
 date: 2013-09-10
 author: dilekmuhammet
-tags: mysql, postresql, taps
+tags: mysql, postresql, taps, tr
 ---
 
 Merhabalar,
@@ -25,12 +25,8 @@ Başka bir terminal açıp aşağıdaki kodu çalıştırdığımızda MySQL ver
 
 `taps push mysql2://dbuser:dbpassword@localhost/dbname http://httpuser:httppassword@example.com:5000`
 
-* * *
-
 *   `push` yerine `pull` kullanırsak Server olan veritabanındaki verileri Client veritabanına almış oluruz.
-
 *   Hangi veritabanı ile işlem yapacaksak o veritabanı adaptör geminin kurulu olması gerekmektedir. PostgreSQL için `pg` MySQL için `mysql2` gibi.
-
 *   Client' taki httpuser httppassword server ile aynı olmalıdır.
 
 İyi çalışmalar dilerim.

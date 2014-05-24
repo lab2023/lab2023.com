@@ -2,7 +2,7 @@
 title: The Semantic Grid System, Yarının Sayfa Düzeni
 date: 2013-07-14
 author: yunusozcan
-tags: samantic grid system
+tags: samantic grid system, tr
 ---
 
 **HTML5** bildiğiniz gibi semantik etiketlerle birlikte geldi ama hala tam anlamıyla kullanmıyoruz. başlayacağımız nokta tam olarak grid sistemleri olacak 960.gs vs.. tam olarak bu akıma uymadıklarını düşünüyordum ki başkası daha önce düşünmüş less ve **sass** **mixin** kütüphanesi olarak [semantic grid sistemi][1] oluşturmuş. son zamanlarda pek güncellenmemiş olsada halen kullanılabilir durumda.
@@ -13,42 +13,44 @@ Kullanabileceğiniz 4 adet değişken $column-width, $gutter-width, $columns, $t
 
 En basit olarak şöyle bir **sass** kodundan
 
-    $column-width: 60px
-    $gutter-width: 20px
-    $columns: 12
-    $total-width: 100%
+```sass
+$column-width: 60px
+$gutter-width: 20px
+$columns: 12
+$total-width: 100%
+header
+    +column(12)
+nav
+    +column(12)
+section
+    +column(9)
+aside
+    +column(3)
+article
+    +column(12)
+footer
+    +column(12)
 
-    header
-      +column(12)
-    nav
-      +column(12)
-    section
-      +column(9)
-    aside
-      +column(3)
-    article
-      +column(12)
-    footer
-      +column(12)
-
+```
 
 Şöyle Bir **haml** kodundan
 
-    %header
-      %h2 Header
-    %nav
-      %h2 Menu
-    %section
-      %h2 Main
-    %aside
-      %article
-        %h2 aside
-      %article
-        %h2 aisde
-    %footer
-      %h2
-        Copyright © 2013
-
+```haml
+%header
+  %h2 Header
+%nav
+  %h2 Menu
+%section
+  %h2 Main
+%aside
+  %article
+    %h2 aside
+  %article
+    %h2 aisde
+%footer
+  %h2
+    Copyright © 2013
+```
 
 Hem **fixed** hem **fluid** olarak bu düzene ulaşabilirsiniz.
 

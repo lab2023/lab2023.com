@@ -2,7 +2,7 @@
 title: Forkladığınız GitHub reposunu ana repo ile güncel tutmak
 date: 2013-06-17
 author: toziserikan
-tags: branch, fork, git, github, remote
+tags: branch, fork, git, github, remote, tr
 ---
 
 Bildiginiz gibi playbook, rails-template v.b. open source projelerimizi github üzerinden güncellemeye devam ediyoruz.
@@ -17,8 +17,9 @@ A geliştiricisinin eklediği yeni bir içerigin B geliştiricisinde bulunan for
 
 Playbook' u ele alırsak. Ben kendi bilgisayarıma **lab2023/playbook**'u clonladım. Ardından kendi hesabıma bu repoyu forkladım ve lokalime **lab2023/playbook** dan çatallanan **tayfunoziserikan/playbook** reposunu playbook-fork adı altında tekrar klonladım. Bu repoya da yukarıdaki makalede anlatıldıgı şekilde;
 
-    git remote add --track master playbook git@github.com:lab2023/playbook.git
-
+```
+git remote add --track master playbook git@github.com:lab2023/playbook.git
+```
 
 remote branch'ını ekledim. Artık orjinal playbook' da yapılan diğer değişiklikleri bu branch'a fetch yapıp kendi master branch'ına merge ederek playbook-fork repomun güncel kalmasını sağlayabiliyorum.
 
