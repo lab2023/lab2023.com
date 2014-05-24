@@ -1,6 +1,7 @@
 ---
 title: Ubuntu serverda logrotation
 date: 2014-05-23
+author: hamitturkukaya
 tags: ubuntu, log, logrotate, log rotation, linux, tr
 ---
 
