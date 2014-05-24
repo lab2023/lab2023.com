@@ -2,7 +2,7 @@
 title: How To Parse Excel Spreadsheets in Rails
 date: 2014-03-26
 author: marjinal1st
-tags: excel, roo, rails
+tags: excel, roo, rails, en
 ---
 
 Parsing Excel spreadsheets in Rails is a quite simple task with the gem called Roo. Let’s do it step by step.

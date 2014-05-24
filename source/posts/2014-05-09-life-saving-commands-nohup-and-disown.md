@@ -2,7 +2,7 @@
 title: 'Life Saving Commands: nohup & disown'
 date: 2014-05-09
 author: baygunm
-tags: linux. macosx, command, nohup, disown
+tags: linux. macosx, command, nohup, disown, en
 ---
 
 ## Why do we need <code>nohup</code> or <code>disown</code> ?

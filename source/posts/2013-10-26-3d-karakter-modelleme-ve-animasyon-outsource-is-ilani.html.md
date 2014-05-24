@@ -2,7 +2,7 @@
 title: 3D Karakter Modelleme ve Animasyon Outsource İş İlanı
 date: 2013-10-26
 author: toziserikan
-tags: 3d, animasyon, cg, iş teklifi, modelleme, outsource
+tags: 3d, animasyon, cg, iş teklifi, modelleme, outsource, tr
 ---
 
 ## Tanım
@@ -55,9 +55,7 @@ Yukarıda bahsi geçen 1 adet karakterin ve karakterin kendine ait doğal ortam�
 Teklifinizin 2. aşamaya geçmesi halinde proje detaylarını sizinle paylaşacağımızdan fikri hakların korunması açısından aramızda bir gizlilik sözleşmesi imzalamamız gerekmektedir. Gizlilik sözleşmesi ile ilgili detaylar aşağıdaki gibidir.
 
 *   Müşterimizin isteği doğrultusunda [gizlilik sözleşmesini][6] indirip imzalayıp taranmasını, info[at]lab2023.com adresine email, aslınıda Pamukkale Üniversitesi Teknokent Z13 Kınıklı Denizli adresine göndermenizi rica ediyoruz.
-
 *   İlgili belgeler bize ulaştıktan sonra projenin ve yapılacak grafik işlerinin detaylarını içeren 4 sayfalık bir grafik ihtiyaç dosyasını istediğiniz email adresine ulaştıracağız.
-
 *   Teklif vermeniz için bu döküman yeterli ise gizlilik sözleşmesini anlaşırsak verebilirsiniz ancak bu döküman dışında ki sorularınıza cevap alamayacaksınız.
 
 ## Teklifleriniz

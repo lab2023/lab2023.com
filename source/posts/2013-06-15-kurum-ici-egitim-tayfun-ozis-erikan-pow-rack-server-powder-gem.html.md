@@ -2,7 +2,7 @@
 title: Kurum İçi Eğitim - Tayfun Öziş ERİKAN - Pow Rack Server & Powder Gem
 date: 2013-06-15
 author: toziserikan
-tags: developement, pow, powder, rack, server
+tags: developement, pow, powder, rack, server, tr
 ---
 
 *   Tarih : 06.06.2013
