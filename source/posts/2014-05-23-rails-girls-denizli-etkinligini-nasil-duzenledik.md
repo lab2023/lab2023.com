@@ -61,4 +61,4 @@ ve [Lab2023](http://lab2023.com/), katılımcılara, değerli mentörlerimize ve
 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls6.jpg)
 
-Resimlerin Tamamını görmek için : [Rails Gilrs Denizli at flickr](https://www.flickr.com/photos/122188945@N05/sets/72157644393068979/)
+Rails Girls Denizli etkinliği ile ilgili [resimlerin tamamını Flicker hesabımızdan](https://www.flickr.com/photos/122188945@N05/sets/72157644393068979/) görebilirsiniz.
