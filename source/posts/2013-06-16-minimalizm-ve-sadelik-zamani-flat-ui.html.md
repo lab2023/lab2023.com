@@ -2,12 +2,12 @@
 title: Minimalizm ve sadelik zamanı, Flat UI
 date: 2013-06-16
 author: toziserikan
-tags: admin theme, design, flat, flat ui, hierapolis, ios 7, kebab, minimalism, simplicity
+tags: admin theme, design, flat, flat ui, hierapolis, ios 7, kebab, minimalism, simplicity, tr
 ---
 
 Merhabalar,
 
-Firmamızın da en temellerinden birisi olan "**Basit olan mükemmeldir**" prensibimize uygun olarak tasarım tendlerinde son dönemlerde ön plana çıkan "**Flat Design**" prensiplerini kendimize yakın bulmaya başladık.
+Firmamızın da en temellerinden birisi olan **"Basit olan mükemmeldir"** prensibimize uygun olarak tasarım tendlerinde son dönemlerde ön plana çıkan **"Flat Design"** prensiplerini kendimize yakın bulmaya başladık.
 
 Bildiğiniz gibi tasarım camiasında son zamanlarda "Flat Design" adı altında yaygınlaşmaya başlayan ve temelinde basitlik yatan bir tasarım akımı başladı. Bu konudaki temel prensiplere <http://designmodo.com/flat-design-principles/> adresidnen göz atablirsiniz.
 

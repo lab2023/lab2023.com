@@ -1,6 +1,68 @@
 
 #### [Current]
+ * [f157424](../../commit/f157424) - __(Murat Kemal BAYGN)__ Fix founding year
+ * [50adc98](../../commit/50adc98) - __(Onur zgr ZKAN)__ Bump version 1.2.7.0
+ * [3fc1758](../../commit/3fc1758) - __(Onur zgr ZKAN)__ Bump version 1.2.6.0
+ * [c85de6b](../../commit/c85de6b) - __(Onur zgr ZKAN)__ Bump version
+ * [c060228](../../commit/c060228) - __(Onur zgr ZKAN)__ Hotfix
 
+- revome 'at Flicker'
+
+ * [c2a6b38](../../commit/c2a6b38) - __(Onur zgr ZKAN)__ Add author link
+ * [cc7fb18](../../commit/cc7fb18) - __(Onur zgr ZKAN)__ Bump version 1.2.4.1
+ * [0646592](../../commit/0646592) - __(Onur zgr ZKAN)__ Bump version 1.2.4.0
+ * [ea51dc6](../../commit/ea51dc6) - __(Onur zgr ZKAN)__ Fixed tags.
+ * [25baccd](../../commit/25baccd) - __(Onur zgr ZKAN)__ - tr etiketi eklendi. - kodlar github stili yapildi. - man page linki verildi. - bir kac harf hatasi duzeltildi.
+ * [ae7e939](../../commit/ae7e939) - __(hamitturkukaya)__ SH-28 Log ratation on ubuntu server
+
+typo fix
+
+ * [a318add](../../commit/a318add) - __(hamitturkukaya)__ SH-28 Log ratation on ubuntu server
+ * [f7316ca](../../commit/f7316ca) - __(Onur zgr ZKAN)__ Review Leyla's commit.
+ * [2f7792c](../../commit/2f7792c) - __(leylaKapi)__ Finish fixed to syntax highlight
+ * [09f4f84](../../commit/09f4f84) - __(leylaKapi)__ Continue-fixed code block
+ * [fc6467c](../../commit/fc6467c) - __(leylaKapi)__ Syntax highlights were fixed
+ * [1ff5347](../../commit/1ff5347) - __(Onur zgr ZKAN)__ Merge pull request [#10](../../issues/10) from nolcay/feature/rabbitmq_worker_queues
+
+fixed typos (again)
+ * [144d02a](../../commit/144d02a) - __(Olcay)__ fixed typos (again)
+ * [c6c85a2](../../commit/c6c85a2) - __(Onur zgr ZKAN)__ Write rabbitmq arka plan isleri
+ * [77d0b50](../../commit/77d0b50) - __(Onur zgr ZKAN)__ RabbitMq
+ * [ef016e2](../../commit/ef016e2) - __(Onur zgr ZKAN)__ Typo fixed.
+ * [4982faa](../../commit/4982faa) - __(Onur zgr ZKAN)__ Typo fixed.
+ * [91dfe74](../../commit/91dfe74) - __(Onur Ozgur OZKAN)__ SH-9 RabbitMq - Worker Queues
+
+#### 1.2.4.0
+ * [88d27ce](../../commit/88d27ce) - __(hamitturkukaya)__ File name fix
+
+#### 1.2.3.0
+ * [455c245](../../commit/455c245) - __(hamitturkukaya)__ 1.2.3.0
+ * [a42fbf2](../../commit/a42fbf2) - __(hamitturkukaya)__ title fix
+
+#### 1.2.2.0
+ * [b20faab](../../commit/b20faab) - __(hamitturkukaya)__ 1.2.2.0
+ * [0b56122](../../commit/0b56122) - __(hamitturkukaya)__ Hotfixes for railsgirls article
+
+#### 1.2.1.1
+ * [12eba87](../../commit/12eba87) - __(hamitturkukaya)__ 1.2.1.1
+ * [d0f14fa](../../commit/d0f14fa) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [97809e5](../../commit/97809e5) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [1c92406](../../commit/1c92406) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [9208b27](../../commit/9208b27) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [c4fc0ce](../../commit/c4fc0ce) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [c43dce1](../../commit/c43dce1) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [c5a9f5d](../../commit/c5a9f5d) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [a9344b5](../../commit/a9344b5) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [7841fb1](../../commit/7841fb1) - __(leylaKapi)__ SH-27 Rails Girls Blog Post
+ * [0e26864](../../commit/0e26864) - __(Onur zgr ZKAN)__ 2014 staj programi
+ * [d24f602](../../commit/d24f602) - __(Onur zgr ZKAN)__ 2014 staj programi
+ * [9723ca1](../../commit/9723ca1) - __(Onur zgr ZKAN)__ Tapaj calismasi
+ * [09f090d](../../commit/09f090d) - __(Onur zgr ZKAN)__ Typo fixed.
+ * [50f28b5](../../commit/50f28b5) - __(Onur zgr ZKAN)__ Typo fixed.
+ * [c50f536](../../commit/c50f536) - __(Onur zgr ZKAN)__ Typo fixed.
+
+#### 1.2.1.0
+ * [07b73e6](../../commit/07b73e6) - __(Tayfun Ozis ERIKAN)__ 1.2.1.0
 
 #### 1.2.0.3
  * [196bf6f](../../commit/196bf6f) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.0.3

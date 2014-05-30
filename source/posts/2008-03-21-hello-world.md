@@ -2,7 +2,7 @@
 title: "Hello World!"
 date: 2008-03-21
 author: onurozgurozkan
-tags: lab2023, blog
+tags: lab2023, blog, en
 ---
 
 This is a sample post for design, test our new blog.

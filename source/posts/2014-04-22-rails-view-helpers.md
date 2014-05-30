@@ -18,7 +18,7 @@ This is our sample haml code block which shows icons and link to videos. As you 
 There is a `helpers` directory in app folder and we write our custom view helper there.
 
 
-````
+```
 app/
    assets/
    controllers/
