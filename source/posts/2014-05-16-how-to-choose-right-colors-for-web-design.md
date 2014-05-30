@@ -80,7 +80,7 @@ For finish, let’s make a small review about some useful tools for editing colo
 
 ![Picture 1](articles/2014-5-23-how16.jpg)
 
-* Kuler it’s the adobe official web site for color schemes, you can connect kuler options for creative cloud adobe. 
+* Kuler.com it’s the adobe official web site for color schemes, you can connect kuler options for creative cloud adobe. 
 
 ![Picture 1](articles/2014-5-23-how18.jpg)
 
