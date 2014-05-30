@@ -1,5 +1,10 @@
 
 #### [Current]
+ * [64f13aa](../../commit/64f13aa) - __(Muhammet DILEK)__ middleman-syntax version fixed
+ * [ff90602](../../commit/ff90602) - __(Tayfun Ozis ERIKAN)__ Middleman was updated to 3.3.3
+
+#### 1.2.7.1
+ * [9ec8785](../../commit/9ec8785) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.7.1
  * [f157424](../../commit/f157424) - __(Murat Kemal BAYGN)__ Fix founding year
  * [50adc98](../../commit/50adc98) - __(Onur zgr ZKAN)__ Bump version 1.2.7.0
  * [3fc1758](../../commit/3fc1758) - __(Onur zgr ZKAN)__ Bump version 1.2.6.0
