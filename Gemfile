@@ -20,8 +20,8 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 gem 'bootstrap-sass', '~> 3.1.1.0'
 
 gem 'middleman-blog', '~> 3.5.1'
-gem 'middleman-syntax', '~> 2.0.0'
-gem 'redcarpet', '~> 3.1.1'
+gem 'middleman-syntax', '~> 1.2.1'
+gem 'redcarpet', '~> 3.1.2'
 gem 'nokogiri', '~> 1.6.1'
 
 # For feed.xml.builder
