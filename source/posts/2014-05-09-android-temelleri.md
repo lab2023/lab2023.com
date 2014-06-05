@@ -22,7 +22,7 @@ Ubuntu veya Linux Mint için ise:
 
 komutlarını kullanabilirsiniz.
 
-Kurulumun ardından Android SDK'yı ve IDE'mizi indirmemiz gerekmekte. [Buradan](http://developer.android.com/SDK/index.html) Eclipse ile Android SDK' yı indirebiliriz.
+Kurulumun ardından Android SDK' yı ve IDE' mizi indirmemiz gerekmekte. [Buradan](http://developer.android.com/SDK/index.html) Eclipse ile Android SDK' yı indirebiliriz.
 İsterseniz Eclipse yerine [IntelliJIdea](http://www.jetbrains.com/idea/) tabanlı [Android Studio](http://developer.android.com/SDK/installing/studio.html)' yu da deneyebilirsiniz,
 fakat hala alpha aşamasında olduğu için ben tercih etmiyorum.
 
@@ -48,9 +48,9 @@ Sonrasında uygulamamız için gerekli bilgileri giriyoruz.
 
 _**Application name:**_ Play Store' da gözükecek uygulama adıdır
 
-_**Package name:**_ Classlarımızı tutacak genel paket adıdır. Genellikle 'com.sirket_adi.uygulama_adi' olarak belirlenir.
+_**Package name:**_ Class' larımızı tutacak genel paket adıdır. Genellikle 'com.sirket_adi.uygulama_adi' olarak belirlenir.
 
-_**Minimum Required SDK**_ ve _**Target SDK**_, uygulamamızın Android'in hangi sürümlerinde çalışacağını belirtir. Target SDK, en son çıkan SDK seçilmelidir.
+_**Minimum Required SDK**_ ve _**Target SDK**_, uygulamamızın Android' in hangi sürümlerinde çalışacağını belirtir. Target SDK, en son çıkan SDK seçilmelidir.
 
 Sonraki pencerelerde varsayılan değerler korunarak proje oluşturma işlemi tamamlanır.
 
@@ -61,25 +61,25 @@ Sonraki pencerelerde varsayılan değerler korunarak proje oluşturma işlemi ta
 İlk uygulamamızı oluşturduk ve resimdeki gibi klasörler karşımıza geldi. Burada haşır neşir olacağımız kısımlar,
 _**SRC**_ ve _**RES**_ klasörleridir. Genel olarak klasörlerin görevleri şunlardır:
 
-_**Gen**_, hiç bir zaman müdahale etmemeniz gereken, Android' in kendi değişkenlerini adresleyip, değişkenler halinde tuttuğu classları içeren klasördür.
+_**Gen**_, hiçbir zaman müdahale etmemeniz gereken, Android' in kendi değişkenlerini adresleyip, değişkenler halinde tuttuğu class' ları içeren klasördür.
 
-_**Bin**_, derlenmiş classlarımızı ve çalıştırılabilir apk dosyamızı içeren klasördür.
+_**Bin**_, derlenmiş class' larımızı ve çalıştırılabilir apk dosyamızı içeren klasördür.
 
 _**Libs**_, uygulamaya dahil edilen kütüphaneler bu klasördedir. (Android SDK gibi)
 
-_**RES**_, assetlerimizi tutmak içindir (resimler, arayüz dosyalarımız, rakamsal veya string değerlerimiz vs.)
+_**RES**_, asset' lerimizi tutmak içindir (resimler, arayüz dosyalarımız, rakamsal veya string değerlerimiz vs.)
 
 _**Drawable**_, resimlerimizin, stil dosyalarımızın bulunacağı klasördür. Yanlarındaki hdpi, ldpi, mpdi, xhdpi ise ekran boyutlarını belirtir. Bu şekilde uygulamaya özel arayüz tasarlayabilirsiniz.
 Örneğin 10" bir tabletteki resmin boyutu ve çözünürlüğü 3" bir telefondakinden büyük olmalıdır. Bunları burada ayarlayabilirsiniz.
 
-_**Layout**_, arayüz xmllerini saklayan klasördür. Bu klasörün yanına istediğiniz gibi _layout_hdpi_, _layout_ldpi_ gibi klasörler ekleyerek arayüzleri özelleştirebilirsiniz.
+_**Layout**_, arayüz xml' lerini saklayan klasördür. Bu klasörün yanına istediğiniz gibi _layout_hdpi_, _layout_ldpi_ gibi klasörler ekleyerek arayüzleri özelleştirebilirsiniz.
 
 _**Menu**_, uygulamanızda görünecek menüleri tutan klasördür
 
-_**Values**_, uygulama içerisinde kullanacağımız değerleri tutacağımız klasördür. Arayüzdeki margin değerlerinden buton textlerine kadar herşeyi burada tutabilirsiniz.
+_**Values**_, uygulama içerisinde kullanacağımız değerleri tutacağımız klasördür. Arayüzdeki margin değerlerinden buton text' lerine kadar herşeyi burada tutabilirsiniz.
 values-en, values-tr şeklinde klasörlerle sadece içerisindeki değerleri değiştirerek telefonun diline göre uygulamanın dilini değiştirebilirsiniz.
 
-Bunların dışında içli dışlı olacağımız bir başka dosya, _**AndroidManifest.xml**_ dosyasıdır. Bu dosya içerisinde uygulama ayarlarımız, izinlerimiz, activitylerimiz gibi bilgiler
+Bunların dışında içli dışlı olacağımız bir başka dosya, _**AndroidManifest.xml**_ dosyasıdır. Bu dosya içerisinde uygulama ayarlarımız, izinlerimiz, aktivitelerimiz gibi bilgiler
 bulunmaktadır.
 
 
@@ -88,11 +88,11 @@ Bu bilgilerin ardından gelelim layout klasörümüze:
 Layout klasörünün içine girdiğimiz zaman 2 adet dosya oluştuğunu görüyoruz. _**activity_main.xml**_ ve _**fragment_main.xml**_ bunlar arayüz dosyalarımızdır.
 (Eski SDK' ya sahip olan kullanıcılarda sadece activity_main.xml olacaktır.) Ne işe yaradıklarını açıklayalım. Android' de bir çok ekran sistemi vardır. Bunlara _**Activity**_ denir. Uygulamada işlem
 yaptığınız her ekranı bir activity olarak düşünebilirsiniz. Bunun yanısıra API 11(Android 3.0)' den sonra Fragment yapısı ek olarak getirildi. Bunu da Activity içerisinde çalışan bir
-arayüz ya da bir işlemi temsil eden küçük activity parçaları olarak düşünebiliriz. Bir container activity içerisinde birden fragmentleri tetikleterek çağırmak, hem performans, hem de
-tekrar kullanılabilirlik açısından daha verimlidir. Tabi fragmentler de activity' den bağımsız değildir. Onların yaşam döngüleri de onu içeren aktiviteye bağlıdır. Activity kapandığı
+arayüz ya da bir işlemi temsil eden küçük activity parçaları olarak düşünebiliriz. Bir container activity içerisinde birden fragment' leri tetikleterek çağırmak, hem performans, hem de
+tekrar kullanılabilirlik açısından daha verimlidir. Tabi fragment' ler de activity' den bağımsız değildir. Onların yaşam döngüleri de onu içeren aktiviteye bağlıdır. Activity kapandığı
 zaman içerdiği fragment de kapanır.
 
-Bu kısa ön bilgiden sonra tahmin edebileceğiniz gibi activity_main.xml, fragmenti tutacak container activity arayüzü iken; fragment_main.xml ise, içerisinde çalıştırılacak
+Bu kısa ön bilgiden sonra tahmin edebileceğiniz gibi activity_main.xml, fragment' i tutacak container activity arayüzü iken; fragment_main.xml ise, içerisinde çalıştırılacak
 fragment arayüzüdür.
 
 ![Activity](/assets/images/articles/2014-05-09-android-temelleri/newactivity.png)
@@ -102,11 +102,11 @@ fragment arayüzüdür.
 
 Layout görünümü içerisinde arayüzü 2 farklı şekilde görüntüleyebiliriz.
 _**Graphical Layout**_: Arayüzün olduğu gibi gösterildiği, bileşenlerin sürükle bırak ile eklenebileceği grafik arayüzüdür.
-_**XML Editör**_: Xml dosyasını manuel olarak oluşturabileceğiniz editördür
+_**XML Editör**_: XML dosyasını manuel olarak oluşturabileceğiniz editördür
 
 Not: Düzenlemeler için xml' e eninde sonunda elle müdahale etmeniz gerekecektir. Arayüz aracı çok gelişmiş durumda değil.
 
-xml dosyalarını arayüz altındaki activity_main.xml ve activity_fragment.xml' e tıklayarak açalım
+XML dosyalarını arayüz altındaki *activity_main.xml* ve *activity_fragment.xml*' e tıklayarak açalım
 
 _**activity_main.xml**_
 
@@ -150,7 +150,7 @@ gibi RelativeLayout, içerisindeki elemanları birbirlerine göre uzaklığı, k
 Layoutlar iç içe kullanılabilir.
 
 TextView' ımız ise uygulamamızın içerisinde düz metin göstermek için kullanabileceğimiz label' lardır. text değerine _"@string/hello_world"_ değeri atanmıştır. Bu da bu içeriğin
-"res/values/strings.xml" dosyası içerisinde tutulduğunu belirtir. Layout içerisindeki yazıları strings.xml dosyasında tutmak best practice olarak önerilmektedir.
+_"res/values/strings.xml"_ dosyası içerisinde tutulduğunu belirtir. Layout içerisindeki yazıları *strings.xml* dosyasında tutmak best practice olarak önerilmektedir.
 
 ```xml
 	<?xml version="1.0" encoding="utf-8"?>
@@ -163,12 +163,12 @@ TextView' ımız ise uygulamamızın içerisinde düz metin göstermek için kul
 	</resources>
 ```
 
-Not: String' ler, id' ler otomatik olarak adreslenip "Gen/R.class" içerisine yazılmaktadır. Bu nedenle aynı string adı ve id' ler farklı xml dosyalarında kullanılsa bile eşsiz olmalıdır.
-Mesela yukarıdaki xml' lere bakarak id' si container olan başka bir component veya adı hello_world olan başka bir string oluşturmamız hatalara neden olacaktır.
+Not: String' ler, id' ler otomatik olarak adreslenip _"Gen/R.class"_ içerisine yazılmaktadır. Bu nedenle aynı string adı ve id' ler farklı xml dosyalarında kullanılsa bile eşsiz olmalıdır.
+Mesela yukarıdaki xml' lere bakarak id' si container olan başka bir component veya adı *hello_world* olan başka bir string oluşturmamız hatalara neden olacaktır.
 
 Arayüz dosyalarımızı inceledikten sonra gelelim asıl kodlarımızın bulunduğu Java Class' ımıza.
 
-Classımızı _"src/paket_adi/MainActivity.class"_ dosyasına tıklayarak açıyoruz.
+Class' ımızı _"src/paket_adi/MainActivity.class"_ dosyasına tıklayarak açıyoruz.
 
 ```java
     package com.htk.firstapp;
@@ -265,7 +265,7 @@ Bu transaction' ı, commit() fonksiyonu ile çalıştırabiliriz.
 
 Fragment Class' ımız olan _**PlaceholderFragment**_' in fonksiyonları da Activity fonksiyonları gibidir. Fragment içerisinde constructordan sonra ilk olarak onCreateView() fonksiyonu
 çalıştırılır. Bu fonksiyon içerisinde de fragment layout _**LayoutInflater**_ objesi ile xml dosyamız view nesnesine dönüştürülir. Ardından ise oluşturulan view Activity'e döndürülür ve
-activity, bu fragmenti ekrana basar.
+activity, bu fragment' i ekrana basar.
 
 Artık temel yapıyı öğrendiğimize göre uygulamamızı çalıştırabiliriz. :)
 
