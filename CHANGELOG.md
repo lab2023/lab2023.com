@@ -1,5 +1,21 @@
 
 #### [Current]
+ * [38fded2](../../commit/38fded2) - __(Tayfun Ozis ERIKAN)__ ES tag fixed.
+ * [2c68f25](../../commit/2c68f25) - __(Tayfun Ozis ERIKAN)__ Screenshot links were added for copyrights
+ * [96b0812](../../commit/96b0812) - __(Clara Isabel Pantoja)__ add spanish vertion of article
+ * [7e5ed55](../../commit/7e5ed55) - __(Onur zgr ZKAN)__ Review
+
+- Add en tag
+- Give link for some concept
+- Fix header downcase and uppercase
+- Remove 'click to'  expression
+
+ * [c8e82d1](../../commit/c8e82d1) - __(Clara Isabel Pantoja)__ SH-17 fix images name
+ * [769b972](../../commit/769b972) - __(Clara Isabel Pantoja)__ SH-17 fix image name
+ * [b14b8a9](../../commit/b14b8a9) - __(Clara Isabel Pantoja)__ SH-17 How to choose rght colors for web design
+
+#### 1.2.8.0
+ * [0771d25](../../commit/0771d25) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.8.0
  * [64f13aa](../../commit/64f13aa) - __(Muhammet DILEK)__ middleman-syntax version fixed
  * [ff90602](../../commit/ff90602) - __(Tayfun Ozis ERIKAN)__ Middleman was updated to 3.3.3
 
