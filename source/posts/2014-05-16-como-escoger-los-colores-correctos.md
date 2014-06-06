@@ -82,7 +82,7 @@ Para finalizar revisemos un pequeño resumen sobre algunas herramientas útiles 
 
 ![Picture 1](articles/2014-5-23-how16.jpg)
 
-* [Kuler.com](Kuler.com) es la página oficial de adobe para diseñar muestras de color, puedes conectarlo con tus programas de adobe preferidos.
+* [Adobe Kuler](https://kuler.adobe.com) es la página oficial de adobe para diseñar muestras de color, puedes conectarlo con tus programas de adobe preferidos.
 
 ![Picture 1](articles/2014-5-23-how18.jpg)
 
