@@ -1,5 +1,13 @@
 
 #### [Current]
+ * [5878d19](../../commit/5878d19) - __(Tayfun Ozis ERIKAN)__ Columns were improved
+ * [c8dc57c](../../commit/c8dc57c) - __(leylaKapi)__ Add espanol tag to blog
+ * [947115b](../../commit/947115b) - __(leylaKapi)__ remove espanol tag
+ * [f341bde](../../commit/f341bde) - __(leylaKapi)__ find and edit  which  without tag
+ * [1f88fd0](../../commit/1f88fd0) - __(leylaKapi)__ Add language link
+
+#### 1.2.8.1
+ * [2d39ae7](../../commit/2d39ae7) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.8.1
  * [38fded2](../../commit/38fded2) - __(Tayfun Ozis ERIKAN)__ ES tag fixed.
  * [2c68f25](../../commit/2c68f25) - __(Tayfun Ozis ERIKAN)__ Screenshot links were added for copyrights
  * [96b0812](../../commit/96b0812) - __(Clara Isabel Pantoja)__ add spanish vertion of article
