@@ -7,11 +7,25 @@ tags: sencha touch, tr
 
 Bu yazıda giriş seviyesinde Sencha Touch ile nasıl liste detay bir uygulama yapacağımızı göreceğiz.
 
-Mac için sencha touch kurulumu:
+Mac OS için sencha touch kurulumu:
 
-* [http://www.sencha.com/products/sencha-cmd/download](Sencha CMD)' yi indirip kuruyoruz.
+* [Sencha CMD](http://www.sencha.com/products/sencha-cmd/download)' yi indirip kuruyoruz.
 * [Sencha Touch](http://www.sencha.com/products/touch/download/) dosyasını indirip unzip yapıyoruz.
 * Yeni uygulama oluşturmak için unzip yaptığınız klasörde olmalısınız.
+
+Sencha CMD kurulduktan sonra sencha uygılamaları için kullanacağımız `sencha` komutu 
+
+```
+ ~/bin/Sencha/Cmd/version_number/sencha
+```
+
+içerisinde tutulmaktadır. Daha rahat çalışabilmek için alias tanımlayabilirsiniz. ZSH kullanıyorsanız bunun için .zshrc dosyası içerisine
+
+```
+alias="~/bin/Sencha/Cmd/version_number/sencha"
+```
+
+satırını eklemeniz yeterlidir.
 
 Komut satırından uygulamayı oluşturuyoruz.
 
@@ -140,7 +154,7 @@ items: [{
 
 Detay butonu var ama çalışmıyor. Detay sayfası yapalım ve butona işlevsellik kazandıralım.
 
-`FoodDetail.js` dosyası oluşturalım. Bu dosya [Ext.Panel](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Panel) competendinden exten edilecek.
+`FoodDetail.js` dosyası oluşturalım. Bu dosya [Ext.Panel](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Panel) componentinden extend edilecek.
 
 ```js
 Ext.define('Gourmet.view.FoodDetail', {
@@ -157,7 +171,7 @@ Ext.define('Gourmet.view.FoodDetail', {
 * `styleHtmlContent` : Html içeriği otomatik stillendirir. Default false gelir.
 * `scrollable` : Ekranın scrool özelliğini ne şekilde olacağını belirtir.
 * `tpl` : [Template](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Template) içeriği buraya yazıyoruz. Template' ler içerisinde bulunan componente setlenen data' yı `{key}` şeklinde kullanmaya olanak sağlar.
-* `controller` içerisindeki `Main.js` dosyasını aşağıdaki gibi düzenleyelim.
+* `controller` içerisindeki `Main.js` adında bir controller oluşturup, `Main.js` dosyasını aşağıdaki gibi düzenleyelim.
 
 ```js
 Ext.define('Gourmet.controller.Main', {
@@ -188,6 +202,52 @@ Ext.define('Gourmet.controller.Main', {
 * `refs` : Bu alanda xtype ve id ye göre compenentleri alabiliyoruz.
 * `controle` : Compenetlerin event' larının takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan componentin `disclose` event(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` componentin içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
 
+Son olarak `App.js` dosyamızın içerisine view ve controllerlarımızı ekleyelim,
+
+```
+    views: [
+        'Main',
+        'Foods',
+        'FoodDetail',
+        'FoodList'
+    ],
+    
+    controllers: [
+        'Main'
+    ],
+```
+
+Örnek olarak `data` isimli bir klasör oluşturup, içerisine aşağıdaki foods.json dosyasını ekleyelim
+ 
+```
+{
+    "success": true,
+    "data": [
+        {
+            "name": "Yayla Çorbası",
+            "description": "Tadından yenmez",
+            "id": 1,
+            "picture": "http://static.dezeen.com/uploads/2013/03/dezeen_3D-printed-food-by-Janne-Kytannen_5.jpg"
+        },
+        {
+            "name": "Tarhana Çorbası",
+            "description": "Tadından yenmez",
+            "id": 2,
+            "picture": "http://static.dezeen.com/uploads/2013/03/dezeen_3D-printed-food-by-Janne-Kytannen_5.jpg"
+        },
+        {
+            "name": "Göveç",
+            "description": "Bol baharatlı",
+            "id": 3,
+            "picture": "http://static.dezeen.com/uploads/2013/03/dezeen_3D-printed-food-by-Janne-Kytannen_5.jpg"
+        }
+    ],
+    "callback": null
+}
+```
+
+Uygulamamız artık hazır.
+
 ![Sencha](articles/2014-05-08-sencha-touch-starter3.png)
 
-Kodlara [buradan](https://github.com/muhammetdilek/gourmet) ulaşabilirsiniz.
+Kodların tamamına [buradan](https://github.com/muhammetdilek/gourmet) ulaşabilirsiniz.
