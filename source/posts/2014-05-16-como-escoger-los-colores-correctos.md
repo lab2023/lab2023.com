@@ -17,60 +17,60 @@ El color pigmento son colores sustractivos, si los mezclas darán como resultado
 ![Picture 1](articles/2014-5-23-how1.jpg)
 
 # Modelo Additivo
-![Picture 1](articles/2014-5-23-how2.jpg)
+![Picture 2](articles/2014-5-23-how2.jpg)
 
 Para empezar a mejorar nuestras paletas de color y hacer combinaciones mucho más efectivas necesitamos recordar nuestros colores primarios y secundarios en el modelo aditivo, rojo, verde y azul como primarios y cian, magenta y amarillo como secundarios. Puedes obtener los colores secundarios mezclando los primarios, y si quieres saber los intermedios puedes combinar los primarios en proporciones de 1 a 2. Ahora podemos entender la composición del círculo cromático, este importante elemento nos ayudara a realizar las armonías de color.
 
 # Color wheel
-![Picture 1](articles/2014-5-23-how7.jpg)
+![Picture 3](articles/2014-5-23-how7.jpg)
 
 La primera forma de realizar combinaciones efectivas es usando colores complementarios, estos son colores opuestos en el círculo cromático. Puedes usar esta técnica para mejorar el contraste de color y realizar diseños más atractivos e impactantes.
 
 # Complementary colors
-![Picture 1](articles/2014-5-23-how4.jpg)
+![Picture 4](articles/2014-5-23-how4.jpg)
 
 
 Los colores análogos son colores cercanos en el círculo cromático, con esta técnica puedes crear estilos coloridos y agradables.
 
 # Analogous colors
-![Picture 1](articles/2014-5-23-how5.jpg)
+![Picture 5](articles/2014-5-23-how5.jpg)
 
 Puedes crear triadas de color realizando un triángulo sobre el círculo en una distribución equitativa, los 3 colores resultantes serán armónicos el uno al otro.
 
 # Triadic colors
-![Picture 1](articles/2014-5-23-how6.jpg)
+![Picture 6](articles/2014-5-23-how6.jpg)
 
 También puedes continuar realizando figuras geométricas sobre el circulo cromático y obtendrás nuevas y complejas formas de combinar los colores siempre de manera efectiva y armónica. Por ejemplo algunas otras técnicas mencionan el dibujar un cuadrado, el resultado te dará más opciones de color y variabilidad, muy útil si vas a trabajar con diseños un poco más elaborados. Puedes obtener este tipo de colores usando 4 puntas en igual distribución sobre el círculo cromático. 
 
 Uno de los elementos inolvidables cuando estamos escogiendo colores es la saturación, esta noción corresponde al agregado de blanco o negro a nuestro color puro, dándonos como resultado las conocidas variaciones en oscuros y claros. Algunas tendencias populares en diseño web recomiendan baja saturación, esto significa añadir un porcentaje de blanco a nuestra muestra de color para apelar a un estilo plano y suave. Pero esto siempre dependerá de nuestro concepto de diseño.
 
 # Flat design examples
-![Picture 1](articles/2014-5-23-how8.png)
+[![Picture 8](articles/2014-5-23-how8.png)](http://derekboateng.com)
 
-![Picture 1](articles/2014-5-23-how9-1.png)
+[![Picture 9](articles/2014-5-23-how9-1.png)](http://simonemarcarino.com)
 
 Otra recomendación relacionada es dar la misma importancia al negro y blanco puros en nuestra composición de color, recuerda esto es muy importante para un diseño limpio e impactante. El color tiene también unas características muy especiales, y es su poder expresivo y comunicativo de emociones y sensaciones, a pesar de que esto siempre depende de la forma en la que uses los símbolos y otros elementos de la imagen hay algunos hechos comprobados sobre la psicología del color. Es difícil categorizar este tipo de adjetivos ya que siempre depende del punto de vista humano pero a continuación mencionamos algunas reglas básicas.
 
 
 El primer elemento es la temperatura del color, los colores cálidos, por ejemplo, van desde el rojo hasta el amarillo pasando por los tonos naranjas. Estos colores son colores de alta frecuencia de onda y los percibimos como colores activos y vibrantes.
 
-![Picture 1](articles/2014-5-23-how10.jpg)
+[![Picture 10](articles/2014-5-23-how10.jpg)](http://www.1stwebdesigner.com/tutorials/flat-web-design-tutorial)
 
 Los colores fríos son diferentes estados de azul, pasando por varios niveles de saturación, estos tonos brindan sensaciones de relajación, podemos generar emociones de suavidad y tranquilidad gracias a estos tonos.
 
-![Picture 1](articles/2014-5-23-how11.jpg)
+[![Picture 11](articles/2014-5-23-how11.jpg)](https://dribbble.com/shots/1032882-Travelling-Wip/attachments/124793)
 
-![Picture 1](articles/2014-5-23-how12.png)
+[![Picture 12](articles/2014-5-23-how12.png)](https://dribbble.com/shots/1565568-Blog-Design/attachments/240275)
 
 También podemos encontrar muchas categorías para estos estados psicológicos del color por ejemplo, los colores frescos, son mayormente estados del verde que nos dan sensaciones de efervescencia, nos recuerdan a la naturaleza y los estados líquidos. Así mismo los colores magenta de baja saturación se asocian a conceptos femeninos y los colores oscuros en su mayoría se asocian a conceptos de elegancia.
 
-![Picture 1](articles/2014-5-23-how13.jpg)
+[![Picture 13](articles/2014-5-23-how13.jpg)](https://dribbble.com/shots/1565547-Degordian-academy/attachments/240266)
 
-![Picture 1](articles/2014-5-23-how14.jpg)
+[![Picture 14](articles/2014-5-23-how14.jpg)](http://seanhalpin.io)
 
 Para finalizar revisemos un pequeño resumen sobre algunas herramientas útiles en nuestros programas de diseño más usuales, no olviden comentar sus herramientas preferidas para seleccionar paletas de color.
 
-* Volver a colorear illustración – Adobe illustrator 
+* Volver a colorear illustración – [Adobe Illustrator](http://www.adobe.com/en/products/illustrator.html) 
 
 ![Picture 1](articles/2014-5-23-how15.png)
 
@@ -82,7 +82,7 @@ Para finalizar revisemos un pequeño resumen sobre algunas herramientas útiles 
 
 ![Picture 1](articles/2014-5-23-how16.jpg)
 
-* Kuler.com es la página oficial de adobe para diseñar muestras de color, puedes conectarlo con tus programas de adobe preferidos.
+* [Kuler.com](Kuler.com) es la página oficial de adobe para diseñar muestras de color, puedes conectarlo con tus programas de adobe preferidos.
 
 ![Picture 1](articles/2014-5-23-how18.jpg)
 
