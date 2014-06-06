@@ -1,5 +1,5 @@
 ---
-title: Balsamiq Uygulaması İle Arayüz Web Arayüzü Tasarımı
+title: Balsamiq Uygulaması İle Web Arayüzü Tasarımı
 date: 2014-06-06
 author: safiyesepetci
 tags:  balsamiq, mybalsamiq, interface, design
@@ -27,3 +27,4 @@ Program arayüz tasarlamak için son derece kolay ve kullanışlı.
 - Oluşturulan mockup‘ lara yorum bırakabiliyoruz.
 - Çok kullanıcılı çalışma yapabiliyoruz.
 - Sık kullanılan tasarımları sembol haline getirip farklı mockup’ larda kullanabiliyoruz.
+
