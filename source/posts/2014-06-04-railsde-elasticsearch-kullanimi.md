@@ -84,3 +84,21 @@ $ rails c
 ```
 
 Bu şekilde modeller üstünden full text search araması yapılabilmekte. **search** metotundan sonra kullandığımız **records** metotu da, bunu normal bir ActiveRecord sorgu sonucu olarak kullanabilmemizi sağlıyor. Bu sayede, bunu kontrolcüde de kullanıp, verileri sıkıntısız bir şekilde görünüm (view) katmanına taşıyarak kullanabilirsiniz.
+
+Ekstra olarak, eğer **elasticsearch-rails** geminden gelen Rake görevlerini (task) kullanmak isterseniz, uygulamanızın Rakefile dosyasının başına şunu ekleyin:
+
+```ruby
+require 'elasticsearch/rails/tasks/import'
+```
+
+Ardından eski kayıtların Elasticsearch tarafından import edilmesi için de şu komutu verin:
+
+```bash
+bundle exec rake environment elasticsearch:import:all
+```
+
+Aynı işi, Rails konsolundan şu şekilde de yapmanız mümkün:
+
+```ruby
+Product.import
+```
