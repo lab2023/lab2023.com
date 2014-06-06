@@ -2,18 +2,25 @@
 title: Rails' de Elasticsearch Kullanımı
 date: 2014-06-04
 author: marjinal1st
-tags: rails, elasticsearch, search, arama, full, text, tr
+tags: rails, elasticsearch, arama, full, text, tr
 ---
 
 Rails web uygulamalarında içerik araması temel olarak oldukça kolay olsa da, tam metin araması (full text search) gerektiği zaman uygun bir çözüm bulmak zor oluyor. Bu yazıda, **full text search** konusunda en bilindik ve başarılı çözümlerden birisi olan [Elasticsearch](http://www.elasticsearch.org/) yazılımını, Rails uygulamanıza nasıl entegre edebileceğinizi anlatacağım.
 
 Başlamadan önce şöyle bir açıklama yapmak lazım ki, Elasticsearch bir gem değil, apayrı bir yazılım. Hatta buna arama motoru demek çok da yanlış olmaz. Öncelikle Elasticsearch yazılımını ayrı bir şekilde kuracağız ve onunla etkileşime geçmesi için de bir bağdaştırıcı (adapter) gemi kullanacağız.
 
-Başlamak için Elasticsearch yazılımını kuralım. İsteğe bağlı olarak GNU/Linux dağıtımınızın deposundan (bir çok popüler dağıtımda mevcut) aratıp veya Mac OS X kullanıyorsanız **brew install elasticsearch** komutu ile kurabilirsiniz. Ancak ben bu yazıda, daha genel ve esnek olmasından dolayı indirip elle çalıştırma yöntemini kullanacağım. Aşağıdaki siteye girelim ve arşivlenmiş bir sürümünü indirerek başlayalım:
+Başlamak için Elasticsearch yazılımını kuralım. İsteğe bağlı olarak GNU/Linux dağıtımınızın deposundan (bir çok popüler dağıtımda mevcut) aratıp kurabilirsiniz. Bunun dışında Mac OS X kullanıyorsanız aşağıdaki komutlar ile hızlıca kurup, kullanmaya başlayabilirsiniz:
+
+```bash
+$ brew install elasticsearch
+$ elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml
+```
+
+Ancak ben bu yazıda, daha genel ve esnek olmasından dolayı indirip elle çalıştırma yöntemini kullanacağım. Aşağıdaki siteye girelim ve arşivlenmiş bir sürümünü indirerek başlayalım:
 
 http://www.elasticsearch.org/overview/elkdownloads/
 
-ZIP veya TAR olarak indirdiğiniz paketi açın ve terminalinizden, açılan paketin klasörüne girin. Ardından çalıştırmak için şu komutu verin: (**Önemli:** Elasticsearch'ü çalıştırmak için sisteminizde JDK'nın en az 6.0 sürümü [bulunmalı](http://www.elasticsearch.org/guide/en/elasticsearch/hadoop/current/requirements.html#requirements-jdk).)
+ZIP veya TAR olarak indirdiğiniz paketi açın ve terminalinizden, açılan paketin klasörüne girin. Ardından çalıştırmak için şu komutu verin: (**Önemli:** Elasticsearch'ü çalıştırmak için sisteminizde [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html?ssSourceSiteId=otnjp)'nın en az 6.0 sürümü [bulunmalı](http://www.elasticsearch.org/guide/en/elasticsearch/hadoop/current/requirements.html#requirements-jdk).)
 
 ```bash
 $ ./bin/elasticsearch
@@ -42,7 +49,9 @@ Eğer hiçbir sıkıntı yoksa, şuna benzeyen bir JSON verisi cevap olarak dön
 }
 ```
 
-Şimdi sıra geldi uygulamayı Rails ile bütünleştirmeye. Bunun için **elasticsearch-model** ve **elasticsearch-rails** gemlerini kullanacağız. Uygulamanızın **Gemfile** dosyasına şu iki satırı ekleyin:
+Şimdi sıra geldi uygulamayı Rails ile bütünleştirmeye. Bunun için **elasticsearch-model** ve **elasticsearch-rails** [gemlerini](https://github.com/elasticsearch/elasticsearch-rails) kullanacağız. Biraz bahsetmek gerekirse: **elasticsearch-model** gemi, Elasticsearch arama motoru ile etkileşime geçen bağdaştırıcı (adapter) kütüphanedir. Bunun dışında diğer gem olan **elasticsearch-rails** ise Rails'de kullanımı kolaylaştırmak için ekstra araçlara (Rake görevleri vs.) sahiptir.
+
+Kullanmaya başlamak için uygulamanızın **Gemfile** dosyasına şu iki satırı ekleyin:
 
 ```ruby
 gem 'elasticsearch-model'
