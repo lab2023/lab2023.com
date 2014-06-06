@@ -2,7 +2,7 @@
 title: Kurumiçi Eğitim - Tayfun ÖZİŞ ERİKAN - Simple form gemi
 date: 2013-06-05
 author: toziserikan
-tags: simple form
+tags: simple form, tr
 ---
 
 *   Tarih : 24.05.2013

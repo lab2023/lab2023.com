@@ -2,10 +2,10 @@
 title: Github'a nasıl dosya gönderilir?
 date: 2013-08-26
 author: safiyesepetci
-tags: github
+tags: github, tr
 ---
 
-   Github versiyon kontrol sistemleri için bir uzak depodur. Hızlı ve güvenli oluşu, kapsamlı raporlama yapısı ve çoklu çalışma kolaylığı ile birçok yazılımcının vazgeçilmezi olmuştur. Peki github nasıl kullanılır?
+Github versiyon kontrol sistemleri için bir uzak depodur. Hızlı ve güvenli oluşu, kapsamlı raporlama yapısı ve çoklu çalışma kolaylığı ile birçok yazılımcının vazgeçilmezi olmuştur. Peki github nasıl kullanılır?
 
 Şimdi github'da hesabınızı aldıktan sonra yeni bir repository (depo) oluşturmayı ve oluşturduğumuz repository'ye dosya göndermeyi§ anlatacağım.
 
@@ -17,28 +17,32 @@ Dizinimizi oluşturduktan sonra sıra var olan dosyalarımızı uzak depoya gön
 
 Yukarıdaki adımları console yada terminalimizden sırasıyla uyguladığımızda ilk olarak
 
-    touch README.md
-
+```
+touch README.md
+```
 
 README.md adında bir dosya oluşturuyor ve
 
-    git init
-
+```
+git init
+```
 
 komutuyla oluşturduğumuz dosyayı github'ın anlayacağı dile çeviriyoruz.
 
-    git commit -m "first commit"
-
+```
+git commit -m "first commit"
+```
 
 bu satır dosyamızı staging' e taşıyor ve değişiklik kayıtları için commit mesajını bu satırda yazıyoruz.
 
-    git remote add origin git@github.com:safiyesepetci/deneme.git
-
+```
+git remote add origin git@github.com:safiyesepetci/deneme.git
+```
 
 bu satırda uzak depomuzun yolunu yazıyoruz.
 
-    git push -u origin master
-
+```
+git push -u origin master
+```
 
 bu son satırımızda dizimizi uzak depoya taşıyor.
-
