@@ -2,7 +2,7 @@
 title: Sencha Touch ile Basit Liste Detay Uygulaması
 date: 2014-05-08
 author: dilekmuhammet
-tags: sencha touch, tr
+tags: sencha touch, mobile, html5, tr
 ---
 
 Bu yazıda giriş seviyesinde Sencha Touch ile nasıl liste detay bir uygulama yapacağımızı göreceğiz.
@@ -10,8 +10,8 @@ Bu yazıda giriş seviyesinde Sencha Touch ile nasıl liste detay bir uygulama y
 Mac OS için sencha touch kurulumu:
 
 * [Sencha CMD](http://www.sencha.com/products/sencha-cmd/download)' yi indirip kuruyoruz.
-* [Sencha Touch](http://www.sencha.com/products/touch/download/) dosyasını indirip unzip yapıyoruz.
-* Yeni uygulama oluşturmak için unzip yaptığınız klasörde olmalısınız.
+* [Sencha Touch](http://www.sencha.com/products/touch/download/) dosyasını indirip belirli bir dizine açıyoruz.
+* Yeni uygulama oluşturmak için sencha tocuh framework'ün bulunduğu dizinde olmalısınız.
 
 Sencha CMD kurulduktan sonra sencha uygılamaları için kullanacağımız `sencha` komutu 
 
@@ -96,7 +96,7 @@ stores: ['Foods'],
 
 Şimdi arayüzleri oluşturmaya geçelim.
 
-`app/view` içerisine `Food.js` dosyasını oluşturalım.
+`app/view` içerisine `Foods.js` dosyasını oluşturalım.
 
 ```js
 Ext.define('Gourmet.view.Foods', {
@@ -112,6 +112,11 @@ Ext.define('Gourmet.view.Foods', {
     }
 });
 ```
+
+Oluşturduğumuz view'in yüklenebilmesi için Ext.Loader tarafından yüklenebilmesi gerekiyor. 
+Bu islem icin tüm view dosyalarının app.js icine dahil edilmesi gerekiyor. 
+Bu asamaya ilerleyen kısımlarda sonra geleceğiz.
+
 [NavigationView](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.navigation.View) [card](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.layout.Card) layout ile birlikte oluşturulmuş basit bir [container](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Container)' dır.
 
 Şimdi bunu `Main.js` içerisinde hazır gelen tab panelin bir tabına yerleştirelim. Bunun için `items` dizisine aşağıdaki gibi bir item ekliyoruz.
@@ -200,7 +205,7 @@ Ext.define('Gourmet.controller.Main', {
 ```
 
 * `refs` : Bu alanda xtype ve id ye göre compenentleri alabiliyoruz.
-* `controle` : Compenetlerin event' larının takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan componentin `disclose` event(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` componentin içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
+* `control` : Compenetlerin event' larının takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan componentin `disclose` event(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` componentin içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
 
 Son olarak `App.js` dosyamızın içerisine view ve controllerlarımızı ekleyelim,
 
@@ -217,7 +222,8 @@ Son olarak `App.js` dosyamızın içerisine view ve controllerlarımızı ekleye
     ],
 ```
 
-Örnek olarak `data` isimli bir klasör oluşturup, içerisine aşağıdaki foods.json dosyasını ekleyelim
+Verilerin yüklenebilmesi için kök dizinde `data` isimli bir klasör oluşturup, içerisine aşağıdaki örnek 
+[foods.json](https://github.com/muhammetdilek/gourmet/blob/master/data/foods.json) dosyasını eklemeyi unutmayın.
  
 ```
 {
@@ -250,4 +256,4 @@ Uygulamamız artık hazır.
 
 ![Sencha](articles/2014-05-08-sencha-touch-starter3.png)
 
-Kodların tamamına [buradan](https://github.com/muhammetdilek/gourmet) ulaşabilirsiniz.
+Örnek uygulamanın tamamına [buradan](https://github.com/muhammetdilek/gourmet) ulaşabilirsiniz.
