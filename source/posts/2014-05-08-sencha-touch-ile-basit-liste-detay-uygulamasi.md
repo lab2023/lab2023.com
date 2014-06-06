@@ -22,7 +22,7 @@ Sencha CMD kurulduktan sonra sencha uygılamaları için kullanacağımız `senc
 içerisinde tutulmaktadır. Daha rahat çalışabilmek için alias tanımlayabilirsiniz. ZSH kullanıyorsanız bunun için .zshrc dosyası içerisine
 
 ```
-alias="~/bin/Sencha/Cmd/version_number/sencha"
+alias sencha ="~/bin/Sencha/Cmd/version_number/sencha"
 ```
 
 satırını eklemeniz yeterlidir.
