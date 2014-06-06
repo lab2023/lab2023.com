@@ -1,5 +1,20 @@
 
 #### [Current]
+ * [3762a3f](../../commit/3762a3f) - __(Tayfun Ozis ERIKAN)__ Typo fixes and article improvements were done.
+ * [dc0c4e2](../../commit/dc0c4e2) - __(hamitturkukaya)__ Updates for list application
+
+- Typo fix
+- Missed parts added
+
+ * [7cb4360](../../commit/7cb4360) - __(Onur zgr ZKAN)__ Update 2014-05-08-sencha-touch-ile-basit-liste-detay-uygulamasi.md
+ * [ff8241a](../../commit/ff8241a) - __(Onur zgr ZKAN)__ Update 2014-05-08-sencha-touch-ile-basit-liste-detay-uygulamasi.md
+ * [0f9d7a6](../../commit/0f9d7a6) - __(Onur zgr ZKAN)__ Add author
+ * [1506117](../../commit/1506117) - __(Muhammet DILEK)__ install information added
+ * [55c3be0](../../commit/55c3be0) - __(Onur zgr ZKAN)__ Add turkish tag and fix list.
+ * [a78ef58](../../commit/a78ef58) - __(Muhammet DILEK)__ new blog post - how to create list detail app in sencha touch
+
+#### 1.2.9.0
+ * [3034102](../../commit/3034102) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.0
  * [5878d19](../../commit/5878d19) - __(Tayfun Ozis ERIKAN)__ Columns were improved
  * [c8dc57c](../../commit/c8dc57c) - __(leylaKapi)__ Add espanol tag to blog
  * [947115b](../../commit/947115b) - __(leylaKapi)__ remove espanol tag
