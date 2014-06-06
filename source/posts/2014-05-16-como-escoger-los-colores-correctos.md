@@ -2,7 +2,7 @@
 title: Como realizar combinaciones efectivas de color en diseño web
 date: 2014-05-16
 author: klapancg
-tags: web design, graphic design, visual identity design, color theory, en
+tags: web design, graphic design, visual identity design, color theory, es
 ---
 Una de las más recientes necesidades en el mundo del desarrollo web y el diseño web de hoy en día es sobre las percepciones visuales. Constantemente preguntamos: ¿cómo causar un mayor impacto con nuestros proyectos? ¿Cómo generar mayor recordación? ¿Cómo ser más funcionales? ¿más estéticos? ¿más útiles para nuestros usuarios? Esta es una meta compleja y demandante que día a día tratamos de alcanzar. Sin embargo sería un buen comienzo preocuparnos por algunos detalles importantes del diseño.
 
