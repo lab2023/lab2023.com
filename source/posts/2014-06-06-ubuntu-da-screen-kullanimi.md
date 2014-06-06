@@ -6,7 +6,7 @@ tags: ubuntu, screen, ssh, tr
 ---
 
 Sunucunuza ssh ile bağlanarak çalıştırdığınız bir komutun tamamlanması saatler sürebilir, bu sürede ssh bağlantınız kapansa bile işlemin devam etmesini istiyorsanız Screen uygulamasını
-kullanabilirsiniz. Screen aslında terminal çoğullayıcı uygulaması. Farklı seesionlara sahip birden fazla terminal ekranını yönetmek için kullanılmakta.
+kullanabilirsiniz. Screen aslında terminal çoğullayıcı uygulaması. Farklı seesion'lara sahip birden fazla terminal ekranını yönetmek için kullanılmakta.
 
 Ubuntu'da screen'i kullanmaya başlamak için terminal üzerinde
 
@@ -21,7 +21,7 @@ komutunu çalıştıralım, hata mesajı alırsanız yüklemek için:
 sudo apt-get install screen
 ```
 
-komutlarını kullanabilirsiniz. Kurulum tamamlandıktan sonra
+komutunu kullanabilirsiniz. Kurulum tamamlandıktan sonra
 
 ```bash
     screen
