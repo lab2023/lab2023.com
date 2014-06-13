@@ -21,30 +21,31 @@ El color pigmento son colores sustractivos, si los mezclas darán como resultado
 
 Para empezar a mejorar nuestras paletas de color y hacer combinaciones mucho más efectivas necesitamos recordar nuestros colores primarios y secundarios en el modelo aditivo, rojo, verde y azul como primarios y cian, magenta y amarillo como secundarios. Puedes obtener los colores secundarios mezclando los primarios, y si quieres saber los intermedios puedes combinar los primarios en proporciones de 1 a 2. Ahora podemos entender la composición del círculo cromático, este importante elemento nos ayudara a realizar las armonías de color.
 
-# Color wheel
+#Circulo Cromatico
 ![Picture 3](articles/2014-5-23-how7.jpg)
 
 La primera forma de realizar combinaciones efectivas es usando colores complementarios, estos son colores opuestos en el círculo cromático. Puedes usar esta técnica para mejorar el contraste de color y realizar diseños más atractivos e impactantes.
 
-# Complementary colors
+# Colores complementarios
 ![Picture 4](articles/2014-5-23-how4.jpg)
 
 
 Los colores análogos son colores cercanos en el círculo cromático, con esta técnica puedes crear estilos coloridos y agradables.
 
-# Analogous colors
+# Colores Analogos
 ![Picture 5](articles/2014-5-23-how5.jpg)
 
 Puedes crear triadas de color realizando un triángulo sobre el círculo en una distribución equitativa, los 3 colores resultantes serán armónicos el uno al otro.
 
-# Triadic colors
+# Triadas de Color
 ![Picture 6](articles/2014-5-23-how6.jpg)
 
 También puedes continuar realizando figuras geométricas sobre el circulo cromático y obtendrás nuevas y complejas formas de combinar los colores siempre de manera efectiva y armónica. Por ejemplo algunas otras técnicas mencionan el dibujar un cuadrado, el resultado te dará más opciones de color y variabilidad, muy útil si vas a trabajar con diseños un poco más elaborados. Puedes obtener este tipo de colores usando 4 puntas en igual distribución sobre el círculo cromático. 
 
 Uno de los elementos inolvidables cuando estamos escogiendo colores es la saturación, esta noción corresponde al agregado de blanco o negro a nuestro color puro, dándonos como resultado las conocidas variaciones en oscuros y claros. Algunas tendencias populares en diseño web recomiendan baja saturación, esto significa añadir un porcentaje de blanco a nuestra muestra de color para apelar a un estilo plano y suave. Pero esto siempre dependerá de nuestro concepto de diseño.
 
-# Flat design examples
+# Ejemplos flat design
+
 [![Picture 8](articles/2014-5-23-how8.png)](http://derekboateng.com)
 
 [![Picture 9](articles/2014-5-23-how9-1.png)](http://simonemarcarino.com)
