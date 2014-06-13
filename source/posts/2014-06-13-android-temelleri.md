@@ -1,6 +1,6 @@
 ---
 title: Android Temelleri
-date: 2014-05-09
+date: 2014-06-13
 author: hamitturkukaya
 tags: android, mobile development, java, tr
 ---
