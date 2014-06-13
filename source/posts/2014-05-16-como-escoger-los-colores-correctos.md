@@ -13,15 +13,15 @@ Hay solo dos formas en las que percibimos el color, la primera son los colores p
 
 El color pigmento son colores sustractivos, si los mezclas darán como resultado un tono negro. Los colores luz son aditivos, el resultado de su mezcla es luz blanca. Debido a esto trabajamos en un modelo RGB de color,en donde nuestros respectivos colores primarios son rojo, verde y azul (red, blue, green).pero no se trata solo de utilizar este modelos para que nuestros colores funcionen bien en pantalla, lo que realmente necesitamos es pensar nuestras armonías de color con base en estos primarios también.
 
-# Modelo Subtractivo
+# Modelo subtractivo
 ![Picture 1](articles/2014-5-23-how1.jpg)
 
-# Modelo Additivo
+# Modelo additivo
 ![Picture 2](articles/2014-5-23-how2.jpg)
 
 Para empezar a mejorar nuestras paletas de color y hacer combinaciones mucho más efectivas necesitamos recordar nuestros colores primarios y secundarios en el modelo aditivo, rojo, verde y azul como primarios y cian, magenta y amarillo como secundarios. Puedes obtener los colores secundarios mezclando los primarios, y si quieres saber los intermedios puedes combinar los primarios en proporciones de 1 a 2. Ahora podemos entender la composición del círculo cromático, este importante elemento nos ayudara a realizar las armonías de color.
 
-#Circulo Cromatico
+#Circulo cromatico
 ![Picture 3](articles/2014-5-23-how7.jpg)
 
 La primera forma de realizar combinaciones efectivas es usando colores complementarios, estos son colores opuestos en el círculo cromático. Puedes usar esta técnica para mejorar el contraste de color y realizar diseños más atractivos e impactantes.
@@ -32,12 +32,12 @@ La primera forma de realizar combinaciones efectivas es usando colores complemen
 
 Los colores análogos son colores cercanos en el círculo cromático, con esta técnica puedes crear estilos coloridos y agradables.
 
-# Colores Analogos
+# Colores analogos
 ![Picture 5](articles/2014-5-23-how5.jpg)
 
 Puedes crear triadas de color realizando un triángulo sobre el círculo en una distribución equitativa, los 3 colores resultantes serán armónicos el uno al otro.
 
-# Triadas de Color
+# Triadas de color
 ![Picture 6](articles/2014-5-23-how6.jpg)
 
 También puedes continuar realizando figuras geométricas sobre el circulo cromático y obtendrás nuevas y complejas formas de combinar los colores siempre de manera efectiva y armónica. Por ejemplo algunas otras técnicas mencionan el dibujar un cuadrado, el resultado te dará más opciones de color y variabilidad, muy útil si vas a trabajar con diseños un poco más elaborados. Puedes obtener este tipo de colores usando 4 puntas en igual distribución sobre el círculo cromático. 
