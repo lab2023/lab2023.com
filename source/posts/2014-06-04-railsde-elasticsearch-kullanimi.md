@@ -13,7 +13,7 @@ Başlamak için Elasticsearch yazılımını kuralım. İsteğe bağlı olarak G
 
 ```bash
 $ brew install elasticsearch
-$ elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml
+$ elasticsearch -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml
 ```
 
 Ancak ben bu yazıda, daha genel ve esnek olmasından dolayı indirip elle çalıştırma yöntemini kullanacağım. Aşağıdaki siteye girelim ve arşivlenmiş bir sürümünü indirerek başlayalım:
