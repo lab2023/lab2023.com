@@ -1,5 +1,23 @@
 
 #### [Current]
+ * [a43dc6e](../../commit/a43dc6e) - __(Tayfun Ozis ERIKAN)__ Article publishing date was changed
+ * [c749b86](../../commit/c749b86) - __(leylaKapi)__ edit spelling mistake
+ * [d682105](../../commit/d682105) - __(Murat Kemal BAYGN)__ SH-19 Review, fix typo and imrpove
+ * [30ee0ab](../../commit/30ee0ab) - __(Murat Kemal BAYGN)__ Merge pull request [#9](../../issues/9) from nolcay/feature/android_basics
+
+fixed the typos in android_basics
+ * [39bb07e](../../commit/39bb07e) - __(Olcay)__ fixed the typos in android_basics
+ * [27e0a0b](../../commit/27e0a0b) - __(hamitturkukaya)__ SH-19 Android basics
+
+typo fix
+
+ * [5bb1ef9](../../commit/5bb1ef9) - __(hamitturkukaya)__ SH-19 Android basics
+
+#### 1.2.10.0
+ * [d858e7d](../../commit/d858e7d) - __(Tayfun Ozis ERIKAN)__ Some articles were fixed - Alias problem fixed with Sencha article - Adobe kuler links were fixed with Clara's Color articles (Es an En versions)
+
+#### 1.2.9.1
+ * [833c171](../../commit/833c171) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.1
  * [3762a3f](../../commit/3762a3f) - __(Tayfun Ozis ERIKAN)__ Typo fixes and article improvements were done.
  * [dc0c4e2](../../commit/dc0c4e2) - __(hamitturkukaya)__ Updates for list application
 
