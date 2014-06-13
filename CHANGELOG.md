@@ -1,6 +1,16 @@
 
 #### [Current]
+ * [0c60eac](../../commit/0c60eac) - __(Tayfun Ozis ERIKAN)__ Publish date was changed
+ * [f9e44c6](../../commit/f9e44c6) - __(Murat Kemal BAYGN)__ Remove -f on
+ * [a49396a](../../commit/a49396a) - __(Clara Isabel Pantoja)__ fix capital letters
+ * [3a63a2e](../../commit/3a63a2e) - __(Clara Isabel Pantoja)__ changes to spanish titles
+ * [8ddb966](../../commit/8ddb966) - __(Ahmet Sezgin Duran)__ SH-32 #time 5m Add Rake task line and importing command
+ * [6b2d434](../../commit/6b2d434) - __(Ahmet Sezgin Duran)__ SH-32 #time 10m Add extras to blog post
+ * [e120b67](../../commit/e120b67) - __(leylaKapi)__ edit title space
+ * [6efb409](../../commit/6efb409) - __(Ahmet Sezgin Duran)__ SH-32 #time 1h Add Elasticsearch Rails article
 
+#### 1.2.11.0
+ * [978718a](../../commit/978718a) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.11.0
 
 #### 1.2.9.2
  * [3e100ce](../../commit/3e100ce) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.2
