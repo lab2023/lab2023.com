@@ -1,6 +1,6 @@
 ---
 title: Rails' de Elasticsearch Kullanımı
-date: 2014-06-04
+date: 2014-06-13
 author: marjinal1st
 tags: rails, elasticsearch, arama, full, text, tr
 ---
