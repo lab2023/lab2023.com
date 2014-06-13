@@ -1,5 +1,66 @@
 
 #### [Current]
+
+
+#### 1.2.9.2
+ * [3e100ce](../../commit/3e100ce) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.2
+ * [a43dc6e](../../commit/a43dc6e) - __(Tayfun Ozis ERIKAN)__ Article publishing date was changed
+ * [c749b86](../../commit/c749b86) - __(leylaKapi)__ edit spelling mistake
+ * [d682105](../../commit/d682105) - __(Murat Kemal BAYGN)__ SH-19 Review, fix typo and imrpove
+ * [30ee0ab](../../commit/30ee0ab) - __(Murat Kemal BAYGN)__ Merge pull request [#9](../../issues/9) from nolcay/feature/android_basics
+
+fixed the typos in android_basics
+ * [39bb07e](../../commit/39bb07e) - __(Olcay)__ fixed the typos in android_basics
+ * [27e0a0b](../../commit/27e0a0b) - __(hamitturkukaya)__ SH-19 Android basics
+
+typo fix
+
+ * [5bb1ef9](../../commit/5bb1ef9) - __(hamitturkukaya)__ SH-19 Android basics
+
+#### 1.2.10.0
+ * [d858e7d](../../commit/d858e7d) - __(Tayfun Ozis ERIKAN)__ Some articles were fixed - Alias problem fixed with Sencha article - Adobe kuler links were fixed with Clara's Color articles (Es an En versions)
+
+#### 1.2.9.1
+ * [833c171](../../commit/833c171) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.1
+ * [3762a3f](../../commit/3762a3f) - __(Tayfun Ozis ERIKAN)__ Typo fixes and article improvements were done.
+ * [dc0c4e2](../../commit/dc0c4e2) - __(hamitturkukaya)__ Updates for list application
+
+- Typo fix
+- Missed parts added
+
+ * [7cb4360](../../commit/7cb4360) - __(Onur zgr ZKAN)__ Update 2014-05-08-sencha-touch-ile-basit-liste-detay-uygulamasi.md
+ * [ff8241a](../../commit/ff8241a) - __(Onur zgr ZKAN)__ Update 2014-05-08-sencha-touch-ile-basit-liste-detay-uygulamasi.md
+ * [0f9d7a6](../../commit/0f9d7a6) - __(Onur zgr ZKAN)__ Add author
+ * [1506117](../../commit/1506117) - __(Muhammet DILEK)__ install information added
+ * [55c3be0](../../commit/55c3be0) - __(Onur zgr ZKAN)__ Add turkish tag and fix list.
+ * [a78ef58](../../commit/a78ef58) - __(Muhammet DILEK)__ new blog post - how to create list detail app in sencha touch
+
+#### 1.2.9.0
+ * [3034102](../../commit/3034102) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.0
+ * [5878d19](../../commit/5878d19) - __(Tayfun Ozis ERIKAN)__ Columns were improved
+ * [c8dc57c](../../commit/c8dc57c) - __(leylaKapi)__ Add espanol tag to blog
+ * [947115b](../../commit/947115b) - __(leylaKapi)__ remove espanol tag
+ * [f341bde](../../commit/f341bde) - __(leylaKapi)__ find and edit  which  without tag
+ * [1f88fd0](../../commit/1f88fd0) - __(leylaKapi)__ Add language link
+
+#### 1.2.8.1
+ * [2d39ae7](../../commit/2d39ae7) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.8.1
+ * [38fded2](../../commit/38fded2) - __(Tayfun Ozis ERIKAN)__ ES tag fixed.
+ * [2c68f25](../../commit/2c68f25) - __(Tayfun Ozis ERIKAN)__ Screenshot links were added for copyrights
+ * [96b0812](../../commit/96b0812) - __(Clara Isabel Pantoja)__ add spanish vertion of article
+ * [7e5ed55](../../commit/7e5ed55) - __(Onur zgr ZKAN)__ Review
+
+- Add en tag
+- Give link for some concept
+- Fix header downcase and uppercase
+- Remove 'click to'  expression
+
+ * [c8e82d1](../../commit/c8e82d1) - __(Clara Isabel Pantoja)__ SH-17 fix images name
+ * [769b972](../../commit/769b972) - __(Clara Isabel Pantoja)__ SH-17 fix image name
+ * [b14b8a9](../../commit/b14b8a9) - __(Clara Isabel Pantoja)__ SH-17 How to choose rght colors for web design
+
+#### 1.2.8.0
+ * [0771d25](../../commit/0771d25) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.8.0
  * [64f13aa](../../commit/64f13aa) - __(Muhammet DILEK)__ middleman-syntax version fixed
  * [ff90602](../../commit/ff90602) - __(Tayfun Ozis ERIKAN)__ Middleman was updated to 3.3.3
 
