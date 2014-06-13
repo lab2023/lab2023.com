@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.2.9.2
+ * [3e100ce](../../commit/3e100ce) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.9.2
  * [a43dc6e](../../commit/a43dc6e) - __(Tayfun Ozis ERIKAN)__ Article publishing date was changed
  * [c749b86](../../commit/c749b86) - __(leylaKapi)__ edit spelling mistake
  * [d682105](../../commit/d682105) - __(Murat Kemal BAYGN)__ SH-19 Review, fix typo and imrpove
