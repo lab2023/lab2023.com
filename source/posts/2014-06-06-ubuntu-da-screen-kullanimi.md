@@ -5,8 +5,9 @@ author: hamitturkukaya
 tags: ubuntu, screen, ssh, tr
 ---
 
-Sunucunuza ssh ile bağlanarak çalıştırdığınız bir komutun tamamlanması saatler sürebilir, bu sürede ssh bağlantınız kapansa bile işlemin devam etmesini istiyorsanız Screen uygulamasını
-kullanabilirsiniz. Screen aslında terminal çoğullayıcı uygulaması. Farklı seesion'lara sahip birden fazla terminal ekranını yönetmek için kullanılmakta.
+Sunucunuza ssh ile bağlanarak çalıştırdığınız bir komutun tamamlanması saatler sürebilir, bu sürede ssh bağlantınız 
+kapansa bile işlemin devam etmesini istiyorsanız Screen uygulamasını kullanabilirsiniz. Screen aslında terminal 
+çoğullayıcı uygulaması. Farklı session'lara sahip birden fazla terminal ekranını yönetmek için kullanılmakta.
 
 Ubuntu'da screen'i kullanmaya başlamak için terminal üzerinde
 
@@ -15,7 +16,8 @@ Ubuntu'da screen'i kullanmaya başlamak için terminal üzerinde
     screen -v
 ```
 
-komutunu çalıştıralım, hata mesajı alırsanız yüklemek için:
+komutunu çalıştıralım, bu komut screen komutu yüklüyse, yüklü komutun versiyonunu verir.
+Komutun bulunamadı ile ilgili bir hata mesajı alırsanız screen komutunu yüklemek için:
 
 ```bash
 sudo apt-get install screen
@@ -38,7 +40,8 @@ Screen üzerinde yapacağımız işlemleri
     ctrl+ a command
 ```
 
-şeklinde gerçekleştiriyoruz. Burada dikkat edilmesi gereken ctrl ve a tuşlarına aynı anda basarken komut kısayoluna basarken elinizi ctrl'den çekmeniz gerekmekte.
+şeklinde gerçekleştiriyoruz.Bu komutla screen komut arayüzüne geçiş yapmış oluyoruz.Burada dikkat edilmesi gereken 
+ctrl ve a tuşlarına aynı anda bastıktan sonra komut kısayoluna basarken elinizi ctrl'den çekmenizdir.
 
 tüm komut listesine
  
@@ -81,7 +84,7 @@ verdiğiniz bir komutu çalıştırmaya devam ederken ana ekrana dönmek için
 ctrl-a d
 ```
 
-detach komutunu kullanabilirsiniz.
+yani detach komutunu kullanabilirsiniz.
 
 Örnek olarak screen ile açtığınız ekranda `top` komutunu çalıştıralım. Ardından;
 
@@ -110,7 +113,8 @@ ardından,
    screen -r process_id
 ```
 
-komutu ile tekrardan oturumunuza erişebilirsiniz. Giriş yaptığınızda, `top` komutunun hala çalışmaya devam ettiğini görebilirsiniz.
+komutu ile tekrardan oturumunuza erişebilirsiniz. Giriş yaptığınızda, `top` komutunun hala çalışmaya devam ettiğini 
+görebilirsiniz.
  
 Oturumu tamamen sonlandırmak için ise;
 
