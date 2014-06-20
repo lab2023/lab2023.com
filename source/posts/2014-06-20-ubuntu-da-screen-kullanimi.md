@@ -1,6 +1,6 @@
 ---
 title: Ubuntu'da Screen Kullanımı
-date: 2014-06-06
+date: 2014-06-20
 author: hamitturkukaya
 tags: ubuntu, screen, ssh, tr
 ---
