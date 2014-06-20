@@ -4,7 +4,7 @@ date: 2014-06-06
 author: safiyesepetci
 tags:  balsamiq, mybalsamiq, interface, design, tr
 ---
-Genelde web projeleri arayüzünde, detaylı çizime başlamadan önce bir ön çizim yapılır. Bu çizim son kullanıcının görmesini istediğimiz tasarıma kılavuzluk eder. Bazı arayüz tasarımcıları prototiplendirme işini kağıt üzerinde, bazıları ise bu iş için hazırlanmış programlarda yapar. Bizim firma olarak kullandığımız uygulama [Balsamiq](http://www.mybalsamiq.com).
+Genelde web projeleri arayüzünde, detaylı çizime başlamadan önce bir ön çizim yapılır. Bu çizim son kullanıcının görmesini istediğimiz tasarıma kılavuzluk eder. Bazı arayüz tasarımcıları prototiplendirme işini kağıt üzerinde, bazıları ise bu iş için hazırlanmış programlarda yapar. Bizim firma olarak kullandığımız uygulama [Balsamiq](http://www.mybalsamiq.com). Bu uygulama sayesinde kolay ve hızlı bir şekilde prototip oluşturabiliyoruz. Bir web sayfasında ya da tasarımını yapacağımız uygulamada kullanılması muhtemel bütün tasarım elemanları balsamiq çizim aracında hazır bulunuyor. Yapmamız gereken tek şey kullanacağımız elemanın rengini, boyutunu ve yerleşim düzenini ayarlamak oluyor. Şimdi balsamiq uygulamasının özelliklerine bir bakalım.
 
 ## Özellikleri
 
