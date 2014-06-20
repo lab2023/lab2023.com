@@ -1,5 +1,23 @@
 
 #### [Current]
+ * [0089b42](../../commit/0089b42) - __(Tayfun Ozis ERIKAN)__ Map url was added and map marker position was fixed
+ * [1ebc429](../../commit/1ebc429) - __(Tayfun Ozis ERIKAN)__ Publishing date was updated
+ * [e8aa9f3](../../commit/e8aa9f3) - __(Tayfun Ozis ERIKAN)__ Typo fixes were completed
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+
+ * [4a9a2ae](../../commit/4a9a2ae) - __(hamitturkukaya)__ SH-29 Ubuntu screen usage
+
+Typo fix
+
+ * [846e987](../../commit/846e987) - __(hamitturkukaya)__ SH-29 Ubuntu screen usage
+
+#### 1.2.11.1
+ * [0a456b4](../../commit/0a456b4) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.11.1
  * [0c60eac](../../commit/0c60eac) - __(Tayfun Ozis ERIKAN)__ Publish date was changed
  * [f9e44c6](../../commit/f9e44c6) - __(Murat Kemal BAYGN)__ Remove -f on
  * [a49396a](../../commit/a49396a) - __(Clara Isabel Pantoja)__ fix capital letters
