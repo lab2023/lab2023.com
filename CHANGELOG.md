@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.2.13.0
+ * [2932025](../../commit/2932025) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.13.0
  * [6d1d2a0](../../commit/6d1d2a0) - __(leylaKapi)__ solve-responsive-page
  * [c9fa931](../../commit/c9fa931) - __(leylaKapi)__ change-quality of image
  * [8b8b183](../../commit/8b8b183) - __(leylaKapi)__ Update info
