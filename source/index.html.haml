@@ -149,7 +149,7 @@
             .member-info.popover-content
               %h4.title Leyla KAPI | Web Developer
               %p.content
-                She likes to use front-end technologies like  HTML5, CSS3, Haml, Sass, Javascript.
+                She likes to use front-end technologies like  HTML5, CSS3, Haml, Sass, Javascript. She interested in Ruby, Ruby on Rails.
 
           %li{ data: {toggle: :popover, placement: :top} }
             = link_to 'http://www.twitter.com/marjinal1st', target: '_blank' do
@@ -168,6 +168,15 @@
               %h4.title Clara Isabel PANTOJA | Graphic Designer
               %p.content
                 Creative and proactive person of graphic communication design and emphasis in multimedia design. Interested in interactive design and information technology projects. Has great motivation for photography, visual effects and web design. Likes music, museums and the integration of art and technology in her work.
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'https://twitter.com/kamilagareeva1', target: '_blank' do
+              .image-filter
+              = image_tag 'team/kamila-gareeva.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Kamila Gareeva | Graphic Designer
+              %p.content
+                Artist, 2D animator, graphic - designer
         %p.extra
           = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
             %strong Want to join our team?
@@ -183,8 +192,10 @@
       %br/
       hello@lab2023.com | +90 850 885 0 522
       %br/
-      %i.fa.fa-map-marker
-      37.738754, 29.093029
+      = link_to "https://www.google.com/maps/place/37°44'19.7%22N+29°05'35.2%22E/@37.7386245,29.0928367,357m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0", target: '_blank' do
+        %i.fa.fa-map-marker
+        37.7386245, 29.0928367
+
 
     %ul.social
       %li{'data-toggle' => 'tooltip', title: 'GitHub'}
