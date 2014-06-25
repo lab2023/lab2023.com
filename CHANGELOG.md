@@ -1,5 +1,12 @@
 
 #### [Current]
+ * [6d1d2a0](../../commit/6d1d2a0) - __(leylaKapi)__ solve-responsive-page
+ * [c9fa931](../../commit/c9fa931) - __(leylaKapi)__ change-quality of image
+ * [8b8b183](../../commit/8b8b183) - __(leylaKapi)__ Update info
+ * [2fbadb9](../../commit/2fbadb9) - __(leylaKapi)__ Add kamila to team
+
+#### 1.2.12.0
+ * [f9b69b9](../../commit/f9b69b9) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.12.0
  * [0089b42](../../commit/0089b42) - __(Tayfun Ozis ERIKAN)__ Map url was added and map marker position was fixed
  * [1ebc429](../../commit/1ebc429) - __(Tayfun Ozis ERIKAN)__ Publishing date was updated
  * [e8aa9f3](../../commit/e8aa9f3) - __(Tayfun Ozis ERIKAN)__ Typo fixes were completed
