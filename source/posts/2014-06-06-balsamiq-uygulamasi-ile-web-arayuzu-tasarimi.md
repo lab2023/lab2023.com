@@ -32,10 +32,8 @@ Program, çizimi yapılan çalışmanın çıktısını `.bmml` formatında, ind
 Oluşturduğunuz projeye kişileri dahil edip, aynı anda farklı mockup’ larda çalışabiliyoruz.
 
 ![Balsamiq Application](../assets/images/articles/2014-06-06-balsamiq-app/balsamiq3.jpg)
-### Temel araçların kullanım kolaylığı:
 
-Program arayüz tasarlamak için son derece kolay ve kullanışlı.
 
-![Balsamiq Application](../assets/images/articles/2014-06-06-balsamiq-app/balsamiq4.jpg)
+Program arayüz tasarlamak için son derece kolay ve kullanışlı. Sizde kısa sürede öğrenip kullanacağınız bir arayüz oluşturma programı arıyorsanız  [balsamiq](http://www.mybalsamiq.com) adresinizi ziyaret edebilir ve bir aylık deneme sürümününden yararlanabilirsiniz.
 
 
