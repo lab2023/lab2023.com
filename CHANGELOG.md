@@ -1,6 +1,27 @@
 
 #### [Current]
+ * [2e267df](../../commit/2e267df) - __(Tayfun Ozis ERIKAN)__ Merge remote-tracking branch 'origin/feature/interface_design_with_balsamiq' into feature/interface_design_with_balsamiq
 
+Conflicts:
+	source/posts/2014-06-06-balsamiq-uygulamasi-ile-web-arayuzu-tasarimi.md
+
+ * [3fc4074](../../commit/3fc4074) - __(Tayfun Ozis ERIKAN)__ Typo fixes were done
+ * [5c0cbc9](../../commit/5c0cbc9) - __(safiyesepetci)__ SH-33 #time 5m update
+ * [ca15c92](../../commit/ca15c92) - __(Tayfun Ozis ERIKAN)__ File name and article title were changed
+ * [212b72f](../../commit/212b72f) - __(safiyesepetci)__ SH-33 #time 5m image added
+ * [65c8c64](../../commit/65c8c64) - __(Safiye Sepeti)__ update content ( add new content)
+ * [30461df](../../commit/30461df) - __(Safiye Sepeti)__ update content
+ * [30e83ca](../../commit/30e83ca) - __(safiyesepetci)__ SH-33 #time 5m article added
+ * [aabd8eb](../../commit/aabd8eb) - __(safiyesepetci)__ SH-33 #time 10m post article added
+ * [8d0372a](../../commit/8d0372a) - __(leylaKapi)__ Edit spelling  mistakes
+ * [4475ddb](../../commit/4475ddb) - __(Onur zgr ZKAN)__ Update md
+ * [7b35196](../../commit/7b35196) - __(Onur zgr ZKAN)__ add tr tags, fixed some md
+ * [7c0014b](../../commit/7c0014b) - __(safiyesepetci)__ SH-33 #time 5m content update
+ * [de7096f](../../commit/de7096f) - __(safiyesepetci)__ SH-33 #time 10m add content
+ * [eedac0c](../../commit/eedac0c) - __(safiyesepetci)__ SH-33 #time 2h add article
+
+#### 1.2.14.0
+ * [4eb4708](../../commit/4eb4708) - __(Tayfun Ozis ERIKAN)__ Typo fixed
 
 #### 1.2.13.0
  * [2932025](../../commit/2932025) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.13.0
