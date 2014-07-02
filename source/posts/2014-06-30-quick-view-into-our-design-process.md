@@ -2,7 +2,7 @@
 title: Quick view into our design-process
 date: 2014-06-30
 author: klapancg
-tags: web design, graphic design, visual identity design, color theory, en
+tags: ui design, web design, graphic design, visual identity design, mockup, wireframe, sketch, prototype, ui, ux, en
 ---
 ![Picture 1](../assets/images/articles/2014-07-01-design-process/final1.jpg)
 ### 1. Understanding client needs 
