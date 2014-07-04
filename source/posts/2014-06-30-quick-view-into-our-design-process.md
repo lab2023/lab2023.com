@@ -21,45 +21,49 @@ Once we understand our main goal the next step is to look for inspiration, creat
 
 ![Picture 5](../assets/images/articles/2014-07-01-design-process/Brainstorming3.jpg)
 
+![Picture 6](../assets/images/articles/2014-07-01-design-process/sketch-01.jpg)
+
+![Picture 7](../assets/images/articles/2014-07-01-design-process/sketch-02.jpg)
+
 ### 3. Conceptualize
 
 Conceptualize is the process in which all the team get synchronous in a main idea. In design concepts we define how the semantic idea will be present in all perceptual aspects, here we define main characteristics, style, colors, typography, shapes, diagramming grid and structure for compose.
 
-![Picture 6](../assets/images/articles/2014-07-01-design-process/conceptualize.jpg)
+![Picture 8](../assets/images/articles/2014-07-01-design-process/conceptualize.jpg)
 
-![Picture 7](../assets/images/articles/2014-07-01-design-process/conceptualize2.jpg)
+![Picture 9](../assets/images/articles/2014-07-01-design-process/conceptualize2.jpg)
 
 ### 4. Prototype
 
 In web design prototype digital files are known as mockups or wireframes, these are a preview without details of what should be a final result. This process saves a lot of time in design projects, we prevent future failures by keeping a constant dialog with the customer about design progress. We save more time doing this process digital with tools like [Balsamiq](http://lab2023.com/balsamiq-uygulamasi-ile-web-arayuzu-tasarimi.html).
 
-![Picture 8](../assets/images/articles/2014-07-01-design-process/prototyping.jpg)
+![Picture 10](../assets/images/articles/2014-07-01-design-process/prototyping.jpg)
 
-![Picture 9](../assets/images/articles/2014-07-01-design-process/Prototype4.JPG)
+![Picture 11](../assets/images/articles/2014-07-01-design-process/Prototype4.JPG)
 
-![Picture 10](../assets/images/articles/2014-07-01-design-process/prototype9.jpg)
+![Picture 12](../assets/images/articles/2014-07-01-design-process/prototype9.jpg)
 
-![Picture 11](../assets/images/articles/2014-07-01-design-process/prototype8.jpg)
+![Picture 13](../assets/images/articles/2014-07-01-design-process/prototype8.jpg)
 
 ### 5. Evaluation
 
 For improve times and have a more assertive final design, we keep a constant communication with customer, let them know about last features, last changes and achieve their approval for start every final design-process.
 
-![Picture 12](../assets/images/articles/2014-07-01-design-process/evaluation.jpg)
+![Picture 14](../assets/images/articles/2014-07-01-design-process/evaluation.jpg)
 
 ### 6. Design
 
 This is the moment for join all the pieces, we call design to all the process we make for achieve this step.
 
-![Picture 13](../assets/images/articles/2014-07-01-design-process/design.jpg)
+![Picture 15](../assets/images/articles/2014-07-01-design-process/design.jpg)
 
-![Picture 14](../assets/images/articles/2014-07-01-design-process/designs2.png)
+![Picture 16](../assets/images/articles/2014-07-01-design-process/designs2.png)
 
-![Picture 15](../assets/images/articles/2014-07-01-design-process/design3.png)
+![Picture 17](../assets/images/articles/2014-07-01-design-process/design3.png)
 
 ### 7. Improve
 
 Finish a design project is the start point for improve, make an inside about the topics we can do better for next projects it's an important part of the design-process.
 
-![Picture 16](../assets/images/articles/2014-07-01-design-process/lab2023-logo.jpg)
+![Picture 18](../assets/images/articles/2014-07-01-design-process/lab2023-logo.jpg)
 
