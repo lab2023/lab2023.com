@@ -23,7 +23,7 @@ Once we understand our main goal the next step is to look for inspiration, creat
 
 ### 3. Conceptualize
 
-Conceptualize is the process in which all the team get synchronize in a main idea. In design concepts we define how the semantic idea will be present in all perceptual aspects, here we define main characteristics, style, colors, typography, shapes, diagramming grid and structure for compose.
+Conceptualize is the process in which all the team get synchronous in a main idea. In design concepts we define how the semantic idea will be present in all perceptual aspects, here we define main characteristics, style, colors, typography, shapes, diagramming grid and structure for compose.
 
 ![Picture 6](../assets/images/articles/2014-07-01-design-process/conceptualize.jpg)
 
@@ -31,7 +31,7 @@ Conceptualize is the process in which all the team get synchronize in a main ide
 
 ### 4. Prototype
 
-In web design prototype digital files are known as mockups or wireframes, these are a preview without details of what should be a final result. this process saves a lot of time in design projects, we prevent future failures by keeping a constant dialog with the customer about design progress. We save more time doing this process digital with tools like [Balsamiq](http://lab2023.com/balsamiq-uygulamasi-ile-web-arayuzu-tasarimi.html).
+In web design prototype digital files are known as mockups or wireframes, these are a preview without details of what should be a final result. This process saves a lot of time in design projects, we prevent future failures by keeping a constant dialog with the customer about design progress. We save more time doing this process digital with tools like [Balsamiq](http://lab2023.com/balsamiq-uygulamasi-ile-web-arayuzu-tasarimi.html).
 
 ![Picture 8](../assets/images/articles/2014-07-01-design-process/prototyping.jpg)
 
