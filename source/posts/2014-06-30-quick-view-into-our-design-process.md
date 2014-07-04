@@ -31,7 +31,7 @@ Conceptualize is the process in which all the team get synchronize in a main ide
 
 ### 4. Prototype
 
-In web design prototype digital files are known as mockups or wireframes, these are a preview without details of what should be a final result, this process save a lot of time in design projects, we prevent future failures keeping a constant dialog with the customer about design progress. We save more time doing this process digital with tools like [Balsamiq](http://lab2023.com/balsamiq-uygulamasi-ile-web-arayuzu-tasarimi.html).
+In web design prototype digital files are known as mockups or wireframes, these are a preview without details of what should be a final result. this process saves a lot of time in design projects, we prevent future failures by keeping a constant dialog with the customer about design progress. We save more time doing this process digital with tools like [Balsamiq](http://lab2023.com/balsamiq-uygulamasi-ile-web-arayuzu-tasarimi.html).
 
 ![Picture 8](../assets/images/articles/2014-07-01-design-process/prototyping.jpg)
 
@@ -43,7 +43,7 @@ In web design prototype digital files are known as mockups or wireframes, these 
 
 ### 5. Evaluation
 
-For improve times and have a more assertive final design, we keep a constant communication with customer, let them now about last features, last changes and achieve their approval for start every final design-process.
+For improve times and have a more assertive final design, we keep a constant communication with customer, let them know about last features, last changes and achieve their approval for start every final design-process.
 
 ![Picture 12](../assets/images/articles/2014-07-01-design-process/evaluation.jpg)
 
@@ -59,7 +59,7 @@ This is the moment for join all the pieces, we call design to all the process we
 
 ### 7. Improve
 
-Finish a design project its the start point for improve, make an inside about the topics we can do better for next projects it's an important part of the design-process.
+Finish a design project is the start point for improve, make an inside about the topics we can do better for next projects it's an important part of the design-process.
 
 ![Picture 16](../assets/images/articles/2014-07-01-design-process/lab2023-logo.jpg)
 
