@@ -7,13 +7,13 @@ tags: ui design, web design, graphic design, visual identity design, mockup, wir
 ![Picture 1](../assets/images/articles/2014-07-01-design-process/final1.jpg)
 ### 1. Understanding client needs 
 
-After every dealing process our first task is define the main requirements we need to develop in an specific time period, for specify these features is necessary to focus in understand the main needs our design should supply. Realize about client perspective give us the key for success in a final result.
+After every dealing process we start by define main requirements of new project, for specify these features is necessary to focus in understand the main needs our design should supply. Realizing about client perspective give us the key for success in a final result.
 
 ![Picture 2](../assets/images/articles/2014-07-01-design-process/Client.jpg)
 
 ### 2. Brainstorming
 
-Once we understand our main goal the next step is to look for inspiration, creative and suitable solution we can develop. In this way there are many ways for exercise our imagination, sketching our new ideas is a very good way for make feedback process inside the team, discuss and decide the best option.
+Once we understand our main goal the next step is to look for inspiration, creative and suitable solution we can develop. In this way there are many ways for exercise our imagination, sketching our new ideas is a very good way for make feedback process inside the team, based on this we discuss and decide the best option.
 
 ![Picture 3](../assets/images/articles/2014-07-01-design-process/Brainstorming1.jpg)
 
@@ -23,7 +23,7 @@ Once we understand our main goal the next step is to look for inspiration, creat
 
 ### 3. Conceptualize
 
-Conceptualize it's the process in which all the team get synchronize in a main idea, in design concepts we define how the semantic idea will be present in all perceptual aspects, here we define main characteristics, style, colors, typography, shapes, diagramming grid and structure for compose.
+Conceptualize is the process in which all the team get synchronize in a main idea. In design concepts we define how the semantic idea will be present in all perceptual aspects, here we define main characteristics, style, colors, typography, shapes, diagramming grid and structure for compose.
 
 ![Picture 6](../assets/images/articles/2014-07-01-design-process/conceptualize.jpg)
 
