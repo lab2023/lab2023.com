@@ -7,7 +7,7 @@ tags: ui design, web design, graphic design, visual identity design, mockup, wir
 ![Picture 1](../assets/images/articles/2014-07-01-design-process/final1.jpg)
 ### 1. Understanding client needs 
 
-After every dealing process we start by define main requirements of new project, for specify these features is necessary to focus in understand the main needs our design should supply. Realizing about client perspective give us the key for success in a final result.
+After every dealing process we start by defining main requirements of the new project. In order to specify these requirements we focus on understanding the main needs our design should supply. Realize about client perspective gives us the key for success in a final result.
 
 ![Picture 2](../assets/images/articles/2014-07-01-design-process/Client.jpg)
 
