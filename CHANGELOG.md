@@ -1,5 +1,17 @@
 
 #### [Current]
+ * [7dd2e5b](../../commit/7dd2e5b) - __(Clara Isabel Pantoja)__ blur last images
+ * [1750682](../../commit/1750682) - __(Clara Isabel Pantoja)__ add images about web design sketchs
+ * [35cd89b](../../commit/35cd89b) - __(Clara Isabel Pantoja)__ last corrections
+ * [e2bc3be](../../commit/e2bc3be) - __(Clara Isabel Pantoja)__ improve grammar
+ * [5b316b8](../../commit/5b316b8) - __(Clara Isabel Pantoja)__ improve first paragraph
+ * [d39b05a](../../commit/d39b05a) - __(Clara Isabel Pantoja)__ last feedbacks correction
+ * [fbfa294](../../commit/fbfa294) - __(Clara Isabel Pantoja)__ corrections for design process blog post
+ * [b42ffde](../../commit/b42ffde) - __(Tayfun zi ERKAN)__ Tags were improved.
+ * [b5cbb07](../../commit/b5cbb07) - __(Clara Isabel Pantoja)__ add post design process
+
+#### 1.2.14.1
+ * [a0693b6](../../commit/a0693b6) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.1
  * [2e267df](../../commit/2e267df) - __(Tayfun Ozis ERIKAN)__ Merge remote-tracking branch 'origin/feature/interface_design_with_balsamiq' into feature/interface_design_with_balsamiq
 
 Conflicts:
@@ -25,10 +37,10 @@ Conflicts:
 
 #### 1.2.13.0
  * [2932025](../../commit/2932025) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.13.0
- * [6d1d2a0](../../commit/6d1d2a0) - __(leylaKapi)__ solve-responsive-page
- * [c9fa931](../../commit/c9fa931) - __(leylaKapi)__ change-quality of image
- * [8b8b183](../../commit/8b8b183) - __(leylaKapi)__ Update info
- * [2fbadb9](../../commit/2fbadb9) - __(leylaKapi)__ Add kamila to team
+ * [6d1d2a0](../../commit/6d1d2a0) - __(Safiye Sepetci)__ solve-responsive-page
+ * [c9fa931](../../commit/c9fa931) - __(Safiye Sepetci)__ change-quality of image
+ * [8b8b183](../../commit/8b8b183) - __(Safiye Sepetci)__ Update info
+ * [2fbadb9](../../commit/2fbadb9) - __(Safiye Sepetci)__ Add kamila to team
 
 #### 1.2.12.0
  * [f9b69b9](../../commit/f9b69b9) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.12.0
