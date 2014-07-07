@@ -32,7 +32,7 @@ This libraries ,
   * [Melon.js](http://melonjs.org/)
   * [Joint.js](http://www.jointjs.com/)
 
-Let's continue to get information about html5 canvas javascript libraries.
+Let's continue taking information about html5 canvas javascript libraries.
 
 1- [Canvas Advanced Animation Toolkit](http://hyperandroid.github.io/CAAT/)
 
@@ -55,17 +55,17 @@ Let's continue to get information about html5 canvas javascript libraries.
 
 3- [Fabric.js](http://fabricjs.com/)
 
-  * Fabric.js provides to missing object model on canvas, as well as SVG parser.
-  * Also, it provides to animation, geometrical shape, graphics.
+  * Fabric.js provides missing object model on canvas, as well as SVG parser.
+  * Also, it provides animation, geometrical shape, graphics.
   * Open source code in [here](https://github.com/kangax/fabric.js/)
 
 ![Fabric](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/fabricjs.jpg)
 
 4- [Crafty.js](http://craftyjs.com/)
 
-  * Crafty provides to build prototypical or full-featured 2D html5 games.
+  * Crafty provides building of prototypical or full-featured 2D html5 games.
   * Crafty uses syntax similar to [jquery](http://jquery.com/) by having a selector
-  engine to select entities by their components.
+  engine for select entities by their components.
   * Open source code in [here](https://github.com/craftyjs/crafty/)
 
 ![Crafty](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/craftyjs.jpg)
@@ -80,7 +80,7 @@ Let's continue to get information about html5 canvas javascript libraries.
 
 6- [Easel.js](http://www.createjs.com/#!/EaselJS)
 
-  * Easel.js provide to working with canvas element easier.
+  * Easel.js provide easy work with canvas elements.
   * Also it provides shape based mouse interaction on elements.
   * This javascript library is useful for games thanks to awesome graphics and generative arts.
   * Open source code in [here](https://github.com/CreateJS/EaselJS/)
@@ -89,8 +89,8 @@ Let's continue to get information about html5 canvas javascript libraries.
 
 7- [oCanvas](http://ocanvas.org/)
 
-  * OCanvas provide to working with object instead of pixels for html5 canvas elements.
-  * It provides to be faster and easier than writing pure javascript on the canvas.
+  * OCanvas provide to work with object instead of pixels for html5 canvas elements.
+  * It provides a faster and easier way of work than writing pure javascript on the canvas.
   * Open source code in [here](https://github.com/koggdal/ocanvas)
 
 ![oCanvas](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/ocanvas.jpg)
@@ -113,7 +113,7 @@ Let's continue to get information about html5 canvas javascript libraries.
 10- [Three.js](http://threejs.org/)
 
   * Three.js is library that makes [WebGL](http://get.webgl.org/), 3D in the browser.
-  * it provides to make powerful 3D animations.
+  * it provides powerful 3D animations.
   * Open source code in [here](https://github.com/mrdoob/three.js/)
 
 ![Three](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/three.jpg)
@@ -122,7 +122,7 @@ Let's continue to get information about html5 canvas javascript libraries.
 
   * Jaws.js is core functions.
   * Jaws is 2D game development framework.
-  * It provide to make assets(images, musics, json data) in web-games as easy as possible.
+  * It provide the easiest way to make assets(images, musics, json data) in web-games.
   * Open source code in [here](https://github.com/ippa/jaws)
 
 ![Jaws](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/jaws.jpg)
@@ -130,14 +130,14 @@ Let's continue to get information about html5 canvas javascript libraries.
 12- [Impact.js](http://impactjs.com/)
 
   * Impact.js is a javascript game engine, it offer 2D animations, graphics, images for web and desktop games.
-  * It support on all html5 capable browsers and include `iPhone`, `iPod Touch` and `iPhone` .
+  * It supports on all html5 capable browsers and include `iPhone`, `iPod Touch` and `iPhone` .
 
 ![Impact](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/impact.jpg)
 
 13- [Lime.js](http://www.limejs.com/)
 
-  * Lime.js offers to support  for all mobile platforms.
-  * It provide to support videos and better audio.
+  * Lime.js offers support  for all mobile platforms.
+  * It provide  support videos and better audio.
   * Open source code in [here](https://github.com/digitalfruit/limejs)
 
 ![Lime](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/lime.jpg)
@@ -145,15 +145,15 @@ Let's continue to get information about html5 canvas javascript libraries.
 14- [Melon.js](http://melonjs.org/)
 
   * Melon.js is a fresh-lightweight 2D sprite-based engine.
-  * It support multiple audio channel support.
-  * It integrated tiled map format.
+  * It supports multiple audio channel support.
+  * It integrates tiled map format.
   * Open source code in [here](https://github.com/melonjs/melonJS)
 
 ![Melon](../assets/images/articles/2014-07-06-html5-canvas-javascript-libraries/melon.jpg)
 
 15- [Joint.js](http://www.jointjs.com/)
 
-  * Joint.js is a modern HTML 5 JavaScript library for visualization and interaction with diagrams and graphs.
+  * Joint.js is a modern HTML 5 JavaScript library for visualize and interact with diagrams and graphs.
   * Joint js is known diagramming library in javascript libraries.
   * Open source code in [here](https://github.com/DavidDurman/joint)
 
