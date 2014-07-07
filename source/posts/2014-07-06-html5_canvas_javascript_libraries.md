@@ -7,14 +7,14 @@ tags: game, development, html5, canvas, javascript, libraries, frameworks, en
 
 ## Which libraries should we use in javascript for game development ?
 
-While I looking for javascript library, I found some javascript libraries are used for game development.
-This libraries :
+While I was searching about javascript libraries, I found some javascript libraries are being used for game development.
+This libraries ,
 
-  * provide tools to create animations for game development,
-  * helped to find graphical objects for games,
-  * provide to useful functions which use in your game project  ...etc
+  * provide tools to create animations for game development.
+  * helped to find graphical objects for games.
+  * provide useful functions you can use in your game projects  ...etc
 
-15 Useful javascript libraries for game development like below :
+15 Useful javascript libraries for game development below :
 
   * [Canvas Advanced Animation Toolkit](http://hyperandroid.github.io/CAAT/)
   * [Kinetic.js](http://kineticjs.com/)
@@ -32,7 +32,7 @@ This libraries :
   * [Melon.js](http://melonjs.org/)
   * [Joint.js](http://www.jointjs.com/)
 
-Let's continue to take info about html5 canvas javascript libraries.
+Let's continue to get information about html5 canvas javascript libraries.
 
 1- [Canvas Advanced Animation Toolkit](http://hyperandroid.github.io/CAAT/)
 
