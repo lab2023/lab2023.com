@@ -1,5 +1,13 @@
 
 #### [Current]
+ * [ee0a945](../../commit/ee0a945) - __(Tayfun Ozis ERIKAN)__ File name was changed
+ * [ed956f5](../../commit/ed956f5) - __(Tayfun Ozis ERIKAN)__ Photos were resized and optimized
+ * [31db2c5](../../commit/31db2c5) - __(Safiye Sepetci)__ update typo
+ * [1d7aa18](../../commit/1d7aa18) - __(Safiye Sepetci)__ update typo
+ * [1eff7e3](../../commit/1eff7e3) - __(leylakapi)__ SH-39 #time 1d initialize blog post html5 canvas js libraries
+
+#### 1.2.14.2
+ * [8770646](../../commit/8770646) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.2
  * [7dd2e5b](../../commit/7dd2e5b) - __(Clara Isabel Pantoja)__ blur last images
  * [1750682](../../commit/1750682) - __(Clara Isabel Pantoja)__ add images about web design sketchs
  * [35cd89b](../../commit/35cd89b) - __(Clara Isabel Pantoja)__ last corrections
