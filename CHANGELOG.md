@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.2.14.3
+ * [a0f4d39](../../commit/a0f4d39) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.3
  * [ee0a945](../../commit/ee0a945) - __(Tayfun Ozis ERIKAN)__ File name was changed
  * [ed956f5](../../commit/ed956f5) - __(Tayfun Ozis ERIKAN)__ Photos were resized and optimized
  * [31db2c5](../../commit/31db2c5) - __(Safiye Sepetci)__ update typo
