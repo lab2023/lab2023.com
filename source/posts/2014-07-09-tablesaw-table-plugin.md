@@ -2,10 +2,12 @@
 title: Tablesaw Tablo Eklentisi
 date: 2014-07-09
 author: safiyesepetci
-tags: tablesaw, responsive , table, tr
+tags: tablesaw, responsive, plugin, table, tr
 ---
 
-Tablesaw kullanıma hazır responsive tablo eklentisidir.3 farklı mod'da kullanabiliyoruz. Kullandığımız moda'a göre ek özelliklere yer verebiliyoruz.
+Tablesaw kullanıma hazır responsive tablo eklentisidir. 3 farklı mod'da kullanabiliyoruz. Kullandığımız moda'a göre ek 
+özelliklere yer verebiliyoruz. 
+
 Kullanılan modlar:
 
 * Stack
@@ -41,7 +43,8 @@ Eklenecek kod:
 ```
 ### Mini-Map
 
-Toogle ve Swipe modunda minimap özelliğini kullanabiliyoruz. Kullandığımız tabloda sütun olarak nerede olduğumuzu bilmemizi sağlıyor.
+Toogle ve Swipe modunda minimap özelliğini kullanabiliyoruz. Kullandığımız tabloda sütun olarak nerede olduğumuzu 
+bilmemizi sağlıyor.
 
 ```html
 <table data-mode="swipe" data-minimap>
@@ -92,7 +95,8 @@ Bu satırın tablomuzu kullanmak istediğimiz kısma eklenmesi gerekiyor.
 ```
 * Tüm modları ve özellikleri kullanabilmek için;
 
-Bu kısımda toogle modu için  [ Filament Group dialog](https://github.com/filamentgroup/dialog) 'a ihtiyacımız var. Eğer bower kullanıyorsanız
+Bu kısımda toogle modu için  [ Filament Group dialog](https://github.com/filamentgroup/dialog) 'a ihtiyacımız var. 
+Eğer bower kullanıyorsanız
 
 ```bash
 bower install tablesaw
@@ -100,7 +104,8 @@ bower install tablesaw
 
 kod satırı ile tablesaw için gerekli tüm paketleri indirebilirsiniz.
 
-Tablesaw'da yer alan tüm mod ve özellikleri kullanbilmek için sayfamıza eklememiz gereken css ve js dosyaları aşağıda ki kodda yer alıyor.
+Tablesaw'da yer alan tüm mod ve özellikleri kullanbilmek için sayfamıza eklememiz gereken css ve js dosyaları aşağıdaki 
+kodda yer alıyor.
 
 ```html
 <link rel="stylesheet" href="bower_components/filament-dialog/dialog.css">
@@ -113,7 +118,3 @@ Tablesaw'da yer alan tüm mod ve özellikleri kullanbilmek için sayfamıza ekle
 ```
 
 Bu kullanışlı tablo eklentisini [Tablesaw](https://github.com/filamentgroup/tablesaw) adresinden inceleyebilirsiniz.
-
-
-
-
