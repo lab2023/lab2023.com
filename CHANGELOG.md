@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [1a1bed5](../../commit/1a1bed5) - __(Ahmet Sezgin Duran)__ SH-40 #time 5m Finish Python logging blog post
+
+#### 1.2.14.5
+ * [4992fd3](../../commit/4992fd3) - __(Tayfun Ozis ERIKAN)__ 1.2.14.5
  * [3830fd7](../../commit/3830fd7) - __(safiyesepetci)__ SH-41 #time 1m article name changed
  * [7a13fd3](../../commit/7a13fd3) - __(safiyesepetci)__ SH-41 #time 2h created post
 
