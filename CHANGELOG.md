@@ -1,6 +1,10 @@
 
 #### [Current]
+ * [3830fd7](../../commit/3830fd7) - __(safiyesepetci)__ SH-41 #time 1m article name changed
+ * [7a13fd3](../../commit/7a13fd3) - __(safiyesepetci)__ SH-41 #time 2h created post
 
+#### 1.2.14.4
+ * [aff8e09](../../commit/aff8e09) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.4
 
 #### 1.2.14.3
  * [a0f4d39](../../commit/a0f4d39) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.3
