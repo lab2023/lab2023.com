@@ -1,5 +1,10 @@
 
 #### [Current]
+ * [60aa10e](../../commit/60aa10e) - __(Tayfun Ozis ERIKAN)__ Our dribbble account link was added. Icon shapes were changed.
+ * [5ee2eac](../../commit/5ee2eac) - __(Tayfun Ozis ERIKAN)__ Tablesaw blog post typo was fixed.  Tayfun's job title was changed.
+
+#### 1.2.14.6
+ * [a19ff63](../../commit/a19ff63) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.6
  * [1a1bed5](../../commit/1a1bed5) - __(Ahmet Sezgin Duran)__ SH-40 #time 5m Finish Python logging blog post
 
 #### 1.2.14.5
