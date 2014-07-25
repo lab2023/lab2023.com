@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [dbe9778](../../commit/dbe9778) - __(Tayfun Ozis ERIKAN)__ Some lines and final comments was removed on this article.
+
+#### 1.2.15.0
+ * [194da27](../../commit/194da27) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.15.0
  * [60aa10e](../../commit/60aa10e) - __(Tayfun Ozis ERIKAN)__ Our dribbble account link was added. Icon shapes were changed.
  * [5ee2eac](../../commit/5ee2eac) - __(Tayfun Ozis ERIKAN)__ Tablesaw blog post typo was fixed.  Tayfun's job title was changed.
 
