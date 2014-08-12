@@ -1,6 +1,9 @@
 
 #### [Current]
+ * [5d44da6](../../commit/5d44da6) - __(Ahmet Sezgin Duran)__ SH-44 #time 30m Add Tmux article
 
+#### 1.3.1.0
+ * [43799d1](../../commit/43799d1) - __(Tayfun Ozis ERIKAN)__ Page titles was fixed.
 
 #### 1.3.0.0
  * [3982559](../../commit/3982559) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.0.0
