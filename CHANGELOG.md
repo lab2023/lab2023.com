@@ -1,5 +1,18 @@
 
 #### [Current]
+
+
+#### 1.3.0.0
+ * [3982559](../../commit/3982559) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.0.0
+ * [ef6f360](../../commit/ef6f360) - __(Tayfun Ozis ERIKAN)__ Olcay (our new intern) was added to our team. Say hello to Olcay :bowtie: - Gems was updated.
+
+#### 1.2.16.1
+ * [519b014](../../commit/519b014) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.16.1
+ * [12a2d7c](../../commit/12a2d7c) - __(Tayfun Ozis ERIKAN)__ Typo fixed and a tag was added.
+ * [dcfb1b5](../../commit/dcfb1b5) - __(safiyesepetci)__ SH-38 #time 20m add a blog post
+
+#### 1.2.16.0
+ * [280a699](../../commit/280a699) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.16.0
  * [dbe9778](../../commit/dbe9778) - __(Tayfun Ozis ERIKAN)__ Some lines and final comments was removed on this article.
 
 #### 1.2.15.0
