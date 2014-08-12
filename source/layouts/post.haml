@@ -3,7 +3,7 @@
   %head
 
     - content_for :title do
-      = " | #{current_page.data.title}"
+      = " - #{current_page.data.title}"
 
     - content_for :head do
       %meta{content: current_page.data.title, name: 'description'}/
