@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [ef6f360](../../commit/ef6f360) - __(Tayfun Ozis ERIKAN)__ Olcay (our new intern) was added to our team. Say hello to Olcay :bowtie: - Gems was updated.
+
+#### 1.2.16.1
+ * [519b014](../../commit/519b014) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.16.1
  * [12a2d7c](../../commit/12a2d7c) - __(Tayfun Ozis ERIKAN)__ Typo fixed and a tag was added.
  * [dcfb1b5](../../commit/dcfb1b5) - __(safiyesepetci)__ SH-38 #time 20m add a blog post
 
