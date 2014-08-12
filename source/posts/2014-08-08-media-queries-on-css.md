@@ -1,13 +1,13 @@
 ---
-title: Css Medya Sorguları 1
+title: CSS Medya Sorguları
 date: 2014-08-08
 author: safiyesepetci
-tags: css, media , queries, responsive, tr
+tags: css, css3, media, queries, responsive, tr
 ---
 Web sayfalarının kullandığımız cihaza uyum sağlaması ve bu sayede kullanılabilirliğinin artması
  için css'in bize yarar sağlayabileceği noktalardan birisi de Medya Sorguları kullanabilmemiz.
  Medya sorguları sayesinde mobil cihazlar için eskiden olduğu gibi ekstra bir çaba harcamaya
- gerek kalmıyor. Css cihazın çözünürlüğünü tanıyıp uygun şekilde stil dönüşümünü yapıyor.
+ gerek kalmıyor. CSS cihazın çözünürlüğünü tanıyıp uygun şekilde stil dönüşümünü yapıyor.
  Şimdi medya tiplerini inceleyerek kısa bir giriş yapalım.
 
 ### Medya Tipleri
