@@ -1,5 +1,17 @@
 
 #### [Current]
+ * [ba0ba45](../../commit/ba0ba45) - __(Tayfun Ozis ERIKAN)__ Article url was fixed
+
+#### 1.3.1.2
+ * [e8fca00](../../commit/e8fca00) - __(safiyesepetci)__ Bump version 1.3.1.2
+ * [2d2c853](../../commit/2d2c853) - __(safiyesepetci)__ Image was deleted...
+ * [1b6cdfb](../../commit/1b6cdfb) - __(safiyesepetci)__ Image was deleted
+ * [766ef6e](../../commit/766ef6e) - __(safiyesepetci)__ authors title changed
+ * [2ed2b0c](../../commit/2ed2b0c) - __(safiyesepetci)__ Diagnoscope post created
+ * [8f52c79](../../commit/8f52c79) - __(Tayfun Ozis ERIKAN)__ Middleman was updated to 3.3.5 version
+
+#### 1.3.1.1
+ * [71e96d0](../../commit/71e96d0) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.1.1
  * [5d44da6](../../commit/5d44da6) - __(Ahmet Sezgin Duran)__ SH-44 #time 30m Add Tmux article
 
 #### 1.3.1.0
