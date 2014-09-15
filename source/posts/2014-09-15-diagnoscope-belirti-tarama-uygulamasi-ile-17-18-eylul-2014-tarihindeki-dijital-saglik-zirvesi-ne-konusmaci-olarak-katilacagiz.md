@@ -1,5 +1,5 @@
 ---
-title: Diagnoscope Belirti Tarama Uygulaması ile 17-18 Eylül 2014 tarihindeki Dijital Sağlık Zirvesi’ne Konuşmacı Olarak Katılacağız.
+title: Diagnoscope Belirti Tarama Uygulaması ile 17-18 Eylül 2014 tarihindeki Dijital Sağlık Zirvesi’ne Konuşmacı Olarak Katılacağız
 date: 2014-09-15
 author: lab2023
 tags: sağlık, diagnoscope, mobil, panel, etkinlik, tr

@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [273d0fd](../../commit/273d0fd) - __(Tayfun Ozis ERIKAN)__ Typo fixed
+
+#### 1.3.2.0
+ * [b879b50](../../commit/b879b50) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.2.0
  * [ba0ba45](../../commit/ba0ba45) - __(Tayfun Ozis ERIKAN)__ Article url was fixed
 
 #### 1.3.1.2
