@@ -2,7 +2,7 @@
 title: Javascript Plugins for Scroll Pages
 date: 2014-09-17
 author: leylakapi
-tags: js, scroll, parallax, libraries, plugins, page, entertainment, animations 
+tags: js, scroll, parallax, libraries, plugins, page, entertainment, animations, infinite, bounce, rotations, drawing line, en
 ---
 
 Javascript scroll page plugins provide to like,
@@ -68,3 +68,57 @@ Let' s examine js plugins ,
 
 ![scroll-reveal](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-reveal.png)
 
+8- [Scroll Path](http://joelb.me/scrollpath/)
+
+- it offer custom scroll paths,
+- provide to rotations and draw line or arcs
+- For detail on  [GitHub page](https://github.com/JoelBesada/scrollpath)
+
+![scroll-path](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-path.png)
+
+9- [Super Scrollorama](http://johnpolacek.github.io/superscrollorama/)
+
+- It offer may properties like pinning, scale, slide, bounce ...etc animations for web-page.
+- For detail on [GitHub page](https://github.com/johnpolacek/superscrollorama)
+
+![super scrollorama](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/super-scrollorama.png)
+
+10- [Sly](http://darsa.in/sly/)
+
+- provide advanced one-directional scrolling with item based navigation support.
+- For detail on [GitHub page](https://github.com/darsain/sly)
+
+![sly](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/sly.png)
+
+11- [Scroll Pane](http://jscrollpane.kelvinluck.com/)
+
+- provide to converts a browsers default scrollbars for html structure that can be easily skinned with css.
+- For detail on [GitHub page](https://github.com/vitch/jScrollPane)
+
+![scroll-pane](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-pane.png)
+
+12- [Select2](http://ivaynberg.github.io/select2/)
+
+- it offers replacement for select boxes. It supports many properties(searching, remote date sets, infinite scrolling of result)
+- For detail on [GitHub page](https://github.com/ivaynberg/select2)
+
+![select](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/select.png)
+
+13- [Skrollr](http://prinzhorn.github.io/skrollr/)
+
+- Stand-alone scrolling-parallax js library for mobile devices 
+- without jquery, only javascript.
+- For detail on [GitHub page](https://github.com/Prinzhorn/skrollr)
+
+![skrollr](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/skrollr.png)
+
+14- [iSroll](http://iscrolljs.com/)
+
+- provide to scroll with parallax, also it offers 3D scroll animations.
+- For detail on [GitHub page](https://github.com/cubiq/iscroll)
+
+![iscroll](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/iscroll.png)
+
+The best open source library for `scroll-page` like above.
+
+I hope helped to you .
