@@ -97,14 +97,7 @@ Let' s examine js plugins ,
 
 ![scroll-pane](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-pane.png)
 
-12- [Select2](http://ivaynberg.github.io/select2/)
-
-- it offers replacement for select boxes. It supports many properties(searching, remote date sets, infinite scrolling of result)
-- For detail on [GitHub page](https://github.com/ivaynberg/select2)
-
-![select](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/select.png)
-
-13- [Skrollr](http://prinzhorn.github.io/skrollr/)
+12- [Skrollr](http://prinzhorn.github.io/skrollr/)
 
 - Stand-alone scrolling-parallax js library for mobile devices 
 - without jquery, only javascript.
@@ -112,7 +105,7 @@ Let' s examine js plugins ,
 
 ![skrollr](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/skrollr.png)
 
-14- [iSroll](http://iscrolljs.com/)
+13- [iSroll](http://iscrolljs.com/)
 
 - provide to scroll with parallax, also it offers 3D scroll animations.
 - For detail on [GitHub page](https://github.com/cubiq/iscroll)
