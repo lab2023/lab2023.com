@@ -1,5 +1,15 @@
 
 #### [Current]
+ * [f4338a3](../../commit/f4338a3) - __(Tayfun Ozis ERIKAN)__ Keyword was added
+ * [8c76bc6](../../commit/8c76bc6) - __(Tayfun Ozis ERIKAN)__ Assets folder name and file names were changed.
+ * [4899565](../../commit/4899565) - __(Tayfun Ozis ERIKAN)__ Middleman and related gems were updated
+ * [a5f5c11](../../commit/a5f5c11) - __(leylakapi)__ SH-48 rm select2 plugins from blog post
+ * [567980d](../../commit/567980d) - __(leylakapi)__ SH-48 #time 2h finish blog post
+ * [8e805bc](../../commit/8e805bc) - __(leylakapi)__ SH-48 initalize half of blog post
+ * [a878b3d](../../commit/a878b3d) - __(leylakapi)__ SH-48 #time 10m add new blog post js plugins for scroll page
+
+#### 1.3.3.0
+ * [9fec547](../../commit/9fec547) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.3.0
  * [273d0fd](../../commit/273d0fd) - __(Tayfun Ozis ERIKAN)__ Typo fixed
 
 #### 1.3.2.0
