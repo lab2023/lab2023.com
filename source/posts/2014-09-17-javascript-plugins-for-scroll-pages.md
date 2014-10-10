@@ -1,11 +1,11 @@
 ---
-title: Javascript Plugins for Scroll Pages
+title: JavaScript Plugins for Scroll Pages
 date: 2014-09-17
 author: leylakapi
-tags: js, scroll, parallax, libraries, plugins, page, entertainment, animations, infinite, bounce, rotations, drawing line, en
+tags: js, scroll, parallax, libraries, plugins, page, animations, infinite, bounce, rotations, drawing line, en
 ---
 
-Javascript scroll page plugins provide to like,
+JavaScript scroll page plugins provide to like,
 
 - scroll
 - parallax
@@ -21,7 +21,7 @@ Let' s examine js plugins ,
 - `Infinite-scroll` provide to unpaginate and endless pages for web pages
 - For detail on [GitHub page](https://github.com/paulirish/infinite-scroll)
 
-![infinite-scroll](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/infinite-scroll-image.png)
+![infinite-scroll](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/infinite-scroll-image.png)
 
 2- [One-page scroll](http://www.thepetedesign.com/demos/onepage_scroll_demo.html)
 
@@ -29,7 +29,7 @@ Let' s examine js plugins ,
 - You can create game or entertainment page with this plugins
 - For detail on [GitHub page](https://github.com/peachananr/onepage-scroll)
 
-![one-page-scroll](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/one-page-scroll.png)
+![one-page-scroll](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/one-page-scroll.png)
 
 3- [Scroll Magic](http://janpaepke.github.io/ScrollMagic/)
 
@@ -37,7 +37,7 @@ Let' s examine js plugins ,
 - Also synchronize an animation, infinitely scrolling  page. 
 - For detail on [GitHub page](https://github.com/janpaepke/ScrollMagic)
 
-![scroll-magic](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-magic.png)
+![scroll-magic](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/scroll-magic.png)
 
 4- [Custom content scroller](http://manos.malihu.gr/jquery-custom-content-scroller/)
 
@@ -45,28 +45,28 @@ Let' s examine js plugins ,
 - Features include vertical, horizontal, scrolling, drawing ...etc
 - For detail on [GitHub page](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
-![custom-scroll](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/custom-scroll.png)
+![custom-scroll](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/custom-scroll.png)
 
 5- [Scrollability](http://joehewitt.github.io/scrollability/)
 
 - Provide scrolling for mobile devices .
 - For detail on [GitHub page](https://github.com/joehewitt/scrollability)
 
-![scrollability](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scrollability.png)
+![scrollability](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/scrollability.png)
 
 6- [WayPoints](http://imakewebthings.com/jquery-waypoints/)
 
 - Provide to status of webpage like horizontal or vertical for one page or multiple pages
 - For detail on [GitHub page](https://github.com/imakewebthings/jquery-waypoints)
 
-![waypoints](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/waypoints.png)
+![waypoints](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/waypoints.png)
 
 7- [Scroll Reveal](http://scrollrevealjs.org/)
 
 - Provide to scroll animation for page
 - For detail on [GitHub page](https://github.com/julianlloyd/scrollReveal.js)
 
-![scroll-reveal](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-reveal.png)
+![scroll-reveal](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/scroll-reveal.png)
 
 8- [Scroll Path](http://joelb.me/scrollpath/)
 
@@ -74,28 +74,28 @@ Let' s examine js plugins ,
 - provide to rotations and draw line or arcs
 - For detail on  [GitHub page](https://github.com/JoelBesada/scrollpath)
 
-![scroll-path](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-path.png)
+![scroll-path](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/scroll-path.png)
 
 9- [Super Scrollorama](http://johnpolacek.github.io/superscrollorama/)
 
 - It offer may properties like pinning, scale, slide, bounce ...etc animations for web-page.
 - For detail on [GitHub page](https://github.com/johnpolacek/superscrollorama)
 
-![super scrollorama](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/super-scrollorama.png)
+![super scrollorama](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/super-scrollorama.png)
 
 10- [Sly](http://darsa.in/sly/)
 
 - provide advanced one-directional scrolling with item based navigation support.
 - For detail on [GitHub page](https://github.com/darsain/sly)
 
-![sly](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/sly.png)
+![sly](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/sly.png)
 
 11- [Scroll Pane](http://jscrollpane.kelvinluck.com/)
 
 - provide to converts a browsers default scrollbars for html structure that can be easily skinned with css.
 - For detail on [GitHub page](https://github.com/vitch/jScrollPane)
 
-![scroll-pane](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/scroll-pane.png)
+![scroll-pane](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/scroll-pane.png)
 
 12- [Skrollr](http://prinzhorn.github.io/skrollr/)
 
@@ -103,15 +103,17 @@ Let' s examine js plugins ,
 - without jquery, only javascript.
 - For detail on [GitHub page](https://github.com/Prinzhorn/skrollr)
 
-![skrollr](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/skrollr.png)
+![skrollr](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/skrollr.png)
 
 13- [iSroll](http://iscrolljs.com/)
 
 - provide to scroll with parallax, also it offers 3D scroll animations.
 - For detail on [GitHub page](https://github.com/cubiq/iscroll)
 
-![iscroll](../assets/images/articles/2014-09-17-js_plugins_for_scroll_pages/iscroll.png)
+![iscroll](../assets/images/articles/2014-09-17-javascript-plugins-for-scroll-pages/iscroll.png)
 
 The best open source library for `scroll-page` like above.
 
-I hope helped to you .
+I hope helped to you.
+
+Regards.
