@@ -2,13 +2,13 @@
 # the following line to use "https"
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 3.3.5'
+gem 'middleman', '~> 3.3.6'
 
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.3.4'
 
 # Middleman-sprockets
-gem 'middleman-sprockets', '~> 3.3.7'
+gem 'middleman-sprockets', '~> 3.3.10'
 
 # Deploy plugin
 gem 'middleman-deploy', '~> 0.3.0'
@@ -17,7 +17,7 @@ gem 'middleman-deploy', '~> 0.3.0'
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 
 # Twitter Bootstrap
-gem 'bootstrap-sass', '~> 3.2.0.1'
+gem 'bootstrap-sass', '~> 3.2.0.2'
 
 gem 'middleman-blog', '~> 3.5.3'
 gem 'middleman-syntax', '~> 1.2.1'
