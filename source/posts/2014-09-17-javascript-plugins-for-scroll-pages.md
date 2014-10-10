@@ -2,7 +2,7 @@
 title: JavaScript Plugins for Scroll Pages
 date: 2014-09-17
 author: leylakapi
-tags: js, scroll, parallax, libraries, plugins, page, animations, infinite, bounce, rotations, drawing line, en
+tags: js, scroll, parallax, libraries, plugins, entertainment, page, animations, infinite, bounce, rotations, drawing line, en
 ---
 
 JavaScript scroll page plugins provide to like,
