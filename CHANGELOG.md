@@ -1,5 +1,13 @@
 
 #### [Current]
+ * [c5b9a76](../../commit/c5b9a76) - __(leylakapi)__ LAB-57 #time 10m Add Ismail Akbudak to our web page team section
+
+Change color of picture
+
+ * [2e6d450](../../commit/2e6d450) - __(leylakapi)__ LAB-57 #time 15m Add Ismail Akbudak to our web page team section
+
+#### 1.3.3.1
+ * [7e9233a](../../commit/7e9233a) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.3.1
  * [f4338a3](../../commit/f4338a3) - __(Tayfun Ozis ERIKAN)__ Keyword was added
  * [8c76bc6](../../commit/8c76bc6) - __(Tayfun Ozis ERIKAN)__ Assets folder name and file names were changed.
  * [4899565](../../commit/4899565) - __(Tayfun Ozis ERIKAN)__ Middleman and related gems were updated
