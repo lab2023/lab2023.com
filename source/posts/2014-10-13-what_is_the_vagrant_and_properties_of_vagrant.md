@@ -7,26 +7,26 @@ tags: vagrant, virtual-machine, virtual-box, ssh, script, shell, en
 
 ### Properties of Vagrant
 
-`Vagrant` is a application which improved your application in virtual machine, this means that, 
-you can create your project environment on virtual machine. Thanks to vagrant, you cloned local environment on virtual machine. 
+`Vagrant` is an application which improved your application in a virtual machine, which means 
+you can create your project environment in a virtual machine. Thanks to Vagrant, you can clone local environment in a virtual machine. 
 So, when you sent to your project to `server`, you can't see any bug or error on your server.
 On the other hand vagrant is useful, while you are working in a team.
 
-### How to Set Up Vagrant on Ubuntu Desktop?
+### How to Set Up Vagrant on Ubuntu Desktop
 
-For the install and use vagrant, you should follow below steps respectively.
+To install and use vagrant, you should follow below steps respectively.
 
 Let's look, how to set up and use `Vagrant in Ubuntu desktop`,
 
 - Install Vagrant
-- Create Vagrant Folders
-- Install Precise32 Box
-- Set up new Virtual Machine
-- Install Virtual Machine configuration
+- Create Vagrant folders
+- Install precise32 box
+- Set up new virtual machine
+- Install virtual machine configuration
 
 ### 1) Install Vagrant
 
-For the install vagrant on your Ubuntu desktop is very easy. Open your terminal and write below command.
+For installing vagrant on your Ubuntu desktop is very easy. Open your terminal and write below command.
 
 ```bash
 $ sudo apt-get install vagrant
