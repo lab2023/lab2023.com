@@ -7,7 +7,7 @@ tags: vagrant, virtual-machine, virtual-box, ssh, script, shell, en
 
 ### Properties of Vagrant
 
-`Vagrant` is an application which improved your application in a virtual machine, which means 
+`Vagrant` is an application which runs your application in a virtual machine, which means 
 you can create your project environment in a virtual machine. Thanks to Vagrant, you can clone local environment in a virtual machine. 
 So, when you sent to your project to `server`, you can't see any bug or error on your server.
 On the other hand vagrant is useful, while you are working in a team.
