@@ -5,12 +5,15 @@ author: leylakapi
 tags: rails, ruby, rubocop, built, error, yml, tr 
 ---
 
-Elinizde bir rails projesi var ve gelişigüzel kodluyorsanız, ancak kod kalitesinden de ödün vermemek gerekir diye düşünüyorsanız `rubocop` bu aşamada size yardımcı olacaktır.
+Elinizde bir rails projesi var ve gelişigüzel kodluyorsanız, ancak kod kalitesinden de ödün vermemek gerekir diye
+düşünüyorsanız `rubocop` bu aşamada size yardımcı olacaktır.
 
-**Rubocop**, ruby kodlarının [ruby stil rehberi](https://github.com/bbatsov/ruby-style-guide) standartlarına göre tarayıp kodlarınızdaki hataları ve hatalara neden olacak kod parçacıklarınızın, gösterimini gerektiğinde çözmenizi sağlayan bir kod analiz aracıdır.
-Rubocop ile kod kaliteniz artar, daha temiz ve daha profesyonel kod yazmaya başlarsınız.
+**Rubocop**, ruby kodlarının [ruby stil rehberi](https://github.com/bbatsov/ruby-style-guide) standartlarına göre tarayıp
+kodlarınızdaki hataları ve hatalara neden olacak kod parçacıklarınızın göstererek gerektiğinde çözmenizi sağlayan bir
+kod analiz aracıdır. Rubocop ile kod kaliteniz artar, daha temiz ve daha profesyonel kod yazmaya başlarsınız.
 
-Rubocop kurulumuna ve kullanımına başlamadan önce, var olan rails projenizin `git` veya türevlerinden herhangi biri ile paketlenmis olduğuna dikkat etmeniz 
+Rubocop kurulumuna ve kullanımına başlamadan önce, var olan rails projenizin `git` veya türevlerinden herhangi biri ile
+paketlenmis olduğuna dikkat etmeniz
 gerekmektedir. Sonrasında rubocop'u rails projenize entegre etmek için aşağıdaki işlemleri sırasıyla yapmalısınız,
 
 - Rails projenizde var olan `Gemfile` açıp içine aşağıdaki `gem` 'leri eklemeniz gerekmektedir,
