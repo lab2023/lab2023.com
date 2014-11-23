@@ -16,9 +16,9 @@
 
   .contents-alternate
     .container.contents
-      .row
-        .col-lg-8.col-lg-offset-2
-          %div.work-item
+      %div.work-item
+        .row
+          .col-lg-8.col-lg-offset-2
             %h3 Bulutfon Telecommunications Corp.
             %p
               Bulutfon is internet based phone provider which authorized by public authority.
@@ -28,12 +28,16 @@
               = link_to 'https://www.bulutfon.com/', target: '_blank' do
                 Visit project
                 %i.fa.fa-arrow-circle-right
+        .row
+          .col-lg-10.col-lg-offset-1
             = link_to 'https://www.bulutfon.com/', target: '_blank' do
               = image_tag 'works/bulutfon.png', class: 'img-responsive'
 
-          %hr.divider/
+      %hr.divider/
 
-          %div.work-item
+      %div.work-item
+        .row
+          .col-lg-8.col-lg-offset-2
             %h3 Diagnoscope Symptom Checker Apps
             %p
               Diagnoscope is a symptom checker application. It analyzes the symptoms that you selected,
@@ -44,13 +48,42 @@
               = link_to 'http://www.diagnoscope.com/', target: '_blank' do
                 Visit project
                 %i.fa.fa-arrow-circle-right
+        .row
+          .col-lg-8.col-lg-offset-2
             = link_to 'http://www.diagnoscope.com/', target: '_blank' do
               = image_tag 'works/diagnoscope.png', class: 'img-responsive'
 
-          %p.extra
-            = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
-              %strong Want us to work for you?
-              Click here to hire us
+            %p.extra
+              = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+                %strong Want us to work for you?
+                Click here to hire us
+
+      %hr.divider/
+
+      %div.work-item
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h3 Aydede - Your Gateway to Global Innovation in Merchandising
+            %p
+              Aydede's aim to help brands create the personal relationships they need
+              with their customers via unique designs that deliver
+              emotionally satisfying consumer experience.
+              %br/
+              We have redesigned their logo and website.
+
+            %p
+              = link_to 'http://www.aydede.com/', target: '_blank' do
+                Visit project
+                %i.fa.fa-arrow-circle-right
+        .row
+          .col-lg-8.col-lg-offset-2
+            = link_to 'http://www.aydede.com/', target: '_blank' do
+              = image_tag 'works/aydede.png', class: 'img-responsive'
+
+            %p.extra
+              = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+                %strong Want us to work for you?
+                Click here to hire us
 
 %section#our-team
   .container.contents
