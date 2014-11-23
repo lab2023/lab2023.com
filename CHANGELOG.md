@@ -1,8 +1,17 @@
 
 #### [Current]
+ * [85b8dd0](../../commit/85b8dd0) - __(Tayfun Ozis ERIKAN)__ Work images were optimized
+ * [d219181](../../commit/d219181) - __(Tayfun Ozis ERIKAN)__ Our works were improved.
+ * [dfbf019](../../commit/dfbf019) - __(Tayfun Ozis ERIKAN)__ Paragraphs were fixed.
+ * [cc33654](../../commit/cc33654) - __(Clara Isabel Pantoja)__ SH-54 add flat design blogpost
+ * [ff5ea65](../../commit/ff5ea65) - __(leylakapi)__ SH-52 #time 45m How to integrate rubocop to rails project?
+ * [1f0430a](../../commit/1f0430a) - __(leylakapi)__ SH-51 #time 30m Rails projesine rubocop nasl entegre edilir ?
+
+#### 1.3.4.0
+ * [612bd51](../../commit/612bd51) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.4.0
  * [c5b9a76](../../commit/c5b9a76) - __(leylakapi)__ LAB-57 #time 10m Add Ismail Akbudak to our web page team section
 
-Change color of picture
+Change color of picturels
 
  * [2e6d450](../../commit/2e6d450) - __(leylakapi)__ LAB-57 #time 15m Add Ismail Akbudak to our web page team section
 
