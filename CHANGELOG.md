@@ -2,6 +2,9 @@
 #### [Current]
 
 
+#### 1.3.6.0
+ * [f358b96](../../commit/f358b96) - __(Tayfun Ozis ERIKAN)__ Article dates and URLs were fixed.
+
 #### 1.3.5.0
  * [1dd9670](../../commit/1dd9670) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.5.0
  * [85b8dd0](../../commit/85b8dd0) - __(Tayfun Ozis ERIKAN)__ Work images were optimized
