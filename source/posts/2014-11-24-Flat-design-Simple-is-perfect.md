@@ -1,6 +1,6 @@
 ---
 title: Flat Design, Simple is perfect
-date: 2014-11-19
+date: 2014-11-24
 author: klapancg
 tags: ui design, web design, graphic design, visual design, flat design, ui, ux, en
 ---

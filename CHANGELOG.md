@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.3.5.0
+ * [1dd9670](../../commit/1dd9670) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.5.0
  * [85b8dd0](../../commit/85b8dd0) - __(Tayfun Ozis ERIKAN)__ Work images were optimized
  * [d219181](../../commit/d219181) - __(Tayfun Ozis ERIKAN)__ Our works were improved.
  * [dfbf019](../../commit/dfbf019) - __(Tayfun Ozis ERIKAN)__ Paragraphs were fixed.
@@ -11,7 +15,7 @@
  * [612bd51](../../commit/612bd51) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.4.0
  * [c5b9a76](../../commit/c5b9a76) - __(leylakapi)__ LAB-57 #time 10m Add Ismail Akbudak to our web page team section
 
-Change color of picturels
+Change color of picture
 
  * [2e6d450](../../commit/2e6d450) - __(leylakapi)__ LAB-57 #time 15m Add Ismail Akbudak to our web page team section
 
