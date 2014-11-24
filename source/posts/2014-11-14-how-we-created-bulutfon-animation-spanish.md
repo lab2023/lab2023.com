@@ -52,7 +52,7 @@ preparamos todos los elementos que vamos a usar en nuestra animación. para algu
 el paso más importante es realizar la animación de los personajes por la manipılacion de huesos. tratamos de hacerlo plástico y cómico, muy vivido y adorable. para hacer la animación más realista estuvimos usando las leyes de walt disney.
 aqui un pequeño resumen con los principios básicos para realizar animación digital.
 
- [Principios básicos de la animación](http://www.youtube.com/watch?v=bHfDEsNLg34 )
+ [Principios básicos de la animación](http://www.youtube.com/watch?v=l-KtwW6eptM )
 
 cada escena fue renderizada y guardada en carpetas diferentes.
 

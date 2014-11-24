@@ -52,7 +52,7 @@ Animasyonda kullanacağımız bütün öğeleri oluşturduk. Bazı öğeler içi
 Karakterlerin animasyonunu iskelet ile manipule etmek en önemli adımdır. Onları plastik ve komik yapmaya çalışmak, çok hayatdolu ve şirindir. Daha gerçekçi animasyonlar yapmak için, Walt Disney' in geliştirdiği kuralları kullandık.
 Animasyon yapmanın ana prensipleri ile çok kısa göz gezdirebileceğiniz video burdadır:
 
- [Main principles of making animation ](http://www.youtube.com/watch?v=bHfDEsNLg34 )
+ [Main principles of making animation ](http://www.youtube.com/watch?v=l-KtwW6eptM )
  
  Her bir sahneyi bir klasörün içinde farkli dosyalar olarak oluşturup kaydettik. 
  
