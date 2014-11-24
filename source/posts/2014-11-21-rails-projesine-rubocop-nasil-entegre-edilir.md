@@ -1,6 +1,6 @@
 ---
 title: Rails Projesine Rubocop Nasıl Entegre Edilir ?
-date: 2014-10-24
+date: 2014-11-21
 author: leylakapi
 tags: rails, ruby, rubocop, built, error, yml, tr 
 ---
