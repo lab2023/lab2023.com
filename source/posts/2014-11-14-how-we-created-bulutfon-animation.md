@@ -26,7 +26,7 @@ This story is telling us about Bulutfon products, explaining all the opportuniti
 
 ### 2. step is creating a main character…
 
-After creating the story the next important step is a creating a main character. We created this personage with the idea in mind, that we need a young businessman, very sincere, smart,  energetic, with the nice smile and kind eyes. We made him very close to the reality, with human proportions.
+After creating the story the next important step is creating a main character. We created this personage with the idea in mind, that we need a young businessman, very sincere, smart,  energetic, with the nice smile and kind eyes. We made him very close to the reality, with human proportions.
 
 ![main character](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-character.jpg)
 
