@@ -16,9 +16,9 @@
 
   .contents-alternate
     .container.contents
-      .row
-        .col-lg-8.col-lg-offset-2
-          %div.work-item
+      %div.work-item
+        .row
+          .col-lg-8.col-lg-offset-2
             %h3 Bulutfon Telecommunications Corp.
             %p
               Bulutfon is internet based phone provider which authorized by public authority.
@@ -28,12 +28,16 @@
               = link_to 'https://www.bulutfon.com/', target: '_blank' do
                 Visit project
                 %i.fa.fa-arrow-circle-right
+        .row
+          .col-lg-10.col-lg-offset-1
             = link_to 'https://www.bulutfon.com/', target: '_blank' do
               = image_tag 'works/bulutfon.png', class: 'img-responsive'
 
-          %hr.divider/
+      %hr.divider/
 
-          %div.work-item
+      %div.work-item
+        .row
+          .col-lg-8.col-lg-offset-2
             %h3 Diagnoscope Symptom Checker Apps
             %p
               Diagnoscope is a symptom checker application. It analyzes the symptoms that you selected,
@@ -44,13 +48,42 @@
               = link_to 'http://www.diagnoscope.com/', target: '_blank' do
                 Visit project
                 %i.fa.fa-arrow-circle-right
+        .row
+          .col-lg-8.col-lg-offset-2
             = link_to 'http://www.diagnoscope.com/', target: '_blank' do
               = image_tag 'works/diagnoscope.png', class: 'img-responsive'
 
-          %p.extra
-            = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
-              %strong Want us to work for you?
-              Click here to hire us
+            %p.extra
+              = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+                %strong Want us to work for you?
+                Click here to hire us
+
+      %hr.divider/
+
+      %div.work-item
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h3 Aydede - Your Gateway to Global Innovation in Merchandising
+            %p
+              Aydede's aim to help brands create the personal relationships they need
+              with their customers via unique designs that deliver
+              emotionally satisfying consumer experience.
+              %br/
+              We have redesigned their logo and website.
+
+            %p
+              = link_to 'http://www.aydede.com/', target: '_blank' do
+                Visit project
+                %i.fa.fa-arrow-circle-right
+        .row
+          .col-lg-8.col-lg-offset-2
+            = link_to 'http://www.aydede.com/', target: '_blank' do
+              = image_tag 'works/aydede.png', class: 'img-responsive'
+
+            %p.extra
+              = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+                %strong Want us to work for you?
+                Click here to hire us
 
 %section#our-team
   .container.contents
@@ -84,7 +117,7 @@
               .image-filter
               = image_tag 'team/tayfun-ozis-erikan.jpg', class: 'img-circle'
             .member-info.popover-content
-              %h4.title Tayfun Ozis ERIKAN | Co-founder &amp; CTO
+              %h4.title Tayfun Ozis ERIKAN | Co-founder &amp; CEO
               %p.content
                 Web Developer, Graphic & Web Designer
                 Ruby, Ruby on Rails, Php, Zend Framework, CodeIgniter, Doctrine,
@@ -177,6 +210,27 @@
               %h4.title Kamila GAREEVA | Graphic Designer
               %p.content
                 Artist, 2D animator, graphic - designer
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'https://twitter.com/olcay_yaclo', target: '_blank' do
+              .image-filter
+              = image_tag 'team/olcay-oransoy.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Olcay ORANSOY | Intern
+              %p.content
+                Olcay is probably the youngest Ruby on Rails developer in the country.
+                He is our youngest intern. He started to use computer at the age of 3.
+                He works hard on developing his skills on every aspects of web development.
+                But his main area of interest is backend systems.
+                He is a Hot Wheels collectionner and one of the biggest Top Gear fans.
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/isoakbudak', target: '_blank' do
+              .image-filter
+              = image_tag 'team/ismail-akbudak.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title Ismail AKBUDAK | Web Developer
+              %p.content
+                Software Developer, PHP, CodeIgniter, Ruby On Rails, JavaScript, JQuery, Founder Of Hepgezelim. I love to use Ubuntu, to follow new technologies and electronics.
         %p.extra
           = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
             %strong Want to join our team?
@@ -200,22 +254,25 @@
     %ul.social
       %li{'data-toggle' => 'tooltip', title: 'GitHub'}
         = link_to 'https://github.com/lab2023', target: '_blank' do
-          %i.fa.fa-github-square.fa-3x
+          %i.fa.fa-github.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Dribbble'}
+        = link_to 'https://dribbble.com/lab2023', target: '_blank' do
+          %i.fa.fa-dribbble.fa-3x
       %li{'data-toggle' => 'tooltip', title: 'Twitter'}
         = link_to 'https://twitter.com/lab2023', target: '_blank' do
-          %i.fa.fa-twitter-square.fa-3x
+          %i.fa.fa-twitter.fa-3x
       %li{'data-toggle' => 'tooltip', title: 'Facebook'}
         = link_to 'https://www.facebook.com/lab2023', target: '_blank' do
-          %i.fa.fa-facebook-square.fa-3x
+          %i.fa.fa-facebook.fa-3x
       %li{'data-toggle' => 'tooltip', title: 'Flickr'}
         = link_to 'https://www.flickr.com/photos/122188945@N05', target: '_blank' do
           %i.fa.fa-flickr.fa-3x
       %li{'data-toggle' => 'tooltip', title: 'YouTube'}
         = link_to 'http://www.youtube.com/user/thelab2023', target: '_blank' do
-          %i.fa.fa-youtube-square.fa-3x
+          %i.fa.fa-youtube.fa-3x
       %li{'data-toggle' => 'tooltip', title: 'RSS'}
         = link_to 'http://lab2023.com/feed.xml', target: '_blank' do
-          %i.fa.fa-rss-square.fa-3x
+          %i.fa.fa-rss.fa-3x
     %p.extra
       = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
         %strong Want us to work for you?

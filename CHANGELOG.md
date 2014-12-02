@@ -1,6 +1,91 @@
 
 #### [Current]
+ * [3975144](../../commit/3975144) - __(Murat Kemal BAYGN)__ SH-55 Fix some typo for the OWTG event invite
+ * [3667751](../../commit/3667751) - __(Tayfun Ozis ERIKAN)__ SH-55 New article was added
+ * [cf73399](../../commit/cf73399) - __(Tayfun Ozis ERIKAN)__ Article URLs was fixed.
 
+#### 1.3.6.0
+ * [f358b96](../../commit/f358b96) - __(Tayfun Ozis ERIKAN)__ Article dates and URLs were fixed.
+
+#### 1.3.5.0
+ * [1dd9670](../../commit/1dd9670) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.5.0
+ * [85b8dd0](../../commit/85b8dd0) - __(Tayfun Ozis ERIKAN)__ Work images were optimized
+ * [d219181](../../commit/d219181) - __(Tayfun Ozis ERIKAN)__ Our works were improved.
+ * [dfbf019](../../commit/dfbf019) - __(Tayfun Ozis ERIKAN)__ Paragraphs were fixed.
+ * [cc33654](../../commit/cc33654) - __(Clara Isabel Pantoja)__ SH-54 add flat design blogpost
+ * [ff5ea65](../../commit/ff5ea65) - __(leylakapi)__ SH-52 #time 45m How to integrate rubocop to rails project?
+ * [1f0430a](../../commit/1f0430a) - __(leylakapi)__ SH-51 #time 30m Rails projesine rubocop nasl entegre edilir ?
+
+#### 1.3.4.0
+ * [612bd51](../../commit/612bd51) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.4.0
+ * [c5b9a76](../../commit/c5b9a76) - __(leylakapi)__ LAB-57 #time 10m Add Ismail Akbudak to our web page team section
+
+Change color of picture
+
+ * [2e6d450](../../commit/2e6d450) - __(leylakapi)__ LAB-57 #time 15m Add Ismail Akbudak to our web page team section
+
+#### 1.3.3.1
+ * [7e9233a](../../commit/7e9233a) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.3.1
+ * [f4338a3](../../commit/f4338a3) - __(Tayfun Ozis ERIKAN)__ Keyword was added
+ * [8c76bc6](../../commit/8c76bc6) - __(Tayfun Ozis ERIKAN)__ Assets folder name and file names were changed.
+ * [4899565](../../commit/4899565) - __(Tayfun Ozis ERIKAN)__ Middleman and related gems were updated
+ * [a5f5c11](../../commit/a5f5c11) - __(leylakapi)__ SH-48 rm select2 plugins from blog post
+ * [567980d](../../commit/567980d) - __(leylakapi)__ SH-48 #time 2h finish blog post
+ * [8e805bc](../../commit/8e805bc) - __(leylakapi)__ SH-48 initalize half of blog post
+ * [a878b3d](../../commit/a878b3d) - __(leylakapi)__ SH-48 #time 10m add new blog post js plugins for scroll page
+
+#### 1.3.3.0
+ * [9fec547](../../commit/9fec547) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.3.0
+ * [273d0fd](../../commit/273d0fd) - __(Tayfun Ozis ERIKAN)__ Typo fixed
+
+#### 1.3.2.0
+ * [b879b50](../../commit/b879b50) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.2.0
+ * [ba0ba45](../../commit/ba0ba45) - __(Tayfun Ozis ERIKAN)__ Article url was fixed
+
+#### 1.3.1.2
+ * [e8fca00](../../commit/e8fca00) - __(safiyesepetci)__ Bump version 1.3.1.2
+ * [2d2c853](../../commit/2d2c853) - __(safiyesepetci)__ Image was deleted...
+ * [1b6cdfb](../../commit/1b6cdfb) - __(safiyesepetci)__ Image was deleted
+ * [766ef6e](../../commit/766ef6e) - __(safiyesepetci)__ authors title changed
+ * [2ed2b0c](../../commit/2ed2b0c) - __(safiyesepetci)__ Diagnoscope post created
+ * [8f52c79](../../commit/8f52c79) - __(Tayfun Ozis ERIKAN)__ Middleman was updated to 3.3.5 version
+
+#### 1.3.1.1
+ * [71e96d0](../../commit/71e96d0) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.1.1
+ * [5d44da6](../../commit/5d44da6) - __(Ahmet Sezgin Duran)__ SH-44 #time 30m Add Tmux article
+
+#### 1.3.1.0
+ * [43799d1](../../commit/43799d1) - __(Tayfun Ozis ERIKAN)__ Page titles was fixed.
+
+#### 1.3.0.0
+ * [3982559](../../commit/3982559) - __(Tayfun Ozis ERIKAN)__ Bump version 1.3.0.0
+ * [ef6f360](../../commit/ef6f360) - __(Tayfun Ozis ERIKAN)__ Olcay (our new intern) was added to our team. Say hello to Olcay :bowtie: - Gems was updated.
+
+#### 1.2.16.1
+ * [519b014](../../commit/519b014) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.16.1
+ * [12a2d7c](../../commit/12a2d7c) - __(Tayfun Ozis ERIKAN)__ Typo fixed and a tag was added.
+ * [dcfb1b5](../../commit/dcfb1b5) - __(safiyesepetci)__ SH-38 #time 20m add a blog post
+
+#### 1.2.16.0
+ * [280a699](../../commit/280a699) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.16.0
+ * [dbe9778](../../commit/dbe9778) - __(Tayfun Ozis ERIKAN)__ Some lines and final comments was removed on this article.
+
+#### 1.2.15.0
+ * [194da27](../../commit/194da27) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.15.0
+ * [60aa10e](../../commit/60aa10e) - __(Tayfun Ozis ERIKAN)__ Our dribbble account link was added. Icon shapes were changed.
+ * [5ee2eac](../../commit/5ee2eac) - __(Tayfun Ozis ERIKAN)__ Tablesaw blog post typo was fixed.  Tayfun's job title was changed.
+
+#### 1.2.14.6
+ * [a19ff63](../../commit/a19ff63) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.6
+ * [1a1bed5](../../commit/1a1bed5) - __(Ahmet Sezgin Duran)__ SH-40 #time 5m Finish Python logging blog post
+
+#### 1.2.14.5
+ * [4992fd3](../../commit/4992fd3) - __(Tayfun Ozis ERIKAN)__ 1.2.14.5
+ * [3830fd7](../../commit/3830fd7) - __(safiyesepetci)__ SH-41 #time 1m article name changed
+ * [7a13fd3](../../commit/7a13fd3) - __(safiyesepetci)__ SH-41 #time 2h created post
+
+#### 1.2.14.4
+ * [aff8e09](../../commit/aff8e09) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.4
 
 #### 1.2.14.3
  * [a0f4d39](../../commit/a0f4d39) - __(Tayfun Ozis ERIKAN)__ Bump version 1.2.14.3
