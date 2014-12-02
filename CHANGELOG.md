@@ -1,6 +1,8 @@
 
 #### [Current]
-
+ * [3975144](../../commit/3975144) - __(Murat Kemal BAYGN)__ SH-55 Fix some typo for the OWTG event invite
+ * [3667751](../../commit/3667751) - __(Tayfun Ozis ERIKAN)__ SH-55 New article was added
+ * [cf73399](../../commit/cf73399) - __(Tayfun Ozis ERIKAN)__ Article URLs was fixed.
 
 #### 1.3.6.0
  * [f358b96](../../commit/f358b96) - __(Tayfun Ozis ERIKAN)__ Article dates and URLs were fixed.
