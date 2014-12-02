@@ -5,11 +5,11 @@ author: lab2023
 tags: etkinlik, duyuru, owtg2014, istanbul, tr
 ---
 
-Bu yıl 5 düzenlenecek olan Özgür Web Teknolojileri Günleri 2014, **05 – 06 Aralık’ta İstanbul Yeditepe Üniversitesi**’nde gerçekleştirilecektir.
+Bu yıl 5. kez düzenlenecek olan Özgür Web Teknolojileri Günleri 2014, **05 – 06 Aralık’ta İstanbul Yeditepe Üniversitesi**’nde gerçekleştirilecektir.
 
-Önceki yıllarda da düzenli olarak katıldığımız etkinliğe bu sene Lab2023 olarak 5 farkli sunum içeriği ile katkı sağlıyoruz.
+Önceki yıllarda da düzenli olarak katıldığımız etkinliğe bu sene Lab2023 olarak 5 farklı sunum içeriği ile katkı sağlıyoruz.
 
-Bunun yanı sıra stant sponsoru da olduğumuz etkinlikte sizleri de aramızda görmekten ve tanışıp sohbet etme firsatı bulmaktan mutluluk duyacağız.
+Bunun yanı sıra stant sponsoru da olduğumuz etkinlikte sizleri de aramızda görmekten ve tanışıp sohbet etme fırsatı bulmaktan mutluluk duyacağız.
 
 Etkinlikte yer alan sunumlarımıza ait detaylar aşağıdaki gibidir.
 
@@ -18,8 +18,8 @@ Etkinlikte yer alan sunumlarımıza ait detaylar aşağıdaki gibidir.
 
 #### Kerem Can Karakaş Salonu
 
-* 17:00-17:20 - Design Processes and Resources for Successful Web Applications – Clara Isabel Pantoja Munoz – Kamila Gareeva (Kısa Bildiri)
-* 17:20-17:25 - All you have to know about cc (creative commons) – Clara Isabel Pantoja Munoz (Hızlı Konuşma)
+* 17:00-17:20 - Design Processes and Resources for Successful Web Applications – Clara Isabel Pantoja Muñoz – Kamila Gareeva (Kısa Bildiri)
+* 17:20-17:25 - All you have to know about cc (creative commons) – Clara Isabel Pantoja Muñoz (Hızlı Konuşma)
 * 17:25-17:30 - Animation techniques and principles to make your web applications or designs more attractive. – Kamila Gareeva (Hızlı Konuşma)
 
 #### Dennis Ritchie Salonu
