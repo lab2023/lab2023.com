@@ -1,5 +1,5 @@
 ---
-title: What is the vagrant and properties of vagrant ?
+title: What is vagrant and properties of vagrant ?
 date: 2014-10-13 
 author: leylakapi
 tags: vagrant, virtual-machine, virtual-box, ssh, script, shell, en
@@ -8,13 +8,13 @@ tags: vagrant, virtual-machine, virtual-box, ssh, script, shell, en
 ### Properties of Vagrant
 
 `Vagrant` is an application which runs your application in a virtual machine, which means 
-you can create your project environment in a virtual machine. Thanks to Vagrant, you can clone local environment in a virtual machine. 
-So, when you sent to your project to `server`, you can't see any bug or error on your server.
+you can create your project environment in a virtual machine. Thanks to Vagrant, you can clone your local environment in a virtual machine.
+So, when you send your project to `server`, you don't see any bug or error on your server.
 On the other hand vagrant is useful, while you are working in a team.
 
 ### How to Set Up Vagrant on Ubuntu Desktop
 
-To install and use vagrant, you should follow below steps respectively.
+To install and use vagrant, you should follow the steps below respectively.
 
 Let's look, how to set up and use `Vagrant in Ubuntu desktop`,
 
@@ -26,7 +26,7 @@ Let's look, how to set up and use `Vagrant in Ubuntu desktop`,
 
 ### 1) Install Vagrant
 
-For installing vagrant on your Ubuntu desktop is very easy. Open your terminal and write below command.
+Installing vagrant on your Ubuntu desktop is very easy. Open your terminal and write the command below.
 
 ```bash
 $ sudo apt-get install vagrant
@@ -106,7 +106,7 @@ Enter password to be used for sudo commands:
 ``` 
 you should enter a password for commands above.
  
-If you finish work on virtual machine, you write below commands for exit or turn off virtual machine
+If you finish work on virtual machine, you write below commands for exit or shut down virtual machine
  
 ```bash
 $ vagrant suspend
@@ -118,7 +118,7 @@ Or if you want to remove all things from virtual machine
 ```bash
 $ vagrant destroy
 ```
-But for the built again to your project only below commands it's enough.
+But for building your project again only the command below is enough.
 
 ```bash
 $ vagrant up
@@ -133,7 +133,7 @@ After create your account, open your terminal,
 $ vagrant login
 ...
 ```
-Write email or username and password for vagrant cloud, then 
+Write e-mail or username and password for vagrant cloud, then
 
 ```bash
 $ vagrant share
@@ -141,10 +141,10 @@ $ vagrant share
 For more detail about Vagrant, you can look ;
 
 - [Vagrant](http://docs.vagrantup.com/v2/getting-started/index.html) 
-- [Vagrant on Ubunbtu](https://github.com/saasbook/courseware/wiki/Setting-Up-Vagrant-Environment-on-Ubuntu-Platform)
+- [Vagrant on Ubuntu](https://github.com/saasbook/courseware/wiki/Setting-Up-Vagrant-Environment-on-Ubuntu-Platform)
 
 Or,
 
-if you want read same article with details in Turkish, you can read in [this link](http://lab2023.com/vagranta-giris.html). 
+if you want to read same article with details in Turkish, you can read it [here](http://lab2023.com/vagranta-giris.html).
  
 That' s all.
