@@ -1,5 +1,10 @@
 
 #### [Current]
+ * [b682e12](../../commit/b682e12) - __(safiyesepetci)__ updated safiye's team photos
+ * [1eef622](../../commit/1eef622) - __(safiyesepetci)__ LAB-75 #time 3m removed Turku from our web page
+
+#### 1.3.7.1
+ * [10da5b1](../../commit/10da5b1) - __(Murat Kemal BAYGN)__ Release 1.3.7.1
  * [3975144](../../commit/3975144) - __(Murat Kemal BAYGN)__ SH-55 Fix some typo for the OWTG event invite
  * [3667751](../../commit/3667751) - __(Tayfun Ozis ERIKAN)__ SH-55 New article was added
  * [cf73399](../../commit/cf73399) - __(Tayfun Ozis ERIKAN)__ Article URLs was fixed.
