@@ -38,7 +38,7 @@ After knowing that the story and with main character ready, we went to the next,
 
 ### 4. step is creating main character as a marionette, with bones in an animation program...
 
-After storyboard is totally ready with all the corrections that were made, we went to the next step, which is creating the main character as a marionette. We created him with bones and all functions, that we will need, to animate him. For example, we drew several types of mouth and eyes, to give him opportunity to speak and blink and change his eyes' expression, from normal to surprised or from normal to sad etc. Also as a cartoon’s character he can be squashed and stretched. He can move his legs and hands, his head, his eyebrows, even his tie can be animated.
+After storyboard is totally ready with all the corrections that were made, we went to the next step, which is creating the main character as a marionette. We created him with bones and all functions, that we will need, to animate him. For example, we drew several types of mouth and eyes, to give him opportunity to speak and blink and change his eyes' expression, from normal to surprised or from normal to sad etc. Also as a cartoon’s character he can be squashed and stretched, he can move his legs and hands, his head, his eyebrows, even his tie can be animated.
 
 ![character with bones](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-bones.JPG)
 
