@@ -50,7 +50,7 @@ We prepared all the elements, that we will use in our animation. For some elemen
 ![character with bones](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-objects.JPG)
 
 ### 6. step is making an animation...
-The most important step is making animation of characters by manipulating bones. We were trying to make them plastic and comic, very lifeful and adorable. For making animation more realistic we were using rules, that Walt Disney developed.
+The most important step is making animation of characters by manipulating bones. We tried to make them plastic, comic, very lifeful and adorable. For making animation more realistic we were using rules, that Walt Disney developed.
 Here is a very short review with the main principles of making animation:
 
  [Main principles of making animation ](http://www.youtube.com/watch?v=l-KtwW6eptM )

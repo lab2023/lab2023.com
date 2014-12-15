@@ -49,7 +49,7 @@ Animasyonda kullanacağımız bütün öğeleri oluşturduk. Bazı öğelere ani
 
 ### 6. adım, bir animasyon oluşturulması...
 
-En önemli adım, iskeleti değiştirerek karakterlerin hareket etmesini sağlamaktır. Karakterleri plastik ve komik, çok hayat dolu ve çok güzel yapmaya çalıştık. Animasyonu daha gerçekçi yapmak için, Walt Disney'in geliştirdiği kuralları kullandık. Animasyon yapmanın temel prensipleri ile ilgili kısa bir video buradadır:
+En önemli adım, iskeleti değiştirerek karakterlerin hareket etmesini sağlamaktır. Karakterleri plastik, komik, çok hayat dolu ve çok güzel yapmaya çalıştık. Animasyonu daha gerçekçi yapmak için, Walt Disney'in geliştirdiği kuralları kullandık. Animasyon yapmanın temel prensipleri ile ilgili kısa bir video buradadır:
 
  [Animasyon oluşturmanın ana prensipleri](http://www.youtube.com/watch?v=l-KtwW6eptM )
 
