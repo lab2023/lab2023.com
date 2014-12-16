@@ -31,15 +31,15 @@ Lab2023 olarak yaptığımız sunumlara katılıp yanımızda olan siz dostları
 
 Etkinlik programı kapsamında aynı zamanda, Türkiye’de organize olmuş Ruby, PHP ve Python grupları için birlikte çalışma yapabilmeleri ve tanışmaları için topluluk çalışma toplantıları da yapıldı. Biz de, gönül verdiğimiz Ruby için programda olan Ruby Topluluğu Çalışma Toplantısı’nda katılımımızı yaptık, bu çalışma sonucunda toplulukta beraberce aşağıdaki kararları alıp, sorumluları atadık.
 
- * Meetup.com üzerinde Ruby Türkiye grubu oluşturulması. (Serdar Doğruyol)
- * S.S.S. hazırlanması ( İlk olarak 10 Madde halinde ) (Eyüp Atiş, Kader Sucuk)
- * Sosyal Medya Hesaplarının Yönetimi (Kenan Polat)
- * Podcast’lerin oluşturulması (Serdar Doğruyol, Ender Ahmet Yurt)
- * İş ilanları ve firmalar için erişim sayfası hazırlanması (Kader Sucuk)
- * Etkinlik Takviminin Ruby Türkiye sitesine eklenmesi (Serdar Doğruyol)
- * Wikipedi’de grupla ilgili bir madde oluşturulması (Ekrem Karaca)
- * Grup manifestosu oluşturulması (Kader Sucuk, Serdar Doğruyol, Tayfun Öziş Erikan)
- * Ruby Türkiye domain’in düzenlenmesi (Onur Özgür Özkan)
+ * Meetup.com üzerinde Ruby Türkiye grubu oluşturulması.
+ * S.S.S. hazırlanması ( İlk olarak 10 Madde halinde )
+ * Sosyal Medya Hesaplarının Yönetimi
+ * Podcast’lerin oluşturulması
+ * İş ilanları ve firmalar için erişim sayfası hazırlanması
+ * Etkinlik Takviminin Ruby Türkiye sitesine eklenmesi
+ * Wikipedi’de grupla ilgili bir madde oluşturulması
+ * Grup manifestosu oluşturulması
+ * Ruby Türkiye domain’in düzenlenmesi
 
 
 
