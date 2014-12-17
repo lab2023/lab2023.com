@@ -2,6 +2,9 @@
 #### [Current]
 
 
+#### 1.3.13.0
+ * [d16edef](../../commit/d16edef) - __(Murat Kemal BAYGN)__ Fix Spanish URL
+
 #### 1.3.12.0
  * [0b6c76c](../../commit/0b6c76c) - __(Murat Kemal BAYGN)__ Fix URL for Russian blog post
 
