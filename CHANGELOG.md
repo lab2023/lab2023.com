@@ -1,5 +1,21 @@
 
 #### [Current]
+ * [25c2b08](../../commit/25c2b08) - __(Murat Kemal BAYGN)__ SH-53 Prepare for publish
+ * [1d60b95](../../commit/1d60b95) - __(Murat Kemal BAYGN)__ SH-56 Remove responsible names
+ * [ae9f21b](../../commit/ae9f21b) - __(Murat Kemal BAYGN)__ SH-56 Add blog post for Ozgur Web Gunleri
+ * [0f9c953](../../commit/0f9c953) - __(Murat Kemal BAYGN)__ Fix date
+ * [094187e](../../commit/094187e) - __(Murat Kemal BAYGN)__ SH-53 Fix typo
+ * [3577a97](../../commit/3577a97) - __(Murat Kemal BAYGN)__ SH-53 Fix Turkish translation and typo in Engish
+ * [1ca7099](../../commit/1ca7099) - __(safiyesepetci)__ revieved leyla's blog post (typo fixed )
+ * [da3e350](../../commit/da3e350) - __(Murat Kemal BAYGN)__ SH-53 Make some fixes on the Spanish article for Bulutofn Animation
+ * [94749ab](../../commit/94749ab) - __(Murat Kemal BAYGN)__ SH-53 Make some fixes on the English article
+ * [2173914](../../commit/2173914) - __(Murat Kemal BAYGN)__ SH-53 Make some fixes on the Turkish and English article
+ * [290bf67](../../commit/290bf67) - __(Kamila Gareeva)__ posts changed
+ * [649674b](../../commit/649674b) - __(leylakapi)__ Add tr of blog post and add ru tag on page
+ * [f24d036](../../commit/f24d036) - __(Kamila Gareeva)__ added new blog post
+
+#### 1.3.8.0
+ * [d8fc053](../../commit/d8fc053) - __(Murat Kemal BAYGN)__ Release 1.3.8.0
  * [b682e12](../../commit/b682e12) - __(safiyesepetci)__ updated safiye's team photos
  * [1eef622](../../commit/1eef622) - __(safiyesepetci)__ LAB-75 #time 3m removed Turku from our web page
 
