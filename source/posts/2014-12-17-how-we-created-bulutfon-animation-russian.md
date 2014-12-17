@@ -1,6 +1,6 @@
 ---
 title: Как создавалась анимация, посвященная "Bulutfon"
-date: 2014-11-14
+date: 2014-12-17
 author: kamilagareeva1
 tags: animation, bulutfon, created, design, business, ru
 ---
@@ -26,7 +26,7 @@ tags: animation, bulutfon, created, design, business, ru
 
 Моделируя главный персонаж, мы хотели, чтобы он получился жизнерадостным, умным, молодым, предприимчивым бизнесменом с обаятельной улыбкой и добрыми глазами. Кроме того, мы сделали его образ, приближенным к реальности, с человеческими пропорциями.
 
-![main character](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-character.jpg)
+![main character](../assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/character.jpg)
 
 ### 3 этап – создание комикса…
 
@@ -34,20 +34,20 @@ tags: animation, bulutfon, created, design, business, ru
 
 Для упрощения работы мы использовали примечания – небольшие заметки, объясняющие мелкие детали, как, например, настроение персонажа и т.д., стрелки, чтобы видеть движение персонажа внутри отдельного плана. Вот что у нас получилось:
 
-![storyboard](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-storyboard.jpg)
+![storyboard](../assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/storyboard.jpg)
 
 ### 4 этап – превращение главного персонажа в марионетку при помощи «костей» в специальной анимационной программе…
 
 После того, как работа над комиксом закончена и сделаны все поправки, мы перешли к следующему этапу – превращению нашего персонажа в марионетку. Мы создали ему «скелет», помогающий управлять героем во время анимации. Наш персонаж может разговаривать, моргать и менять выражение глаз, может удивляться, быть грустным и смеяться. Как всякий мультипликационный герой, он очень пластичен и гибок.
 
-![character with bones](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-bones.JPG)
+![character with bones](../assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/bones.JPG)
 
 
 ### 5 этап – создание всех объектов, которые будут использованы при анимации…
 
 Мы подготовили все необходимые объекты, которые использовались в ходе анимирования. Для некоторых элементов мы создали «кости», поскольку они также участвуют в анимации. Мы выбрали очень чистые открытые цвета: желтый, зеленый, красный, голубой, теплый серый.
 
-![character with bones](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-objects.JPG)
+![character with bones](../assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/objects.JPG)
 
 ### 6 этап – анимирование…
 
@@ -59,7 +59,7 @@ tags: animation, bulutfon, created, design, business, ru
 
 Каждый  план мы рендерили и сохраняли в папку, как отдельный файл.
 
-![character with bones](../assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-story.jpg)
+![character with bones](../assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/story.jpg)
 
 Вот что в результате у нас получилось:
 
@@ -68,7 +68,7 @@ tags: animation, bulutfon, created, design, business, ru
 
 В нашей анимации мы использовали большое количество различных звуков. Использование звуков позволило нам верно расставить акценты, создать ощущение падающих предметов или звуки шагающего человека и т.д.
 
-![character with bones](/assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-voice.jpg)
+![character with bones](/assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/voice.jpg)
 
 ### 8 этап – подборка музыки для фона…
 
@@ -78,7 +78,7 @@ tags: animation, bulutfon, created, design, business, ru
 
 Теперь, когда анимация выполнена и подобрана музыка, нам осталось сделать завершающий этап – объединить все отдельные элементы анимации в один общий файл – видео файл.
 
-![character with bones](/assets/images/articles/2014-11-14-how-we-created-bulutfon-animation/2014-11-14-how-we-created-bulutfon-animation-merge.jpg)
+![character with bones](/assets/images/articles/2014-12-17-how-we-created-bulutfon-animation/merge.jpg)
 
 В итоге мы получили великолепный ролик для компании Bulutfon:
 
@@ -86,7 +86,7 @@ tags: animation, bulutfon, created, design, business, ru
 
 Вы можете найти нас на Dribbble
 
- [Анимация, посвященная "Bulutfon" на dribbble](https://dribbble.com/shots/1676198-Bulutfon-Animation)
+ [Анимация, посвященная "Bulutfon" на Dribbble](https://dribbble.com/shots/1676198-Bulutfon-Animation)
 
 Благодарим за внимание.
 
