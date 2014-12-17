@@ -2,6 +2,9 @@
 #### [Current]
 
 
+#### 1.3.9.0
+ * [c08802c](../../commit/c08802c) - __(Murat Kemal BAYGN)__ Fix blog post link
+
 #### 1.3.8.1
  * [3b7eca4](../../commit/3b7eca4) - __(Murat Kemal BAYGN)__ Release 1.3.8.1
  * [25c2b08](../../commit/25c2b08) - __(Murat Kemal BAYGN)__ SH-53 Prepare for publish
