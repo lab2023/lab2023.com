@@ -2,6 +2,9 @@
 #### [Current]
 
 
+#### 1.3.11.0
+ * [f19896b](../../commit/f19896b) - __(Murat Kemal BAYGN)__ Fix name
+
 #### 1.3.10.0
  * [0eeebd3](../../commit/0eeebd3) - __(Murat Kemal BAYGN)__ Fix urls and authors
 
