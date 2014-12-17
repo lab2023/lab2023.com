@@ -4,7 +4,7 @@ date: 2014-12-12
 author: baygunm
 tags: etkinlik, owtg2014, istanbul, tr, ruby, runy on rails, design, design process, web applications, creative commons, animation techniques, animation principles, java, jax-rs, restful
 ---
-Özgür Web Teknolojileri Günleri 2014’e katılacağımızı 2 Aralık’ta [duyurmuş](/2014-12-02-5-farkli-sunum-ile-katki-sagladigimiz-ve-stant-sponsoru-oldugumuz-ozgur-web-teknolojileri-gunleri-2014-e-davetlisiniz.html) ve sizleri de davet etmiştik. 05-06 Aralık’ta İstanbul Yeditepe Üniversitesi’nde 5. kez düzenlenen etkinlikte stant sponsoru olarak yerimizi aldık. Önceki yıllarda olduğu gibi, bu yıl da etkinlikte olmaktan büyük keyif duyduk.
+Özgür Web Teknolojileri Günleri 2014’e katılacağımızı 2 Aralık’ta [duyurmuş](/5-farkli-sunum-ile-katki-sagladigimiz-ve-stant-sponsoru-oldugumuz-ozgur-web-teknolojileri-gunleri-2014-e-davetlisiniz.html) ve sizleri de davet etmiştik. 05-06 Aralık’ta İstanbul Yeditepe Üniversitesi’nde 5. kez düzenlenen etkinlikte stant sponsoru olarak yerimizi aldık. Önceki yıllarda olduğu gibi, bu yıl da etkinlikte olmaktan büyük keyif duyduk.
 
 ![Yeni dostlar](../assets/images/articles/2014-12-12-owtg-ardindan/stant.jpg)
 
