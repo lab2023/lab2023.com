@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.3.8.1
+ * [3b7eca4](../../commit/3b7eca4) - __(Murat Kemal BAYGN)__ Release 1.3.8.1
  * [25c2b08](../../commit/25c2b08) - __(Murat Kemal BAYGN)__ SH-53 Prepare for publish
  * [1d60b95](../../commit/1d60b95) - __(Murat Kemal BAYGN)__ SH-56 Remove responsible names
  * [ae9f21b](../../commit/ae9f21b) - __(Murat Kemal BAYGN)__ SH-56 Add blog post for Ozgur Web Gunleri
