@@ -2,6 +2,9 @@
 #### [Current]
 
 
+#### 1.3.12.0
+ * [0b6c76c](../../commit/0b6c76c) - __(Murat Kemal BAYGN)__ Fix URL for Russian blog post
+
 #### 1.3.11.0
  * [f19896b](../../commit/f19896b) - __(Murat Kemal BAYGN)__ Fix name
 
