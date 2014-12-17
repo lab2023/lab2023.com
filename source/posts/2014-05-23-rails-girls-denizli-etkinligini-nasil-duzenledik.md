@@ -9,7 +9,7 @@ Rails Girls, **Finlandiya** kökenli bir  topluluktur. Amacı, dünyadaki Rails 
 Dünyanın birçok şehrinde düzenlenmiş veya düzenlenmeye devam eden, Rails Girls etkinliğinin Denizli' deki ev sahipliğini üstlenmeye karar verdik. Peki, Nasıl?
 
 14 - 15 Mart tarihlerinde düzenlenen [Rails Girls Ankara](http://railsgirls.com/ankara), bize Rails Girls Denizli etkinliğini düzenlemek için ilham kaynağı oldu diyebilirim. Denizli' de ben ve iş arkadaşlarım - [Safiye Sepetçi](https://twitter.com/safiyesepetci)
-ve [Clara Isabel Pantoja](https://twitter.com/klapancg) - böyle bir etkinlik tüm dünyada düzenleniyorsa, Denizli' de neden olmasın diye düşündük ve [Rails Girls](http://railsgirls.com/)
+ve [Clara Isabel PANTOJA MUÑOZ](https://twitter.com/klapancg) - böyle bir etkinlik tüm dünyada düzenleniyorsa, Denizli' de neden olmasın diye düşündük ve [Rails Girls](http://railsgirls.com/)
 sayfasını incelemeye başladık. Ardından [Rails Girls](http://railsgirls.com/) ekibi ile iletişime geçtik, gerekli formu doldurup gönderdik ve bekleme sürecine geçtik.
 Biz bu süreci beklerken daha önce [Rails Girls İstanbul](http://railsgirls.com/istanbul) etkinliğini gerçekleştiren [Kader Sucuk](https://twitter.com/sucuklukfasulye) ve [Ender Ahmet Yurt](https://twitter.com/enderahmetyurt) bizimle iletişime geçip
 her türlü yardım ve destekte bulundular.

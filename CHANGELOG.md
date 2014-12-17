@@ -2,6 +2,9 @@
 #### [Current]
 
 
+#### 1.3.10.0
+ * [0eeebd3](../../commit/0eeebd3) - __(Murat Kemal BAYGN)__ Fix urls and authors
+
 #### 1.3.9.0
  * [c08802c](../../commit/c08802c) - __(Murat Kemal BAYGN)__ Fix blog post link
 

@@ -21,9 +21,9 @@ Lab2023 olarak yaptığımız sunumlara katılıp yanımızda olan siz dostları
 ### Ekibimizin yaptığı sunumlar
 
  * [Ruby on Rails 4.2 İle Gelen Kullanışlı Yenilikler](https://speakerdeck.com/tayfunoziserikan/ruby-on-rails-4-dot-2-ile-gelen-kullanisli-yenilikler) - Tayfun Öziş ERİKAN
- * [Design Processes and Resources for] (https://speakerdeck.com/claraisabelpantoja/design-processes-and-resources-for-successful-web-applications)  [Successful Web Applications] (https://speakerdeck.com/kamilala/design-processes-and-resources-for-successful-web-applications) - Clara Isabel Pantoja Muñoz - Kamila Gareeva
- * [All about creative commons] (https://speakerdeck.com/claraisabelpantoja/all-about-creative-commons) - Clara Isabel Pantoja Muñoz
- * [Animation techniques and principles to make your web application designs more attractive.] (https://speakerdeck.com/kamilala/web-animation)- Kamila Gareeva
+ * [Design Processes and Resources for] (https://speakerdeck.com/claraisabelpantoja/design-processes-and-resources-for-successful-web-applications)  [Successful Web Applications] (https://speakerdeck.com/kamilala/design-processes-and-resources-for-successful-web-applications) - Clara Isabel PANTOJA MUÑOZ - Kamila GAREEVA
+ * [All about creative commons] (https://speakerdeck.com/claraisabelpantoja/all-about-creative-commons) - Clara Isabel PANTOJA MUÑOZ
+ * [Animation techniques and principles to make your web application designs more attractive.] (https://speakerdeck.com/kamilala/web-animation)- Kamila GAREEVA
  * [JAX-RS ile RESTful Java Web Servisleri] (https://speakerdeck.com/baygunm/jax-rs-ile-restful-java-web-servisleri) - Murat Kemal BAYGÜN
 
 
