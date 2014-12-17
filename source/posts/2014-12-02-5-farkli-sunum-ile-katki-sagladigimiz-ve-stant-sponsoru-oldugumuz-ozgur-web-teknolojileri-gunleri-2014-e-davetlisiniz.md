@@ -14,7 +14,7 @@ Bunun yanı sıra stant sponsoru da olduğumuz etkinlikte sizleri de aramızda g
 Etkinlikte yer alan sunumlarımıza ait detaylar aşağıdaki gibidir.
 
 
-### 07 Aralık 2014 - Cumartesi
+### 06 Aralık 2014 - Cumartesi
 
 #### Kerem Can Karakaş Salonu
 
