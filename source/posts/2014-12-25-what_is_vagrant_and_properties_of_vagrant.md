@@ -1,5 +1,5 @@
 ---
-title: What is vagrant and properties of vagrant ?
+title: What is vagrant and properties of vagrant?
 date: 2014-12-25
 author: leylakapi
 tags: vagrant, virtual-machine, virtual-box, ssh, script, shell, en
