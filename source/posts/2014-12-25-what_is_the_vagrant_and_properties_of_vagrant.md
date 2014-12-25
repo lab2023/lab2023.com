@@ -1,16 +1,16 @@
 ---
 title: What is vagrant and properties of vagrant ?
-date: 2014-10-13 
+date: 2014-12-25
 author: leylakapi
 tags: vagrant, virtual-machine, virtual-box, ssh, script, shell, en
 ---
 
 ### Properties of Vagrant
 
-`Vagrant` is an application which runs your application in a virtual machine, which means 
+`Vagrant` is a tool which runs your application in a virtual machine, which means
 you can create your project environment in a virtual machine. Thanks to Vagrant, you can clone your local environment in a virtual machine.
-So, when you send your project to `server`, you don't see any bug or error on your server.
-On the other hand vagrant is useful, while you are working in a team.
+So, when you send your project to `server`, you don't see any bugs or errors on your server.
+On the other hand, vagrant is useful while you are working in a team.
 
 ### How to Set Up Vagrant on Ubuntu Desktop
 
@@ -33,7 +33,7 @@ $ sudo apt-get install vagrant
 ...
 ```
 
-### 2) Create Vagrant Folder
+### 2) Create Vagrant Folders
 
 Continue on terminal, write below commands,
 
@@ -67,14 +67,14 @@ For create new virtual machine, you should initialize precise32 box,
 ```bash
 $ vagrant init precise32
 ```
-When you wrote above command, you get warning about it, this means include `Vagrantfile`.
+When you write above command, you get warning about it, this means include `Vagrantfile`.
 
 ### 5) Install Virtual Machine configuration
 
 ```bash
 $ wget https://raw.github.com/saasbook/courseware/master/vm-setup/configure-image-0.10.3.sh
 ```
-You should configure permission for virtual machine configuration
+You should change permission to executable for virtual machine configuration
 
 ```bash
 $ chmod +x configure-image-0.10.3.sh
@@ -143,7 +143,7 @@ For more detail about Vagrant, you can look ;
 - [Vagrant](http://docs.vagrantup.com/v2/getting-started/index.html) 
 - [Vagrant on Ubuntu](https://github.com/saasbook/courseware/wiki/Setting-Up-Vagrant-Environment-on-Ubuntu-Platform)
 
-Or,
+or,
 
 if you want to read same article with details in Turkish, you can read it [here](http://lab2023.com/vagranta-giris.html).
  
