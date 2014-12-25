@@ -5,7 +5,7 @@ author: marjinal1st
 tags: ruby, rails, activerecord, tr
 ---
 
-Popüler Ruby web framework’ü Rails’in 4.2 sürümü, kararlı olarak yayınladı. Sürüm, son betasından bu yana 1600’den fazla commit ile güncellendi ve kullanıma hazır hale getirildi. Şimdi sürümdeki önemli özelliklere tekrardan göz atalım:
+Popüler Ruby web framework’ü Rails’in 4.2 sürümü, kararlı olarak yayınlandı. Sürüm, son betasından bu yana 1600’den fazla commit ile güncellendi ve kullanıma hazır hale getirildi. Şimdi sürümdeki önemli özelliklere tekrardan göz atalım:
 
 ### Active Job ve Action Mailer #deliver_later
 
