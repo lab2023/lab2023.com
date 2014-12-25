@@ -34,7 +34,7 @@ http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html
 
 Google Summer of Code ile gelen bu proje sayesinde, sayfa bir istisna/hata oluşturduğu zaman anında bir konsol açılıyor. Bu konsoldan o anda geçerli olan işlemleri ve değişkenleri denetleyebilmeniz sağlanıyor. Buna ek olarak, sadece hata oluştuğunda değil, geliştirme sürecinde iken konsolu sayfanın altında sürekli açık bırakabiliyorsunuz.
 
-![webconsole](https://cloud.githubusercontent.com/assets/705116/3825943/a010af92-1d5a-11e4-84c2-4ed0ba367f4e.gif)
+![webconsole] (../assets/images/articles/2014-12-22-rails-4-2-kararli-surum-yayinlandi/webconsole.gif)
 
 ### Foreign Key
 
