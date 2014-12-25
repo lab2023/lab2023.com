@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 1.3.15.1
+ * [18f2051](../../commit/18f2051) - __(Murat Kemal BAYGN)__ Release 1.3.15.1
  * [6112da0](../../commit/6112da0) - __(Murat Kemal BAYGN)__ Change file name for blog post
  * [f0ca886](../../commit/f0ca886) - __(Murat Kemal BAYGN)__ Fix typos and change date
  * [dea9e92](../../commit/dea9e92) - __(Murat Kemal BAYGN)__ Fix typo
