@@ -1,6 +1,77 @@
 
 #### [Current]
+ * [94663c0](../../commit/94663c0) - __(Tayfun Ozis ERIKAN)__ Bulutfon links were updated.
+ * [f9f230d](../../commit/f9f230d) - __(Tayfun Ozis ERIKAN)__ Middleman and font-awesome were updated. Some contents were changed.
 
+#### 1.3.16.0
+ * [4d79fd1](../../commit/4d79fd1) - __(Murat Kemal BAYGN)__ Change the gif file with local resized one
+
+#### 1.3.15.1
+ * [18f2051](../../commit/18f2051) - __(Murat Kemal BAYGN)__ Release 1.3.15.1
+ * [6112da0](../../commit/6112da0) - __(Murat Kemal BAYGN)__ Change file name for blog post
+ * [f0ca886](../../commit/f0ca886) - __(Murat Kemal BAYGN)__ Fix typos and change date
+ * [dea9e92](../../commit/dea9e92) - __(Murat Kemal BAYGN)__ Fix typo
+ * [c8a9347](../../commit/c8a9347) - __(Ahmet Sezgin Duran)__ SH-57 #time 20m Add Rails news blog post
+ * [eeb14f2](../../commit/eeb14f2) - __(Murat Kemal BAYGN)__ SH-50 Fix the grammar msitakes for article about Vagrant and properties
+ * [b21cfba](../../commit/b21cfba) - __(leylakapi)__ SH-50 #time 2m What is the vagrant and properties of vagrant ?
+
+Update typo
+
+ * [897013e](../../commit/897013e) - __(leylakapi)__ SH-50 #time 10m What is the vagrant and properties of vagrant ?
+
+Update typo
+
+ * [55fe907](../../commit/55fe907) - __(leylakapi)__ SH-50 #time 30m initialize post
+
+#### 1.3.15.0
+ * [51a1597](../../commit/51a1597) - __(Murat Kemal BAYGN)__ Remove wrong titled file for blog post
+
+#### 1.3.14.0
+ * [1c09fbf](../../commit/1c09fbf) - __(Murat Kemal BAYGN)__ Fix Turkish URL
+
+#### 1.3.13.0
+ * [d16edef](../../commit/d16edef) - __(Murat Kemal BAYGN)__ Fix Spanish URL
+
+#### 1.3.12.0
+ * [0b6c76c](../../commit/0b6c76c) - __(Murat Kemal BAYGN)__ Fix URL for Russian blog post
+
+#### 1.3.11.0
+ * [f19896b](../../commit/f19896b) - __(Murat Kemal BAYGN)__ Fix name
+
+#### 1.3.10.0
+ * [0eeebd3](../../commit/0eeebd3) - __(Murat Kemal BAYGN)__ Fix urls and authors
+
+#### 1.3.9.0
+ * [c08802c](../../commit/c08802c) - __(Murat Kemal BAYGN)__ Fix blog post link
+
+#### 1.3.8.1
+ * [3b7eca4](../../commit/3b7eca4) - __(Murat Kemal BAYGN)__ Release 1.3.8.1
+ * [25c2b08](../../commit/25c2b08) - __(Murat Kemal BAYGN)__ SH-53 Prepare for publish
+ * [1d60b95](../../commit/1d60b95) - __(Murat Kemal BAYGN)__ SH-56 Remove responsible names
+ * [ae9f21b](../../commit/ae9f21b) - __(Murat Kemal BAYGN)__ SH-56 Add blog post for Ozgur Web Gunleri
+ * [0f9c953](../../commit/0f9c953) - __(Murat Kemal BAYGN)__ Fix date
+ * [094187e](../../commit/094187e) - __(Murat Kemal BAYGN)__ SH-53 Fix typo
+ * [3577a97](../../commit/3577a97) - __(Murat Kemal BAYGN)__ SH-53 Fix Turkish translation and typo in Engish
+ * [1ca7099](../../commit/1ca7099) - __(safiyesepetci)__ revieved leyla's blog post (typo fixed )
+ * [da3e350](../../commit/da3e350) - __(Murat Kemal BAYGN)__ SH-53 Make some fixes on the Spanish article for Bulutofn Animation
+ * [94749ab](../../commit/94749ab) - __(Murat Kemal BAYGN)__ SH-53 Make some fixes on the English article
+ * [2173914](../../commit/2173914) - __(Murat Kemal BAYGN)__ SH-53 Make some fixes on the Turkish and English article
+ * [290bf67](../../commit/290bf67) - __(Kamila Gareeva)__ posts changed
+ * [649674b](../../commit/649674b) - __(leylakapi)__ Add tr of blog post and add ru tag on page
+ * [f24d036](../../commit/f24d036) - __(Kamila Gareeva)__ added new blog post
+
+#### 1.3.8.0
+ * [d8fc053](../../commit/d8fc053) - __(Murat Kemal BAYGN)__ Release 1.3.8.0
+ * [b682e12](../../commit/b682e12) - __(safiyesepetci)__ updated safiye's team photos
+ * [1eef622](../../commit/1eef622) - __(safiyesepetci)__ LAB-75 #time 3m removed Turku from our web page
+
+#### 1.3.7.1
+ * [10da5b1](../../commit/10da5b1) - __(Murat Kemal BAYGN)__ Release 1.3.7.1
+ * [3975144](../../commit/3975144) - __(Murat Kemal BAYGN)__ SH-55 Fix some typo for the OWTG event invite
+ * [3667751](../../commit/3667751) - __(Tayfun Ozis ERIKAN)__ SH-55 New article was added
+
+#### 1.3.7.0
+ * [cf73399](../../commit/cf73399) - __(Tayfun Ozis ERIKAN)__ Article URLs was fixed.
 
 #### 1.3.6.0
  * [f358b96](../../commit/f358b96) - __(Tayfun Ozis ERIKAN)__ Article dates and URLs were fixed.
