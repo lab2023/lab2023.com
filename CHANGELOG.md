@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [c52cf43](../../commit/c52cf43) - __(Tayfun Ozis ERIKAN)__ Duplicated link was removed
+
+#### 1.4.0.0
+ * [cc08805](../../commit/cc08805) - __(Tayfun Ozis ERIKAN)__ Bump version 1.4.0.0
  * [94663c0](../../commit/94663c0) - __(Tayfun Ozis ERIKAN)__ Bulutfon links were updated.
  * [f9f230d](../../commit/f9f230d) - __(Tayfun Ozis ERIKAN)__ Middleman and font-awesome were updated. Some contents were changed.
 
