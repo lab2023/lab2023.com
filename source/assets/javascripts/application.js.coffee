@@ -1,6 +1,7 @@
 #= require bootstrap
 #= require vendor/retina-1.1.0.min
 #= require vendor/skrollr.min.js
+#= require vendor/jquery.typer.js
 
 # Define dynamic resize function
 dynamicResizer = ->
@@ -65,4 +66,7 @@ $(document).ready ->
   dynamicResizer()
 
 
+$ ->
+  $('[data-typer-targets]').typer()
+  return
 
