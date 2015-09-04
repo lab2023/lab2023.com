@@ -1,4 +1,11 @@
 %header#header.header
+  .multi-lang
+    %ul
+      %li
+        = link_to 'TR', '#'
+      %li &
+      %li
+        = link_to 'EN', '#'
   .wrapper
     .heroes
       = image_tag 'logo.png', class: 'logo'
@@ -33,3 +40,5 @@
           %li=link_to 'Blog', '/blog.html'
           %li=link_to 'Contact Us', '#contact-us'
           %li=link_to 'Hire Us', 'mailto:hello@lab2023.com', class: 'btn'
+          %li.nav-lang=link_to 'TR', '#'
+          %li=link_to 'EN', '#'
