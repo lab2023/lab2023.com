@@ -152,6 +152,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.3)
   builder (~> 3.2.2)
+  i18n
   middleman (~> 3.3.8)
   middleman-blog (~> 3.5.3)
   middleman-deploy (~> 1.0.0)

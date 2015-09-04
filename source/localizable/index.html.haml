@@ -1,0 +1,209 @@
+%section#our-works
+  .container.contents
+    .row
+      .col-lg-8.col-lg-offset-2
+        %h1.title= t('navigation.our_works')
+        %p.extra
+          = t('our_work.content')
+        %p
+          = link_to 'https://www.github.com/lab2023/playbook', target: '_blank' do
+            = t('our_work.read_more')
+            %i.fa.fa-arrow-circle-right
+  .contents-alternate
+    .container.contents
+      .row
+        .col-lg-8.col-lg-offset-2
+          %div.work-item
+            %h3= t('our_work.work-item.bulutfon-tel')
+            %p
+              = t('our_work.work-item.bulutfon-info')
+            %p
+              = link_to 'https://www.bulutfon.com/', target: '_blank' do
+                = t('our_work.work-item.visit-project')
+                %i.fa.fa-arrow-circle-right
+            = link_to 'https://www.bulutfon.com/', target: '_blank' do
+              = image_tag 'works/bulutfon.png', class: 'img-responsive'
+
+          %hr.divider/
+
+          %div.work-item
+            %h3= t('our_work.work-item.diagnoscope-syp')
+            %p
+              = t('our_work.work-item.diagnoscope-info')
+            %p
+              = link_to 'http://www.diagnoscope.com/', target: '_blank' do
+                = t('our_work.work-item.visit-project')
+                %i.fa.fa-arrow-circle-right
+            = link_to 'http://www.diagnoscope.com/', target: '_blank' do
+              = image_tag 'works/diagnoscope.png', class: 'img-responsive'
+          %hr.divider/
+
+          %div.work-item
+            %h3=t('our_work.work-item.aydede-abt')
+            %p
+              =t('our_work.work-item.aydede-content')
+              %br/
+              =t('our_work.work-item.aydede-br')
+
+            %p
+              = link_to 'http://www.aydede.com/', target: '_blank' do
+                = t('our_work.work-item.visit-project')
+                %i.fa.fa-arrow-circle-right
+
+            = link_to 'http://www.aydede.com/', target: '_blank' do
+              = image_tag 'works/aydede.png', class: 'img-responsive'
+          %p.extra
+            = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+              %strong= t('our_work.work-item.button-work-with-us')
+              = t('our_work.work-item.button-click')
+
+%section#our-team
+  .container.contents
+    .row
+      .col-lg-8.col-lg-offset-2
+        %h1.title= t('navigation.our_team')
+        %p.extra
+          = t('our-team.read-history')
+          %br/
+          = t('our-team.read-open-source')
+        %p
+          = link_to 'https://github.com/lab2023', target: '_blank' do
+            = t('our-team.use-our-open-source')
+            %i.fa.fa-arrow-circle-right
+
+    .row
+      .col-lg-10.col-lg-offset-1
+        %ul.team-members
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/onurozgurozkan', target: '_blank' do
+              .image-filter
+              = image_tag 'team/onur-ozgur-ozkan.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.onur-ozgur-ozkan')
+              %p.content
+                = t('our-team.member.about.onur-ozgur-ozkan')
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/toziserikan', target: '_blank' do
+              .image-filter
+              = image_tag 'team/tayfun-ozis-erikan.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.tayfun-ozis-erikan')
+              %p.content
+                = t('our-team.member.about.tayfun-ozis-erikan')
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/Sevliya', target: '_blank' do
+              .image-filter
+              = image_tag 'team/serdar-yagci.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.serdar-yagci')
+              %p.content
+                =t('our-team.member.about.serdar-yagci')
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/isoakbudak', target: '_blank' do
+              .image-filter
+              = image_tag 'team/ismail-akbudak.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title=t('our-team.member.ismail-akbudak')
+              %p.content
+                = t('our-team.member.about.ismail-akbudak')
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/safiyesepetci', target: '_blank' do
+              .image-filter
+              = image_tag 'team/safiye-sepetci.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.safiye-sepetci')
+              %p.content
+                = t('our-team.member.about.safiye-sepetci')
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/leylakapi', target: '_blank' do
+              .image-filter
+              = image_tag 'team/leyla-kapi.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.leyla-kapi')
+              %p.content
+                = t('our-team.member.about.leyla-kapi')
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/marjinal1st', target: '_blank' do
+              .image-filter
+              = image_tag 'team/ahmet-sezgin-duran.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title=t('our-team.member.ahmet-sezgin-duran')
+              %p.content
+                =t('our-team.member.about.ahmet-sezgin-duran')
+
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'http://www.twitter.com/klapancg', target: '_blank' do
+              .image-filter
+              = image_tag 'team/clara-isabel-pantoja.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.clara-isabel-pantoja')
+              %p.content
+                = t('our-team.member.about.clara-isabel-pantoja')
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'https://twitter.com/kamilagareeva1', target: '_blank' do
+              .image-filter
+              = image_tag 'team/kamila-gareeva.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.kamila-gareeva')
+              %p.content
+                = t('our-team.member.about.kamila-gareeva')
+
+          %li{ data: {toggle: :popover, placement: :top} }
+            = link_to 'https://twitter.com/olcay_yaclo', target: '_blank' do
+              .image-filter
+              = image_tag 'team/olcay-oransoy.jpg', class: 'img-circle'
+            .member-info.popover-content
+              %h4.title= t('our-team.member.olcay-oransoy')
+              %p.content
+                = t('our-team.member.about.olcay-oransoy')
+
+        %p.extra
+          = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+            %strong= t('our-team.button-join-us')
+            = t('our-team.button-apply')
+
+
+%section#contact-us.contents-alternate
+  .container.contents
+    %h1= t('navigation.contact_us')
+    %h4= t('contact-us.name-of-firm')
+    %address
+      = t('contact-us.adress-firm')
+      %br/
+      = t('contact-us.mail-phone')
+      %br/
+      = link_to "https://www.google.com/maps/place/37°44'19.7%22N+29°05'35.2%22E/@37.7386245,29.0928367,357m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0", target: '_blank' do
+        %i.fa.fa-map-marker
+        = t('contact-us.coordinate-firm')
+
+
+    %ul.social
+      %li{'data-toggle' => 'tooltip', title: 'GitHub'}
+        = link_to 'https://github.com/lab2023', target: '_blank' do
+          %i.fa.fa-github.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Dribbble'}
+        = link_to 'https://dribbble.com/lab2023', target: '_blank' do
+          %i.fa.fa-dribbble.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Twitter'}
+        = link_to 'https://twitter.com/lab2023', target: '_blank' do
+          %i.fa.fa-twitter.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Facebook'}
+        = link_to 'https://www.facebook.com/lab2023', target: '_blank' do
+          %i.fa.fa-facebook.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'Flickr'}
+        = link_to 'https://www.flickr.com/photos/122188945@N05', target: '_blank' do
+          %i.fa.fa-flickr.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'YouTube'}
+        = link_to 'http://www.youtube.com/user/thelab2023', target: '_blank' do
+          %i.fa.fa-youtube.fa-3x
+      %li{'data-toggle' => 'tooltip', title: 'RSS'}
+        = link_to 'http://lab2023.com/feed.xml', target: '_blank' do
+          %i.fa.fa-rss.fa-3x
+    %p.extra
+      = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
+        %strong= t('our_work.work-item.button-work-with-us')
+        = t('our_work.work-item.button-click')

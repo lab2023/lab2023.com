@@ -23,6 +23,6 @@ gem 'middleman-blog', '~> 3.5.3'
 gem 'middleman-syntax', '~> 2.0.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'nokogiri', '~> 1.6.6.2'
-
+gem 'i18n'
 # For feed.xml.builder
 gem 'builder', '~> 3.2.2'

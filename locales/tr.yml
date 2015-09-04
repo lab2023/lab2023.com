@@ -1,0 +1,92 @@
+---
+tr:
+  name: LAB2023
+  content_tur: "seven insanlar"
+  navigation:
+    toggle: Toggle navigation
+    our_works: Çalışmalarımız
+    our_team: Ekibimiz
+    blog: Blog
+    contact_us: İletişim
+    hire_us: Bize Ulaşın
+  header:
+    say-hello: ""
+    simple: "Basit olan Mükemmeldir"
+    name-of-firm: ! "%{name}"
+    hello: "'e Merhaba deyin"
+    content: ""
+    content_tr: ! "%{content_tur}"
+    work-area:
+      design: tasarlamayı
+      product: ""
+      product_tr: "Ürün"
+      developing: geliştirmeyi
+    scroll-down: ASAĞI İN
+  our_work:
+    read_more: Daha fazlasını playbookta okumaya devam edin
+    content: Müşterilerimizin fikirlerini hayata geçirmek üzere bir araya gelmiş;
+             pazarlamacı, tasarımcı ve geliştiricilerden oluşan; web ve mobil uygulamalar hazırlayan bir ekibiz.
+             Bizler, fikirleri taslak olarak çizer, çizimleri prototip haline getirir, prototiplerden uygulamayı geliştirir
+             ve sonucunda çalışan ürünü müşterilerimize teslim ederiz. Teslim aşamasından sonra, ürünün kullanımını ölçer ve yönetiriz.
+    work-item:
+      bulutfon-tel: Bulutfon Telekomünikasyon AŞ.
+      bulutfon-info: Arama yapma ve karşılama, raporlama, ses kaydı, dahili ve grup oluşturma, robot operatör,
+                     konferans, sesli mesaj, telesekreter mesajlarının email atılması vb. özellikleri sunan bir servistir.
+                     Bulutfonun tüm yazılım altyapısı Lab2023 tarafından geliştirilmiştir.
+      visit-project: Projemize göz atın
+      diagnoscope-syp: Diagnoscope Hastalık Belirtileri Tarama Uygulaması
+      diagnoscope-info: Diagnoscope, sağlık şikayetlerinden yola çıkarak belirti taraması yapan bir yazılımdır.
+                        Program, tarama boyunca kullanıcının işaretlediği belirtilerin bir sağlık sorununun belirtilerine
+                        benzeyip benzemediğini kontrol eder, bir benzerlik bulursa kişiyi ilgili doktora yönlendirir.
+                        Uygulama web ve mobil cihazları desteklemektedir.
+      button-work-with-us: Sizin için çalışmamızı istermisiniz?
+      button-click: Bizimle iletişime geçin
+      aydede-abt: Aydede - Your Gateway to Global Innovation in Merchandising
+      aydede-content: Aydede's aim to help brands create the personal relationships they need
+                      with their customers via unique designs that deliver
+                      emotionally satisfying consumer experience.
+      aydede-br: We have redesigned their logo and website.
+  our-team:
+    read-history: Lab2023, 2010 yılında kuruldu.
+                  Bizler kaliteye, zanaata ve disipline önem veriyoruz.
+    read-open-source: Biz Açık kaynak yazılımına aktif olarak katkıda bulunmaktayız
+    use-our-open-source: Açık kaynak yazılımımızı kullanın
+    button-join-us: Ekibin bir üyesi olmak istermisiniz?
+    button-apply: Başvuru için tıklayınız
+    member:
+      onur-ozgur-ozkan: Onur Ozgur OZKAN | Kurucu
+      tayfun-ozis-erikan: Tayfun Ozis ERIKAN | Kurucu &amp; CEO
+      muhammet-dilek: Muhammet DILEK | CTO Web &amp; Mobil Geliştirici
+      serdar-yagci: Serdar YAGCI | Web Geliştirici
+      safiye-sepetci: Safiye SEPETCI | Web Geliştirici
+      leyla-kapi: Leyla KAPI | Web Geliştirici
+      clara-isabel-pantoja: Clara Isabel PANTOJA | Grafik Dizayn
+      kamila-gareeva: Kamila GAREEVA | Grafik Dizayn
+      olcay-oransoy: Olcay ORANSOY | Stajyer
+      about:
+        onur-ozgur-ozkan: Ekonomi Biliminden mezun olmuştur. Kebab Projesinin çekirdek geliştiricisi. Lab2023 ve Bulutfon Kurucu & CEO, Konuşmacı, açık kaynak geliştiricisi.
+        tayfun-ozis-erikan: Web Geliştirici, Grafik & Web dizayn
+                            Ruby, Ruby on Rails, Php, Zend Framework, CodeIgniter, Doctrine,
+                            Ext JS & Sencha Touch, Sass, Compass Kullanıcı
+                            Kebab Project Geliştirici, GitHub Kullanıcısı, Blogger, Konuşmacı,
+                            Lab2023 Bilişim Teknolojileri AŞ
+                            ve Bulutfon Telekomünikasyon AŞ kurucusu .
+        muhammet-dilek: Ruby on rails ile web tabanlı uygulamalar geliştirmeyi sever. Apple ürünlerini çok sever.
+                        Boş zamanlarında blog yazıları yazar.
+        serdar-yagci: PHP, Objective - C dillerini ve javascript framework kullanılır. Ayrıca fotoğrafçı ve gezgin biridir.
+        safiye-sepetci: HTML5, CSS3, Haml, Sass, Javascript gibi front-end teknolojilerini kullanmayı sever.
+        leyla-kapi: HTML5, CSS3, Haml, Sass, Javascript gibi front-end teknolojilerini kullanmayı sever. Ayrıca boş vakitlerinde Ruby ve Ruby on Rails üzerinde çalışmalarda bulunur.
+        clara-isabel-pantoja: Yaratıcı, aktif, multimedia ve iletişim konularında grafik tasarımcısı, interactive tasarıma ve bilişim teknoloji projelerine ilgi duymaktadır. Fotoğraf, sanal efekt ve web tasarımında mukemmel bir motivasyona sahip. Müzik ve müzeler onun için vazgeçilmezlerdendir. İşinde herzaman sanat ve teknolojinin uyumu vardır.
+        kamila-gareeva: Sanatçı, 2D animator, grafik - tasarımcısı
+        olcay-oransoy: Olcay, ülkemizdeki en genç Ruby on Rails geliştiricisi. Ekibizdeki en genç stajyer.
+                       Bilgisayar kullanmaya 3 yaşında başlamıştır. İlgili olduğu alan genel olarak backend sistemlerdir.
+                       Top Gear en büyük fanlarından biridir.
+
+  contact-us:
+    name-of-firm: Lab2023 Bilişim Teknolojileri AŞ
+    adress-firm: Pamukkale Teknokent D-Blok 116 Denizli / TÜRKİYE
+    mail-phone: hello@lab2023.com | +90 850 885 0 522
+    coordinate-firm: 37.7386245, 29.0928367
+  footer:
+    name: © 2014 LAB2023, AŞ.
+    content: Tüm tasarımların, materiyallerin ve içeriklerin kullanım hakkı LAB2023 AŞ aittir.

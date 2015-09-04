@@ -36,6 +36,9 @@ page '/feed.xml', layout: false
 # Helpers
 ###
 
+#i18n
+activate :i18n, path: '/:locale/', mount_at_root: false
+
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 

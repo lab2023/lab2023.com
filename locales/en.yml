@@ -1,0 +1,102 @@
+---
+en:
+  navigation:
+    toggle: Toggle navigation
+    our_works: Our Works
+    our_team: Our Team
+    blog: Blog
+    contact_us: Contact Us
+    hire_us: Hire Us
+  header:
+    say-hello: SAY HELLO TO
+    name-of-firm: LAB2023
+    simple: "Simple is Perfect"
+    hello: ""
+    content: People who love
+    content_tr: ""
+    work-area:
+      design: designing
+      product: product
+      product_tr: ""
+      developing: developing
+    scroll-down: SCROLL DOWN
+  our_work:
+    read_more: Read more in our playbook
+    content: We are a team of marketers, designers and developers.
+             Clients hire us to develop their web and mobile apps.
+             We sketch, prototype, make and ship working software.
+             After shipping software, we measure and maintain
+             use of software. See some examples below.
+    work-item:
+      bulutfon-tel: Bulutfon Telecommunications Corp.
+      bulutfon-info: Bulutfon is internet based phone provider which authorized by public authority.
+                     Our services are voip calls, ip pbx, ivr, voice mail, fax, voice recording and development tools
+                     for developers (API, SDK). All software infrastructure of Bulutfon is developed by Lab2023.
+      visit-project: Visit project
+      diagnoscope-syp: Diagnoscope Symptom Checker Apps
+      diagnoscope-info: Diagnoscope is a symptom checker application. It analyzes the symptoms that you selected,
+                        compares them with those of any known disease, informs you about your health status and
+                        directs you to the appropriate specialist. We develop web, iPhone, iPad apps for end
+                        users and admin panel for admins.
+      button-work-with-us: Want us to work for you?
+      button-click: Click here to hire us
+      aydede-abt: Aydede - Your Gateway to Global Innovation in Merchandising
+      aydede-content: Aydede's aim to help brands create the personal relationships they need
+                      with their customers via unique designs that deliver
+                      emotionally satisfying consumer experience.
+      aydede-br: We have redesigned their logo and website.
+  our-team:
+    read-history: lab2023 was founded in 2010.
+                  We care about quality, craft, and disciplined experimentation.
+    read-open-source: We are active contributors to open source software.
+    use-our-open-source: Use our open source software
+    button-join-us: Want to join our team?
+    button-apply: Click here to apply
+    member:
+      onur-ozgur-ozkan: Onur Ozgur OZKAN | Co-founder
+      tayfun-ozis-erikan: Tayfun Ozis ERIKAN | Co-founder &amp; CEO
+      ismail-akbudak: İsmail AKBUDAK | Web - Mobile Developer
+      murat-kemal-baygun: Murat Kemal BAYGUN | COO
+      muhammet-dilek: Muhammet DILEK | Web &amp; Mobile Developer
+      hamit-turku-kaya: Hamit Turku KAYA | Web &amp; Mobile Developer
+      serdar-yagci: Serdar YAGCI | Web Developer
+      safiye-sepetci: Safiye SEPETCI | Web Developer
+      leyla-kapi: Leyla KAPI | Web Developer
+      ahmet-sezgin-duran: Ahmet Sezgin DURAN | Web Developer
+      clara-isabel-pantoja: Clara Isabel PANTOJA | Graphic Designer
+      kamila-gareeva: Kamila GAREEVA | Graphic Designer
+      olcay-oransoy: Olcay ORANSOY | Intern
+      about:
+        onur-ozgur-ozkan: I graduated in economics. I am the creator of Kebab Project, co-founder & CEO at Lab2023 and Bulutfon, public speaker, open source developer.
+        tayfun-ozis-erikan: Web Developer, Graphic & Web Designer
+                            Ruby, Ruby on Rails, Php, Zend Framework, CodeIgniter, Doctrine,
+                            Ext JS & Sencha Touch, Sass, Compass User
+                            Kebab Project Developer, GitHub User, Blogger, A Public Speaker
+                            The Co-Founder of Lab2023 Information Technologies Inc.
+                            and Bulutfon Telecommunication Inc.
+        murat-kemal-baygun: He loves software development and leading software development. He supports continuous improvement and lean software development. He has a daughter and a son.
+        muhammet-dilek: He likes to develop web based applications with Ruby on Rails. He extremely likes Apple products.
+                        He is blogging in his spare time.
+        hamit-turku-kaya: He likes to develop web &amp; mobile applications also he is interesting with game development.
+                          He works with Ruby on Rails, PHP  and Javascript Frameworks on web based applications and Java(Android), Objective - C (IOS)
+                          on mobile applications.
+        serdar-yagci: He knows PHP, Objective - C and Javascript Frameworks. He is photographer and traveler.
+        safiye-sepetci: She likes to use front-end technologies like  HTML5, CSS3, Haml, Sass, Javascript.
+        leyla-kapi: She likes to use front-end technologies like  HTML5, CSS3, Haml, Sass, Javascript. She interested in Ruby, Ruby on Rails.
+        ahmet-sezgin-duran: Web Developer. Interested in high-level programming languages such as Ruby, Python and Java. Supports free software and uses GNU/Linux. Likes back-end coding and developing-playing indie games. Fan of Nintendo and Valve games and a true Otaku.
+        clara-isabel-pantoja: Creative and proactive person of graphic communication design and emphasis in multimedia design. Interested in interactive design and information technology projects. Has great motivation for photography, visual effects and web design. Likes music, museums and the integration of art and technology in her work.
+        kamila-gareeva: Artist, 2D animator, graphic - designer
+        olcay-oransoy: Olcay is probably the youngest Ruby on Rails developer in the country.
+                       He is our youngest intern. He started to use computer at the age of 3.
+                       He works hard on developing his skills on every aspects of web development.
+                       But his main area of interest is backend systems.
+                       He is a Hot Wheels collectionner and one of the biggest Top Gear fans.
+        ismail-akbudak: Software Developer, PHP, CodeIgniter, Ruby On Rails, JavaScript, JQuery, Founder Of Hepgezelim. I love to use Ubuntu, to follow new technologies and electronics.
+  contact-us:
+    name-of-firm: Lab2023 Information Technologies Corp.
+    adress-firm: Pamukkale Teknokent D-Block 116 Denizli / TURKEY
+    mail-phone: hello@lab2023.com | +90 850 885 0 522
+    coordinate-firm: 37.7386245, 29.0928367
+  footer:
+    name: © 2014 LAB2023, CORP.
+    content: The all designs, materials and contents trademarks of lab2023, corp.

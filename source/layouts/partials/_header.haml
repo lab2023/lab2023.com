@@ -2,43 +2,57 @@
   .multi-lang
     %ul
       %li
-        = link_to 'TR', '#'
+        = link_to 'TR', '/tr/index.html'
       %li &
       %li
-        = link_to 'EN', '#'
+        = link_to 'EN', '/en/index.html'
   .wrapper
     .heroes
       = image_tag 'logo.png', class: 'logo'
       %h1
-        SAY HELLO TO
-        %strong LAB2023
+        = t('header.say-hello')
+        %strong= t('header.name-of-firm', name: t('name'))
+        = t('header.hello')
       %hr
       %h2
-        People who love
+        = t('header.content')
+        = t('header.work-area.product_tr')
         %strong
-          %span.a designing
-          %span.b & developing
-        product
+          %span.a= t('header.work-area.design')
+          %span.b &
+          = t('header.work-area.developing')
+        = t('header.work-area.product')
+        = t('header.content_tr', content_tur: t('content_tur'))
       %p.scroll-down
         %a{href: '#our-works'}
-          %span SCROLL DOWN
+          %span= t('header.scroll-down')
           %i.fa.fa-angle-down.fa-5x
 
   %nav#navigation.navbar.navbar-default.navbar-fixed-top{role: 'navigation'}
     .container
       .navbar-header
         %button.navbar-toggle{'data-target' => '.navbar-collapse', 'data-toggle' => 'collapse', type: 'button'}
-          %span.sr-only Toggle navigation
+          %span.sr-only= t('navigation.toggle')
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
         %a.navbar-brand{href: '#home'}
       .collapse.navbar-collapse
         %ul.nav.navbar-nav.navbar-right
-          %li=link_to 'Our Works', '#our-works'
-          %li=link_to 'Our Team', '#our-team'
-          %li=link_to 'Blog', '/blog.html'
-          %li=link_to 'Contact Us', '#contact-us'
-          %li=link_to 'Hire Us', 'mailto:hello@lab2023.com', class: 'btn'
-          %li.nav-lang=link_to 'TR', '#'
-          %li=link_to 'EN', '#'
+          %li
+            =link_to '#our-works' do
+              = t('navigation.our_works')
+          %li
+            =link_to '#our-team' do
+              = t('navigation.our_team')
+          %li
+            =link_to '/blog.html' do
+              = t('navigation.blog')
+          %li
+            =link_to '#contact-us' do
+              = t('navigation.contact_us')
+          %li
+            =link_to 'mailto:hello@lab2023.com', class: 'btn' do
+              = t('navigation.hire_us')
+          %li.nav-lang=link_to 'TR', '/tr/index.html'
+          %li=link_to 'EN', '/en/index.html'
