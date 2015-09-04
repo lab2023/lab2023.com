@@ -4,6 +4,9 @@
 @import "mixins"
 @import "animations"
 @import "highlight"
+@import "demo"
+@import "bg-head"
+@import "fallback"
 
 hr.divider
   border-color: #BDC3C7
@@ -21,23 +24,29 @@ p.extra
   margin-top: 40px
 
 header
+  width: 100%
+
+  .logo
+    width: 252px
+    height: 253px
+    margin-bottom: 50px
+    opacity: .99
   .wrapper
     color: white
     text-align: center
-    min-height: 722px
+    max-height: 950px
     padding:
-      top:  70px
+      top:  140px
     background-color: $base-bg-color
+    position: relative
+    z-index: -1
     +at2x('../images/header-bg', jpg, center center)
     background-attachment: fixed
+    opacity: .90
     +background-size(cover)
     background:
       position: center center
       repeat: no-repeat
-    img.logo
-      width: 252px
-      height: 253px
-      margin-bottom: 50px
     h1
       font:
         size: 3.3em
@@ -54,6 +63,8 @@ header
         font-weight: 400
     hr
       width: 50%
+      position: relative
+      left: 25%
 
     p.scroll-down
       margin-top: 50px
@@ -102,7 +113,8 @@ header
           background-color: $base-color
           &:hover
             background-color: darken($base-color, 10)
-
+#logo
+  opacity: .98 !important
 .contents
   text-align: center
   padding: 80px 0

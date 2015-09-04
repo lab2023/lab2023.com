@@ -1,6 +1,8 @@
 #= require bootstrap
 #= require vendor/retina-1.1.0.min
 #= require vendor/skrollr.min.js
+#= require vendor/jquery.gridrotator.js
+#= require vendor/modernizr.custom.26633.js
 
 # Define dynamic resize function
 dynamicResizer = ->
@@ -65,4 +67,25 @@ $(document).ready ->
   dynamicResizer()
 
 
-
+$ ->
+  $('#ri-grid').gridrotator
+    rows: 5
+    columns: 8
+    maxStep: 4
+    interval: 2000
+    w1024:
+      rows: 5
+      columns: 6
+    w768:
+      rows: 5
+      columns: 5
+    w480:
+      rows: 6
+      columns: 4
+    w320:
+      rows: 7
+      columns: 4
+    w240:
+      rows: 7
+      columns: 3
+  return
