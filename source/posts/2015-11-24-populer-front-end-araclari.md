@@ -1,6 +1,6 @@
 ---
 title: Popüler front-end araçları
-date: 2015-09-08
+date: 2015-11-24
 author: safiyesepetci
 tags: grunt, yeoman, bower, gulp, js, npm, node
 ---
