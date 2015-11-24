@@ -1,5 +1,15 @@
 
 #### [Current]
+ * [ed274ae](../../commit/ed274ae) - __(Tayfun Öziş ERİKAN)__ Filename and publish date were changed
+ * [6ad48c5](../../commit/6ad48c5) - __(Tayfun Öziş ERİKAN)__ Typer words were added
+ * [a31c9a4](../../commit/a31c9a4) - __(Tayfun Öziş ERİKAN)__ People uncommented
+ * [eaa17e0](../../commit/eaa17e0) - __(safiyesepetci)__ SH-58 #time 1h make some improvements on the article - added images
+ * [402768c](../../commit/402768c) - __(safiyesepetci)__ SH-58 #time 1d make some improvements on the article
+ * [8a5ea37](../../commit/8a5ea37) - __(safiyesepetci)__ SH-58 #time 4h Popüler front-end araçları
+ * [e9911e9](../../commit/e9911e9) - __(leylakapi)__ Add animate to header
+
+#### v1.7.0.0
+ * [3846be6](../../commit/3846be6) - __(Tayfun Öziş ERİKAN)__ Bump version v1.7.0.0
  * [00cc8a8](../../commit/00cc8a8) - __(leylakapi)__ Try to rm people for preparing
 
 #### 1.6.0
