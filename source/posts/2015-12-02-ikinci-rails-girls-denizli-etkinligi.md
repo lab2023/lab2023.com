@@ -1,5 +1,5 @@
 ---
-title: Rails Girls Denizli Etkinliği
+title: İkinci Rails Girls Denizli Etkinliği
 date: 2015-12-02
 tags: railsgirls, denizli, railsgirlsdenizli, rails, ruby, girls, women, programming, event, organization, pauteknokent, lab2023, bulutfon, netinternet, denizlihs, soroptimistik derneği
 ---
