@@ -1,22 +1,23 @@
 ---
-title: Ruby on Rails Uygulamasının Capistrano 3 ile Kolayca Yayınlanması
+title: Deploy Ruby on Rails Application Quickly With Capistrano 3
 date: 2015-12-21
 author: isoakbudak
-tags: ruby, rails, sunucu, server, client, cap, capistrano, ssh, bash, script, ruby on rails, capistrano 3, Web, cybele, shell, ubuntu, vps, rbenv, tr
+tags: ruby, rails, server, client, cap, capistrano, ssh, bash, script, ruby on rails, capistrano 3, web, cybele, deploy, shell, ubuntu, vps, rbenv, en
 ---
 
-Merhaba,
+Hi,
 
-Sizlere Ubuntu-14.04 sunucusunu sıfırdan ayağa kaldırıp, kendi rails uygulamalarınızı sunucuya hızlı bir şekilde aktarabileceğiniz <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> uygulamasından bahsedeceğim ve bazı kaynak kodlar paylaşacağım. Kullandığım capistrano'nun versiyonu 3.4'tür. Sunucu üzerinde kullandığım ruby versiyonu ise 2.2.3'tür. Capistrano'nun kaynak kodlarına <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> adresinden erişip göz atabilirsiniz.  Ben kendi uygulamalarımda sunucu olarak <a href="https://www.digitalocean.com/pricing/" target="_blank">DigitalOcean</a> kullanıyorum. DigitalOcean'dan alacağınız 10 $'lık bir sunucuyu aşşağıda vereceğim bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.
-
-Şimdi izliyeceğimiz adımlar gelecek olursak, öncelikle DigitalOcean'dan yeni bir Droplet oluşturuyoruz ve dağıtım olarak Ubuntu 14.04 seçiyoruz.
+In this post, I will write about the  <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a>  deploy tool on `Ruby On Rails(ROR)` and I will share some code blocks
+that is a bash script for starting the server from beginning. I am using Ubuntu-14.04 server. Capistrano version is 3.4. Ruby version on my server is 2.2.3. Capistrano is an open source project,
+if you want to look the source code, you can visit the <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> page. I am using <a href="https://www.digitalocean.com/pricing/" target="_blank">DigitalOcean</a> as a server supplier.
+The servers that cost $10  are enough to run ROR application. You can prepare your server within 2-3 hours w<span id="result_box" class="short_text" lang="en"><span class="hps">ith</span> <span class="hps">the following bash</span> <span class="hps">scripts.
+Those bash scripts prepare basic environment for Ruby libraries and create `deploy user` for using on deployment process.  Also one of them prepares Ruby environment under the `deploy user` home folder(default `deploy user` name you can change it  before to run scripts)</span></span> .
 
 ![Digital Ocean](../assets/images/articles/2015-12-21-ruby-on-rails-digital-ocean.png)
 
 &nbsp;
 
-Sunucuda ruby ortamı için temel kurulum scripti aşağıdaki gibidir. Bu script root kullanıcısı olarak bağlanıp çalıştırmalısınız.
-
+Base installation bash script for Ruby environment is as follows. You must run this script as a root user.
 
 ```bash
 ## Run this script with root user
@@ -52,7 +53,9 @@ fancy_echo "Installing postgresql ..."
 apt-get -y install postgresql libpq-dev
 ```
 
-Sunucuda deploy kullanıcısı için kurulum scripti aşağıdaki gibidir. Bu script'ide root kullanıcısı olarak bağlanıp çalıştırmalısınız.
+
+Deploy user creating script is as follows. You must run this script as a root user too.
+
 
 ```bash
 # Deploy group
@@ -110,9 +113,10 @@ else
 fi
 ```
 
+
 &nbsp;
 
-Sunucuda deploy kullanıcısı için ruby ortamını hazırlama scripti aşağıdaki gibidir. Bu script deploy kullanıcısı olarak bağlanıp çalıştırmalısınız.
+This script  is preparing ruby environment for `deploy user`. You should run this script as a `deploy user`.
 
 ```bash
 ## Run this command with deploy user
@@ -156,21 +160,21 @@ exec $SHELL
 
 &nbsp;
 
-Bu scriptler ile sunucunuzu bir rails uygulamasını çalıştıracak duruma getirmiş olursunuz.
+Your server is ready to run ROR application  with those scripts.
 
-Şimdi bir rails uygulaması oluşturup, uygulamayı bir sunucuya aktarma işlemlerini anlatacağım.
-<a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">Ruby On Rails</a> bildiğiniz ruby dili ile, <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC(Model-View-Controller)</a> mimari deseni ile geliştirilmiş ve bünyesinde <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY(Don't Repeat Yourself)</a>, <a href="https://en.wikipedia.org/wiki/Convention_over_configuration" target="_blank">CoC(Convetion over configuration)</a> gibi yazılım felsefelerini barındıran açık kaynak bir uygulama çatısıdır.
+Now I will write about deployment process for simple application.
+As you know <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">ROR</a> has been developed with Ruby programming language,  developing with <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC(Model-View-Controller)</a> open source web framework and it includes principles like <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY(Don't Repeat Yourself)</a>, <a href="https://en.wikipedia.org/wiki/Convention_over_configuration" target="_blank">CoC(Convetion over configuration)</a> .
 
-Hızlı bir Ruby On Rails uygulaması çıkarmak istiyorsanız size <a href="https://rubygems.org/gems/cybele" target="_blank">Cybele</a> ruby gem'ini öneririm. Bu gem bir uygulamada olması gereken kullanıcı giriş, bilgi güncelleme, yönetici tarafına giriş işlemleri gibi her projede kullanacağınız kısımlar hazır bir taslak olarak geliyor. Bu sayede önceden yazdığınız kodları tekrar yazmak zorunda kalmıyorsunuz. Cybele geminin taslak olarak getirdiği Gemfile'ı <a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile">github</a> adresinden inceleyebilirsiniz. Sunucuya kolay bir şekilde uygulamayı taşımak için kullancağımız gemler bu Gemfile'da yer almaktadır.
-Eğer <code> rails new project_name</code> şeklinde sıfırdan bir proje oluşturursanız veya halihazırda bulunan bir projenizi sunucuya taşımak isterseniz, kullanacağım komutlar dizisinin yer aldığı <a href="https://github.com/lab2023/recipes_matic">recipes_matic</a> gemini incelemenizi tavsiye ederim.
+If you want to create rails application quickly, you should look the <a href="https://rubygems.org/gems/cybele" target="_blank">Cybele Ruby Gem</a> . This gem provides useful gem list and creates common pages for using in every application like user register, user login, update login and profile info, admin login. Thus you don't repeat yourself on every new project. You can look the template Gemfile of Cybele gem, also from <a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile">github</a>.  Some useful deploy gems are on this file.
+If you create project  <code>rails new project_name</code>  command or if you want to deploy project that is already initialized, my deploy commands is in this <a href="https://github.com/lab2023/recipes_matic">recipes_matic</a> gem, you should look that.
 
-Ben cybele ile oluşturduğumuz bir proje için bu adımları anlataçağım.
+I will show deploy steps using with cybele gem.
 <ol>
-	<li>Proje oluştur <code>$ cybele project_name</code></li>
-	<li>Deploy repo bilgilerini düzenle <code>/config/deploy.rb</code>
+	<li>Create project <code>$ cybele project_name</code></li>
+	<li>Edit deploy repo on this file <code>/config/deploy.rb</code>
 <pre> set :repo_url, 'git@github.com:your_username/your_repo_name.git'</pre>
 </li>
-	<li>Production deploy bilgilerini düzenle <code> /config/deploy/production.rb </code>
+	<li>Edit production deploy settings on this file <code> /config/deploy/production.rb </code>
 <pre>
 server "example.com", user: "#{fetch(:local_user)}", roles: %w{app db web}, primary: true, port: 22
 set :rails_env, 'production'
@@ -178,7 +182,7 @@ set :branch, 'master'
 set :project_domain, “example.com”
 </pre>
 </li>
-	<li>Staging deploy bilgilerini düzenle <code>/config/deploy/staging.rb</code>
+	<li>Edit staging deploy settings on this file <code>/config/deploy/staging.rb</code>
 <pre>
 server "staging.example.com", user: "#{fetch(:local_user)}", roles: %w{app db web}, primary: true, port: 22
 set :rails_env, 'staging'
@@ -186,8 +190,8 @@ set :branch, 'develop'
 set :project_domain, “staging.example.com”
 </pre>
 </li>
-	<li>Hata bildirimleri için email adresini düzenle
- <br/> <code>config/environments/production.rb </code><br/> <code>config/environments/staging.rb</code>
+	<li> Edit your_email address for to get info about the occurred errors
+<br/><code>config/environments/production.rb </code><br/> <code>config/environments/staging.rb</code>
 <pre>config.middleware.use ExceptionNotification::Rack,
 :email =&gt; {
   :email_prefix =&gt; "[project_name]",
@@ -196,20 +200,19 @@ set :project_domain, “staging.example.com”
 }
 </pre>
 </li>
-	<li>Aşağıdaki dosyalarda SMTP ayarlarını ayarla <br/><code>config/settings/staging.yml</code><br/><code>config/settings/production.yml</code></li>
-	<li>Github da bulunan private repolara lokaldeki gibi erismek icin şu komutları çalıştır
-            <br/><code>$ eval `ssh-agent -s`</code> <br/><code>$ ssh-add </code></li>
-	<li>Gelelim terminalden çalıştırmamız gereken komutlar dizisine,Production sunucusunda ki deploy ortamının hazır olup olmadığını kontrol eder.
+	<li>Edit yout SMTP settings on those files <br/><code>config/settings/staging.yml</code><br/> <code>config/settings/production.yml</code></li>
+	<li>If you have private repo on github, run this commands in order for to access repo from server <br/><code>$ eval `ssh-agent -s`</code><br/> <code>$ ssh-add </code></li>
+	<li>Let's deploy our application with capistrano,
+Check production server is ready to deployment
 <code>$ bundle exec cap production deploy:check</code>
-Production sunucusunda nginx, postgresql, unicorn, <a href="http://meskyanichi.github.io/backup/v3/">backup</a>(veritabanı yedek alma gemi) gibi ayarları yapar.
+Setup nginx, postgresql, unicorn, <a href="http://meskyanichi.github.io/backup/v3/">backup</a>(backup gem for to get database backup before deploy) for production server.
 <code>$ bundle exec cap production deploy:prepare</code>
-Production sunucusuna deploy işlemini gerçekleştirir.
+Do deploy to production server.
 <code>$ bundle exec cap production deploy</code></li>
 </ol>
 &nbsp;
 
-Örnek dosyalarımızda şu şekilde olmalıdır.
-Proje anadizininde bulunan Capfile örneği:
+Example Capfile file under project root directory
 
 ```rb
 # Load DSL and set up stages
@@ -239,7 +242,8 @@ require 'capistrano/maintenance'
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 ```
 
-Proje config dizininde bulunan deploy.rb örneği:
+
+Example deploy.rb file under project config directory
 
 ```rb
 # config valid only for current version of Capistrano
@@ -273,7 +277,7 @@ set :default_env, { path: '$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH' }
 # Look our recipes
 # https://github.com/lab2023/recipes_matic
 load 'config/deploy/recipes/base.rb'
-``` 
+```
 
-Umarım faydalı bir yazı olmuştur.
-Kolay gelsin..
+I hope it is a useful post for you.
+
