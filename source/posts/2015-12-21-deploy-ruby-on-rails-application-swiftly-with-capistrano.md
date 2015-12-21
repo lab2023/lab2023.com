@@ -1,5 +1,5 @@
 ---
-title: Deploy Ruby on Rails Application Swiftly With Capistrano
+title: Deploy Ruby on Rails Application Swiftly With Capistrano 3
 date: 2015-12-21
 author: isoakbudak
 tags: ruby, rails, server, client, cap, capistrano, ssh, bash, script, ruby on rails, capistrano 3, web, cybele, deploy, shell, ubuntu, en
