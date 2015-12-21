@@ -80,28 +80,24 @@ Production sunucusuna deploy işlemini gerçekleştirir.
 
 Örnek dosyalarımızda şu şekilde olmalıdır.
 Proje anadizininde bulunan Capfile örneği:
-<pre>
+
+```rb
 # Load DSL and set up stages
 require 'capistrano/setup'
-
 # Include default deployment tasks
 require 'capistrano/deploy'
 require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'sshkit/sudo'
 require 'capistrano/maintenance'
-
 # Include tasks from other gems included in your Gemfile
-#
 # For documentation on these, see for example:
-#
 #   https://github.com/capistrano/rvm
 #   https://github.com/capistrano/rbenv
 #   https://github.com/capistrano/chruby
 #   https://github.com/capistrano/bundler
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
-#
 # require 'capistrano/rvm'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
@@ -109,59 +105,45 @@ require 'capistrano/maintenance'
 # require 'capistrano/rails/assets'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
-
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
-
-</pre>
+```
 
 Proje config dizininde bulunan deploy.rb örneği:
-<pre>
+
+```rb
 # config valid only for current version of Capistrano
 lock '3.4.0'
-
 set :application, 'appname'
 set :local_user, 'deploy'
 set :stages, %w(staging production)
 set :default_stage, 'production'
 set :repo_url, "git@github.com:username/#{fetch(:application)}.git"
-
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
 # Default deploy_to directory is /var/www/blog2
 set :deploy_to, "/home/#{fetch(:local_user)}/apps/#{fetch(:application)}"
-
 # Default value for :scm is :git
 set :scm, :git
-
 # Default value for :format is :pretty
 # set :format, :pretty
-
 # Default value for :log_level is :debug
 # set :log_level, :debug
-
 # Default value for :pty is false
 set :pty, true
-
 # Default value for :linked_files is []
 set :linked_files, fetch(:linked_files, []).push('config/database.yml')
-
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/upload', 'public/images', 'public/seat_images')
-
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :default_env, { path: '$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH' }
-
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-
 # Look our recipes
 # https://github.com/lab2023/recipes_matic
 load 'config/deploy/recipes/base.rb'
-
-</pre>
+``` 
 
 Umarım faydalı bir yazı olmuştur.
 Kolay gelsin..
