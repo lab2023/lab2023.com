@@ -1,8 +1,8 @@
 ---
-title: Ruby on Rails Uygulamasının Capistrano 3 ile Kolayca Deploy Edilmesi
+title: Ruby on Rails Uygulamasının Capistrano 3 ile Kolayca Yayınlanması
 date: 2015-12-21
 author: isoakbudak
-tags: ruby, rails, sunucu, server, client, cap, capistrano, ssh, bash, script, ruby on rails, capistrano 3, Web, cybele, deploy, shell, ubuntu, tr
+tags: ruby, rails, sunucu, server, client, cap, capistrano, ssh, bash, script, ruby on rails, capistrano 3, Web, cybele, shell, ubuntu, vps, rbenv, tr
 ---
 
 Merhaba arkadaşlar,
