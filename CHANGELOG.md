@@ -1,5 +1,25 @@
 
 #### [Current]
+
+
+#### 1.10.0.1
+ * [5fd326e](../../commit/5fd326e) - __(leylakapi)__ Bump version 1.10.0.1
+ * [d4bd028](../../commit/d4bd028) - __(leylakapi)__ Edit code blog
+ * [a1376ef](../../commit/a1376ef) - __(leylakapi)__ Add tags to file
+ * [d34a846](../../commit/d34a846) - __(leylakapi)__ Rename file
+ * [e2c6220](../../commit/e2c6220) - __(leylakapi)__ deploy-ruby-on-rails-application-swiftly-with-capistrano
+
+#### v1.10.0.0
+ * [62d3c86](../../commit/62d3c86) - __(leylakapi)__ Bump version v1.10.0.0
+ * [928bbc9](../../commit/928bbc9) - __(leylakapi)__ Update typo
+ * [fce4ac1](../../commit/fce4ac1) - __(leylakapi)__ Update typo and fix image
+ * [d939c2d](../../commit/d939c2d) - __(leylakapi)__ Add rails girls event blog
+
+#### 1.9.0
+ * [6e37ee5](../../commit/6e37ee5) - __(leylakapi)__ Bump version 1.9.0
+
+#### v1.8.0.0
+ * [d4dc5d0](../../commit/d4dc5d0) - __(Tayfun Öziş ERİKAN)__ Bump version v1.8.0.0
  * [ed274ae](../../commit/ed274ae) - __(Tayfun Öziş ERİKAN)__ Filename and publish date were changed
  * [6ad48c5](../../commit/6ad48c5) - __(Tayfun Öziş ERİKAN)__ Typer words were added
  * [a31c9a4](../../commit/a31c9a4) - __(Tayfun Öziş ERİKAN)__ People uncommented
