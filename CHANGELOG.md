@@ -1,6 +1,9 @@
 
 #### [Current]
+ * [88122de](../../commit/88122de) - __(leylakapi)__ Add blog post bulutfon sdk
 
+#### 1.10.1.0
+ * [743948c](../../commit/743948c) - __(leylakapi)__ Update typo and fix changelog
 
 #### 1.10.0.1
  * [5fd326e](../../commit/5fd326e) - __(leylakapi)__ Bump version 1.10.0.1
