@@ -8,7 +8,7 @@ tags: ruby, bulutfon, sdk, api, call, programming, process
 Merhaba,
 
 Bugün sizlere, gelişiminde bizim de katkıda bulunduğumuz
-[`Bulutfon API`](http://api.bulutfon.com/docs) 'si için `Ruby` programlama dili ile yazılmış olan [`bulutfon_sdk gem`](https://github.com/bulutfon/ruby-sdk) 'den bahsedecek ve örnek kodlar göstereceğiz.
+[`Bulutfon API`](https://www.bulutfon.com/?ref=1) 'si için `Ruby` programlama dili ile yazılmış olan [`bulutfon_sdk gem`](https://github.com/bulutfon/ruby-sdk) 'den bahsedecek ve örnek kodlar göstereceğiz.
 
 
 Bu gem ile uygulamanızın [`Bulutfon API Servisi`](https://github.com/bulutfon/documents) ile kolayca haberleşmesini sağlayabileceksiniz. SMS gönderme, arama kayıtlarına erişme, otomatik arama
@@ -386,7 +386,7 @@ puts message.create(params)
 
 Kaynakça,
 
-- [https://bulutfon.com/](https://bulutfon.com/)
+- [https://bulutfon.com/](https://www.bulutfon.com/?ref=1)
 - [https://github.com/bulutfon/documents](https://github.com/bulutfon/documents)
 - [https://github.com/bulutfon/ruby-sdk](https://github.com/bulutfon/ruby-sdk)
 - [http://api.bulutfon.com/docs](http://api.bulutfon.com/docs)

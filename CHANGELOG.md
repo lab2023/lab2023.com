@@ -1,5 +1,9 @@
 
 #### [Current]
+ * [7409bb8](../../commit/7409bb8) - __(leylakapi)__ Update typo
+
+#### v1.11.1.0
+ * [b265322](../../commit/b265322) - __(leylakapi)__ Update changelog
  * [8f7d5ec](../../commit/8f7d5ec) - __(leylakapi)__ Update typo of blog posts
 
 #### v1.11.0.0

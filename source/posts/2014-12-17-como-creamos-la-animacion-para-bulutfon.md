@@ -20,7 +20,7 @@ En este artículo trataré de realizar una corta explicación sobre el proceso d
 
 ### 1. paso es crear la historia...
 
-Esta historia cuenta sobre los productos de Bulutfon, explicando todas las oportunidades que Bulutfon proporciona a sus clientes, ofreciendo cómodos servicios, para hacer el emprendimiento de negocios mucho más facil.
+Esta historia cuenta sobre los productos de [Bulutfon](https://www.bulutfon.com/?ref=1), explicando todas las oportunidades que [Bulutfon](https://www.bulutfon.com/?ref=1) proporciona a sus clientes, ofreciendo cómodos servicios, para hacer el emprendimiento de negocios mucho más facil.
 
 ### 2. paso es crear un personaje principal...
 

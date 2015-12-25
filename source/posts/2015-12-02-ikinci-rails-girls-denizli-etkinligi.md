@@ -22,7 +22,7 @@ kurtulacaklardır. Etkinliğe yanlarında bir kadının eşlik etmesi halinde ko
 Rails Girls etkinliğini en güzel yanlarından birisi de Rails konusunda uzman kişilerin etkinlik sırasında
 size mentorluk etmesi ve yönlendirmesi. Etkinliğe katılmak için programcılık bilgisine sahip olmanıza gerek yoktur.
 
-[Lab2023](http://lab2023.com/) organizatörlüğünde  11 - 12 Aralık 2015 tarihleri arasında Denizli’de [Pamukkale Teknokent](http://pauteknokent.com.tr/teknokent/), [Bulutfon](https://www.bulutfon.com/), [Netinternet](https://www.netinternet.com.tr/), [Denizli Soroptimistik Kulübü](http://www.soroptimistdenizli.org/),
+[Lab2023](http://lab2023.com/) organizatörlüğünde  11 - 12 Aralık 2015 tarihleri arasında Denizli’de [Pamukkale Teknokent](http://pauteknokent.com.tr/teknokent/), [Bulutfon](https://www.bulutfon.com/?ref=1), [Netinternet](http://www.netinternet.com.tr/panel/aff.php?aff=916), [Denizli Soroptimistik Kulübü](http://www.soroptimistdenizli.org/),
 [Denizli Hackerspace](http://www.denizlihs.org/) ve [Lab2023](http://lab2023.com/) 'ün sponsorluk destekleriyle gerçekleşecek olan Rails Girls etkinliğinin programı şu şekildedir.
 
 - Cuma akşamı katılımcılar ve mentörler ile tanışma ve kurulum partisi yapılacaktır. Bu partide cumartesi günü neler yapılacağı
