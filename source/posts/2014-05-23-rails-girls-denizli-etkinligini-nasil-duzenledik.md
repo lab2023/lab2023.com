@@ -24,7 +24,7 @@ Etkinliğin gerçekleşeceği yer için Denizli' nin Silikon Vadisi olarak adlan
 Sayın [Doç.Dr. Hasalettin Deligöz](http://hdeligoz.pau.edu.tr/?lang=en) ile konuştuk ve Hasalettin Bey uluslararası bir etkinlikte bulunmaktan mutluluk duyacağını bizlere her türlü yardımda ve destekte
 bulunacağını belirtti, böylece etkinlik yerini Pamukkale Teknokent Konferans salonunda gerçekleştirmeye karar verdik.
 
-Tabi böyle bir etkinlik için sponsorlar olmazsa olmazlardan, [Bulutfon](https://bulutfon.com/), [Netinternet](http://www.netinternet.com.tr/) ve
+Tabi böyle bir etkinlik için sponsorlar olmazsa olmazlardan, [Bulutfon](https://www.bulutfon.com/?ref=1), [Netinternet](http://www.netinternet.com.tr/panel/aff.php?aff=916) ve
 [Lab2023](http://lab2023.com/) sponsorlarımız olmayı kabul ettiler.
 
 Organize olduktan sonra, sıra mentörleri kararlaştırmak gerekiyordu. Aslında mentörleri kararlaştırırken çok fazla zorlanmadık, nedeni ise çalıştığım
@@ -52,7 +52,7 @@ ile iletişime geçip duyuru ve süreçlerin nasıl olması konusuna dair bilgi 
 ![Rails Girls Denizli](../assets/images/articles/2014-05-23-rails-girls-event/railsgirls4.jpg)
 
 Etkinlikte farklı sektördeki kadınların rails kodladıklarını gördükten sonra sanırım etkinlik belirtilen amacına ulaştığını düşünüyorum.
-Başta bu organizasyonda bizlere desteği ve yardımlarından ötürü sponsorlarımıza [Bulutfon](https://bulutfon.com/), [Netinternet](http://www.netinternet.com.tr/)
+Başta bu organizasyonda bizlere desteği ve yardımlarından ötürü sponsorlarımıza [Bulutfon](https://www.bulutfon.com/?ref=1), [Netinternet](http://www.netinternet.com.tr/panel/aff.php?aff=916)
 ve [Lab2023](http://lab2023.com/), bütün sorularımıza cevap veren [Kader Sucuk](https://twitter.com/sucuklukfasulye)' a, [Ender Ahmet Yurt](https://twitter.com/enderahmetyurt)' a, [Sezen Balibeyoğlu](https://twitter.com/SezenBalibeyolu)' na,
 etkinlik yeri için Sayın [Doç.Dr. Hasalettin Deligöz](http://hdeligoz.pau.edu.tr/?lang=en) e, değerli sunumları ile bizleri bilgilendiren  [Vildan Çaputçu](http://www.anjeads.com/tasarimcilar/vildan-caputcu) ve [Serdar Yağcı](https://twitter.com/Sevliya)' ya, katılımcılara, değerli mentörlerimize ve emeği geçen herkese teşekkürlerimizi sunarız .
 

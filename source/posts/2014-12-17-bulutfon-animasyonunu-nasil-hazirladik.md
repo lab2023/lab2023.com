@@ -21,7 +21,7 @@ Bu makalede, animasyon oluşturma ile ilgili kısaca bilgi vermeye çalışacağ
 
 ### 1. adım, bir hikaye oluşturulması...
 
-Bu hikaye bize; Bulutfon ürünlerini anlatıyor; iş kurmayı kolaylaştırmak için Bulutfon'un müşterilere sunduğu fırsatları, sağladığı rahat kullanımlı servisleri açıklıyor.
+Bu hikaye bize; [Bulutfon](https://www.bulutfon.com/?ref=1) ürünlerini anlatıyor; iş kurmayı kolaylaştırmak için [Bulutfon](https://www.bulutfon.com/?ref=1)'un müşterilere sunduğu fırsatları, sağladığı rahat kullanımlı servisleri açıklıyor.
 
 ### 2. adım, bir ana karakter oluşturulması...
 

@@ -10,7 +10,7 @@ Hi,
 In this post, We will write about the  <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a>  deploy tool on `Ruby On Rails(ROR)` and We will share some code blocks
 that is a bash script for starting the server from beginning. We are using Ubuntu-14.04 server. Capistrano version is 3.4. Ruby version on our server is 2.2.3. Capistrano is an open source project,
 if you want to look the source code, you can visit the <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> page.
-For example you can use [Netinternet](https://www.netinternet.com.tr/ssd-vds-sunucular) or [DigitalOcean](https://www.digitalocean.com/) server suppliers. You can prepare your server within 2-3 hours w<span id="result_box" class="short_text" lang="en"><span class="hps">ith</span> <span class="hps">the following bash</span> <span class="hps">scripts.
+For example you can use [Netinternet](http://www.netinternet.com.tr/panel/aff.php?aff=916) or [DigitalOcean](https://www.digitalocean.com/) server suppliers. You can prepare your server within 2-3 hours w<span id="result_box" class="short_text" lang="en"><span class="hps">ith</span> <span class="hps">the following bash</span> <span class="hps">scripts.
 Those bash scripts prepare basic environment for Ruby libraries and create `deploy user` for using on deployment process.  Also one of them prepares Ruby environment under the `deploy user` home folder(default `deploy user` name you can change it  before to run scripts)</span></span> .
 
 Base installation bash script for Ruby environment is as follows. You must run this script as a root user.

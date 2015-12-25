@@ -22,7 +22,7 @@ In this article I will try to give a short explanation about creating an animati
 
 ### 1. step is creating a story...
 
-This story is telling us about Bulutfon products, explaining all the opportunities that Bulutfon gives to customers, offering very comfortable services, to make business foundation easier.
+This story is telling us about [Bulutfon](https://www.bulutfon.com/?ref=1) products, explaining all the opportunities that [Bulutfon](https://www.bulutfon.com/?ref=1) gives to customers, offering very comfortable services, to make business foundation easier.
 
 ### 2. step is creating a main character...
 
