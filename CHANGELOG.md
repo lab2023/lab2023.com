@@ -1,5 +1,14 @@
 
 #### [Current]
+ * [8f7d5ec](../../commit/8f7d5ec) - __(leylakapi)__ Update typo of blog posts
+
+#### v1.11.0.0
+ * [88b15ba](../../commit/88b15ba) - __(leylakapi)__ Bump version v1.11.0.0
+ * [1040be6](../../commit/1040be6) - __(leylakapi)__ Bump version v1.11.0.0
+ * [4ce692a](../../commit/4ce692a) - __(leylakapi)__ remove member from team
+
+#### v1.10.1.1
+ * [fe8696e](../../commit/fe8696e) - __(leylakapi)__ Bump version v1.10.1.1
  * [88122de](../../commit/88122de) - __(leylakapi)__ Add blog post bulutfon sdk
 
 #### 1.10.1.0
