@@ -7,13 +7,9 @@ tags: ruby, rails, sunucu, server, client, cap, capistrano, ssh, bash, script, r
 
 Merhaba,
 
-Sizlere Ubuntu-14.04 sunucusunu sıfırdan ayağa kaldırıp, kendi rails uygulamalarınızı sunucuya hızlı bir şekilde aktarabileceğiniz <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> uygulamasından bahsedeceğim ve bazı kaynak kodlar paylaşacağım. Kullandığım capistrano'nun versiyonu 3.4'tür. Sunucu üzerinde kullandığım ruby versiyonu ise 2.2.3'tür. Capistrano'nun kaynak kodlarına <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> adresinden erişip göz atabilirsiniz.  Ben kendi uygulamalarımda sunucu olarak <a href="https://www.digitalocean.com/pricing/" target="_blank">DigitalOcean</a> kullanıyorum. DigitalOcean'dan alacağınız 10 $'lık bir sunucuyu aşşağıda vereceğim bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.
-
-Şimdi izliyeceğimiz adımlar gelecek olursak, öncelikle DigitalOcean'dan yeni bir Droplet oluşturuyoruz ve dağıtım olarak Ubuntu 14.04 seçiyoruz.
-
-![Digital Ocean](../assets/images/articles/2015-12-21-ruby-on-rails-digital-ocean.png)
-
-&nbsp;
+Sizlere Ubuntu-14.04 sunucusunu sıfırdan ayağa kaldırıp, kendi rails uygulamalarınızı sunucuya hızlı bir şekilde aktarabileceğiniz <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> uygulamasından bahsedecek ve bazı kaynak kodlar paylaşacağız.
+Kullandığımız capistrano'nun versiyonu 3.4'tür. Sunucu üzerinde kullanıdığımız ruby versiyonu ise 2.2.3'tür. Capistrano 'nun kaynak kodlarına <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> adresinden erişip göz atabilirsiniz.
+Ayrıca [Netinternet](https://www.netinternet.com.tr/vps-sunucular) 'ten veya [DigitalOcean](https://www.digitalocean.com/) 'dan alacağınız bir sunucuyu aşağıdaki bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.
 
 Sunucuda ruby ortamı için temel kurulum scripti aşağıdaki gibidir. Bu script root kullanıcısı olarak bağlanıp çalıştırmalısınız.
 
@@ -158,13 +154,14 @@ exec $SHELL
 
 Bu scriptler ile sunucunuzu bir rails uygulamasını çalıştıracak duruma getirmiş olursunuz.
 
-Şimdi bir rails uygulaması oluşturup, uygulamayı bir sunucuya aktarma işlemlerini anlatacağım.
+Şimdi bir rails uygulaması oluşturup, uygulamayı bir sunucuya aktarma işlemlerini anlatacağız.
 <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">Ruby On Rails</a> bildiğiniz ruby dili ile, <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC(Model-View-Controller)</a> mimari deseni ile geliştirilmiş ve bünyesinde <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY(Don't Repeat Yourself)</a>, <a href="https://en.wikipedia.org/wiki/Convention_over_configuration" target="_blank">CoC(Convetion over configuration)</a> gibi yazılım felsefelerini barındıran açık kaynak bir uygulama çatısıdır.
 
-Hızlı bir Ruby On Rails uygulaması çıkarmak istiyorsanız size <a href="https://rubygems.org/gems/cybele" target="_blank">Cybele</a> ruby gem'ini öneririm. Bu gem bir uygulamada olması gereken kullanıcı giriş, bilgi güncelleme, yönetici tarafına giriş işlemleri gibi her projede kullanacağınız kısımlar hazır bir taslak olarak geliyor. Bu sayede önceden yazdığınız kodları tekrar yazmak zorunda kalmıyorsunuz. Cybele geminin taslak olarak getirdiği Gemfile'ı <a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile">github</a> adresinden inceleyebilirsiniz. Sunucuya kolay bir şekilde uygulamayı taşımak için kullancağımız gemler bu Gemfile'da yer almaktadır.
-Eğer <code> rails new project_name</code> şeklinde sıfırdan bir proje oluşturursanız veya halihazırda bulunan bir projenizi sunucuya taşımak isterseniz, kullanacağım komutlar dizisinin yer aldığı <a href="https://github.com/lab2023/recipes_matic">recipes_matic</a> gemini incelemenizi tavsiye ederim.
+Hızlı bir Ruby On Rails uygulaması çıkarmak istiyorsanız size <a href="https://rubygems.org/gems/cybele" target="_blank">Cybele</a> ruby gem'ini öneririz. Bu gem bir uygulamada olması gereken kullanıcı giriş, bilgi güncelleme, yönetici tarafına giriş işlemleri gibi her projede kullanacağınız kısımlar hazır bir taslak olarak geliyor. Bu sayede önceden yazdığınız kodları tekrar yazmak zorunda kalmıyorsunuz. Cybele geminin taslak olarak getirdiği Gemfile 'ı <a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile">github</a> adresinden inceleyebilirsiniz.
+Sunucuya kolay bir şekilde uygulamayı taşımak için kullancağımız gemler bu Gemfile 'da yer almaktadır.
+Eğer <code> rails new project_name</code> şeklinde sıfırdan bir proje oluşturursanız veya halihazırda bulunan bir projenizi sunucuya taşımak isterseniz, kullanacağımız komutlar dizisinin yer aldığı <a href="https://github.com/lab2023/recipes_matic">recipes_matic</a> gemini incelemenizi tavsiye ederiz.
 
-Ben cybele ile oluşturduğumuz bir proje için bu adımları anlataçağım.
+Cybele ile oluşturduğumuz bir proje için bu adımları anlatacagız.
 <ol>
 	<li>Proje oluştur <code>$ cybele project_name</code></li>
 	<li>Deploy repo bilgilerini düzenle <code>/config/deploy.rb</code>
@@ -276,4 +273,4 @@ load 'config/deploy/recipes/base.rb'
 ``` 
 
 Umarım faydalı bir yazı olmuştur.
-Kolay gelsin..
+Kolay gelsin.
