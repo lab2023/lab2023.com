@@ -1,8 +1,12 @@
 
 #### [Current]
+ * [bd9d2c8](../../commit/bd9d2c8) - __(Tayfun Öziş ERİKAN)__ Intern and staff informations was reviewed
+ * [6253924](../../commit/6253924) - __(leylakapi)__ Add new staff
+ * [6707873](../../commit/6707873) - __(leylakapi)__ Rm staff from page
+ * [d5c6cd5](../../commit/d5c6cd5) - __(leylakapi)__ Update links
+ * [d608ba0](../../commit/d608ba0) - __(leylakapi)__ Update links
  * [7409bb8](../../commit/7409bb8) - __(leylakapi)__ Update typo
-
-#### v1.11.1.0
+ * [4b66a88](../../commit/4b66a88) - __(leylakapi)__ Update typo
  * [b265322](../../commit/b265322) - __(leylakapi)__ Update changelog
  * [8f7d5ec](../../commit/8f7d5ec) - __(leylakapi)__ Update typo of blog posts
 
