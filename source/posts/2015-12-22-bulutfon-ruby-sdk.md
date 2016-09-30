@@ -38,7 +38,7 @@ puts bulutfon.details
 ```
 
 # Bulutfon üzerinden erişebileceğiniz nesneler. Ayrıca bu nesneleri ayrı ayrı kullanmak isterseniz alt bölümlerdeki kodları inceleyeniz.
-# Örneğin SMS göndermek için `BulutfonSDK::REST::Message` sınıfını yanlız başına kullanabilirsiniz. Alt kısımda örneği bulunmaktadır.
+# Örneğin SMS göndermek için `BulutfonSDK::REST::Message` sınıfını yalnız başına kullanabilirsiniz. Alt kısımda örneği bulunmaktadır.
 # BulutfonSDK::REST::Message objesi
 ```ruby
 puts bulutfon.messages

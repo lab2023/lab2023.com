@@ -7,7 +7,7 @@ tags: admin theme, design, flat, flat ui, hierapolis, ios 7, kebab, minimalism, 
 
 Merhabalar,
 
-Firmamızın da en temel prensiplerinden birisi olan **"Basit olan mükemmeldir"** prensibine uygun olarak tasarım tendlerinde son dönemlerde ön plana çıkan **"Flat Design"** prensiplerini kendimize yakın bulmaya başladık.
+Firmamızın da en temel prensiplerinden birisi olan **"Basit olan mükemmeldir"** prensibine uygun olarak tasarım trendlerinde son dönemlerde ön plana çıkan **"Flat Design"** prensiplerini kendimize yakın bulmaya başladık.
 
 Bildiğiniz gibi tasarım camiasında son zamanlarda "Flat Design" adı altında yaygınlaşmaya başlayan ve temelinde basitlik yatan bir tasarım akımı başladı. Bu konudaki temel prensiplere <http://designmodo.com/flat-design-principles/> adresidnen göz atablirsiniz.
 
