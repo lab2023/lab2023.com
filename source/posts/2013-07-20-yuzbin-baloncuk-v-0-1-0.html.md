@@ -5,7 +5,7 @@ author: coskuntekin
 tags: haml, sass, compass, tr
 ---
 
-lab2023 ‘ un logosundan baloncuk cıkartabilir miyiz dedik ve basladik kodlamaya. Eger sizde bunu evde denemek istiyorsaniz [buradan][1] kodlara ulasabilirsiniz.
+lab2023 ‘ un logosundan baloncuk cıkartabilir miyiz dedik ve basladik kodlamaya. Eger siz de bunu evde denemek istiyorsaniz [buradan][1] kodlara ulasabilirsiniz.
 
 Bizler HAML, SASS ve COMPAS teknolojilerinden yararlandik. Generator olarak da MIDDLEMAN kullandik.
 
@@ -13,7 +13,7 @@ Bizler HAML, SASS ve COMPAS teknolojilerinden yararlandik. Generator olarak da M
 
 **+keyframes(fly-bubble)**
 
-keyframes ile tıpkı bir gif animasyon ya da flash animasyon hazırlar gibi animasyonu layer lara parçalayıp hareketlilik kazandırabilirsiniz. Keyframe bir animasyon adına ihtyac duyar ve from ile baslayıp to ile biter. Dilerseniz from ve to yerine 0% ve 100% degerlerinide kullanabilirsiniz. Her bir layer yuzdelik dilemlerle ifade edilir. Bu layer lara da olusturmak istenilen animasyona gore css style yazmak mumkundur. Keyframe methodlari;
+keyframes ile tıpkı bir gif animasyon ya da flash animasyon hazırlar gibi animasyonu layer lara parçalayıp hareketlilik kazandırabilirsiniz. Keyframe bir animasyon adına ihtiyac duyar ve from ile baslayıp to ile biter. Dilerseniz from ve to yerine 0% ve 100% degerlerini de kullanabilirsiniz. Her bir layer yuzdelik dilemlerle ifade edilir. Bu layer lara da olusturmak istenilen animasyona gore css style yazmak mumkundur. Keyframe methodlari;
 
 *   animatename
 *   keyframe-selector
@@ -31,11 +31,11 @@ Bunu basta acıklamakta yarar goruyorum. CSS3 Property leri icinde iki tip trans
 *   Matrix
 *   Rotate
 
-**scale** methodu x-axis (x-ekseni) ve y-axis (y-ekseni) seklinde iki deger alır. Bu deger width ve height degerlerine tekabul eder. Bu degerler farklı farklı verebilecegi gibi (+transform(scale(6,8))) beaker bubble da kullanildigi gibi tek bir deger de verilebilir.
+**scale** methodu x-axis (x-ekseni) ve y-axis (y-ekseni) seklinde iki deger alır. Bu deger width ve height degerlerine tekabul eder. Bu degerler farklı farklı verilebilecegi gibi (+transform(scale(6,8))) beaker bubble da kullanildigi gibi tek bir deger de verilebilir.
 
 **+animation-timing-function(ease-in-out)**
 
-Animasyonun hızına fraklı ozel degerler atayarak animasyonun gercege yakın bir hareketlilik kazanmasini saglar. Ornegin bir topun yavaslarak durmasi icin animation-timing-function dan yararlanilabilir.
+Animasyonun hızına farklı ozel degerler atayarak animasyonun gercege yakın bir hareketlilik kazanmasini saglar. Ornegin bir topun yavaslayarak durmasi icin animation-timing-function dan yararlanilabilir.
 
 Dort adet methodu vardır. Bunlar;
 

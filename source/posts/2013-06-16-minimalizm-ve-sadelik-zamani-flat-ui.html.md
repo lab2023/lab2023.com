@@ -7,24 +7,24 @@ tags: admin theme, design, flat, flat ui, hierapolis, ios 7, kebab, minimalism, 
 
 Merhabalar,
 
-Firmamızın da en temellerinden birisi olan **"Basit olan mükemmeldir"** prensibimize uygun olarak tasarım tendlerinde son dönemlerde ön plana çıkan **"Flat Design"** prensiplerini kendimize yakın bulmaya başladık.
+Firmamızın da en temel prensiplerinden birisi olan **"Basit olan mükemmeldir"** prensibine uygun olarak tasarım tendlerinde son dönemlerde ön plana çıkan **"Flat Design"** prensiplerini kendimize yakın bulmaya başladık.
 
 Bildiğiniz gibi tasarım camiasında son zamanlarda "Flat Design" adı altında yaygınlaşmaya başlayan ve temelinde basitlik yatan bir tasarım akımı başladı. Bu konudaki temel prensiplere <http://designmodo.com/flat-design-principles/> adresidnen göz atablirsiniz.
 
 ### Bu akımın en ön plana çıkan prensipleri
 
-*   Herşeyi sade ve basit tut.
+*   Her şeyi sade ve basit tut.
 *   Tipografiye ve okunabilirliğe önem ver.
 *   Renk düzenine önem ver.
 *   Sade ve uyumlu renkleri tercih et.
 *   Renklerde keskin ve net tonlar kullan.
 *   Tasarımını minimalist yap. Karmaşadan uzak dur.
-*   Nereyedeyse hiç kabartma kullanmai herşey düz olsun.
+*   Nereyedeyse hiç kabartma kullanma herşey düz olsun.
 *   Kullanıcı deneyimini ve ilgiyi artırmak için basit animasyonlar kullanın.
 
 Son zamanlarda Apple firmasını da cezbeden bu tarzı, yakın zamanda duyurulan Apple [IOS 7][1]' de yakınen inceleme fırsatı buldum. Apple gerçekten tasarım prensiplerinde radikal değişikliklere giderek 3D kabartmalı formdan daha düz (Flat) bir tarza adım atarak büyük bir değişim geçirmiş. Apple'daki tasarım değişikliklerini kıyaslayan [şu makaleye][2] bir göz atabilirsiniz. Apple gibi bir devin böyle bir karar alması bizi de etkilemiş ve Flat tarza geçme konusunda motive etmiştir.
 
-Bu noktada firma olarak bizde bu tarzı benimsememizi kolaylaştıracak bir framework araştırmaya başladık. Mevcut tarasım araçlarımızda bulunan [Twitter Bootstrap][3]'ın yanına tasarım olarak flat tarzı koyabileceğimiz "[Flat UI][4]" yi keşfettik. Twitter bootstrap ile uyumlu olması, bizim için karar vermemizde en önemli faktörlerden biriydi.
+Bu noktada firma olarak bizde bu tarzı benimsememizi kolaylaştıracak bir framework araştırmaya başladık. Mevcut tarasım araçlarımızda bulunan [Twitter Bootstrap][3]'ın yanına tasarım olarak flat tarzı koyabileceğimiz "[Flat UI][4]" yi keşfettik. Twitter bootstrap ile uyumlu olması, bu kararı vermemizde çok büyük bir rol oynadı.
 
 [Github sayfasında][5] da oldukça popüler ve aktif olan Flat UI bu aşamadan sonra lab2023'ün tasarım araçlarından birisi olacaktır. Ayrıca yakın zamanda geşiştirmeye başladığımız [Kebab Project Evulation][6]' ın (Kebab 3.x) yapı taşlarından olan **Hierapolis Admin Theme**'de kullanılacaktır.
 
