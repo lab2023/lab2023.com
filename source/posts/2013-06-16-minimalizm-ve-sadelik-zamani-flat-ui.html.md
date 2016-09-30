@@ -26,7 +26,7 @@ Son zamanlarda Apple firmasını da cezbeden bu tarzı, yakın zamanda duyurulan
 
 Bu noktada firma olarak bizde bu tarzı benimsememizi kolaylaştıracak bir framework araştırmaya başladık. Mevcut tarasım araçlarımızda bulunan [Twitter Bootstrap][3]'ın yanına tasarım olarak flat tarzı koyabileceğimiz "[Flat UI][4]" yi keşfettik. Twitter bootstrap ile uyumlu olması, bizim için karar vermemizde en önemli faktörlerden biriydi.
 
-[Github sayfasında][5] da oldukça popüler ve aktif olan Flat UI bu aşamadan sonra lab2023'ün tasarım araçlarından birisi olacaktır. Ayrıca yakın zamanda geşiştirmeye başladığımız [Kebab Project Evulation][6]' ın (Kebab 3.x) yapı taşlarından olan **Hierapolis Admin Theme**'de kullanılacaktır.
+[Github sayfasında][5] da oldukça popüler ve aktif olan Flat UI bu aşamadan sonra lab2023'ün tasarım araçlarından birisi olacaktır. Ayrıca yakın zamanda geliştirmeye başladığımız [Kebab Project Evulation][6]' ın (Kebab 3.x) yapı taşlarından olan **Hierapolis Admin Theme**'de kullanılacaktır.
 
 Şimdilik paylaşacaklarım bunlardan ibaret. İyi çalışmalar dilerim.
 
