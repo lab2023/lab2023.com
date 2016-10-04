@@ -17,7 +17,7 @@ Ubuntu'da screen'i kullanmaya başlamak için terminal üzerinde
 ```
 
 komutunu çalıştıralım, bu komut screen komutu yüklüyse, yüklü komutun versiyonunu verir.
-Komutun bulunamadı ile ilgili bir hata mesajı alırsanız screen komutunu yüklemek için:
+Komutun bulunamadığı ile ilgili bir hata mesajı alırsanız screen komutunu yüklemek için:
 
 ```bash
 sudo apt-get install screen

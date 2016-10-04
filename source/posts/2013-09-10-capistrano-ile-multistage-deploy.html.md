@@ -7,7 +7,7 @@ tags: capistrano, deploy, ruby on rails, tr
 
 Ürünlerimizi geliştirme aşamasında production ve staging olarak iki sunucuya deploy ediyoruz. Hafta bitiminde yaptığımız işleri staging sunucusuna deploy edip test edilmesini bekliyoruz. Onay geldiğinde ise production sunucusuna gönderiyoruz.
 
-Deploy işlermlerinde bildiğiniz gibi capistrano kullanıyoruz. İşlemleri halihazırda capistrano kullandığınızı düşünerek anlatacağım.
+Deploy işlemlerinde bildiğiniz gibi capistrano kullanıyoruz. İşlemleri halihazırda capistrano kullandığınızı düşünerek anlatacağım.
 
 `config/deploy.rb` ye capistrano multistage extension ekliyoruz.
 

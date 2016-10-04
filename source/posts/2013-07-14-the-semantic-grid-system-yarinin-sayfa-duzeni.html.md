@@ -9,7 +9,7 @@ tags: samantic grid system, tr
 
 Kullanabileceğiniz 4 adet değişken $column-width, $gutter-width, $columns, $total-width
 
-4 adetde mixin var row, column, pull, push
+4 adet de mixin var row, column, pull, push
 
 En basit olarak şöyle bir **sass** kodundan
 

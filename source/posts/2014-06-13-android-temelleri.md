@@ -264,7 +264,7 @@ ile fragment yaşam döngüsünü kontrol edebileceğimiz obje alınır. Transac
 Bu transaction' ı, commit() fonksiyonu ile çalıştırabiliriz.
 
 Fragment Class' ımız olan _**PlaceholderFragment**_' in fonksiyonları da Activity fonksiyonları gibidir. Fragment içerisinde constructordan sonra ilk olarak onCreateView() fonksiyonu
-çalıştırılır. Bu fonksiyon içerisinde de fragment layout _**LayoutInflater**_ objesi ile xml dosyamız view nesnesine dönüştürülir. Ardından ise oluşturulan view Activity'e döndürülür ve
+çalıştırılır. Bu fonksiyon içerisinde de fragment layout _**LayoutInflater**_ objesi ile xml dosyamız view nesnesine dönüştürülür. Ardından ise oluşturulan view Activity'e döndürülür ve
 activity, bu fragment' i ekrana basar.
 
 Artık temel yapıyı öğrendiğimize göre uygulamamızı çalıştırabiliriz. :)
