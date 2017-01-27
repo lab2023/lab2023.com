@@ -239,9 +239,11 @@
     %h1 Contact Us
     %h4 Lab2023 Information Technologies Corp.
     %address
-      Pamukkale Teknokent D-Block 116 Denizli / TURKEY
+      Pamukkale Teknokent D-Block 116-117 Denizli / TURKEY
       %br/
-      hello@lab2023.com | +90 850 885 0 522
+      = mail_to 'hello@lab2023.com', 'hello@lab2023.com', subject: 'Hello Lab2023'
+      |
+      %a{href: 'tel:+908508850522'}+90 850 885 0 522
       %br/
       = link_to "https://www.google.com/maps/place/37°44'19.7%22N+29°05'35.2%22E/@37.7386245,29.0928367,357m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0", target: '_blank' do
         %i.fa.fa-map-marker
