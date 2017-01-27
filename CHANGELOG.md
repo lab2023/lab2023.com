@@ -1,5 +1,12 @@
 
 #### [Current]
+ * [bd35f1e](../../commit/bd35f1e) - __(Tayfun Öziş ERİKAN)__ Copyright and contact info were improved
+ * [185b318](../../commit/185b318) - __(Tayfun Öziş ERİKAN)__ Team and authors were updated
+ * [e3c2165](../../commit/e3c2165) - __(Tayfun Öziş ERİKAN)__ Ruby version was added
+ * [1dd8948](../../commit/1dd8948) - __(İsmail Akbudak)__ Complete ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi
+
+#### v1.11.3.0
+ * [a802a6f](../../commit/a802a6f) - __(Tayfun Öziş ERİKAN)__ Bump version v1.11.3.0
  * [bd9d2c8](../../commit/bd9d2c8) - __(Tayfun Öziş ERİKAN)__ Intern and staff informations was reviewed
  * [6253924](../../commit/6253924) - __(leylakapi)__ Add new staff
  * [6707873](../../commit/6707873) - __(leylakapi)__ Rm staff from page
