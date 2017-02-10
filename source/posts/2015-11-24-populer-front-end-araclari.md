@@ -237,7 +237,7 @@ komutunu çalıştırarak template oluşturabiliriz.
 ```bash
 yo
 ```
-komutunu yazıyoru.
+komutunu yazıyoruz.
 
 ![yeoman] (../assets/images/articles/25-09-08-tools-for-front-end/yeoman-yo.jpeg)
 

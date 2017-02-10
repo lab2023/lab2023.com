@@ -12,7 +12,7 @@ Bugün sizlere, gelişiminde bizim de katkıda bulunduğumuz
 
 
 Bu gem ile uygulamanızın [`Bulutfon API Servisi`](https://github.com/bulutfon/documents) ile kolayca haberleşmesini sağlayabileceksiniz. SMS gönderme, arama kayıtlarına erişme, otomatik arama
-oluşturma gibi birçok özelliği hızlı bir şekilde uygulmalarınıza entegre edebileceksiniz. [`Bulutfon API`](http://api.bulutfon.com/docs) ile daha fazla neler yapabileceğiniz hakkında bilgi almak için
+oluşturma gibi birçok özelliği hızlı bir şekilde uygulamalarınıza entegre edebileceksiniz. [`Bulutfon API`](http://api.bulutfon.com/docs) ile daha fazla neler yapabileceğiniz hakkında bilgi almak için
 [https://github.com/bulutfon/documents](https://github.com/bulutfon/documents) adresine göz atabilirsiniz.
 
 Sözü daha fazla uzatmadan örnek kodlara geçelim;

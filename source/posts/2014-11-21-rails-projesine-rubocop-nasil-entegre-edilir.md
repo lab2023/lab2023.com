@@ -60,7 +60,7 @@ AllCops:
 ```
 
 şeklinde belirtiyoruz. Ancak eğer var olan dosyalar için işlem yapmak istiyorsanız `.rubocop.yml` dosyasını oluşturmadan da  
-yukarıdaki komutları koşup rubocop'u rails projenize entegre edebilrsiniz.
+yukarıdaki komutları koşup rubocop'u rails projenize entegre edebilirsiniz.
 
 Ek olarak rubocop entegre edildikten sonra projeniz için,
 

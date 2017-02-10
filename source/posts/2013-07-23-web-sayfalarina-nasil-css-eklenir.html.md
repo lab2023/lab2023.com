@@ -42,7 +42,7 @@ Her tag’e özellik atamak kullanışlı değildir, özel durumlarda kullanılm
 
 # 3-Harici stil dosyası ekleme:
 
-Bu yöntemde stil özelliklerimizi .css uzantılı ayrı bir sayfaya yazarız. `<head>...</head>` tag’leri arasındada css dosyamızın yolunu belirterek etkinleştirmiş oluruz.
+Bu yöntemde stil özelliklerimizi .css uzantılı ayrı bir sayfaya yazarız. `<head>...</head>` tag’leri arasında da css dosyamızın yolunu belirterek etkinleştirmiş oluruz.
 
 Örnek: style.css adlı stil dosyası
 
@@ -71,7 +71,7 @@ Bu sayfanın web sayfasına eklenmesi aşağıda gösterilmiştir.
 
 # 4- @import yöntemi ile:
 
-Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönündende 3. yönteme benzer. İçerik bakımından yüklü sitelerde bölümlere ayrılmış stil yapısı için kullanımı uygundur.
+Bu yöntem kullanılış yönünden 2. yönteme, çalışma mantığı yönünden de 3. yönteme benzer. İçerik bakımından yüklü sitelerde bölümlere ayrılmış stil yapısı için kullanımı uygundur.
 
 Örnek:
 
