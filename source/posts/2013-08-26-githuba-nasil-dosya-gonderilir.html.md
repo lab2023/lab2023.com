@@ -7,7 +7,7 @@ tags: github, tr
 
 Github versiyon kontrol sistemleri için bir uzak depodur. Hızlı ve güvenli oluşu, kapsamlı raporlama yapısı ve çoklu çalışma kolaylığı ile birçok yazılımcının vazgeçilmezi olmuştur. Peki github nasıl kullanılır?
 
-Şimdi github'da hesabınızı aldıktan sonra yeni bir repository (depo) oluşturmayı ve oluşturduğumuz repository'ye dosya göndermeyi§ anlatacağım.
+Şimdi github'da hesabınızı aldıktan sonra yeni bir repository (depo) oluşturmayı ve oluşturduğumuz repository'ye dosya göndermeyi anlatacağım.
 
 İlk olarak github hesabımızda repository/new yada create a new repo'ya tıklayarak repomuzu oluşturuyoruz.
 

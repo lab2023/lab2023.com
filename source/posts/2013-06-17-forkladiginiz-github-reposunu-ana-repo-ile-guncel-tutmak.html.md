@@ -7,7 +7,7 @@ tags: branch, fork, git, github, remote, tr
 
 Bildiginiz gibi playbook, rails-template v.b. open source projelerimizi github üzerinden güncellemeye devam ediyoruz.
 
-Biz bu tarz projelerin (kendimize ait olan) her bir forkunun geliştiricilerde olmasının ve güncellemeleri kendi repolarından yapıp ana repoya pull request yapılması gerektigine inanıyoruz.
+Biz bu tarz projelerin (kendimize ait olan) her bir forkunun geliştiricilerde olmasının ve güncellemelerini kendi repolarından yapıp ana repoya pull request yapmaları gerektigine inanıyoruz.
 
 Bunun artı ve eksileri tartışılır ama böylelikle forklama, code review ve pull request süreçlerine de hakimiyet artacaktır. Bunun yanında bireysel github sayfalarımızda da ilgili lab2023 projelerinin tanıtımına katkısı olacaktır.
 
