@@ -22,7 +22,7 @@ dosyası içine aşağıdaki kodu eklemek;
 <br/>
 ## Dikkat Edilmesi Gerekenler
 
-Turbolinks kullanırken dikkat edilmesi gereken bazı noktalar bulunur. Örneğin Turbolinks tüm javascriptleri yeniden yüklemediğinden bazı sayfalarda hatalara 
+Turbolinks kullanırken dikkat edilmesi gereken bazı noktalar bulunur. Örneğin; Turbolinks tüm javascriptleri yeniden yüklemediğinden bazı sayfalarda hatalara
 neden olabilir. Bunun için javascript kodunun Turbolinks'e uygun olarak yazılması gerekir.
 
 JQuery kullanıyorsanız aşağıdaki gibi kullanıyor olabilirsiniz;
@@ -31,7 +31,8 @@ JQuery kullanıyorsanız aşağıdaki gibi kullanıyor olabilirsiniz;
     ready ->
       alert "page has loaded!"
 ```
-Sorun şu ki Turbolinks yüklenen sayfanın üzerine yazacağından bu event tetiklenmeyecektir. Bunu çözmek için çeşitli çözümler bulunur.
+Sorun şu ki Turbolinks standart $('document').ready(); fonksiyonunu tetiklemez. Bunun için özel fonksiyon kullanır. Bu sorunu aşağıdaki
+yöntem ile çözebilirsiniz.
 
 <br/>
 ### Jquery ile çözümü
@@ -45,9 +46,10 @@ Sorun şu ki Turbolinks yüklenen sayfanın üzerine yazacağından bu event tet
 Ready eventinin tetiklenmesini sağlamak için Turbolinks **page:load** eventi ile çözüm sunar.
 
 <br/>
-### Rails ile çözümü
+### Rails'te Kullanımı
 
- Rails uygulamanızın bazı sayfalarında tüm sayfanın yeniden yüklenmesini isterseniz Turbolinks'i ilgili link için kaldırabilirsiniz.
+ Rails uygulamanızın bazı sayfalarında tüm sayfanın yeniden yüklenmesini isterseniz, yani  Turbolinks'i ilgili bağlantı için kapatmak
+ isterseniz aşağıdaki gibi kullanabilirsiniz.
 
 ```bash
 = link_to root_path, turbolinks: false
