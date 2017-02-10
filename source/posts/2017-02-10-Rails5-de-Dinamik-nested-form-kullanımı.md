@@ -82,4 +82,4 @@ $(document).on 'click', 'form .add_fields', (event) ->
 
 Yukarıda yaptığımız işlemler ile aşağıdaki gibi bir çıktı elde edeceksiniz:
 
-![items](articles/2017-02-10-Rails-Dynamic-Nested-Form.png)
+![form](articles/2017-02-10-Rails-Dynamic-Nested-Form.png)
