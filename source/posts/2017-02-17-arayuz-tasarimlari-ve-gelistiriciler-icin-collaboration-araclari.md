@@ -16,17 +16,17 @@ Arayüz tasarımcılarını ele aldığımızda karşımıza, tasarlama, tasarı
 <br>
 ## 1. InvisionApp
 
-![invision](../assets/images/articles/2017-02-17-which-colloboration-tool-is-useful-and-effective/invision-logo-square.png)
+![invision](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/invision-logo-square.png)
 
 İnvisionapp diğer uygulamalara göre biraz daha kendini geliştirmiş diyebiliriz.Yaptığı işler ile adından söz ettirmemesi sürpriz olur.
 
-![invision](../assets/images/articles/2017-02-17-which-colloboration-tool-is-useful-and-effective/mockup-2.png)
+![invision](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/mockup-2.png)
 
 
 
 3 ayrı özellik prototyping, collaboration ve workflow platformu olarak ele almamız doğru olur.Invision üzerinden tasarım yapabilirken, aynı zaman da çalışma arkadaşlarınız ile birlikte çalışmanın herhangi bir noktasına yorum bırakabiliriz.
 
-![invision](../assets/images/articles/2017-02-17-which-colloboration-tool-is-useful-and-effective/mockup-5.png)
+![invision](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/mockup-5.png)
 
 Bu platformun güzel tarafı realtime olarak collaboration sunması.Board kullanarak tasarımlarınızı, tüm takım arkadaşları ile birlikte editleme ve yorumlama imkanınız oluyor.Ayrıca  tüm tasarım sayfalarınızı tek bir layout üzerinde sunum dosyası oluşturarak inceleyebilirsiniz.Built-in layout sistemi yardımıyla tüm tasarımı styleguide ile birlikte sunum haline getirerek, takım arkadaşlarınıza görsel bir zenginlik sağlar.
 
@@ -38,7 +38,7 @@ Başlangıç paketine yıllık üyelik durumunda %10 indirimle ayda 13 dolar, te
 <br>
 ## 2. Redpen.io
 
-![redpen](../assets/images/articles/2017-02-17-which-colloboration-tool-is-useful-and-effective/upload.png)
+![redpen](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/upload.png)
 
 
 Redpen, collaboration platformları arasında özellikleri bakımından kısıtlı ama bir o kadar hızlı uygulamadır.
@@ -52,13 +52,13 @@ Diğer platformlarda olduğu gibi redpen de realtime olarak takım yorumları ve
 <br>
 ## 3. Zeplin
 
-![zeplin](../assets/images/articles/2017-02-17-which-colloboration-tool-is-useful-and-effective/zeplin-logo.png)
+![zeplin](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/zeplin-logo.png)
 
 Sunduğu özellikler bakımından aralarında en hızlı, kolay ve kullanışlı gördüğüm platform diyebiliriz.Tasarımları teslim ederken size sunduğu özellikler cezbedebilir, aynı zamanda çalışmalarınızda da büyük kolaylık sağlayabilir.
 
 Hem Sketch hem de Photoshop ile yaptınız tasarımları kolayca senkronize ederek export edebilirsiniz.
 
-![zeplin](../assets/images/articles/2017-02-17-which-colloboration-tool-is-useful-and-effective/zeplin.jpg)
+![zeplin](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/zeplin.jpg)
 
 Bir diğer iyi yanı, tasarımda kullanılan assets, bitmap ve style özelliklerini çalışma arkadaşlarınız ile paylaşarak çalışma ortamına aktarabilirsiniz.
 
