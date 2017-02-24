@@ -4,15 +4,23 @@ date: 2017-02-10
 author: fadimezhan
 tags: ruby, rails, turbolinks, speed, web, jquery
 ---
+Merhabalar,
+
+
+Sizlere Rails projelerine etkin performans sağlayan Turbolinks özelliğindev bahsedeceğim.
+
 
 Turbolinks, Rails'in bir özelliğidir. Gem olarak yüklenebilir. Rails uygulaması oluşturduğunuzda default olarak yüklü gelir.
 Uygulama içinde gezinmeyi hızlandırmak için tasarlanmıştır. Uygulamadaki bağlantılara tıklandığında yakalar ve Ajax isteğinde bulunur.
 Aldığı içeriği body taglarinin içeriği ile değiştirir. Böylece javascript ve css dosyalarını tekrar tekrar yüklemez. Bu şekilde uygulamaya hız
 kazandırır. Turbolinks'in sağlayacağı hız, Javascript ve Css dosyalarının boyutu arttıkça daha önemli hale gelir.
-<br/>
+
+
 Turbolinks, normal sayfa gezinmelerini engellediğinden browser tarafında istek yapıldığına dair iz olmayacaktır. Sunucu yanıt
 verene kadar sayfa askıda kalmış görünür. Boşluğu doldurmak için Turbolinks'in yeni versiyonlarında progress bar kullanılıyor.
-<br/>
+
+
+
 Turbolinks'i dahil etmek için Gemfile dosyasına gerekli gemi ekledikten sonra tek yapmanız gereken; application.js
 dosyası içine aşağıdaki kodu eklemek;
 
