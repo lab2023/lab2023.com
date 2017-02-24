@@ -1,19 +1,24 @@
 ---
 title: Rails Verilerine Javascriptten Ulaşmak
-date: 2015-12-22
+date: 2017-02-03
 author: fadimezhan
-tags: rails, data, javascript, gon, raby
+tags: rails, data, javascript, gon, ruby
 ---
 
+Merhabalar;
 
-Javascript dosyasından verilere ulaşmak için data kullanılır. Data ile html elemanlarına özel attribute ekleyebiliriz. Bunun kullanımı aşağıdaki gibidir;
+Javascript dosyalarından verileri çekmenin basit bir yolu olan Gon Gem'inden bahsedeceğim. 
+
+Genel olarak Javascript dosyasından verilere ulaşmak için data kullanılır. Data ile html elemanlarına özel attribute ekleyebiliriz. Bunun kullanımı aşağıdaki gibidir;
 
 Index.html.haml dosyasında:
+
 ```ruby
-  content_tag "div", id:"products",data: {url: products_url} 
+  content_tag 'div', id:'products',data: {url: products_url} 
 ```
 
 Application.js.coffee dosyasında;
+
 ```jQuery
 jQuery->
   alert $(‘#products’).data(‘url’)
@@ -34,16 +39,19 @@ Gemfile dosyasına;
 ```
 
 app/views/layouts/application.html.haml dosyasına head tagleri arasına;
+
 ```sh
  = Gon::Base.render_data
 ```
 
 Controller.rb dosyasına;
+
 ```sh
   gon.your_variable  = variable_value
 ```
 
 javascript dosyasından;
+
 ```sh
   gon.your_variable 
 ```
@@ -73,6 +81,7 @@ Rabl, json cevapları için bir gemdir. Açılımı Ruby API Builder Language ş
 
 ### Nasıl kullanılır?
 Gemfile dosyasına;
+
 ```sh
  gem ‘rabl’
 ``` 
@@ -82,6 +91,7 @@ Json formatlı cevap dönmesini istediğimiz html sayfasının json.rabl uzantı
 Örnek kullanımı aşağıdaki şekildedir;
 
 Index.json.rabl dosyasına:
+
 ```ruby
  object @products
  attributes :id,:name,:published_at
@@ -92,8 +102,9 @@ end
 ```
 
 Rabl dosyalarını html içine gömerek kaynak kodda görüntüleyebiliriz. Bunu için;
+
 ```haml
-#products{data: {articles: “ = render (template: ‘articles/index.json.rabl’)”}} 
+#products{data: {articles: ' = render (template: ‘articles/index.json.rabl’)'}} 
 ```
 
 kodunu ekleyelim.
@@ -101,18 +112,23 @@ kodunu ekleyelim.
 Javascripte kullanmak istediğiniz veriyi rabl dosyasından çekebiliriz. Bunun için;
 
 Index.json.rabl dosyası oluşturalım;
+
 ```ruby
  collection Product.limit(10)
  attributes :id,:name,:price
 ```
 Products_controller.rb dosyasında;
+
 ```ruby
 def index
-  gon.rabl “app/views/products/index.json.rabl” , as: “products”
+  gon.rabl 'app/views/products/index.json.rabl' , as: 'products'
 end   
 ```
 Application.js.coffee dosyasına;
+
 ```js
 gon.products if gon     
 ```
 şeklinde kullanabiliriz.
+
+Kolay gelsin.
