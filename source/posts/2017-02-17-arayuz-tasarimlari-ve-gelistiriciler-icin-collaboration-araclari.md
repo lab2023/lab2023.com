@@ -56,7 +56,7 @@ Diğer platformlarda olduğu gibi redpen de realtime olarak takım yorumları ve
 
 Sunduğu özellikler bakımından aralarında en hızlı, kolay ve kullanışlı gördüğüm platform diyebiliriz.Tasarımları teslim ederken size sunduğu özellikler cezbedebilir, aynı zamanda çalışmalarınızda da büyük kolaylık sağlayabilir.
 
-Hem Sketch hem de Photoshop ile yaptınız tasarımları kolayca senkronize ederek export edebilirsiniz.
+Hem Sketch hem de Photoshop ile yaptığınız tasarımları kolayca senkronize ederek export edebilirsiniz.
 
 ![zeplin](../assets/images/articles/2017-02-17-arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari/zeplin.jpg)
 
@@ -72,4 +72,4 @@ Yakın zamanda yayınladıkları yeni özellik versiyonlama ile zaman içinde ex
 Tek bir proje üzerinde çalışma yapmak isteyenler için Zeplin ücretsiz destek veriyor fakat 3 proje için 17, 12 proje için 26 dolar gibi bir fiyatlandırması mevcut.Ekip ya da firma olarak kullanmak isterseniz kullanıcı başına 6-7 dolar civarı bir miktar yeterli oluyor.
 
 
-Bir sonraki yazı  da Wake ve Lingoapp üzerine inceleme yapacağız.
+Bir sonraki yazıda Wake ve Lingoapp üzerine inceleme yapacağız.
