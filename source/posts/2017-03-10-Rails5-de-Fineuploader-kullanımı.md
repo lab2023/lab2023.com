@@ -10,11 +10,11 @@ Merhabalar,
 Bu yazıda sizelere Rails'de Fineuploader kullanımını bazı özelliklerini kullandığımız bir örnek ile göstereceğim. Fineuploader dosya yükleme işlemleriniz için kullanabileceğiniz bir dosya yükleme kütüphanesidir.
 Fineuploader'ı kullanmak için web sayfasına ilk girdiğinizde muadilleri ile arasındaki farkı gösteren tablo ve şu sloganlar:
 
-```
-- File uploading without the hassle
-- Everything you need in a JavaScript file upload library
-- Completely "free as in speech" open source software, developed by the community, and sponsored by a company that cares.
-```
+
+* File uploading without the hassle
+* Everything you need in a JavaScript file upload library
+* Completely "free as in speech" open source software, developed by the community, and sponsored by a company that cares.
+
 muadilleri yerine Fineuploader'ı kullanmanız için sizi cezbetmeye yetecektir.
 
 Öncelikle [ Fineuploader download ](https://fineuploader.com/customize.html) sayfasına giderek ```Traditional``` için dosyalarımızı indiriyoruz. Bu dosyamızın içinden ```jquery.fine-uploader.js``` dosyamızı ```vendor/assets/javascripts``` klasörünün içine, ```fine-uploader-gallery.css```
@@ -161,18 +161,26 @@ eğer yüklenen dosyalarınızda delete özelliğini kullanmak isterseniz yapıl
 
 Yukarıdaki kodlar projelerde kullandığım özellikleri içeren kodlardır. Sizlere bunları açıklayacağım, Fineuploader'da bunun gibi bir çok özellik bulunmaktadır, web sayfasına gidip diğer özellikleri de öğrenebilirsiniz.
     
-    - request: Yüklenen dosyaların inputName'ini ve endpoint'ini belirtiyoruz bu sayede fotoğrafı istediğimiz yere istediğimiz parametre ismi ile gönderebiliriz.
-    - deleteFile: Delete özelliğini kullanmak isterseniz bu option işinizi görecektir fakat default olarak istek 'uuid' ile yapılmaktadır eğer 'uuid' yerine başka bir parametre ile bu isteği yapmak isterseniz 'onComplaete' callback'inin içinde kullanacağımız 'setUuid' metodu işinizi görecektir.
-      'enable' ile yüklenen dosyanın silinmesini etkinleştiririz veya devredışı bırakırız. 'confirmMessage' ile default mesajı değiştirebilmemizi sağlar. 'endpoint' ile yapılacak olan isteğin gideceği yeri ayarlamamızı sağlar. 
-    - retry: Bu option ile 'enableAuto: true' yaptığınız zaman eğer olurda dosya yüklenmez ise otomatik olarak dosya 3 kere daha yüklenmeyi dener yine olmaz ise yükleme isteği kesilir.
-    - messages: Fineuploader'da bulunan default mesajları değiştirebilmemizi sağlar. Yukarıda bir adet örneğini görüyorsunuz.
-    - callbacks: Fineuploader da çok kullanışlı callback'ler vardır yukarıda bunlardan birkaç tanesini görüyorsunuz. onComplete: yüklenen her dosya sonrasında çalışır, onProgress: tüm dosyaların yükleme işlemi devam ettiği sürece çalışır, onAllComplate: tüm dosyaların yükleme işlemi bittiğinde çalışır.
-    - failedUploadTextDisplay: Bu option ile başarısız olan yükleme dosyaları için çıkan default mesajı 'mode: 'custom'' yaparak dosya yüklendikten sonra döndüreceğiniz json dosyasında 'message' parametresi ile değiştirebilirsiniz.
-    - thumbnails: Option'ında 'placeholders' ile dosya hazırlanırken veya ulaşılamazken çıkacak resimler ayarlanır.
-    - validation: Bu option ile validasyonları kullanabiliriz. Mesela yukarıda 'itemLimit' validasyonu yer almaktadır. Bu validasyon ile Fineuploader ile bir anda 10 adet dosya yüklenebilir.
-    - scaling: Bu option Fineuploader'ın bizlere sunduğu en önemli özelliklerden bir tanesi diyebilirim. Bu option ile yüklenen fotoğrafların boyutlarını ölçeklendirebilirsiniz, bu işlemi çok hızlı bir şekilde yapmaktadır. Yukarıda yüklenen fotoğrafın 'sendOriginal: false' ile ölçeklendirilmiş hali gönderilmektedir.
-      'maxSize: 1000' ile uzun kenar maksimum 1000 piksel olacak şekilde ayarlanmıştır. Fakat 'scaling' option'ında ölçeklendirilen fotoğrafların isimleri 'Blob' olarak gönderilmektedir. Tabi fotoğrafın orjinal ismi de gönderilmektedir, orginal ismi ile gönderilen ismi yer değiştirip fotoğrafın orjinal ismini kullanabilirsiniz. 
-      
+* request: Yüklenen dosyaların inputName'ini ve endpoint'ini belirtiyoruz bu sayede fotoğrafı istediğimiz yere istediğimiz parametre ismi ile gönderebiliriz.
+
+* deleteFile: Delete özelliğini kullanmak isterseniz bu option işinizi görecektir fakat default olarak istek 'uuid' ile yapılmaktadır eğer 'uuid' yerine başka bir parametre ile bu isteği yapmak isterseniz 'onComplaete' callback'inin içinde kullanacağımız 'setUuid' metodu işinizi görecektir.
+  'enable' ile yüklenen dosyanın silinmesini etkinleştiririz veya devredışı bırakırız. 'confirmMessage' ile default mesajı değiştirebilmemizi sağlar. 'endpoint' ile yapılacak olan isteğin gideceği yeri ayarlamamızı sağlar. 
+
+* retry: Bu option ile 'enableAuto: true' yaptığınız zaman eğer olurda dosya yüklenmez ise otomatik olarak dosya 3 kere daha yüklenmeyi dener yine olmaz ise yükleme isteği kesilir.
+
+* messages: Fineuploader'da bulunan default mesajları değiştirebilmemizi sağlar. Yukarıda bir adet örneğini görüyorsunuz.
+
+* callbacks: Fineuploader da çok kullanışlı callback'ler vardır yukarıda bunlardan birkaç tanesini görüyorsunuz. onComplete: yüklenen her dosya sonrasında çalışır, onProgress: tüm dosyaların yükleme işlemi devam ettiği sürece çalışır, onAllComplate: tüm dosyaların yükleme işlemi bittiğinde çalışır.
+
+* failedUploadTextDisplay: Bu option ile başarısız olan yükleme dosyaları için çıkan default mesajı 'mode: 'custom'' yaparak dosya yüklendikten sonra döndüreceğiniz json dosyasında 'message' parametresi ile değiştirebilirsiniz.
+
+* thumbnails: Option'ında 'placeholders' ile dosya hazırlanırken veya ulaşılamazken çıkacak resimler ayarlanır.
+
+* validation: Bu option ile validasyonları kullanabiliriz. Mesela yukarıda 'itemLimit' validasyonu yer almaktadır. Bu validasyon ile Fineuploader ile bir anda 10 adet dosya yüklenebilir.
+
+* scaling: Bu option Fineuploader'ın bizlere sunduğu en önemli özelliklerden bir tanesi diyebilirim. Bu option ile yüklenen fotoğrafların boyutlarını ölçeklendirebilirsiniz, bu işlemi çok hızlı bir şekilde yapmaktadır. Yukarıda yüklenen fotoğrafın 'sendOriginal: false' ile ölçeklendirilmiş hali gönderilmektedir.
+  'maxSize: 1000' ile uzun kenar maksimum 1000 piksel olacak şekilde ayarlanmıştır. Fakat 'scaling' option'ında ölçeklendirilen fotoğrafların isimleri 'Blob' olarak gönderilmektedir. Tabi fotoğrafın orjinal ismi de gönderilmektedir, orginal ismi ile gönderilen ismi yer değiştirip fotoğrafın orjinal ismini kullanabilirsiniz. 
+  
   Sizlere Fineuploader'ın ne olduğundan ve Rails'de kullanımından kısaca bahsettim. Fineuploader sürekli güncellenmekte ve desteklenmektedir. Fineuploader'ın daha birçok özelliğini web sayfasını kurcalayarak öğrenebilir ve kullanabilirsiniz. [ Buradan ](https://fineuploader.com) web sayfasına gidebilirsiniz.
   
 Bu yazının sizlere faydalı olması dileğiyle...
