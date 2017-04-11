@@ -1,5 +1,5 @@
 ---
-title: Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda(Staging, Production) Yayınlanması
+title: Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda (Staging, Production) Yayınlanması
 date: 2016-08-04
 author: isoakbudak
 tags: ruby, rails, heroku, ruby on rails, web, cybele, multi environment on heroku, tr
