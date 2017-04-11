@@ -14,6 +14,6 @@ görevini Tayfun ERİKAN'ın üstlenmesine karar verildi ancak bu görev değiş
 ve sorumlulukların Tayfun ve diğer arkadaşlara aktarılmasının daha sağlıklı olacağı tarafımızca uygun görüldü. 
    
 Yaklaşık 5 ay sonra 18.05.2014 tarihinde görev ve sorumluluklarının aktarılmasının bitmesi ile Lab2023 AŞ'nin 
-**Genel Koordinatör Tayfun ERİKAN** oldu. Kardeşim, ortağım Tayfun ERİKAN'a yeni görevinde başarılar diliyorum.
+**Genel Koordinatörü Tayfun ERİKAN** oldu. Kardeşim, ortağım Tayfun ERİKAN'a yeni görevinde başarılar diliyorum.
 
 Saygılarımla.
