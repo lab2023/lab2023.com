@@ -2,7 +2,7 @@
 title: Bulutfon Ruby SDK
 date: 2015-12-22
 author: isoakbudak
-tags: ruby, bulutfon, sdk, api, call, programming, process
+tags: ruby, bulutfon, sdk, api, call, programming, process, tr
 ---
 
 Merhaba,

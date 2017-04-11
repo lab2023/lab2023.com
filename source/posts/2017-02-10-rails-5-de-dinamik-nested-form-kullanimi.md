@@ -1,13 +1,18 @@
 ---
-title: Rails5 de Dinamik Nested Form Kullanımı
+title: Rails 5'de Dinamik Nested Form Kullanımı
 date: 2017-02-10
 author: h_1520
-tags: ruby, dynamic, nested, form, rails, programming
+tags: ruby, dynamic, nested, form, rails, tr
 ---
 
-Bu yazıda sizelere Rails'de dinamik nested form kullanımını bir örnek ile göstereceğim. Eğer birbiri ile ilişkili iki modeliniz var ise ve tek bir form üzerinden kayıt yapacaksanız nested form kullanmanız gerekiyor.
-Şimdi öncelikle aşağıdaki gibi birbiri ile ilişkili iki modelinizin olduğu bir rails projeniz olduğunu varsayalım. İlişki şekli şu şekilde olsun Customer(Müşteri) ve Customer'ın AuthorizedPerson(YetkiliKişi)'ları.
-Aşağıda `accepts_nested_attributes_for`ile nested attribute ilişkiyi kuruyoruz
+Merhabalar,
+
+Bu yazıda sizelere Rails'de dinamik nested form kullanımını bir örnek ile göstereceğim. Eğer birbiri ile ilişkili iki 
+modeliniz var ise ve tek bir form üzerinden kayıt yapacaksanız nested form kullanmanız gerekiyor.
+Şimdi öncelikle aşağıdaki gibi birbiri ile ilişkili iki modelinizin olduğu bir rails projeniz olduğunu varsayalım. 
+İlişki şekli şu şekilde olsun Customer(Müşteri) ve Customer'ın AuthorizedPerson(YetkiliKişi)'ları.
+
+Aşağıda `accepts_nested_attributes_for`ile nested attribute ilişkiyi kuruyoruz;
 
 ```ruby
 # app/models/customer.rb
@@ -82,4 +87,4 @@ $(document).on 'click', 'form .add_fields', (event) ->
 
 Yukarıda yaptığımız işlemler ile aşağıdaki gibi bir çıktı elde edeceksiniz:
 
-![form](articles/2017-02-10-Rails-Dynamic-Nested-Form.png)
+![form](articles/2017-02-10-rails-dynamic-nested-form.png)
