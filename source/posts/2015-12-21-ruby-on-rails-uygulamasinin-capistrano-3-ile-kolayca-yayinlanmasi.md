@@ -8,10 +8,10 @@ tags: ruby, rails, sunucu, server, client, cap, capistrano, ssh, bash, script, r
 Merhaba,
 
 Sizlere Ubuntu-14.04 sunucusunu sıfırdan ayağa kaldırıp, kendi rails uygulamalarınızı sunucuya hızlı bir şekilde aktarabileceğiniz <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> uygulamasından bahsedecek ve bazı kaynak kodlar paylaşacağız.
-Kullandığımız capistrano'nun versiyonu 3.4'tür. Sunucu üzerinde kullanıdığımız ruby versiyonu ise 2.2.3'tür. Capistrano 'nun kaynak kodlarına <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> adresinden erişip göz atabilirsiniz.
 
-Örnek olarak, [Netinternet](http://www.netinternet.com.tr/panel/aff.php?aff=916) 'ten veya [DigitalOcean](https://www.digitalocean.com/) 'dan alacağınız bir sunucuyu aşağıdaki bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.
+Kullandığımız capistrano'nun versiyonu 3.4'tür. Sunucu üzerinde kullandığımız ruby versiyonu ise 2.2.3'tür. Capistrano 'nun kaynak kodlarına <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> adresinden erişip göz atabilirsiniz.
 
+Örnek olarak, [Netinternet](https://www.netinternet.com.tr/vps-sunucular?aff=916) 'ten veya [DigitalOcean](https://www.digitalocean.com/) 'dan alacağınız bir sunucuyu aşağıdaki bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.
 
 Sunucuda ruby ortamı için temel kurulum scripti aşağıdaki gibidir. Bu script root kullanıcısı olarak bağlanıp çalıştırmalısınız.
 

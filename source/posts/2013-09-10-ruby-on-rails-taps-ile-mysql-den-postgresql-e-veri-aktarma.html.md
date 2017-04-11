@@ -9,7 +9,7 @@ Merhabalar,
 
 Şirket olarak 8 ay önce PostgreSQL' e geçmiştik ama o zamanlar devam edegelen projeleri iş yoğunluğundan dolayı PostgreSQL' e geçiremedik. Aslında bu bizim için ek bir maliyetti. Şimdi tüm projelerimizi PostgreSQL' e geçirmeye başladık.
 
-Bu işlemler için [Taps][1] gemini kullanıyoruz. Alternatif olarak [Valkyrie][2] geminide kullanabilirsiniz.
+Bu işlemler için [Taps][1] gemini kullanıyoruz. Alternatif olarak [Valkyrie][2] gemini de kullanabilirsiniz.
 
 Taps' ta server ve client olarak iki kavram var. Veritabanınızın birisini server yapıyorsunuz diğerini client. Client olan veritabanında pull ve push işlemlerini yapıyoruz.
 
