@@ -13,7 +13,7 @@ Mac OS için sencha touch kurulumu:
 * [Sencha Touch](http://www.sencha.com/products/touch/download/) dosyasını indirip belirli bir dizine açıyoruz.
 * Yeni uygulama oluşturmak için sencha tocuh framework'ün bulunduğu dizinde olmalısınız.
 
-Sencha CMD kurulduktan sonra sencha uygılamaları için kullanacağımız `sencha` komutu 
+Sencha CMD kurulduktan sonra sencha uygulamaları için kullanacağımız `sencha` komutu 
 
 ```
  ~/bin/Sencha/Cmd/version_number/sencha
@@ -114,8 +114,8 @@ Ext.define('Gourmet.view.Foods', {
 ```
 
 Oluşturduğumuz view'in yüklenebilmesi için Ext.Loader tarafından yüklenebilmesi gerekiyor. 
-Bu islem icin tüm view dosyalarının app.js icine dahil edilmesi gerekiyor. 
-Bu asamaya ilerleyen kısımlarda sonra geleceğiz.
+Bu işlem icin tüm view dosyalarının app.js icine dahil edilmesi gerekiyor. 
+Bu aşamaya ilerleyen kısımlarda daha sonra değineceğiz.
 
 [NavigationView](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.navigation.View) [card](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.layout.Card) layout ile birlikte oluşturulmuş basit bir [container](http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Container)' dır.
 
@@ -146,7 +146,7 @@ Ext.define('Gourmet.view.FoodList', {
 ```
 
 * `store`: Verileri alacağı store.
-* `itemTpl`: Verinin listede nasıl görüneceği. Burayı css ile özellştirebilirsiniz. Birden fazla bilgi gösterebilirsiniz. `'{name} - {description}'` gibi.
+* `itemTpl`: Verinin listede nasıl görüneceği. Burayı css ile özelleştirebilirsiniz. Birden fazla bilgi gösterebilirsiniz. `'{name} - {description}'` gibi.
 * `onItemDisclosure`: Detay butonunun olup olmayacağını belirtiyor.
 * `Food.js` içerisindeki items içerisine bu listeyi ekleyelim.
 
@@ -205,7 +205,7 @@ Ext.define('Gourmet.controller.Main', {
 ```
 
 * `refs` : Bu alanda xtype ve id ye göre compenentleri alabiliyoruz.
-* `control` : Compenetlerin event' larının takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan componentin `disclose` event(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` componentin içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
+* `control` : Compenetlerin event' larının takip edildiği yer. Yukarıdaki örnekte `xtype: 'food_list'` olan componentin `disclose` event'inde(olayında) yapılacak işlemi belirtiyoruz. `showFoodDetail` metodu, `xtype: 'food_panel'` olan `Ext.navigation.View` componentin içerisine belirtilen özelliklerdeki view alanını(detay sayfasını) ekliyor.
 
 Son olarak `App.js` dosyamızın içerisine view ve controllerlarımızı ekleyelim,
 

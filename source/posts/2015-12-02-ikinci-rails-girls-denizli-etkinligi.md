@@ -17,7 +17,7 @@ Rails, Ruby programlama diliyle yazılmış, açık kaynak kodlu bir web uygulam
 Sade ve kısa bir sözdizimi sayesinde kullanıcı sayısı her geçen gün artmaktadır. Bu etkinliğin amacı her
 yaştan kadının Rails’i tanıması, web dünyasını öğrenmesi ve küçük web uygulamaları yapabilmeleridir.
 Bu uygulamalar sayesinde kadınlar kod yazmanın zor olmadığını farketmeye başlayacak ve ön yargılarından
-kurtulacaklardır. Etkinliğe yanlarında bir kadının eşlik etmesi halinde konuyla ilgilenen erkeklerde katılabiliyor.
+kurtulacaklardır. Etkinliğe yanlarında bir kadının eşlik etmesi halinde konuyla ilgilenen erkekler de katılabiliyor.
 
 Rails Girls etkinliğini en güzel yanlarından birisi de Rails konusunda uzman kişilerin etkinlik sırasında
 size mentorluk etmesi ve yönlendirmesi. Etkinliğe katılmak için programcılık bilgisine sahip olmanıza gerek yoktur.
