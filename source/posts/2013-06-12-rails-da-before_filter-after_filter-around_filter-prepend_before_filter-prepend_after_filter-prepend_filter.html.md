@@ -204,7 +204,7 @@ prepend_around_filter :ar1, :ar2
 
 before_filter :b1
 prepend_around_filter :ar1
-before_filter :b1
+before_filter :b2
 prepend_around_filter :ar2
 
 # ar2(before) --> ar1(before) --> b1 --> b2 -->

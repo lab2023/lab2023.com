@@ -100,7 +100,7 @@ Gördüğünüz gibi yapılacak işler shell1 ve shell2 arasında paylaşılmakt
 
 Peki `Consumers` bu uzun işlemleri yaparken bir hata ile karşılaşıp ölür ise ne olur? Şuanki kodumuza göre o işlem yapılmamış olur çünkü RabbitMQ mesajın gönderilmesi ile ilgili mesajı hafızadan siler. Bu durumda hem iş yapılmamış olur, hemde mesaj gönderildiği anda hafızadan silindiği için tekrar kuyruğa atma şansımız olmaz.
 
-Mesajların kaybolmasını engellemek için RabbitMQ `acknowledgments` özelliğini sunar. Basitçe anlatmak gerekir ise `ack(nowledgement)` mesajın başırı ile alındaığını ve işlem gerçekleşince `consumer`'a bir mesaj ile bildirir. Bundan sonra RabbitMQ hafızadan mesajı siler.
+Mesajların kaybolmasını engellemek için RabbitMQ `acknowledgments` özelliğini sunar. Basitçe anlatmak gerekir ise `ack(nowledgement)` mesajın başarı ile alındığını ve işlem gerçekleşince `consumer`'a bir mesaj ile bildirir. Bundan sonra RabbitMQ hafızadan mesajı siler.
 
 Eğer `consumer` ack göndermeden ölür ise, RabbitMQ bu mesajın yerine ulaşmadığını veya işlemin başarı ile tamamlanmadığını anlar. Hafızasından silmediği mesajı başka bir `consumer`'a gönderir.
 

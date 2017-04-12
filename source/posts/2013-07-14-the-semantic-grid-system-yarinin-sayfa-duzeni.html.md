@@ -5,11 +5,11 @@ author: yunusozcan
 tags: samantic grid system, tr
 ---
 
-**HTML5** bildiğiniz gibi semantik etiketlerle birlikte geldi ama hala tam anlamıyla kullanmıyoruz. başlayacağımız nokta tam olarak grid sistemleri olacak 960.gs vs.. tam olarak bu akıma uymadıklarını düşünüyordum ki başkası daha önce düşünmüş less ve **sass** **mixin** kütüphanesi olarak [semantic grid sistemi][1] oluşturmuş. son zamanlarda pek güncellenmemiş olsada halen kullanılabilir durumda.
+**HTML5** bildiğiniz gibi semantik etiketlerle birlikte geldi ama hala tam anlamıyla kullanmıyoruz. Başlayacağımız nokta tam olarak grid sistemleri olacak 960.gs vs.. tam olarak bu akıma uymadıklarını düşünüyordum ki başkası daha önce düşünmüş less ve **sass** **mixin** kütüphanesi olarak [semantic grid sistemi][1] oluşturmuş. Son zamanlarda pek güncellenmemiş olsa da halen kullanılabilir durumda.
 
 Kullanabileceğiniz 4 adet değişken $column-width, $gutter-width, $columns, $total-width
 
-4 adetde mixin var row, column, pull, push
+4 adet de mixin var row, column, pull, push
 
 En basit olarak şöyle bir **sass** kodundan
 
@@ -56,7 +56,7 @@ Hem **fixed** hem **fluid** olarak bu düzene ulaşabilirsiniz.
 
 ![semantic html5](articles/2013-07-14-html5-semantic.jpg)
 
-Gelelim asıl konuya yeni [bourbon][3] adlı bie mixin kütüphanesi çıktı aynı şekilde bu kütüphanenin [neat][4] adında şirinmi şirin mixinler içeren **Semantik** grid sistemi var üstteki konuyla ilgilendiyseniz bakmanızı (kullanmanızı) tavsiye ederiz.
+Gelelim asıl konuya yeni [bourbon][3] adlı bir mixin kütüphanesi çıktı aynı şekilde bu kütüphanenin [neat][4] adında şirin mi şirin mixinler içeren **Semantik** grid sistemi var üstteki konuyla ilgilendiyseniz bakmanızı (kullanmanızı) tavsiye ederiz.
 
  [1]: http://semantic.gs/
  [2]: http://www.lab2023.com/wp-content/uploads/2013/07/html5-semantic.jpg

@@ -1,8 +1,8 @@
 ---
-title: Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda(Staging, Production) Yayınlanması
+title: Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda (Staging, Production) Yayınlanması
 date: 2016-08-04
 author: isoakbudak
-tags: ruby, rails, heroku, ruby on rails, Web, cybele, multi environment on heroku, tr
+tags: ruby, rails, heroku, ruby on rails, web, cybele, multi environment on heroku, tr
 ---
 
 Merhaba,
@@ -35,7 +35,7 @@ Bu ayarlar içinde e-posta göndermek için kullandığımız SMTP ayarları ola
 
 Mail servisi olarak <a href="https://sendgrid.com" target="_blank">SendGrid</a> servisi size ücretsiz olarak aylık 12000 e-posta sağlamaktadır. Hobi projeleriniz için bu servisi kullanabilirsiniz. <a href="https://app.sendgrid.com/settings/credentials" target="_blank">Settings->Credentials</a> sayfasından gerekli username ve password'u alabilirsiniz.
 
-* Hataları izleyebilmek için kullnadığımız Rollbar servisinde aldığımız token'ı config/initializers/rollbar.rb dosyasında yer alan your_token yazan string ile değiştiriyoruz. Rollbar servisi üzerinde projenizi oluşturduğunuzda size doğrudan gerekli token'ı, yönergeleri ile birlikte verecektir.
+* Hataları izleyebilmek için kullandığımız Rollbar servisinde aldığımız token'ı config/initializers/rollbar.rb dosyasında yer alan your_token yazan string ile değiştiriyoruz. Rollbar servisi üzerinde projenizi oluşturduğunuzda size doğrudan gerekli token'ı, yönergeleri ile birlikte verecektir.
 * User ve Admin model'leri için db/migrate/*.rb  dizininde yeralan migration dosyalarındaki is_active alanının varsayılan değerini true olarak ayarlıyoruz.
 * Projenin config/settings.yml dosyasında yeralan username ve password alanlarını değiştiriyoruz.
 * Son olarakta projenin public dizini için VERSION.txt dosyası oluşturmak için şu komutu çalıştırıyoruz;
@@ -75,12 +75,12 @@ Heroku üzerinde heabımızı oluşturup giriş yaptıktan sonra yeni bir uygula
 
 [![heroku-uzerinde-uygulama-olusturma](../assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uygulama-olusturma.png)]()
 
-Oluşturduğumuz uygulamannın ismi eşsiz olmalıdır. Heroku size alt alanadı sağladığı için aynı isimli uygulamara izin vermemektedir.
+Oluşturduğumuz uygulamanın ismi eşsiz olmalıdır. Heroku size alt alanadı sağladığı için aynı isimli uygulamara izin vermemektedir.
 Biz uygulama ismi olarak lab2023-blog-sample tercih ettik. Bu uygulama production ortamı için kullanacağımız kodları barındıracaktır.
 Yukarıdaki adımları izleyerekten tekrar bir uygulama daha oluşturuyoruz. Bu uygulama ise staging ortamımız olacak ve develop branch'indeki kodlarımızı barındıracağız.
 Staging ortamı için uygulama ismi olarak staging-lab2023-blog-sample'ı tercih ettik.
 
-Production ve Staging uygulamalarımızı oluşturduktan sonra bu iki uygulamaya da uygulamnaın detaylar sayfasında bulunan Resources sekmesinden Heroku Postgres::Database, Logentries ve Redis To Go elementlerini şekilde ki gibi ekliyoruz.
+Production ve Staging uygulamalarımızı oluşturduktan sonra bu iki uygulamaya da uygulamanın detaylar sayfasında bulunan Resources sekmesinden Heroku Postgres::Database, Logentries ve Redis To Go elementlerini şekilde ki gibi ekliyoruz.
 
 [![heroku-uzerinde-uygulamaya-element-ekleme](../assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uygulamaya-element-ekleme.png)]()
 
@@ -104,7 +104,7 @@ Git komutlarında kullancağınız remote.production.url'in ayarlandığını g�
     git config --list
 ```
 
-Eğer yanlış bir url eklemesi yaptıysanız şu komutu kullanarak aklediğiniz url'i kaldırabilirsiniz.
+Eğer yanlış bir url eklemesi yaptıysanız şu komutu kullanarak eklediğiniz url'i kaldırabilirsiniz.
 
 ```bash
     git remote remove production
@@ -117,7 +117,7 @@ Terminalden git url'i ekleme bölümünde ise şu şekilde ki komutu çalıştı
     git remote add staging https://git.heroku.com/staging-lab2023-blog-sample.git
 ```
 
-Bu işlemlerden sonra artık uygulamamızın heroku urllerinide eklenmiş olduk.
+Bu işlemlerden sonra artık uygulamamızın heroku urllerini de eklenmiş olduk.
 
 Şimdi staging uygulamamıza kodları gönderme kısmına gelelim.
 Bu işlemi yapabilmek için heroku uygulamalarına erişimimiz olması gerekmektedir. Heroku sunucularına, git ile uygulama kodlarını gönderebilmek için heroku komutları ile login olmalıyız. Heroku komutlarının kullanılabilmesi için ise <a href="https://toolbelt.heroku.com" target="_blank">Heroku Toolbelt</a> kurulumunu yapmalısınız.
@@ -128,7 +128,7 @@ Kurulum yapıldıktan sonra şu komut ile heroku hesabınıza giriş yapabilirsi
     heroku login
 ```
 
-Giriş yaptıktan sonra staging uygulmamızı yayına almak için şu komutu kullanıyoruz;
+Giriş yaptıktan sonra staging uygulamamızı yayına almak için şu komutu kullanıyoruz;
 
 ```bash
     git push staging develop:master
@@ -167,7 +167,7 @@ Bu işlemlerden sonra .env.local dosyamızda tutduğumuz ENV değişkenlerinin h
     heroku config:set BASIC_AUTH_IS_ACTIVE=yes --app staging-lab2023-blog-sample
 ```
 
-Ayarlarınızı bu komutlar ile ayarladıktan sonra heroku üzerinde uygulamanın ayarlar sayfasında Config Variables bölümünde bu değişkenleri görebilirsiniz, ayrıca portal üzerinden de bu değişkenleri değiştirebilirsiniz. Herokuya rails uygulaması gönderildiğinde RAILS_ENV varsayılan olarak production olarak ayarlanıyor. RAILS_ENV değerinide staging ile değiştirebilirsiniz.
+Ayarlarınızı bu komutlar ile ayarladıktan sonra heroku üzerinde uygulamanın ayarlar sayfasında Config Variables bölümünde bu değişkenleri görebilirsiniz, ayrıca portal üzerinden de bu değişkenleri değiştirebilirsiniz. Herokuya rails uygulaması gönderildiğinde RAILS_ENV varsayılan olarak production olarak ayarlanıyor. RAILS_ENV değerini de staging ile değiştirebilirsiniz.
 
 ```bash
     heroku config:set RAILS_ENV=staging --app staging-lab2023-blog-sample
@@ -191,7 +191,7 @@ Ayarlarınızı bu komutlar ile ayarladıktan sonra heroku üzerinde uygulamanı
     heroku ps:restart --app staging-lab2023-blog-sample
 ```
 
-Komut bilgilerinin ardından production ortamında uygulamamızı yayınlama işemine gelecek olursak; Şu anda master branch'imizde herhangi bir release kodu bulunmamakta. Git-flow'dan yararlanarak v1.0.0 etiketi ile bir versiyon yayınlayalım.
+Komut bilgilerinin ardından production ortamında uygulamamızı yayınlama işlemine gelecek olursak; Şu anda master branch'imizde herhangi bir release kodu bulunmamakta. Git-flow'dan yararlanarak v1.0.0 etiketi ile bir versiyon yayınlayalım.
 Bu işlem için gerekli olan komutlar şunlardır;
 
 ```bash
@@ -241,7 +241,7 @@ Gemfile dosyanızda özel github repolarınız varsa bu repolara heroku uygulama
     heroku keys:add ~/.ssh/heroku_id_rsa.pub
 ```
 
-Sık ihtiyac duyabileceğiniz bazı komutların listesi aşğıdaki gibidir;
+Sık ihtiyac duyabileceğiniz bazı komutların listesi aşağıdaki gibidir;
 
 ```bash
     # Web dynonusunu yeniden başlatır

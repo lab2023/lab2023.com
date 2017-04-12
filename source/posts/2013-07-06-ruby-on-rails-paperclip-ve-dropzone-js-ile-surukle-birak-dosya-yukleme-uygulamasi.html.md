@@ -7,7 +7,7 @@ tags: paperclip, dropzone, tr
 
 **Dropzone.js**
 
-Daha önceki projelerde jquery-fileupload-rails gemini kullanmıştım ama onlarca satır haml ve erb kodu yazmak pek içime sinmemişti bu işin daha basit bir yöntemi olmalı demiştim bu arayışıta dropzone ile karşılaştım basitliği ve eski tarayıcılara destek vermemesi beni cezbetti (like a jquery 2)
+Daha önceki projelerde jquery-fileupload-rails gemini kullanmıştım ama onlarca satır haml ve erb kodu yazmak pek içime sinmemişti bu işin daha basit bir yöntemi olmalı demiştim bu arayışıta dropzone ile karşılaştım basitliği ve eski tarayıcılara destek vermesi beni cezbetti (like a jquery 2)
 
 <!--more-->
 
