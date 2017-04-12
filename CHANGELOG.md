@@ -1,5 +1,56 @@
 
 #### [Current]
+ * [3ed2726](../../commit/3ed2726) - __(Tayfun Öziş ERİKAN)__ Some informations were updated
+ * [7e3e432](../../commit/7e3e432) - __(Tayfun Öziş ERİKAN)__ Copyright year was updated
+ * [154f132](../../commit/154f132) - __(Tayfun Öziş ERİKAN)__ Typo fixed
+ * [088c853](../../commit/088c853) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#29](../../issues/29) from lab2023/feature/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi
+
+This merge includes by some typo fixes, file name changes and conflict resolves
+ * [f507b33](../../commit/f507b33) - __(Tayfun Öziş ERİKAN)__ Conflicts resolved
+ * [c34a29c](../../commit/c34a29c) - __(Tayfun Öziş ERİKAN)__ Filename was changed
+ * [58f2ccc](../../commit/58f2ccc) - __(Tayfun Öziş ERİKAN)__ New articles was added and team members were updated - New team members were added - Old team members were removed - Team member informations were improved - Pending article pull-requests were merged and improved
+ * [1b37d6c](../../commit/1b37d6c) - __(Tayfun Öziş ERİKAN)__ Merge remote-tracking branch 'origin/develop' into develop
+ * [1181625](../../commit/1181625) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#24](../../issues/24) from fadimezhan/feature/which_collobration_tool_is_useful_and_effective
+
+which colloboration tool is useful and effective?
+ * [a59260b](../../commit/a59260b) - __(Tayfun Öziş ERİKAN)__ Merge remote-tracking branch 'origin/develop' into develop
+ * [c4fb21c](../../commit/c4fb21c) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#28](../../issues/28) from lab2023/feature/hamdibayhan_story
+
+story was added for Hamdi Bayhan
+ * [86fe1ae](../../commit/86fe1ae) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#27](../../issues/27) from lab2023/feature/use_fineuploader
+
+LMC-14 #time 3h - Blog was written about what is Fineuploader and how…
+ * [4abe7b5](../../commit/4abe7b5) - __(hamdibayhan)__ story was added for Hamdi Bayhan
+ * [50b74f7](../../commit/50b74f7) - __(hamdibayhan)__ LMC-14 #time 3m - typo fixed
+ * [206a066](../../commit/206a066) - __(hamdibayhan)__ LMC-14 #time 3h - Blog was written about what is Fineuploader and how to use Fineuploader
+ * [d4491b4](../../commit/d4491b4) - __(fadimezhan)__ Fix syntax and typo
+ * [ba5c088](../../commit/ba5c088) - __(fadimezhan)__ Change folders name to turkish
+ * [af00758](../../commit/af00758) - __(fadimezhan)__ which colloboration tool is useful and effective?
+ * [aa4f154](../../commit/aa4f154) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#13](../../issues/13) from muratrahmikurtul/typos
+
+Some typos fixed
+ * [338918c](../../commit/338918c) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#15](../../issues/15) from hamdibayhan/feature/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi
+
+Some typos were fixed
+ * [14eda08](../../commit/14eda08) - __(Tayfun Öziş ERİKAN)__ Merge pull request [#20](../../issues/20) from hamdibayhan/feature/rails5_actioncable
+
+Blog was written for ActionCable
+ * [277f4b0](../../commit/277f4b0) - __(Fadime Özhan)__ passing-rails-data-to-js #time 3h - how to passing rails data to js file? ([#16](../../issues/16))
+
+new "how to passing rails data to js" article was added
+ * [bdda7d7](../../commit/bdda7d7) - __(Hamdi Bayhan)__ Blog was written for How to use Dynamic Nested Form in R… ([#21](../../issues/21))
+
+* #time 90m - Blog was written for How to use Dynamic Nested Form in Rails
+* image was changed
+
+ * [7b97bec](../../commit/7b97bec) - __(hamdibayhan)__ #time 6h - Blog was written for ActionCable
+ * [287da0a](../../commit/287da0a) - __(Hamdi Bayhan)__ Some typos were fixed
+ * [dc7eb04](../../commit/dc7eb04) - __(muratrahmi)__ Review and typos fixes
+ * [2d90615](../../commit/2d90615) - __(muratrahmi)__ Fix forgotten conflict error and some typos
+ * [a901d52](../../commit/a901d52) - __(muratrahmi)__ Some typos fixed
+
+#### v1.12.0.0
+ * [e19a7d4](../../commit/e19a7d4) - __(Tayfun Öziş ERİKAN)__ Bump version v1.12.0.0
  * [bd35f1e](../../commit/bd35f1e) - __(Tayfun Öziş ERİKAN)__ Copyright and contact info were improved
  * [185b318](../../commit/185b318) - __(Tayfun Öziş ERİKAN)__ Team and authors were updated
  * [e3c2165](../../commit/e3c2165) - __(Tayfun Öziş ERİKAN)__ Ruby version was added
