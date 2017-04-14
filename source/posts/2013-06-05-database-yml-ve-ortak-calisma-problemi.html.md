@@ -7,7 +7,7 @@ tags: database.yml, tr
 
 Merhabalar,
 
-Herkesin lokaldeki şifleri farklı olduğundan database.yml gibi veritabanı şifreleri bulunan dosyaları commit, push, pull etmekte sıkıntılar çıkıyor. Veritabanı yapılandırması için aşağıdaki gibi kullanıldığında, farklı kişiler projeyi kendi çalışma ortamlarına çekince sorun çıkmıyor.
+Herkesin lokaldeki şifreleri farklı olduğundan database.yml gibi veritabanı şifreleri bulunan dosyaları commit, push, pull etmekte sıkıntılar çıkıyor. Veritabanı yapılandırması için aşağıdaki gibi kullanıldığında, farklı kişiler projeyi kendi çalışma ortamlarına çekince sorun çıkmıyor.
 
 Örnek postgresql içindir.
 
