@@ -19,6 +19,10 @@ Pamukkale Teknokent Konferans Salonu'nda
 Bu etkinliğimize yazılım ve tasarım dünyasına ilgili ve bu alanda kendisini geliştirmek yada çalışmak isteyen 
 tüm ilgilileri davet ediyoruz.
 
+Detaylar için 
+[Denizli Hackerspace Meetup](https://www.meetup.com/Denizli-Hackerspace-Meetup-Group/events/239749312/)
+sayfasını ziyaret edebilirsiniz.
+
 İlgililere duyurulur.
 
 ![hello-world-event-poster](../assets/images/articles/2017-05-05-denizlihs-hello-world-event-poster.jpg)
