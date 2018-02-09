@@ -2,27 +2,21 @@
 # the following line to use "https"
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 3.3.8'
+gem 'middleman', '~> 3.4', '>= 3.4.1'
 
 # Live-reloading plugin
-gem 'middleman-livereload', '~> 3.4.2'
+gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 
 # Middleman-sprockets
-gem 'middleman-sprockets', '~> 3.4.1'
+gem 'middleman-sprockets', '~> 3.5'
 
 # Deploy plugin
 gem 'middleman-deploy', '~> 1.0.0'
 
-# For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
-
-# Twitter Bootstrap
-gem 'bootstrap-sass', '~> 3.3.3'
-
+# Other gems
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'middleman-blog', '~> 3.5.3'
-gem 'middleman-syntax', '~> 2.0.0'
-gem 'redcarpet', '~> 3.2.2'
-gem 'nokogiri', '~> 1.6.6.2'
-
-# For feed.xml.builder
-gem 'builder', '~> 3.2.2'
+gem 'middleman-syntax', '~> 2.1'
+gem 'redcarpet', '~> 3.4'
+gem 'nokogiri', '~> 1.8', '>= 1.8.2'
+gem 'builder', '~> 3.2', '>= 3.2.3'
