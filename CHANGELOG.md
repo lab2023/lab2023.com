@@ -1,5 +1,29 @@
 
 #### [Current]
+ * [d09805e](../../commit/d09805e) - __(Tayfun zi ERKAN)__ Merge pull request [#33](../../issues/33) from lab2023/feature/web_developer_job_application_tr
+
+Web developer JOB application was added (TR version)
+ * [c86d5fe](../../commit/c86d5fe) - __(Tayfun Ozis ERIKAN)__ Web developer JOB application was finished (TR version) - Google web form was added
+ * [9bdb711](../../commit/9bdb711) - __(Tayfun Ozis ERIKAN)__ Web developer JOB application was added (TR version) - Base font color was changed.
+ * [274c0a8](../../commit/274c0a8) - __(Tayfun Ozis ERIKAN)__ GEM versions were updated
+ * [4603a73](../../commit/4603a73) - __(Tayfun Ozis ERIKAN)__ GEM versions were updated
+ * [7c301ba](../../commit/7c301ba) - __(Fadime zhan)__ Merge pull request [#32](../../issues/32) from lab2023/master
+
+ * [12ecfe8](../../commit/12ecfe8) - __(fadimezhan)__ Update version v1.14.0.0
+ * [802fda7](../../commit/802fda7) - __(Hamdi Bayhan)__ Merge pull request [#31](../../issues/31) from lab2023/edit_company_members
+
+#time 10m - Removed team members who are Fatih and Esref
+ * [323a722](../../commit/323a722) - __(fadimezhan)__ #time 10m - Removed team members who are Fatih and Esref
+ * [d39d672](../../commit/d39d672) - __(Tayfun zi ERKAN)__ Merge pull request [#30](../../issues/30) from lab2023/feature/add_new_team_member_emir_and_fatih
+
+#time 10m - Add team members who are Emir and Fatih
+ * [f2a6f16](../../commit/f2a6f16) - __(hamdibayhan)__ #time 10m - Add team members who are Emir and Fatih
+
+#### v1.13.1.0
+ * [b828bb8](../../commit/b828bb8) - __(Tayfun Ozis ERIKAN)__ Event link was added
+
+#### v1.13.0.1
+ * [7709143](../../commit/7709143) - __(Tayfun Ozis ERIKAN)__ Bump version v1.13.0.1
  * [65f2ca5](../../commit/65f2ca5) - __(Tayfun Ozis ERIKAN)__ Event information article was added
 
 #### v1.13.0.0
