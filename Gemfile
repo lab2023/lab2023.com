@@ -8,7 +8,7 @@ gem 'middleman', '~> 3.4', '>= 3.4.1'
 gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 
 # Middleman-sprockets
-gem 'middleman-sprockets', '~> 3.5'
+gem 'middleman-sprockets', '~> 3.5.0'
 
 # Deploy plugin
 gem 'middleman-deploy', '~> 1.0.0'
@@ -16,7 +16,7 @@ gem 'middleman-deploy', '~> 1.0.0'
 # Other gems
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'middleman-blog', '~> 3.5.3'
-gem 'middleman-syntax', '~> 2.1'
+gem 'middleman-syntax', '~> 3.0'
 gem 'redcarpet', '~> 3.4'
 gem 'nokogiri', '~> 1.8', '>= 1.8.2'
 gem 'builder', '~> 3.2', '>= 3.2.3'
