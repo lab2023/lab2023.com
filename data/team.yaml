@@ -1,0 +1,98 @@
+members:
+  onurozgurozkan:
+    title: Onur Ozgur OZKAN | Co-founder
+    info:
+      I graduated in economics. I am the creator of Kebab Project, co-founder at Lab2023, Bulutfon and Qudea,
+      public speaker, open source developer.
+    twitter: onurozgurozkan
+    profile_picture: onur-ozgur-ozkan.jpg
+  tayfunoziserikan:
+    title: Tayfun Ozis ERIKAN | Co-founder &amp; CEO
+    info:
+      Web Developer, Graphic & Web Designer
+      Ruby, Ruby on Rails, Ext JS & Sencha Touch, jQuery, OS X User. Kebab Project Developer. Public Speaker.
+      Co-Founder of Lab2023 Information Technologies, Bulutfon Telecommunication and Qudea, Inc.
+    twitter: toziserikan
+    profile_picture: tayfun-ozis-erikan.jpg
+  serdaryagci:
+    title: Serdar YAGCI | Adviser
+    info:
+      He knows PHP, Objective - C and Javascript Frameworks. He is photographer and traveler.
+    twitter: Sevliya
+    profile_picture: serdar-yagci.jpg
+  ismailakbudak:
+    title: Ismail AKBUDAK | Web - Mobile Developer
+    info:
+      Software Developer, PHP, CodeIgniter, Ruby On Rails, JavaScript, JQuery, Founder Of Hepgezelim.
+      I love to use Ubuntu, to follow new technologies and electronics.
+    twitter: isoakbudak
+    profile_picture: ismail-akbudak.jpg
+  claraisabel:
+    title: Clara Isabel PANTOJA MUÑOZ | Graphic Designer
+    info:
+      Creative and proactive person of graphic communication design and emphasis in multimedia design.
+      Interested in interactive design and information technology projects. Has great motivation for photography,
+      visual effects and web design. Likes music, museums and the integration of art and technology in her work.
+    twitter: klapancg
+    profile_picture: clara-isabel-pantoja.jpg
+  kamilagareeva:
+    title: Kamila GAREEVA | Graphic Designer
+    info:
+      Graphic artist, 2D animator, graphic - designer
+    twitter: kamilagareeva1
+    profile_picture: kamila-gareeva.jpg
+  fadimeozhan:
+    title: Fadime OZHAN | Web - Software Developer
+    info:
+      Software developer, Linux, Ruby on Rails, Ruby, Javascript.
+      I always prefer to write clean and understandable code. I am open to new ideas and love to follow new technologies.
+    twitter: fadimezhan
+    profile_picture: fadime-ozhan.jpg
+  sahinakyol:
+    title: Şahin AKYOL | Software Developer
+    info:
+      I've so many various interests but generally,
+      I'm a Software Developer and Errorist...
+    twitter: sahinakyoll
+    profile_picture: sahin-akyol.png
+  mervesahan:
+    title: Merve SAHAN | Web Developer
+    info:
+      I'm a graduate in mathematics and computer science. I think math is the language of nature.
+      I find the software interesting and exciting.
+    twitter: mervesahn_
+    profile_picture: merve-sahan.jpg
+  kemalakin:
+    title: Kemal AKIN | Web Developer
+    info:
+      I'm studying computer teacher. I love working with Linux-based operating systems and passionate about Ruby on Rails.
+    twitter: kemalakin97
+    profile_picture: kemal-akin.jpg
+  boratanrikulu:
+    title: Bora TANRIKULU | Web Developer
+    info:
+      A person that trying to improve himself. Interested with shell scripting, system administration and ruby on rails.
+    twitter: boratanrikulu_
+    profile_picture: bora-tanrikulu.jpg
+  hasantezcan:
+    title: Hasan TEZCAN | Web Developer
+    info:
+      A student trying to be better. Open source lover. Interested in GNU/Linux, Ruby on Rails.
+    twitter: hasantezcann
+    profile_picture: hasan-tezcan.jpg
+  hasanunlu:
+    title: Hasan ÜNLÜ | Intern
+    info:
+      I am a computer science undergrad learning web technologies and Ruby
+    twitter: hsnunl97
+    profile_picture: hasan-unlu.jpg
+  olcayoransoy:
+    title: Olcay ORANSOY | Intern
+    info:
+      Olcay is probably the youngest Ruby on Rails developer in the country.
+      He is our youngest intern. He started to use computer at the age of 3.
+      He works hard on developing his skills on every aspects of web development.
+      But his main area of interest is backend systems.
+      He is a Hot Wheels collectionner and one of the biggest Top Gear fans.
+    twitter: olcay_yaclo
+    profile_picture: olcay-oransoy.jpg
