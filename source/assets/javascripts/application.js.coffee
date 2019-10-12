@@ -50,7 +50,7 @@ $(document).ready ->
       offset_top = (if $(this).data("offset-top") then $(this).data("offset-top") else 20)
       if target.length
         $("html,body").animate
-          scrollTop: target.offset().top - offset_top
+          scrollTop: target.offset().top - offset_top + 25
         ,
           duration: 800
         false
