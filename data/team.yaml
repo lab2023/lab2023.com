@@ -61,14 +61,22 @@ members:
       I'm studying computer teacher. I love working with Linux-based operating systems and passionate about Ruby on Rails.
     twitter: kemalakin97
     profile_picture: kemal-akin.jpg
+  yunusemredilber:
+    title: Yunus Emre Dilber | Web Developer
+    info:
+      I love computer science.
+      I also like web development with rails & new javascript based technologies.
+      Interested in mobile app development.
+    twitter: yunusemredilber
+    profile_picture: yunus-emre-dilber.jpg
   boratanrikulu:
-    title: Bora TANRIKULU | Web Developer
+    title: Bora TANRIKULU | Intern
     info:
       A person that trying to improve himself. Interested with shell scripting, system administration and ruby on rails.
     twitter: boratanrikulu_
     profile_picture: bora-tanrikulu.jpg
   hasantezcan:
-    title: Hasan TEZCAN | Web Developer
+    title: Hasan TEZCAN | Intern
     info:
       A student trying to be better. Open source lover. Interested in GNU/Linux, Ruby on Rails.
     twitter: hasantezcann
@@ -79,14 +87,6 @@ members:
       I am a computer science undergrad learning web technologies and Ruby
     twitter: hsnunl97
     profile_picture: hasan-unlu.jpg
-  yunusemredilber:
-    title: Yunus Emre Dilber | Web Developer
-    info:
-      I love computer science.
-      I also like web development with rails & new javascript based technologies.
-      Interested in mobile app development.
-    twitter: yunusemredilber
-    profile_picture: yunus-emre-dilber.jpg
   olcayoransoy:
     title: Olcay ORANSOY | Intern
     info:
