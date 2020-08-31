@@ -14,7 +14,7 @@ gem 'middleman-sprockets', '~> 3.5.0'
 gem 'middleman-deploy', '~> 1.0.0'
 
 # Other gems
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.4'
 gem 'middleman-blog', '~> 3.5.3'
 gem 'middleman-syntax', '~> 3.0'
 gem 'redcarpet', '~> 3.4'
