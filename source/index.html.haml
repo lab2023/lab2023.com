@@ -14,71 +14,28 @@
             Read more in our playbook
             %i.fa.fa-arrow-circle-right
 
+%section#our-works
   .contents-alternate
     .container.contents
-      %div.work-item
+      .work-item
         .row
-          .col-lg-8.col-lg-offset-2
-            %h3 Bulutfon Telecommunications Corp.
-            %p
-              Bulutfon is internet based phone provider which authorized by public authority.
-              Our services are voip calls, ip pbx, ivr, voice mail, fax, voice recording and development tools
-              for developers (API, SDK). All software infrastructure of Bulutfon is developed by Lab2023.
-            %p
-              = link_to 'https://www.bulutfon.com/?ref=1', target: '_blank' do
-                Visit project
-                %i.fa.fa-arrow-circle-right
-        .row
-          .col-lg-10.col-lg-offset-1
-            = link_to 'https://www.bulutfon.com/?ref=1', target: '_blank' do
-              = image_tag 'works/bulutfon.png', class: 'img-responsive'
-
-      %hr.divider/
-
-      %div.work-item
-        .row
-          .col-lg-8.col-lg-offset-2
-            %h3 Diagnoscope Symptom Checker Apps
-            %p
-              Diagnoscope is a symptom checker application. It analyzes the symptoms that you selected,
-              compares them with those of any known disease, informs you about your health status and
-              directs you to the appropriate specialist. We develop web, iPhone, iPad apps for end
-              users and admin panel for admins.
-            %p
-              = link_to 'http://www.diagnoscope.com/', target: '_blank' do
-                Visit project
-                %i.fa.fa-arrow-circle-right
-        .row
-          .col-lg-8.col-lg-offset-2
-            = link_to 'http://www.diagnoscope.com/', target: '_blank' do
-              = image_tag 'works/diagnoscope.png', class: 'img-responsive'
-
-      %hr.divider/
-
-      %div.work-item
-        .row
-          .col-lg-8.col-lg-offset-2
-            %h3 Aydede - Your Gateway to Global Innovation in Merchandising
-            %p
-              Aydede's aim to help brands create the personal relationships they need
-              with their customers via unique designs that deliver
-              emotionally satisfying consumer experience.
-              %br/
-              We have redesigned their logo and website.
-
-            %p
-              = link_to 'http://www.aydede.com/', target: '_blank' do
-                Visit project
-                %i.fa.fa-arrow-circle-right
-        .row
-          .col-lg-8.col-lg-offset-2
-            = link_to 'http://www.aydede.com/', target: '_blank' do
-              = image_tag 'works/aydede.png', class: 'img-responsive'
-
-            %p.extra
-              = link_to 'mailto:hello@lab2023.com', class: 'btn btn-primary big-buttons' do
-                %strong Want us to work for you?
-                Click here to hire us
+          .col-lg-12
+            .swiper-container
+              .swiper-wrapper
+                - ['trackerr','k4english','hizli-ceviri','restaurant','ervepro','eatle','driver'].each do |item|
+                  .swiper-slide.carousel-item.text-center
+                    %h3
+                      =lorem.words(5)
+                    %p
+                      =lorem.sentences(4)
+                    %p
+                      = link_to '#', target: '_blank' do
+                        Visit project
+                        %i.fa.fa-arrow-circle-right                    
+                    = image_tag "works/#{item}.png", class: 'img-responsive'    
+              .swiper-button-next.hidden-sm
+              .swiper-button-prev.hidden-sm
+            .swiper-pagination
 
 %section#our-team
   .container.contents
