@@ -22,17 +22,17 @@
           .col-lg-12
             .swiper-container
               .swiper-wrapper
-                - ['trackerr','k4english','hizli-ceviri','restaurant','ervepro','eatle','driver'].each do |item|
+                - data.references.list.each do |reference|
                   .swiper-slide.carousel-item.text-center
                     %h3
-                      =lorem.words(5)
+                      = reference[1][:title]
                     %p
-                      =lorem.sentences(4)
+                      = reference[1][:desc]
                     %p
-                      = link_to '#', target: '_blank' do
+                      = link_to reference[1][:link], target: '_blank' do
                         Visit project
                         %i.fa.fa-arrow-circle-right                    
-                    = image_tag "works/#{item}.png", class: 'img-responsive'    
+                    = image_tag "works/#{reference[1][:image]}.png", class: 'img-responsive'    
               .swiper-button-next.hidden-sm
               .swiper-button-prev.hidden-sm
             .swiper-pagination
