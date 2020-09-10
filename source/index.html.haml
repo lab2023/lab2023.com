@@ -22,7 +22,6 @@
           .col-lg-12
             .swiper-container
               .swiper-wrapper
-<<<<<<< HEAD
                 - data.references.list.each do |reference|
                   .swiper-slide.carousel-item.text-center
                     %h3
@@ -34,19 +33,6 @@
                         Visit project
                         %i.fa.fa-arrow-circle-right                    
                     = image_tag "works/#{reference[1][:image]}.png", class: 'img-responsive'    
-=======
-                - ['trackerr','k4english','hizli-ceviri','restaurant','ervepro','eatle','driver'].each do |item|
-                  .swiper-slide.carousel-item.text-center
-                    %h3
-                      =lorem.words(5)
-                    %p
-                      =lorem.sentences(4)
-                    %p
-                      = link_to '#', target: '_blank' do
-                        Visit project
-                        %i.fa.fa-arrow-circle-right                    
-                    = image_tag "works/#{item}.png", class: 'img-responsive'    
->>>>>>> ddab42f9ef35c0f8e53926a68b8898880cc5093d
               .swiper-button-next.hidden-sm
               .swiper-button-prev.hidden-sm
             .swiper-pagination
