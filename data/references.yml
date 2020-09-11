@@ -1,0 +1,46 @@
+list:
+  bulutfon:
+    title: Bulutfon Telecommunications Corp.
+    desc: Bulutfon is internet based phone provider which authorized by public authority. Our services are voip calls, ip pbx, ivr, voice mail, fax, voice recording and development tools for developers (API, SDK). All software infrastructure of Bulutfon is developed by Lab2023.
+    image: bulutfon
+    link: https://www.bulutfon.com
+  trackerr:
+    title: Trackerr
+    desc: When customer order their food from restaurant, they wanna track couriers location. Now they can track their orders from your favorite restaurants with Real Time ETA. And it's on Google play store and App store.
+    image: trackerr
+    link: https://www.deliberr.com/trackerr
+  k4english:
+    title: K4English
+    desc: K4English is an online platform where students can enhance their academic reading skills, boost their academic vocabulary knowledge and excel at English grammar. The online platform is available both on Desktop and mobile devices.
+    image: k4english
+    link: https://k4english.com
+  aydede:
+    title: Aydede - Your Gateway to Global Innovation in Merchandising
+    desc: Aydede's aim to help brands create the personal relationships they need with their customers via unique designs that deliver emotionally satisfying consumer experience. We have redesigned their logo and website.
+    image: aydede
+    link: https://www.aydede.com
+  eatle:
+    title: Eatle - Easy Pickup & Delivery
+    desc: Eatle is online order food and drinks and more platform. Delivery & takeout from the best local favorite restaurants. Browse nearby Breakfast, lunch, dinner and more. It's American based online food and drinks ordering mobile and web application.
+    image: eatle
+    link: https://eatle.com
+  ervepro:
+    title: Erve PRO
+    desc: Mobile body shaper application. It's create exercise programs base on your body weight/height and traning skills. Also you can add your outdoor exercise stats, such as running, walking, playing basketball and so on.
+    image: ervepro
+    link: '#'
+  restaurant:
+    title: Deliberr Restaurant APP
+    desc: On this app restaurants to request a delivery driver through the Deliberr App. Restaurants can create order and also Restaurants can view order reports. Deliberr restaurant app avaible on web and mobile devices. 
+    image: restaurant
+    link: 'https://my.deliberr.com'
+  hizliceviri:
+    title: Hızlı Çeviri
+    desc: Professional translate services. You can access web page also by your mobile devices. Android or iOS doesn't matter it's will look pretty good. You can upload your file to system and choose which language you wanna translate. It's fast and safe. 
+    image: hizliceviri
+    link: 'https://hizliceviri.com'
+  driver:
+    title: Couriers App
+    desc: Couriers app is used by driver who wanna earn money by delivering food from restaurant to customer. You can accept order on live location map, and pickup order from restaurant to dropoff customer address. 
+    image: driver
+    link: 'https://www.deliberr.com/apps/couriers'
