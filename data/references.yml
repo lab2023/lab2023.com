@@ -14,6 +14,11 @@ list:
     desc: K4English is an online platform where students can enhance their academic reading skills, boost their academic vocabulary knowledge and excel at English grammar. The online platform is available both on Desktop and mobile devices.
     image: k4english
     link: https://k4english.com
+  diagnoscope:
+    title: Diagnoscope Symptom Checker Apps
+    desc:  Diagnoscope is a symptom checker application. It analyzes the symptoms that you selected, compares them with those of any known disease, informs you about your health status and directs you to the appropriate specialist. We develop web, iPhone, iPad apps for end users and admin panel for admins.
+    image: diagnoscope
+    link: http://www.diagnoscope.com
   aydede:
     title: Aydede - Your Gateway to Global Innovation in Merchandising
     desc: Aydede's aim to help brands create the personal relationships they need with their customers via unique designs that deliver emotionally satisfying consumer experience. We have redesigned their logo and website.
