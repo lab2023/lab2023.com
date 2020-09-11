@@ -2,6 +2,7 @@
 #= require vendor/retina-1.1.0.min
 #= require vendor/skrollr.min.js
 #= require vendor/jquery.typer.js
+#= require components/carousel.js
 
 # Define dynamic resize function
 dynamicResizer = ->
