@@ -7,11 +7,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    autoprefixer-rails (9.1.0)
+    autoprefixer-rails (9.8.6.3)
       execjs
-    bootstrap-sass (3.3.7)
+    bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+      sassc (>= 2.0.0)
     builder (3.2.3)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -128,6 +128,8 @@ GEM
     redcarpet (3.4.0)
     rouge (2.2.1)
     sass (3.4.25)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sprockets (2.12.5)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -155,7 +157,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 3.3, >= 3.3.7)
+  bootstrap-sass (~> 3.4)
   builder (~> 3.2, >= 3.2.3)
   middleman (~> 3.4, >= 3.4.1)
   middleman-blog (~> 3.5.3)
