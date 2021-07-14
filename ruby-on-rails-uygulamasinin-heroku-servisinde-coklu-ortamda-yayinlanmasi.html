@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda (Staging, Production) Yayınlanması
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda (Staging, Production) Yayınlanması' name='description'>
+<meta content='ruby, rails, heroku, ruby on rails, web, cybele, multi environment on heroku, tr' name='keywords'>
+<meta content='İsmail AKBUDAK' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/isoakbudak" target="_blank">İsmail AKBUDAK</a></h4>
+<h5>August  4, 2016</h5>
+<span class='tag'><a href="/tag/ruby.html">ruby</a></span>
+<span class='tag'><a href="/tag/rails.html"> rails</a></span>
+<span class='tag'><a href="/tag/heroku.html"> heroku</a></span>
+<span class='tag'><a href="/tag/ruby-on-rails.html"> ruby on rails</a></span>
+<span class='tag'><a href="/tag/web.html"> web</a></span>
+<span class='tag'><a href="/tag/cybele.html"> cybele</a></span>
+<span class='tag'><a href="/tag/multi-environment-on-heroku.html"> multi environment on heroku</a></span>
+<span class='tag'><a href="/tag/tr.html"> tr</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Ruby on Rails Uygulamasının Heroku Servisinde Çoklu Ortamda (Staging, Production) Yayınlanması</h1>
+<p>Merhaba,</p>
+
+<p>Sizlere daha önceden rails uygulamanın yayına alınması yöntemlerinden biri olan kendi ubuntu sunucunuzda uygulamanın yayınlanması işlemini anlatmıştım. İlgili yazıya şu <a href="http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html">linkten</a> ulaşabilirsiniz.</p>
+
+<p>Bu yazıda ise uygulamanın <a href="http://heroku.com" target="_blank">Heroku</a> servisi üzerinde, çoklu ortamlar(Staging, Production) için ayrı ayrı yayına alınması süreçlerinden ve her bir ortam için farklı git branch&#39;lerinin kullanılması olayından bahsedeceğim.</p>
+
+<p>Heroku üzerinde yayına alacağımız uygulamanın boş bir uygulama olması yerine bir kaç işlem yapabildiğimiz bir uygulama olması için <a href="https://github.com/lab2023/cybele/" target="_blank">Cybele</a> gem&#39;ini kullanarak bir uygulama oluşturacağım. Kullandığım cybele versiyonu ise 1.9.2&#39;dir.</p>
+
+<p>Proje oluşturma adımı ile başlayacak olursak;</p>
+
+<p>Terminalimizden cybele proje oluşturma komutunu çalıştırıyoruz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    cybele blog
+</code></pre></div>
+<p>Daha sonrasında ise oluşturulan projemizin README.md dosyasında yeralan uygulama çalıştırılmadan önce yapılması gerekenleri yapıyoruz.
+Bu işlemler ise;</p>
+
+<ul>
+<li>Proje dizininde yeralan .env.local değişkenlerini ayarlıyoruz.
+Bu ayarlar içinde e-posta göndermek için kullandığımız SMTP ayarları olan aşağıda listelenen ayarlar bulunmaktadır.</li>
+</ul>
+<div class="highlight"><pre class="highlight ruby"><code>    <span class="no">SMTP_PASSWORD</span><span class="o">=</span><span class="n">your_password</span>
+    <span class="no">SMTP_USER_NAME</span><span class="o">=</span><span class="n">your_user_name</span>
+    <span class="no">SMTP_ADDRESS</span><span class="o">=</span><span class="n">smtp</span><span class="p">.</span><span class="nf">sendgrid</span><span class="p">.</span><span class="nf">net</span>
+</code></pre></div>
+<p>Mail servisi olarak <a href="https://sendgrid.com" target="_blank">SendGrid</a> servisi size ücretsiz olarak aylık 12000 e-posta sağlamaktadır. Hobi projeleriniz için bu servisi kullanabilirsiniz. <a href="https://app.sendgrid.com/settings/credentials" target="_blank">Settings-&gt;Credentials</a> sayfasından gerekli username ve password&#39;u alabilirsiniz.</p>
+
+<ul>
+<li>Hataları izleyebilmek için kullandığımız Rollbar servisinde aldığımız token&#39;ı config/initializers/rollbar.rb dosyasında yer alan your_token yazan string ile değiştiriyoruz. Rollbar servisi üzerinde projenizi oluşturduğunuzda size doğrudan gerekli token&#39;ı, yönergeleri ile birlikte verecektir.</li>
+<li>User ve Admin model&#39;leri için db/migrate/*.rb  dizininde yeralan migration dosyalarındaki is_active alanının varsayılan değerini true olarak ayarlıyoruz.</li>
+<li>Projenin config/settings.yml dosyasında yeralan username ve password alanlarını değiştiriyoruz.</li>
+<li>Son olarakta projenin public dizini için VERSION.txt dosyası oluşturmak için şu komutu çalıştırıyoruz;</li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code>    ln <span class="nt">-s</span> ../VERSION.txt VERSION.txt
+</code></pre></div>
+<p>Projemizde bu ayarları yaptıktan sonra, uygulamayı çalıştırma işlemlerine geçiyoruz. Bu adımda ise şu komutları sırasıyla çalıştırıyoruz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    bundle
+    redis-server
+    rake sidekiq:start
+    rake db:create
+    rake db:migrate
+    rake dev:seed
+    rails server
+</code></pre></div>
+<p>Çalışan uygulamanın ekran görüntüsü aşağıdaki resimdeki gibi elde edilecektir.</p>
+
+<p><a href="#"><img alt="cybele-ile-kurulmus-uygulama" src="assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/uygulama.png" /></a></p>
+
+<p>Ayrıca localhost:3000/hq url&#39;linden de uygulamanın yönetici bölümüne erişebilirsiniz. Yönetici giriş bilgileri db/seeds.rb dosyasında yer almaktadır.</p>
+
+<p>Buraya kadar normal olarak projemizi oluşturmuş olduk. Şimdi çoklu ortamlarda kullanmak için git&#39;in efektif bir dallanma eklentisi olan <a href="http://danielkummer.github.io/git-flow-cheatsheet/" target="_blank">git-flow</a> ile ilgili ayarlara.
+Projemizin kök dizininde tanımlamış olduğumuz git yanına git-flow&#39;u tanımlıyoruz. Git&#39;in master branchinde iken şu komut ile git-flow&#39;u aktif hale getiriyoruz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    git flow init
+</code></pre></div>
+<p>Bu komut sayesinde release kodlarımızın yani production ortamı için kullanılacak kodlarımız master branch&#39;inde, development kodlarımız yani staging sunucusunda yayınlayacağımız kodlar develop branch&#39;inde tutulacaktır.
+Git-flow tanımlama işleminin ardından artık heroku üzerinde uygulama oluşturma bölümüne geçiyoruz.
+Heroku üzerinde heabımızı oluşturup giriş yaptıktan sonra yeni bir uygulama oluşturuyoruz.</p>
+
+<p><a href="#"><img alt="heroku-uzerinde-uygulama-olusturma" src="assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uygulama-olusturma.png" /></a></p>
+
+<p>Oluşturduğumuz uygulamanın ismi eşsiz olmalıdır. Heroku size alt alanadı sağladığı için aynı isimli uygulamara izin vermemektedir.
+Biz uygulama ismi olarak lab2023-blog-sample tercih ettik. Bu uygulama production ortamı için kullanacağımız kodları barındıracaktır.
+Yukarıdaki adımları izleyerekten tekrar bir uygulama daha oluşturuyoruz. Bu uygulama ise staging ortamımız olacak ve develop branch&#39;indeki kodlarımızı barındıracağız.
+Staging ortamı için uygulama ismi olarak staging-lab2023-blog-sample&#39;ı tercih ettik.</p>
+
+<p>Production ve Staging uygulamalarımızı oluşturduktan sonra bu iki uygulamaya da uygulamanın detaylar sayfasında bulunan Resources sekmesinden Heroku Postgres::Database, Logentries ve Redis To Go elementlerini şekilde ki gibi ekliyoruz.</p>
+
+<p><a href="#"><img alt="heroku-uzerinde-uygulamaya-element-ekleme" src="assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uygulamaya-element-ekleme.png" /></a></p>
+
+<p>Heroku Postgres::Database elementi PostgreSQL veritabanı için gereklidir.
+Logentries elementi uygulama logları portal üzerinden analiz edebilmemiz için gereklidir.
+Redis To Go elementi uygulama içinde kullandığımız Sidekiq arka plan işlerini gerçekleştirebilmemiz için gereklidir.</p>
+
+<p>Uygulamamız için gerekli elementleri ekledikten sonra sıra geldi heroku uygulamalarımızın git ile ilgili ayarlarını yapma işlemine. Bu işlem için Production uygulamamız olan lab2023-blog-sample uygulamasının Detaylar sayfasından Settings sekmesine geliyoruz. Bu sayfada uygulama ile ilgili bir çok detayı bulabilirsiniz. Info bölümde yer alan Git URL alanındaki linki kopyalıyoruz.</p>
+
+<p><a href="#"><img alt="heroku-uzerinde-uygulama-git-url" src="assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uzerinde-uygulama-git-url.png" /></a></p>
+
+<p>Bu kopyaladığımız git url&#39;i terminalden proje dizinimize gelerek, aşağıdaki komutu kullanarak ekliyoruz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    git remote add production https://git.heroku.com/lab2023-blog-sample.git
+</code></pre></div>
+<p>Git komutlarında kullancağınız remote.production.url&#39;in ayarlandığını görmek için, şu komutu kullanabilirsiniz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    git config <span class="nt">--list</span>
+</code></pre></div>
+<p>Eğer yanlış bir url eklemesi yaptıysanız şu komutu kullanarak eklediğiniz url&#39;i kaldırabilirsiniz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    git remote remove production
+</code></pre></div>
+<p>Bu uyguladığımız adımlardan terminalden url eklemeye kadar olan adımları aynı şekilde staging uygulaması olan staging-lab2023-blog-sample için de yapıyoruz.
+Terminalden git url&#39;i ekleme bölümünde ise şu şekilde ki komutu çalıştırıyoruz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    git remote add staging https://git.heroku.com/staging-lab2023-blog-sample.git
+</code></pre></div>
+<p>Bu işlemlerden sonra artık uygulamamızın heroku urllerini de eklenmiş olduk.</p>
+
+<p>Şimdi staging uygulamamıza kodları gönderme kısmına gelelim.
+Bu işlemi yapabilmek için heroku uygulamalarına erişimimiz olması gerekmektedir. Heroku sunucularına, git ile uygulama kodlarını gönderebilmek için heroku komutları ile login olmalıyız. Heroku komutlarının kullanılabilmesi için ise <a href="https://toolbelt.heroku.com" target="_blank">Heroku Toolbelt</a> kurulumunu yapmalısınız.</p>
+
+<p>Kurulum yapıldıktan sonra şu komut ile heroku hesabınıza giriş yapabilirsiniz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku login
+</code></pre></div>
+<p>Giriş yaptıktan sonra staging uygulamamızı yayına almak için şu komutu kullanıyoruz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    git push staging develop:master
+</code></pre></div>
+<p>Bu komutta develop:master ile yapılmak istenen develop branch&#39;indeki kodlar heroku üzerinde master branchine aktarılması işlemidir. Heroku uygulamaları master branch&#39;te çalışmaktadır. Bu komutu çalıştırdıktan sonra uygulamamız artık heroku sunucusuna gönderilmiştir, şekilde gördüğünüz gibi.</p>
+
+<p><a href="#"><img alt="heroku-uzerinde-uygulama-calismasi" src="assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uzerinde-uygulama-calismasi.png" /></a></p>
+
+<p>Proje dizinimizde bulunan Procfile sayesinde bir web bir de worker dynosu çalıştırılabilir duruma gelmiştir. Web dynosu varsayılan olarak direk çalıştırılmıştır. Worker&#39;ı ise uygulama detay sayfasında Resources sekmesinde bulunan sayfadan açmamız gerekmektedir. Worker&#39;ı da çalıştırdıktan sonra uygulamamızın son hali şekildeki gibidir.</p>
+
+<p><a href="#"><img alt="heroku-uzerinde-uygulama-calismasi-2" src="assets/images/articles/2016-08-04-ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi/heroku-uzerinde-uygulama-calismasi-2.png" /></a></p>
+
+<p>Worker&#39;larımızın sidekiq ayarları config/sidekiq.yml dosyasında bulunmaktadır. Burada production ortamı için concurrency: 25 olarak ayarlanmıştır. Redis To Go ücretsiz paketi düşük özelliklere sahip olduğu için 25 thread&#39;e izin vermemektedir. Bunu 3 olarak ayarlarsak production ortamı içinde problem yaşamadan uygulamamızı yayınlamış oluruz.</p>
+
+<p>Uygulamamızı sunucuya gönderdik ve web ile worker dynolarını çalışır hale getirdik. Şimdi heroku üzerinde veritabanı için migration dosyalarını koşma ve seed rake&#39;lerini çalıştırma işlemine geçiyoruz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku run rake db:migrate <span class="nt">--app</span> staging-lab2023-blog-sample
+    heroku run rake dev:seed <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Heroku uygulamasında rails console&#39;a erişmek için gerekli komut;</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku run rake console <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Bu işlemlerden sonra .env.local dosyamızda tutduğumuz ENV değişkenlerinin heroku üzerinde ayarlanması işlemine geçeçek olursak, şu komut ile bu değişkenleri ayarlayabiliriz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku config:set <span class="nv">SMTP_ADDRESS</span><span class="o">=</span>smtp.sendgrid.net <span class="nt">--app</span> staging-lab2023-blog-sample
+    heroku config:set <span class="nv">SSMTP_USER_NAME</span><span class="o">=</span>your_user_name <span class="nt">--app</span> staging-lab2023-blog-sample
+    heroku config:set <span class="nv">SMTP_PASSWORD</span><span class="o">=</span>your_password <span class="nt">--app</span> staging-lab2023-blog-sample
+    heroku config:set <span class="nv">ROOT_PATH</span><span class="o">=</span>https://staging-lab2023-blog-sample.herokuapp.com <span class="nt">--app</span> staging-lab2023-blog-sample
+    heroku config:set <span class="nv">BASIC_AUTH_IS_ACTIVE</span><span class="o">=</span>yes <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Ayarlarınızı bu komutlar ile ayarladıktan sonra heroku üzerinde uygulamanın ayarlar sayfasında Config Variables bölümünde bu değişkenleri görebilirsiniz, ayrıca portal üzerinden de bu değişkenleri değiştirebilirsiniz. Herokuya rails uygulaması gönderildiğinde RAILS_ENV varsayılan olarak production olarak ayarlanıyor. RAILS_ENV değerini de staging ile değiştirebilirsiniz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku config:set <span class="nv">RAILS_ENV</span><span class="o">=</span>staging <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Şu komut ile de heroku üzerindeki değişkenlerinizi listeleyebilirsiniz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku config <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Şu komut ile çalışan dynolarınızı listeleyebilirsiniz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku ps <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Şu komut ile dynolarınızı(web, worker) yeniden başlatabilirsiniz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku ps:restart <span class="nt">--app</span> staging-lab2023-blog-sample
+</code></pre></div>
+<p>Komut bilgilerinin ardından production ortamında uygulamamızı yayınlama işlemine gelecek olursak; Şu anda master branch&#39;imizde herhangi bir release kodu bulunmamakta. Git-flow&#39;dan yararlanarak v1.0.0 etiketi ile bir versiyon yayınlayalım.
+Bu işlem için gerekli olan komutlar şunlardır;</p>
+<div class="highlight"><pre class="highlight shell"><code>    git flow release start v1.0.0
+    git flow release finish v1.0.0
+</code></pre></div>
+<p>Git-flow sayesinde çıkardığımız ilk release&#39;i lab2023-blog-sample heroku uygulamamıza göndermek için gerekli komut;</p>
+<div class="highlight"><pre class="highlight shell"><code>    git push production master
+</code></pre></div>
+<p>Uygulamamızı production ortamına gönderdik sonra aynı staging ortamında olduğu gibi diğer komutları uygulamaya özel olarak çalıştırıyoruz.</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku run rake db:migrate <span class="nt">--app</span> lab2023-blog-sample
+    heroku run rake dev:seed <span class="nt">--app</span> lab2023-blog-sample
+    heroku config:set <span class="nv">SMTP_ADDRESS</span><span class="o">=</span>smtp.sendgrid.net <span class="nt">--app</span> lab2023-blog-sample
+    heroku config:set <span class="nv">SSMTP_USER_NAME</span><span class="o">=</span>your_user_name <span class="nt">--app</span> lab2023-blog-sample
+    heroku config:set <span class="nv">SMTP_PASSWORD</span><span class="o">=</span>your_password <span class="nt">--app</span> lab2023-blog-sample
+    heroku config:set <span class="nv">ROOT_PATH</span><span class="o">=</span>https://lab2023-blog-sample.herokuapp.com <span class="nt">--app</span> lab2023-blog-sample
+    heroku config:set <span class="nv">BASIC_AUTH_IS_ACTIVE</span><span class="o">=</span>no <span class="nt">--app</span> lab2023-blog-sample
+    <span class="c"># Tek seferde bütün ayarları yapmak isterseniz şu komutu kullanabilirsiniz</span>
+    heroku config:set <span class="nv">SMTP_ADDRESS</span><span class="o">=</span>smtp.sendgrid.net <span class="nv">SSMTP_USER_NAME</span><span class="o">=</span>your_user_name <span class="nv">SMTP_PASSWORD</span><span class="o">=</span>your_password <span class="nv">ROOT_PATH</span><span class="o">=</span>https://lab2023-blog-sample.herokuapp.com <span class="nv">BASIC_AUTH_IS_ACTIVE</span><span class="o">=</span>no <span class="nt">--app</span> lab2023-blog-sample
+</code></pre></div>
+<p>Uygulamamız da ilk kez bu komutları çalıştırdıktan sonra yeni değişiklikleri sunucuya göndermek için kullanacağımız komutlar;</p>
+
+<p>Staging ortamı için;</p>
+<div class="highlight"><pre class="highlight shell"><code>    git push staging develop:master
+</code></pre></div>
+<p>Production ortamı için;</p>
+<div class="highlight"><pre class="highlight shell"><code>    git push production master
+</code></pre></div>
+<p>Eğer yeni migration dosyalarınız veya çalıştırmanız gereken özel rake&#39;ler varsa yukarıdaki komutlardaki gibi uygulamayı belirterek çalıştırmanız yeterlidir.</p>
+
+<p>Gemfile dosyanızda özel github repolarınız varsa bu repolara heroku uygulamanızın erişebilmesi için herokuya özel oluştruduğunuz ssh keylerinizi şu komut ile herokuya ekleyebilirsiniz;</p>
+<div class="highlight"><pre class="highlight shell"><code>    heroku keys:add ~/.ssh/heroku_id_rsa.pub
+</code></pre></div>
+<p>Sık ihtiyac duyabileceğiniz bazı komutların listesi aşağıdaki gibidir;</p>
+<div class="highlight"><pre class="highlight shell"><code>    <span class="c"># Web dynonusunu yeniden başlatır</span>
+    heroku ps:restart web
+    <span class="c"># Worker dynonusunu yeniden başlatır</span>
+    heroku restart worker
+    <span class="c"># Yapılması gereken ağır işleri farklı dyno büyüklüklerinde çalıştırmak isterseniz</span>
+    heroku run <span class="nt">--size</span><span class="o">=</span>standard-2x rake heavy:job
+    heroku run <span class="nt">--size</span><span class="o">=</span>performance-l rake heavy:job
+    <span class="c"># Uygulama loglarını terminalden izleyebilmeniz için</span>
+    heroku logs
+    heroku logs <span class="nt">--tail</span>
+    heroku logs <span class="nt">--source</span> app <span class="nt">--tail</span>
+    <span class="c"># Uygulamanın veritabanı bilgilerini listelemek isterseniz</span>
+    heroku pg
+    <span class="c"># Uygulamanın veritabanı yedek alma zaman planı</span>
+    heroku pg:backups schedules
+    <span class="c"># Uygulamanın veritabanın düzenli olarak yedek almasını istiyorsanız</span>
+    heroku pg:backups schedule <span class="nt">--at</span> <span class="s1">'04:00 Europe/Istanbul'</span>
+</code></pre></div>
+<p>Örnek uygulamaya şu <a href="https://lab2023-blog-sample.herokuapp.com/" target="_blank">linkten</a> ulaşabilirsiniz.
+Örnek kaynak kodlar ise şu <a href="https://github.com/ismailakbudak/lab2023-blog-sample" target="_blank">linkten</a> ulaşabilirsiniz.</p>
+
+<p>Umarım faydalı bir yazı olmuştur.
+İyi çalışmalar..</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

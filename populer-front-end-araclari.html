@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Popüler front-end araçları
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Popüler front-end araçları' name='description'>
+<meta content='grunt, yeoman, bower, gulp, js, npm, node' name='keywords'>
+<meta content='Safiye SEPETCİ' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/safiyesepetci" target="_blank">Safiye SEPETCİ</a></h4>
+<h5>November 24, 2015</h5>
+<span class='tag'><a href="/tag/grunt.html">grunt</a></span>
+<span class='tag'><a href="/tag/yeoman.html"> yeoman</a></span>
+<span class='tag'><a href="/tag/bower.html"> bower</a></span>
+<span class='tag'><a href="/tag/gulp.html"> gulp</a></span>
+<span class='tag'><a href="/tag/js.html"> js</a></span>
+<span class='tag'><a href="/tag/npm.html"> npm</a></span>
+<span class='tag'><a href="/tag/node.html"> node</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/populer-front-end-araclari.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/populer-front-end-araclari.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/populer-front-end-araclari.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Popüler front-end araçları</h1>
+<p>Teknolojinin geldiği konum ve ulaşılabilirliğinin artmasıyla web teknolojileri hayatımızda farklı bir noktaya yükseldi. Genel anlamda gelişen teknolojide önyüz kodlayıcıları için faydalı bazı araçları tanıtacağım.</p>
+
+<h3 id="bower">Bower</h3>
+
+<p><img alt="bower" src="assets/images/articles/25-09-08-tools-for-front-end/bower.jpg" /></p>
+
+<p>Bower bir front-end kütüphanesidir. Diğerlerinden ayıran özelliği ise projemizde kullanacağımız paketi kurduğumuzda bu paketin çalışması için gerekli olan diğer paketleri de kurması.</p>
+
+<p>Mesela bootstrap’ı indirdiğimizde jquery’ide indiriyor.</p>
+
+<h3 id="kurulumu">Kurulumu:</h3>
+
+<p>Npm kullanarak kuracağız. Bower paket yöneticisini kullanabilmemiz için bilgisayarımızda <a href="https://nodejs.org/en/">nodejs</a> ve <a href="https://git-scm.com/">git</a>’in kurulu olması gerekiyor.</p>
+<div class="highlight"><pre class="highlight shell"><code>npm install <span class="nt">-g</span> bower
+</code></pre></div>
+<h3 id="paket-kurulumu">Paket Kurulumu:</h3>
+
+<p>Şimdi binlerce paket içerisinden istediğimizi kullanabiliriz.</p>
+<div class="highlight"><pre class="highlight shell"><code>bower install bootstrap
+</code></pre></div>
+<p>Çıktısı:</p>
+
+<p><img alt="bower" src="assets/images/articles/25-09-08-tools-for-front-end/bower-bootstrap.jpg" /></p>
+
+<p>Kulanmak istediğimiz paketin tam adını, github proje linkini, proje linkini ya da github proje uzantısını yazarak kurabiliriz.</p>
+<div class="highlight"><pre class="highlight shell"><code>bower install twbs/bootstrap
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>bower install git://github.com/twbs/bootstrap
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>bower install http://example.com/script.js
+</code></pre></div>
+<h3 id="init">init</h3>
+
+<p>Bower’ın bir diğer güzel özelliği ise projemizde kullandıgımız paketleri</p>
+<div class="highlight"><pre class="highlight shell"><code>bower init
+</code></pre></div>
+<p>komutu ile json dosyası olarak saklaması ve dosya sayesinde aynı paketleri baska projelerde de kullanabilmesi. Bu sayede farklı bir projede yine aynı paketleri kullanacaksak yaptığımız işlem sayısını azaltmıs oluyoruz.</p>
+
+<p>Oluşturduğumuz bu bower.json dosyasını kullanmak istediğimiz projenin dizinine ekleyip</p>
+<div class="highlight"><pre class="highlight shell"><code>bower install
+</code></pre></div>
+<p>kodunu çalıştırmamız yeterli oluyor.</p>
+
+<p>Diyelim ki bower init komutunu çalıştırdıktan sonra projeye yeni paketler dahil ettik ve bunlarıda .json dosyamıza eklemek istiyoruz. Bu işlemide</p>
+<div class="highlight"><pre class="highlight shell"><code>bower install paket-adi <span class="nt">--save</span>
+</code></pre></div>
+<p>ya da</p>
+<div class="highlight"><pre class="highlight shell"><code>bower install paket-adi <span class="nt">-s</span>
+</code></pre></div>
+<p>komutu ile yapabiliyoruz.</p>
+
+<h3 id="list">list</h3>
+
+<p>Projenizde kullandığınız paketleri</p>
+<div class="highlight"><pre class="highlight shell"><code>bower list
+</code></pre></div>
+<p>komutuyla konsolda listeyebilirsiniz.</p>
+
+<h3 id="search">search</h3>
+
+<p>Aradığınız paketin adıyla arama yaptırabilirsiniz.</p>
+<div class="highlight"><pre class="highlight shell"><code>bower search paket-adi
+</code></pre></div>
+<p>Çıktısı:
+<img alt="bower" src="assets/images/articles/25-09-08-tools-for-front-end/bower-search.jpg" /></p>
+
+<h3 id="update">update</h3>
+
+<p>Kurduğumuz paketleri güncellemek istersek</p>
+<div class="highlight"><pre class="highlight shell"><code>bower update
+</code></pre></div>
+<p>komutu ile kurulu bütün paketleri,</p>
+
+<p>çıktısı:</p>
+
+<p><img alt="bower" src="assets/images/articles/25-09-08-tools-for-front-end/bower-update.jpg" /></p>
+<div class="highlight"><pre class="highlight shell"><code>bower update paket-adi
+</code></pre></div>
+<p>ile de sadece güncellemek istediğimiz paketi güncelletebiliyoruz.</p>
+
+<p>çıktısı:</p>
+
+<p><img alt="bower" src="assets/images/articles/25-09-08-tools-for-front-end/bower-update-name.jpg" /></p>
+
+<h3 id="uninstall">uninstall</h3>
+
+<p>Kurduğumuz paketi projeden kaldırmak istersek,</p>
+<div class="highlight"><pre class="highlight shell"><code>bower uninstall paket-adi
+</code></pre></div>
+<p>komutunu kullanıyoruz, json dosyasından da kaldırmak için &ndash;save komutunu eklememiz gerekiyor.</p>
+
+<p>Bower’ın özellikleri tabii ki bu kadar değil. <a href="http://bower.io/">www.bower.io</a> adresinden bütün detaylara ulaşabilirsiniz.</p>
+
+<h3 id="gulp">Gulp</h3>
+
+<p><img alt="gulp" src="assets/images/articles/25-09-08-tools-for-front-end/gulp.jpg" /></p>
+
+<p>Bu araç sayesinde projemizin rutin işlerini otomatize edebiliyoruz. Hepimiz web sayfasını yayına almadan önce bazı bazı işlemleri tekrar tekrar yapıyoruz. Kullandığımız fotoğrafların boyutlarını değiştirmek, css dosyamızı küçültmek, yazdığımız js’leri tek dosya haline getirmek gibi. Bu ve bunlar gibi rutin işlerimizi gulp sayesinde otomatize edebiliriz.</p>
+
+<p>Şimdi ilk olarak gulpjs&#39;i makinemize kuralım. Gulp da bower ve grunt gibi npm’e gereksinim duyuyor. Gulp kullanacağımız modülleri npm veritabanından çekiyor.</p>
+
+<h3 id="kurulumu">Kurulumu:</h3>
+<div class="highlight"><pre class="highlight shell"><code>npm install gulp <span class="nt">-g</span>
+</code></pre></div>
+<p>Projemize ya da localimize kurduktan sonra gulpfile.js dosyası oluşturup yaptıracağımız görevleri buraya yazıyoruz.</p>
+
+<p><img alt="gulp" src="assets/images/articles/25-09-08-tools-for-front-end/gulp-js.jpg" /></p>
+
+<p>Verdiğimiz görevler için kurulan plugin ya da paketler ise node_modules/ klasörü altına ekleniyor.</p>
+
+<p>Sonrasında ise işimize yarayacak paketleri bulup entegre edeceğiz. Bu paketleride istersek <a href="http://gulpjs.com/plugins/">gulpjs</a>&lsquo;in sayfasından istersekte <a href="https://www.npmjs.com/">npmjs</a>&#39;in sayfasından bulabılırız.</p>
+<div class="highlight"><pre class="highlight shell"><code>
+npm install paket-adi
+
+</code></pre></div>
+<p>yukarıdakı komut satırıda paketleri kurmaya yarıyor. Paket kurulumundan sonra kurduğumuz paketin parametrelerini gulpfile.js dosyamıza eklememiz gerekiyor.
+Aşağıdaki gulpfile.js dosyasında <a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>, <a href="https://www.npmjs.com/package/gulp-coffee">gulp-coffee</a> ve <a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a> eklentileri kullanılmış.</p>
+
+<p><img alt="gulp" src="assets/images/articles/25-09-08-tools-for-front-end/gulp-ext.jpg" /></p>
+
+<p>Kurduğumuz paketler proje dosyamızın içindeki node_modules dosyasına ekleniyor.</p>
+
+<p>İstediğimiz paketleri kurduktan ve gulpfile.js dosyasına ekledikten sonra ise komut satırına</p>
+<div class="highlight"><pre class="highlight shell"><code>gulp
+</code></pre></div>
+<p>yazdığımızda bütün görevleri çalıştırıyor.</p>
+
+<p>Gulpjs için daha detaylı bilgiye <a href="http://gulpjs.com/">www.gulpjs.com</a> adresinden ulaşabilirsiniz.</p>
+
+<h3 id="grunt">Grunt</h3>
+
+<p><img alt="grunt" src="assets/images/articles/25-09-08-tools-for-front-end/grunt.jpeg" /></p>
+
+<p>Gruntta tıpkı gulpjs gibi bir iş kolaylaştırıcı. Kullandığı modülleri npm veri tabanından çekiyor.</p>
+
+<h3 id="kurulumu">Kurulumu:</h3>
+<div class="highlight"><pre class="highlight shell"><code> npm install grunt
+</code></pre></div>
+<p>Grunt için kullanacağımız plug-in ya da modüller içinde</p>
+<div class="highlight"><pre class="highlight shell"><code>npm install paket-adi
+</code></pre></div>
+<p>komutunu kullabiliyoruz.</p>
+
+<p>Kurduktan sonra node_modules/ klasörü oluşturuyor, bu klasörde kuracağımız paket ve pluginler tutuluyor.</p>
+
+<p>Şimdi grunt.js dosyası oluşturup görevlerimizi oraya yazacağız. Genel olarak gulpjs&#39;le aynı yapıda. Farklılıkları görev yazma aşamasında ortaya çıkıyor.</p>
+
+<p><img alt="grunt" src="assets/images/articles/25-09-08-tools-for-front-end/grunt-sample.jpeg" /></p>
+
+<p>Yukarıda kaynağı grunt-project dizininde bulunan sample.js dosyasını add-sample.min.js dosyasına dönüştürecek görev için yazılmış kodlar yer alıyor.</p>
+
+<p>Kurduğumuz plugin&#39;lerin açıklamaları ve parametreleri github ya da kendi sayfalarında yazıyor.</p>
+
+<p>Pluginleri <a href="http://gruntjs.com/plugins">gruntjs</a>&#39;in sayfasından ya da <a href="https://www.npmjs.com/">npmjs</a>&#39;in sayfasından bulup kurabilirsiniz. Kullanabileceğimiz bütün metotlara gruntjs&#39;in <a href="http://gruntjs.com/api/grunt">API</a> sayfasından ulaşabilirsiniz.</p>
+
+<p>Daha detaylı bilgi için  <a href="http://gruntjs.com/">www.gruntjs.com</a> adresini inceleyebilirsiniz.</p>
+
+<h3 id="yeoman">Yeoman</h3>
+
+<p><img alt="yeoman" src="assets/images/articles/25-09-08-tools-for-front-end/yeoman.jpeg" /></p>
+
+<p>Yeoman npm&#39;i kullanarak sürecimizi hızlandıran bir diğer front-end aracımız. Projemiz için template olusturuyor.</p>
+
+<p>Bilgisayarımıza kurabilmek için node.js ve git in yüklü olması gerekıyor.</p>
+
+<h3 id="kurulumu">Kurulumu</h3>
+<div class="highlight"><pre class="highlight shell"><code>npm install yo
+</code></pre></div>
+<p>komutuyla yükleyebiliyoruz.</p>
+
+<p>Yeoman gruntjs ve bower araçlarını default olarak projeye dahil ediyor.</p>
+
+<p>oluşturmak istediğimiz projede kullanacağımız paketleri <a href="http://yeoman.io/generators/">generators</a> ya da <a href="https://www.npmjs.com/">npmjs</a> sayfasından bulup inceleyebilirsiniz.</p>
+
+<p>Paket kurulumu için:</p>
+<div class="highlight"><pre class="highlight shell"><code>npm install <span class="nt">--global</span> paket-adi
+</code></pre></div>
+<p>Paketi kurup yo komutunu çalıştırarak ya da</p>
+<div class="highlight"><pre class="highlight shell"><code>yo paket-adi
+</code></pre></div>
+<p>komutunu çalıştırarak template oluşturabiliriz.</p>
+
+<p>Çalıştırmak için komut satırına:</p>
+<div class="highlight"><pre class="highlight shell"><code>yo
+</code></pre></div>
+<p>komutunu yazıyoruz.</p>
+
+<p><img alt="yeoman" src="assets/images/articles/25-09-08-tools-for-front-end/yeoman-yo.jpeg" /></p>
+
+<p>Yukarıda yo komutundan sonra sistemde yüklü template yapılarını secip kullanabileceğimiz gibi install a generator komutunu seçerekte yeni template yükleyebiliyoruz.</p>
+
+<p>Yukarıda bahsettiğim bütün araçlar paket kurmak için npm&#39;e ihtiyac duyuyor. Bu yuzden plug-in ve paket kurulumları aynı.</p>
+
+<p>Yeoman ile html5 template’i oluşturmak istiyorsak</p>
+<div class="highlight"><pre class="highlight shell"><code>npm install <span class="nt">--global</span> generator-h5bp
+</code></pre></div>
+<p>komutunu kullanarak önce html5 paketini indiriyoruz. Sonrada</p>
+<div class="highlight"><pre class="highlight shell"><code>yp h5bp
+</code></pre></div>
+<p>komutu ile template oluşturuyoruz.</p>
+
+<p>Detaylı bilgi için  <a href="http://yeoman.io/">www.yeoman.com</a> adresini inceleyebilirsiniz.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Forkladığınız GitHub reposunu ana repo ile güncel tutmak
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Forkladığınız GitHub reposunu ana repo ile güncel tutmak' name='description'>
+<meta content='branch, fork, git, github, remote, tr' name='keywords'>
+<meta content='Tayfun Öziş ERİKAN' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/toziserikan" target="_blank">Tayfun Öziş ERİKAN</a></h4>
+<h5>June 17, 2013</h5>
+<span class='tag'><a href="/tag/branch.html">branch</a></span>
+<span class='tag'><a href="/tag/fork.html"> fork</a></span>
+<span class='tag'><a href="/tag/git.html"> git</a></span>
+<span class='tag'><a href="/tag/github.html"> github</a></span>
+<span class='tag'><a href="/tag/remote.html"> remote</a></span>
+<span class='tag'><a href="/tag/tr.html"> tr</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/forkladiginiz-github-reposunu-ana-repo-ile-guncel-tutmak.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/forkladiginiz-github-reposunu-ana-repo-ile-guncel-tutmak.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/forkladiginiz-github-reposunu-ana-repo-ile-guncel-tutmak.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Forkladığınız GitHub reposunu ana repo ile güncel tutmak</h1>
+<p>Bildiginiz gibi playbook, rails-template v.b. open source projelerimizi github üzerinden güncellemeye devam ediyoruz.</p>
+
+<p>Biz bu tarz projelerin (kendimize ait olan) her bir forkunun geliştiricilerde olmasının ve güncellemelerini kendi repolarından yapıp ana repoya pull request yapmaları gerektigine inanıyoruz.</p>
+
+<p>Bunun artı ve eksileri tartışılır ama böylelikle forklama, code review ve pull request süreçlerine de hakimiyet artacaktır. Bunun yanında bireysel github sayfalarımızda da ilgili lab2023 projelerinin tanıtımına katkısı olacaktır.</p>
+
+<p>Ancak bu durum beraberinde bir sorun getirmektedir. Ne mi ?</p>
+
+<p>A geliştiricisinin eklediği yeni bir içerigin B geliştiricisinde bulunan fork repoya alınması. Bunun çözümünü şu makalede bulabilirsiniz: <a href="http://bradlyfeeley.com/2008/09/03/update-a-github-fork-from-the-original-repo/">http://bradlyfeeley.com/2008/09/03/update-a-github-fork-from-the-original-repo/</a> Ben yine de aşağıda kısa bir özet geçmek istiyorum;</p>
+
+<p>Playbook&rsquo; u ele alırsak. Ben kendi bilgisayarıma <strong>lab2023/playbook</strong>&lsquo;u clonladım. Ardından kendi hesabıma bu repoyu forkladım ve lokalime <strong>lab2023/playbook</strong> dan çatallanan <strong>tayfunoziserikan/playbook</strong> reposunu playbook-fork adı altında tekrar klonladım. Bu repoya da yukarıdaki makalede anlatıldıgı şekilde;</p>
+<div class="highlight"><pre class="highlight plaintext"><code>git remote add --track master playbook git@github.com:lab2023/playbook.git
+</code></pre></div>
+<p>remote branch&#39;ını ekledim. Artık orjinal playbook&rsquo; da yapılan diğer değişiklikleri bu branch&#39;a fetch yapıp kendi master branch&#39;ına merge ederek playbook-fork repomun güncel kalmasını sağlayabiliyorum.</p>
+
+<p>İyi çalışmalar.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

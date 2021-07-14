@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Life Saving Commands: nohup & disown
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Life Saving Commands: nohup &amp; disown' name='description'>
+<meta content='linux. macosx, command, nohup, disown, en' name='keywords'>
+<meta content='Murat Kemal BAYGÜN' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/baygunm" target="_blank">Murat Kemal BAYGÜN</a></h4>
+<h5>May  9, 2014</h5>
+<span class='tag'><a href="/tag/linux-macosx.html">linux. macosx</a></span>
+<span class='tag'><a href="/tag/command.html"> command</a></span>
+<span class='tag'><a href="/tag/nohup.html"> nohup</a></span>
+<span class='tag'><a href="/tag/disown.html"> disown</a></span>
+<span class='tag'><a href="/tag/en.html"> en</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/life-saving-commands-nohup-and-disown.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/life-saving-commands-nohup-and-disown.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/life-saving-commands-nohup-and-disown.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Life Saving Commands: nohup & disown</h1>
+<h2 id="why-do-we-need-nohup-or-disown">Why do we need <code>nohup</code> or <code>disown</code> ?</h2>
+
+<p>Sometimes while you&rsquo; re developing, you need a job to continue running in the background even if you close the terminal. Sometimes you need a command running on a remote machine connected with ssh in a terminal window. Sometimes you start the command on the terminal and accidentally close the terminal. So you need to have a look at these commands: <code>nohup</code> and <code>disown</code>. You need these.</p>
+
+<h2 id="nohup"><code>nohup</code></h2>
+
+<p>This is a POSIX command. It&rsquo;s a short for  &lsquo; <strong>NO</strong>  <strong>H</strong> ang <strong>UP</strong> &rsquo;. By using this command you tell the system to ignore the hangup signal for specified command.</p>
+
+<h3 id="without-nohup">Without nohup</h3>
+
+<p>Let&rsquo;s test some commands:</p>
+<div class="highlight"><pre class="highlight shell"><code>% sleep 3600 &amp;
+</code></pre></div>
+<p>This command will add a background job that waits for 3600 seconds. Why do we need that? We&rsquo;re just putting commands running on background.</p>
+
+<p>You can see the command running by following command:</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+9826 sleep 3600
+</code></pre></div>
+<p>You can see a similar result with a different process id. Note the process id and close the terminal. When you open a new terminal re-write the command:</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+</code></pre></div>
+<p>So no result? That&rsquo;s correct, your command got a hangup signal when you close the terminal and it&rsquo;s not running now.</p>
+
+<h3 id="with-nohup">With <code>nohup</code></h3>
+
+<p>When you need a command running in the background even if you close the terminal, you can simply write <code>nohup</code> before the command and go. If you already started the command, don&rsquo;t worry and wait for the <code>disown</code> section.</p>
+
+<p>Let&rsquo;s use <code>nohup</code> now:</p>
+<div class="highlight"><pre class="highlight shell"><code>% nohup sleep 3600 &amp;
+<span class="o">[</span>1] 10325
+appending output to nohup.out
+</code></pre></div>
+<p>It runs in the background and writes the output to the file nohup.out by default. Check the command still running.</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+10325 sleep 3600
+</code></pre></div>
+<p>Did you note the process id? So let&rsquo;s close the terminal, open a new one and see what happens.</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+10325 sleep 3600
+</code></pre></div>
+<p>So you see it&rsquo;s still there running. So we&rsquo;re done with <code>nohup</code>.</p>
+
+<p>Do not forget to quit the sleep job, because we don&rsquo;t need that now. This is how you can do that:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">kill</span> <span class="nt">-s</span> QUIT <span class="k">$(</span>ps aux | <span class="nb">grep</span> <span class="s1">'[s]leep'</span> | awk <span class="s1">'{print $2}'</span><span class="k">)</span>
+</code></pre></div>
+<p>This command gets the process ids for all sleep jobs and send them QUIT signal.</p>
+
+<h2 id="what-about-disown">What about <code>disown</code>?</h2>
+
+<p>After looking at <code>nohup</code>, let&rsquo;s look at <code>disown</code>. It is used to unbind a job from the current session. Let&rsquo; s think about this scenario:</p>
+
+<ul>
+<li>You started a command that&rsquo;s taking too much time,</li>
+<li>you have to close the terminal,</li>
+<li>but you forgot to use <code>nohup</code></li>
+</ul>
+
+<p>It&rsquo;s bad for you, but wait! There&rsquo;s <code>disown</code> suitable for you. You can use it.</p>
+
+<p>Let&rsquo;s run our command:</p>
+<div class="highlight"><pre class="highlight shell"><code>% sleep 3600 &amp;
+% sleep 3600 &amp;
+</code></pre></div>
+<p>Check them running in the background.</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+11661 sleep 3600
+11666 sleep 3600
+</code></pre></div>
+<p>We already know that if we close terminal we will make them hangup. So take note about the process ids. And this command list the active jobs.</p>
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">jobs</span> <span class="nt">-l</span> <span class="nt">-p</span>
+<span class="o">[</span>1]  - 11661 running    sleep 3600
+<span class="o">[</span>2]  + 11666 running    sleep 3600
+</code></pre></div>
+<p>You see the last command with a plus sign left. Let&rsquo;s use disown and see what happens.</p>
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">disown</span>
+</code></pre></div>
+<p>When you check them you&rsquo;ll see both running on the background:</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+11661 sleep 3600
+11666 sleep 3600
+</code></pre></div>
+<p>Let&rsquo;s see the active jobs again:</p>
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">jobs</span> <span class="nt">-l</span> <span class="nt">-p</span>
+<span class="o">[</span>1]  + 11661 running    sleep 3600
+</code></pre></div>
+<p>You see the latest command is unbound from current session. If we close the terminal now and open a new terminal, we lose only the first command.
+Let&rsquo;s close the terminal and open a new one and check that:</p>
+<div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
+11666 sleep 3600
+</code></pre></div>
+<p>If you check the active jobs, you don&rsquo;t see any. Because the previous job is not bound to any sessions and continue working in the background.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">jobs</span> <span class="nt">-l</span> <span class="nt">-p</span>
+</code></pre></div>
+<p>Do not forget to quit the sleep job running in background, because we don&rsquo;t need that now, either:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">kill</span> <span class="nt">-s</span> QUIT <span class="k">$(</span>ps aux | <span class="nb">grep</span> <span class="s1">'[s]leep'</span> | awk <span class="s1">'{print $2}'</span><span class="k">)</span>
+</code></pre></div>
+<p>So I wish this commands will be helpful for you, too.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>
