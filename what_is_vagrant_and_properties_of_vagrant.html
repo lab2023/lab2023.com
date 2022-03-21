@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - What is vagrant and properties of vagrant?
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='What is vagrant and properties of vagrant?' name='description'>
+<meta content='vagrant, virtual-machine, virtual-box, ssh, script, shell, en' name='keywords'>
+<meta content='Leyla KAPİ' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/leylakapi" target="_blank">Leyla KAPİ</a></h4>
+<h5>December 25, 2014</h5>
+<span class='tag'><a href="/tag/vagrant.html">vagrant</a></span>
+<span class='tag'><a href="/tag/virtual-machine.html"> virtual-machine</a></span>
+<span class='tag'><a href="/tag/virtual-box.html"> virtual-box</a></span>
+<span class='tag'><a href="/tag/ssh.html"> ssh</a></span>
+<span class='tag'><a href="/tag/script.html"> script</a></span>
+<span class='tag'><a href="/tag/shell.html"> shell</a></span>
+<span class='tag'><a href="/tag/en.html"> en</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>What is vagrant and properties of vagrant?</h1>
+<h3 id="properties-of-vagrant">Properties of Vagrant</h3>
+
+<p><code>Vagrant</code> is a tool which runs your application in a virtual machine, which means
+you can create your project environment in a virtual machine. Thanks to Vagrant, you can clone your local environment in a virtual machine.
+So, when you send your project to <code>server</code>, you don&rsquo;t see any bugs or errors on your server.
+On the other hand, vagrant is useful while you are working in a team.</p>
+
+<h3 id="how-to-set-up-vagrant-on-ubuntu-desktop">How to Set Up Vagrant on Ubuntu Desktop</h3>
+
+<p>To install and use vagrant, you should follow the steps below respectively.</p>
+
+<p>Let&rsquo;s look, how to set up and use <code>Vagrant in Ubuntu desktop</code>,</p>
+
+<ul>
+<li>Install Vagrant</li>
+<li>Create Vagrant folders</li>
+<li>Install precise32 box</li>
+<li>Set up new virtual machine</li>
+<li>Install virtual machine configuration</li>
+</ul>
+
+<h3 id="1-install-vagrant">1) Install Vagrant</h3>
+
+<p>Installing vagrant on your Ubuntu desktop is very easy. Open your terminal and write the command below.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get install vagrant
+...
+</code></pre></div>
+<h3 id="2-create-vagrant-folders">2) Create Vagrant Folders</h3>
+
+<p>Continue on terminal, write below commands,</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>mkdir Vagrant
+<span class="nv">$ </span>mkdir Vagrant/Projects
+<span class="nv">$ </span>mkdir Vagrant/Projects/VM_169.x
+</code></pre></div>
+<h3 id="3-install-precise32-box">3) Install Precise32 Box</h3>
+
+<p>Precise32 box is important on ubuntu desktop, because thanks to this box you can modify your virtual machine.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span><span class="nb">cd </span>Vagrant/Projects/VM_169.x
+<span class="nv">$ </span>vagrant box add precise32 http://files.vagrantup.com/precise32.box <span class="nt">--provider</span> virtualbox
+...
+</code></pre></div>
+<p>After install, you can check with,</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant box list
+precise32 <span class="o">(</span>virtualbox, 0<span class="o">)</span>
+</code></pre></div>
+<h3 id="4-create-new-virtual-machine">4) Create New Virtual Machine</h3>
+
+<p>For create new virtual machine, you should initialize precise32 box,</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant init precise32
+</code></pre></div>
+<p>When you write above command, you get warning about it, this means include <code>Vagrantfile</code>.</p>
+
+<h3 id="5-install-virtual-machine-configuration">5) Install Virtual Machine configuration</h3>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>wget https://raw.github.com/saasbook/courseware/master/vm-setup/configure-image-0.10.3.sh
+</code></pre></div>
+<p>You should change permission to executable for virtual machine configuration</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>chmod +x configure-image-0.10.3.sh
+</code></pre></div>
+<ul>
+<li>Run the virtual machine with </li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant up
+</code></pre></div>
+<ul>
+<li>Connecting with virtual machine</li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant ssh
+Welcome to Ubuntu 12.04 LTS <span class="o">(</span>GNU/Linux 3.2.0-23-generic-pae i686<span class="o">)</span>
+ <span class="k">*</span> Documentation:  https://help.ubuntu.com/
+New release <span class="s1">'14.04.1 LTS'</span> available.
+Run <span class="s1">'do-release-upgrade'</span> to upgrade to it.
+Welcome to your Vagrant-built virtual machine.
+Last login: Sun Oct 12 09:36:51 2014 from 10.0.2.2
+vagrant@precise32:~<span class="nv">$ </span>
+</code></pre></div>
+<ul>
+<li>Run virtual machine configuration, </li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code>vagrant@precise32:~<span class="nv">$ </span>/vagrant/configure-image-0.10.3.sh
+Enter password to be used <span class="k">for </span><span class="nb">sudo </span>commands:
+</code></pre></div>
+<p>you should enter a password for commands above.</p>
+
+<p>If you finish work on virtual machine, you write below commands for exit or shut down virtual machine</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant <span class="nb">suspend</span>
+<span class="nv">$ </span>vagrant resume
+<span class="nv">$ </span>vagrant halt
+</code></pre></div>
+<p>Or if you want to remove all things from virtual machine</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant destroy
+</code></pre></div>
+<p>But for building your project again only the command below is enough.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant up
+</code></pre></div>
+<ul>
+<li>When I say <code>Vagrant</code> is useful for working in a team, look <a href="https://vagrantcloud.com/">Vagrant Cloud</a>.</li>
+</ul>
+
+<p>You can create account and share your vagrant environment with anyone with <code>vagrant cloud</code>.
+After create your account, open your terminal,</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant login
+...
+</code></pre></div>
+<p>Write e-mail or username and password for vagrant cloud, then</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>vagrant share
+</code></pre></div>
+<p>For more detail about Vagrant, you can look ;</p>
+
+<ul>
+<li><a href="http://docs.vagrantup.com/v2/getting-started/index.html">Vagrant</a> </li>
+<li><a href="https://github.com/saasbook/courseware/wiki/Setting-Up-Vagrant-Environment-on-Ubuntu-Platform">Vagrant on Ubuntu</a></li>
+</ul>
+
+<p>or,</p>
+
+<p>if you want to read same article with details in Turkish, you can read it <a href="http://lab2023.com/vagranta-giris.html">here</a>.</p>
+
+<p>That&rsquo; s all.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Deploy Ruby on Rails Application Quickly With Capistrano 3
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Deploy Ruby on Rails Application Quickly With Capistrano 3' name='description'>
+<meta content='ruby, rails, server, client, cap, capistrano, ssh, bash, script, ruby on rails, capistrano 3, web, cybele, deploy, shell, ubuntu, vps, rbenv, en' name='keywords'>
+<meta content='İsmail AKBUDAK' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/isoakbudak" target="_blank">İsmail AKBUDAK</a></h4>
+<h5>December 21, 2015</h5>
+<span class='tag'><a href="/tag/ruby.html">ruby</a></span>
+<span class='tag'><a href="/tag/rails.html"> rails</a></span>
+<span class='tag'><a href="/tag/server.html"> server</a></span>
+<span class='tag'><a href="/tag/client.html"> client</a></span>
+<span class='tag'><a href="/tag/cap.html"> cap</a></span>
+<span class='tag'><a href="/tag/capistrano.html"> capistrano</a></span>
+<span class='tag'><a href="/tag/ssh.html"> ssh</a></span>
+<span class='tag'><a href="/tag/bash.html"> bash</a></span>
+<span class='tag'><a href="/tag/script.html"> script</a></span>
+<span class='tag'><a href="/tag/ruby-on-rails.html"> ruby on rails</a></span>
+<span class='tag'><a href="/tag/capistrano-3.html"> capistrano 3</a></span>
+<span class='tag'><a href="/tag/web.html"> web</a></span>
+<span class='tag'><a href="/tag/cybele.html"> cybele</a></span>
+<span class='tag'><a href="/tag/deploy.html"> deploy</a></span>
+<span class='tag'><a href="/tag/shell.html"> shell</a></span>
+<span class='tag'><a href="/tag/ubuntu.html"> ubuntu</a></span>
+<span class='tag'><a href="/tag/vps.html"> vps</a></span>
+<span class='tag'><a href="/tag/rbenv.html"> rbenv</a></span>
+<span class='tag'><a href="/tag/en.html"> en</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Deploy Ruby on Rails Application Quickly With Capistrano 3</h1>
+<p>Hi,</p>
+
+<p>In this post, We will write about the  <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a>  deploy tool on <code>Ruby On Rails(ROR)</code> and We will share some code blocks
+that is a bash script for starting the server from beginning. We are using Ubuntu-14.04 server. Capistrano version is 3.4. Ruby version on our server is 2.2.3. Capistrano is an open source project,
+if you want to look the source code, you can visit the <a href="https://github.com/capistrano/capistrano" target="_blank">github</a> page.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+
+<h1 id="for-example-you-can-use-netinternet-or-digitalocean-server-suppliers-you-can-prepare-your-server-within-2-3-hours-with-the-following-bash-scripts">For example you can use <a href="https://www.netinternet.com.tr/ssd-vds-sunucular">Netinternet</a> or <a href="https://www.digitalocean.com/">DigitalOcean</a> server suppliers. You can prepare your server within 2-3 hours w<span id="result_box" class="short_text" lang="en"><span class="hps">ith</span> <span class="hps">the following bash</span> <span class="hps">scripts.</h1>
+
+<p>For example you can use <a href="http://www.netinternet.com.tr/panel/aff.php?aff=916">Netinternet</a> or <a href="https://www.digitalocean.com/">DigitalOcean</a> server suppliers. You can prepare your server within 2-3 hours w<span id="result_box" class="short_text" lang="en"><span class="hps">ith</span> <span class="hps">the following bash</span> <span class="hps">scripts.</p>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>hotfix/v1.11.2.0
+Those bash scripts prepare basic environment for Ruby libraries and create <code>deploy user</code> for using on deployment process.  Also one of them prepares Ruby environment under the <code>deploy user</code> home folder(default <code>deploy user</code> name you can change it  before to run scripts)</span></span> .</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<p>Base installation bash script for Ruby environment is as follows. You must run this script as a root user.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="c">## Run this script with root user</span>
+<span class="c">## Fancy echo</span>
+fancy_echo<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">printf</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">%b</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="o">}</span>
+fancy_echo <span class="s2">"Updating system packages ..."</span>
+apt-get <span class="nt">-y</span> update
+apt-get <span class="nt">-y</span> upgrade
+fancy_echo <span class="s2">"Installing python-software-properties..."</span>
+apt-get <span class="nt">-y</span> install python-software-properties
+fancy_echo <span class="s2">"Installing software-properties-common..."</span>
+apt-get <span class="nt">-y</span> install software-properties-common
+fancy_echo <span class="s2">"Exporting language"</span>
+<span class="nb">export </span><span class="nv">LANGUAGE</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> <span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> <span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> locale-gen en_US.UTF-8 <span class="o">&amp;&amp;</span> dpkg-reconfigure locales
+fancy_echo <span class="s2">"Installing libraries for common gem dependencies ..."</span>
+apt-get <span class="nt">-y</span> install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+apt-get install git-core openssl curl libreadline-dev libxslt1-dev libcurl4-openssl-dev ruby-dev make make-doc
+fancy_echo <span class="s2">"Installing nodejs ..."</span>
+add-apt-repository <span class="nt">-y</span> ppa:chris-lea/node.js
+apt-get <span class="nt">-y</span> update
+apt-get <span class="nt">-y</span> install nodejs
+apt-get <span class="nt">-y</span> install libxslt-dev libxml2-dev
+fancy_echo <span class="s2">"Installing imagemagick ..."</span>
+apt-get install <span class="nt">-y</span> imagemagick
+fancy_echo <span class="s2">"Installing nginx ..."</span>
+add-apt-repository <span class="nt">-y</span> ppa:nginx/stable
+apt-get <span class="nt">-y</span> update
+apt-get <span class="nt">-y</span> install nginx
+service nginx start
+fancy_echo <span class="s2">"Installing postgresql ..."</span>
+apt-get <span class="nt">-y</span> install postgresql libpq-dev
+</code></pre></div>
+<p>Deploy user creating script is as follows. You must run this script as a root user too.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="c"># Deploy group</span>
+<span class="nv">deploy_group</span><span class="o">=</span>deploy
+<span class="c"># Deploy user</span>
+<span class="nv">deploy_user</span><span class="o">=</span>deploy
+<span class="c"># Github usernames for access with ssh to deploy user</span>
+<span class="nv">usernames</span><span class="o">=(</span>tayfunoziserikan ismailakbudak<span class="o">)</span>
+<span class="c"># Check user is exist</span>
+id <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /dev/null
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span>
+<span class="k">then
+  </span><span class="nb">echo</span> <span class="s2">"* Add </span><span class="nv">$deploy_group</span><span class="s2"> group"</span>
+  groupadd <span class="nv">$deploy_group</span>
+  <span class="nb">echo</span> <span class="s2">"* Creating user </span><span class="nv">$deploy_user</span><span class="s2">"</span>
+  useradd <span class="nt">-m</span> <span class="nt">-g</span> <span class="nv">$deploy_group</span> <span class="nt">-s</span> /bin/bash <span class="nv">$deploy_user</span>
+  <span class="nb">echo</span> <span class="s2">"* Adding user </span><span class="nv">$deploy_user</span><span class="s2"> to sudoers"</span>
+  chmod +w /etc/sudoers
+  <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$deploy_user</span><span class="s2"> ALL=(ALL) ALL"</span> <span class="o">&gt;&gt;</span> /etc/sudoers
+  chmod <span class="nt">-w</span> /etc/sudoers
+<span class="k">else
+  </span><span class="nb">echo</span> <span class="s2">"* </span><span class="nv">$deploy_user</span><span class="s2"> user already exists"</span>
+<span class="k">fi</span>
+<span class="c"># Check user is exist, maybe some errors occured</span>
+id <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /dev/null
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span>
+<span class="k">then
+  </span><span class="nb">echo</span> <span class="s2">"* </span><span class="nv">$deploy_user</span><span class="s2"> user does not exists"</span>
+<span class="k">else</span>
+  <span class="c"># Prepare ssh keys environment</span>
+  <span class="nb">echo</span> <span class="s2">"* Add .ssh directory to </span><span class="nv">$deploy_user</span><span class="s2">"</span>
+  <span class="nb">test</span> <span class="nt">-d</span> /home/<span class="nv">$deploy_user</span>/.ssh
+  <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span>
+  <span class="k">then
+    </span>mkdir /home/<span class="nv">$deploy_user</span>/.ssh
+    <span class="c"># change user permisisions</span>
+    <span class="c"># 700 =&gt; (owner read/write/execute, group none, other none)</span>
+    chmod 700 /home/<span class="nv">$deploy_user</span>/.ssh
+    chown <span class="nv">$deploy_user</span> /home/<span class="nv">$deploy_user</span>/.ssh
+    chgrp <span class="nv">$deploy_group</span> /home/<span class="nv">$deploy_user</span>/.ssh
+  <span class="k">fi
+  </span><span class="nb">echo</span> <span class="s2">"* Get usernames public keys from GitHub and add them to </span><span class="nv">$deploy_user</span><span class="s2"> authorized_keys"</span>
+  <span class="k">for </span>username <span class="k">in</span> <span class="k">${</span><span class="nv">usernames</span><span class="p">[@]</span><span class="k">}</span><span class="p">;</span> <span class="k">do
+    </span><span class="nv">name</span><span class="o">=</span><span class="nv">$username</span>.keys
+    wget https://github.com/<span class="nv">$name</span> <span class="nt">--no-check-certificate</span> <span class="nt">-O</span> <span class="nv">$name</span>
+    <span class="nb">cat</span> <span class="nv">$name</span> <span class="o">&gt;&gt;</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+    rm <span class="nv">$name</span> <span class="c"># remove temprory file</span>
+  <span class="k">done</span>
+  <span class="c"># change user permisisions</span>
+  <span class="c"># 600 =&gt; (owner read/write, group none, other none)</span>
+  chmod 600 /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+  chown <span class="nv">$deploy_user</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+  chgrp <span class="nv">$deploy_group</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+  <span class="nb">echo</span> <span class="s2">"* Completed..."</span>
+<span class="k">fi</span>
+</code></pre></div>
+<p>&nbsp;</p>
+
+<p>This script  is preparing ruby environment for <code>deploy user</code>. You should run this script as a <code>deploy user</code>.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="c">## Run this command with deploy user</span>
+<span class="c"># define user home path</span>
+<span class="nv">user_path</span><span class="o">=</span>/home/deploy
+<span class="c">## Fancy echo</span>
+fancy_echo<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">printf</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">%b</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="o">}</span>
+fancy_echo <span class="s2">"Installing rbenv..."</span>
+git clone git://github.com/sstephenson/rbenv.git <span class="nv">$user_path</span>/.rbenv
+fancy_echo <span class="s2">"Writing rbenv path to bashrc ..."</span>
+<span class="nb">echo</span> <span class="s1">'export PATH=\"$HOME/.rbenv/bin:$PATH\"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc
+<span class="nb">echo</span> <span class="s1">'eval "$(rbenv init -)"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc
+fancy_echo <span class="s2">"Exporting rbenv path..."</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="k">$(</span>rbenv init -<span class="k">)</span><span class="s2">"</span>
+fancy_echo <span class="s2">"Preparing rbenv plugins..."</span>
+mkdir <span class="nt">-p</span> <span class="nv">$user_path</span>/.rbenv/plugins
+git clone https://github.com/sstephenson/ruby-build.git <span class="nv">$user_path</span>/.rbenv/plugins/ruby-build
+<span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git <span class="nv">$user_path</span>/.rbenv/plugins/rbenv-gem-rehash
+<span class="c">## Ruby environment</span>
+<span class="nv">RUBY_VERSION</span><span class="o">=</span><span class="s2">"2.2.3"</span>
+fancy_echo <span class="s2">"Installing Ruby </span><span class="nv">$RUBY_VERSION</span><span class="s2"> ..."</span>
+rbenv install <span class="nv">$RUBY_VERSION</span>
+rbenv rehash
+rbenv global <span class="nv">$RUBY_VERSION</span>
+ruby <span class="nt">-v</span>
+fancy_echo <span class="s2">"Gem update system ..."</span>
+gem update <span class="nt">--system</span>
+fancy_echo <span class="s2">"Echo .gemrc..."</span>
+<span class="nb">echo</span> <span class="s1">'gem: --no-rdoc --no-ri'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.gemrc
+gem install bundler
+gem install backup
+rbenv rehash
+fancy_echo <span class="s2">"Export path ..."</span>
+<span class="nb">echo</span> <span class="s2">"export PATH="</span><span class="nv">$PATH</span>:/usr/bin<span class="s2">""</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc
+<span class="nb">exec</span> <span class="nv">$SHELL</span>
+</code></pre></div>
+<p>&nbsp;</p>
+
+<p>Your server is ready to run ROR application  with those scripts.</p>
+
+<p>Now We will write about deployment process for simple application.
+As you know <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">ROR</a> has been developed with Ruby programming language,  developing with <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC(Model-View-Controller)</a> open source web framework and it includes principles like <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY(Don&rsquo;t Repeat Yourself)</a>, <a href="https://en.wikipedia.org/wiki/Convention_over_configuration" target="_blank">CoC(Convetion over configuration)</a> .</p>
+
+<p>If you want to create rails application quickly, you should look the <a href="https://rubygems.org/gems/cybele" target="_blank">Cybele Ruby Gem</a> . This gem provides useful gem list and creates common pages for using in every application like user register, user login, update login and profile info, admin login. Thus you don&rsquo;t repeat yourself on every new project. You can look the template Gemfile of Cybele gem, also from <a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile">github</a>.  Some useful deploy gems are on this file.
+If you create project  <code>rails new project_name</code>  command or if you want to deploy project that is already initialized, my deploy commands is in this <a href="https://github.com/lab2023/recipes_matic">recipes_matic</a> gem, you should look that.</p>
+
+<p>We will show deploy steps using with cybele gem.
+<ol>
+    <li>Create project <code>$ cybele project_name</code></li>
+    <li>Edit deploy repo on this file <code>/config/deploy.rb</code>
+<pre> set :repo_url, &#39;<a href="mailto:git@github.com">git@github.com</a>:your_username/your_repo_name.git&#39;</pre>
+</li>
+    <li>Edit production deploy settings on this file <code> /config/deploy/production.rb </code>
+<pre>
+server <q>example.com</q>, user: <q>#{fetch(:local_user)}</q>, roles: %w{app db web}, primary: true, port: 22
+set :rails_env, &#39;production&#39;
+set :branch, &#39;master&#39;
+set :project_domain, “example.com”
+</pre>
+</li>
+    <li>Edit staging deploy settings on this file <code>/config/deploy/staging.rb</code>
+<pre>
+server <q>staging.example.com</q>, user: <q>#{fetch(:local_user)}</q>, roles: %w{app db web}, primary: true, port: 22
+set :rails_env, &#39;staging&#39;
+set :branch, &#39;develop&#39;
+set :project_domain, “staging.example.com”
+</pre>
+</li>
+    <li> Edit your_email address for to get info about the occurred errors
+<br/><code>config/environments/production.rb </code><br/> <code>config/environments/staging.rb</code>
+<pre>config.middleware.use ExceptionNotification::Rack,
+:email =&gt; {
+  :email_prefix =&gt; <q>[project_name]</q>,
+  :sender_address =&gt; %{<q>Notifier</q> &lt;<a href="mailto:notifier@project_name.com">notifier@project_name.com</a>&gt;},
+  :exception_recipients =&gt; %w{<a href="mailto:your_email@address.com">your_email@address.com</a>}
+}
+</pre>
+</li>
+    <li>Edit yout SMTP settings on those files <br/><code>config/settings/staging.yml</code><br/> <code>config/settings/production.yml</code></li>
+    <li>If you have private repo on github, run this commands in order for to access repo from server <br/><code>$ eval <code>ssh-agent -s</code></code><br/> <code>$ ssh-add </code></li>
+    <li>Let&rsquo;s deploy our application with capistrano,
+Check production server is ready to deployment
+<code>$ bundle exec cap production deploy:check</code>
+Setup nginx, postgresql, unicorn, <a href="http://meskyanichi.github.io/backup/v3/">backup</a>(backup gem for to get database backup before deploy) for production server.
+<code>$ bundle exec cap production deploy:prepare</code>
+Do deploy to production server.
+<code>$ bundle exec cap production deploy</code></li>
+</ol>
+&nbsp;</p>
+
+<p>Example Capfile file under project root directory</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># Load DSL and set up stages</span>
+<span class="nb">require</span> <span class="s1">'capistrano/setup'</span>
+<span class="c1"># Include default deployment tasks</span>
+<span class="nb">require</span> <span class="s1">'capistrano/deploy'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/rails'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/bundler'</span>
+<span class="nb">require</span> <span class="s1">'sshkit/sudo'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/maintenance'</span>
+<span class="c1"># Include tasks from other gems included in your Gemfile</span>
+<span class="c1"># For documentation on these, see for example:</span>
+<span class="c1">#   https://github.com/capistrano/rvm</span>
+<span class="c1">#   https://github.com/capistrano/rbenv</span>
+<span class="c1">#   https://github.com/capistrano/chruby</span>
+<span class="c1">#   https://github.com/capistrano/bundler</span>
+<span class="c1">#   https://github.com/capistrano/rails</span>
+<span class="c1">#   https://github.com/capistrano/passenger</span>
+<span class="c1"># require 'capistrano/rvm'</span>
+<span class="c1"># require 'capistrano/rbenv'</span>
+<span class="c1"># require 'capistrano/chruby'</span>
+<span class="c1"># require 'capistrano/bundler'</span>
+<span class="c1"># require 'capistrano/rails/assets'</span>
+<span class="c1"># require 'capistrano/rails/migrations'</span>
+<span class="c1"># require 'capistrano/passenger'</span>
+<span class="c1"># Load custom tasks from `lib/capistrano/tasks` if you have any defined</span>
+<span class="no">Dir</span><span class="p">.</span><span class="nf">glob</span><span class="p">(</span><span class="s1">'lib/capistrano/tasks/*.rake'</span><span class="p">).</span><span class="nf">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="n">import</span> <span class="n">r</span> <span class="p">}</span>
+</code></pre></div>
+<p>Example deploy.rb file under project config directory</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># config valid only for current version of Capistrano</span>
+<span class="n">lock</span> <span class="s1">'3.4.0'</span>
+<span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s1">'appname'</span>
+<span class="n">set</span> <span class="ss">:local_user</span><span class="p">,</span> <span class="s1">'deploy'</span>
+<span class="n">set</span> <span class="ss">:stages</span><span class="p">,</span> <span class="sx">%w(staging production)</span>
+<span class="n">set</span> <span class="ss">:default_stage</span><span class="p">,</span> <span class="s1">'production'</span>
+<span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s2">"git@github.com:username/</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="p">)</span><span class="si">}</span><span class="s2">.git"</span>
+<span class="c1"># Default branch is :master</span>
+<span class="c1"># ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp</span>
+<span class="c1"># Default deploy_to directory is /var/www/blog2</span>
+<span class="n">set</span> <span class="ss">:deploy_to</span><span class="p">,</span> <span class="s2">"/home/</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:local_user</span><span class="p">)</span><span class="si">}</span><span class="s2">/apps/</span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:application</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+<span class="c1"># Default value for :scm is :git</span>
+<span class="n">set</span> <span class="ss">:scm</span><span class="p">,</span> <span class="ss">:git</span>
+<span class="c1"># Default value for :format is :pretty</span>
+<span class="c1"># set :format, :pretty</span>
+<span class="c1"># Default value for :log_level is :debug</span>
+<span class="c1"># set :log_level, :debug</span>
+<span class="c1"># Default value for :pty is false</span>
+<span class="n">set</span> <span class="ss">:pty</span><span class="p">,</span> <span class="kp">true</span>
+<span class="c1"># Default value for :linked_files is []</span>
+<span class="n">set</span> <span class="ss">:linked_files</span><span class="p">,</span> <span class="n">fetch</span><span class="p">(</span><span class="ss">:linked_files</span><span class="p">,</span> <span class="p">[]).</span><span class="nf">push</span><span class="p">(</span><span class="s1">'config/database.yml'</span><span class="p">)</span>
+<span class="c1"># Default value for linked_dirs is []</span>
+<span class="n">set</span> <span class="ss">:linked_dirs</span><span class="p">,</span> <span class="n">fetch</span><span class="p">(</span><span class="ss">:linked_dirs</span><span class="p">,</span> <span class="p">[]).</span><span class="nf">push</span><span class="p">(</span><span class="s1">'log'</span><span class="p">,</span> <span class="s1">'tmp/pids'</span><span class="p">,</span> <span class="s1">'tmp/cache'</span><span class="p">,</span> <span class="s1">'tmp/sockets'</span><span class="p">,</span> <span class="s1">'vendor/bundle'</span><span class="p">,</span> <span class="s1">'public/system'</span><span class="p">,</span> <span class="s1">'public/upload'</span><span class="p">,</span> <span class="s1">'public/images'</span><span class="p">,</span> <span class="s1">'public/seat_images'</span><span class="p">)</span>
+<span class="c1"># Default value for default_env is {}</span>
+<span class="c1"># set :default_env, { path: "/opt/ruby/bin:$PATH" }</span>
+<span class="n">set</span> <span class="ss">:default_env</span><span class="p">,</span> <span class="p">{</span> <span class="ss">path: </span><span class="s1">'$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH'</span> <span class="p">}</span>
+<span class="c1"># Default value for keep_releases is 5</span>
+<span class="c1"># set :keep_releases, 5</span>
+<span class="c1"># Look our recipes</span>
+<span class="c1"># https://github.com/lab2023/recipes_matic</span>
+<span class="nb">load</span> <span class="s1">'config/deploy/recipes/base.rb'</span>
+</code></pre></div>
+<p>We hope it is a useful post for you.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>
