@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Rails'de ActionCable nedir ve nasıl kullanılır?
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Rails&#39;de ActionCable nedir ve nasıl kullanılır?' name='description'>
+<meta content='ruby, rails, server, client, ruby on rails, web, actioncable, websocket' name='keywords'>
+<meta content='Hamdi BAYHAN' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/h_1520" target="_blank">Hamdi BAYHAN</a></h4>
+<h5>February  3, 2017</h5>
+<span class='tag'><a href="/tag/ruby.html">ruby</a></span>
+<span class='tag'><a href="/tag/rails.html"> rails</a></span>
+<span class='tag'><a href="/tag/server.html"> server</a></span>
+<span class='tag'><a href="/tag/client.html"> client</a></span>
+<span class='tag'><a href="/tag/ruby-on-rails.html"> ruby on rails</a></span>
+<span class='tag'><a href="/tag/web.html"> web</a></span>
+<span class='tag'><a href="/tag/actioncable.html"> actioncable</a></span>
+<span class='tag'><a href="/tag/websocket.html"> websocket</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Rails'de ActionCable nedir ve nasıl kullanılır?</h1>
+<h1 id="websocket-nedir">Websocket nedir?</h1>
+
+<p>websocket TCP üzerine kurulu HTTP gibi bir protokoldür ve HTML5 ile birlikte gelerek HTTP protokolünün gerçek zamanlı uygulamalardaki eksiklerini kapatmıştır. HTTP request/response mantığı üzerinde kurulu protokoldür yani client tarafından bir istek yapılır ve server tarafından bu isteğe cevap beklenir, durum böyle olunca istek yapmayan clientlar bu requesti alamamaktaydı bu durumda chat uygulamaları gibi gerçek zamanlı uygulamalarda büyük bir problem oluşturmaktaydı. Websocketten önce bu problem belirli aralıklarda ajax ile client tarafına sunucu tarafından istek yaparak değişiklikleri göndererek kısmen çözülebiliyordu fakat bu işlem gereksiz veri transferlerine ve yavaşlamaya neden olmaktaydı, websocket ile birlikte bu problemin önüne geçildi yani websocket HTTP’nin aksine kanallar aracılığı ile server tarafında herhangi bir değişiklik olduğunda sadece istek yapan client’a değil kanala bağlı tüm clientlara ilgili değişikliği göndermektedir böylece aradaki bağlantı hiç kopartılmadan gerçek zamanlı olarak sadece yapılan değişiklikler gönderilmiş olur.</p>
+
+<h1 id="actioncable-nedir">ActionCable nedir?</h1>
+
+<p>Action Cable Rails-5 ile gelen ve websocket kullanabilmemiz için geliştirilmiş olan bir kütüphanedir, RailsConf 2015&#39;te duyurulmuştur. Action Cable bize server tarafta ruby ile client tarafta ise javascript ile full-stack bir yapı sunar. Active Record veya ORM modeli ile yazdığımız modellerimize erişebiliriz. Action Cable bir mesajlaşma pattern’ı olan Publisher/Subscriber yaklaşımı kullanarak server ve clientlar arasında bağlantı sağlar.</p>
+
+<h2 id="rnek-uygulama">Örnek Uygulama:</h2>
+
+<p>Teknik detayları aşağıda bulunan DHH’nin örneği üzerinden açıklayacağım.</p>
+
+<p>Öncelikle sırasıyla aşağıdaki işlemleri yapıp uygulamamızı hazırlıyoruz.</p>
+
+<p>Uygulamayı oluşturma: 
+<code>ruby
+rails new chat --skip-spring
+</code></p>
+
+<p>Room adlı controllerımızı oluşturuyoruz:
+<code>ruby
+rails g controller rooms show
+</code></p>
+
+<p>Database’imizi ve Message modelimizi oluşturuyoruz:
+<code>
+rails db:create 
+rails g model message content:text 
+rails db:migrate
+</code></p>
+
+<p>Message tablomuza yeni bir kayıt oluşturuyoruz:
+<code>ruby
+Message.create(content: &#39;hello world&#39;)
+</code></p>
+
+<p>Son olarak da root dosyamızı düzenliyoruz:
+<code>ruby
+root to: &#39;rooms#show&#39;
+</code></p>
+
+<p>Controllerımızı ve view sayfalarımızı aşağıdaki gibi güncelliyoruz:
+&ldquo;`ruby</p>
+
+<h1 id="app-controllers-rooms_controller-rb">app/controllers/rooms_controller.rb</h1>
+
+<p>class RoomsController &lt; ApplicationController
+  def show
+    @messages = Message.all
+  end
+end
+&rdquo;`</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># app/views/rooms/show.html.erb</span>
+
+<span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">Chat</span> <span class="n">room</span><span class="o">&lt;</span><span class="sr">/h1&gt;
+
+&lt;div id="messages"&gt;
+  &lt;%= render @messages %&gt;
+&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">form</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="no">Say</span> <span class="n">something</span><span class="ss">:&lt;</span><span class="o">/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="n">data</span><span class="o">-</span><span class="n">behavior</span><span class="o">=</span><span class="s2">"room_speaker"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="sr">/form&gt;
+</span></code></pre></div><div class="highlight"><pre class="highlight ruby"><code><span class="c1"># app/view/messages/_message.html.erb</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="k">class</span><span class="o">=</span><span class="err">“</span><span class="n">message</span><span class="err">”</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;&lt;</span><span class="sx">%= message.content %&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+</span></code></pre></div>
+<p>ve <em>‘rails s’</em> diyip uygulamanın <em><a href="http://localhost:3000/">http://localhost:3000/</a></em>’dan kullanıcı tarafındaki görüntüsünü görebiliriz.</p>
+
+<p>ActionCable tarafı için şu işlemleri yapıyoruz:</p>
+
+<p><em>config/routes.rb</em> dosyamıza aşağıdaki satırı koyarak ActionCable’ı monte ediyoruz.
+<code>ruby
+mount ActionCable.server =&gt; &#39;/cable&#39;
+</code></p>
+
+<p>Rails projesinin oluşturulması ile birlikte oluşan <em>javascript/cable.js</em> dosyamız şu şekildedir:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="c1">//= require action_cable</span>
+<span class="c1">//= require_self</span>
+<span class="c1">//= require_tree ./channels</span>
+
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+ <span class="k">this</span><span class="p">.</span><span class="nx">App</span> <span class="o">||</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">App</span> <span class="o">=</span> <span class="p">{});</span>
+
+ <span class="nx">App</span><span class="p">.</span><span class="nx">cable</span> <span class="o">=</span> <span class="nx">ActionCable</span><span class="p">.</span><span class="nx">createConsumer</span><span class="p">();</span>
+
+<span class="p">}).</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</code></pre></div>
+<p>Route dosyamıza yukarıdaki satırı ekledikten sonra browser console&#39;umuzdan <em>“App.cable”</em> ı yazdığımızda aşağıdaki sonucu alabilmeniz gerekiyor.</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Consumer</span> <span class="p">{</span><span class="nl">url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ws://localhost:3000/cable</span><span class="dl">"</span><span class="p">,</span> <span class="nx">subscriptions</span><span class="p">:</span> <span class="nx">Subscriptions</span><span class="p">,</span> <span class="nx">connection</span><span class="p">:</span> <span class="nx">Connection</span><span class="p">}</span>
+</code></pre></div>
+<p>Artık örneğimiz için kanal oluşturma zamanı geldi.</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">rails</span> <span class="n">g</span> <span class="n">channel</span> <span class="n">room</span> <span class="n">speak</span>  
+</code></pre></div>
+<p>ile birlikte iki adet yeni dosyamız oluşacak: javascript tarafı için <em>app/assets/javascripts/channels/room.coffee</em> dosyası ve ruby tarafı için  <em>app/channels/room_channel.rb</em> dosyası oluşacak.</p>
+
+<p>Dosyalarımız başlangıçta şu şekildedir: </p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1">#app/channels/room_channel.rb </span>
+
+<span class="k">class</span> <span class="nc">RoomChannel</span> <span class="o">&lt;</span> <span class="no">ApplicationCable</span><span class="o">::</span><span class="no">Channel</span> 
+    <span class="k">def</span> <span class="nf">subscribed</span> 
+        <span class="c1"># stream_from "some_channel" </span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">unsubscribed</span> 
+        <span class="c1"># Any cleanup needed when channel is unsubscribed </span>
+    <span class="k">end</span> 
+
+    <span class="k">def</span> <span class="nf">speak</span> 
+    <span class="k">end</span> 
+<span class="k">end</span>
+</code></pre></div>
+<p><em>‘subscriber’</em> ve <em>‘unsubscriber’</em> ActionCable’ın default callback’leridir.</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="err">#</span><span class="nx">app</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="nx">javascripts</span><span class="o">/</span><span class="nx">channels</span><span class="o">/</span><span class="nx">room</span><span class="p">.</span><span class="nx">coffee</span>
+
+<span class="nx">App</span><span class="p">.</span><span class="nx">room</span> <span class="o">=</span> <span class="nx">App</span><span class="p">.</span><span class="nx">cable</span><span class="p">.</span><span class="nx">subscriptions</span><span class="p">.</span><span class="nx">create</span> <span class="dl">"</span><span class="s2">RoomChannel</span><span class="dl">"</span><span class="p">,</span> 
+
+<span class="nx">connected</span><span class="p">:</span> <span class="o">-&gt;</span> 
+    <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">subscription</span> <span class="nx">is</span> <span class="nx">ready</span> <span class="k">for</span> <span class="nx">use</span> <span class="nx">on</span> <span class="nx">the</span> <span class="nx">server</span> 
+
+<span class="nx">disconnected</span><span class="p">:</span> <span class="o">-&gt;</span> 
+    <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">subscription</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">terminated</span> <span class="nx">by</span> <span class="nx">the</span> <span class="nx">server</span> 
+
+<span class="nx">received</span><span class="p">:</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">-&gt;</span> 
+    <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">there</span><span class="dl">'</span><span class="s1">s incoming data on the websocket for this channel 
+
+speak: -&gt; 
+    @perform </span><span class="dl">'</span><span class="nx">speak</span><span class="dl">'</span><span class="s1">
+
+</span></code></pre></div>
+<p><em>connected</em> methodu kanal ile ilk bağlantı oluşturulduğunda çalışan methotdur, <em>received</em> methodu ise veri geldiğinde çalışan fonksiyondur. <em>speak</em> methodu ise clienttan gelen veriyi <em>room_channel.rb</em>’nin içindeki <em>speak</em> fonksiyonuna gönderdiğimiz methoddur.</p>
+
+<p>Daha sonra veri iletimini gerçekleştirmek için dosyalarımızı şu şekilde göncelliyoruz:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="err">#</span><span class="nx">app</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="nx">javascripts</span><span class="o">/</span><span class="nx">channels</span><span class="o">/</span><span class="nx">room</span><span class="p">.</span><span class="nx">coffee</span>
+
+<span class="nx">received</span><span class="p">:</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#messages</span><span class="dl">'</span><span class="p">).</span><span class="nx">append</span> <span class="nx">data</span><span class="p">[</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">]</span>
+
+<span class="nx">speak</span><span class="p">:</span> <span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="p">@</span><span class="nd">perform</span> <span class="dl">'</span><span class="s1">speak</span><span class="dl">'</span><span class="p">,</span> <span class="nx">message</span><span class="p">:</span> <span class="nx">message</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">on</span> <span class="dl">'</span><span class="s1">keypress</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">[data-behavior~=room_speaker]</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="k">if</span> <span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="nx">is</span> <span class="mi">13</span> <span class="err">#</span> <span class="k">return</span><span class="sr">/enter = sen</span><span class="err">d
+</span>       <span class="nx">App</span><span class="p">.</span><span class="nx">room</span><span class="p">.</span><span class="nx">speak</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span>
+       <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">''</span>
+       <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="highlight ruby"><code><span class="c1">#app/channels/room_channel.rb</span>
+
+<span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="no">Message</span><span class="p">.</span><span class="nf">create!</span> <span class="ss">content: </span><span class="n">data</span><span class="p">[</span><span class="s1">'message'</span><span class="p">]</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>modelimizin içini bu şekilde güncelliyoruz.</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1">#app/models/message.rb</span>
+
+<span class="k">class</span> <span class="nc">Message</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span> 
+    <span class="n">after_create_commit</span> <span class="p">{</span> <span class="no">MessageBroadcastJob</span><span class="p">.</span><span class="nf">perform_later</span> <span class="nb">self</span> <span class="p">}</span> 
+<span class="k">end</span>
+</code></pre></div>
+<p>daha sonra Job’ımızı oluşturuyoruz:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">rails</span> <span class="n">g</span> <span class="n">job</span> <span class="no">MessageBroadcast</span>
+</code></pre></div>
+<p>ve içini bu şekilde güncelliyoruz:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">MessageBroadcastJob</span> <span class="o">&lt;</span> <span class="no">ApplicationJob</span>
+ <span class="n">queue_as</span> <span class="ss">:default</span>
+
+ <span class="k">def</span> <span class="nf">perform</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+   <span class="no">ActionCable</span><span class="p">.</span><span class="nf">server</span><span class="p">.</span><span class="nf">broadcast</span> <span class="s1">'room_channel'</span><span class="p">,</span> <span class="ss">message: </span><span class="n">render_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+ <span class="k">end</span>
+
+ <span class="kp">private</span>
+ <span class="k">def</span> <span class="nf">render_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+   <span class="no">ApplicationController</span><span class="p">.</span><span class="nf">renderer</span><span class="p">.</span><span class="nf">render</span><span class="p">(</span><span class="ss">partial: </span><span class="s1">'messages/message'</span><span class="p">,</span> <span class="ss">locals: </span><span class="p">{</span> <span class="ss">message: </span><span class="n">message</span> <span class="p">})</span>
+ <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>İşlemlerimizi tamamladıktan sonra burada işleyen işlemi anlatmanın vakti geldi. Bu uygulama ActionCable’ın mantığını anlatmak adına tek odalı bir chat uygulaması için yapılmış bir uygulamadır istenilirse kod geliştirilerek çok odalı bir chat uygulaması yapılabilir. Uygulamada kullanıcı ‘Say Something:’ kısmından girdiği yazıyı entera basarak gönderir ve server tarafına gelen mesaj <em>#app/assets/javascripts/channels/room.coffee</em> dosyasının en altında bulunan javascript fonksiyonu ile yakalanır ve yine aynı klasörde bulunan <em>speak</em> methoduna gönderilir, bu dosyadaki <em>speak</em> methodu  <em>#app/channels/room_channel.rb</em> dosyasındaki <em>speak</em> methoduna gelen data <em>message</em> olarak gönderilir. <em>#app/channels/room_channel.rb</em> dosyasında bulunan <em>speak</em> fonksiyonu ile yakalanan data veri tabanındaki <em>Message</em> tablosuna 
+<code>ruby 
+   Message.create! content: data[&#39;message&#39;] 
+</code> </p>
+
+<p>ile  kayıt edilir ve <em>Message</em> modelinde 
+<code>ruby 
+after_create_commit { MessageBroadcastJob.perform_later self } 
+</code>
+ ile job tetiklenir. Job çalıştığı anda <em>render_message</em> methodunu <em>‘room_channel’</em> kanalına </p>
+<div class="highlight"><pre class="highlight ruby"><code> <span class="no">ActionCable</span><span class="p">.</span><span class="nf">server</span><span class="p">.</span><span class="nf">broadcast</span> <span class="s1">'room_channel'</span><span class="p">,</span> <span class="ss">message: </span><span class="n">render_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</code></pre></div>
+<p>ile yayınlar. Yayınlanan data işlem yapılmak üzere <em>#app/assets/javascripts/channels/room.coffee</em> dosyasının içindeki <em>received</em> methoduna gider. Bu fonksiyon ile gelen data kullanıcı tarafına gönderilir.
+ Görüldüğü gibi Rails ile websocket işlemlerini yapmak ActionCable ile oldukça kolay. Son olarak bir dip not:</p>
+
+<p>Eğer uygulamanızda Redis kullanıyorsanız cable.yml dosyamızdaki development ayarımızı şu şekilde 
+ güncellememiz gerekiyor ve productionda ise Redis To Go URL&#39;imizi vermeniz gerekmektedir: </p>
+<div class="highlight"><pre class="highlight ruby"><code> <span class="ss">development:
+    adapter: </span><span class="n">redis</span>
+    <span class="ss">url: </span><span class="n">redis</span><span class="ss">:/</span><span class="o">/</span><span class="n">localhost</span><span class="p">:</span><span class="mi">6379</span><span class="o">/</span><span class="mi">1</span>
+</code></pre></div>
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

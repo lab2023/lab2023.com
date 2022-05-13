@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - RabbitMQ ile AMQP standartında mesajlaşma sistemine hızlı bir giriş
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='RabbitMQ ile AMQP standartında mesajlaşma sistemine hızlı bir giriş' name='description'>
+<meta content='rabbitmq, amqp, bunny, ruby, tr' name='keywords'>
+<meta content='Onur Özgür ÖZKAN' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/onurozgurozkan" target="_blank">Onur Özgür ÖZKAN</a></h4>
+<h5>April 20, 2014</h5>
+<span class='tag'><a href="/tag/rabbitmq.html">rabbitmq</a></span>
+<span class='tag'><a href="/tag/amqp.html"> amqp</a></span>
+<span class='tag'><a href="/tag/bunny.html"> bunny</a></span>
+<span class='tag'><a href="/tag/ruby.html"> ruby</a></span>
+<span class='tag'><a href="/tag/tr.html"> tr</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/rabbitmq.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/rabbitmq.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/rabbitmq.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>RabbitMQ ile AMQP standartında mesajlaşma sistemine hızlı bir giriş</h1>
+<h3 id="rabbitmq-nedir">RabbitMQ nedir?</h3>
+
+<p>RabbitMQ, <a href="http://www.gopivotal.com/">Pivotal</a> firması tarafından Erlang programlama dili ile geliştirilen <a href="http://www.amqp.org/">AMQP</a> standartlarına göre geliştirilmiş robust mesajlaşma sistemidir.</p>
+
+<h3 id="kimler-kullanmal">Kimler kullanmalı?</h3>
+
+<ul>
+<li>Ölçeklenebilir uygulamalar yapmak istiyenler.</li>
+<li>Birden fazla uygulamayı belli bir standartta haberleştirmek isteyenler.</li>
+<li>Uygulamanızdaki resim işleme, rapor oluşturma gibi uzun süren işleri arka planda yapmak isteyenler.</li>
+</ul>
+
+<h3 id="ne-kan-zellikleri">Öne çıkan özellikleri</h3>
+
+<ul>
+<li>Robust mesajlaşma</li>
+<li>Kullanım kolaylığı</li>
+<li>Geniş bir işletim sistemini üzerinde çalıştırılabilmesi</li>
+<li>Geniş bir geliştirme platformunu desteklemesi</li>
+<li>Açık kaynaklı ve ticari desteğinin bulunması</li>
+</ul>
+
+<h3 id="terminoloji">Terminoloji</h3>
+
+<p>Kurulum ve örneklere geçmeden önce RabbitMQ ve mesajlaşma ile ilgili bir kaç tanımı belirtmekte fayda vardır.</p>
+
+<ul>
+<li><strong>Producer</strong>, mesajı gönderen taraftır. <code>P</code> ile gösterilir.</li>
+<li><strong>Queue</strong>, mesajların biriktiği havuzdur. Bir nevi mailbox gibi düşünülebilir.</li>
+<li><strong>Consumer</strong>, mesajı alan taraftır. <code>C</code> ile gösterilir.</li>
+</ul>
+
+<p>NOT: </p>
+
+<ul>
+<li>Producer, Queue ve Consumerlar aynı makine üzerinde olmak zorunda değildir.</li>
+<li>Producer ve Consumerlar aynı programlama dili ile yazılmak zorunda değildir.</li>
+</ul>
+
+<h3 id="kurulum">Kurulum</h3>
+
+<p>Bu makalede sadece OSX için Homebrew ile kurulumu anlatılacaktır. İleri tarihte belki Ubuntu sunucular da eklenebilir.</p>
+
+<p>Bu örneği Ruby dilinde yapacağız. RabbitMQ&#39;nun Ruby Client&#39;ı olarak <a href="http://rubybunny.info/">Bunny</a>&rsquo;i gemini kullanabiliriz. Bunny&#39;i kurmak için <code>gem install bunny</code> demeniz yeterlidir.</p>
+
+<h3 id="osxe-homebrew-ile-kurulumu">OSX&#39;e Homebrew ile kurulumu</h3>
+<div class="highlight"><pre class="highlight shell"><code>brew update
+brew <span class="nb">install </span>rabbitmq
+</code></pre></div>
+<p>Çıktı</p>
+<div class="highlight"><pre class="highlight plaintext"><code>==&gt; Downloading http://www.rabbitmq.com/releases/rabbitmq-server/v3.3.0/rabbitmq-server-mac-standalone-3.3.0.tar.gz
+######################################################################## 100.0%
+==&gt; /usr/bin/unzip -qq -j /usr/local/Cellar/rabbitmq/3.3.0/plugins/rabbitmq_management-3.3.0.ez rabbitmq_management-3.3.0/priv/www/cli/rabbitmqadmin
+==&gt; Caveats
+Management Plugin enabled by default at http://localhost:15672
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+To have launchd start rabbitmq at login:
+    ln -sfv /usr/local/opt/rabbitmq/*.plist ~/Library/LaunchAgents
+Then to load rabbitmq now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
+Or, if you don't want/need launchctl, you can just run:
+    rabbitmq-server
+==&gt; Summary
+    /usr/local/Cellar/rabbitmq/3.3.0: 1002 files, 26M, built in 119 seconds
+</code></pre></div>
+<p>Yukarıdaki çıktıdan anlaşıldığı gibi dikkat edilmesi gereken bir kaç konu vardır.</p>
+
+<ul>
+<li>Eğer işletim sisteminin açılışında RabbitMQ çalışacak ise aşağıdaki kodları çalıştırmanız gerekmektedir.</li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">ln</span> <span class="nt">-sfv</span> /usr/local/opt/rabbitmq/<span class="k">*</span>.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
+</code></pre></div>
+<ul>
+<li>Eğer RabbitMQ&#39;yu manuel çalıştıracaksanız aşağıdaki kodu çalıştırmanız yeterlidir.</li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code>rabbitmq-server
+</code></pre></div>
+<p>Eğer <code>rabbitmq-server</code> komutunu OSX bulamadı ise <code>$PATH</code>&lsquo;nizde <code>/user/local/sbin</code> tanımlı olmayabilir. <code>echo $PATH</code> komutu ile olup olmadığını kontrol edebilirsiniz. Eğer yoksa <code>/usr/local/sbin</code>&#39;i <code>$PATH</code>&#39;inize eklemelisiniz çünkü Brew RabbitMQ&#39;yu oraya kurmaktadır.</p>
+
+<p><code>rabbitmq-server</code> komutunu çalıştırdıktan sonra <code>http://localhost:15672/</code> adresinden yönetim paneline girebilirsiniz. Varsayılan ayarlarda aynı makineden bağlanabilmesi kaydı ile <code>guest</code> kullanıcı ismi ve <code>guest</code> şifresi ile bir kullanıcı tanımlanmıştır.</p>
+
+<ul>
+<li>URL : <a href="http://localhost:15672/">http://localhost:15672/</a></li>
+<li>Kullanıcı adı : guest</li>
+<li>Kullanıcı şifresi : guest</li>
+</ul>
+
+<p>Geliştirme ortamımızı kurduğumuza göre RabbitMQ sitesinde bulunan <a href="https://www.rabbitmq.com/getstarted.html">altı adet örnek uygulamayı</a> yapmaya geçebiliriz.</p>
+
+<p>Saygılar.</p>
+
+<h3 id="kaynaklar">Kaynaklar</h3>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/RabbitMQ">http://en.wikipedia.org/wiki/RabbitMQ</a></li>
+<li><a href="https://www.rabbitmq.com/install-homebrew.html">https://www.rabbitmq.com/install-homebrew.html</a></li>
+</ul>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>
