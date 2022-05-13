@@ -101,14 +101,14 @@ lab2023.com
 <p>Başlamadan önce şöyle bir açıklama yapmak lazım ki, Elasticsearch bir gem değil, apayrı bir yazılım. Hatta buna arama motoru demek çok da yanlış olmaz. Öncelikle Elasticsearch yazılımını ayrı bir şekilde kuracağız ve onunla etkileşime geçmesi için de bir bağdaştırıcı (adapter) gemi kullanacağız.</p>
 
 <p>Başlamak için Elasticsearch yazılımını kuralım. İsteğe bağlı olarak GNU/Linux dağıtımınızın deposundan (bir çok popüler dağıtımda mevcut) aratıp kurabilirsiniz. Bunun dışında Mac OS X kullanıyorsanız aşağıdaki komutlar ile hızlıca kurup, kullanmaya başlayabilirsiniz:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>brew install elasticsearch
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>brew <span class="nb">install </span>elasticsearch
 <span class="nv">$ </span>elasticsearch <span class="nt">-D</span> es.config<span class="o">=</span>/usr/local/opt/elasticsearch/config/elasticsearch.yml
 </code></pre></div>
 <p>Ancak ben bu yazıda, daha genel ve esnek olmasından dolayı indirip elle çalıştırma yöntemini kullanacağım. Aşağıdaki siteye girelim ve arşivlenmiş bir sürümünü indirerek başlayalım:</p>
 
 <p><a href="http://www.elasticsearch.org/overview/elkdownloads/">http://www.elasticsearch.org/overview/elkdownloads/</a></p>
 
-<p>ZIP veya TAR olarak indirdiğiniz paketi açın ve terminalinizden, açılan paketin klasörüne girin. Ardından çalıştırmak için şu komutu verin: (<strong>Önemli:</strong> Elasticsearch&#39;ü çalıştırmak için sisteminizde <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html?ssSourceSiteId=otnjp">JDK</a>&lsquo;nın en az 6.0 sürümü <a href="http://www.elasticsearch.org/guide/en/elasticsearch/hadoop/current/requirements.html#requirements-jdk">bulunmalı</a>.)</p>
+<p>ZIP veya TAR olarak indirdiğiniz paketi açın ve terminalinizden, açılan paketin klasörüne girin. Ardından çalıştırmak için şu komutu verin: (<strong>Önemli:</strong> Elasticsearch&#39;ü çalıştırmak için sisteminizde <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html?ssSourceSiteId=otnjp">JDK</a>&rsquo;nın en az 6.0 sürümü <a href="http://www.elasticsearch.org/guide/en/elasticsearch/hadoop/current/requirements.html#requirements-jdk">bulunmalı</a>.)</p>
 <div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>./bin/elasticsearch
 </code></pre></div>
 <p>Sistemin çalışıp çalışmadığını test etmek için, ufak bir HTTP isteği yapalım. Başka bir terminal oturumundan şu komutu verin:</p>
@@ -116,16 +116,16 @@ lab2023.com
 </code></pre></div>
 <p>Eğer hiçbir sıkıntı yoksa, şuna benzeyen bir JSON verisi cevap olarak dönecek:</p>
 <div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"status"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Emplate"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"version"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"number"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"1.2.0"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"build_hash"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"c82387f290c21505f781c695f365d0ef4098b272"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"build_timestamp"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-05-22T12:49:13Z"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"build_snapshot"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"lucene_version"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"4.8"</span><span class="w">
+  </span><span class="nl">"status"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Emplate"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"number"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"1.2.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"build_hash"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"c82387f290c21505f781c695f365d0ef4098b272"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"build_timestamp"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-05-22T12:49:13Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"build_snapshot"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"lucene_version"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"4.8"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"tagline"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"You Know, for Search"</span><span class="w">
+  </span><span class="nl">"tagline"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"You Know, for Search"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <p>Şimdi sıra geldi uygulamayı Rails ile bütünleştirmeye. Bunun için <strong>elasticsearch-model</strong> ve <strong>elasticsearch-rails</strong> <a href="https://github.com/elasticsearch/elasticsearch-rails">gemlerini</a> kullanacağız. Biraz bahsetmek gerekirse: <strong>elasticsearch-model</strong> gemi, Elasticsearch arama motoru ile etkileşime geçen bağdaştırıcı (adapter) kütüphanedir. Bunun dışında diğer gem olan <strong>elasticsearch-rails</strong> ise Rails&#39;de kullanımı kolaylaştırmak için ekstra araçlara (Rake görevleri vs.) sahiptir.</p>
@@ -135,7 +135,7 @@ lab2023.com
 <span class="n">gem</span> <span class="s1">'elasticsearch-rails'</span>
 </code></pre></div>
 <p>Ardından gemleri yükleyin:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>bundle install
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>bundle <span class="nb">install</span>
 </code></pre></div>
 <p>Bundan sonrasında yapmanız gereken tek şey, ihtiyaç duyduğunuz modellere şu satırları eklemek. Örnek bir model ile gösteriyorum:</p>
 <div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Product</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>

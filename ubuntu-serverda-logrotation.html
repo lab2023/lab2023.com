@@ -99,7 +99,7 @@ lab2023.com
 <p>Serverlarımızda tutulan log dosyaları bir yerden sonra devasa boyutlara ulaşarak depolanması ve gerektiği zaman incelenmesi eziyet haline gelebiliyor. Bu yüzden log dosyalarımızı parçalara ayırıp bu parçaları sıkıştırarak saklamak, hem lazım olduğu zaman inceleme yapılmasını, hem de log dosyasının diskte tutulduğu alanı oldukça küçültüp sabit diskimizin rahat bir nefes almasını sağlayacaktır.</p>
 
 <p>Bunu yapabilmek için Ubuntu&#39;da logrotate adlı uygulamayı kullanıyoruz. Öncelikle sunucumuza yüklü değilse yüklememiz gerekiyor.</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nb">sudo </span>apt-get install logrotate
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>logrotate
 </code></pre></div>
 <p>Komutunu çalıştırdıktan sonra uygulamamız kurulacaktır. Doğrulamak için terminalde;</p>
 <div class="highlight"><pre class="highlight shell"><code>logrotate

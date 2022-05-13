@@ -110,21 +110,21 @@ lab2023.com
 <h3 id="kurulumu">Kurulumu:</h3>
 
 <p>Npm kullanarak kuracağız. Bower paket yöneticisini kullanabilmemiz için bilgisayarımızda <a href="https://nodejs.org/en/">nodejs</a> ve <a href="https://git-scm.com/">git</a>’in kurulu olması gerekiyor.</p>
-<div class="highlight"><pre class="highlight shell"><code>npm install <span class="nt">-g</span> bower
+<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install</span> <span class="nt">-g</span> bower
 </code></pre></div>
 <h3 id="paket-kurulumu">Paket Kurulumu:</h3>
 
 <p>Şimdi binlerce paket içerisinden istediğimizi kullanabiliriz.</p>
-<div class="highlight"><pre class="highlight shell"><code>bower install bootstrap
+<div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install </span>bootstrap
 </code></pre></div>
 <p>Çıktısı:</p>
 
 <p><img alt="bower" src="assets/images/articles/25-09-08-tools-for-front-end/bower-bootstrap.jpg" /></p>
 
 <p>Kulanmak istediğimiz paketin tam adını, github proje linkini, proje linkini ya da github proje uzantısını yazarak kurabiliriz.</p>
-<div class="highlight"><pre class="highlight shell"><code>bower install twbs/bootstrap
-</code></pre></div><div class="highlight"><pre class="highlight shell"><code>bower install git://github.com/twbs/bootstrap
-</code></pre></div><div class="highlight"><pre class="highlight shell"><code>bower install http://example.com/script.js
+<div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install </span>twbs/bootstrap
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install </span>git://github.com/twbs/bootstrap
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install </span>http://example.com/script.js
 </code></pre></div>
 <h3 id="init">init</h3>
 
@@ -134,15 +134,15 @@ lab2023.com
 <p>komutu ile json dosyası olarak saklaması ve dosya sayesinde aynı paketleri baska projelerde de kullanabilmesi. Bu sayede farklı bir projede yine aynı paketleri kullanacaksak yaptığımız işlem sayısını azaltmıs oluyoruz.</p>
 
 <p>Oluşturduğumuz bu bower.json dosyasını kullanmak istediğimiz projenin dizinine ekleyip</p>
-<div class="highlight"><pre class="highlight shell"><code>bower install
+<div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install</span>
 </code></pre></div>
 <p>kodunu çalıştırmamız yeterli oluyor.</p>
 
 <p>Diyelim ki bower init komutunu çalıştırdıktan sonra projeye yeni paketler dahil ettik ve bunlarıda .json dosyamıza eklemek istiyoruz. Bu işlemide</p>
-<div class="highlight"><pre class="highlight shell"><code>bower install paket-adi <span class="nt">--save</span>
+<div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install </span>paket-adi <span class="nt">--save</span>
 </code></pre></div>
 <p>ya da</p>
-<div class="highlight"><pre class="highlight shell"><code>bower install paket-adi <span class="nt">-s</span>
+<div class="highlight"><pre class="highlight shell"><code>bower <span class="nb">install </span>paket-adi <span class="nt">-s</span>
 </code></pre></div>
 <p>komutu ile yapabiliyoruz.</p>
 
@@ -197,7 +197,7 @@ lab2023.com
 <p>Şimdi ilk olarak gulpjs&#39;i makinemize kuralım. Gulp da bower ve grunt gibi npm’e gereksinim duyuyor. Gulp kullanacağımız modülleri npm veritabanından çekiyor.</p>
 
 <h3 id="kurulumu">Kurulumu:</h3>
-<div class="highlight"><pre class="highlight shell"><code>npm install gulp <span class="nt">-g</span>
+<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install </span>gulp <span class="nt">-g</span>
 </code></pre></div>
 <p>Projemize ya da localimize kurduktan sonra gulpfile.js dosyası oluşturup yaptıracağımız görevleri buraya yazıyoruz.</p>
 
@@ -205,9 +205,9 @@ lab2023.com
 
 <p>Verdiğimiz görevler için kurulan plugin ya da paketler ise node_modules/ klasörü altına ekleniyor.</p>
 
-<p>Sonrasında ise işimize yarayacak paketleri bulup entegre edeceğiz. Bu paketleride istersek <a href="http://gulpjs.com/plugins/">gulpjs</a>&lsquo;in sayfasından istersekte <a href="https://www.npmjs.com/">npmjs</a>&#39;in sayfasından bulabılırız.</p>
+<p>Sonrasında ise işimize yarayacak paketleri bulup entegre edeceğiz. Bu paketleride istersek <a href="http://gulpjs.com/plugins/">gulpjs</a>&rsquo;in sayfasından istersekte <a href="https://www.npmjs.com/">npmjs</a>&rsquo;in sayfasından bulabılırız.</p>
 <div class="highlight"><pre class="highlight shell"><code>
-npm install paket-adi
+npm <span class="nb">install </span>paket-adi
 
 </code></pre></div>
 <p>yukarıdakı komut satırıda paketleri kurmaya yarıyor. Paket kurulumundan sonra kurduğumuz paketin parametrelerini gulpfile.js dosyamıza eklememiz gerekiyor.
@@ -231,10 +231,10 @@ Aşağıdaki gulpfile.js dosyasında <a href="https://www.npmjs.com/package/gulp
 <p>Gruntta tıpkı gulpjs gibi bir iş kolaylaştırıcı. Kullandığı modülleri npm veri tabanından çekiyor.</p>
 
 <h3 id="kurulumu">Kurulumu:</h3>
-<div class="highlight"><pre class="highlight shell"><code> npm install grunt
+<div class="highlight"><pre class="highlight shell"><code> npm <span class="nb">install </span>grunt
 </code></pre></div>
 <p>Grunt için kullanacağımız plug-in ya da modüller içinde</p>
-<div class="highlight"><pre class="highlight shell"><code>npm install paket-adi
+<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install </span>paket-adi
 </code></pre></div>
 <p>komutunu kullabiliyoruz.</p>
 
@@ -248,7 +248,7 @@ Aşağıdaki gulpfile.js dosyasında <a href="https://www.npmjs.com/package/gulp
 
 <p>Kurduğumuz plugin&#39;lerin açıklamaları ve parametreleri github ya da kendi sayfalarında yazıyor.</p>
 
-<p>Pluginleri <a href="http://gruntjs.com/plugins">gruntjs</a>&#39;in sayfasından ya da <a href="https://www.npmjs.com/">npmjs</a>&#39;in sayfasından bulup kurabilirsiniz. Kullanabileceğimiz bütün metotlara gruntjs&#39;in <a href="http://gruntjs.com/api/grunt">API</a> sayfasından ulaşabilirsiniz.</p>
+<p>Pluginleri <a href="http://gruntjs.com/plugins">gruntjs</a>&rsquo;in sayfasından ya da <a href="https://www.npmjs.com/">npmjs</a>&rsquo;in sayfasından bulup kurabilirsiniz. Kullanabileceğimiz bütün metotlara gruntjs&#39;in <a href="http://gruntjs.com/api/grunt">API</a> sayfasından ulaşabilirsiniz.</p>
 
 <p>Daha detaylı bilgi için  <a href="http://gruntjs.com/">www.gruntjs.com</a> adresini inceleyebilirsiniz.</p>
 
@@ -261,7 +261,7 @@ Aşağıdaki gulpfile.js dosyasında <a href="https://www.npmjs.com/package/gulp
 <p>Bilgisayarımıza kurabilmek için node.js ve git in yüklü olması gerekıyor.</p>
 
 <h3 id="kurulumu">Kurulumu</h3>
-<div class="highlight"><pre class="highlight shell"><code>npm install yo
+<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install </span>yo
 </code></pre></div>
 <p>komutuyla yükleyebiliyoruz.</p>
 
@@ -270,7 +270,7 @@ Aşağıdaki gulpfile.js dosyasında <a href="https://www.npmjs.com/package/gulp
 <p>oluşturmak istediğimiz projede kullanacağımız paketleri <a href="http://yeoman.io/generators/">generators</a> ya da <a href="https://www.npmjs.com/">npmjs</a> sayfasından bulup inceleyebilirsiniz.</p>
 
 <p>Paket kurulumu için:</p>
-<div class="highlight"><pre class="highlight shell"><code>npm install <span class="nt">--global</span> paket-adi
+<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install</span> <span class="nt">--global</span> paket-adi
 </code></pre></div>
 <p>Paketi kurup yo komutunu çalıştırarak ya da</p>
 <div class="highlight"><pre class="highlight shell"><code>yo paket-adi
@@ -289,7 +289,7 @@ Aşağıdaki gulpfile.js dosyasında <a href="https://www.npmjs.com/package/gulp
 <p>Yukarıda bahsettiğim bütün araçlar paket kurmak için npm&#39;e ihtiyac duyuyor. Bu yuzden plug-in ve paket kurulumları aynı.</p>
 
 <p>Yeoman ile html5 template’i oluşturmak istiyorsak</p>
-<div class="highlight"><pre class="highlight shell"><code>npm install <span class="nt">--global</span> generator-h5bp
+<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install</span> <span class="nt">--global</span> generator-h5bp
 </code></pre></div>
 <p>komutunu kullanarak önce html5 paketini indiriyoruz. Sonrada</p>
 <div class="highlight"><pre class="highlight shell"><code>yp h5bp

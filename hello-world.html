@@ -250,7 +250,7 @@ Aliquam pulvinar eleifend augue.</p>
 
 <p><strong>Ruby</strong> - A description of code</p>
 <div class="highlight"><pre class="highlight ruby"><code><span class="c1"># Used to prevent the class/module from being loaded more than once</span>
-<span class="k">if</span> <span class="o">!</span><span class="n">defined?</span><span class="p">(</span><span class="no">Kebab</span><span class="o">::</span><span class="no">VERSION</span><span class="p">)</span>
+<span class="k">if</span> <span class="o">!</span><span class="k">defined?</span><span class="p">(</span><span class="no">Kebab</span><span class="o">::</span><span class="no">VERSION</span><span class="p">)</span>
   <span class="k">module</span> <span class="nn">Kebab</span>
     <span class="k">module</span> <span class="nn">VERSION</span>
       <span class="no">MAJOR</span> <span class="o">=</span> <span class="mi">2</span>
@@ -282,7 +282,7 @@ Aliquam pulvinar eleifend augue.</p>
 </span><span class="nv">POS</span><span class="o">=</span>2  <span class="c"># Starting from position 2 in the string.</span>
 <span class="nv">LEN</span><span class="o">=</span>8  <span class="c"># Extract eight characters.</span>
 
-<span class="nv">str1</span><span class="o">=</span><span class="k">$(</span> <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$str0</span><span class="s2">"</span> | md5sum | md5sum <span class="k">)</span>
+<span class="nv">str1</span><span class="o">=</span><span class="si">$(</span> <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$str0</span><span class="s2">"</span> | <span class="nb">md5sum</span> | <span class="nb">md5sum</span> <span class="si">)</span>
 <span class="c">#  Doubly scramble     ^^^^^^   ^^^^^^</span>
 <span class="c">#+ by piping and repiping to md5sum.</span>
 

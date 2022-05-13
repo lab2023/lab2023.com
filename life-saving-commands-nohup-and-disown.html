@@ -106,13 +106,13 @@ lab2023.com
 <h3 id="without-nohup">Without nohup</h3>
 
 <p>Let&rsquo;s test some commands:</p>
-<div class="highlight"><pre class="highlight shell"><code>% sleep 3600 &amp;
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">sleep </span>3600 &amp;
 </code></pre></div>
 <p>This command will add a background job that waits for 3600 seconds. Why do we need that? We&rsquo;re just putting commands running on background.</p>
 
 <p>You can see the command running by following command:</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
-9826 sleep 3600
+9826 <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>You can see a similar result with a different process id. Note the process id and close the terminal. When you open a new terminal re-write the command:</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
@@ -124,22 +124,22 @@ lab2023.com
 <p>When you need a command running in the background even if you close the terminal, you can simply write <code>nohup</code> before the command and go. If you already started the command, don&rsquo;t worry and wait for the <code>disown</code> section.</p>
 
 <p>Let&rsquo;s use <code>nohup</code> now:</p>
-<div class="highlight"><pre class="highlight shell"><code>% nohup sleep 3600 &amp;
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">nohup sleep </span>3600 &amp;
 <span class="o">[</span>1] 10325
 appending output to nohup.out
 </code></pre></div>
 <p>It runs in the background and writes the output to the file nohup.out by default. Check the command still running.</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
-10325 sleep 3600
+10325 <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>Did you note the process id? So let&rsquo;s close the terminal, open a new one and see what happens.</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
-10325 sleep 3600
+10325 <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>So you see it&rsquo;s still there running. So we&rsquo;re done with <code>nohup</code>.</p>
 
 <p>Do not forget to quit the sleep job, because we don&rsquo;t need that now. This is how you can do that:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nb">kill</span> <span class="nt">-s</span> QUIT <span class="k">$(</span>ps aux | <span class="nb">grep</span> <span class="s1">'[s]leep'</span> | awk <span class="s1">'{print $2}'</span><span class="k">)</span>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">kill</span> <span class="nt">-s</span> QUIT <span class="si">$(</span>ps aux | <span class="nb">grep</span> <span class="s1">'[s]leep'</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span><span class="si">)</span>
 </code></pre></div>
 <p>This command gets the process ids for all sleep jobs and send them QUIT signal.</p>
 
@@ -156,41 +156,41 @@ appending output to nohup.out
 <p>It&rsquo;s bad for you, but wait! There&rsquo;s <code>disown</code> suitable for you. You can use it.</p>
 
 <p>Let&rsquo;s run our command:</p>
-<div class="highlight"><pre class="highlight shell"><code>% sleep 3600 &amp;
-% sleep 3600 &amp;
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">sleep </span>3600 &amp;
+% <span class="nb">sleep </span>3600 &amp;
 </code></pre></div>
 <p>Check them running in the background.</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
-11661 sleep 3600
-11666 sleep 3600
+11661 <span class="nb">sleep </span>3600
+11666 <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>We already know that if we close terminal we will make them hangup. So take note about the process ids. And this command list the active jobs.</p>
 <div class="highlight"><pre class="highlight shell"><code>% <span class="nb">jobs</span> <span class="nt">-l</span> <span class="nt">-p</span>
-<span class="o">[</span>1]  - 11661 running    sleep 3600
-<span class="o">[</span>2]  + 11666 running    sleep 3600
+<span class="o">[</span>1]  - 11661 running    <span class="nb">sleep </span>3600
+<span class="o">[</span>2]  + 11666 running    <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>You see the last command with a plus sign left. Let&rsquo;s use disown and see what happens.</p>
 <div class="highlight"><pre class="highlight shell"><code>% <span class="nb">disown</span>
 </code></pre></div>
 <p>When you check them you&rsquo;ll see both running on the background:</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
-11661 sleep 3600
-11666 sleep 3600
+11661 <span class="nb">sleep </span>3600
+11666 <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>Let&rsquo;s see the active jobs again:</p>
 <div class="highlight"><pre class="highlight shell"><code>% <span class="nb">jobs</span> <span class="nt">-l</span> <span class="nt">-p</span>
-<span class="o">[</span>1]  + 11661 running    sleep 3600
+<span class="o">[</span>1]  + 11661 running    <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>You see the latest command is unbound from current session. If we close the terminal now and open a new terminal, we lose only the first command.
 Let&rsquo;s close the terminal and open a new one and check that:</p>
 <div class="highlight"><pre class="highlight shell"><code>% ps <span class="nt">-e</span> <span class="nt">-o</span> pid,command | <span class="nb">grep</span> <span class="s1">'[s]leep'</span>
-11666 sleep 3600
+11666 <span class="nb">sleep </span>3600
 </code></pre></div>
 <p>If you check the active jobs, you don&rsquo;t see any. Because the previous job is not bound to any sessions and continue working in the background.</p>
 <div class="highlight"><pre class="highlight shell"><code><span class="nb">jobs</span> <span class="nt">-l</span> <span class="nt">-p</span>
 </code></pre></div>
 <p>Do not forget to quit the sleep job running in background, because we don&rsquo;t need that now, either:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nb">kill</span> <span class="nt">-s</span> QUIT <span class="k">$(</span>ps aux | <span class="nb">grep</span> <span class="s1">'[s]leep'</span> | awk <span class="s1">'{print $2}'</span><span class="k">)</span>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">kill</span> <span class="nt">-s</span> QUIT <span class="si">$(</span>ps aux | <span class="nb">grep</span> <span class="s1">'[s]leep'</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span><span class="si">)</span>
 </code></pre></div>
 <p>So I wish this commands will be helpful for you, too.</p>
 

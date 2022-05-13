@@ -138,11 +138,11 @@ lab2023.com
 
 <p>Bu makalede sadece OSX için Homebrew ile kurulumu anlatılacaktır. İleri tarihte belki Ubuntu sunucular da eklenebilir.</p>
 
-<p>Bu örneği Ruby dilinde yapacağız. RabbitMQ&#39;nun Ruby Client&#39;ı olarak <a href="http://rubybunny.info/">Bunny</a>&lsquo;i gemini kullanabiliriz. Bunny&#39;i kurmak için <code>gem install bunny</code> demeniz yeterlidir.</p>
+<p>Bu örneği Ruby dilinde yapacağız. RabbitMQ&#39;nun Ruby Client&#39;ı olarak <a href="http://rubybunny.info/">Bunny</a>&rsquo;i gemini kullanabiliriz. Bunny&#39;i kurmak için <code>gem install bunny</code> demeniz yeterlidir.</p>
 
 <h3 id="osxe-homebrew-ile-kurulumu">OSX&#39;e Homebrew ile kurulumu</h3>
 <div class="highlight"><pre class="highlight shell"><code>brew update
-brew install rabbitmq
+brew <span class="nb">install </span>rabbitmq
 </code></pre></div>
 <p>Çıktı</p>
 <div class="highlight"><pre class="highlight plaintext"><code>==&gt; Downloading http://www.rabbitmq.com/releases/rabbitmq-server/v3.3.0/rabbitmq-server-mac-standalone-3.3.0.tar.gz
@@ -168,7 +168,7 @@ Or, if you don't want/need launchctl, you can just run:
 <ul>
 <li>Eğer işletim sisteminin açılışında RabbitMQ çalışacak ise aşağıdaki kodları çalıştırmanız gerekmektedir.</li>
 </ul>
-<div class="highlight"><pre class="highlight shell"><code>ln <span class="nt">-sfv</span> /usr/local/opt/rabbitmq/<span class="k">*</span>.plist ~/Library/LaunchAgents
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">ln</span> <span class="nt">-sfv</span> /usr/local/opt/rabbitmq/<span class="k">*</span>.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
 </code></pre></div>
 <ul>
@@ -176,7 +176,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
 </ul>
 <div class="highlight"><pre class="highlight shell"><code>rabbitmq-server
 </code></pre></div>
-<p>Eğer <code>rabbitmq-server</code> komutunu OSX bulamadı ise <code>$PATH</code>&#39;nizde <code>/user/local/sbin</code> tanımlı olmayabilir. <code>echo $PATH</code> komutu ile olup olmadığını kontrol edebilirsiniz. Eğer yoksa <code>/usr/local/sbin</code>&#39;i <code>$PATH</code>&#39;inize eklemelisiniz çünkü Brew RabbitMQ&#39;yu oraya kurmaktadır.</p>
+<p>Eğer <code>rabbitmq-server</code> komutunu OSX bulamadı ise <code>$PATH</code>&lsquo;nizde <code>/user/local/sbin</code> tanımlı olmayabilir. <code>echo $PATH</code> komutu ile olup olmadığını kontrol edebilirsiniz. Eğer yoksa <code>/usr/local/sbin</code>&#39;i <code>$PATH</code>&#39;inize eklemelisiniz çünkü Brew RabbitMQ&#39;yu oraya kurmaktadır.</p>
 
 <p><code>rabbitmq-server</code> komutunu çalıştırdıktan sonra <code>http://localhost:15672/</code> adresinden yönetim paneline girebilirsiniz. Varsayılan ayarlarda aynı makineden bağlanabilmesi kaydı ile <code>guest</code> kullanıcı ismi ve <code>guest</code> şifresi ile bir kullanıcı tanımlanmıştır.</p>
 

@@ -109,7 +109,7 @@ Windows ve Mac OSX için JDK ve JRE&rsquo; yi <a href="http://www.oracle.com/tec
 <p>komutlarını kullanabilirsiniz.</p>
 
 <p>Kurulumun ardından Android SDK&rsquo; yı ve IDE&rsquo; mizi indirmemiz gerekmekte. <a href="http://developer.android.com/SDK/index.html">Buradan</a> Eclipse ile Android SDK&rsquo; yı indirebiliriz.
-İsterseniz Eclipse yerine <a href="http://www.jetbrains.com/idea/">IntelliJIdea</a> tabanlı <a href="http://developer.android.com/SDK/installing/studio.html">Android Studio</a>&lsquo; yu da deneyebilirsiniz,
+İsterseniz Eclipse yerine <a href="http://www.jetbrains.com/idea/">IntelliJIdea</a> tabanlı <a href="http://developer.android.com/SDK/installing/studio.html">Android Studio</a>&rsquo; yu da deneyebilirsiniz,
 fakat hala alpha aşamasında olduğu için ben tercih etmiyorum.</p>
 
 <h2 id="eclipse">Eclipse</h2>
@@ -243,7 +243,7 @@ Mesela yukarıdaki xml&rsquo; lere bakarak id&rsquo; si container olan başka bi
 <p>Arayüz dosyalarımızı inceledikten sonra gelelim asıl kodlarımızın bulunduğu Java Class&rsquo; ımıza.</p>
 
 <p>Class&rsquo; ımızı <em><q>src/paket_adi/MainActivity.class</q></em> dosyasına tıklayarak açıyoruz.</p>
-<div class="highlight"><pre class="highlight java"><code>    <span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">htk</span><span class="o">.</span><span class="na">firstapp</span><span class="o">;</span>
+<div class="highlight"><pre class="highlight java"><code>    <span class="kn">package</span> <span class="nn">com.htk.firstapp</span><span class="o">;</span>
 
     <span class="kn">import</span> <span class="nn">android.support.v7.app.ActionBarActivity</span><span class="o">;</span>
     <span class="kn">import</span> <span class="nn">android.support.v4.app.Fragment</span><span class="o">;</span>
@@ -254,34 +254,34 @@ Mesela yukarıdaki xml&rsquo; lere bakarak id&rsquo; si container olan başka bi
     <span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
     <span class="kn">import</span> <span class="nn">android.view.ViewGroup</span><span class="o">;</span>
 
-    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">ActionBarActivity</span> <span class="o">{</span>
 
         <span class="nd">@Override</span>
-        <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
             <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-            <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+            <span class="n">setContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
 
             <span class="k">if</span> <span class="o">(</span><span class="n">savedInstanceState</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
                 <span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">()</span>
-                        <span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">container</span><span class="o">,</span> <span class="k">new</span> <span class="n">PlaceholderFragment</span><span class="o">()).</span><span class="na">commit</span><span class="o">();</span>
+                        <span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">container</span><span class="o">,</span> <span class="k">new</span> <span class="nc">PlaceholderFragment</span><span class="o">()).</span><span class="na">commit</span><span class="o">();</span>
             <span class="o">}</span>
         <span class="o">}</span>
 
         <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onCreateOptionsMenu</span><span class="o">(</span><span class="n">Menu</span> <span class="n">menu</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onCreateOptionsMenu</span><span class="o">(</span><span class="nc">Menu</span> <span class="n">menu</span><span class="o">)</span> <span class="o">{</span>
 
             <span class="c1">// Inflate the menu; this adds items to the action bar if it is present.</span>
-            <span class="n">getMenuInflater</span><span class="o">().</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">menu</span><span class="o">.</span><span class="na">main</span><span class="o">,</span> <span class="n">menu</span><span class="o">);</span>
+            <span class="n">getMenuInflater</span><span class="o">().</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">menu</span><span class="o">.</span><span class="na">main</span><span class="o">,</span> <span class="n">menu</span><span class="o">);</span>
             <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
         <span class="o">}</span>
 
         <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onOptionsItemSelected</span><span class="o">(</span><span class="n">MenuItem</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onOptionsItemSelected</span><span class="o">(</span><span class="nc">MenuItem</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
             <span class="c1">// Handle action bar item clicks here. The action bar will</span>
             <span class="c1">// automatically handle clicks on the Home/Up button, so long</span>
             <span class="c1">// as you specify a parent activity in AndroidManifest.xml.</span>
             <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="na">getItemId</span><span class="o">();</span>
-            <span class="k">if</span> <span class="o">(</span><span class="n">id</span> <span class="o">==</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">action_settings</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">id</span> <span class="o">==</span> <span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">action_settings</span><span class="o">)</span> <span class="o">{</span>
                 <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
             <span class="o">}</span>
             <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
@@ -290,15 +290,15 @@ Mesela yukarıdaki xml&rsquo; lere bakarak id&rsquo; si container olan başka bi
         <span class="cm">/**
          * A placeholder fragment containing a simple view.
          */</span>
-        <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">PlaceholderFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">PlaceholderFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
 
             <span class="kd">public</span> <span class="nf">PlaceholderFragment</span><span class="o">()</span> <span class="o">{</span>
             <span class="o">}</span>
 
             <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span>
-                    <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">View</span> <span class="n">rootView</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_main</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span>
+            <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span>
+                    <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">View</span> <span class="n">rootView</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_main</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span>
                         <span class="kc">false</span><span class="o">);</span>
                 <span class="k">return</span> <span class="n">rootView</span><span class="o">;</span>
             <span class="o">}</span>

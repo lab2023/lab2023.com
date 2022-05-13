@@ -130,7 +130,7 @@ Bu ayarlar içinde e-posta göndermek için kullandığımız SMTP ayarları ola
 <li>Projenin config/settings.yml dosyasında yeralan username ve password alanlarını değiştiriyoruz.</li>
 <li>Son olarakta projenin public dizini için VERSION.txt dosyası oluşturmak için şu komutu çalıştırıyoruz;</li>
 </ul>
-<div class="highlight"><pre class="highlight shell"><code>    ln <span class="nt">-s</span> ../VERSION.txt VERSION.txt
+<div class="highlight"><pre class="highlight shell"><code>    <span class="nb">ln</span> <span class="nt">-s</span> ../VERSION.txt VERSION.txt
 </code></pre></div>
 <p>Projemizde bu ayarları yaptıktan sonra, uygulamayı çalıştırma işlemlerine geçiyoruz. Bu adımda ise şu komutları sırasıyla çalıştırıyoruz.</p>
 <div class="highlight"><pre class="highlight shell"><code>    bundle
@@ -220,7 +220,7 @@ Bu işlemi yapabilmek için heroku uygulamalarına erişimimiz olması gerekmekt
     heroku config:set <span class="nv">SSMTP_USER_NAME</span><span class="o">=</span>your_user_name <span class="nt">--app</span> staging-lab2023-blog-sample
     heroku config:set <span class="nv">SMTP_PASSWORD</span><span class="o">=</span>your_password <span class="nt">--app</span> staging-lab2023-blog-sample
     heroku config:set <span class="nv">ROOT_PATH</span><span class="o">=</span>https://staging-lab2023-blog-sample.herokuapp.com <span class="nt">--app</span> staging-lab2023-blog-sample
-    heroku config:set <span class="nv">BASIC_AUTH_IS_ACTIVE</span><span class="o">=</span>yes <span class="nt">--app</span> staging-lab2023-blog-sample
+    heroku config:set <span class="nv">BASIC_AUTH_IS_ACTIVE</span><span class="o">=</span><span class="nb">yes</span> <span class="nt">--app</span> staging-lab2023-blog-sample
 </code></pre></div>
 <p>Ayarlarınızı bu komutlar ile ayarladıktan sonra heroku üzerinde uygulamanın ayarlar sayfasında Config Variables bölümünde bu değişkenleri görebilirsiniz, ayrıca portal üzerinden de bu değişkenleri değiştirebilirsiniz. Herokuya rails uygulaması gönderildiğinde RAILS_ENV varsayılan olarak production olarak ayarlanıyor. RAILS_ENV değerini de staging ile değiştirebilirsiniz.</p>
 <div class="highlight"><pre class="highlight shell"><code>    heroku config:set <span class="nv">RAILS_ENV</span><span class="o">=</span>staging <span class="nt">--app</span> staging-lab2023-blog-sample

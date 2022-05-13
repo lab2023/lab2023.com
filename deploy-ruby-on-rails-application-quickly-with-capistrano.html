@@ -147,28 +147,28 @@ fancy_echo <span class="s2">"Updating system packages ..."</span>
 apt-get <span class="nt">-y</span> update
 apt-get <span class="nt">-y</span> upgrade
 fancy_echo <span class="s2">"Installing python-software-properties..."</span>
-apt-get <span class="nt">-y</span> install python-software-properties
+apt-get <span class="nt">-y</span> <span class="nb">install </span>python-software-properties
 fancy_echo <span class="s2">"Installing software-properties-common..."</span>
-apt-get <span class="nt">-y</span> install software-properties-common
+apt-get <span class="nt">-y</span> <span class="nb">install </span>software-properties-common
 fancy_echo <span class="s2">"Exporting language"</span>
 <span class="nb">export </span><span class="nv">LANGUAGE</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> <span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> <span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> locale-gen en_US.UTF-8 <span class="o">&amp;&amp;</span> dpkg-reconfigure locales
 fancy_echo <span class="s2">"Installing libraries for common gem dependencies ..."</span>
-apt-get <span class="nt">-y</span> install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
-apt-get install git-core openssl curl libreadline-dev libxslt1-dev libcurl4-openssl-dev ruby-dev make make-doc
+apt-get <span class="nt">-y</span> <span class="nb">install </span>autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+apt-get <span class="nb">install </span>git-core openssl curl libreadline-dev libxslt1-dev libcurl4-openssl-dev ruby-dev make make-doc
 fancy_echo <span class="s2">"Installing nodejs ..."</span>
 add-apt-repository <span class="nt">-y</span> ppa:chris-lea/node.js
 apt-get <span class="nt">-y</span> update
-apt-get <span class="nt">-y</span> install nodejs
-apt-get <span class="nt">-y</span> install libxslt-dev libxml2-dev
+apt-get <span class="nt">-y</span> <span class="nb">install </span>nodejs
+apt-get <span class="nt">-y</span> <span class="nb">install </span>libxslt-dev libxml2-dev
 fancy_echo <span class="s2">"Installing imagemagick ..."</span>
-apt-get install <span class="nt">-y</span> imagemagick
+apt-get <span class="nb">install</span> <span class="nt">-y</span> imagemagick
 fancy_echo <span class="s2">"Installing nginx ..."</span>
 add-apt-repository <span class="nt">-y</span> ppa:nginx/stable
 apt-get <span class="nt">-y</span> update
-apt-get <span class="nt">-y</span> install nginx
+apt-get <span class="nt">-y</span> <span class="nb">install </span>nginx
 service nginx start
 fancy_echo <span class="s2">"Installing postgresql ..."</span>
-apt-get <span class="nt">-y</span> install postgresql libpq-dev
+apt-get <span class="nt">-y</span> <span class="nb">install </span>postgresql libpq-dev
 </code></pre></div>
 <p>Deploy user creating script is as follows. You must run this script as a root user too.</p>
 <div class="highlight"><pre class="highlight shell"><code><span class="c"># Deploy group</span>
@@ -178,7 +178,7 @@ apt-get <span class="nt">-y</span> install postgresql libpq-dev
 <span class="c"># Github usernames for access with ssh to deploy user</span>
 <span class="nv">usernames</span><span class="o">=(</span>tayfunoziserikan ismailakbudak<span class="o">)</span>
 <span class="c"># Check user is exist</span>
-id <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /dev/null
+<span class="nb">id</span> <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /dev/null
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span>
 <span class="k">then
   </span><span class="nb">echo</span> <span class="s2">"* Add </span><span class="nv">$deploy_group</span><span class="s2"> group"</span>
@@ -186,14 +186,14 @@ id <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /de
   <span class="nb">echo</span> <span class="s2">"* Creating user </span><span class="nv">$deploy_user</span><span class="s2">"</span>
   useradd <span class="nt">-m</span> <span class="nt">-g</span> <span class="nv">$deploy_group</span> <span class="nt">-s</span> /bin/bash <span class="nv">$deploy_user</span>
   <span class="nb">echo</span> <span class="s2">"* Adding user </span><span class="nv">$deploy_user</span><span class="s2"> to sudoers"</span>
-  chmod +w /etc/sudoers
+  <span class="nb">chmod</span> +w /etc/sudoers
   <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$deploy_user</span><span class="s2"> ALL=(ALL) ALL"</span> <span class="o">&gt;&gt;</span> /etc/sudoers
-  chmod <span class="nt">-w</span> /etc/sudoers
+  <span class="nb">chmod</span> <span class="nt">-w</span> /etc/sudoers
 <span class="k">else
   </span><span class="nb">echo</span> <span class="s2">"* </span><span class="nv">$deploy_user</span><span class="s2"> user already exists"</span>
 <span class="k">fi</span>
 <span class="c"># Check user is exist, maybe some errors occured</span>
-id <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /dev/null
+<span class="nb">id</span> <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /dev/null
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span>
 <span class="k">then
   </span><span class="nb">echo</span> <span class="s2">"* </span><span class="nv">$deploy_user</span><span class="s2"> user does not exists"</span>
@@ -203,25 +203,25 @@ id <span class="nt">-u</span> <span class="nv">$deploy_user</span> &amp;&gt; /de
   <span class="nb">test</span> <span class="nt">-d</span> /home/<span class="nv">$deploy_user</span>/.ssh
   <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span>
   <span class="k">then
-    </span>mkdir /home/<span class="nv">$deploy_user</span>/.ssh
+    </span><span class="nb">mkdir</span> /home/<span class="nv">$deploy_user</span>/.ssh
     <span class="c"># change user permisisions</span>
     <span class="c"># 700 =&gt; (owner read/write/execute, group none, other none)</span>
-    chmod 700 /home/<span class="nv">$deploy_user</span>/.ssh
-    chown <span class="nv">$deploy_user</span> /home/<span class="nv">$deploy_user</span>/.ssh
-    chgrp <span class="nv">$deploy_group</span> /home/<span class="nv">$deploy_user</span>/.ssh
+    <span class="nb">chmod </span>700 /home/<span class="nv">$deploy_user</span>/.ssh
+    <span class="nb">chown</span> <span class="nv">$deploy_user</span> /home/<span class="nv">$deploy_user</span>/.ssh
+    <span class="nb">chgrp</span> <span class="nv">$deploy_group</span> /home/<span class="nv">$deploy_user</span>/.ssh
   <span class="k">fi
   </span><span class="nb">echo</span> <span class="s2">"* Get usernames public keys from GitHub and add them to </span><span class="nv">$deploy_user</span><span class="s2"> authorized_keys"</span>
   <span class="k">for </span>username <span class="k">in</span> <span class="k">${</span><span class="nv">usernames</span><span class="p">[@]</span><span class="k">}</span><span class="p">;</span> <span class="k">do
     </span><span class="nv">name</span><span class="o">=</span><span class="nv">$username</span>.keys
     wget https://github.com/<span class="nv">$name</span> <span class="nt">--no-check-certificate</span> <span class="nt">-O</span> <span class="nv">$name</span>
     <span class="nb">cat</span> <span class="nv">$name</span> <span class="o">&gt;&gt;</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
-    rm <span class="nv">$name</span> <span class="c"># remove temprory file</span>
+    <span class="nb">rm</span> <span class="nv">$name</span> <span class="c"># remove temprory file</span>
   <span class="k">done</span>
   <span class="c"># change user permisisions</span>
   <span class="c"># 600 =&gt; (owner read/write, group none, other none)</span>
-  chmod 600 /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
-  chown <span class="nv">$deploy_user</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
-  chgrp <span class="nv">$deploy_group</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+  <span class="nb">chmod </span>600 /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+  <span class="nb">chown</span> <span class="nv">$deploy_user</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
+  <span class="nb">chgrp</span> <span class="nv">$deploy_group</span> /home/<span class="nv">$deploy_user</span>/.ssh/authorized_keys
   <span class="nb">echo</span> <span class="s2">"* Completed..."</span>
 <span class="k">fi</span>
 </code></pre></div>
@@ -242,16 +242,16 @@ fancy_echo <span class="s2">"Writing rbenv path to bashrc ..."</span>
 <span class="nb">echo</span> <span class="s1">'eval "$(rbenv init -)"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc
 fancy_echo <span class="s2">"Exporting rbenv path..."</span>
 <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
-<span class="nb">eval</span> <span class="s2">"</span><span class="k">$(</span>rbenv init -<span class="k">)</span><span class="s2">"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init -<span class="si">)</span><span class="s2">"</span>
 fancy_echo <span class="s2">"Preparing rbenv plugins..."</span>
-mkdir <span class="nt">-p</span> <span class="nv">$user_path</span>/.rbenv/plugins
+<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$user_path</span>/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git <span class="nv">$user_path</span>/.rbenv/plugins/ruby-build
 <span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git <span class="nv">$user_path</span>/.rbenv/plugins/rbenv-gem-rehash
 <span class="c">## Ruby environment</span>
 <span class="nv">RUBY_VERSION</span><span class="o">=</span><span class="s2">"2.2.3"</span>
 fancy_echo <span class="s2">"Installing Ruby </span><span class="nv">$RUBY_VERSION</span><span class="s2"> ..."</span>
-rbenv install <span class="nv">$RUBY_VERSION</span>
+rbenv <span class="nb">install</span> <span class="nv">$RUBY_VERSION</span>
 rbenv rehash
 rbenv global <span class="nv">$RUBY_VERSION</span>
 ruby <span class="nt">-v</span>
@@ -259,8 +259,8 @@ fancy_echo <span class="s2">"Gem update system ..."</span>
 gem update <span class="nt">--system</span>
 fancy_echo <span class="s2">"Echo .gemrc..."</span>
 <span class="nb">echo</span> <span class="s1">'gem: --no-rdoc --no-ri'</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.gemrc
-gem install bundler
-gem install backup
+gem <span class="nb">install </span>bundler
+gem <span class="nb">install </span>backup
 rbenv rehash
 fancy_echo <span class="s2">"Export path ..."</span>
 <span class="nb">echo</span> <span class="s2">"export PATH="</span><span class="nv">$PATH</span>:/usr/bin<span class="s2">""</span> <span class="o">&gt;&gt;</span> <span class="nv">$user_path</span>/.bashrc

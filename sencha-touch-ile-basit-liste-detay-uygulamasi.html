@@ -99,7 +99,7 @@ lab2023.com
 <p>Mac OS için sencha touch kurulumu:</p>
 
 <ul>
-<li><a href="http://www.sencha.com/products/sencha-cmd/download">Sencha CMD</a>&lsquo; yi indirip kuruyoruz.</li>
+<li><a href="http://www.sencha.com/products/sencha-cmd/download">Sencha CMD</a>&rsquo; yi indirip kuruyoruz.</li>
 <li><a href="http://www.sencha.com/products/touch/download/">Sencha Touch</a> dosyasını indirip belirli bir dizine açıyoruz.</li>
 <li>Yeni uygulama oluşturmak için sencha tocuh framework&#39;ün bulunduğu dizinde olmalısınız.</li>
 </ul>
@@ -123,14 +123,14 @@ lab2023.com
 <p><img alt="Sencha" width="717" height="769" src="assets/images/articles/2014-05-08-sencha-touch-starter.png" /></p>
 
 <p><code>app/model</code> dizinin içerisine <code>Food</code> isminde <code>Food.js</code> dosyası ile yeni bir model oluşturuyoruz.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">'Gourmet.model.Food'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">extend</span><span class="p">:</span> <span class="s1">'Ext.data.Model'</span><span class="p">,</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">Gourmet.model.Food</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ext.data.Model</span><span class="dl">'</span><span class="p">,</span>
     <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
         <span class="na">fields</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">'id'</span><span class="p">,</span>
-            <span class="s1">'name'</span><span class="p">,</span>
-            <span class="s1">'picture'</span><span class="p">,</span>
-            <span class="s1">'description'</span>
+            <span class="dl">'</span><span class="s1">id</span><span class="dl">'</span><span class="p">,</span>
+            <span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">,</span>
+            <span class="dl">'</span><span class="s1">picture</span><span class="dl">'</span><span class="p">,</span>
+            <span class="dl">'</span><span class="s1">description</span><span class="dl">'</span>
         <span class="p">]</span>
     <span class="p">}</span>
 <span class="p">});</span>
@@ -138,20 +138,20 @@ lab2023.com
 <p>Buradaki <code>fields</code> alanına apiden dönen değerlerden hangilerini okuyacağımızı belirtiyoruz.</p>
 
 <p><code>app/store</code> içerisine <code>Foods.js</code> dosyası ile <code>Foods</code> isminde yeni bir store oluşturuyoruz. İsminin <code>Foods</code> olması zorunlu değil.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">'Gourmet.store.Foods'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">extend</span><span class="p">:</span> <span class="s1">'Ext.data.Store'</span><span class="p">,</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">Gourmet.store.Foods</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ext.data.Store</span><span class="dl">'</span><span class="p">,</span>
     <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">model</span><span class="p">:</span> <span class="s1">'Gourmet.model.Food'</span><span class="p">,</span>
+        <span class="na">model</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Gourmet.model.Food</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">autoLoad</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="na">proxy</span><span class="p">:</span> <span class="p">{</span>
-            <span class="na">type</span><span class="p">:</span> <span class="s1">'ajax'</span><span class="p">,</span>
-            <span class="na">url</span><span class="p">:</span> <span class="s2">"data/foods.json"</span><span class="p">,</span>
+            <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ajax</span><span class="dl">'</span><span class="p">,</span>
+            <span class="na">url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">data/foods.json</span><span class="dl">"</span><span class="p">,</span>
             <span class="na">reader</span><span class="p">:</span> <span class="p">{</span>
-                <span class="na">rootProperty</span><span class="p">:</span> <span class="s1">'data'</span><span class="p">,</span>
-                <span class="na">type</span><span class="p">:</span> <span class="s1">'json'</span>
+                <span class="na">rootProperty</span><span class="p">:</span> <span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span>
+                <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">json</span><span class="dl">'</span>
             <span class="p">}</span>
         <span class="p">},</span>
-        <span class="na">sorters</span><span class="p">:</span> <span class="s1">'id'</span>
+        <span class="na">sorters</span><span class="p">:</span> <span class="dl">'</span><span class="s1">id</span><span class="dl">'</span>
     <span class="p">}</span>
 <span class="p">});</span>
 </code></pre></div>
@@ -162,20 +162,20 @@ lab2023.com
 <p><code>sorters</code> verinin hangi alana göre sıralı olacağını belirtir.</p>
 
 <p>Oluşturduğumuz model ve store ları <code>app.js</code> içerisinde belirtelim. Bu işlemi ekleyeceğimiz diğer dosyalar içinde yapacağız.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">models</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Food'</span><span class="p">],</span>
-<span class="nx">stores</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Foods'</span><span class="p">],</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">models</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Food</span><span class="dl">'</span><span class="p">],</span>
+<span class="nx">stores</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Foods</span><span class="dl">'</span><span class="p">],</span>
 </code></pre></div>
 <p>Şimdi arayüzleri oluşturmaya geçelim.</p>
 
 <p><code>app/view</code> içerisine <code>Foods.js</code> dosyasını oluşturalım.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">'Gourmet.view.Foods'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">extend</span><span class="p">:</span> <span class="s1">'Ext.navigation.View'</span><span class="p">,</span>
-    <span class="na">xtype</span><span class="p">:</span> <span class="s1">'food_panel'</span><span class="p">,</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">Gourmet.view.Foods</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ext.navigation.View</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">xtype</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_panel</span><span class="dl">'</span><span class="p">,</span>
 
     <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">defaultBackButtonText</span><span class="p">:</span> <span class="s2">"Geri"</span><span class="p">,</span>
+        <span class="na">defaultBackButtonText</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Geri</span><span class="dl">"</span><span class="p">,</span>
         <span class="na">items</span><span class="p">:</span> <span class="p">[{</span>
-            <span class="na">title</span><span class="p">:</span> <span class="s1">'Yemek Listesi'</span><span class="p">,</span>
+            <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Yemek Listesi</span><span class="dl">'</span><span class="p">,</span>
             <span class="c1">// Buraya liste gelecek</span>
         <span class="p">}]</span>
     <span class="p">}</span>
@@ -189,21 +189,21 @@ Bu aşamaya ilerleyen kısımlarda daha sonra değineceğiz.</p>
 
 <p>Şimdi bunu <code>Main.js</code> içerisinde hazır gelen tab panelin bir tabına yerleştirelim. Bunun için <code>items</code> dizisine aşağıdaki gibi bir item ekliyoruz.</p>
 <div class="highlight"><pre class="highlight javascript"><code><span class="p">{</span>
-    <span class="nl">title</span><span class="p">:</span> <span class="s1">'Yemek Listesi'</span><span class="p">,</span><span class="c1">// Tab linklerinde görünecek isim</span>
-    <span class="nx">iconCls</span><span class="p">:</span> <span class="s1">'list'</span><span class="p">,</span>
-    <span class="nx">xtype</span><span class="p">:</span> <span class="s1">'food_panel'</span> <span class="c1">// Food.js te verdiğimiz xtype</span>
+    <span class="nl">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Yemek Listesi</span><span class="dl">'</span><span class="p">,</span><span class="c1">// Tab linklerinde görünecek isim</span>
+    <span class="nx">iconCls</span><span class="p">:</span> <span class="dl">'</span><span class="s1">list</span><span class="dl">'</span><span class="p">,</span>
+    <span class="nx">xtype</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_panel</span><span class="dl">'</span> <span class="c1">// Food.js te verdiğimiz xtype</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="Elsan" width="514" height="797" src="assets/images/articles/2014-05-08-sencha-touch-starter1.png" /></p>
 
 <p>Listeyi oluşturalım. <code>view</code> altına <code>FoodList.js</code> dosyası oluşturuyoruz. Bu dosya <a href="http://docs.sencha.com/touch/2.3.1/#!/api/Ext.dataview.List">Ext.List</a> compenentinden extend edilecek.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">'Gourmet.view.FoodList'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">extend</span><span class="p">:</span> <span class="s1">'Ext.List'</span><span class="p">,</span>
-    <span class="na">xtype</span><span class="p">:</span> <span class="s1">'food_list'</span><span class="p">,</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">Gourmet.view.FoodList</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ext.List</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">xtype</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_list</span><span class="dl">'</span><span class="p">,</span>
     <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">title</span><span class="p">:</span> <span class="s2">"Yemek Listesi"</span><span class="p">,</span>
-        <span class="na">itemTpl</span><span class="p">:</span> <span class="s1">'{name}'</span><span class="p">,</span>
-        <span class="na">store</span><span class="p">:</span> <span class="s1">'Foods'</span><span class="p">,</span>
+        <span class="na">title</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Yemek Listesi</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">itemTpl</span><span class="p">:</span> <span class="dl">'</span><span class="s1">{name}</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">store</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Foods</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">onItemDisclosure</span><span class="p">:</span> <span class="kc">true</span>
     <span class="p">}</span>
 <span class="p">});</span>
@@ -223,13 +223,13 @@ Bu aşamaya ilerleyen kısımlarda daha sonra değineceğiz.</p>
 <p>Detay butonu var ama çalışmıyor. Detay sayfası yapalım ve butona işlevsellik kazandıralım.</p>
 
 <p><code>FoodDetail.js</code> dosyası oluşturalım. Bu dosya <a href="http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Panel">Ext.Panel</a> componentinden extend edilecek.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">'Gourmet.view.FoodDetail'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">extend</span><span class="p">:</span> <span class="s1">'Ext.Panel'</span><span class="p">,</span>
-    <span class="na">xtype</span><span class="p">:</span> <span class="s1">'food_detail'</span><span class="p">,</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">Gourmet.view.FoodDetail</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ext.Panel</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">xtype</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_detail</span><span class="dl">'</span><span class="p">,</span>
     <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
         <span class="na">styleHtmlContent</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="na">scrollable</span><span class="p">:</span> <span class="s1">'vertical'</span><span class="p">,</span>
-        <span class="na">tpl</span><span class="p">:</span> <span class="s2">"&lt;img src='{picture}' /&gt; &lt;br /&gt; &lt;p&gt;{description}&lt;/p&gt;"</span>
+        <span class="na">scrollable</span><span class="p">:</span> <span class="dl">'</span><span class="s1">vertical</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">tpl</span><span class="p">:</span> <span class="dl">"</span><span class="s2">&lt;img src='{picture}' /&gt; &lt;br /&gt; &lt;p&gt;{description}&lt;/p&gt;</span><span class="dl">"</span>
     <span class="p">}</span>
 <span class="p">});</span>
 </code></pre></div>
@@ -239,24 +239,24 @@ Bu aşamaya ilerleyen kısımlarda daha sonra değineceğiz.</p>
 <li><code>tpl</code> : <a href="http://docs.sencha.com/touch/2.3.1/#!/api/Ext.Template">Template</a> içeriği buraya yazıyoruz. Template&rsquo; ler içerisinde bulunan componente setlenen data&rsquo; yı <code>{key}</code> şeklinde kullanmaya olanak sağlar.</li>
 <li><code>controller</code> içerisindeki <code>Main.js</code> adında bir controller oluşturup, <code>Main.js</code> dosyasını aşağıdaki gibi düzenleyelim.</li>
 </ul>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">'Gourmet.controller.Main'</span><span class="p">,</span> <span class="p">{</span>
-    <span class="na">extend</span><span class="p">:</span> <span class="s1">'Ext.app.Controller'</span><span class="p">,</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Ext</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">Gourmet.controller.Main</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ext.app.Controller</span><span class="dl">'</span><span class="p">,</span>
 
     <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
         <span class="na">refs</span><span class="p">:</span> <span class="p">{</span>
-            <span class="na">foodList</span><span class="p">:</span> <span class="s1">'food_list'</span><span class="p">,</span>
-            <span class="na">foodMain</span><span class="p">:</span> <span class="s1">'food_panel'</span>
+            <span class="na">foodList</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_list</span><span class="dl">'</span><span class="p">,</span>
+            <span class="na">foodMain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_panel</span><span class="dl">'</span>
         <span class="p">},</span>
         <span class="na">control</span><span class="p">:</span> <span class="p">{</span>
             <span class="na">foodList</span><span class="p">:</span> <span class="p">{</span>
-                <span class="na">disclose</span><span class="p">:</span> <span class="s1">'showFoodDetail'</span>
+                <span class="na">disclose</span><span class="p">:</span> <span class="dl">'</span><span class="s1">showFoodDetail</span><span class="dl">'</span>
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">},</span>
 
     <span class="na">showFoodDetail</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span> <span class="nx">record</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">getFoodMain</span><span class="p">().</span><span class="nx">push</span><span class="p">({</span>
-            <span class="na">xtype</span><span class="p">:</span> <span class="s1">'food_detail'</span><span class="p">,</span>
+            <span class="na">xtype</span><span class="p">:</span> <span class="dl">'</span><span class="s1">food_detail</span><span class="dl">'</span><span class="p">,</span>
             <span class="na">title</span><span class="p">:</span> <span class="nx">record</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
             <span class="na">data</span><span class="p">:</span> <span class="nx">record</span><span class="p">.</span><span class="nx">getData</span><span class="p">()</span>
         <span class="p">})</span>

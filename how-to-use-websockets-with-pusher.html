@@ -130,13 +130,13 @@ Then the service will ask you to create an App and after you create App you can 
   <span class="nt">&lt;title&gt;</span>Pusher Test<span class="nt">&lt;/title&gt;</span>
   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://js.pusher.com/2.2/pusher.min.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
   <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-    <span class="kd">var</span> <span class="nx">pusher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Pusher</span><span class="p">(</span><span class="s1">'your_api_key'</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">channel</span> <span class="o">=</span> <span class="nx">pusher</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'test_channel'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">pusher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Pusher</span><span class="p">(</span><span class="dl">'</span><span class="s1">your_api_key</span><span class="dl">'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">channel</span> <span class="o">=</span> <span class="nx">pusher</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">test_channel</span><span class="dl">'</span><span class="p">);</span>
   <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 </code></pre></div>
 <p>To listen for incoming messages&hellip;</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">channel</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">"my-event"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">channel</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">"</span><span class="s2">my-event</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
 <span class="p">});</span>
 </code></pre></div>

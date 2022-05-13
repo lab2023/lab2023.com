@@ -191,7 +191,7 @@ mount ActionCable.server =&gt; &#39;/cable&#39;
 <span class="p">}).</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 </code></pre></div>
 <p>Route dosyamıza yukarıdaki satırı ekledikten sonra browser console&#39;umuzdan <em>“App.cable”</em> ı yazdığımızda aşağıdaki sonucu alabilmeniz gerekiyor.</p>
-<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Consumer</span> <span class="p">{</span><span class="nl">url</span><span class="p">:</span> <span class="s2">"ws://localhost:3000/cable"</span><span class="p">,</span> <span class="nx">subscriptions</span><span class="p">:</span> <span class="nx">Subscriptions</span><span class="p">,</span> <span class="nx">connection</span><span class="p">:</span> <span class="nx">Connection</span><span class="p">}</span>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">Consumer</span> <span class="p">{</span><span class="nl">url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ws://localhost:3000/cable</span><span class="dl">"</span><span class="p">,</span> <span class="nx">subscriptions</span><span class="p">:</span> <span class="nx">Subscriptions</span><span class="p">,</span> <span class="nx">connection</span><span class="p">:</span> <span class="nx">Connection</span><span class="p">}</span>
 </code></pre></div>
 <p>Artık örneğimiz için kanal oluşturma zamanı geldi.</p>
 <div class="highlight"><pre class="highlight ruby"><code><span class="n">rails</span> <span class="n">g</span> <span class="n">channel</span> <span class="n">room</span> <span class="n">speak</span>  
@@ -217,7 +217,7 @@ mount ActionCable.server =&gt; &#39;/cable&#39;
 <p><em>‘subscriber’</em> ve <em>‘unsubscriber’</em> ActionCable’ın default callback’leridir.</p>
 <div class="highlight"><pre class="highlight javascript"><code><span class="err">#</span><span class="nx">app</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="nx">javascripts</span><span class="o">/</span><span class="nx">channels</span><span class="o">/</span><span class="nx">room</span><span class="p">.</span><span class="nx">coffee</span>
 
-<span class="nx">App</span><span class="p">.</span><span class="nx">room</span> <span class="o">=</span> <span class="nx">App</span><span class="p">.</span><span class="nx">cable</span><span class="p">.</span><span class="nx">subscriptions</span><span class="p">.</span><span class="nx">create</span> <span class="s2">"RoomChannel"</span><span class="p">,</span> 
+<span class="nx">App</span><span class="p">.</span><span class="nx">room</span> <span class="o">=</span> <span class="nx">App</span><span class="p">.</span><span class="nx">cable</span><span class="p">.</span><span class="nx">subscriptions</span><span class="p">.</span><span class="nx">create</span> <span class="dl">"</span><span class="s2">RoomChannel</span><span class="dl">"</span><span class="p">,</span> 
 
 <span class="nx">connected</span><span class="p">:</span> <span class="o">-&gt;</span> 
     <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">subscription</span> <span class="nx">is</span> <span class="nx">ready</span> <span class="k">for</span> <span class="nx">use</span> <span class="nx">on</span> <span class="nx">the</span> <span class="nx">server</span> 
@@ -226,10 +226,10 @@ mount ActionCable.server =&gt; &#39;/cable&#39;
     <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">the</span> <span class="nx">subscription</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">terminated</span> <span class="nx">by</span> <span class="nx">the</span> <span class="nx">server</span> 
 
 <span class="nx">received</span><span class="p">:</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">-&gt;</span> 
-    <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">there</span><span class="s1">'s incoming data on the websocket for this channel 
+    <span class="err">#</span> <span class="nx">Called</span> <span class="nx">when</span> <span class="nx">there</span><span class="dl">'</span><span class="s1">s incoming data on the websocket for this channel 
 
 speak: -&gt; 
-    @perform '</span><span class="nx">speak</span><span class="s1">'
+    @perform </span><span class="dl">'</span><span class="nx">speak</span><span class="dl">'</span><span class="s1">
 
 </span></code></pre></div>
 <p><em>connected</em> methodu kanal ile ilk bağlantı oluşturulduğunda çalışan methotdur, <em>received</em> methodu ise veri geldiğinde çalışan fonksiyondur. <em>speak</em> methodu ise clienttan gelen veriyi <em>room_channel.rb</em>’nin içindeki <em>speak</em> fonksiyonuna gönderdiğimiz methoddur.</p>
@@ -238,15 +238,15 @@ speak: -&gt;
 <div class="highlight"><pre class="highlight javascript"><code><span class="err">#</span><span class="nx">app</span><span class="o">/</span><span class="nx">assets</span><span class="o">/</span><span class="nx">javascripts</span><span class="o">/</span><span class="nx">channels</span><span class="o">/</span><span class="nx">room</span><span class="p">.</span><span class="nx">coffee</span>
 
 <span class="nx">received</span><span class="p">:</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">-&gt;</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'#messages'</span><span class="p">).</span><span class="nx">append</span> <span class="nx">data</span><span class="p">[</span><span class="s1">'message'</span><span class="p">]</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#messages</span><span class="dl">'</span><span class="p">).</span><span class="nx">append</span> <span class="nx">data</span><span class="p">[</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">]</span>
 
 <span class="nx">speak</span><span class="p">:</span> <span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="o">-&gt;</span>
-    <span class="p">@</span><span class="nd">perform</span> <span class="s1">'speak'</span><span class="p">,</span> <span class="nx">message</span><span class="p">:</span> <span class="nx">message</span>
+    <span class="p">@</span><span class="nd">perform</span> <span class="dl">'</span><span class="s1">speak</span><span class="dl">'</span><span class="p">,</span> <span class="nx">message</span><span class="p">:</span> <span class="nx">message</span>
 
-<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">on</span> <span class="s1">'keypress'</span><span class="p">,</span> <span class="s1">'[data-behavior~=room_speaker]'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">on</span> <span class="dl">'</span><span class="s1">keypress</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">[data-behavior~=room_speaker]</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">-&gt;</span>
     <span class="k">if</span> <span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="nx">is</span> <span class="mi">13</span> <span class="err">#</span> <span class="k">return</span><span class="sr">/enter = sen</span><span class="err">d
 </span>       <span class="nx">App</span><span class="p">.</span><span class="nx">room</span><span class="p">.</span><span class="nx">speak</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span>
-       <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">''</span>
+       <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">''</span>
        <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
 </code></pre></div><div class="highlight"><pre class="highlight ruby"><code><span class="c1">#app/channels/room_channel.rb</span>
 
