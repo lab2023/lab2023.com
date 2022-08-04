@@ -49,17 +49,17 @@ members:
   dilekaltun:
     title: Dilek Altun | Designer
     info: I design and code.
-    twitter: 
+    twitter:
     profile_picture: dilek-altun.jpg
   hazalgultekin:
     title: Hazal GULTEKİN | Designer
     info:
-      I'm studying in Computer Engineering. 
-      I love design so much. 
+      I'm studying in Computer Engineering.
+      I love design so much.
       I also develop myself in other areas such as Web and mobile.
       I'm currently dealing with Ruby on Rails.
-    twitter: 
-    profile_picture: hazal-gultekin.jpg 
+    twitter:
+    profile_picture: hazal-gultekin.jpg
   olcayoransoy:
     title: Olcay ORANSOY | Intern
     info:
@@ -79,3 +79,10 @@ members:
     info: I'm studying computer engineering. I want to be an open-source developer.
     twitter: azmcnkrc
     profile_picture: azim-can-kuruca.jpg
+  rizadogukankosar:
+    title: Rıza Doğukan KOŞAR | Intern
+    info:
+      Ruby on Rails | Kotlin | Java
+      I'm 4rd grade computer engineering. I'm Interested in web & mobile development.
+    twitter: dogu_kosar
+    profile_picture: riza-dogukan-kosar.jpg
