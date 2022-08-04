@@ -1,11 +1,4 @@
 members:
-  onurozgurozkan:
-    title: Onur Ozgur OZKAN | Co-founder
-    info:
-      I graduated in economics. I am the creator of Kebab Project, co-founder at Lab2023, Bulutfon and Qudea,
-      public speaker, open source developer.
-    twitter: onurozgurozkan
-    profile_picture: onur-ozgur-ozkan.jpg
   tayfunoziserikan:
     title: Tayfun Ozis ERIKAN | Co-founder &amp; CEO
     info:
@@ -56,13 +49,17 @@ members:
   dilekaltun:
     title: Dilek Altun | Designer
     info: I design and code.
-    twitter: 
-    profile_picture: dilek-altun.jpg
-  anilyilmaz:
-    title: Anıl YILMAZ | Intern
-    info: I am doing a master's degree in information technology. I write content as a hobby and I am engaged in sports.
     twitter:
-    profile_picture: anil-yilmaz.jpg
+    profile_picture: dilek-altun.jpg
+  hazalgultekin:
+    title: Hazal GULTEKİN | Designer
+    info:
+      I'm studying in Computer Engineering.
+      I love design so much.
+      I also develop myself in other areas such as Web and mobile.
+      I'm currently dealing with Ruby on Rails.
+    twitter:
+    profile_picture: hazal-gultekin.jpg
   olcayoransoy:
     title: Olcay ORANSOY | Intern
     info:
@@ -73,3 +70,19 @@ members:
       He is a Hot Wheels collectionner and one of the biggest Top Gear fans.
     twitter: olcay_yaclo
     profile_picture: olcay-oransoy.jpg
+  emrehankisacik:
+    title: Emrehan Kısacık | Web Developer
+    info: I'm 3rd grade computer engineering student. I love coding and create new things
+    profile_picture: emrehan-kisacik.jpg
+  azimcankuruca:
+    title: Azim Can Kuruca | Web Developer
+    info: I'm studying computer engineering. I want to be an open-source developer.
+    twitter: azmcnkrc
+    profile_picture: azim-can-kuruca.jpg
+  rizadogukankosar:
+    title: Rıza Doğukan KOŞAR | Intern
+    info:
+      Ruby on Rails | Kotlin | Java
+      I'm 4rd grade computer engineering. I'm Interested in web & mobile development.
+    twitter: dogu_kosar
+    profile_picture: riza-dogukan-kosar.jpg
