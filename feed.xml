@@ -11,7 +11,7 @@
     <link rel="alternate" href="http://lab2023.com/rails-girls-denizli-2019-etkinligi-nasil-gecti.html"/>
     <id>http://lab2023.com/rails-girls-denizli-2019-etkinligi-nasil-gecti.html</id>
     <published>2019-03-19T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -49,7 +49,7 @@ Sunumlar ve Bentobox çalışmalarımız ardından, web uygulaması çalışmam�
     <link rel="alternate" href="http://lab2023.com/rails-girls-denizli-etkinligi.html"/>
     <id>http://lab2023.com/rails-girls-denizli-etkinligi.html</id>
     <published>2019-01-07T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -91,7 +91,7 @@ anlatılacak ve katılımcıların bilgisayarlarına gerekli programların kurul
     <link rel="alternate" href="http://lab2023.com/web-gelistiricisi-is-ilani.html"/>
     <id>http://lab2023.com/web-gelistiricisi-is-ilani.html</id>
     <published>2018-02-08T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -163,7 +163,7 @@ veya benzer popüler teknolojilere ilgi duyuyor veya biliyor olmanız bir avanta
     <link rel="alternate" href="http://lab2023.com/hello-world-yazilim-ve-tasarim-dunyasi-ile-tanisin-etkinligi.html"/>
     <id>http://lab2023.com/hello-world-yazilim-ve-tasarim-dunyasi-ile-tanisin-etkinligi.html</id>
     <published>2017-05-05T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -214,7 +214,7 @@ sayfasını ziyaret edebilirsiniz.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/rails-5-de-fineuploader-kullanimi.html"/>
     <id>http://lab2023.com/rails-5-de-fineuploader-kullanimi.html</id>
     <published>2017-03-10T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -421,7 +421,7 @@ Fineuploader&amp;#39;ın daha birçok özelliğini web sayfasını kurcalayarak 
     <link rel="alternate" href="http://lab2023.com/arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari.html"/>
     <id>http://lab2023.com/arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari.html</id>
     <published>2017-02-17T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -507,7 +507,7 @@ başına 6-7 dolar civarı bir miktar yeterli oluyor.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/rails-5-de-dinamik-nested-form-kullanimi.html"/>
     <id>http://lab2023.com/rails-5-de-dinamik-nested-form-kullanimi.html</id>
     <published>2017-02-10T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -583,7 +583,7 @@ modeliniz var ise ve tek bir form üzerinden kayıt yapacaksanız nested form ku
     <link rel="alternate" href="http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html"/>
     <id>http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html</id>
     <published>2017-02-03T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -794,7 +794,7 @@ after_create_commit { MessageBroadcastJob.perform_later self }
     <link rel="alternate" href="http://lab2023.com/rails-verilerine-javascript-uzerinden-ulasmak.html"/>
     <id>http://lab2023.com/rails-verilerine-javascript-uzerinden-ulasmak.html</id>
     <published>2017-02-03T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -920,7 +920,7 @@ kullanımını sağlayan bir alternatifidir.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html"/>
     <id>http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html</id>
     <published>2016-08-04T03:00:00+03:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1123,7 +1123,7 @@ Bu işlem için gerekli olan komutlar şunlardır;&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/bulutfon-ruby-sdk.html"/>
     <id>http://lab2023.com/bulutfon-ruby-sdk.html</id>
     <published>2015-12-22T02:00:00+02:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1412,7 +1412,7 @@ oluşturma gibi birçok özelliği hızlı bir şekilde uygulamalarınıza enteg
     <link rel="alternate" href="http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html"/>
     <id>http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html</id>
     <published>2015-12-21T02:00:00+02:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1695,7 +1695,7 @@ Do deploy to production server.
     <link rel="alternate" href="http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html"/>
     <id>http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html</id>
     <published>2015-12-21T02:00:00+02:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1961,7 +1961,7 @@ Kolay gelsin.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/ikinci-rails-girls-denizli-etkinligi.html"/>
     <id>http://lab2023.com/ikinci-rails-girls-denizli-etkinligi.html</id>
     <published>2015-12-02T02:00:00+02:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -2006,7 +2006,7 @@ anlatılacak ve katılımcıların bilgisayarlarına gerekli programların kurul
     <link rel="alternate" href="http://lab2023.com/populer-front-end-araclari.html"/>
     <id>http://lab2023.com/populer-front-end-araclari.html</id>
     <published>2015-11-24T02:00:00+02:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -2217,7 +2217,7 @@ Aşağıdaki gulpfile.js dosyasında &lt;a href="https://www.npmjs.com/package/g
     <link rel="alternate" href="http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html"/>
     <id>http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html</id>
     <published>2014-12-25T02:00:00+02:00</published>
-    <updated>2022-05-16T18:03:07+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
