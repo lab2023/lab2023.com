@@ -1,7 +1,7 @@
 members:
   tayfunoziserikan:
     title: Tayfun Ozis ERIKAN | Co-founder &amp; CEO
-    info:
+    info: 
       Web Developer, Graphic & Web Designer
       Ruby, Ruby on Rails, Ext JS & Sencha Touch, jQuery, OS X User. Kebab Project Developer. Public Speaker.
       Co-Founder of Lab2023 Information Technologies, Bulutfon Telecommunication and Qudea, Inc.
@@ -9,7 +9,7 @@ members:
     profile_picture: tayfun-ozis-erikan.jpg
   serdaryagci:
     title: Serdar YAGCI | Adviser
-    info:
+    info: 
       He knows PHP, Objective - C and Javascript Frameworks. He is photographer and traveler.
     twitter: Sevliya
     profile_picture: serdar-yagci.jpg
@@ -23,13 +23,13 @@ members:
     profile_picture: clara-isabel-pantoja.jpg
   kamilagareeva:
     title: Kamila GAREEVA | Graphic Designer
-    info:
+    info: 
       Graphic artist, 2D animator, graphic - designer
     twitter: kamilagareeva1
     profile_picture: kamila-gareeva.jpg
   fadimeozhan:
     title: Fadime OZHAN | Web - Software Developer
-    info:
+    info: 
       Software developer, Linux, Ruby on Rails, Ruby, Javascript.
       I always prefer to write clean and understandable code. I am open to new ideas and love to follow new technologies.
     twitter: fadimezhan
@@ -53,7 +53,7 @@ members:
     profile_picture: dilek-altun.jpg
   hazalgultekin:
     title: Hazal GULTEKİN | Designer
-    info:
+    info: 
       I'm studying in Computer Engineering.
       I love design so much.
       I also develop myself in other areas such as Web and mobile.
@@ -62,7 +62,7 @@ members:
     profile_picture: hazal-gultekin.jpg
   olcayoransoy:
     title: Olcay ORANSOY | Intern
-    info:
+    info: 
       Olcay is probably the youngest Ruby on Rails developer in the country.
       He is our youngest intern. He started to use computer at the age of 3.
       He works hard on developing his skills on every aspects of web development.
@@ -81,8 +81,14 @@ members:
     profile_picture: azim-can-kuruca.jpg
   rizadogukankosar:
     title: Rıza Doğukan KOŞAR | Intern
-    info:
+    info: 
       Ruby on Rails | Kotlin | Java
       I'm 4rd grade computer engineering. I'm Interested in web & mobile development.
     twitter: dogu_kosar
     profile_picture: riza-dogukan-kosar.jpg
+  sabricakir:
+    title: Sabri ÇAKIR | Intern
+    info: I'm computer engineer student. I love learning full stack web development tools and technologies. 
+    twitter: 
+    profile_picture: sabri-cakir.jpg
+
