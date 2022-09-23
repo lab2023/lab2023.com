@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Vagrant'da Temel İnce Ayarlar
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Vagrant&#39;da Temel İnce Ayarlar' name='description'>
+<meta content='vagrant, virtualbox, sanallaştırma, vagrant cloud, ayar, network, paylaşma, tr' name='keywords'>
+<meta content='Ahmet Sezgin DURAN' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/marjinal1st" target="_blank">Ahmet Sezgin DURAN</a></h4>
+<h5>May 13, 2014</h5>
+<span class='tag'><a href="/tag/vagrant.html">vagrant</a></span>
+<span class='tag'><a href="/tag/virtualbox.html"> virtualbox</a></span>
+<span class='tag'><a href="/tag/sanallastirma.html"> sanallaştırma</a></span>
+<span class='tag'><a href="/tag/vagrant-cloud.html"> vagrant cloud</a></span>
+<span class='tag'><a href="/tag/ayar.html"> ayar</a></span>
+<span class='tag'><a href="/tag/network.html"> network</a></span>
+<span class='tag'><a href="/tag/paylasma.html"> paylaşma</a></span>
+<span class='tag'><a href="/tag/tr.html"> tr</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/vagrant-temel-ince-ayarlar.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/vagrant-temel-ince-ayarlar.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/vagrant-temel-ince-ayarlar.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Vagrant'da Temel İnce Ayarlar</h1>
+<p>Bir önceki yazıda Vagrant’ın ne olduğu ve nasıl kullanıldığı ile ilgili genel bir bilgi vermiştim. Şimdi ise ince ayarlara dalıp, sistemi daha da kullanışlı hale getireceğiz. Ayarları tek tek, ayrı başlıklar halinde sunacağım. Önceki yazıda olduğu gibi bunda da sistemi Virtualbox altyapısı ile kullanıyor olacağız. Başlamadan önce söyleyeyim, tüm ayarları <strong>Vagrantfile</strong> adlı dosyadan yapacağız. Ve ayarların uygulaması için de:</p>
+<div class="highlight"><pre class="highlight shell"><code>vagrant reload
+</code></pre></div>
+<p>komutunu verip, sanal makineyi yeniden başlatacağız.</p>
+
+<h2 id="1-bellek-miktar-ve-lemci-say-s">1) Bellek Miktarı ve İşlemci Sayısı</h2>
+
+<p>Yapılandırmaların yazıldığı bölümde, burası en üstteki <strong>do |config|</strong> ile en alttaki <strong>end</strong> arasındaki blok oluyor, şu satırları yazın. (Yorum halinde varsa, yorumu kaldırıp da kullanabilirsiniz.)</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">provider</span> <span class="s1">'virtualbox'</span> <span class="k">do</span> <span class="o">|</span><span class="n">vb</span><span class="o">|</span>
+  <span class="n">vb</span><span class="p">.</span><span class="nf">customize</span> <span class="p">[</span><span class="s1">'modifyvm'</span><span class="p">,</span> <span class="ss">:id</span><span class="p">,</span> <span class="s1">'--memory'</span><span class="p">,</span> <span class="s1">'1024'</span><span class="p">,</span> <span class="s1">'--cpus'</span><span class="p">,</span> <span class="s1">'2'</span><span class="p">]</span>
+<span class="k">end</span>
+</code></pre></div>
+<p><strong>&ndash;memory</strong>’den sonraki parametreye MB cinsinden bellek miktarını, <strong>&ndash;cpus</strong>’dan sonraki parametreye de işlemci sayısını yazın. Bu aslında Virtualbox’ın headless modunda şu komutu vermekle aynı:</p>
+<div class="highlight"><pre class="highlight shell"><code>VBoxManage modifyvm SANAL_MAKİNE_KİMLİĞİ <span class="nt">--memory</span> 1024 <span class="nt">--cpus</span> 2
+</code></pre></div>
+<p>Tabi bu yöntemi değil, <strong>Vagrantfile</strong>’dan düzenleme yöntemini kullanmanızı tavsiye ederim ;) Dosyayı kaydettikten sonra sanal makineyi yeniden başlatın. Artık sanal makinenin 2 adet işlemcisi ve 1024 MB belleği olacak. (Tabi gerçek makine buna müsait olursa.)</p>
+
+<h2 id="2-port-y-nlendirme">2) Port yönlendirme</h2>
+
+<p>Vagrant’da port yönlendirme işlemi oldukça kolay. Ayarlarınıza şu satırı ekleyin:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">network</span> <span class="s1">'forwarded_port'</span><span class="p">,</span> <span class="ss">guest: </span><span class="mi">3000</span><span class="p">,</span> <span class="ss">host: </span><span class="mi">3000</span>
+</code></pre></div>
+<p>Sanal makineyi yeniden başlattıktan sonra artık, gerçek makinenin <strong>3000</strong> portuna gelen istekler, sanal makinenin <strong>3000</strong> portuna yönlendirilecek. İstediğiniz kadar da port yönlendirmesi yapabilirsiniz, yapmanız gereken şey, bu satırın aynısından bir tane daha oluşturmak ve istediğiniz portları yazmak.</p>
+
+<h2 id="3-public-veya-private-a-ba-lant-s-olu-turma">3) Public veya Private Ağ Bağlantısı Oluşturma</h2>
+
+<p>Sanal makinenin, public olarak gerçek bilgisayarın ağına dahil olması için şu ayarı ekleyin:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">network</span> <span class="s1">'public_network'</span>
+</code></pre></div>
+<p>Bunun yerine gerçek makine ile sanal arasında özel (private) bir ağ oluşturmak isterseniz ise şunu ekleyin:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">network</span> <span class="s1">'private_network'</span><span class="p">,</span> <span class="ss">ip: </span><span class="s1">'192.168.33.10'</span>
+</code></pre></div>
+<p>IP’yi istediğiniz gibi düzenleyebilirsiniz, sonuçta bu ağ bağlantısı sadece bu sanal makine ile gerçek arasında çalışıyor olacak.</p>
+
+<h2 id="4-klas-r-payla-m">4) Klasör Paylaşımı</h2>
+
+<p>Gerçek makinedeki bir klasöre erişmek için şu ayarı ekleyin:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">synced_folder</span> <span class="s1">'.'</span><span class="p">,</span> <span class="s1">'/vagrant'</span>
+</code></pre></div>
+<p>Bu şekilde yapıp, sanal makineyi yeniden başlattığınızda, <strong>Vagrantfile</strong> dosyasının bulunduğu klasör, sanal makinede <strong>/vagrant</strong> klasörü üstünden erişilebilir olacak. Tabi bu yöntemde hem okuma hem de yazma hakları veriliyor. Sadece okunabilir olması için sonuna ufak bir parametre ekleyeceğiz:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">synced_folder</span> <span class="s1">'.'</span><span class="p">,</span> <span class="s1">'/vagrant'</span><span class="p">,</span> <span class="ss">disabled: </span><span class="kp">true</span>
+</code></pre></div>
+<p>Bu şekilde klasöre sadece okuma haklarıyla erişebileceğiz.</p>
+
+<h2 id="5-temel-sistem-kal-b-n-de-i-tirme">5) Temel Sistem Kalıbını Değiştirme</h2>
+
+<p>Bu ayar mevcut kalıp artık işinize yaramadığında, aynı ayarlarla başka bir kalıba geçmek için ideal bir çözüm oluyor. Örneğin önceki yazıda “hashicorp/precise32” kalıbını kurmuştuk. Bunu “ubuntu/trusty64” kalıbına geçirelim. İşlemi yapmak için önce sanal makineyi sileceğiz. (Önemli dosyalarınız varsa, bunları klasör paylaştırma yöntemi ile yedekleyebilirsiniz.) Şu komutu verelim:</p>
+<div class="highlight"><pre class="highlight shell"><code>vagrant halt <span class="o">&amp;&amp;</span> vagrant destroy
+</code></pre></div>
+<p>Ardından şu ayarı, altındaki ile değiştirin:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">box</span> <span class="o">=</span> <span class="s1">'hashicorp/precise32'</span>
+<span class="c1"># =&gt;</span>
+<span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">box</span> <span class="o">=</span> <span class="s1">'ubuntu/trusty64'</span>
+</code></pre></div>
+<p>Ardından kalıbın indirilip kurulması için şu komutu verin:</p>
+<div class="highlight"><pre class="highlight shell"><code>vagrant up
+</code></pre></div>
+<p>Son komutla birlikte, <a href="https://vagrantcloud.com/">Vagrant Cloud</a> sitesinden “ubuntu/trusty64” kalıbını indirilecek, kurulacak ve önceki kalıpta kullanılan ayarların aynısı bunda da geçerli olacak.</p>
+
+<p>Vagrant&#39;da aslında bundan daha fazla ayar mevcut fakat, temel kullanım için bunları bilmek yeterli. Bir sonraki yazıda, belirli kullanım senaryolarında bu aracın nasıl işe yarayacağını göstereceğim.</p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

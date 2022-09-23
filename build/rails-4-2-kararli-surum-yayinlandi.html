@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>lab2023 | web & mobile development, graphic design company - Rails 4.2 Kararlı Sürümü Yayınlandı
+</title>
+<meta content='Designers and developers for hire' name='description'>
+<meta content='design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey' name='keywords'>
+<link href="assets/stylesheets/application.css" rel="stylesheet" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="assets/stylesheets/swiper-bundle.min.css" rel="stylesheet" />
+<link href="assets/images/favicon.png" rel="icon" type="image/png" />
+<meta content='Rails 4.2 Kararlı Sürümü Yayınlandı' name='description'>
+<meta content='ruby, rails, activerecord, tr' name='keywords'>
+<meta content='Ahmet Sezgin DURAN' name='author'>
+
+
+</head>
+<body id='blog'>
+<header class='header'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1'>
+<a href="/blog"><img class="logo pull-right" width="252" height="253" src="assets/images/logo.png" alt="Logo" />
+</a></div>
+<div class='col-lg-8'>
+<h1>
+<a href="/blog">lab2023's blog posts</a>
+<a href="http://lab2023.com/feed.xml" target="_blank"><i class='fa fa-rss'></i>
+</a></h1>
+<div class='row'>
+<div class='col-lg-3'>
+<p>
+<a href="/"><i class='fa fa-arrow-circle-left'></i>
+lab2023.com
+</a></p>
+</div>
+<div class='col-lg-9' id='language_linked'>
+<p>
+<a href="/tag/tr.html">Türkçe
+</a>·
+<a href="/tag/en.html">English
+</a>·
+<a href="/tag/es.html">Español
+</a>·
+<a href="/tag/ru.html">Русский
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- share-buttons js code -->
+<div id='fb-root'>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+</script>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-2 col-lg-offset-1 article-meta'>
+<h4><a href="http://twitter.com/marjinal1st" target="_blank">Ahmet Sezgin DURAN</a></h4>
+<h5>December 22, 2014</h5>
+<span class='tag'><a href="/tag/ruby.html">ruby</a></span>
+<span class='tag'><a href="/tag/rails.html"> rails</a></span>
+<span class='tag'><a href="/tag/activerecord.html"> activerecord</a></span>
+<span class='tag'><a href="/tag/tr.html"> tr</a></span>
+<!-- Share buttons -->
+<ul class='share_button'>
+<li>
+<div class='fb-share-button' data-href='http://lab2023.com/rails-4-2-kararli-surum-yayinlandi.html' data-type='button_count'></div>
+</li>
+<li>
+<a class='twitter-share-button' data-text='http://lab2023.com/rails-4-2-kararli-surum-yayinlandi.html' data-via='lab2023' href='https://twitter.com/share'></a>
+</li>
+<li>
+<script src='//platform.linkedin.com/in.js' type='text/javascript'>
+<![CDATA[
+    lang: en_US
+]]>
+</script>
+<script data-url='http://lab2023.com/rails-4-2-kararli-surum-yayinlandi.html' type='IN/Share'></script>
+</li>
+</ul>
+</div>
+<div class='col-lg-8'>
+<article class='post'>
+<h1>Rails 4.2 Kararlı Sürümü Yayınlandı</h1>
+<p>Popüler Ruby web framework’ü Rails’in 4.2 sürümü, kararlı olarak yayınlandı. Sürüm, son betasından bu yana 1600’den fazla commit ile güncellendi ve kullanıma hazır hale getirildi. Şimdi sürümdeki önemli özelliklere tekrardan göz atalım:</p>
+
+<h3 id="active-job-ve-action-mailer-deliver_later">Active Job ve Action Mailer #deliver_later</h3>
+
+<p>En önemli yeniliklerden birisi olan Active Job, arkaplan iş yöneticileri için bir bağdaştırıcı görevi görüyor. Bu sayede jenerik bir biçimde yazdığınız işler kuyruğa atılıyor ve tüm yöneticiler üzerinde çalıştırılabiliyor. ActiveRecord ile ilişkisel veritabanlarının çalışma tarzına benzer bir mantıkla çalıştığı söylenebilir.</p>
+
+<p>Bunun yanında Action Mailer sistemine eklenen yeni bir özellik sayesinde, e-postalar gecikmeli olarak gönderilebiliyor. “deliver_later” metodu ile gerçekleştirilen bu eylem, gönderilecek e-postayı iş kuyruğuna ekliyor ve belirlenen zamanda gönderilmesini sağlıyor.</p>
+
+<h3 id="global-id">Global ID</h3>
+
+<p>Bu kütüphane ile ActiveRecord üstünden çektiğiniz kayıtları anında serileştirebiliyorsunuz. Tipik nesne numaraları yerine, serileştirilmiş bir kimlik kullanabilmenizi sağlıyor. Örnek olarak:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="o">&gt;&gt;</span> <span class="n">person_gid</span> <span class="o">=</span> <span class="no">Person</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="nf">to_global_id</span>
+<span class="o">&gt;&gt;</span> <span class="n">person_gid</span><span class="p">.</span><span class="nf">to_s</span>
+<span class="o">=&gt;</span> <span class="s2">"gid://app/Person/1"</span>
+</code></pre></div>
+<h3 id="adequate-record">Adequate Record</h3>
+
+<p>Bu kütüphane sayesinde Active Record üstünden sıklıkla yapılan sorgulamalar kısmi olarak önbelleğe alınıyor ve gerektiğinde tekrardan kullanılarak hız kazanımı sağlanıyor. Örnek kıyaslamalar için şuraya gözatabilirsiniz:</p>
+
+<p><a href="http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html">http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html</a></p>
+
+<h3 id="web-console">Web Console</h3>
+
+<p>Google Summer of Code ile gelen bu proje sayesinde, sayfa bir istisna/hata oluşturduğu zaman anında bir konsol açılıyor. Bu konsoldan o anda geçerli olan işlemleri ve değişkenleri denetleyebilmeniz sağlanıyor. Buna ek olarak, sadece hata oluştuğunda değil, geliştirme sürecinde iken konsolu sayfanın altında sürekli açık bırakabiliyorsunuz.</p>
+
+<p><img alt="webconsole" src="assets/images/articles/2014-12-22-rails-4-2-kararli-surum-yayinlandi/webconsole.gif" /></p>
+
+<h3 id="foreign-key">Foreign Key</h3>
+
+<p>Bu özellikle beraber, Rails uzun zamandan sonra Active Record modellerinde dış anahtarları (foreign key) desteklemeye başlıyor. Active Record migration’ları için şimdilik “add_foreign_key” ve “remove_foreign_key” metotları eklenmiş durumda. Önemli bir ayrıntı olarak, dış anahtar özelliğinin şu anda sadece MySQL ve PostgreSQL bağdaştırıcılarını desteklediğini belirtmekte fayda var.</p>
+
+<p>Bunun dışındaki eklenenler, çıkartılanlar, önerilmeyen (deprecated) yapılar ve hata yamaları ile ilgili detaylı bilgiler için:</p>
+
+<p><a href="http://guides.rubyonrails.org/4_2_release_notes.html">http://guides.rubyonrails.org/4_2_release_notes.html</a></p>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'lab2023';
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+Please enable JavaScript to view the
+<a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+comments powered by
+<span class='logo-disqus'>Disqus</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<footer class='footer'>
+<h4>© 2009 ~ 2020 LAB2023, CORP.</h4>
+<p>The all designs, materials and contents trademarks of lab2023, corp.</p>
+</footer>
+
+</body>
+<!-- Javascripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script><script src="assets/javascripts/vendor/swiper-bundle.min.js"></script><script src="assets/javascripts/application.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12243799-3']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</html>

@@ -1,0 +1,1 @@
+var swiperPrev=document.querySelector(".swiper-button-prev"),swiperNext=document.querySelector(".swiper-button-next"),swiper=new Swiper(".swiper-container",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination"}});
