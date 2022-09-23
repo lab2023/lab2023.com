@@ -11,7 +11,7 @@
     <link rel="alternate" href="http://lab2023.com/rails-girls-denizli-2019-etkinligi-nasil-gecti.html"/>
     <id>http://lab2023.com/rails-girls-denizli-2019-etkinligi-nasil-gecti.html</id>
     <published>2019-03-19T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -49,7 +49,7 @@ Sunumlar ve Bentobox çalışmalarımız ardından, web uygulaması çalışmam�
     <link rel="alternate" href="http://lab2023.com/rails-girls-denizli-etkinligi.html"/>
     <id>http://lab2023.com/rails-girls-denizli-etkinligi.html</id>
     <published>2019-01-07T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -91,7 +91,7 @@ anlatılacak ve katılımcıların bilgisayarlarına gerekli programların kurul
     <link rel="alternate" href="http://lab2023.com/web-gelistiricisi-is-ilani.html"/>
     <id>http://lab2023.com/web-gelistiricisi-is-ilani.html</id>
     <published>2018-02-08T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -163,7 +163,7 @@ veya benzer popüler teknolojilere ilgi duyuyor veya biliyor olmanız bir avanta
     <link rel="alternate" href="http://lab2023.com/hello-world-yazilim-ve-tasarim-dunyasi-ile-tanisin-etkinligi.html"/>
     <id>http://lab2023.com/hello-world-yazilim-ve-tasarim-dunyasi-ile-tanisin-etkinligi.html</id>
     <published>2017-05-05T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -214,7 +214,7 @@ sayfasını ziyaret edebilirsiniz.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/rails-5-de-fineuploader-kullanimi.html"/>
     <id>http://lab2023.com/rails-5-de-fineuploader-kullanimi.html</id>
     <published>2017-03-10T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -421,7 +421,7 @@ Fineuploader&amp;#39;ın daha birçok özelliğini web sayfasını kurcalayarak 
     <link rel="alternate" href="http://lab2023.com/arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari.html"/>
     <id>http://lab2023.com/arayuz-tasarimlari-ve-gelistiriciler-icin-collaboration-araclari.html</id>
     <published>2017-02-17T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -507,7 +507,7 @@ başına 6-7 dolar civarı bir miktar yeterli oluyor.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/rails-5-de-dinamik-nested-form-kullanimi.html"/>
     <id>http://lab2023.com/rails-5-de-dinamik-nested-form-kullanimi.html</id>
     <published>2017-02-10T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -583,7 +583,7 @@ modeliniz var ise ve tek bir form üzerinden kayıt yapacaksanız nested form ku
     <link rel="alternate" href="http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html"/>
     <id>http://lab2023.com/rails-5-de-action-cable-nedir-ve-nasil-kullanilir.html</id>
     <published>2017-02-03T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -794,7 +794,7 @@ after_create_commit { MessageBroadcastJob.perform_later self }
     <link rel="alternate" href="http://lab2023.com/rails-verilerine-javascript-uzerinden-ulasmak.html"/>
     <id>http://lab2023.com/rails-verilerine-javascript-uzerinden-ulasmak.html</id>
     <published>2017-02-03T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -920,7 +920,7 @@ kullanımını sağlayan bir alternatifidir.&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html"/>
     <id>http://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html</id>
     <published>2016-08-04T03:00:00+03:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1123,7 +1123,7 @@ Bu işlem için gerekli olan komutlar şunlardır;&lt;/p&gt;
     <link rel="alternate" href="http://lab2023.com/bulutfon-ruby-sdk.html"/>
     <id>http://lab2023.com/bulutfon-ruby-sdk.html</id>
     <published>2015-12-22T02:00:00+02:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1408,277 +1408,11 @@ oluşturma gibi birçok özelliği hızlı bir şekilde uygulamalarınıza enteg
 </content>
   </entry>
   <entry>
-    <title>Ruby on Rails Uygulamasının Capistrano 3 ile Kolayca Yayınlanması</title>
-    <link rel="alternate" href="http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html"/>
-    <id>http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html</id>
-    <published>2015-12-21T02:00:00+02:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
-    <author>
-      <name>lab2023</name>
-    </author>
-    <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
-
-&lt;p&gt;Sizlere Ubuntu-14.04 sunucusunu sıfırdan ayağa kaldırıp, kendi rails uygulamalarınızı sunucuya hızlı bir şekilde aktarabileceğiniz &lt;a href="https://github.com/capistrano/capistrano" target="_blank"&gt;Capistrano&lt;/a&gt; uygulamasından bahsedecek ve bazı kaynak kodlar paylaşacağız.&lt;/p&gt;
-
-&lt;p&gt;Kullandığımız capistrano&amp;#39;nun versiyonu 3.4&amp;#39;tür. Sunucu üzerinde kullandığımız ruby versiyonu ise 2.2.3&amp;#39;tür. Capistrano &amp;lsquo;nun kaynak kodlarına &lt;a href="https://github.com/capistrano/capistrano" target="_blank"&gt;github&lt;/a&gt; adresinden erişip göz atabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Örnek olarak, &lt;a href="https://www.netinternet.com.tr/vps-sunucular?aff=916"&gt;Netinternet&lt;/a&gt; &amp;#39;ten veya &lt;a href="https://www.digitalocean.com/"&gt;DigitalOcean&lt;/a&gt; &amp;#39;dan alacağınız bir sunucuyu aşağıdaki bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Sunucuda ruby ortamı için temel kurulum scripti aşağıdaki gibidir. Bu script root kullanıcısı olarak bağlanıp çalıştırmalısınız.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;## Run this script with root user&lt;/span&gt;
-&lt;span class="c"&gt;## Fancy echo&lt;/span&gt;
-fancy_echo&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;%b&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-fancy_echo &lt;span class="s2"&gt;"Updating system packages ..."&lt;/span&gt;
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; update
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; upgrade
-fancy_echo &lt;span class="s2"&gt;"Installing python-software-properties..."&lt;/span&gt;
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;python-software-properties
-fancy_echo &lt;span class="s2"&gt;"Installing software-properties-common..."&lt;/span&gt;
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;software-properties-common
-fancy_echo &lt;span class="s2"&gt;"Exporting language"&lt;/span&gt;
-&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LANGUAGE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; locale-gen en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; dpkg-reconfigure locales
-fancy_echo &lt;span class="s2"&gt;"Installing libraries for common gem dependencies ..."&lt;/span&gt;
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
-apt-get &lt;span class="nb"&gt;install &lt;/span&gt;git-core openssl curl libreadline-dev libxslt1-dev libcurl4-openssl-dev ruby-dev make make-doc
-fancy_echo &lt;span class="s2"&gt;"Installing nodejs ..."&lt;/span&gt;
-add-apt-repository &lt;span class="nt"&gt;-y&lt;/span&gt; ppa:chris-lea/node.js
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; update
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;nodejs
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;libxslt-dev libxml2-dev
-fancy_echo &lt;span class="s2"&gt;"Installing imagemagick ..."&lt;/span&gt;
-apt-get &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nt"&gt;-y&lt;/span&gt; imagemagick
-fancy_echo &lt;span class="s2"&gt;"Installing nginx ..."&lt;/span&gt;
-add-apt-repository &lt;span class="nt"&gt;-y&lt;/span&gt; ppa:nginx/stable
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; update
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;nginx
-service nginx start
-fancy_echo &lt;span class="s2"&gt;"Installing postgresql ..."&lt;/span&gt;
-apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;postgresql libpq-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Sunucuda deploy kullanıcısı için kurulum scripti aşağıdaki gibidir. Bu script&amp;#39;ide root kullanıcısı olarak bağlanıp çalıştırmalısınız.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# Deploy group&lt;/span&gt;
-&lt;span class="nv"&gt;deploy_group&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;deploy
-&lt;span class="c"&gt;# Deploy user&lt;/span&gt;
-&lt;span class="nv"&gt;deploy_user&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;deploy
-&lt;span class="c"&gt;# Github usernames for access with ssh to deploy user&lt;/span&gt;
-&lt;span class="nv"&gt;usernames&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;tayfunoziserikan ismailakbudak&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="c"&gt;# Check user is exist&lt;/span&gt;
-&lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="nt"&gt;-u&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; &amp;amp;&amp;gt; /dev/null
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt; &lt;span class="nt"&gt;-ne&lt;/span&gt; 0 &lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="k"&gt;then
-  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Add &lt;/span&gt;&lt;span class="nv"&gt;$deploy_group&lt;/span&gt;&lt;span class="s2"&gt; group"&lt;/span&gt;
-  groupadd &lt;span class="nv"&gt;$deploy_group&lt;/span&gt;
-  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Creating user &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-  useradd &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="nt"&gt;-g&lt;/span&gt; &lt;span class="nv"&gt;$deploy_group&lt;/span&gt; &lt;span class="nt"&gt;-s&lt;/span&gt; /bin/bash &lt;span class="nv"&gt;$deploy_user&lt;/span&gt;
-  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Adding user &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; to sudoers"&lt;/span&gt;
-  &lt;span class="nb"&gt;chmod&lt;/span&gt; +w /etc/sudoers
-  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; ALL=(ALL) ALL"&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; /etc/sudoers
-  &lt;span class="nb"&gt;chmod&lt;/span&gt; &lt;span class="nt"&gt;-w&lt;/span&gt; /etc/sudoers
-&lt;span class="k"&gt;else
-  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; user already exists"&lt;/span&gt;
-&lt;span class="k"&gt;fi&lt;/span&gt;
-&lt;span class="c"&gt;# Check user is exist, maybe some errors occured&lt;/span&gt;
-&lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="nt"&gt;-u&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; &amp;amp;&amp;gt; /dev/null
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt; &lt;span class="nt"&gt;-ne&lt;/span&gt; 0 &lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="k"&gt;then
-  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; user does not exists"&lt;/span&gt;
-&lt;span class="k"&gt;else&lt;/span&gt;
-  &lt;span class="c"&gt;# Prepare ssh keys environment&lt;/span&gt;
-  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Add .ssh directory to &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-  &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="nt"&gt;-d&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt; &lt;span class="nt"&gt;-ne&lt;/span&gt; 0 &lt;span class="o"&gt;]&lt;/span&gt;
-  &lt;span class="k"&gt;then
-    &lt;/span&gt;&lt;span class="nb"&gt;mkdir&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
-    &lt;span class="c"&gt;# change user permisisions&lt;/span&gt;
-    &lt;span class="c"&gt;# 700 =&amp;gt; (owner read/write/execute, group none, other none)&lt;/span&gt;
-    &lt;span class="nb"&gt;chmod &lt;/span&gt;700 /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
-    &lt;span class="nb"&gt;chown&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
-    &lt;span class="nb"&gt;chgrp&lt;/span&gt; &lt;span class="nv"&gt;$deploy_group&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
-  &lt;span class="k"&gt;fi
-  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Get usernames public keys from GitHub and add them to &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; authorized_keys"&lt;/span&gt;
-  &lt;span class="k"&gt;for &lt;/span&gt;username &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;usernames&lt;/span&gt;&lt;span class="p"&gt;[@]&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do
-    &lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$username&lt;/span&gt;.keys
-    wget https://github.com/&lt;span class="nv"&gt;$name&lt;/span&gt; &lt;span class="nt"&gt;--no-check-certificate&lt;/span&gt; &lt;span class="nt"&gt;-O&lt;/span&gt; &lt;span class="nv"&gt;$name&lt;/span&gt;
-    &lt;span class="nb"&gt;cat&lt;/span&gt; &lt;span class="nv"&gt;$name&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
-    &lt;span class="nb"&gt;rm&lt;/span&gt; &lt;span class="nv"&gt;$name&lt;/span&gt; &lt;span class="c"&gt;# remove temprory file&lt;/span&gt;
-  &lt;span class="k"&gt;done&lt;/span&gt;
-  &lt;span class="c"&gt;# change user permisisions&lt;/span&gt;
-  &lt;span class="c"&gt;# 600 =&amp;gt; (owner read/write, group none, other none)&lt;/span&gt;
-  &lt;span class="nb"&gt;chmod &lt;/span&gt;600 /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
-  &lt;span class="nb"&gt;chown&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
-  &lt;span class="nb"&gt;chgrp&lt;/span&gt; &lt;span class="nv"&gt;$deploy_group&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
-  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Completed..."&lt;/span&gt;
-&lt;span class="k"&gt;fi&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Sunucuda deploy kullanıcısı için ruby ortamını hazırlama scripti aşağıdaki gibidir. Bu script deploy kullanıcısı olarak bağlanıp çalıştırmalısınız.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;## Run this command with deploy user&lt;/span&gt;
-&lt;span class="c"&gt;# define user home path&lt;/span&gt;
-&lt;span class="nv"&gt;user_path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/deploy
-&lt;span class="c"&gt;## Fancy echo&lt;/span&gt;
-fancy_echo&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;%b&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-fancy_echo &lt;span class="s2"&gt;"Installing rbenv..."&lt;/span&gt;
-git clone git://github.com/sstephenson/rbenv.git &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv
-fancy_echo &lt;span class="s2"&gt;"Writing rbenv path to bashrc ..."&lt;/span&gt;
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'export PATH=\"$HOME/.rbenv/bin:$PATH\"'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'eval "$(rbenv init -)"'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
-fancy_echo &lt;span class="s2"&gt;"Exporting rbenv path..."&lt;/span&gt;
-&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.rbenv/bin:&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;span class="nb"&gt;eval&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="si"&gt;$(&lt;/span&gt;rbenv init -&lt;span class="si"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-fancy_echo &lt;span class="s2"&gt;"Preparing rbenv plugins..."&lt;/span&gt;
-&lt;span class="nb"&gt;mkdir&lt;/span&gt; &lt;span class="nt"&gt;-p&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv/plugins
-git clone https://github.com/sstephenson/ruby-build.git &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv/plugins/ruby-build
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv/plugins/rbenv-gem-rehash
-&lt;span class="c"&gt;## Ruby environment&lt;/span&gt;
-&lt;span class="nv"&gt;RUBY_VERSION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"2.2.3"&lt;/span&gt;
-fancy_echo &lt;span class="s2"&gt;"Installing Ruby &lt;/span&gt;&lt;span class="nv"&gt;$RUBY_VERSION&lt;/span&gt;&lt;span class="s2"&gt; ..."&lt;/span&gt;
-rbenv &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nv"&gt;$RUBY_VERSION&lt;/span&gt;
-rbenv rehash
-rbenv global &lt;span class="nv"&gt;$RUBY_VERSION&lt;/span&gt;
-ruby &lt;span class="nt"&gt;-v&lt;/span&gt;
-fancy_echo &lt;span class="s2"&gt;"Gem update system ..."&lt;/span&gt;
-gem update &lt;span class="nt"&gt;--system&lt;/span&gt;
-fancy_echo &lt;span class="s2"&gt;"Echo .gemrc..."&lt;/span&gt;
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'gem: --no-rdoc --no-ri'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.gemrc
-gem &lt;span class="nb"&gt;install &lt;/span&gt;bundler
-gem &lt;span class="nb"&gt;install &lt;/span&gt;backup
-rbenv rehash
-fancy_echo &lt;span class="s2"&gt;"Export path ..."&lt;/span&gt;
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"export PATH="&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:/usr/bin&lt;span class="s2"&gt;""&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
-&lt;span class="nb"&gt;exec&lt;/span&gt; &lt;span class="nv"&gt;$SHELL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Bu scriptler ile sunucunuzu bir rails uygulamasını çalıştıracak duruma getirmiş olursunuz.&lt;/p&gt;
-
-&lt;p&gt;Şimdi bir rails uygulaması oluşturup, uygulamayı bir sunucuya aktarma işlemlerini anlatacağız.
-&lt;a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" target="_blank"&gt;Ruby On Rails&lt;/a&gt; bildiğiniz ruby dili ile, &lt;a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank"&gt;MVC(Model-View-Controller)&lt;/a&gt; mimari deseni ile geliştirilmiş ve bünyesinde &lt;a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank"&gt;DRY(Don&amp;rsquo;t Repeat Yourself)&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/Convention_over_configuration" target="_blank"&gt;CoC(Convetion over configuration)&lt;/a&gt; gibi yazılım felsefelerini barındıran açık kaynak bir uygulama çatısıdır.&lt;/p&gt;
-
-&lt;p&gt;Hızlı bir Ruby On Rails uygulaması çıkarmak istiyorsanız size &lt;a href="https://rubygems.org/gems/cybele" target="_blank"&gt;Cybele&lt;/a&gt; ruby gem&amp;#39;ini öneririz. Bu gem bir uygulamada olması gereken kullanıcı giriş, bilgi güncelleme, yönetici tarafına giriş işlemleri gibi her projede kullanacağınız kısımlar hazır bir taslak olarak geliyor. Bu sayede önceden yazdığınız kodları tekrar yazmak zorunda kalmıyorsunuz. Cybele geminin taslak olarak getirdiği Gemfile &amp;#39;ı &lt;a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile"&gt;github&lt;/a&gt; adresinden inceleyebilirsiniz.
-Sunucuya kolay bir şekilde uygulamayı taşımak için kullancağımız gemler bu Gemfile &amp;#39;da yer almaktadır.
-Eğer &lt;code&gt; rails new project_name&lt;/code&gt; şeklinde sıfırdan bir proje oluşturursanız veya halihazırda bulunan bir projenizi sunucuya taşımak isterseniz, kullanacağımız komutlar dizisinin yer aldığı &lt;a href="https://github.com/lab2023/recipes_matic"&gt;recipes_matic&lt;/a&gt; gemini incelemenizi tavsiye ederiz.&lt;/p&gt;
-
-&lt;p&gt;Cybele ile oluşturduğumuz bir proje için bu adımları anlatacagız.
-&lt;ol&gt;
-    &lt;li&gt;Proje oluştur &lt;code&gt;$ cybele project_name&lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;Deploy repo bilgilerini düzenle &lt;code&gt;/config/deploy.rb&lt;/code&gt;
-&lt;pre&gt; set :repo_url, &amp;#39;&lt;a href="mailto:git@github.com"&gt;git@github.com&lt;/a&gt;:your_username/your_repo_name.git&amp;#39;&lt;/pre&gt;
-&lt;/li&gt;
-    &lt;li&gt;Production deploy bilgilerini düzenle &lt;code&gt; /config/deploy/production.rb &lt;/code&gt;
-&lt;pre&gt;
-server &lt;q&gt;example.com&lt;/q&gt;, user: &lt;q&gt;#{fetch(:local_user)}&lt;/q&gt;, roles: %w{app db web}, primary: true, port: 22
-set :rails_env, &amp;#39;production&amp;#39;
-set :branch, &amp;#39;master&amp;#39;
-set :project_domain, “example.com”
-&lt;/pre&gt;
-&lt;/li&gt;
-    &lt;li&gt;Staging deploy bilgilerini düzenle &lt;code&gt;/config/deploy/staging.rb&lt;/code&gt;
-&lt;pre&gt;
-server &lt;q&gt;staging.example.com&lt;/q&gt;, user: &lt;q&gt;#{fetch(:local_user)}&lt;/q&gt;, roles: %w{app db web}, primary: true, port: 22
-set :rails_env, &amp;#39;staging&amp;#39;
-set :branch, &amp;#39;develop&amp;#39;
-set :project_domain, “staging.example.com”
-&lt;/pre&gt;
-&lt;/li&gt;
-    &lt;li&gt;Hata bildirimleri için email adresini düzenle
- &lt;br/&gt; &lt;code&gt;config/environments/production.rb &lt;/code&gt;&lt;br/&gt; &lt;code&gt;config/environments/staging.rb&lt;/code&gt;
-&lt;pre&gt;config.middleware.use ExceptionNotification::Rack,
-:email =&amp;gt; {
-  :email_prefix =&amp;gt; &lt;q&gt;[project_name]&lt;/q&gt;,
-  :sender_address =&amp;gt; %{&lt;q&gt;Notifier&lt;/q&gt; &amp;lt;&lt;a href="mailto:notifier@project_name.com"&gt;notifier@project_name.com&lt;/a&gt;&amp;gt;},
-  :exception_recipients =&amp;gt; %w{&lt;a href="mailto:your_email@address.com"&gt;your_email@address.com&lt;/a&gt;}
-}
-&lt;/pre&gt;
-&lt;/li&gt;
-    &lt;li&gt;Aşağıdaki dosyalarda SMTP ayarlarını ayarla &lt;br/&gt;&lt;code&gt;config/settings/staging.yml&lt;/code&gt;&lt;br/&gt;&lt;code&gt;config/settings/production.yml&lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;Github da bulunan private repolara lokaldeki gibi erismek icin şu komutları çalıştır
-            &lt;br/&gt;&lt;code&gt;$ eval &lt;code&gt;ssh-agent -s&lt;/code&gt;&lt;/code&gt; &lt;br/&gt;&lt;code&gt;$ ssh-add &lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;Gelelim terminalden çalıştırmamız gereken komutlar dizisine,Production sunucusunda ki deploy ortamının hazır olup olmadığını kontrol eder.
-&lt;code&gt;$ bundle exec cap production deploy:check&lt;/code&gt;
-Production sunucusunda nginx, postgresql, unicorn, &lt;a href="http://meskyanichi.github.io/backup/v3/"&gt;backup&lt;/a&gt;(veritabanı yedek alma gemi) gibi ayarları yapar.
-&lt;code&gt;$ bundle exec cap production deploy:prepare&lt;/code&gt;
-Production sunucusuna deploy işlemini gerçekleştirir.
-&lt;code&gt;$ bundle exec cap production deploy&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Örnek dosyalarımızda şu şekilde olmalıdır.
-Proje anadizininde bulunan Capfile örneği:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# Load DSL and set up stages&lt;/span&gt;
-&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/setup'&lt;/span&gt;
-&lt;span class="c1"&gt;# Include default deployment tasks&lt;/span&gt;
-&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/deploy'&lt;/span&gt;
-&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/rails'&lt;/span&gt;
-&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/bundler'&lt;/span&gt;
-&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'sshkit/sudo'&lt;/span&gt;
-&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/maintenance'&lt;/span&gt;
-&lt;span class="c1"&gt;# Include tasks from other gems included in your Gemfile&lt;/span&gt;
-&lt;span class="c1"&gt;# For documentation on these, see for example:&lt;/span&gt;
-&lt;span class="c1"&gt;#   https://github.com/capistrano/rvm&lt;/span&gt;
-&lt;span class="c1"&gt;#   https://github.com/capistrano/rbenv&lt;/span&gt;
-&lt;span class="c1"&gt;#   https://github.com/capistrano/chruby&lt;/span&gt;
-&lt;span class="c1"&gt;#   https://github.com/capistrano/bundler&lt;/span&gt;
-&lt;span class="c1"&gt;#   https://github.com/capistrano/rails&lt;/span&gt;
-&lt;span class="c1"&gt;#   https://github.com/capistrano/passenger&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/rvm'&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/rbenv'&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/chruby'&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/bundler'&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/rails/assets'&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/rails/migrations'&lt;/span&gt;
-&lt;span class="c1"&gt;# require 'capistrano/passenger'&lt;/span&gt;
-&lt;span class="c1"&gt;# Load custom tasks from `lib/capistrano/tasks` if you have any defined&lt;/span&gt;
-&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'lib/capistrano/tasks/*.rake'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nf"&gt;each&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Proje config dizininde bulunan deploy.rb örneği:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# config valid only for current version of Capistrano&lt;/span&gt;
-&lt;span class="n"&gt;lock&lt;/span&gt; &lt;span class="s1"&gt;'3.4.0'&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:application&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'appname'&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:local_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'deploy'&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:stages&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sx"&gt;%w(staging production)&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:default_stage&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'production'&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:repo_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"git@github.com:username/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:application&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;.git"&lt;/span&gt;
-&lt;span class="c1"&gt;# Default branch is :master&lt;/span&gt;
-&lt;span class="c1"&gt;# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp&lt;/span&gt;
-&lt;span class="c1"&gt;# Default deploy_to directory is /var/www/blog2&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:deploy_to&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"/home/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:local_user&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/apps/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:application&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for :scm is :git&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:scm&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:git&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for :format is :pretty&lt;/span&gt;
-&lt;span class="c1"&gt;# set :format, :pretty&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for :log_level is :debug&lt;/span&gt;
-&lt;span class="c1"&gt;# set :log_level, :debug&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for :pty is false&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:pty&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for :linked_files is []&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:linked_files&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:linked_files&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[]).&lt;/span&gt;&lt;span class="nf"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'config/database.yml'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for linked_dirs is []&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:linked_dirs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:linked_dirs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[]).&lt;/span&gt;&lt;span class="nf"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'log'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'tmp/pids'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'tmp/cache'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'tmp/sockets'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'vendor/bundle'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/system'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/upload'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/images'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/seat_images'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for default_env is {}&lt;/span&gt;
-&lt;span class="c1"&gt;# set :default_env, { path: "/opt/ruby/bin:$PATH" }&lt;/span&gt;
-&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:default_env&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="ss"&gt;path: &lt;/span&gt;&lt;span class="s1"&gt;'$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH'&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="c1"&gt;# Default value for keep_releases is 5&lt;/span&gt;
-&lt;span class="c1"&gt;# set :keep_releases, 5&lt;/span&gt;
-&lt;span class="c1"&gt;# Look our recipes&lt;/span&gt;
-&lt;span class="c1"&gt;# https://github.com/lab2023/recipes_matic&lt;/span&gt;
-&lt;span class="nb"&gt;load&lt;/span&gt; &lt;span class="s1"&gt;'config/deploy/recipes/base.rb'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Umarım faydalı bir yazı olmuştur.
-Kolay gelsin.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
     <title>Deploy Ruby on Rails Application Quickly With Capistrano 3</title>
     <link rel="alternate" href="http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html"/>
     <id>http://lab2023.com/deploy-ruby-on-rails-application-quickly-with-capistrano.html</id>
     <published>2015-12-21T02:00:00+02:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -1957,11 +1691,277 @@ Do deploy to production server.
 </content>
   </entry>
   <entry>
+    <title>Ruby on Rails Uygulamasının Capistrano 3 ile Kolayca Yayınlanması</title>
+    <link rel="alternate" href="http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html"/>
+    <id>http://lab2023.com/ruby-on-rails-uygulamasinin-capistrano-3-ile-kolayca-yayinlanmasi.html</id>
+    <published>2015-12-21T02:00:00+02:00</published>
+    <updated>2022-08-04T14:12:19+03:00</updated>
+    <author>
+      <name>lab2023</name>
+    </author>
+    <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
+
+&lt;p&gt;Sizlere Ubuntu-14.04 sunucusunu sıfırdan ayağa kaldırıp, kendi rails uygulamalarınızı sunucuya hızlı bir şekilde aktarabileceğiniz &lt;a href="https://github.com/capistrano/capistrano" target="_blank"&gt;Capistrano&lt;/a&gt; uygulamasından bahsedecek ve bazı kaynak kodlar paylaşacağız.&lt;/p&gt;
+
+&lt;p&gt;Kullandığımız capistrano&amp;#39;nun versiyonu 3.4&amp;#39;tür. Sunucu üzerinde kullandığımız ruby versiyonu ise 2.2.3&amp;#39;tür. Capistrano &amp;lsquo;nun kaynak kodlarına &lt;a href="https://github.com/capistrano/capistrano" target="_blank"&gt;github&lt;/a&gt; adresinden erişip göz atabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Örnek olarak, &lt;a href="https://www.netinternet.com.tr/vps-sunucular?aff=916"&gt;Netinternet&lt;/a&gt; &amp;#39;ten veya &lt;a href="https://www.digitalocean.com/"&gt;DigitalOcean&lt;/a&gt; &amp;#39;dan alacağınız bir sunucuyu aşağıdaki bash scriptleri ile 2-3 saat içinde ayağa kaldırıp Nginx, Postgresql, Unicorn ayarlarını yaparak çalışır hale getirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Sunucuda ruby ortamı için temel kurulum scripti aşağıdaki gibidir. Bu script root kullanıcısı olarak bağlanıp çalıştırmalısınız.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;## Run this script with root user&lt;/span&gt;
+&lt;span class="c"&gt;## Fancy echo&lt;/span&gt;
+fancy_echo&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;%b&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+fancy_echo &lt;span class="s2"&gt;"Updating system packages ..."&lt;/span&gt;
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; update
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; upgrade
+fancy_echo &lt;span class="s2"&gt;"Installing python-software-properties..."&lt;/span&gt;
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;python-software-properties
+fancy_echo &lt;span class="s2"&gt;"Installing software-properties-common..."&lt;/span&gt;
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;software-properties-common
+fancy_echo &lt;span class="s2"&gt;"Exporting language"&lt;/span&gt;
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LANGUAGE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; locale-gen en_US.UTF-8 &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; dpkg-reconfigure locales
+fancy_echo &lt;span class="s2"&gt;"Installing libraries for common gem dependencies ..."&lt;/span&gt;
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+apt-get &lt;span class="nb"&gt;install &lt;/span&gt;git-core openssl curl libreadline-dev libxslt1-dev libcurl4-openssl-dev ruby-dev make make-doc
+fancy_echo &lt;span class="s2"&gt;"Installing nodejs ..."&lt;/span&gt;
+add-apt-repository &lt;span class="nt"&gt;-y&lt;/span&gt; ppa:chris-lea/node.js
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; update
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;nodejs
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;libxslt-dev libxml2-dev
+fancy_echo &lt;span class="s2"&gt;"Installing imagemagick ..."&lt;/span&gt;
+apt-get &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nt"&gt;-y&lt;/span&gt; imagemagick
+fancy_echo &lt;span class="s2"&gt;"Installing nginx ..."&lt;/span&gt;
+add-apt-repository &lt;span class="nt"&gt;-y&lt;/span&gt; ppa:nginx/stable
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; update
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;nginx
+service nginx start
+fancy_echo &lt;span class="s2"&gt;"Installing postgresql ..."&lt;/span&gt;
+apt-get &lt;span class="nt"&gt;-y&lt;/span&gt; &lt;span class="nb"&gt;install &lt;/span&gt;postgresql libpq-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Sunucuda deploy kullanıcısı için kurulum scripti aşağıdaki gibidir. Bu script&amp;#39;ide root kullanıcısı olarak bağlanıp çalıştırmalısınız.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# Deploy group&lt;/span&gt;
+&lt;span class="nv"&gt;deploy_group&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;deploy
+&lt;span class="c"&gt;# Deploy user&lt;/span&gt;
+&lt;span class="nv"&gt;deploy_user&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;deploy
+&lt;span class="c"&gt;# Github usernames for access with ssh to deploy user&lt;/span&gt;
+&lt;span class="nv"&gt;usernames&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;tayfunoziserikan ismailakbudak&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="c"&gt;# Check user is exist&lt;/span&gt;
+&lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="nt"&gt;-u&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; &amp;amp;&amp;gt; /dev/null
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt; &lt;span class="nt"&gt;-ne&lt;/span&gt; 0 &lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;then
+  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Add &lt;/span&gt;&lt;span class="nv"&gt;$deploy_group&lt;/span&gt;&lt;span class="s2"&gt; group"&lt;/span&gt;
+  groupadd &lt;span class="nv"&gt;$deploy_group&lt;/span&gt;
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Creating user &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+  useradd &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="nt"&gt;-g&lt;/span&gt; &lt;span class="nv"&gt;$deploy_group&lt;/span&gt; &lt;span class="nt"&gt;-s&lt;/span&gt; /bin/bash &lt;span class="nv"&gt;$deploy_user&lt;/span&gt;
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Adding user &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; to sudoers"&lt;/span&gt;
+  &lt;span class="nb"&gt;chmod&lt;/span&gt; +w /etc/sudoers
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; ALL=(ALL) ALL"&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; /etc/sudoers
+  &lt;span class="nb"&gt;chmod&lt;/span&gt; &lt;span class="nt"&gt;-w&lt;/span&gt; /etc/sudoers
+&lt;span class="k"&gt;else
+  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; user already exists"&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="c"&gt;# Check user is exist, maybe some errors occured&lt;/span&gt;
+&lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="nt"&gt;-u&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; &amp;amp;&amp;gt; /dev/null
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt; &lt;span class="nt"&gt;-ne&lt;/span&gt; 0 &lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;then
+  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; user does not exists"&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;
+  &lt;span class="c"&gt;# Prepare ssh keys environment&lt;/span&gt;
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Add .ssh directory to &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+  &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="nt"&gt;-d&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt; &lt;span class="nt"&gt;-ne&lt;/span&gt; 0 &lt;span class="o"&gt;]&lt;/span&gt;
+  &lt;span class="k"&gt;then
+    &lt;/span&gt;&lt;span class="nb"&gt;mkdir&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
+    &lt;span class="c"&gt;# change user permisisions&lt;/span&gt;
+    &lt;span class="c"&gt;# 700 =&amp;gt; (owner read/write/execute, group none, other none)&lt;/span&gt;
+    &lt;span class="nb"&gt;chmod &lt;/span&gt;700 /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
+    &lt;span class="nb"&gt;chown&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
+    &lt;span class="nb"&gt;chgrp&lt;/span&gt; &lt;span class="nv"&gt;$deploy_group&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh
+  &lt;span class="k"&gt;fi
+  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Get usernames public keys from GitHub and add them to &lt;/span&gt;&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;&lt;span class="s2"&gt; authorized_keys"&lt;/span&gt;
+  &lt;span class="k"&gt;for &lt;/span&gt;username &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;usernames&lt;/span&gt;&lt;span class="p"&gt;[@]&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do
+    &lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$username&lt;/span&gt;.keys
+    wget https://github.com/&lt;span class="nv"&gt;$name&lt;/span&gt; &lt;span class="nt"&gt;--no-check-certificate&lt;/span&gt; &lt;span class="nt"&gt;-O&lt;/span&gt; &lt;span class="nv"&gt;$name&lt;/span&gt;
+    &lt;span class="nb"&gt;cat&lt;/span&gt; &lt;span class="nv"&gt;$name&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
+    &lt;span class="nb"&gt;rm&lt;/span&gt; &lt;span class="nv"&gt;$name&lt;/span&gt; &lt;span class="c"&gt;# remove temprory file&lt;/span&gt;
+  &lt;span class="k"&gt;done&lt;/span&gt;
+  &lt;span class="c"&gt;# change user permisisions&lt;/span&gt;
+  &lt;span class="c"&gt;# 600 =&amp;gt; (owner read/write, group none, other none)&lt;/span&gt;
+  &lt;span class="nb"&gt;chmod &lt;/span&gt;600 /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
+  &lt;span class="nb"&gt;chown&lt;/span&gt; &lt;span class="nv"&gt;$deploy_user&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
+  &lt;span class="nb"&gt;chgrp&lt;/span&gt; &lt;span class="nv"&gt;$deploy_group&lt;/span&gt; /home/&lt;span class="nv"&gt;$deploy_user&lt;/span&gt;/.ssh/authorized_keys
+  &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"* Completed..."&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Sunucuda deploy kullanıcısı için ruby ortamını hazırlama scripti aşağıdaki gibidir. Bu script deploy kullanıcısı olarak bağlanıp çalıştırmalısınız.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;## Run this command with deploy user&lt;/span&gt;
+&lt;span class="c"&gt;# define user home path&lt;/span&gt;
+&lt;span class="nv"&gt;user_path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/deploy
+&lt;span class="c"&gt;## Fancy echo&lt;/span&gt;
+fancy_echo&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;%b&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+fancy_echo &lt;span class="s2"&gt;"Installing rbenv..."&lt;/span&gt;
+git clone git://github.com/sstephenson/rbenv.git &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv
+fancy_echo &lt;span class="s2"&gt;"Writing rbenv path to bashrc ..."&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'export PATH=\"$HOME/.rbenv/bin:$PATH\"'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'eval "$(rbenv init -)"'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
+fancy_echo &lt;span class="s2"&gt;"Exporting rbenv path..."&lt;/span&gt;
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.rbenv/bin:&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="nb"&gt;eval&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="si"&gt;$(&lt;/span&gt;rbenv init -&lt;span class="si"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+fancy_echo &lt;span class="s2"&gt;"Preparing rbenv plugins..."&lt;/span&gt;
+&lt;span class="nb"&gt;mkdir&lt;/span&gt; &lt;span class="nt"&gt;-p&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv/plugins
+git clone https://github.com/sstephenson/ruby-build.git &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv/plugins/ruby-build
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.rbenv/plugins/rbenv-gem-rehash
+&lt;span class="c"&gt;## Ruby environment&lt;/span&gt;
+&lt;span class="nv"&gt;RUBY_VERSION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"2.2.3"&lt;/span&gt;
+fancy_echo &lt;span class="s2"&gt;"Installing Ruby &lt;/span&gt;&lt;span class="nv"&gt;$RUBY_VERSION&lt;/span&gt;&lt;span class="s2"&gt; ..."&lt;/span&gt;
+rbenv &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nv"&gt;$RUBY_VERSION&lt;/span&gt;
+rbenv rehash
+rbenv global &lt;span class="nv"&gt;$RUBY_VERSION&lt;/span&gt;
+ruby &lt;span class="nt"&gt;-v&lt;/span&gt;
+fancy_echo &lt;span class="s2"&gt;"Gem update system ..."&lt;/span&gt;
+gem update &lt;span class="nt"&gt;--system&lt;/span&gt;
+fancy_echo &lt;span class="s2"&gt;"Echo .gemrc..."&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'gem: --no-rdoc --no-ri'&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.gemrc
+gem &lt;span class="nb"&gt;install &lt;/span&gt;bundler
+gem &lt;span class="nb"&gt;install &lt;/span&gt;backup
+rbenv rehash
+fancy_echo &lt;span class="s2"&gt;"Export path ..."&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"export PATH="&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:/usr/bin&lt;span class="s2"&gt;""&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;$user_path&lt;/span&gt;/.bashrc
+&lt;span class="nb"&gt;exec&lt;/span&gt; &lt;span class="nv"&gt;$SHELL&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Bu scriptler ile sunucunuzu bir rails uygulamasını çalıştıracak duruma getirmiş olursunuz.&lt;/p&gt;
+
+&lt;p&gt;Şimdi bir rails uygulaması oluşturup, uygulamayı bir sunucuya aktarma işlemlerini anlatacağız.
+&lt;a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" target="_blank"&gt;Ruby On Rails&lt;/a&gt; bildiğiniz ruby dili ile, &lt;a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank"&gt;MVC(Model-View-Controller)&lt;/a&gt; mimari deseni ile geliştirilmiş ve bünyesinde &lt;a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank"&gt;DRY(Don&amp;rsquo;t Repeat Yourself)&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/Convention_over_configuration" target="_blank"&gt;CoC(Convetion over configuration)&lt;/a&gt; gibi yazılım felsefelerini barındıran açık kaynak bir uygulama çatısıdır.&lt;/p&gt;
+
+&lt;p&gt;Hızlı bir Ruby On Rails uygulaması çıkarmak istiyorsanız size &lt;a href="https://rubygems.org/gems/cybele" target="_blank"&gt;Cybele&lt;/a&gt; ruby gem&amp;#39;ini öneririz. Bu gem bir uygulamada olması gereken kullanıcı giriş, bilgi güncelleme, yönetici tarafına giriş işlemleri gibi her projede kullanacağınız kısımlar hazır bir taslak olarak geliyor. Bu sayede önceden yazdığınız kodları tekrar yazmak zorunda kalmıyorsunuz. Cybele geminin taslak olarak getirdiği Gemfile &amp;#39;ı &lt;a href="https://github.com/lab2023/cybele/blob/develop/templates/cybele_Gemfile"&gt;github&lt;/a&gt; adresinden inceleyebilirsiniz.
+Sunucuya kolay bir şekilde uygulamayı taşımak için kullancağımız gemler bu Gemfile &amp;#39;da yer almaktadır.
+Eğer &lt;code&gt; rails new project_name&lt;/code&gt; şeklinde sıfırdan bir proje oluşturursanız veya halihazırda bulunan bir projenizi sunucuya taşımak isterseniz, kullanacağımız komutlar dizisinin yer aldığı &lt;a href="https://github.com/lab2023/recipes_matic"&gt;recipes_matic&lt;/a&gt; gemini incelemenizi tavsiye ederiz.&lt;/p&gt;
+
+&lt;p&gt;Cybele ile oluşturduğumuz bir proje için bu adımları anlatacagız.
+&lt;ol&gt;
+    &lt;li&gt;Proje oluştur &lt;code&gt;$ cybele project_name&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Deploy repo bilgilerini düzenle &lt;code&gt;/config/deploy.rb&lt;/code&gt;
+&lt;pre&gt; set :repo_url, &amp;#39;&lt;a href="mailto:git@github.com"&gt;git@github.com&lt;/a&gt;:your_username/your_repo_name.git&amp;#39;&lt;/pre&gt;
+&lt;/li&gt;
+    &lt;li&gt;Production deploy bilgilerini düzenle &lt;code&gt; /config/deploy/production.rb &lt;/code&gt;
+&lt;pre&gt;
+server &lt;q&gt;example.com&lt;/q&gt;, user: &lt;q&gt;#{fetch(:local_user)}&lt;/q&gt;, roles: %w{app db web}, primary: true, port: 22
+set :rails_env, &amp;#39;production&amp;#39;
+set :branch, &amp;#39;master&amp;#39;
+set :project_domain, “example.com”
+&lt;/pre&gt;
+&lt;/li&gt;
+    &lt;li&gt;Staging deploy bilgilerini düzenle &lt;code&gt;/config/deploy/staging.rb&lt;/code&gt;
+&lt;pre&gt;
+server &lt;q&gt;staging.example.com&lt;/q&gt;, user: &lt;q&gt;#{fetch(:local_user)}&lt;/q&gt;, roles: %w{app db web}, primary: true, port: 22
+set :rails_env, &amp;#39;staging&amp;#39;
+set :branch, &amp;#39;develop&amp;#39;
+set :project_domain, “staging.example.com”
+&lt;/pre&gt;
+&lt;/li&gt;
+    &lt;li&gt;Hata bildirimleri için email adresini düzenle
+ &lt;br/&gt; &lt;code&gt;config/environments/production.rb &lt;/code&gt;&lt;br/&gt; &lt;code&gt;config/environments/staging.rb&lt;/code&gt;
+&lt;pre&gt;config.middleware.use ExceptionNotification::Rack,
+:email =&amp;gt; {
+  :email_prefix =&amp;gt; &lt;q&gt;[project_name]&lt;/q&gt;,
+  :sender_address =&amp;gt; %{&lt;q&gt;Notifier&lt;/q&gt; &amp;lt;&lt;a href="mailto:notifier@project_name.com"&gt;notifier@project_name.com&lt;/a&gt;&amp;gt;},
+  :exception_recipients =&amp;gt; %w{&lt;a href="mailto:your_email@address.com"&gt;your_email@address.com&lt;/a&gt;}
+}
+&lt;/pre&gt;
+&lt;/li&gt;
+    &lt;li&gt;Aşağıdaki dosyalarda SMTP ayarlarını ayarla &lt;br/&gt;&lt;code&gt;config/settings/staging.yml&lt;/code&gt;&lt;br/&gt;&lt;code&gt;config/settings/production.yml&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Github da bulunan private repolara lokaldeki gibi erismek icin şu komutları çalıştır
+            &lt;br/&gt;&lt;code&gt;$ eval &lt;code&gt;ssh-agent -s&lt;/code&gt;&lt;/code&gt; &lt;br/&gt;&lt;code&gt;$ ssh-add &lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Gelelim terminalden çalıştırmamız gereken komutlar dizisine,Production sunucusunda ki deploy ortamının hazır olup olmadığını kontrol eder.
+&lt;code&gt;$ bundle exec cap production deploy:check&lt;/code&gt;
+Production sunucusunda nginx, postgresql, unicorn, &lt;a href="http://meskyanichi.github.io/backup/v3/"&gt;backup&lt;/a&gt;(veritabanı yedek alma gemi) gibi ayarları yapar.
+&lt;code&gt;$ bundle exec cap production deploy:prepare&lt;/code&gt;
+Production sunucusuna deploy işlemini gerçekleştirir.
+&lt;code&gt;$ bundle exec cap production deploy&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Örnek dosyalarımızda şu şekilde olmalıdır.
+Proje anadizininde bulunan Capfile örneği:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# Load DSL and set up stages&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/setup'&lt;/span&gt;
+&lt;span class="c1"&gt;# Include default deployment tasks&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/deploy'&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/rails'&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/bundler'&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'sshkit/sudo'&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'capistrano/maintenance'&lt;/span&gt;
+&lt;span class="c1"&gt;# Include tasks from other gems included in your Gemfile&lt;/span&gt;
+&lt;span class="c1"&gt;# For documentation on these, see for example:&lt;/span&gt;
+&lt;span class="c1"&gt;#   https://github.com/capistrano/rvm&lt;/span&gt;
+&lt;span class="c1"&gt;#   https://github.com/capistrano/rbenv&lt;/span&gt;
+&lt;span class="c1"&gt;#   https://github.com/capistrano/chruby&lt;/span&gt;
+&lt;span class="c1"&gt;#   https://github.com/capistrano/bundler&lt;/span&gt;
+&lt;span class="c1"&gt;#   https://github.com/capistrano/rails&lt;/span&gt;
+&lt;span class="c1"&gt;#   https://github.com/capistrano/passenger&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/rvm'&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/rbenv'&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/chruby'&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/bundler'&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/rails/assets'&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/rails/migrations'&lt;/span&gt;
+&lt;span class="c1"&gt;# require 'capistrano/passenger'&lt;/span&gt;
+&lt;span class="c1"&gt;# Load custom tasks from `lib/capistrano/tasks` if you have any defined&lt;/span&gt;
+&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'lib/capistrano/tasks/*.rake'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nf"&gt;each&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Proje config dizininde bulunan deploy.rb örneği:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# config valid only for current version of Capistrano&lt;/span&gt;
+&lt;span class="n"&gt;lock&lt;/span&gt; &lt;span class="s1"&gt;'3.4.0'&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:application&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'appname'&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:local_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'deploy'&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:stages&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sx"&gt;%w(staging production)&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:default_stage&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'production'&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:repo_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"git@github.com:username/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:application&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;.git"&lt;/span&gt;
+&lt;span class="c1"&gt;# Default branch is :master&lt;/span&gt;
+&lt;span class="c1"&gt;# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp&lt;/span&gt;
+&lt;span class="c1"&gt;# Default deploy_to directory is /var/www/blog2&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:deploy_to&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"/home/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:local_user&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/apps/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:application&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for :scm is :git&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:scm&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:git&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for :format is :pretty&lt;/span&gt;
+&lt;span class="c1"&gt;# set :format, :pretty&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for :log_level is :debug&lt;/span&gt;
+&lt;span class="c1"&gt;# set :log_level, :debug&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for :pty is false&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:pty&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for :linked_files is []&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:linked_files&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:linked_files&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[]).&lt;/span&gt;&lt;span class="nf"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'config/database.yml'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for linked_dirs is []&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:linked_dirs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:linked_dirs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[]).&lt;/span&gt;&lt;span class="nf"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'log'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'tmp/pids'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'tmp/cache'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'tmp/sockets'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'vendor/bundle'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/system'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/upload'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/images'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'public/seat_images'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for default_env is {}&lt;/span&gt;
+&lt;span class="c1"&gt;# set :default_env, { path: "/opt/ruby/bin:$PATH" }&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:default_env&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="ss"&gt;path: &lt;/span&gt;&lt;span class="s1"&gt;'$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH'&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="c1"&gt;# Default value for keep_releases is 5&lt;/span&gt;
+&lt;span class="c1"&gt;# set :keep_releases, 5&lt;/span&gt;
+&lt;span class="c1"&gt;# Look our recipes&lt;/span&gt;
+&lt;span class="c1"&gt;# https://github.com/lab2023/recipes_matic&lt;/span&gt;
+&lt;span class="nb"&gt;load&lt;/span&gt; &lt;span class="s1"&gt;'config/deploy/recipes/base.rb'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Umarım faydalı bir yazı olmuştur.
+Kolay gelsin.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>İkinci Rails Girls Denizli Etkinliği</title>
     <link rel="alternate" href="http://lab2023.com/ikinci-rails-girls-denizli-etkinligi.html"/>
     <id>http://lab2023.com/ikinci-rails-girls-denizli-etkinligi.html</id>
     <published>2015-12-02T02:00:00+02:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -2006,7 +2006,7 @@ anlatılacak ve katılımcıların bilgisayarlarına gerekli programların kurul
     <link rel="alternate" href="http://lab2023.com/populer-front-end-araclari.html"/>
     <id>http://lab2023.com/populer-front-end-araclari.html</id>
     <published>2015-11-24T02:00:00+02:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
@@ -2217,7 +2217,7 @@ Aşağıdaki gulpfile.js dosyasında &lt;a href="https://www.npmjs.com/package/g
     <link rel="alternate" href="http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html"/>
     <id>http://lab2023.com/what_is_vagrant_and_properties_of_vagrant.html</id>
     <published>2014-12-25T02:00:00+02:00</published>
-    <updated>2022-09-23T16:24:27+03:00</updated>
+    <updated>2022-08-04T14:12:19+03:00</updated>
     <author>
       <name>lab2023</name>
     </author>
