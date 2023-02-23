@@ -27,13 +27,6 @@ members:
       Graphic artist, 2D animator, graphic - designer
     twitter: kamilagareeva1
     profile_picture: kamila-gareeva.jpg
-  fadimeozhan:
-    title: Fadime OZHAN | Programmer
-    info:
-      Software developer, Linux, Ruby on Rails, Ruby, Javascript.
-      I always prefer to write clean and understandable code. I am open to new ideas and love to follow new technologies.
-    twitter: fadimezhan
-    profile_picture: fadime-ozhan.jpg
   mervesahan:
     title: Merve SAHAN | Programmer
     info:
@@ -46,11 +39,6 @@ members:
     info: I design and code. I like to code semantic and i always following new technologies. Creating user friendly web and mobile apps my favorite things to do. I am challenging myself on every single line of code. Long live HTML5, CSS3 and Native JS.
     twitter: coskuntekin
     profile_picture: coskun-tekin.jpg
-  dilekaltun:
-    title: Dilek Altun | Designer
-    info: I design and code.
-    twitter:
-    profile_picture: dilek-altun.jpg
   hazalgultekin:
     title: Hazal GULTEKİN | Designer
     info:
@@ -70,10 +58,6 @@ members:
       He is a Hot Wheels collectionner and one of the biggest Top Gear fans.
     twitter: olcay_yaclo
     profile_picture: olcay-oransoy.jpg
-  emrehankisacik:
-    title: Emrehan Kısacık | Programmer
-    info: I'm 3rd grade computer engineering student. I love coding and create new things
-    profile_picture: emrehan-kisacik.jpg
   azimcankuruca:
     title: Azim Can Kuruca | Programmer
     info: I'm studying computer engineering. I want to be an open-source developer.
