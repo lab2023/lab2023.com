@@ -27,27 +27,11 @@ members:
       Graphic artist, 2D animator, graphic - designer
     twitter: kamilagareeva1
     profile_picture: kamila-gareeva.jpg
-  mervesahan:
-    title: Merve SAHAN | Programmer
-    info:
-      I'm a graduate in mathematics and computer science. I think math is the language of nature.
-      I find the software interesting and exciting.
-    twitter: mervesahn_
-    profile_picture: merve-sahan.jpg
   coskuntekin:
     title: Coskun Tekin | Designer
     info: I design and code. I like to code semantic and i always following new technologies. Creating user friendly web and mobile apps my favorite things to do. I am challenging myself on every single line of code. Long live HTML5, CSS3 and Native JS.
     twitter: coskuntekin
     profile_picture: coskun-tekin.jpg
-  hazalgultekin:
-    title: Hazal GULTEKİN | Designer
-    info:
-      I'm studying in Computer Engineering.
-      I love design so much.
-      I also develop myself in other areas such as Web and mobile.
-      I'm currently dealing with Ruby on Rails.
-    twitter:
-    profile_picture: hazal-gultekin.jpg
   olcayoransoy:
     title: Olcay ORANSOY | Intern
     info:
@@ -60,14 +44,16 @@ members:
     profile_picture: olcay-oransoy.jpg
   azimcankuruca:
     title: Azim Can Kuruca | Programmer
-    info: I'm studying computer engineering. I want to be an open-source developer.
+    info:
+      Ruby and on Rails
+      I want to be an open-source developer.
     twitter: azmcnkrc
     profile_picture: azim-can-kuruca.jpg
   rizadogukankosar:
-    title: Rıza Doğukan KOŞAR | Designer
+    title: Rıza Doğukan KOŞAR | Programmer
     info:
       Ruby on Rails | Kotlin | Java
-      I'm 4rd grade computer engineering. I'm Interested in web & mobile development.
+      I'm interested in web & mobile development.
     twitter: dogu_kosar
     profile_picture: riza-dogukan-kosar.jpg
   sabricakir:
