@@ -2,9 +2,8 @@ members:
   tayfunoziserikan:
     title: Tayfun Ozis ERIKAN | Co-founder &amp; CEO
     info:
-      Web Developer, Graphic & Web Designer
-      Ruby, Ruby on Rails, Ext JS & Sencha Touch, jQuery, OS X User. Kebab Project Developer. Public Speaker.
-      Co-Founder of Lab2023 Information Technologies, Bulutfon Telecommunication and Qudea, Inc.
+      I’m making web & mobile apps using Ruby, Rails, HOTWIRE (Turbo + Stimulus), 
+      Shape Up, Basecamp, Heroku and AWS. I’m also co-founder of @lab2023 & @bulutfon
     twitter: toziserikan
     profile_picture: tayfun-ozis-erikan.jpg
   serdaryagci:
@@ -61,3 +60,8 @@ members:
     info: I'm computer engineer student. I love learning full stack web development tools and technologies.
     twitter:
     profile_picture: sabri-cakir.jpg
+  aliihsanburak:
+    title: Ali İhsan BURAK | Operation Manager & CMO
+    info: I specialize in crafting websites that seamlessly integrate with various digital marketing tools to enhance online presence and outreach
+    twitter:
+    profile_picture: ali-ihsan-burak.jpg
