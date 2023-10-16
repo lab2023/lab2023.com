@@ -31,16 +31,6 @@ members:
     info: I design and code. I like to code semantic and i always following new technologies. Creating user friendly web and mobile apps my favorite things to do. I am challenging myself on every single line of code. Long live HTML5, CSS3 and Native JS.
     twitter: coskuntekin
     profile_picture: coskun-tekin.jpg
-  olcayoransoy:
-    title: Olcay ORANSOY | Intern
-    info:
-      Olcay is probably the youngest Ruby on Rails developer in the country.
-      He is our youngest intern. He started to use computer at the age of 3.
-      He works hard on developing his skills on every aspects of web development.
-      But his main area of interest is backend systems.
-      He is a Hot Wheels collectionner and one of the biggest Top Gear fans.
-    twitter: olcay_yaclo
-    profile_picture: olcay-oransoy.jpg
   azimcankuruca:
     title: Azim Can Kuruca | Programmer
     info:
@@ -48,13 +38,6 @@ members:
       I want to be an open-source developer.
     twitter: azmcnkrc
     profile_picture: azim-can-kuruca.jpg
-  rizadogukankosar:
-    title: Rıza Doğukan KOŞAR | Programmer
-    info:
-      Ruby on Rails | Kotlin | Java
-      I'm interested in web & mobile development.
-    twitter: dogu_kosar
-    profile_picture: riza-dogukan-kosar.jpg
   sabricakir:
     title: Sabri ÇAKIR | Programmer
     info: I'm computer engineer student. I love learning full stack web development tools and technologies.
