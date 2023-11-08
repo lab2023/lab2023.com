@@ -43,13 +43,13 @@ members:
     info: I'm computer engineer student. I love learning full stack web development tools and technologies.
     twitter:
     profile_picture: sabri-cakir.jpg
-  huseyinbiyik:
-    title: Huseyin Biyik | Intern Candidate
-    info: Ruby on Rails Enthusiast. I love to dig into this one person framework and get the most out of it.
-    twitter: huseyin__biyik
-    profile_picture: huseyin-biyik.jpg
   aliihsanburak:
     title: Ali İhsan BURAK | Operation Manager & CMO
     info: I specialize in crafting websites that seamlessly integrate with various digital marketing tools to enhance online presence and outreach
     twitter:
     profile_picture: ali-ihsan-burak.jpg
+  huseyinbiyik:
+    title: Huseyin Biyik | Intern Candidate
+    info: Ruby on Rails Enthusiast. I love to dig into this one person framework and get the most out of it.
+    twitter: huseyin__biyik
+    profile_picture: huseyin-biyik.jpg
