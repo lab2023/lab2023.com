@@ -1,19 +1,19 @@
 members:
   tayfunoziserikan:
-    title: Tayfun Ozis ERIKAN | Co-founder &amp; CEO
+    title: Tayfun (Ozis) Erikan | Co-founder &amp; CEO
     info:
-      I’m making web & mobile apps using Ruby, Rails, HOTWIRE (Turbo + Stimulus),
-      Shape Up, Basecamp, Heroku and AWS. I’m also co-founder of @lab2023 & @bulutfon
-    twitter: toziserikan
+      I’m making web & mobile apps using Ruby, Rails, Hotwire (Turbo, Stimulus, Strada),
+      Shape Up, Basecamp, Heroku & AWS. I’m also co-founder of @lab2023 & @bulutfon
+    twitter: tayfunerikan
     profile_picture: tayfun-ozis-erikan.jpg
   serdaryagci:
-    title: Serdar YAGCI | Adviser
+    title: Serdar Yagci | Adviser
     info:
       He knows PHP, Objective - C and Javascript Frameworks. He is photographer and traveler.
     twitter: Sevliya
     profile_picture: serdar-yagci.jpg
   claraisabel:
-    title: Clara Isabel PANTOJA MUÑOZ | Graphic Designer
+    title: Clara Isabel Pantoja Muñoz | Graphic Designer
     info:
       Creative and proactive person of graphic communication design and emphasis in multimedia design.
       Interested in interactive design and information technology projects. Has great motivation for photography,
@@ -21,7 +21,7 @@ members:
     twitter: klapancg
     profile_picture: clara-isabel-pantoja.jpg
   kamilagareeva:
-    title: Kamila GAREEVA | Graphic Designer
+    title: Kamila Gareeva | Graphic Designer
     info:
       Graphic artist, 2D animator, graphic - designer
     twitter: kamilagareeva1
@@ -39,12 +39,12 @@ members:
     twitter: azmcnkrc
     profile_picture: azim-can-kuruca.jpg
   sabricakir:
-    title: Sabri ÇAKIR | Programmer
+    title: Sabri Cakir | Programmer
     info: I'm computer engineer student. I love learning full stack web development tools and technologies.
     twitter:
     profile_picture: sabri-cakir.jpg
   aliihsanburak:
-    title: Ali İhsan BURAK | Operation Manager & CMO
+    title: Ali İhsan Burak | Operation Manager & CMO
     info: I specialize in crafting websites that seamlessly integrate with various digital marketing tools to enhance online presence and outreach
     twitter:
     profile_picture: ali-ihsan-burak.jpg
