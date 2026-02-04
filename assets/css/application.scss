@@ -1,0 +1,434 @@
+---
+---
+
+@use "sass:color";
+@use "variables" as *;
+@use "mixins" as *;
+@use "animations";
+@use "highlight";
+@use "carousel";
+
+// Bootstrap 3 from CDN is loaded in head.html
+
+hr.divider {
+  border-color: #BDC3C7;
+  width: 80%;
+  margin: 35px auto;
+}
+
+p, address, article {
+  color: $base-font-color;
+  font-size: 1.225em;
+  line-height: 1.875em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p.extra {
+  margin-top: 40px;
+}
+
+header {
+  .wrapper {
+    color: white;
+    text-align: center;
+    min-height: 722px;
+    padding-top: 70px;
+    background-color: $base-bg-color;
+    @include at2x('../images/header-bg', jpg, center center);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    img.logo {
+      width: 252px;
+      height: 253px;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 3.3em;
+      font-weight: 200;
+      letter-spacing: .08em;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+
+    h2 {
+      font-size: 2.4em;
+      font-weight: 100;
+      letter-spacing: .05em;
+
+      strong {
+        font-weight: 400;
+      }
+    }
+
+    hr {
+      width: 50%;
+    }
+
+    p.scroll-down {
+      margin-top: 50px;
+      position: relative;
+      -webkit-animation-name: bounce;
+      -moz-animation-name: bounce;
+      animation-name: bounce;
+      -webkit-animation-duration: 0.5s;
+      -moz-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      -moz-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-timing-function: ease-in-out;
+      -moz-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        span {
+          font-size: 0.7em;
+        }
+
+        i {
+          display: block;
+          line-height: 0.5em;
+          font-size: 3em;
+        }
+      }
+    }
+  }
+
+  nav#navigation {
+    display: none;
+    background-color: $base-bg-color !important;
+    border: none;
+
+    a.navbar-brand {
+      margin: 8px 0;
+      padding: 0;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      @include at2x('../images/logo-nav', png, 45px, 45px);
+    }
+
+    ul.nav {
+      margin-top: 12px;
+
+      li {
+        a {
+          font-size: 1.3em;
+          font-weight: 100;
+          letter-spacing: .03em;
+          padding: 8px 12px;
+          margin: 0 10px 0 0;
+          border-radius: 50px;
+          color: white !important;
+
+          &:hover, &:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+
+        &.active a {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        a.btn {
+          background-color: $base-color;
+          color: white !important;
+          padding: 8px 20px;
+          border: none;
+
+          &:hover {
+            background-color: color.adjust($base-color, $lightness: -10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.contents {
+  text-align: center;
+  padding: 80px 0;
+
+  h1 {
+    color: $base-color;
+    text-align: center;
+    font-size: 2.25em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}
+
+.big-buttons {
+  font-size: 1em;
+  padding: 10px 30px;
+  font-weight: 100;
+  background-color: white;
+  border-color: $base-color;
+  color: $base-color;
+  border-radius: 100px;
+
+  strong {
+    font-weight: 400;
+    display: block;
+  }
+}
+
+.contents-alternate {
+  text-align: center;
+  background-color: #ECF0F1;
+}
+
+#our-works {
+  div.work-item {
+    padding: 0 0 10px 0;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin: auto;
+    }
+  }
+}
+
+#our-team {
+  ul.team-members {
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin: 10px;
+      cursor: pointer;
+      text-align: center;
+      list-style: none;
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+
+      img {
+        border: 1px solid $base-color;
+        padding: 5px;
+        background-color: white;
+        width: 200px;
+        height: 200px;
+      }
+
+      .image-filter {
+        margin: 6px;
+        width: 188px;
+        height: 188px;
+        position: absolute;
+        background-color: $base-bg-color;
+        opacity: 0.5;
+        border-radius: 200px;
+        transition: opacity .3s ease-in-out;
+      }
+
+      &:hover, &.active {
+        .image-filter {
+          opacity: 0;
+        }
+      }
+
+      .member-info {
+        display: none;
+      }
+    }
+  }
+}
+
+#contact-us {
+  ul.social {
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 3px;
+
+      a {
+        color: $base-font-color;
+        font-size: .80em;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 80px 0;
+}
+
+// Bootstrap overrides
+.popover-content, .popover-title {
+  text-align: center;
+  color: $base-font-color;
+  font-size: 1em;
+}
+
+.popover-content {
+  font-weight: 300;
+}
+
+.popover-title {
+  font-weight: 600;
+}
+
+.popover.top {
+  margin-top: -15px;
+}
+
+// Blog page overrides
+body#blog {
+  color: $base-font-color;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+  font-weight: 200;
+
+  p, article, li {
+    color: $base-font-color;
+    font-size: 1.225em;
+    line-height: 1.875em;
+  }
+
+  header.header {
+    border-top: 5px solid $base-color;
+    padding-top: 100px;
+    margin-bottom: 100px;
+
+    img.logo {
+      width: 110px;
+      height: 110px;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+
+      a {
+        font-size: .8em;
+        color: color.adjust($base-font-color, $lightness: 20%);
+      }
+    }
+  }
+
+  article.posts, article.post {
+    margin-bottom: 10px;
+
+    h1 {
+      color: color.adjust($base-font-color, $lightness: -30%);
+      font-size: 1.5em;
+      margin-top: 0;
+      font-weight: 300;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  article.post {
+    h1 {
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .article-meta {
+    text-align: right;
+
+    span.tag {
+      display: block;
+
+      a {
+        color: $base-font-color;
+
+        &:hover {
+          text-decoration: underline;
+          color: $base-color;
+        }
+      }
+    }
+
+    h4, h5 {
+      font-weight: 400;
+      margin-top: 4px;
+    }
+  }
+
+  .tags-title {
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    strong {
+      font-weight: 400;
+    }
+  }
+}
+
+.share_button {
+  width: 100px;
+  text-decoration: none;
+  float: left;
+  display: inline-block;
+  position: relative;
+  left: 17px;
+
+  li {
+    width: 100px;
+    text-decoration: none;
+    float: left;
+    display: inline-block;
+    position: relative;
+    left: 17px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 1150px) {
+  .col-lg-2 {
+    float: left;
+  }
+
+  .share_button {
+    width: 10px;
+    left: 0px;
+  }
+
+  #language_linked {
+    float: right;
+    top: -33px;
+  }
+}
+
+@media screen and (max-width: 470px) and (max-width: 400px) {
+  #language_linked {
+    float: left;
+    top: 0px;
+    left: 100px;
+  }
+}

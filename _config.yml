@@ -1,0 +1,56 @@
+# Site settings
+title: lab2023
+description: "web & mobile development, graphic design company"
+url: "https://lab2023.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Permalink structure (matches Middleman's blog.permalink = '{title}')
+permalink: /:title/
+
+# Collections and defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - CHANGELOG.md
+  - README.md
+  - VERSION.txt
+  - LICENSE
+
+# Include hidden files
+include:
+  - _redirects
+
+# Feed settings
+feed:
+  path: feed.xml

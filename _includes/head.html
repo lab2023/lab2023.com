@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>lab2023 | web & mobile development, graphic design company{% if page.title %} - {{ page.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Designers and developers for hire{% endif %}">
+<meta name="keywords" content="{% if page.tags %}{{ page.tags }}{% else %}design, ruby, ruby on rails, ios, android, sencha, istanbul, ankara, denizli, turkey{% endif %}">
+{% if page.author %}{% for author in site.data.authors.authors %}{% if author[0] == page.author %}<meta name="author" content="{{ author[1] }}">{% endif %}{% endfor %}{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ '/assets/css/application.css' | relative_url }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ '/assets/css/swiper-bundle.min.css' | relative_url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+
+{% feed_meta %}
+{% seo %}

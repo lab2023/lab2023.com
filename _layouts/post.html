@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="blog">
+    {% include blog_header.html %}
+
+    <!-- Share buttons JS code -->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'));
+    </script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1 article-meta">
+          {% for author in site.data.authors.authors %}
+            {% if author[0] == page.author %}
+              <h4><a href="https://twitter.com/{{ author[0] }}" target="_blank">{{ author[1] }}</a></h4>
+            {% endif %}
+          {% endfor %}
+          <h5>{{ page.date | date: "%B %e, %Y" }}</h5>
+          {% for tag in page.tags %}
+            <span class="tag"><a href="{{ '/tag/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a></span>
+          {% endfor %}
+
+          <!-- Share buttons -->
+          <ul class="share_button">
+            <li>
+              <div class="fb-share-button" data-href="https://lab2023.com{{ page.url }}" data-type="button_count"></div>
+            </li>
+            <li>
+              <a class="twitter-share-button" data-text="https://lab2023.com{{ page.url }}" data-via="lab2023" href="https://twitter.com/share"></a>
+            </li>
+            <li>
+              <script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+              <script type="IN/Share" data-url="https://lab2023.com{{ page.url }}"></script>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-8">
+          <article class="post">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+          </article>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>

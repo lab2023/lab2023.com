@@ -1,0 +1,23 @@
+---
+layout: posts
+---
+<section>
+  <div class="row">
+    <div class="col-lg-9 col-lg-offset-3">
+      <h1 class="tags-title">
+        Articles tagged
+        <strong>'{{ page.tag }}'</strong>
+      </h1>
+    </div>
+  </div>
+  {% for post in site.tags[page.tag] %}
+    <article class="posts row">
+      <div class="col-lg-2 col-lg-offset-1">
+        <span class="pull-right">{{ post.date | date: "%B %e, %Y" }}</span>
+      </div>
+      <div class="col-lg-8">
+        <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+      </div>
+    </article>
+  {% endfor %}
+</section>

@@ -1,0 +1,185 @@
+---
+layout: default
+---
+<section id="our-works">
+  <div class="container contents">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h1 class="title">Our Works</h1>
+        <p class="extra">
+          We are a team of marketers, designers and developers.
+          Clients hire us to develop their web and mobile apps.
+          We sketch, prototype, make and ship working software.
+          After shipping software, we measure and maintain
+          use of software. See some examples below.
+        </p>
+        <p>
+          <a href="https://www.github.com/lab2023/playbook" target="_blank">
+            Read more in our playbook
+            <i class="fa fa-arrow-circle-right"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="our-works">
+  <div class="contents-alternate">
+    <div class="container contents">
+      <div class="work-item">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                {% for reference in site.data.references.list %}
+                  <div class="swiper-slide carousel-item text-center">
+                    <h3>{{ reference[1].title }}</h3>
+                    <p>{{ reference[1].desc }}</p>
+                    <p>
+                      <a href="{{ reference[1].link }}" target="_blank">
+                        Visit project
+                        <i class="fa fa-arrow-circle-right"></i>
+                      </a>
+                    </p>
+                    <img src="{{ '/assets/images/works/' | append: reference[1].image | append: '.png' | relative_url }}" alt="{{ reference[1].title }}" class="img-responsive">
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="swiper-button-next hidden-sm"></div>
+              <div class="swiper-button-prev hidden-sm"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="our-team">
+  <div class="container contents">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h1 class="title">Our Team</h1>
+        <p class="extra">
+          lab2023 was founded in 2010.
+          We care about quality, craft, and disciplined experimentation.
+          <br>
+          We are active contributors to open source software.
+        </p>
+        <p>
+          <a href="https://github.com/lab2023" target="_blank">
+            Use our open source software
+            <i class="fa fa-arrow-circle-right"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <ul class="team-members">
+          {% for team_member in site.data.team.members %}
+            <li data-toggle="popover" data-placement="top">
+              {% if team_member[1].twitter %}
+              <a href="https://www.twitter.com/{{ team_member[1].twitter }}" target="_blank">
+              {% endif %}
+                <div class="image-filter"></div>
+                <img src="{{ '/assets/images/team/' | append: team_member[1].profile_picture | relative_url }}" alt="{{ team_member[1].title }}" class="img-circle">
+              {% if team_member[1].twitter %}
+              </a>
+              {% endif %}
+              <div class="member-info popover-content">
+                <h4 class="title">{{ team_member[1].title }}</h4>
+                <p class="content">{{ team_member[1].info }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <p class="extra">
+          <a href="mailto:hello@lab2023.com" class="btn btn-primary big-buttons">
+            <strong>Want to join our team?</strong>
+            Click here to apply
+          </a>
+        </p>
+        <p class="extra">
+          <strong>Current Open Job Position</strong>
+          <br>
+          <a href="{{ '/web-gelistiricisi-is-ilani/' | relative_url }}" target="_blank">
+            Web Geliştiricisi İş İlanı
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-us" class="contents-alternate">
+  <div class="container contents">
+    <h1>Contact Us</h1>
+    <h4>Lab2023 Information Technologies Corp.</h4>
+    <address>
+      Pamukkale Teknokent D-Block 116-117 Denizli / TURKEY
+      <br>
+      <a href="mailto:hello@lab2023.com?subject=Hello%20Lab2023">hello@lab2023.com</a>
+      |
+      <a href="tel:+908508850522">+90 850 885 0 522</a>
+      <br>
+      <a href="https://www.google.com/maps/place/37°44'19.7%22N+29°05'35.2%22E/@37.7386245,29.0928367,357m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0" target="_blank">
+        <i class="fa fa-map-marker"></i>
+        37.7386245, 29.0928367
+      </a>
+    </address>
+
+    <ul class="social">
+      <li data-toggle="tooltip" title="GitHub">
+        <a href="https://github.com/lab2023" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="Dribbble">
+        <a href="https://dribbble.com/lab2023" target="_blank">
+          <i class="fa fa-dribbble fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="Twitter">
+        <a href="https://twitter.com/lab2023" target="_blank">
+          <i class="fa fa-twitter fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="Facebook">
+        <a href="https://www.facebook.com/lab2023" target="_blank">
+          <i class="fa fa-facebook fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="Flickr">
+        <a href="https://www.flickr.com/photos/122188945@N05" target="_blank">
+          <i class="fa fa-flickr fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="YouTube">
+        <a href="http://www.youtube.com/user/thelab2023" target="_blank">
+          <i class="fa fa-youtube-square fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="Vimeo">
+        <a href="http://www.vimeo.com/lab2023" target="_blank">
+          <i class="fa fa-vimeo-square fa-3x"></i>
+        </a>
+      </li>
+      <li data-toggle="tooltip" title="RSS">
+        <a href="{{ '/feed.xml' | relative_url }}" target="_blank">
+          <i class="fa fa-rss fa-3x"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="extra">
+      <a href="mailto:hello@lab2023.com" class="btn btn-primary big-buttons">
+        <strong>Want us to work for you?</strong>
+        Click here to hire us
+      </a>
+    </p>
+  </div>
+</section>
