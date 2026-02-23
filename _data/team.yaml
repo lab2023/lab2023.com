@@ -29,7 +29,7 @@ members:
   azimcankuruca:
     title: Azim Can Kuruca | Programmer
     info: A passionate Rails developer who loves building clean, maintainable applications. Dedicated to writing quality code and continuously improving as a software craftsman.
-    twitter: azmcnkrc
+    twitter:
     profile_picture: azim-can-kuruca.jpg
   aliihsanburak:
     title: Ali İhsan Burak | Operation Manager & CMO
@@ -49,3 +49,8 @@ members:
       I am always eager to learn and grow in the field of product management.
     twitter:
     profile_picture: rana-oterbulbul.jpg
+  erendemirci:
+    title: Eren Demirci | Programmer
+    info: A programmer with an interest in data and artificial intelligence. Focused on continuous self-improvement and adapting to new technologies.
+    twitter:
+    profile_picture: eren-demirci.jpg

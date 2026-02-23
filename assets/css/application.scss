@@ -113,6 +113,7 @@ header {
     display: none;
     background-color: $base-bg-color !important;
     border: none;
+    z-index: 1070;
 
     a.navbar-brand {
       margin: 8px 0;
