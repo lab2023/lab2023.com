@@ -2,55 +2,64 @@ members:
   tayfunoziserikan:
     title: Tayfun (Ozis) Erikan | Co-founder &amp; CEO
     info:
-      I’m making web & mobile apps using Ruby, Rails, Hotwire (Turbo, Stimulus, Strada),
-      Shape Up, Basecamp, Heroku & AWS. I’m also co-founder of @lab2023 & @bulutfon
+      Builds web & mobile apps using Ruby, Rails, Hotwire, (Stimulus - Turbo - Native),
+      Shape Up, Basecamp, Heroku, AWS and Kamal Deploy. Co-founder of @lab2023 & @bulutfon
     twitter: tayfunerikan
     profile_picture: tayfun-ozis-erikan.jpg
   serdaryagci:
     title: Serdar Yagci | Adviser
     info:
-      He knows PHP, Objective - C and Javascript Frameworks. He is photographer and traveler.
+      Proficient in PHP, Objective-C and Javascript Frameworks. Photographer and traveler.
     twitter: Sevliya
     profile_picture: serdar-yagci.jpg
   claraisabel:
     title: Clara Isabel Pantoja Muñoz | Graphic Designer
     info:
-      Creative and proactive person of graphic communication design and emphasis in multimedia design.
-      Interested in interactive design and information technology projects. Has great motivation for photography,
-      visual effects and web design. Likes music, museums and the integration of art and technology in her work.
+      Creative and proactive graphic communication designer with an emphasis in multimedia design.
+      Interested in interactive design and information technology projects.
+      Highly motivated in photography, visual effects and web design.
+      Enjoys music, museums and the integration of art and technology in her work.
     twitter: klapancg
     profile_picture: clara-isabel-pantoja.jpg
   kamilagareeva:
     title: Kamila Gareeva | Graphic Designer
     info:
-      Graphic artist, 2D animator, graphic - designer
+      Graphic artist, 2D animator and graphic designer.
     twitter: kamilagareeva1
     profile_picture: kamila-gareeva.jpg
   azimcankuruca:
     title: Azim Can Kuruca | Programmer
-    info: A passionate Rails developer who loves building clean, maintainable applications. Dedicated to writing quality code and continuously improving as a software craftsman.
+    info:
+      A passionate Rails developer who loves building clean, maintainable applications.
+      Dedicated to writing quality code and continuously improving as a software craftsman.
     twitter:
     profile_picture: azim-can-kuruca.jpg
   aliihsanburak:
-    title: Ali İhsan Burak | Operation Manager & CMO
-    info: I specialize in crafting websites that seamlessly integrate with various digital marketing tools to enhance online presence and outreach
+    title: Ali İhsan Burak | Marketing Adviser
+    info:
+      Specializes in building websites that seamlessly integrate with digital marketing tools to
+      strengthen online presence and outreach.
     twitter:
     profile_picture: ali-ihsan-burak.jpg
   huseyinbiyik:
     title: Huseyin Biyik | Programmer
-    info: Ruby on Rails Enthusiast. I love to dig into this one person framework and get the most out of it.
+    info:
+      Ruby on Rails enthusiast.
+      Enjoys diving deep into the framework and getting the most out of it.
     twitter: huseyin__biyik
     profile_picture: huseyin-biyik.jpg
   ranaoterbulbul:
     title: Rana Oterbulbul | Quality Assurance Specialist
     info:
-      I am a junior product manager with a passion for creating user-friendly products.
-      I have experience in product development, user research and testing.
-      I am always eager to learn and grow in the field of product management.
+      Junior product manager passionate about crafting user-friendly products.
+      Hands-on experience in product development, user research, and testing.
+      Always eager to learn something new and grow along the way.
     twitter:
     profile_picture: rana-oterbulbul.jpg
   erendemirci:
     title: Eren Demirci | Programmer
-    info: A programmer with an interest in data and artificial intelligence. Focused on continuous self-improvement and adapting to new technologies.
+    info:
+      Junior programmer curious about data and AI.
+      Enjoys picking up new technologies and constantly pushes himself to grow.
     twitter:
     profile_picture: eren-demirci.jpg
