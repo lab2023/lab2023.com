@@ -29,3 +29,14 @@ MAJOR.MINOR.PATCH.ARTICLE
 - MINOR version when you add functionality in a backwards-compatible manner
 - PATCH version when you make backwards-compatible bug fixes
 - ARTICLE version when you add a new post
+
+## Credits
+
+![lab2023](http://lab2023.com/assets/images/named-logo.png)
+
+- The names and logos for lab2023 are trademarks of lab2023, inc.
+
+## License
+
+The repo is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Copyright © 2013-2026 [lab2023 - information technologies](http://lab2023.com)
